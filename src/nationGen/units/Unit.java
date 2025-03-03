@@ -43,6 +43,7 @@ public class Unit {
   public Race race;
   public Pose pose;
   public Mount mountItem;
+  public Corider coriderItem;
   public final SlotMap slotmap = new SlotMap();
 
   public static class SlotMap {
@@ -137,6 +138,7 @@ public class Unit {
     unit.commands.addAll(commands);
     unit.appliedFilters.addAll(appliedFilters);
     unit.mountItem = mountItem;
+    unit.coriderItem = coriderItem;
     return unit;
   }
 
@@ -553,10 +555,16 @@ public class Unit {
       handleRemoveThemeinc(oldItem);
       handleRemoveDependency(oldItem);
 
-      // Remove cached mountItem if the item containing the mount is unequipped
+      // Remove cached Mount item if the item containing the mount is unequipped
       // This assumes that any given Unit will only ever had a single mount
       if (oldItem.containsMount()) {
         this.mountItem = null;
+      }
+
+      // Remove cached Corider item if the item containing the mount is unequipped
+      // This assumes that any given Unit will only ever had a single corider type
+      if (oldItem.containsCorider()) {
+        this.coriderItem = null;
       }
     }
 
@@ -567,27 +575,26 @@ public class Unit {
       if (newItem.containsMount()) {
         resolveMountItem(newItem);
       }
+
+      if (newItem.containsCorider()) {
+        resolveCoriderItem(newItem);
+      }
     }
   }
 
   private void resolveMountItem(Item mountItem) {
-    if (mountItem != null) {
-      Optional<Command> possibleMountmnr = mountItem.commands
-        .stream()
-        .filter(c -> c.command.equals("#mountmnr"))
-        .findAny();
+    Optional<Mount> mount = nationGen.getAssets().resolveMountItem(mountItem);
 
-      if (possibleMountmnr.isPresent()) {
-        Command mountmnr = possibleMountmnr.get();
-        Optional<Mount> mount = nationGen.getAssets().mounts
-          .stream()
-          .filter(s -> s.name.equals(mountmnr.args.get(0).get()))
-          .findFirst();
+    if (mount.isPresent()) {
+      this.mountItem = mount.get();
+    }
+  }
 
-        if (mount.isPresent()) {
-          this.mountItem = mount.get();
-        }
-      }
+  private void resolveCoriderItem(Item coriderItem) {
+    Optional<Corider> corider = nationGen.getAssets().resolveCoriderItem(coriderItem);
+
+    if (corider.isPresent()) {
+      this.coriderItem = corider.get();
     }
   }
 

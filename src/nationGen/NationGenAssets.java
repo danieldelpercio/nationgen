@@ -3,6 +3,7 @@ package nationGen;
 import com.elmokki.Generic;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 import nationGen.entities.Entity;
 import nationGen.entities.Filter;
@@ -11,11 +12,14 @@ import nationGen.entities.MagicItem;
 import nationGen.entities.Pose;
 import nationGen.entities.Race;
 import nationGen.entities.Theme;
+import nationGen.items.Item;
 import nationGen.magic.MagicPattern;
 import nationGen.misc.ChanceIncHandler;
+import nationGen.misc.Command;
 import nationGen.misc.FileUtil;
 import nationGen.misc.ResourceStorage;
 import nationGen.naming.NamePart;
+import nationGen.units.Corider;
 import nationGen.units.Mount;
 import nationGen.units.ShapeShift;
 
@@ -63,6 +67,7 @@ public class NationGenAssets {
 
   public List<ShapeShift> secondshapes = new ArrayList<>();
   public List<Mount> mounts = new ArrayList<>();
+  public List<Corider> coriders = new ArrayList<>();
   public List<String> secondShapeMountCommands = new ArrayList<>();
   public List<String> secondShapeNonMountCommands = new ArrayList<>();
   public List<String> secondShapeRacePoseCommands = new ArrayList<>();
@@ -93,6 +98,7 @@ public class NationGenAssets {
       ShapeShift.class
     );
     mounts = Entity.readFile(gen, "/data/mounts/mounts.txt", Mount.class);
+    coriders = Entity.readFile(gen, "/data/coriders/coriders.txt", Corider.class);
     loadSecondShapeInheritance("/data/shapes/secondshapeinheritance.txt");
     loadRaces(gen, "./data/races/races.txt");
 
@@ -266,5 +272,87 @@ public class NationGenAssets {
     for (String s : filters.keySet()) initializeFilters(filters.get(s), s);
 
     for (String s : templates.keySet()) initializeFilters(templates.get(s), s);
+  }
+  
+  public Optional<Mount> resolveMountItem(Item mountItem) {
+    if (mountItem != null) {
+      Optional<Command> possibleMountmnr = mountItem.commands
+        .stream()
+        .filter(c -> c.command.equals("#mountmnr"))
+        .findAny();
+
+      if (possibleMountmnr.isPresent()) {
+        Command mountmnr = possibleMountmnr.get();
+        return this.resolveMountItem(mountmnr);
+      }
+    }
+
+    return Optional.empty();
+  }
+  
+  public Optional<Mount> resolveMountItem(Filter mountFilter) {
+    if (mountFilter != null) {
+      Optional<Command> possibleMountmnr = mountFilter.commands
+        .stream()
+        .filter(c -> c.command.equals("#mountmnr"))
+        .findAny();
+
+      if (possibleMountmnr.isPresent()) {
+        Command mountmnr = possibleMountmnr.get();
+        return this.resolveMountItem(mountmnr);
+      }
+    }
+
+    return Optional.empty();
+  }
+  
+  public Optional<Mount> resolveMountItem(Command mountmnr) {
+    Optional<Mount> mount = this.mounts
+      .stream()
+      .filter(s -> s.name.equals(mountmnr.args.get(0).get()))
+      .findFirst();
+
+    return mount;
+  }
+  
+  public Optional<Corider> resolveCoriderItem(Item coriderItem) {
+    if (coriderItem != null) {
+      Optional<Command> possibleCoridermnr = coriderItem.commands
+        .stream()
+        .filter(c -> c.command.equals("#coridermnr"))
+        .findAny();
+
+      if (possibleCoridermnr.isPresent()) {
+        Command coridermnr = possibleCoridermnr.get();
+        return this.resolveCoriderItem(coridermnr);
+      }
+    }
+
+    return Optional.empty();
+  }
+  
+  public Optional<Corider> resolveCoriderItem(Filter coriderFilter) {
+    if (coriderFilter != null) {
+      Optional<Command> possibleCoridermnr = coriderFilter.commands
+        .stream()
+        .filter(c -> c.command.equals("#coridermnr"))
+        .findAny();
+
+      if (possibleCoridermnr.isPresent()) {
+        Command coridermnr = possibleCoridermnr.get();
+        return this.resolveCoriderItem(coridermnr);
+      }
+    }
+
+    return Optional.empty();
+  }
+  
+  public Optional<Corider> resolveCoriderItem(Command coridermnr) {
+    Optional<Corider> corider = this.coriders
+      .stream()
+      .filter(s -> s.name.equals(coridermnr.args.get(0).get()))
+      .findFirst();
+
+    return corider;
   }
 }

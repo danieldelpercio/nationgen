@@ -28,21 +28,6 @@ public class Item extends Drawable {
     super(nationGen);
   }
 
-  public boolean containsMount() {
-    Optional<Command> possibleMountmnr = this.commands
-      .stream()
-      .filter(c -> c.command.equals("#mountmnr"))
-      .findAny();
-
-    if (possibleMountmnr.isPresent()) {
-      return true;
-    }
-
-    else {
-      return false;
-    }
-  }
-
   public CustomItem getCustomItemCopy() {
     CustomItem item = new CustomItem(nationGen);
     item.sprite = sprite;
@@ -66,6 +51,36 @@ public class Item extends Drawable {
 
   public Item getCopy() {
     return this.getCustomItemCopy();
+  }
+
+  public boolean containsMount() {
+    Optional<Command> possibleMountmnr = this.commands
+      .stream()
+      .filter(c -> c.command.equals("#mountmnr"))
+      .findAny();
+
+    if (possibleMountmnr.isPresent()) {
+      return true;
+    }
+
+    else {
+      return false;
+    }
+  }
+
+  public boolean containsCorider() {
+    Optional<Command> possibleCoridermnr = this.commands
+      .stream()
+      .filter(c -> c.command.equals("#coridermnr"))
+      .findAny();
+
+    if (possibleCoridermnr.isPresent()) {
+      return true;
+    }
+
+    else {
+      return false;
+    }
   }
 
   @Override

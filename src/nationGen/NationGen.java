@@ -10,6 +10,7 @@ import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
+import java.util.Optional;
 import java.util.Random;
 import java.util.concurrent.locks.ReentrantLock;
 import nationGen.Settings.SettingsType;
@@ -25,6 +26,8 @@ import nationGen.naming.NamingHandler;
 import nationGen.naming.NationAdvancedSummarizer;
 import nationGen.nation.Nation;
 import nationGen.restrictions.NationRestriction;
+import nationGen.units.Corider;
+import nationGen.units.CoriderUnit;
 import nationGen.units.Mount;
 import nationGen.units.MountUnit;
 import nationGen.units.ShapeChangeUnit;
@@ -51,6 +54,7 @@ public class NationGen {
 
   public List<ShapeChangeUnit> forms = new ArrayList<>();
   public List<MountUnit> mounts = new ArrayList<>();
+  public List<CoriderUnit> coriders = new ArrayList<>();
   private List<Spell> spellsToWrite = new ArrayList<>();
   private List<Spell> freeSpells = new ArrayList<>();
 
@@ -729,6 +733,16 @@ public class NationGen {
     return this.mounts.stream().anyMatch(scu -> scu.id == realid);
   }
 
+  public boolean hasCorider(Arg id) {
+    if ("".equals(id.get())) {
+      return false;
+    }
+
+    int realid = id.isNumeric() ? id.getInt() : -1;
+
+    return this.coriders.stream().anyMatch(scu -> scu.id == realid);
+  }
+
   public boolean hasShapeShift(Arg id) {
     if ("".equals(id.get())) {
       return false;
@@ -743,6 +757,7 @@ public class NationGen {
     n.finalizeUnits();
     handleShapeshifts(n);
     handleMounts(n);
+    handleCoriders(n);
     handleSpells(n.spells, n);
   }
 
@@ -854,6 +869,68 @@ public class NationGen {
       });
   }
 
+  private void handleCoriders(Nation n) {
+    List<Unit> customCoriderUnits = n.listUnitsAndHeroes();
+
+    for (Unit u : customCoriderUnits) {
+      for (Command c : u.commands) {
+        if (
+          c.command.contains("coridermnr") &&
+          !hasCorider(c.args.get(0)) &&
+          !c.args.get(0).isNumeric()
+        ) {
+          if (c.command.equals("#coridermnr")) {
+            handleCorider(c, u);
+          }
+        }
+      }
+    }
+
+    coriders
+      .stream()
+      .filter(cu -> customCoriderUnits.contains(cu.otherForm))
+      .forEach(cu -> {
+        cu.polish(this, n);
+
+        // Look for custom #weapon commands defined in the corider form with a
+        // non-numerical id (i.e. #command "#armor 'meteorite_armor'").
+        // These are defined in customitems.txt, and this code replaces their
+        // NationGen id with the generated Dominions custom id
+        cu.coriderForm.commands
+          .stream()
+          .filter(c -> c.command.equals("#weapon"))
+          .forEach(c -> {
+            Arg weaponId = c.args.get(0);
+
+            if (!weaponId.isNumeric()) {
+              c.args.set(
+                0,
+                new Arg(customItemsHandler.getCustomItemId(weaponId.get()))
+              );
+            }
+          });
+
+        // Look for custom #armor commands defined in the corider form (
+        // like custom bardings) with a non-numerical id (i.e. #command
+        // "#armor 'meteorite_armor'"). These are defined in customitems.txt,
+        // and this code replaces their NationGen id with the generated
+        // Dominions custom id
+        cu.coriderForm.commands
+          .stream()
+          .filter(c -> c.command.equals("#armor"))
+          .forEach(c -> {
+            Arg armorId = c.args.get(0);
+
+            if (!armorId.isNumeric()) {
+              c.args.set(
+                0,
+                new Arg(customItemsHandler.getCustomItemId(armorId.get()))
+              );
+            }
+          });
+      });
+  }
+
   private HashMap<String, Integer> montagmap = new HashMap<>();
 
   private void handleMontag(Command c) {
@@ -949,6 +1026,26 @@ public class NationGen {
 
   private void handleMount(Command c, Unit u) {
     Mount mount = u.mountItem;
+    
+    // If mount item doesn't come with the unit (i.e. the unit was not equipped an item
+    // which has the #mountmnr tag), then resolve it directly via the assets using the
+    // #mountmnr command passed in here, which should be coming from the unit.commands list.
+    // An example are specialmonsters like the Pygmy Mammoth Riders defined directly with a
+    // #mountmnr command, as opposed to getting it from an equipped slot
+    if (mount == null) {
+      Optional<Mount> optionalMount = assets.resolveMountItem(c);
+      
+      if (optionalMount.isPresent()) {
+        mount = optionalMount.get();
+      }
+
+      else {
+        throw new IllegalArgumentException(
+          "The command " + c.toString() + " could not be resolved to a Mount item"
+        );
+      }
+    }
+
     MountUnit mu = new MountUnit(this, assets, u.race, u.pose, u, mount);
 
     // Maps the mount item id (i.e. #mountmnr 'bear_mail_barding')
@@ -956,6 +1053,37 @@ public class NationGen {
     mu.id = idHandler.nextUnitId();
     c.args.set(0, new Arg(mu.id));
     mounts.add(mu);
+  }
+
+  private void handleCorider(Command c, Unit u) {
+    Corider corider = u.coriderItem;
+    
+    // If corider item doesn't come with the unit (i.e. the unit was not equipped an item
+    // which has the #coridermnr tag), then resolve it directly via the assets using the
+    // #corider command passed in here, which should be coming from the unit.commands list.
+    // An example are specialmonsters like the Pygmy Mammoth Riders defined directly with a
+    // #coridermnr command, as opposed to getting it from an equipped slot
+    if (corider == null) {
+      Optional<Corider> optionalCorider = assets.resolveCoriderItem(c);
+      
+      if (optionalCorider.isPresent()) {
+        corider = optionalCorider.get();
+      }
+
+      else {
+        throw new IllegalArgumentException(
+          "The command " + c.toString() + " could not be resolved to a Corider item"
+        );
+      }
+    }
+
+    CoriderUnit cu = new CoriderUnit(this, assets, u.race, u.pose, u, corider);
+
+    // Maps the corider item id (i.e. #coridermnr 'pygmy_elephant_central_rider')
+    // to a custom monster id (i.e. 5001) which will be written into the mod
+    cu.id = idHandler.nextUnitId();
+    c.args.set(0, new Arg(cu.id));
+    coriders.add(cu);
   }
 
   public static BufferedImage generateBanner(

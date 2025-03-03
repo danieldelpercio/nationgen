@@ -1,0 +1,42 @@
+-- These define the co-rider units for mounts such as vanilla's 2307, Elephant Rider,
+-- which have multiple co-riders besides the rider and the mount themselves. It works
+-- analogously to how the mounts.txt file works and how mount items work. The combined,
+-- full shape of the unit should have a #command "#coridermnr 'corider_id'" that points
+-- to the ids defined here. When the unit is parsed by NationGen and polished, it will
+-- map these corider ids into a number id that gets written into the .dm file. This id
+-- mapping happens in NationGen.java, inside the handleCorider() function.
+
+#new
+#id "pygmy_elephant_central_rider"
+#command "#copystats 273"
+#command "#copyspr 273"
+#command "#name 'Pygmy Elephant Crossbowhoburg'"
+#end
+
+#new
+#id "pygmy_elephant_austral_rider"
+#command "#copystats 273"
+#command "#copyspr 273"
+#command "#name 'Pygmy Elephant Crossbowhoburg'"
+#end
+
+#new
+#id "pygmy_elephant_oriental_rider"
+#command "#copystats 273"
+#command "#copyspr 273"
+#command "#name 'Pygmy Elephant Crossbowhoburg'"
+#end
+
+#new
+#id "pygmy_mammoth_occidental_rider"
+#command "#copystats 273"
+#command "#copyspr 273"
+#command "#name 'Pygmy Mammoth Crossbowhoburg'"
+#end
+
+#new
+#id "pygmy_mammoth_boreal_rider"
+#command "#copystats 273"
+#command "#copyspr 273"
+#command "#name 'Pygmy Mammoth Crossbowhoburg'"
+#end

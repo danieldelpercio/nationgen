@@ -39,7 +39,7 @@
 #magicpriority water 2
 #magicpriority earth 2
 
-#monsterchance 0.1
+#monsterchance 1
 
 #specialcommanderchance 0.2
 #specialcommanderfilters default_specialcommanderfilters

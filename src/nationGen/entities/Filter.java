@@ -2,6 +2,8 @@ package nationGen.entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+
 import nationGen.NationGen;
 import nationGen.chances.ChanceInc;
 import nationGen.chances.ThemeInc;
@@ -34,6 +36,36 @@ public class Filter extends Entity {
 
   public double getPower() {
     return this.power;
+  }
+
+  public boolean containsMount() {
+    Optional<Command> possibleMountmnr = this.commands
+      .stream()
+      .filter(c -> c.command.equals("#mountmnr"))
+      .findAny();
+
+    if (possibleMountmnr.isPresent()) {
+      return true;
+    }
+
+    else {
+      return false;
+    }
+  }
+
+  public boolean containsCorider() {
+    Optional<Command> possibleCoridermnr = this.commands
+      .stream()
+      .filter(c -> c.command.equals("#coridermnr"))
+      .findAny();
+
+    if (possibleCoridermnr.isPresent()) {
+      return true;
+    }
+
+    else {
+      return false;
+    }
   }
 
   @Override

@@ -15664,31 +15664,6 @@
 #mount
 #end
 
----- Version of dwarf elephants that can have their riders replaced
-#new secondshape
-#id "dwarf_elephant_multiple_rider_mount"
-#command "#name 'Dwarf Elephant'"
-#command "#spr1 ./graphics/mounts/standard/elephant_dwarf.png"
-#command "#spr2 shift"
-#command "#copystats 2307"
-#command "#itemslots 786432"
-#command "#size 3"
-#command "#hp 12"
-#command "#prot 5"
-#command "#mor 9"
-#command "#str 10"
-#command "#def 10"
-#command "#ap 12"
-#command "#mapmove 16"
-#command "#enc 2"
-#command "#undisciplined"
-#command "#magicboost 53 -5"
-#command "#transformation 0"
-#command "#gcost 10"
-#command "#rcost 4"
-#mount
-#end
-
 #new secondshape
 #id "hippo_mount"
 #command "#name 'Hippopotamus'"
@@ -16155,4 +16130,118 @@
 #command "#gcost 60"
 #command "#rcost 8"
 #mount
+#end
+
+---- Special Monster unit mounts
+
+-- Version of dwarf elephants that can have their riders replaced
+#new secondshape
+#id "dwarf_elephant_multiple_rider_mount"
+#command "#name 'Dwarf Elephant'"
+#command "#spr1 ./graphics/mounts/standard/elephant_dwarf.png"
+#command "#spr2 shift"
+#command "#copystats 2307"
+#command "#itemslots 786432"
+#command "#size 3"
+#command "#hp 12"
+#command "#prot 5"
+#command "#mor 9"
+#command "#str 10"
+#command "#def 10"
+#command "#ap 12"
+#command "#mapmove 16"
+#command "#enc 2"
+#command "#undisciplined"
+#command "#magicboost 53 -5"
+#command "#transformation 0"
+#command "#gcost 10"
+#command "#rcost 4"
+#mount
+#end
+
+#new
+#id "pygmy_elephant_mount_central"
+#command "#copystats 3540"
+#command "#copyspr 3540"
+#recolormask ./graphics/monsters/hoburg/elephant_central_recolormask.png
+#command "#name 'Pygmy War Elephant'"
+#command "#gcost 40"
+#command "#rcost 15"
+#command "#hp 32"
+#command "#size 5"
+#command "#prot 8"
+#command "#str 15"
+#command "#ap 16"
+#command "#appetite 6"
+#command "#weapon 614" -- Tusk
+#specifiedgcost
+#end
+
+#new
+#id "pygmy_elephant_mount_austral"
+#command "#copystats 3939"
+#command "#copyspr 3939"
+#recolormask ./graphics/monsters/hoburg/elephant_austral_recolormask.png
+#command "#name 'Pygmy War Elephant'"
+#command "#gcost 40"
+#command "#rcost 15"
+#command "#hp 32"
+#command "#size 5"
+#command "#prot 8"
+#command "#str 15"
+#command "#ap 16"
+#command "#appetite 6"
+#command "#weapon 614" -- Tusk
+#end
+
+#new
+#id "pygmy_elephant_mount_oriental"
+#command "#copystats 3540"
+#command "#copyspr 3540"
+#recolormask ./graphics/monsters/hoburg/elephant_oriental_recolormask.png
+#command "#gcost 40"
+#command "#rcost 15"
+#command "#hp 32"
+#command "#size 5"
+#command "#prot 8"
+#command "#str 15"
+#command "#ap 16"
+#command "#appetite 6"
+#command "#weapon 614" -- Tusk
+#end
+
+#new
+#id "pygmy_mammoth_mount_occidental"
+#command "#copystats 3542"
+#command "#copyspr 3542"
+#recolormask ./graphics/monsters/hoburg/mammoth_occidental_recolormask.png
+#command "#name 'Pygmy Mammoth'"
+#command "#gcost 50"
+#command "#rcost 15"
+#command "#hp 36"
+#command "#size 5"
+#command "#prot 10"
+#command "#str 16"
+#command "#def 6"
+#command "#ap 16"
+#command "#appetite 6"
+#command "#weapon 614" -- Tusk
+#end
+
+#new
+#id "pygmy_mammoth_mount_boreal"
+#command "#copystats 3542"
+#command "#copyspr 3542"
+#recolormask ./graphics/monsters/hoburg/mammoth_occidental_recolormask.png
+#command "#name 'Pygmy Mammoth'"
+#command "#gcost 50"
+#command "#rcost 15"
+#command "#hp 36"
+#command "#size 5"
+#command "#prot 10"
+#command "#str 16"
+#command "#def 6"
+#command "#ap 16"
+#command "#appetite 6"
+#command "#weapon 614" -- Tusk
 #end

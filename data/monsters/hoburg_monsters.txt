@@ -1,5 +1,5 @@
 #new
-#id "pygmy_elephant_central_1"
+#id "pygmy_elephant_with_coriders_central"
 #basechance 0
 #chanceinc "racetheme boreal 1"
 #chanceinc "nationcommand idealcold above 0 *0"
@@ -8,64 +8,52 @@
 #command "#copystats 150"
 #command "#spr1 ./graphics/monsters/hoburg/elephant_central.png"
 #command "#spr2 shift"
+-- TODO sprites:
+-- #command "#xspr1 ./graphics/monsters/hoburg/elephant_central_1_corider_left.png"
+-- #command "#xspr1 ./graphics/monsters/hoburg/elephant_central_no_corider_left.png"
 #recolormask ./graphics/monsters/hoburg/elephant_central_recolormask.png
-#command "#name 'Pygmy War Elephant'"
-#command "#gcost 40"
-#command "#rcost 15"
-#command "#hp 32"
-#command "#size 5"
-#command "#prot 8"
-#command "#str 15"
-#command "#ap 16"
-#command "#appetite 6"
-#command "#weapon 397" -- Kick
+#command "#name 'Pygmy War Elephant Riders'"
+#command "#mountmnr 'pygmy_elephant_mount_central'"
+#command "#coridermnr 'pygmy_elephant_central_rider'"
 #specifiedgcost
 #end
 
 #new
-#id "pygmy_elephant_austral_1"
+#id "pygmy_elephant_with_coriders_austral"
 #basechance 0
 #chanceinc "racetheme austral 1"
 #command "#copystats 2307"
 #command "#spr1 ./graphics/monsters/hoburg/elephant_austral.png"
 #command "#spr2 shift"
+-- TODO sprites:
+-- #command "#xspr1 ./graphics/monsters/hoburg/elephant_austral_1_corider_left.png"
+-- #command "#xspr1 ./graphics/monsters/hoburg/elephant_austral_no_corider_left.png"
 #recolormask ./graphics/monsters/hoburg/elephant_austral_recolormask.png
-#command "#name 'Pygmy War Elephant'"
-#command "#gcost 40"
-#command "#rcost 15"
-#command "#hp 32"
-#command "#size 5"
-#command "#prot 8"
-#command "#str 15"
-#command "#ap 16"
-#command "#appetite 6"
-#command "#weapon 397" -- Kick
+#command "#name 'Pygmy War Elephant Riders'"
+#command "#mountmnr 'pygmy_elephant_mount_austral'"
+#command "#coridermnr 'pygmy_elephant_central_rider'"
 #specifiedgcost
 #end
 
 #new
-#id "pygmy_elephant_oriental_1"
+#id "pygmy_elephant_with_coriders_oriental"
 #basechance 0
 #chanceinc "racetheme oriental 1"
 #command "#copystats 150"
 #command "#spr1 ./graphics/monsters/hoburg/elephant_oriental.png"
 #command "#spr2 shift"
+-- TODO sprites:
+-- #command "#xspr1 ./graphics/monsters/hoburg/elephant_oriental_1_corider_left.png"
+-- #command "#xspr1 ./graphics/monsters/hoburg/elephant_oriental_no_corider_left.png"
 #recolormask ./graphics/monsters/hoburg/elephant_oriental_recolormask.png
-#command "#name 'Pygmy War Elephant'"
-#command "#gcost 40"
-#command "#rcost 15"
-#command "#hp 32"
-#command "#size 5"
-#command "#prot 8"
-#command "#str 15"
-#command "#ap 16"
-#command "#appetite 6"
-#command "#weapon 397" -- Kick
+#command "#name 'Pygmy War Elephant Riders'"
+#command "#mountmnr 'pygmy_elephant_mount_oriental'"
+#command "#coridermnr 'pygmy_elephant_oriental_rider'"
 #specifiedgcost
 #end
 
 #new
-#id "pygmy_mammoth_occidental"
+#id "pygmy_mammoth_with_coriders_occidental"
 #basechance 0
 #chanceinc "racetheme occidental 2"
 #chanceinc "nationcommand idealcold below 1 *0.5"
@@ -74,24 +62,18 @@
 #command "#copystats 419"
 #command "#spr1 ./graphics/monsters/hoburg/mammoth_occidental.png"
 #command "#spr2 shift"
+-- TODO sprites:
+-- #command "#xspr1 ./graphics/monsters/hoburg/mammoth_occidental_1_corider_left.png"
+-- #command "#xspr1 ./graphics/monsters/hoburg/mammoth_occidental_no_corider_left.png"
 #recolormask ./graphics/monsters/hoburg/mammoth_occidental_recolormask.png
-#command "#name 'Pygmy Mammoth'"
-#command "#gcost 50"
-#command "#rcost 15"
-#command "#hp 36"
-#command "#size 5"
-#command "#prot 10"
-#command "#str 16"
-#command "#def 6"
-#command "#ap 16"
-#command "#appetite 6"
-#command "#weapon 397" -- Kick
-#command "#weapon bonus_sling"
+#command "#name 'Pygmy Mammoth Riders'"
+#command "#mountmnr 'pygmy_mammoth_mount_occidental'"
+#command "#coridermnr 'pygmy_mammoth_occidental_rider'"
 #specifiedgcost
 #end
 
 #new
-#id "pygmy_mammoth_boreal"
+#id "pygmy_mammoth_with_coriders_boreal"
 #basechance 0
 #chanceinc "racetheme boreal 1"
 #chanceinc "nationcommand idealcold above 1 *5"
@@ -99,19 +81,13 @@
 #command "#copystats 419"
 #command "#spr1 ./graphics/monsters/hoburg/mammoth_boreal.png"
 #command "#spr2 shift"
+-- TODO sprites:
+-- #command "#xspr1 ./graphics/monsters/hoburg/mammoth_boreal_1_corider_left.png"
+-- #command "#xspr1 ./graphics/monsters/hoburg/mammoth_boreal_no_corider_left.png"
 #recolormask ./graphics/monsters/hoburg/mammoth_boreal_recolormask.png
-#command "#name 'Pygmy Mammoth'"
-#command "#gcost 50"
-#command "#rcost 15"
-#command "#hp 36"
-#command "#size 5"
-#command "#prot 10"
-#command "#str 16"
-#command "#def 6"
-#command "#ap 16"
-#command "#appetite 6"
-#command "#weapon 397" -- Kick
-#command "#weapon bonus_javelins"
+#command "#name 'Pygmy Mammoth Riders'"
+#command "#mountmnr 'pygmy_mammoth_mount_boreal'"
+#command "#coridermnr 'pygmy_mammoth_boreal_rider'"
 #specifiedgcost
 #end
 
