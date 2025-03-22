@@ -28,7 +28,7 @@ era 2.0
 sacredpower 1.0
 
 -- Stat upgrade patterns. 1-4. Lower First = 1, Balanced = 2, Random Stats = 3, Random Pattern = 4
-statUpgradePattern 1.0
+statUpgradePattern 4.0
 
 -------------- Militia
 -- 20 / (rescost + goldcost) * 10 * militiaMultiplier = amount of specified unit in militia
