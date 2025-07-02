@@ -68,6 +68,51 @@ public class Unit {
     this.nation = n;
   }
 
+  public int getId() {
+    return this.id;
+  }
+
+  public int getRootId() {
+    int rootId = -1;
+
+    if (this.isMontag()) {
+      rootId = this.getCommand("#firstshape")
+        .map(c -> c.args.get(0).getInt())
+        .orElse(-1);
+    }
+
+    if (rootId == -1) {
+      rootId = this.getId();
+    }
+
+    return rootId;
+  }
+
+  public boolean hasCommand(String cmd) {
+    for (Command c : this.getCommands()) {
+      if (c.command.equals(cmd)) return true;
+    }
+
+    return false;
+  }
+
+  public Optional<Command> getCommand(String commandString) {
+    Command parsedCommand = Command.parse(commandString);
+    List<Command> allCommands = this.getCommands();
+    return allCommands
+      .stream()
+      .filter(c -> c.equals(parsedCommand))
+      .findFirst();
+  }
+
+  public Optional<Command> getOwnCommand(String commandString) {
+    Command parsedCommand = Command.parse(commandString);
+    return this.commands
+      .stream()
+      .filter(c -> c.equals(parsedCommand))
+      .findFirst();
+  }
+
   public Item getSlot(String s) {
     return slotmap.get(s);
   }
@@ -356,12 +401,46 @@ public class Unit {
     return slots;
   }
 
+  public boolean isMontag() {
+    return this.hasCommand("#montag") ||
+      this.pose.roles.contains("montagtroops") ||
+      this.pose.tags.containsName("montagpose");
+  }
+
   public boolean isRanged() {
-    if (getSlot("weapon") == null) return false;
+    Item weapon = getSlot("weapon");
+
+    if (weapon == null) return false;
 
     return nationGen.weapondb
-      .GetValue(getSlot("weapon").id, "rng", "0")
-      .equals("0");
+      .GetInteger(weapon.id, "rng", 0) > 0;
+  }
+
+  public boolean isSecondaryRanged() {
+    Item bonusWeapon = getSlot("bonusweapon");
+
+    if (bonusWeapon == null) return false;
+
+    return nationGen.weapondb
+      .GetInteger(bonusWeapon.id, "rng", 0) > 0;
+  }
+
+  public boolean hasRangeOfAtLeast(int range) {
+    Item weapon = getSlot("weapon");
+
+    if (weapon == null) return false;
+
+    return nationGen.weapondb
+      .GetInteger(weapon.id, "rng", 0) >= range;
+  }
+
+  public boolean hasSecondaryRangeOfAtLeast(int range) {
+    Item bonusWeapon = getSlot("bonusweapon");
+
+    if (bonusWeapon == null) return false;
+
+    return nationGen.weapondb
+      .GetInteger(bonusWeapon.id, "rng", 0) >= range;
   }
 
   private void handleRemoveDependency(Item i) {
@@ -629,14 +708,6 @@ public class Unit {
     }
 
     return level;
-  }
-
-  public boolean hasCommand(String cmd) {
-    for (Command c : this.getCommands()) {
-      if (c.command.equals(cmd)) return true;
-    }
-
-    return false;
   }
 
   public boolean hasLeaderLevel(String prefix) {

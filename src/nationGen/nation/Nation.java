@@ -21,6 +21,7 @@ import nationGen.magic.MagicPath;
 import nationGen.magic.SpellGen;
 import nationGen.misc.*;
 import nationGen.naming.Summary;
+import nationGen.nation.pd.Militia;
 import nationGen.restrictions.NationRestriction;
 import nationGen.restrictions.NationRestriction.RestrictionType;
 import nationGen.rostergeneration.*;
@@ -61,6 +62,7 @@ public class Nation {
 
   public Map<String, List<Unit>> unitlists = new LinkedHashMap<>();
   public Map<String, List<Unit>> comlists = new LinkedHashMap<>();
+  public Militia militia;
 
   public List<Race> races = new ArrayList<>();
   public String nationalitysuffix;
@@ -428,6 +430,10 @@ public class Nation {
     System.gc();
   }
 
+  private void generateMilitia() {
+    this.militia = new Militia(this, true, this.nationGen.settings);
+  }
+
   private void generateSpells() {
     // Spells
     SpellGen spellgenerator = new SpellGen(this);
@@ -610,18 +616,11 @@ public class Nation {
     }
 
     generateMonsters();
+    generateMilitia();
     SiteGenerator.generateSites(this, assets);
     generateSpells();
     generateFlag();
     getStartAffinity();
-
-    double extraPDMulti =
-      this.races.get(0).tags.getDouble("extrapdmulti").orElse(1D);
-
-    if (random.nextDouble() < 0.1 * extraPDMulti) {
-      if (random.nextDouble() < 0.02 * extraPDMulti) PDRanks = 4;
-      else PDRanks = 3;
-    }
   }
 
   private void addNationThemes() {
