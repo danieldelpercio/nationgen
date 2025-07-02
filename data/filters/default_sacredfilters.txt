@@ -1066,9 +1066,7 @@
 #command "#overcharged +2"
 #tag "path air"
 #command "#gcost +5"
-#price_per_command #hp 0.25 10
-#price_per_command #hp 0.25 19
-#price_per_command #hp 0.5 39
+#command "#gcost *1.15"
 #price_if_command above #prot 15 +5
 #price_if_command above #prot 20 +5
 #filterdesc "chargedbody desc"
@@ -1083,9 +1081,7 @@
 #command "#overcharged +4"
 #tag "path air"
 #command "#gcost +10"
-#price_per_command #hp 0.35 10
-#price_per_command #hp 0.35 19
-#price_per_command #hp 0.75 39
+#command "#gcost *1.15"
 #price_if_command above #prot 15 +8
 #price_if_command above #prot 20 +8
 #filterdesc "chargedbody desc"
