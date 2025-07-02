@@ -48,8 +48,8 @@ goldLowerTresholdChange 3
 
 -- Multiplies any resources above threshold by resMulti if rescost is at least at threshold
 -- Done after the additive thresholds above.
-resMultiTreshold 16
-resMulti 0.7
+resMultiplierTreshold 16
+resMultiplier 0.7
 
 
 -------------- Troop rosters
