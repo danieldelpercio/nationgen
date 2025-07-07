@@ -22,6 +22,7 @@ import nationGen.magic.SpellGen;
 import nationGen.misc.*;
 import nationGen.naming.Summary;
 import nationGen.nation.pd.Militia;
+import nationGen.nation.pd.PDUnitType;
 import nationGen.restrictions.NationRestriction;
 import nationGen.restrictions.NationRestriction.RestrictionType;
 import nationGen.rostergeneration.*;
@@ -1039,40 +1040,8 @@ public class Nation {
     lines.addAll(writeRecLines(false, unitlists));
     lines.addAll(writeRecLines(true, comlists));
 
-    // PD
-    PDSelector pds = new PDSelector(this, nationGen);
-
     lines.add("");
-    lines.add("#defcom1 " + pds.getIDforPD(pds.getPDCommander(1)));
-    lines.add("#defunit1 " + pds.getIDforPD(pds.getMilitia(1, 1)));
-    lines.add("#defmult1 " + pds.getMilitiaAmount(pds.getMilitia(1, 1)));
-    lines.add("#defunit1b " + pds.getIDforPD(pds.getMilitia(2, 1)));
-    lines.add("#defmult1b " + pds.getMilitiaAmount(pds.getMilitia(2, 1)));
-    if (PDRanks > 2) {
-      lines.add("#defunit1c " + pds.getIDforPD(pds.getMilitia(3, 1)));
-      lines.add("#defmult1c " + pds.getMilitiaAmount(pds.getMilitia(3, 1)));
-
-      if (PDRanks > 3) {
-        lines.add("#defunit1d " + pds.getIDforPD(pds.getMilitia(4, 1)));
-        lines.add("#defmult1d " + pds.getMilitiaAmount(pds.getMilitia(4, 1)));
-      }
-    }
-    lines.add("#defcom2 " + pds.getIDforPD(pds.getPDCommander(2)));
-    lines.add("#defunit2 " + pds.getIDforPD(pds.getMilitia(1, 2)));
-    lines.add("#defmult2 " + pds.getMilitiaAmount(pds.getMilitia(1, 2)));
-    lines.add("#defunit2b " + pds.getIDforPD(pds.getMilitia(2, 2)));
-    lines.add("#defmult2b " + pds.getMilitiaAmount(pds.getMilitia(2, 2)));
-    lines.add("");
-
-    // Wall units
-    lines.add("#wallcom " + pds.getIDforPD(pds.getPDCommander(1)));
-    lines.add("#wallunit " + pds.getIDforPD(pds.getWallUnit(true)));
-    lines.add("#wallmult " + pds.getCastleDefenderMult(pds.getWallUnit(true)));
-
-    // Gate units
-    lines.add("#guardcom " + pds.getIDforPD(pds.getPDCommander(1)));
-    lines.add("#guardunit " + pds.getIDforPD(pds.getGateUnit(true)));
-    lines.add("#guardmult " + pds.getCastleDefenderMult(pds.getGateUnit(true)));
+    lines.addAll(this.militia.writeLines());
     lines.add("");
 
     // Start army
@@ -1215,7 +1184,7 @@ public class Nation {
             "--- " +
             u.name +
             " (Unit ID " +
-            u.id +
+            u.getId() +
             "), Gold: " +
             u.getGoldCost() +
             ", Resources: " +
@@ -1270,12 +1239,12 @@ public class Nation {
             for (String tag : foreigntags) if (u.tags.containsName(tag)) {
               if (coms) {
                 lines.add(
-                  "#" + tag.substring(0, tag.length() - 3) + "com " + u.id
+                  "#" + tag.substring(0, tag.length() - 3) + "com " + u.getId()
                 );
-              } else lines.add("#" + tag + " " + u.id);
+              } else lines.add("#" + tag + " " + u.getId());
             }
 
-            if (!u.caponly) lines.add(line + " " + u.id);
+            if (!u.caponly) lines.add(line + " " + u.getId());
           }
 
           listnames.remove((str + "-" + i));
@@ -1286,12 +1255,12 @@ public class Nation {
         if (listname.startsWith(str)) for (Unit u : unitlists.get(listname)) {
           for (String tag : foreigntags) if (u.tags.containsName(tag)) {
             if (coms) lines.add(
-              "#" + tag.substring(0, tag.length() - 3) + "com " + u.id
+              "#" + tag.substring(0, tag.length() - 3) + "com " + u.getId()
             );
-            else lines.add("#" + tag + " " + u.id);
+            else lines.add("#" + tag + " " + u.getId());
           }
 
-          if (!u.caponly) lines.add(line + " " + u.id);
+          if (!u.caponly) lines.add(line + " " + u.getId());
         }
       }
     }

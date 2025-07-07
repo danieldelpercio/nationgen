@@ -89,11 +89,15 @@ public class Unit {
   }
 
   public boolean hasCommand(String cmd) {
-    for (Command c : this.getCommands()) {
-      if (c.command.equals(cmd)) return true;
-    }
+    return this.getCommands()
+      .stream()
+      .filter(c -> c.command.equals(cmd))
+      .findAny()
+      .isPresent();
+  }
 
-    return false;
+  public boolean hasExactCommand(String cmd) {
+    return this.getCommand(cmd).isPresent();
   }
 
   public Optional<Command> getCommand(String commandString) {
@@ -407,6 +411,22 @@ public class Unit {
       this.pose.tags.containsName("montagpose");
   }
 
+  public boolean isUndead() {
+    return this.hasCommand("#undead");
+  }
+
+  public boolean isAlmostUndead() {
+    return this.hasCommand("#almostundead");
+  }
+
+  public boolean isDemon() {
+    return this.hasCommand("#demon");
+  }
+
+  public boolean isMagicBeing() {
+    return this.hasCommand("#magicbeing");
+  }
+
   public boolean isRanged() {
     Item weapon = getSlot("weapon");
 
@@ -442,6 +462,8 @@ public class Unit {
     return nationGen.weapondb
       .GetInteger(bonusWeapon.id, "rng", 0) >= range;
   }
+
+  
 
   private void handleRemoveDependency(Item i) {
     if (i == null) return;
@@ -690,40 +712,21 @@ public class Unit {
     return this.name.toString(this);
   }
 
-  public String getLeaderLevel() {
-    return getLeaderLevel("");
+  public LeadershipAbility getLeadership(LeadershipType type) {
+    Command leadershipCommand = this.getCommands()
+      .stream()
+      .filter(c -> c.command.endsWith("leader"))
+      .findAny()
+      .orElse(null);
+
+    return LeadershipAbility
+      .fromModCommand(leadershipCommand)
+      .orElse(LeadershipAbility.getNoLeadership(type));
   }
 
-  public String getLeaderLevel(String prefix) {
-    String level = "ok";
-    for (Command c : this.getCommands()) {
-      if (c.command.endsWith("leader")) {
-        String lead = c.command.substring(
-          1,
-          c.command.indexOf(prefix + "leader")
-        );
-
-        if (Generic.LEADERSHIP_LEVELS.contains(lead)) level = lead;
-      }
-    }
-
-    return level;
-  }
-
-  public boolean hasLeaderLevel(String prefix) {
-    String level = null;
-    for (Command c : this.getCommands()) {
-      if (c.command.endsWith(prefix + "leader")) {
-        String lead = c.command.substring(
-          1,
-          c.command.indexOf(prefix + "leader")
-        );
-
-        if (Generic.LEADERSHIP_LEVELS.contains(lead)) level = lead;
-      }
-    }
-
-    return level != null;
+  public boolean hasLeadership(LeadershipType type) {
+    return this.getLeadership(type)
+      .equals(LeadershipAbility.getNoLeadership(type)) == false;
   }
 
   public int getResCost(boolean useSize) {

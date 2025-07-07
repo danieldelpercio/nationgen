@@ -9,8 +9,10 @@ import com.elmokki.Generic;
 
 import nationGen.Settings;
 import nationGen.Settings.SettingsType;
+import nationGen.misc.Command;
 import nationGen.misc.Tags;
 import nationGen.nation.Nation;
+import nationGen.units.LeadershipType;
 import nationGen.units.Unit;
 
 /**
@@ -29,11 +31,21 @@ import nationGen.units.Unit;
  * 6 (heh) different (or duplicated) types of national units defending it.
  */
 public class Militia {
-  private Map<PDUnitType, Unit> militia = new TreeMap<PDUnitType, Unit>();
   private Nation nation;
 
+  private Map<PDUnitType, Unit> pdUnits = new TreeMap<PDUnitType, Unit>();
+
+  private Unit pdCommander;
+  private Unit fortPdCommander;
+
+  private Unit wallUnit;
+  private Unit wallCommander;
+
+  private Unit gateUnit;
+  private Unit gateCommander;
+
   private int pdRanks = 2;
-  private int pdFortRanks = 1;
+  private int fortPdRanks = 1;
   private Double extraPdMultiplier;
 
   private Double militiaMultiplierSetting;
@@ -91,13 +103,21 @@ public class Militia {
         }
       }
 
-      this.militia.putAll(
+      this.pdUnits.putAll(
         this.generateUnfortedProvinceMilitia(this.pdRanks, isMontagAllowed)
       );
 
-      this.militia.putAll(
-        this.generateFortedProvinceMilitia(this.pdFortRanks, isMontagAllowed)
+      this.pdUnits.putAll(
+        this.generateFortedProvinceMilitia(this.fortPdRanks, isMontagAllowed)
       );
+  }
+
+  public List<PDUnitType> getUsedPdTypes(PDProvinceType type) {
+    return List.of(PDUnitType.values())
+      .stream()
+      .filter(u -> u.pdProvinceType == type)
+      .toList()
+      .subList(0, this.pdRanks);
   }
 
   public void increasePdRanks() {
@@ -105,7 +125,7 @@ public class Militia {
   }
 
   public void increaseFortPdRanks() {
-    this.pdRanks = Math.min(PDUnitNumber.values().length / 2, ++this.pdRanks);
+    this.fortPdRanks = Math.min(PDUnitNumber.values().length / 2, ++this.fortPdRanks);
   }
 
   /**
@@ -115,7 +135,19 @@ public class Militia {
    */
   public Unit getMilitiaUnit(PDUnitType type) {
     // Get the unit from the specified tier and rank
-    return this.militia.get(type);
+    return this.pdUnits.get(type);
+  }
+
+  /**
+   * Gets the multiplier for the #defmult modding command. This determines
+   * how many of the given unit are created in PD per 10 points of defense.
+   * For example, a multiplier of 20 means 2 units per point of PD.
+   * @param unit
+   * @return
+   */
+  public int getAmountOfMilitiaUnit(PDUnitType pdUnitType) {
+    Unit unit = this.getMilitiaUnit(pdUnitType);
+    return getAmountOfMilitiaUnit(unit);
   }
 
   /**
@@ -139,82 +171,52 @@ public class Militia {
     return (int) Math.round(amount);
   }
 
-  /**
-   * Select one of the nation's units to become the wall defense.
-   * @param isMontagAllowed
-   * @return
-   */
-  public Unit getWallUnit(boolean isMontagAllowed) {
-    List<Unit> candidateUnits = nation.combineTroopsToList("ranged");
-    List<Unit> goodRangedInfantry = nation.combineTroopsToList("infantry")
-      .stream()
-      .filter(u -> u.hasSecondaryRangeOfAtLeast(15))
-      .toList();
-
-    // Try first with ranged units and infantry with good ranged bonusweapons
-    candidateUnits.addAll(goodRangedInfantry);
-    removeUnsuitable(isMontagAllowed, candidateUnits);
-
-    // No options: Any infantry with any ranged
-    if (candidateUnits.size() == 0) {
-      candidateUnits = nation.combineTroopsToList("infantry")
-      .stream()
-      .filter(u -> u.isSecondaryRanged())
-      .toList();
-
-      removeUnsuitable(isMontagAllowed, candidateUnits);
+  public Unit getPdCommander() {
+    if (this.pdCommander == null) {
+      this.pdCommander = this.generatePdCommander();
     }
 
-    // No options: Any infantry
-    if (candidateUnits.size() == 0) {
-      candidateUnits = nation.combineTroopsToList("infantry");
-      removeUnsuitable(isMontagAllowed, candidateUnits);
-    }
-
-    // Try to get unit
-    Unit unit = selectWallUnit(candidateUnits);
-
-    // Failsafe: Just get something
-    if (unit == null) {
-      candidateUnits = nation.combineTroopsToList("infantry");
-      candidateUnits.addAll(nation.combineTroopsToList("mounted"));
-      candidateUnits.addAll(nation.combineTroopsToList("ranged"));
-
-      if (isMontagAllowed) {
-        candidateUnits.addAll(nation.combineTroopsToList("montagtroops"));
-      }
-
-      unit = selectWallUnit(candidateUnits);
-    }
-
-    return unit;
+    return this.pdCommander;
   }
 
-  /**
-   * Select one of the nation's units to become the gate guards.
-   * @param isMontagAllowed
-   * @return
-   */
-  public Unit getGateUnit(boolean isMontagAllowed) {
-    List<Unit> candidateUnits = nation.combineTroopsToList("infantry");
-    removeUnsuitable(isMontagAllowed, candidateUnits);
-
-    Unit unit = selectGateUnit(candidateUnits);
-
-    // Failsafe: Just get something
-    if (unit == null) {
-      candidateUnits = nation.combineTroopsToList("infantry");
-      candidateUnits.addAll(nation.combineTroopsToList("mounted"));
-      candidateUnits.addAll(nation.combineTroopsToList("ranged"));
-
-      if (isMontagAllowed) {
-        candidateUnits.addAll(nation.combineTroopsToList("montagtroops"));
-      }
-
-      unit = selectGateUnit(candidateUnits);
+  public Unit getFortPdCommander() {
+    if (this.fortPdCommander == null) {
+      this.fortPdCommander = this.generateFortPdCommander();
     }
 
-    return unit;
+    return this.fortPdCommander;
+  }
+
+  public Unit getWallUnit() {
+    if (this.wallUnit == null) {
+      this.wallUnit = this.generateWallUnit(true);
+    }
+
+    return this.wallUnit;
+  }
+
+  public Unit getWallCommander() {
+    if (this.wallCommander == null) {
+      this.wallCommander = this.generatePdCommander();
+    }
+
+    return this.wallCommander;
+  }
+
+  public Unit getGateUnit() {
+    if (this.gateUnit == null) {
+      this.gateUnit = this.generateGateUnit(true);
+    }
+
+    return this.gateUnit;
+  }
+
+  public Unit getGateCommander() {
+    if (this.gateCommander == null) {
+      this.gateCommander = this.generatePdCommander();
+    }
+
+    return this.gateCommander;
   }
 
   /**
@@ -236,6 +238,52 @@ public class Militia {
     return (int) Math.round(amount);
   }
 
+  public List<String> writeLines() {
+    List<String> lines = new ArrayList<>();
+
+    lines.add("#defcom1 " + this.getPdCommander().getRootId());
+
+    this.getUsedPdTypes(PDProvinceType.FORTED_OR_WITH_20PD)
+    .forEach(pdUnitType -> {
+      lines.add(
+        pdUnitType.getModCommand() + " " + this.getMilitiaUnit(pdUnitType)
+      );
+      
+      lines.add(
+        pdUnitType.getMultiplierModCommand() + " " + this.getAmountOfMilitiaUnit(pdUnitType)
+      );
+    });
+
+    lines.add("");
+
+    lines.add("#defcom2 " + this.getFortPdCommander().getRootId());
+
+    this.getUsedPdTypes(PDProvinceType.FORTED_WITH_20PD)
+    .forEach(pdUnitType -> {
+      lines.add(
+        pdUnitType.getModCommand() + " " + this.getMilitiaUnit(pdUnitType)
+      );
+      
+      lines.add(
+        pdUnitType.getMultiplierModCommand() + " " + this.getAmountOfMilitiaUnit(pdUnitType)
+      );
+    });
+
+    lines.add("");
+
+    // Wall units
+    lines.add("#wallcom " + this.getWallCommander().getRootId());
+    lines.add("#wallunit " + this.getWallUnit().getRootId());
+    lines.add("#wallmult " + this.getAmountOfCastleDefenders(this.getWallUnit()));
+
+    // Gate units
+    lines.add("#guardcom " + this.getGateCommander().getRootId());
+    lines.add("#guardunit " + this.getGateUnit().getRootId());
+    lines.add("#guardmult " + this.getAmountOfCastleDefenders(this.getGateUnit()));
+
+    return lines;
+  }
+
   /**
    * Specifically selects up to four of the nation's Units to be the PD defense for the
    * #defunit1 to #defunit1d commands. The minimum are two "ranks", #defunit1 and #defunit1b.
@@ -246,15 +294,7 @@ public class Militia {
    * @return
    */
   private Map<PDUnitType, Unit> generateUnfortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
-    List<PDUnitType> pdUnitTypes = List.of(
-      PDUnitType.FORTED_OR_WITH_20PD_FIRST,
-      PDUnitType.FORTED_OR_WITH_20PD_SECOND,
-      PDUnitType.FORTED_OR_WITH_20PD_THIRD,
-      PDUnitType.FORTED_OR_WITH_20PD_FOURTH
-    )
-    // Only use as many ranks as the nation rolled into
-    .subList(0, numberOfRanks);
-
+    List<PDUnitType> pdUnitTypes = this.getUsedPdTypes(PDProvinceType.FORTED_OR_WITH_20PD);
     return generateMilitia(pdUnitTypes, 1, 1, isMontagAllowed);
   }
 
@@ -270,13 +310,7 @@ public class Militia {
    * @return
    */
   private Map<PDUnitType, Unit> generateFortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
-    List<PDUnitType> pdUnitTypes = List.of(
-      PDUnitType.FORTED_WITH_20PD_FIRST,
-      PDUnitType.FORTED_WITH_20PD_SECOND
-    )
-    // Only use as many ranks as the nation rolled into
-    .subList(0, numberOfRanks);
-
+    List<PDUnitType> pdUnitTypes = this.getUsedPdTypes(PDProvinceType.FORTED_WITH_20PD);
     return generateMilitia(pdUnitTypes, 1, 1.2, isMontagAllowed);
   }
 
@@ -356,6 +390,136 @@ public class Militia {
     return militia;
   }
 
+  private Unit generatePdCommander() {
+    List<Unit> commanders = this.nation.listCommanders("commander");
+    List<Unit> priests = nation.listCommanders("priest");
+    double randomChance = this.nation.random.nextDouble();
+
+    if (randomChance < 0.05) {
+      commanders.add(0, priests.get(0));
+    }
+
+    List<Unit> pdUnits = this.getUsedPdTypes(PDProvinceType.FORTED_OR_WITH_20PD)
+      .stream()
+      .map(type -> getMilitiaUnit(type))
+      .toList();
+
+    return this.selectPdCommander(commanders, pdUnits);
+  }
+  
+  private Unit generateFortPdCommander() {
+    List<Unit> commanders = this.nation.listCommanders("commander");
+    List<Unit> priests = nation.listCommanders("priest");
+    double randomChance = this.nation.random.nextDouble();
+
+    // Chance to get a level 2 priest
+    if (randomChance < 0.15 && priests.size() > 1) {
+      commanders.add(0, priests.get(1));
+    }
+
+    // Chance to get a level 1 priest
+    else if (randomChance < 0.75) {
+      commanders.add(0, priests.get(0));
+    }
+
+    List<Unit> pdUnits = this.getUsedPdTypes(PDProvinceType.FORTED_WITH_20PD)
+      .stream()
+      .map(type -> getMilitiaUnit(type))
+      .toList();
+
+    return this.selectPdCommander(commanders, pdUnits);
+  }
+
+  private Unit selectPdCommander(List<Unit> commanderCandidates, List<Unit> pdUnits) {
+    boolean needsUndeadLeadership = pdUnits.stream()
+      .filter(u -> u.isUndead() || u.isAlmostUndead() || u.isDemon())
+      .findAny()
+      .isPresent();
+
+    boolean needsMagicLeadership = pdUnits.stream()
+      .filter(u -> u.isMagicBeing())
+      .findAny()
+      .isPresent();
+
+    List<Unit> validCommanders = commanderCandidates.stream()
+      .filter(c -> {
+        return (needsUndeadLeadership == false || c.hasLeadership(LeadershipType.UNDEAD)) &&
+            (needsMagicLeadership == false || c.hasLeadership(LeadershipType.MAGIC_BEING));
+      })
+      .toList();
+
+    Unit selectedCommander;
+
+    if (validCommanders.size() == 0) {
+      selectedCommander = commanderCandidates.getFirst();
+
+      if (needsUndeadLeadership) {
+        selectedCommander.commands.add(Command.args("#undcommand", "40"));
+      }
+
+      if (needsMagicLeadership) {
+        selectedCommander.commands.add(Command.args("#magiccommand", "40"));
+      }
+    }
+    
+    else {
+      selectedCommander = validCommanders.getFirst();
+    }
+
+    return selectedCommander;
+  }
+
+  /**
+   * Select one of the nation's units to become the wall defense.
+   * @param isMontagAllowed
+   * @return
+   */
+  private Unit generateWallUnit(boolean isMontagAllowed) {
+    List<Unit> candidateUnits = nation.combineTroopsToList("ranged");
+    List<Unit> goodRangedInfantry = nation.combineTroopsToList("infantry")
+      .stream()
+      .filter(u -> u.hasSecondaryRangeOfAtLeast(15))
+      .toList();
+
+    // Try first with ranged units and infantry with good ranged bonusweapons
+    candidateUnits.addAll(goodRangedInfantry);
+    removeUnsuitable(isMontagAllowed, candidateUnits);
+
+    // No options: Any infantry with any ranged
+    if (candidateUnits.size() == 0) {
+      candidateUnits = nation.combineTroopsToList("infantry")
+      .stream()
+      .filter(u -> u.isSecondaryRanged())
+      .toList();
+
+      removeUnsuitable(isMontagAllowed, candidateUnits);
+    }
+
+    // No options: Any infantry
+    if (candidateUnits.size() == 0) {
+      candidateUnits = nation.combineTroopsToList("infantry");
+      removeUnsuitable(isMontagAllowed, candidateUnits);
+    }
+
+    // Try to get unit
+    Unit unit = selectWallUnit(candidateUnits);
+
+    // Failsafe: Just get something
+    if (unit == null) {
+      candidateUnits = nation.combineTroopsToList("infantry");
+      candidateUnits.addAll(nation.combineTroopsToList("mounted"));
+      candidateUnits.addAll(nation.combineTroopsToList("ranged"));
+
+      if (isMontagAllowed) {
+        candidateUnits.addAll(nation.combineTroopsToList("montagtroops"));
+      }
+
+      unit = selectWallUnit(candidateUnits);
+    }
+
+    return unit;
+  }
+
   /**
    * Out of a given list of units, selects the best suited to be the wall defense.
    * @param units
@@ -384,6 +548,33 @@ public class Militia {
     }
 
     return best;
+  }
+
+  /**
+   * Select one of the nation's units to become the gate guards.
+   * @param isMontagAllowed
+   * @return
+   */
+  private Unit generateGateUnit(boolean isMontagAllowed) {
+    List<Unit> candidateUnits = nation.combineTroopsToList("infantry");
+    removeUnsuitable(isMontagAllowed, candidateUnits);
+
+    Unit unit = selectGateUnit(candidateUnits);
+
+    // Failsafe: Just get something
+    if (unit == null) {
+      candidateUnits = nation.combineTroopsToList("infantry");
+      candidateUnits.addAll(nation.combineTroopsToList("mounted"));
+      candidateUnits.addAll(nation.combineTroopsToList("ranged"));
+
+      if (isMontagAllowed) {
+        candidateUnits.addAll(nation.combineTroopsToList("montagtroops"));
+      }
+
+      unit = selectGateUnit(candidateUnits);
+    }
+
+    return unit;
   }
   
   /**

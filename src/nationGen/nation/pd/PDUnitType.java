@@ -23,6 +23,11 @@ public enum PDUnitType {
       this.pdUnitNumber.getModCommandDesignator();
   }
 
+  public String getMultiplierModCommand() {
+    return this.pdProvinceType.getMultiplierModCommand() +
+      this.pdUnitNumber.getModCommandDesignator();
+  }
+
   public Optional<PDUnitType> getByNumber(PDProvinceType provinceType, PDUnitNumber number) {
     for (PDUnitType pdUnitType : PDUnitType.values()) {
       if (pdUnitType.pdProvinceType == provinceType && pdUnitType.pdUnitNumber == number) {

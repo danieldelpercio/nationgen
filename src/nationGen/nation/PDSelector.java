@@ -42,24 +42,6 @@ public class PDSelector {
     return getCommander(1, true);
   }
 
-  public Unit getPDCommander(int rank) {
-    return getCommander(rank, false);
-  }
-
-  public int getIDforPD(Unit u) {
-    if (u.pose.tags.containsName("montagpose")) {
-      int id = -1;
-      for (Command c : u.getCommands()) if (
-        c.command.equals("#firstshape")
-      ) id = c.args.get(0).getInt();
-
-      if (id != -1) return id;
-      else return u.id;
-    } else {
-      return u.id;
-    }
-  }
-
   private Unit getCommander(int rank, boolean startarmy) {
     if (rank < 1 || rank > 2) {
       throw new IllegalArgumentException(
