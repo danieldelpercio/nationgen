@@ -42,17 +42,28 @@ public enum LeadershipAbility {
     return "#" + this.quality.getQualityString() + this.type.getModCommandType() + "leader";
   }
 
-  static Optional<LeadershipAbility> fromModCommand(Command command) {
-    return fromModCommand(command.command);
+  public static Optional<LeadershipAbility> fromModCommand(Command command) {
+    if (command == null) {
+      return Optional.empty();
+    }
+
+    return LeadershipAbility.fromModCommand(command.command);
   }
 
-  static Optional<LeadershipAbility> fromModCommand(String modCommand) {
+  public static Optional<LeadershipAbility> fromModCommand(String modCommand) {
     return Stream.of(LeadershipAbility.values())
       .filter(l -> modCommand == l.getModCommand())
       .findFirst();
   }
 
-  static LeadershipAbility getNoLeadership(LeadershipType type) {
+  public static LeadershipAbility fromTypeAndQuality(LeadershipType type, LeadershipQuality quality) {
+    return Stream.of(LeadershipAbility.values())
+      .filter(l -> l.type == type && l.quality == quality)
+      .findFirst()
+      .get();
+  }
+
+  public static LeadershipAbility getNoLeadership(LeadershipType type) {
     return Stream.of(LeadershipAbility.values())
       .filter(l -> l.type == type)
       .findFirst()

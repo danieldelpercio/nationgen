@@ -18,6 +18,9 @@ import nationGen.nation.Nation;
 import nationGen.rostergeneration.CommanderGenerator;
 import nationGen.rostergeneration.TroopGenerator;
 import nationGen.rostergeneration.montagtemplates.MageMontagTemplate;
+import nationGen.units.LeadershipAbility;
+import nationGen.units.LeadershipQuality;
+import nationGen.units.LeadershipType;
 import nationGen.units.Unit;
 
 public class MageGenerator extends TroopGenerator {
@@ -546,7 +549,7 @@ public class MageGenerator extends TroopGenerator {
     for (int i = 0; i < mages.size(); i++) {
       for (Unit u : mages.get(i)) {
         double leadership = randomizeLeadership(u, 0, getMageTier(u));
-        determineSpecialLeadership(u, false);
+        ensureSpecialLeadership(u, false);
       }
 
       this.resolveAge(mages.get(i));
@@ -1332,44 +1335,41 @@ public class MageGenerator extends TroopGenerator {
       );
       u.commands.add(new Command("#rpcost", new Arg(currentRP)));
 
-      // Determine special leadership
-      determineSpecialLeadership(u, true);
+      // Ensure mage/priest have special leadership relevant to them
+      ensureSpecialLeadership(u, true);
     }
 
     return priests;
   }
 
-  public static void determineSpecialLeadership(Unit u, boolean isPriest) {
-    boolean isUndead = false;
+  public static void ensureSpecialLeadership(Unit unit, boolean isPriest) {
+    LeadershipAbility basicLevel = unit.getLeadership(LeadershipType.NORMAL);
 
-    String basiclevel = u.getLeaderLevel();
+    for (LeadershipType leadershipType : LeadershipType.values()) {
+      LeadershipAbility leadership = unit.getLeadership(leadershipType);
+      LeadershipQuality quality = leadership.quality;
 
-    List<String> others = new ArrayList<>();
-    for (Command c : u.commands) if (c.command.equals("#undead")) {
-      isUndead = true;
-      others.add("undead");
-    } else if (c.command.equals("#almostundead")) others.add("undead");
-    else if (c.command.equals("#demon")) others.add("undead");
-    else if (c.command.equals("#magicbeing")) others.add("magic");
+      switch(leadershipType) {
+        case NORMAL:
+          break;
 
-    for (String str : others) {
-      // Undead priests almost all have elevated undead leadership, so if they have leadership bump it up a level
-      if (
-        !u.hasLeaderLevel(str) && str.equals("undead") && isUndead && isPriest
-      ) {
-        if (basiclevel.equals("no")) u.commands.add(
-          new Command("#noundeadleader")
-        );
-        else if (basiclevel.equals("poor")) u.commands.add(
-          new Command("#okayundeadleader")
-        );
-        else {
-          u.commands.add(new Command("#" + basiclevel + str + "leader"));
-          u.commands.add(Command.args("#undcommand", "+40"));
-        }
-      } else if (!u.hasLeaderLevel(str)) u.commands.add(
-        new Command("#" + basiclevel + str + "leader")
-      );
+        case UNDEAD:
+          if (unit.requiresUndeadLeadership() && isPriest) {
+            LeadershipQuality nextQuality = quality.getNext();
+            LeadershipAbility improvedLeadership = LeadershipAbility.fromTypeAndQuality(leadershipType, nextQuality);
+            Command undeadLeadershipCommand = new Command(improvedLeadership.getModCommand());
+            unit.commands.add(undeadLeadershipCommand);
+          }
+          break;
+
+        case MAGIC_BEING:
+          if (unit.isMagicBeing() && unit.hasLeadership(leadershipType) == false) {
+            LeadershipAbility magicBeingLeadership = LeadershipAbility.fromTypeAndQuality(leadershipType, basicLevel.quality);
+            Command magicBeingLeadershipCommand = new Command(magicBeingLeadership.getModCommand());
+            unit.commands.add(magicBeingLeadershipCommand);
+          }
+          break;
+      }
     }
   }
 
@@ -2560,42 +2560,46 @@ public class MageGenerator extends TroopGenerator {
     return m;
   }
 
-  private double randomizeLeadership(Unit u, double bonus, int tier) {
+  private double randomizeLeadership(Unit unit, double bonus, int tier) {
     double leaderrandom = this.random.nextDouble() + bonus;
     double leadership = 0;
     double adjustedLeadership = 0;
     double minimumLeadership = 0;
 
-    if (u.tags.containsName("priest")) leaderrandom += 0.1;
+    if (unit.isPriest()) {
+      leaderrandom += 0.1;
+    }
 
-    if (u.tags.containsName("warriormage")) {
+    if (unit.isWarriorMage()) {
       //just max out the bonus for anything with warriormage
       leaderrandom += 0.75;
-    } else {
+    }
+    
+    else {
       if (tier > 1) {
         leaderrandom += 0.1;
 
         if (tier == 3) leaderrandom += 0.1;
 
         //advanced priests are usually good leaders
-        if (u.tags.containsName("priest") && this.random.nextDouble() < 0.85) {
+        if (unit.isPriest() && this.random.nextDouble() < 0.85) {
           leaderrandom += 0.55;
           minimumLeadership = 40;
         }
       }
 
       //mages with leadership bonuses get an bigger than normal bonus
-      if (!u.tags.containsName("priest")) {
+      if (!unit.isPriest()) {
         if (
           tier == 3 ||
-          u.tags.containsName("#superior_leader") ||
-          u.tags.containsName("#good_leader")
+          unit.tags.containsName("#superior_leader") ||
+          unit.tags.containsName("#good_leader")
         ) leaderrandom += 0.4;
       }
     }
 
-    if (u.tags.containsName("#good_leader")) leaderrandom += 0.2;
-    if (u.tags.containsName("#superior_leader")) leaderrandom += 0.4;
+    if (unit.tags.containsName("#good_leader")) leaderrandom += 0.2;
+    if (unit.tags.containsName("#superior_leader")) leaderrandom += 0.4;
 
     leaderrandom += bonus;
 
@@ -2613,18 +2617,18 @@ public class MageGenerator extends TroopGenerator {
     leadership = Math.max(leadership, minimumLeadership);
 
     if (leadership > 80) {
-      u.commands.add(new Command("#expertleader"));
+      unit.commands.add(new Command("#expertleader"));
       adjustedLeadership = (Math.round(leadership / 5) * 5) - 120;
     } else if (leadership > 60) {
-      u.commands.add(new Command("#goodleader"));
+      unit.commands.add(new Command("#goodleader"));
       adjustedLeadership = (Math.round(leadership / 5) * 5) - 80;
     } else if (leadership > 10) {
-      u.commands.add(new Command("#okleader"));
+      unit.commands.add(new Command("#okleader"));
       adjustedLeadership = (Math.round(leadership / 5) * 5) - 40;
     } else if (leadership > 0) {
-      u.commands.add(new Command("#poorleader"));
+      unit.commands.add(new Command("#poorleader"));
       adjustedLeadership = (Math.round(leadership / 5) * 5) - 10;
-    } else u.commands.add(new Command("#noleader"));
+    } else unit.commands.add(new Command("#noleader"));
 
     double maximumCost = 50;
     double cost = 0;
@@ -2632,21 +2636,21 @@ public class MageGenerator extends TroopGenerator {
     cost = Math.round(leadership / 2);
 
     //priests and warriormages get a discount
-    if (u.tags.containsName("priest")) {
+    if (unit.isPriest()) {
       //high leadership priests charge a higher premium than mages - probably because you already have enough reasons to recruit the mages?
       maximumCost = 60;
 
       if (cost >= 20) cost -= 10;
       else cost -= 5;
-    } else if (u.tags.containsName("warriormage")) cost -= 10;
+    } else if (unit.isWarriorMage()) cost -= 10;
 
     cost = Math.min(cost, maximumCost);
 
-    if (adjustedLeadership != 0) u.commands.add(
+    if (adjustedLeadership != 0) unit.commands.add(
       Command.args("#command", Double.toString(adjustedLeadership))
     );
 
-    if (cost != 0) u.commands.add(
+    if (cost != 0) unit.commands.add(
       Command.args("#gcost", "+" + Double.toString(cost))
     );
 

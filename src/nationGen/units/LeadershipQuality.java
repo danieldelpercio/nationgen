@@ -39,6 +39,22 @@ public enum LeadershipQuality {
     return this.moraleBonus;
   }
 
+  public LeadershipQuality getNext() {
+    if (this.ordinal() == LeadershipQuality.values().length - 1) {
+      return this;
+    }
+
+    return LeadershipQuality.values()[this.ordinal()+1];
+  }
+
+  public LeadershipQuality getPrevious() {
+    if (this.ordinal() == 0) {
+      return this;
+    }
+
+    return LeadershipQuality.values()[this.ordinal()-1];
+  }
+
   static public Optional<LeadershipQuality> fromString(String qualityString) {
     return Stream.of(LeadershipQuality.values())
       .filter(q -> qualityString == q.getQualityString())

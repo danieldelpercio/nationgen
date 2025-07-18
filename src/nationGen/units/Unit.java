@@ -423,8 +423,30 @@ public class Unit {
     return this.hasCommand("#demon");
   }
 
+  public boolean requiresUndeadLeadership() {
+    return this.isUndead() || this.isAlmostUndead() || this.isDemon();
+  }
+
   public boolean isMagicBeing() {
     return this.hasCommand("#magicbeing");
+  }
+
+  public boolean isMage() {
+    return this.commands.stream()
+      .filter(c -> {
+        return c.command.equals("#magicskill") ||
+          c.command.equals("#custommagic");
+      })
+      .findAny()
+      .isPresent();
+  }
+
+  public boolean isWarriorMage() {
+    return this.tags.containsName("warriormage");
+  }
+
+  public boolean isPriest() {
+    return this.tags.containsName("priest");
   }
 
   public boolean isRanged() {
@@ -727,6 +749,11 @@ public class Unit {
   public boolean hasLeadership(LeadershipType type) {
     return this.getLeadership(type)
       .equals(LeadershipAbility.getNoLeadership(type)) == false;
+  }
+
+  public boolean hasAnyLeadership() {
+    return List.of(LeadershipType.values())
+      .stream().anyMatch(t -> this.hasLeadership(t) != false);
   }
 
   public int getResCost(boolean useSize) {
@@ -1217,15 +1244,9 @@ public class Unit {
       }
     }
 
-    boolean isMage = false;
-
-    for (Command c : commands) {
-      if (
-        c.command.equals("#magicskill") || c.command.equals("#custommagic")
-      ) isMage = true;
+    if (this.isMage()) {
+      MageGenerator.ensureSpecialLeadership(u, false);
     }
-
-    if (isMage) MageGenerator.determineSpecialLeadership(u, false);
 
     polished = true;
   }

@@ -11,6 +11,7 @@ import nationGen.magic.MagicPath;
 import nationGen.magic.MagicPathInts;
 import nationGen.misc.Command;
 import nationGen.nation.Nation;
+import nationGen.units.LeadershipType;
 import nationGen.units.Unit;
 
 public class DescriptionReplacer {
@@ -71,7 +72,7 @@ public class DescriptionReplacer {
       descs.put("%mount_plural%", "unspecified mounts");
     }
 
-    if (u.hasLeaderLevel("")) {
+    if (u.hasAnyLeadership()) {
       descs.put("%role%", "commanders");
 
       if (u.hasCommand("#holy")) {

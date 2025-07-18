@@ -30,7 +30,7 @@ public class Settings {
     resLowerThresholdChange,
     goldLowerThreshold,
     goldLowerThresholdChange,
-    resMultiplierTreshold,
+    resMultiplierThreshold,
     resMultiplier,
     desiredBaseSize,
     desiredRandom,

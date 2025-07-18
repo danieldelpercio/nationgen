@@ -3,6 +3,7 @@ package nationGen.nation.pd;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
+import java.util.Random;
 import java.util.TreeMap;
 
 import com.elmokki.Generic;
@@ -32,6 +33,7 @@ import nationGen.units.Unit;
  */
 public class Militia {
   private Nation nation;
+  private Random random;
 
   private Map<PDUnitType, Unit> pdUnits = new TreeMap<PDUnitType, Unit>();
 
@@ -46,14 +48,14 @@ public class Militia {
 
   private int pdRanks = 2;
   private int fortPdRanks = 1;
-  private Double extraPdMultiplier;
 
+  private Double extraPdMultiplier;
   private Double militiaMultiplierSetting;
 
   private Double resMultiplierSetting;
   private Double resUpperThreshold;
   private Double resLowerThreshold;
-  private Double resMultiplierTresholdSetting;
+  private Double resMultiplierThresholdSetting;
 
   private Double resUpperThresholdChangeSetting;
   private Double resLowerThresholdChangeSetting;
@@ -72,13 +74,14 @@ public class Militia {
 
   public Militia(Nation nation, boolean isMontagAllowed, Settings settings) {
       this.nation = nation;
+      this.random = new Random(this.nation.random.nextInt());
 
       this.militiaMultiplierSetting = settings.get(SettingsType.militiaMultiplier);
 
       this.resMultiplierSetting = settings.get(SettingsType.resMultiplier);
       this.resUpperThreshold = settings.get(SettingsType.resUpperThreshold);
       this.resLowerThreshold = settings.get(SettingsType.resLowerThreshold);
-      this.resMultiplierTresholdSetting = settings.get(SettingsType.resMultiplierTreshold);
+      this.resMultiplierThresholdSetting = settings.get(SettingsType.resMultiplierThreshold);
 
       this.resUpperThresholdChangeSetting = settings.get(SettingsType.resUpperThresholdChange);
       this.resLowerThresholdChangeSetting = settings.get(SettingsType.resLowerThresholdChange);
@@ -94,11 +97,11 @@ public class Militia {
         .getDouble("extrapdmulti")
         .orElse(1D);
 
-      if (this.nation.random.nextDouble() < 0.1 * this.extraPdMultiplier) {
+      if (this.random.nextDouble() < 0.1 * this.extraPdMultiplier) {
         this.increasePdRanks();
         this.increaseFortPdRanks();
 
-        if (this.nation.random.nextDouble() < 0.02 * this.extraPdMultiplier) {
+        if (this.random.nextDouble() < 0.02 * this.extraPdMultiplier) {
           this.increasePdRanks();
         }
       }
@@ -112,14 +115,22 @@ public class Militia {
       );
   }
 
-  public List<PDUnitType> getUsedPdTypes(PDProvinceType type) {
+  public List<PDUnitType> getUsedBasicPdTypes() {
     return List.of(PDUnitType.values())
       .stream()
-      .filter(u -> u.pdProvinceType == type)
+      .filter(u -> u.pdProvinceType == PDProvinceType.FORTED_OR_WITH_20PD)
       .toList()
       .subList(0, this.pdRanks);
   }
 
+  public List<PDUnitType> getUsedFortPdTypes() {
+    return List.of(PDUnitType.values())
+      .stream()
+      .filter(u -> u.pdProvinceType == PDProvinceType.FORTED_WITH_20PD)
+      .toList()
+      .subList(0, this.fortPdRanks);
+  }
+ 
   public void increasePdRanks() {
     this.pdRanks = Math.min(PDUnitNumber.values().length, ++this.pdRanks);
   }
@@ -238,15 +249,15 @@ public class Militia {
     return (int) Math.round(amount);
   }
 
-  public List<String> writeLines() {
+  public List<String> writeModLines() {
     List<String> lines = new ArrayList<>();
 
     lines.add("#defcom1 " + this.getPdCommander().getRootId());
 
-    this.getUsedPdTypes(PDProvinceType.FORTED_OR_WITH_20PD)
+    this.getUsedBasicPdTypes()
     .forEach(pdUnitType -> {
       lines.add(
-        pdUnitType.getModCommand() + " " + this.getMilitiaUnit(pdUnitType)
+        pdUnitType.getModCommand() + " " + this.getMilitiaUnit(pdUnitType).getRootId()
       );
       
       lines.add(
@@ -258,7 +269,7 @@ public class Militia {
 
     lines.add("#defcom2 " + this.getFortPdCommander().getRootId());
 
-    this.getUsedPdTypes(PDProvinceType.FORTED_WITH_20PD)
+    this.getUsedFortPdTypes()
     .forEach(pdUnitType -> {
       lines.add(
         pdUnitType.getModCommand() + " " + this.getMilitiaUnit(pdUnitType)
@@ -284,6 +295,42 @@ public class Militia {
     return lines;
   }
 
+  public List<String> writeDescriptionLines() {
+    List<String> lines = new ArrayList<>();
+
+    Unit pdCommander = this.getPdCommander();
+    Unit fortPdCommander = this.getFortPdCommander();
+
+    List<PDUnitType> pdUnitTypes = this.getUsedBasicPdTypes();
+    List<PDUnitType> fortPdUnitTypes = this.getUsedFortPdTypes();
+
+    lines.add("Province Defence:");
+    lines.add("------------------------------------------");
+    lines.add("* Commander 1: " + pdCommander.name);
+    lines.add("* Commander 2: " + fortPdCommander.name);
+    lines.add("");
+
+    pdUnitTypes.forEach(t -> {
+      lines.add(
+        "* Unforted PD Unit " + t.getModCommand() + ": " +
+        this.getMilitiaUnit(t).name + " - " +
+        this.getAmountOfMilitiaUnit(t) +
+        " per 10 PD"
+      );
+    });
+
+    fortPdUnitTypes.forEach(t -> {
+      lines.add(
+        "* Forted PD Unit " + t.getModCommand() + ": " +
+        this.getMilitiaUnit(t).name + " - " +
+        this.getAmountOfMilitiaUnit(t) +
+        " per 10 PD"
+      );
+    });
+    
+    return lines;
+  }
+
   /**
    * Specifically selects up to four of the nation's Units to be the PD defense for the
    * #defunit1 to #defunit1d commands. The minimum are two "ranks", #defunit1 and #defunit1b.
@@ -294,7 +341,7 @@ public class Militia {
    * @return
    */
   private Map<PDUnitType, Unit> generateUnfortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
-    List<PDUnitType> pdUnitTypes = this.getUsedPdTypes(PDProvinceType.FORTED_OR_WITH_20PD);
+    List<PDUnitType> pdUnitTypes = this.getUsedBasicPdTypes();
     return generateMilitia(pdUnitTypes, 1, 1, isMontagAllowed);
   }
 
@@ -310,8 +357,8 @@ public class Militia {
    * @return
    */
   private Map<PDUnitType, Unit> generateFortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
-    List<PDUnitType> pdUnitTypes = this.getUsedPdTypes(PDProvinceType.FORTED_WITH_20PD);
-    return generateMilitia(pdUnitTypes, 1, 1.2, isMontagAllowed);
+    List<PDUnitType> pdUnitTypes = this.getUsedFortPdTypes();
+    return generateMilitia(pdUnitTypes, 1, 0.8, isMontagAllowed);
   }
 
   /**
@@ -345,14 +392,14 @@ public class Militia {
     // Remove unit poses that may be unfit to be militia
     removeUnsuitable(isMontagAllowed, possibleUnits);
 
-    // Determine unit target gold and cost based on all available units
+    // Exclusion gold and res cost are the costs with the least chances to get picked.
+    // The less, or the more that units cost relative to the exclusion cost, the better
+    // chances they have to get selected as one of the PD units
     double exclusionGoldCost = this.getExclusionGoldCost(possibleUnits) * goldMultiplier;
     double exclusionResCost = this.getExclusionResCost(possibleUnits) * resMultiplier;
 
     // Do the magic
-    for (int i = 0; i < types.size(); i++) {
-      PDUnitType pdUnitType = types.get(i);
-
+    for (PDUnitType pdUnitType : types) {
       // Expected several different unit types to fill all PD types, but didn't get enough
       if (possibleUnits.size() == 0) {
         System.out.println(
@@ -381,8 +428,9 @@ public class Militia {
     }
 
     // Reuse the first found rank unit to fill up the remaining PD ranks
-    for (int j = militia.size(); j < types.size(); j++) {
-      PDUnitType unfilledUnitType = types.get(j);
+    // (if there are any that still remain empty)
+    for (int i = militia.size(); i < types.size(); i++) {
+      PDUnitType unfilledUnitType = types.get(i);
       Unit firstMilitiaUnit = militia.firstEntry().getValue();
       militia.put(unfilledUnitType, firstMilitiaUnit);
     }
@@ -393,13 +441,13 @@ public class Militia {
   private Unit generatePdCommander() {
     List<Unit> commanders = this.nation.listCommanders("commander");
     List<Unit> priests = nation.listCommanders("priest");
-    double randomChance = this.nation.random.nextDouble();
+    double randomChance = this.random.nextDouble();
 
     if (randomChance < 0.05) {
       commanders.add(0, priests.get(0));
     }
 
-    List<Unit> pdUnits = this.getUsedPdTypes(PDProvinceType.FORTED_OR_WITH_20PD)
+    List<Unit> pdUnits = this.getUsedBasicPdTypes()
       .stream()
       .map(type -> getMilitiaUnit(type))
       .toList();
@@ -410,7 +458,7 @@ public class Militia {
   private Unit generateFortPdCommander() {
     List<Unit> commanders = this.nation.listCommanders("commander");
     List<Unit> priests = nation.listCommanders("priest");
-    double randomChance = this.nation.random.nextDouble();
+    double randomChance = this.random.nextDouble();
 
     // Chance to get a level 2 priest
     if (randomChance < 0.15 && priests.size() > 1) {
@@ -422,7 +470,7 @@ public class Militia {
       commanders.add(0, priests.get(0));
     }
 
-    List<Unit> pdUnits = this.getUsedPdTypes(PDProvinceType.FORTED_WITH_20PD)
+    List<Unit> pdUnits = this.getUsedFortPdTypes()
       .stream()
       .map(type -> getMilitiaUnit(type))
       .toList();
@@ -894,10 +942,10 @@ public class Militia {
       res = (int) adjustedLowerResCost;
     }
     
-    if (res > this.resMultiplierTresholdSetting) {
+    if (res > this.resMultiplierThresholdSetting) {
       res = (int) (
-        this.resMultiplierTresholdSetting +
-        (res - this.resMultiplierTresholdSetting) *
+        this.resMultiplierThresholdSetting +
+        (res - this.resMultiplierThresholdSetting) *
         this.resMultiplierSetting
       );
     }

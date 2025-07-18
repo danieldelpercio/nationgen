@@ -23,6 +23,7 @@ import nationGen.misc.*;
 import nationGen.naming.Summary;
 import nationGen.nation.pd.Militia;
 import nationGen.nation.pd.PDUnitType;
+import nationGen.nation.startarmy.StartArmy;
 import nationGen.restrictions.NationRestriction;
 import nationGen.restrictions.NationRestriction.RestrictionType;
 import nationGen.rostergeneration.*;
@@ -64,6 +65,7 @@ public class Nation {
   public Map<String, List<Unit>> unitlists = new LinkedHashMap<>();
   public Map<String, List<Unit>> comlists = new LinkedHashMap<>();
   public Militia militia;
+  public StartArmy startArmy;
 
   public List<Race> races = new ArrayList<>();
   public String nationalitysuffix;
@@ -435,6 +437,14 @@ public class Nation {
     this.militia = new Militia(this, true, this.nationGen.settings);
   }
 
+  private void generateStartArmy() {
+    if (this.militia == null) {
+      this.generateMilitia();
+    }
+
+    this.startArmy = new StartArmy(this, this.militia, false, this.nationGen.settings);
+  }
+
   private void generateSpells() {
     // Spells
     SpellGen spellgenerator = new SpellGen(this);
@@ -618,6 +628,7 @@ public class Nation {
 
     generateMonsters();
     generateMilitia();
+    generateStartArmy();
     SiteGenerator.generateSites(this, assets);
     generateSpells();
     generateFlag();
@@ -1041,22 +1052,11 @@ public class Nation {
     lines.addAll(writeRecLines(true, comlists));
 
     lines.add("");
-    lines.addAll(this.militia.writeLines());
+    lines.addAll(this.militia.writeModLines());
     lines.add("");
 
-    // Start army
-    lines.add("#startcom " + pds.getStartArmyCommander().id);
-    if (comlists.get("scouts").size() > 0) lines.add(
-      "#startscout " + comlists.get("scouts").get(0).id
-    );
-    else lines.add("#startscout " + pds.getPDCommander(2).id);
-
-    lines.add("#startunittype1 " + pds.getMilitia(1, 1, false).id);
-    lines.add("#startunittype2 " + pds.getMilitia(1, 2, false).id);
-    int amount1 = pds.getStartArmyAmount(pds.getMilitia(1, 1, false));
-    lines.add("#startunitnbrs1 " + amount1);
-    int amount2 = pds.getStartArmyAmount(pds.getMilitia(1, 2, false));
-    lines.add("#startunitnbrs2 " + amount2);
+    lines.add("");
+    lines.addAll(this.startArmy.writeModLines());
     lines.add("");
 
     // Heroes
