@@ -68,6 +68,55 @@ public class Unit {
     this.nation = n;
   }
 
+  public int getId() {
+    return this.id;
+  }
+
+  public int getRootId() {
+    int rootId = -1;
+
+    if (this.isMontag()) {
+      rootId = this.getCommand("#firstshape")
+        .map(c -> c.args.get(0).getInt())
+        .orElse(-1);
+    }
+
+    if (rootId == -1) {
+      rootId = this.getId();
+    }
+
+    return rootId;
+  }
+
+  public boolean hasCommand(String cmd) {
+    return this.getCommands()
+      .stream()
+      .filter(c -> c.command.equals(cmd))
+      .findAny()
+      .isPresent();
+  }
+
+  public boolean hasExactCommand(String cmd) {
+    return this.getCommand(cmd).isPresent();
+  }
+
+  public Optional<Command> getCommand(String commandString) {
+    Command parsedCommand = Command.parse(commandString);
+    List<Command> allCommands = this.getCommands();
+    return allCommands
+      .stream()
+      .filter(c -> c.equals(parsedCommand))
+      .findFirst();
+  }
+
+  public Optional<Command> getOwnCommand(String commandString) {
+    Command parsedCommand = Command.parse(commandString);
+    return this.commands
+      .stream()
+      .filter(c -> c.equals(parsedCommand))
+      .findFirst();
+  }
+
   public Item getSlot(String s) {
     return slotmap.get(s);
   }
@@ -356,13 +405,87 @@ public class Unit {
     return slots;
   }
 
+  public boolean isMontag() {
+    return this.hasCommand("#montag") ||
+      this.pose.roles.contains("montagtroops") ||
+      this.pose.tags.containsName("montagpose");
+  }
+
+  public boolean isUndead() {
+    return this.hasCommand("#undead");
+  }
+
+  public boolean isAlmostUndead() {
+    return this.hasCommand("#almostundead");
+  }
+
+  public boolean isDemon() {
+    return this.hasCommand("#demon");
+  }
+
+  public boolean requiresUndeadLeadership() {
+    return this.isUndead() || this.isAlmostUndead() || this.isDemon();
+  }
+
+  public boolean isMagicBeing() {
+    return this.hasCommand("#magicbeing");
+  }
+
+  public boolean isMage() {
+    return this.commands.stream()
+      .filter(c -> {
+        return c.command.equals("#magicskill") ||
+          c.command.equals("#custommagic");
+      })
+      .findAny()
+      .isPresent();
+  }
+
+  public boolean isWarriorMage() {
+    return this.tags.containsName("warriormage");
+  }
+
+  public boolean isPriest() {
+    return this.tags.containsName("priest");
+  }
+
   public boolean isRanged() {
-    if (getSlot("weapon") == null) return false;
+    Item weapon = getSlot("weapon");
+
+    if (weapon == null) return false;
 
     return nationGen.weapondb
-      .GetValue(getSlot("weapon").id, "rng", "0")
-      .equals("0");
+      .GetInteger(weapon.id, "rng", 0) > 0;
   }
+
+  public boolean isSecondaryRanged() {
+    Item bonusWeapon = getSlot("bonusweapon");
+
+    if (bonusWeapon == null) return false;
+
+    return nationGen.weapondb
+      .GetInteger(bonusWeapon.id, "rng", 0) > 0;
+  }
+
+  public boolean hasRangeOfAtLeast(int range) {
+    Item weapon = getSlot("weapon");
+
+    if (weapon == null) return false;
+
+    return nationGen.weapondb
+      .GetInteger(weapon.id, "rng", 0) >= range;
+  }
+
+  public boolean hasSecondaryRangeOfAtLeast(int range) {
+    Item bonusWeapon = getSlot("bonusweapon");
+
+    if (bonusWeapon == null) return false;
+
+    return nationGen.weapondb
+      .GetInteger(bonusWeapon.id, "rng", 0) >= range;
+  }
+
+  
 
   private void handleRemoveDependency(Item i) {
     if (i == null) return;
@@ -611,48 +734,26 @@ public class Unit {
     return this.name.toString(this);
   }
 
-  public String getLeaderLevel() {
-    return getLeaderLevel("");
+  public LeadershipAbility getLeadership(LeadershipType type) {
+    Command leadershipCommand = this.getCommands()
+      .stream()
+      .filter(c -> c.command.endsWith("leader"))
+      .findAny()
+      .orElse(null);
+
+    return LeadershipAbility
+      .fromModCommand(leadershipCommand)
+      .orElse(LeadershipAbility.getNoLeadership(type));
   }
 
-  public String getLeaderLevel(String prefix) {
-    String level = "ok";
-    for (Command c : this.getCommands()) {
-      if (c.command.endsWith("leader")) {
-        String lead = c.command.substring(
-          1,
-          c.command.indexOf(prefix + "leader")
-        );
-
-        if (Generic.LEADERSHIP_LEVELS.contains(lead)) level = lead;
-      }
-    }
-
-    return level;
+  public boolean hasLeadership(LeadershipType type) {
+    return this.getLeadership(type)
+      .equals(LeadershipAbility.getNoLeadership(type)) == false;
   }
 
-  public boolean hasCommand(String cmd) {
-    for (Command c : this.getCommands()) {
-      if (c.command.equals(cmd)) return true;
-    }
-
-    return false;
-  }
-
-  public boolean hasLeaderLevel(String prefix) {
-    String level = null;
-    for (Command c : this.getCommands()) {
-      if (c.command.endsWith(prefix + "leader")) {
-        String lead = c.command.substring(
-          1,
-          c.command.indexOf(prefix + "leader")
-        );
-
-        if (Generic.LEADERSHIP_LEVELS.contains(lead)) level = lead;
-      }
-    }
-
-    return level != null;
+  public boolean hasAnyLeadership() {
+    return List.of(LeadershipType.values())
+      .stream().anyMatch(t -> this.hasLeadership(t) != false);
   }
 
   public int getResCost(boolean useSize) {
@@ -1143,15 +1244,9 @@ public class Unit {
       }
     }
 
-    boolean isMage = false;
-
-    for (Command c : commands) {
-      if (
-        c.command.equals("#magicskill") || c.command.equals("#custommagic")
-      ) isMage = true;
+    if (this.isMage()) {
+      MageGenerator.ensureSpecialLeadership(u, false);
     }
-
-    if (isMage) MageGenerator.determineSpecialLeadership(u, false);
 
     polished = true;
   }

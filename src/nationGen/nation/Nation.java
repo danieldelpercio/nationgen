@@ -21,6 +21,9 @@ import nationGen.magic.MagicPath;
 import nationGen.magic.SpellGen;
 import nationGen.misc.*;
 import nationGen.naming.Summary;
+import nationGen.nation.pd.Militia;
+import nationGen.nation.pd.PDUnitType;
+import nationGen.nation.startarmy.StartArmy;
 import nationGen.restrictions.NationRestriction;
 import nationGen.restrictions.NationRestriction.RestrictionType;
 import nationGen.rostergeneration.*;
@@ -61,6 +64,8 @@ public class Nation {
 
   public Map<String, List<Unit>> unitlists = new LinkedHashMap<>();
   public Map<String, List<Unit>> comlists = new LinkedHashMap<>();
+  public Militia militia;
+  public StartArmy startArmy;
 
   public List<Race> races = new ArrayList<>();
   public String nationalitysuffix;
@@ -428,6 +433,18 @@ public class Nation {
     System.gc();
   }
 
+  private void generateMilitia() {
+    this.militia = new Militia(this, true, this.nationGen.settings);
+  }
+
+  private void generateStartArmy() {
+    if (this.militia == null) {
+      this.generateMilitia();
+    }
+
+    this.startArmy = new StartArmy(this, this.militia, false, this.nationGen.settings);
+  }
+
   private void generateSpells() {
     // Spells
     SpellGen spellgenerator = new SpellGen(this);
@@ -610,18 +627,12 @@ public class Nation {
     }
 
     generateMonsters();
+    generateMilitia();
+    generateStartArmy();
     SiteGenerator.generateSites(this, assets);
     generateSpells();
     generateFlag();
     getStartAffinity();
-
-    double extraPDMulti =
-      this.races.get(0).tags.getDouble("extrapdmulti").orElse(1D);
-
-    if (random.nextDouble() < 0.1 * extraPDMulti) {
-      if (random.nextDouble() < 0.02 * extraPDMulti) PDRanks = 4;
-      else PDRanks = 3;
-    }
   }
 
   private void addNationThemes() {
@@ -1040,55 +1051,12 @@ public class Nation {
     lines.addAll(writeRecLines(false, unitlists));
     lines.addAll(writeRecLines(true, comlists));
 
-    // PD
-    PDSelector pds = new PDSelector(this, nationGen);
-
     lines.add("");
-    lines.add("#defcom1 " + pds.getIDforPD(pds.getPDCommander(1)));
-    lines.add("#defunit1 " + pds.getIDforPD(pds.getMilitia(1, 1)));
-    lines.add("#defmult1 " + pds.getMilitiaAmount(pds.getMilitia(1, 1)));
-    lines.add("#defunit1b " + pds.getIDforPD(pds.getMilitia(2, 1)));
-    lines.add("#defmult1b " + pds.getMilitiaAmount(pds.getMilitia(2, 1)));
-    if (PDRanks > 2) {
-      lines.add("#defunit1c " + pds.getIDforPD(pds.getMilitia(3, 1)));
-      lines.add("#defmult1c " + pds.getMilitiaAmount(pds.getMilitia(3, 1)));
-
-      if (PDRanks > 3) {
-        lines.add("#defunit1d " + pds.getIDforPD(pds.getMilitia(4, 1)));
-        lines.add("#defmult1d " + pds.getMilitiaAmount(pds.getMilitia(4, 1)));
-      }
-    }
-    lines.add("#defcom2 " + pds.getIDforPD(pds.getPDCommander(2)));
-    lines.add("#defunit2 " + pds.getIDforPD(pds.getMilitia(1, 2)));
-    lines.add("#defmult2 " + pds.getMilitiaAmount(pds.getMilitia(1, 2)));
-    lines.add("#defunit2b " + pds.getIDforPD(pds.getMilitia(2, 2)));
-    lines.add("#defmult2b " + pds.getMilitiaAmount(pds.getMilitia(2, 2)));
+    lines.addAll(this.militia.writeModLines());
     lines.add("");
 
-    // Wall units
-    lines.add("#wallcom " + pds.getIDforPD(pds.getPDCommander(1)));
-    lines.add("#wallunit " + pds.getIDforPD(pds.getWallUnit(true)));
-    lines.add("#wallmult " + pds.getCastleDefenderMult(pds.getWallUnit(true)));
-
-    // Gate units
-    lines.add("#guardcom " + pds.getIDforPD(pds.getPDCommander(1)));
-    lines.add("#guardunit " + pds.getIDforPD(pds.getGateUnit(true)));
-    lines.add("#guardmult " + pds.getCastleDefenderMult(pds.getGateUnit(true)));
     lines.add("");
-
-    // Start army
-    lines.add("#startcom " + pds.getStartArmyCommander().id);
-    if (comlists.get("scouts").size() > 0) lines.add(
-      "#startscout " + comlists.get("scouts").get(0).id
-    );
-    else lines.add("#startscout " + pds.getPDCommander(2).id);
-
-    lines.add("#startunittype1 " + pds.getMilitia(1, 1, false).id);
-    lines.add("#startunittype2 " + pds.getMilitia(1, 2, false).id);
-    int amount1 = pds.getStartArmyAmount(pds.getMilitia(1, 1, false));
-    lines.add("#startunitnbrs1 " + amount1);
-    int amount2 = pds.getStartArmyAmount(pds.getMilitia(1, 2, false));
-    lines.add("#startunitnbrs2 " + amount2);
+    lines.addAll(this.startArmy.writeModLines());
     lines.add("");
 
     // Heroes
@@ -1216,7 +1184,7 @@ public class Nation {
             "--- " +
             u.name +
             " (Unit ID " +
-            u.id +
+            u.getId() +
             "), Gold: " +
             u.getGoldCost() +
             ", Resources: " +
@@ -1271,12 +1239,12 @@ public class Nation {
             for (String tag : foreigntags) if (u.tags.containsName(tag)) {
               if (coms) {
                 lines.add(
-                  "#" + tag.substring(0, tag.length() - 3) + "com " + u.id
+                  "#" + tag.substring(0, tag.length() - 3) + "com " + u.getId()
                 );
-              } else lines.add("#" + tag + " " + u.id);
+              } else lines.add("#" + tag + " " + u.getId());
             }
 
-            if (!u.caponly) lines.add(line + " " + u.id);
+            if (!u.caponly) lines.add(line + " " + u.getId());
           }
 
           listnames.remove((str + "-" + i));
@@ -1287,12 +1255,12 @@ public class Nation {
         if (listname.startsWith(str)) for (Unit u : unitlists.get(listname)) {
           for (String tag : foreigntags) if (u.tags.containsName(tag)) {
             if (coms) lines.add(
-              "#" + tag.substring(0, tag.length() - 3) + "com " + u.id
+              "#" + tag.substring(0, tag.length() - 3) + "com " + u.getId()
             );
-            else lines.add("#" + tag + " " + u.id);
+            else lines.add("#" + tag + " " + u.getId());
           }
 
-          if (!u.caponly) lines.add(line + " " + u.id);
+          if (!u.caponly) lines.add(line + " " + u.getId());
         }
       }
     }

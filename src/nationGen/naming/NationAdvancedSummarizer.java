@@ -15,7 +15,6 @@ import nationGen.misc.Command;
 import nationGen.misc.FileUtil;
 import nationGen.misc.Site;
 import nationGen.nation.Nation;
-import nationGen.nation.PDSelector;
 import nationGen.units.Unit;
 
 public class NationAdvancedSummarizer {
@@ -26,65 +25,6 @@ public class NationAdvancedSummarizer {
   public NationAdvancedSummarizer(Dom3DB armor, Dom3DB weapon) {
     this.armordb = armor;
     this.weapondb = weapon;
-  }
-
-  private List<String> printPDInfo(Nation n) {
-    PDSelector pds = new PDSelector(n, n.nationGen);
-
-    List<String> lines = new ArrayList<>();
-    lines.add("Province defence:");
-    lines.add("* Commander 1: " + pds.getPDCommander(1).name);
-    lines.add("* Commander 2: " + pds.getPDCommander(2).name);
-
-    lines.add(
-      "* Troop 1a: " +
-      pds.getMilitia(1, 1).name +
-      " - " +
-      pds.getStartArmyAmount(pds.getMilitia(1, 1)) +
-      " per 10 PD"
-    );
-    lines.add(
-      "* Troop 1b: " +
-      pds.getMilitia(2, 1).name +
-      " - " +
-      pds.getStartArmyAmount(pds.getMilitia(2, 1)) +
-      " per 10 PD"
-    );
-    if (n.PDRanks > 2) {
-      lines.add(
-        "* Troop 1c: " +
-        pds.getMilitia(3, 1).name +
-        " - " +
-        pds.getStartArmyAmount(pds.getMilitia(3, 1)) +
-        " per 10 PD"
-      );
-      if (n.PDRanks > 3) {
-        lines.add(
-          "* Troop 1d: " +
-          pds.getMilitia(4, 1).name +
-          " - " +
-          pds.getStartArmyAmount(pds.getMilitia(4, 1)) +
-          " per 10 PD"
-        );
-      }
-    }
-
-    lines.add(
-      "* Troop 2a: " +
-      pds.getMilitia(1, 2).name +
-      " - " +
-      pds.getStartArmyAmount(pds.getMilitia(1, 2)) +
-      " per 10 PD"
-    );
-    lines.add(
-      "* Troop 2b: " +
-      pds.getMilitia(2, 2).name +
-      " - " +
-      pds.getStartArmyAmount(pds.getMilitia(2, 2)) +
-      " per 10 PD"
-    );
-
-    return lines;
   }
 
   private List<String> printUnits(String role, String tag, Nation n) {
@@ -276,7 +216,7 @@ public class NationAdvancedSummarizer {
       for (Unit u : n.heroes) lines.addAll(getTroopInfo(u));
       lines.add("");
 
-      lines.addAll(printPDInfo(n));
+      lines.addAll(n.militia.writeDescriptionLines());
       lines.add("");
 
       // Spells
