@@ -1052,55 +1052,64 @@ public class Unit {
     //u.commands.add(new Command("#gcost", Args.of(new Arg(92)), "+10000"));
 
     // #price_per_command
-    for (Args args : Generic.getAllUnitTags(this).getAllArgs(
-      "price_per_command"
-    )) {
-      int commandValue = u.getCommandValue(args.get(0).get(), 0);
+    Tags unitTags = Generic.getAllUnitTags(this);
+    List<Args> pricePerCommandArgs = unitTags.getAllArgs("price_per_command");
+
+    for (Args args : pricePerCommandArgs) {
+      String commandString = args.get(0).get();
+      int commandValue = u.getCommandValue(commandString, 0);
       double cost = args.get(1).getDouble();
       int threshold = 0;
-      if (args.size() > 2) threshold = args.get(2).getInt();
 
-      if (commandValue > threshold) {
-        commandValue -= threshold;
+      if (args.size() > 2) {
+        threshold = args.get(2).getInt();
+      }
 
-        int total = (int) Math.round((double) commandValue * cost);
+      if (commandValue <= threshold) {
+        continue;
+      }
 
-        if (total > 0) {
-          commands.add(Command.args("#gcost", "+" + total));
-        } else {
-          commands.add(Command.args("#gcost", "" + total));
-        }
+      int valueOverThreshold = commandValue - threshold;
+      int modifiedCost = (int) Math.round((double) valueOverThreshold * cost);
+      String modifiedCostString = Command.parseValueToAddString(modifiedCost);
+
+      if (modifiedCost != 0) {
+        commands.add(Command.args("#gcost", modifiedCostString));
       }
     }
 
     // #price_per_applied_filter
-    for (Args args : Generic.getAllUnitTags(this).getAllArgs(
-      "price_per_applied_filter"
-    )) {
+    List<Args> pricePerAppliedFilterArgs = unitTags.getAllArgs("price_per_applied_filter");
+
+    for (Args args : pricePerAppliedFilterArgs) {
       int filterPower = args.get(0).getInt();
-      long numberOfAppliedFilters = u.appliedFilters.stream().filter(f -> f.power >= filterPower).count();
+      int numberOfAppliedFilters = (int) u.appliedFilters.stream().filter(f -> f.power >= filterPower).count();
       double cost = args.get(1).getDouble();
       int threshold = 0;
-      if (args.size() > 2) threshold = args.get(2).getInt();
 
-      if (numberOfAppliedFilters > threshold) {
-        numberOfAppliedFilters -= threshold;
+      if (args.size() > 2) {
+        threshold = args.get(2).getInt();
+      }
 
-        int total = (int) Math.round((double) numberOfAppliedFilters * cost);
+      if (numberOfAppliedFilters <= threshold) {
+        continue;
+      }
 
-        if (total > 0) {
-          commands.add(Command.args("#gcost", "+" + total));
-        } else {
-          commands.add(Command.args("#gcost", "" + total));
-        }
+      int numberOfFiltersOverThreshold = numberOfAppliedFilters - threshold;
+      int modifiedCost = (int) Math.round((double) numberOfFiltersOverThreshold * cost);
+      String modifiedCostString = Command.parseValueToAddString(modifiedCost);
+
+      if (modifiedCost != 0) {
+        commands.add(Command.args("#gcost", modifiedCostString));
       }
     }
 
     // #price_if_command
-    for (Args args : Generic.getAllUnitTags(this).getAllArgs(
-      "price_if_command"
-    )) {
-      int commandValue = u.getCommandValue(args.get(args.size() - 3).get(), 0);
+    List<Args> priceIfCommandArgs = unitTags.getAllArgs("price_if_command");
+
+    for (Args args : priceIfCommandArgs) {
+      String commandString = args.get(args.size() - 3).get();
+      int commandValue = u.getCommandValue(commandString, 0);
       int target = args.get(args.size() - 2).getInt();
       String cost = args.get(args.size() - 1).get();
 

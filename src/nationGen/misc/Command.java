@@ -76,6 +76,11 @@ public class Command {
     return new Command(commandName, args, comment);
   }
 
+  public static String parseValueToAddString(int value) {
+    String operator = (value > 0) ? "+" : "";
+    return operator + value;
+  }
+
   /**
    * Writes a String for how Dominions expects a mod command line to look like, with strings in quotes and comments
    * following dashes.
