@@ -3,6 +3,7 @@ package nationGen.nation.startarmy;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.Collectors;
 
 import com.elmokki.Generic;
 
@@ -195,7 +196,7 @@ public class StartArmy {
     List<Unit> pdUnits = militia.getUsedBasicPdTypes()
       .stream()
       .map(type -> militia.getMilitiaUnit(type))
-      .toList();
+      .collect(Collectors.toList());
 
     return this.selectArmyCommander(commanders, pdUnits);
   }
@@ -228,7 +229,7 @@ public class StartArmy {
         return (needsUndeadLeadership == false || c.hasLeadership(LeadershipType.UNDEAD)) &&
             (needsMagicLeadership == false || c.hasLeadership(LeadershipType.MAGIC_BEING));
       })
-      .toList();
+      .collect(Collectors.toList());
 
     Unit selectedCommander;
 

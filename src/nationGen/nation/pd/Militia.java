@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.TreeMap;
+import java.util.stream.Collectors;
 
 import com.elmokki.Generic;
 
@@ -119,7 +120,7 @@ public class Militia {
     return List.of(PDUnitType.values())
       .stream()
       .filter(u -> u.pdProvinceType == PDProvinceType.FORTED_OR_WITH_20PD)
-      .toList()
+      .collect(Collectors.toList())
       .subList(0, this.pdRanks);
   }
 
@@ -127,7 +128,7 @@ public class Militia {
     return List.of(PDUnitType.values())
       .stream()
       .filter(u -> u.pdProvinceType == PDProvinceType.FORTED_WITH_20PD)
-      .toList()
+      .collect(Collectors.toList())
       .subList(0, this.fortPdRanks);
   }
  
@@ -450,7 +451,7 @@ public class Militia {
     List<Unit> pdUnits = this.getUsedBasicPdTypes()
       .stream()
       .map(type -> getMilitiaUnit(type))
-      .toList();
+      .collect(Collectors.toList());
 
     return this.selectPdCommander(commanders, pdUnits);
   }
@@ -473,7 +474,7 @@ public class Militia {
     List<Unit> pdUnits = this.getUsedFortPdTypes()
       .stream()
       .map(type -> getMilitiaUnit(type))
-      .toList();
+      .collect(Collectors.toList());
 
     return this.selectPdCommander(commanders, pdUnits);
   }
@@ -494,7 +495,7 @@ public class Militia {
         return (needsUndeadLeadership == false || c.hasLeadership(LeadershipType.UNDEAD)) &&
             (needsMagicLeadership == false || c.hasLeadership(LeadershipType.MAGIC_BEING));
       })
-      .toList();
+      .collect(Collectors.toList());
 
     Unit selectedCommander;
 
@@ -527,7 +528,7 @@ public class Militia {
     List<Unit> goodRangedInfantry = nation.combineTroopsToList("infantry")
       .stream()
       .filter(u -> u.hasSecondaryRangeOfAtLeast(15))
-      .toList();
+      .collect(Collectors.toList());
 
     // Try first with ranged units and infantry with good ranged bonusweapons
     candidateUnits.addAll(goodRangedInfantry);
@@ -538,7 +539,7 @@ public class Militia {
       candidateUnits = nation.combineTroopsToList("infantry")
       .stream()
       .filter(u -> u.isSecondaryRanged())
-      .toList();
+      .collect(Collectors.toList());
 
       removeUnsuitable(isMontagAllowed, candidateUnits);
     }
@@ -783,7 +784,7 @@ public class Militia {
     List<Unit> filteredUnits = possibleUnits
       .stream()
       .filter(u -> canBeRanged || u.isRanged() == false)
-      .toList();
+      .collect(Collectors.toList());
 
     Unit best = filteredUnits.get(0);
     double bestscore = scoreForMilitia(best, exclusionGoldCost, exclusionResCost);
