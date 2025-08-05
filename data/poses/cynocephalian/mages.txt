@@ -1,6 +1,7 @@
 ---------- Mages and Priests
 
 #newpose
+#id "dog mage/priest"
 #role "mage"
 #role "priest"
 
