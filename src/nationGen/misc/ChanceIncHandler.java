@@ -284,7 +284,7 @@ public class ChanceIncHandler {
   ) {
     return filters
       .stream()
-      .filter(f -> f.sharesTypeWith(oldfilters))
+      .filter(f -> f.sharesTypeWith(oldfilters) == false)
       .collect(Collectors.toList());
   }
 
