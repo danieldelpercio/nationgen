@@ -929,9 +929,9 @@ public class Unit {
   }
 
   private boolean handleLowEncCommandPolish(Tags tags) {
-    if (!tags.containsName("lowenctreshold")) return false;
+    if (!tags.containsName("lowencthreshold")) return false;
 
-    int treshold = tags.getValue("lowenctreshold").orElseThrow().getInt();
+    int treshold = tags.getValue("lowencthreshold").orElseThrow().getInt();
 
     int enc = 0;
     if (getSlot("armor") != null) enc +=
