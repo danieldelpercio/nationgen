@@ -837,7 +837,7 @@
 #new 
 #name "holy desc"
 #basechance 0.2
-#primarycommand "#holy"
+#mutuallyexclusive "#holy"
 #command "#holy"
 #set "wondrous"
 #prev "start"

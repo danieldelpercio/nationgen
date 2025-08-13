@@ -2898,3 +2898,84 @@
 #command "#magic"
 #command "#name 'Golden Orb'"
 #end
+
+---- Creature Weapons
+
+#new customweapon
+#id "black_dragonblood_breath"
+#command "#dmg 2"
+#command "#aoe 1"
+#command "#acid"
+#command "#bonus"
+#command "#norepel"
+#command "#unrepel"
+#command "#natural"
+#command "#ammo 3"
+#command "#magic"
+#command "#thirdstr"
+#command "#armorpiercing"
+#command "#name 'Acidulous Breath'"
+#end
+
+#new customweapon
+#id "blue_dragonblood_breath"
+#command "#dmg 2"
+#command "#aoe 1"
+#command "#cold"
+#command "#bonus"
+#command "#norepel"
+#command "#unrepel"
+#command "#natural"
+#command "#ammo 3"
+#command "#magic"
+#command "#thirdstr"
+#command "#armorpiercing"
+#command "#name 'Wintry Breath'"
+#end
+
+#new customweapon
+#id "green_dragonblood_breath"
+#command "#dmg 3"
+#command "#poison"
+#command "#bonus"
+#command "#norepel"
+#command "#unrepel"
+#command "#natural"
+#command "#ammo 3"
+#command "#magic"
+#command "#nostr"
+#command "#armornegating"
+#command "#name 'Poisonous Breath'"
+#end
+
+#new customweapon
+#id "red_dragonblood_breath"
+#command "#dmg 2"
+#command "#aoe 1"
+#command "#fire"
+#command "#bonus"
+#command "#norepel"
+#command "#unrepel"
+#command "#natural"
+#command "#ammo 3"
+#command "#magic"
+#command "#thirdstr"
+#command "#armorpiercing"
+#command "#name 'Fiery Breath'"
+#end
+
+#new customweapon
+#id "white_dragonblood_breath"
+#command "#dmg -4"
+#command "#shock"
+#command "#bonus"
+#command "#norepel"
+#command "#unrepel"
+#command "#natural"
+#command "#ammo 3"
+#command "#magic"
+#command "#thirdstr"
+#command "#secondaryeffectalways 704"
+#command "#armornegating"
+#command "#name 'Lightning Breath'"
+#end

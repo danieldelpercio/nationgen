@@ -28,11 +28,11 @@
 
 #new
 #id "darkvision 50"
-#primarycommand "#darkvision"
-#primarycommand "#blind"
-#primarycommand "#spiritsight"
-#primarycommand "#undead"
-#primarycommand "#demon"
+#mutuallyexclusive "#darkvision"
+#mutuallyexclusive "#blind"
+#mutuallyexclusive "#spiritsight"
+#mutuallyexclusive "#undead"
+#mutuallyexclusive "#demon"
 #description "Dark vision (50)"
 #chance 0.5
 #command "#darkvision +50"
@@ -41,7 +41,7 @@
 
 #new
 #id "forestsurvival"
-#primarycommand "#forestsurvival"
+#mutuallyexclusive "#forestsurvival"
 #description "Forest survival"
 #chance 0.5
 #command "#forestsurvival"
@@ -50,7 +50,7 @@
 
 #new
 #id "swampsurvival"
-#primarycommand "#swampsurvival"
+#mutuallyexclusive "#swampsurvival"
 #description "Swamp survival"
 #chance 0.5
 #command "#swampsurvival"
@@ -59,7 +59,7 @@
 
 #new
 #id "wastesurvival"
-#primarycommand "#wastesurvival"
+#mutuallyexclusive "#wastesurvival"
 #description "Waste survival"
 #chance 0.5
 #command "#wastesurvival"
@@ -68,7 +68,7 @@
 
 #new
 #id "mountainsurvival"
-#primarycommand "#mountainsurvival"
+#mutuallyexclusive "#mountainsurvival"
 #description "Mountain survival"
 #chance 0.5
 #command "#mountainsurvival"
@@ -80,10 +80,11 @@
 #tag "faeblood"
 #description "Fae blood"
 #chance 0.3
-#primarycommand #glamour
+#mutuallyexclusive #glamour
 #command "#mr +1"
 #command "#spellsinger"
 #filterdesc "faeblood desc"
+#ancestry_trait
 #end
 
 #new
@@ -107,7 +108,7 @@
 #id "stocky"
 #tag "stocky"
 #chance 0.3
-#primarycommand #undead
+#mutuallyexclusive #undead
 #command "#mr -1"
 #command "#enc -1"
 #command "#hp +2"
@@ -130,7 +131,7 @@
 #new
 #id "Myopic"
 #chance 0.3
-#primarycommand #blind
+#mutuallyexclusive #blind
 #command "#prec -1"
 #filterdesc "myopic desc"
 #end
@@ -138,7 +139,7 @@
 #new
 #id "Keen eyed"
 #chance 0.3
-#primarycommand #blind
+#mutuallyexclusive #blind
 #command "#prec +1"
 #filterdesc "keen eyed desc"
 #end
@@ -184,7 +185,7 @@
 #new
 #id "Sickly"
 #chance 0.015
-#primarycommand "#heal"
+#mutuallyexclusive "#heal"
 #command "#startaff +10"
 #description "Sick"
 #filterdesc "sickly desc"
@@ -211,7 +212,7 @@
 #new
 #id "blind"
 #chance 0.025
-#primarycommand "#blind"
+#mutuallyexclusive "#blind"
 #command "#blind"
 #filterdesc "blind desc"
 #end
@@ -219,7 +220,7 @@
 #new
 #id "spiritsight"
 #chance 0.025
-#primarycommand "#spiritsight"
+#mutuallyexclusive "#spiritsight"
 #command "#spiritsight"
 #filterdesc "spiritsight desc"
 #end
@@ -227,7 +228,7 @@
 #new
 #id "magicbeing"
 #chance 0.0125
-#primarycommand "#magicbeing"
+#mutuallyexclusive "#magicbeing"
 #command "#magicbeing"
 #command "#mr +2"
 #filterdesc "magicbeing desc"
@@ -236,7 +237,7 @@
 #new
 #id "demonblood"
 #chance 0.0125
-#primarycommand "#demon"
+#mutuallyexclusive "#demon"
 #command "#demon"
 #command "#mr +1"
 #command "#gcost +4"
@@ -244,14 +245,15 @@
 #command "#hp +1"
 #chanceinc anymagic blood *2
 #filterdesc "demonblood desc"
+#ancestry_trait
 #end
 
 #new
 #id "pooramphibian"
 #chance 0.0
 #chanceinc "magic water 0.006125"
-#primarycommand "#pooramphibian"
-#primarycommand "#amphibian"
+#mutuallyexclusive "#pooramphibian"
+#mutuallyexclusive "#amphibian"
 #command "#pooramphibian"
 #theme "toadtotem"
 #theme "totemanimal"
@@ -299,8 +301,8 @@
 #new
 #id "Resilient"
 #chance 0.05
-#primarycommand #demon
-#primarycommand #undead
+#mutuallyexclusive #demon
+#mutuallyexclusive #undead
 #command "#diseaseres 25"
 #filterdesc "resilient desc"
 #end
@@ -325,7 +327,7 @@
 #new
 #id "golem"
 #chance 0.00625
-#primarycommand "#stonebeing"
+#mutuallyexclusive "#stonebeing"
 #command "#stonebeing"
 #command "#ap -4"
 #command "#prot +4"
@@ -335,7 +337,7 @@
 #new
 #id "golem"
 #chance 0.00625
-#primarycommand "#stonebeing"
+#mutuallyexclusive "#stonebeing"
 #command "#stonebeing"
 #command "#ap -2"
 #command "#prot +2"
@@ -346,7 +348,7 @@
 #id "maritime"
 #chance 0.05
 #commanderonly
-#primarycommand "#sailing"
+#mutuallyexclusive "#sailing"
 #command "#sailing 999 3"
 #command "#gcost *1.1"
 #filterdesc "maritime desc"
@@ -356,9 +358,9 @@
 #id "stealthy"
 #basechance 0.05
 #trooponly
-#primarycommand "#stealthy"
+#mutuallyexclusive "#stealthy"
 #lowenccommand "#stealthy +0"
-#lowenctreshold 2
+#lowencthreshold 2
 #filterdesc "stealthy desc"
 #end
 
@@ -431,7 +433,7 @@
 #new
 #id "cannibal"
 #chance 0.025
-#primarycommand "#corpseeater"
+#mutuallyexclusive "#corpseeater"
 #command "#corpseeater 2"
 #command "#deadhp 1"
 #command "#maxdeadhp 6"

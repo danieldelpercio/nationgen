@@ -401,8 +401,8 @@ If a montag unit category pose gets this filter, the montag units will not inher
 #type <string>
 Units/nations/whatever can have only one filter of a type.
 
-#primarycommand <command>
-When checking if we're trying to add something that won't change the unit, we only consider commands marked with #primarycommand. For example a filter giving #ethereal and #gcost +15 will trigger on an ethereal unit thanks to the gold cost changing the unit. However, if you set #primarycommand #ethereal, only #ethereal will be considered and thus an ethereal unit won't get the filter in question.
+#mutuallyexclusive <command>
+When checking if we're trying to add something that won't change the unit, we only consider commands marked with #mutuallyexclusive. For example a filter giving #ethereal and #gcost +15 will trigger on an ethereal unit thanks to the gold cost changing the unit. However, if you set #mutuallyexclusive #ethereal, only #ethereal will be considered and thus an ethereal unit won't get the filter in question.
 
 #commanderonly
 #trooponly

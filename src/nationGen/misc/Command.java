@@ -101,6 +101,20 @@ public class Command {
     );
   }
 
+  public Boolean isShapeshiftCommand() {
+    return this.command.equals("#shapechange") ||
+      this.command.equals("#secondshape") ||
+      this.command.equals("#secondtmpshape");
+  }
+
+  public Boolean hasArgs() {
+    return this.args.isEmpty() == false;
+  }
+
+  public Boolean isBoolean() {
+    return this.args.isEmpty();
+  }
+
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;

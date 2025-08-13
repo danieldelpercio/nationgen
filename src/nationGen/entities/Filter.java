@@ -40,6 +40,43 @@ public class Filter extends Entity {
     return this.name;
   }
 
+  public Boolean isShapeshiftFilter() {
+    return this.getCommands()
+      .stream()
+      .anyMatch(Command::isShapeshiftCommand);
+  }
+
+  public Boolean hasType(String type) {
+    return this.types.contains(type);
+  }
+
+  public Boolean hasCategory(String category) {
+    return this.hasType(category);
+  }
+
+  public Boolean sharesTypeWith(Filter otherFilter) {
+    return sharesTypeWith(List.of(otherFilter));
+  }
+
+  public <E extends Filter> Boolean sharesTypeWith(List<E> otherFilters) {
+    return otherFilters
+      .stream()
+      .anyMatch(otherFilter -> {
+        return this.types
+          .stream()
+          .anyMatch(type -> otherFilter.hasType(type));
+      });
+  }
+
+  public Boolean hasCommand(Command command) {
+    String commandBase = command.command;
+    return this.getCommands().stream().anyMatch(fc -> fc.command.equals(commandBase));
+  }
+
+  public Boolean hasAnyCommand() {
+    return this.getCommands().isEmpty() == false;
+  }
+
   @Override
   public void handleOwnCommand(Command command) {
     try {

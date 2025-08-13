@@ -95,6 +95,10 @@ public class Tags {
     return this.tagValues.getOrDefault(name, new ArrayList<>());
   }
 
+  public List<String> getKeys() {
+    return new ArrayList<String>(this.tagValues.keySet());
+  }
+
   public Stream<Arg> streamAllValues(String name) {
     return getAllArgs(name).stream().map(l -> l.get(0));
   }

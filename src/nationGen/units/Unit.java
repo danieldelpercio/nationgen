@@ -485,7 +485,12 @@ public class Unit {
       .GetInteger(bonusWeapon.id, "rng", 0) >= range;
   }
 
-  
+  public Boolean isShapeshifter() {
+    return this.getCommands()
+      .stream()
+      .anyMatch(Command::isShapeshiftCommand);
+  }
+
 
   private void handleRemoveDependency(Item i) {
     if (i == null) return;
@@ -502,7 +507,9 @@ public class Unit {
   }
 
   private void handleDependency(String slotname, boolean lagged) {
-    if (getSlot(slotname) == null) return;
+    if (getSlot(slotname) == null) {
+      return;
+    }
 
     ChanceIncHandler chandler = null;
     Random r = null;
@@ -513,7 +520,9 @@ public class Unit {
 
     // This handles #needs
     for (ItemDependency d : getSlot(slotname).dependencies) {
-      if (d.lagged != lagged) continue;
+      if (d.lagged != lagged) {
+        continue;
+      }
 
       String target = d.target;
       String slot = d.slot;
