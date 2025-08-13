@@ -38,7 +38,9 @@ public class ChanceIncHandler {
   private List<ThemeInc> getRaceThemeIncs(Race r) {
     List<ThemeInc> list = new ArrayList<>();
 
-    for (Theme t : r.themefilters) list.addAll(t.themeincs);
+    for (Theme t : r.themefilters) {
+      list.addAll(t.themeincs);
+    }
 
     return list;
   }
@@ -126,17 +128,19 @@ public class ChanceIncHandler {
 
     List<ThemeInc> miscincs = new ArrayList<>();
 
-    if (extraincs != null) miscincs.addAll(extraincs);
+    if (extraincs != null) {
+      miscincs.addAll(extraincs);
+    }
 
     if (u != null) {
-      for (Filter f : u.appliedFilters) miscincs.addAll(f.themeincs);
+      for (Filter f : u.appliedFilters) {
+        miscincs.addAll(f.themeincs);
+      }
     }
 
     // Actually handle the stuff
     processChanceIncs(chances, u, race);
-
     handleThemeIncs(chances, miscincs, race);
-
     return chances;
   }
 
@@ -412,10 +416,14 @@ public class ChanceIncHandler {
     List<ThemeInc> chanceincs = new ArrayList<>();
 
     // Add race themes if appliceable!
-    if (r != null) chanceincs.addAll(getRaceThemeIncs(r)); // Should never be null.
+    if (r != null) {
+      chanceincs.addAll(getRaceThemeIncs(r)); // Should never be null.
+    }
 
     // Add all nation theme themeincs!
-    for (Theme t : n.nationthemes) chanceincs.addAll(t.themeincs);
+    for (Theme t : n.nationthemes) {
+      chanceincs.addAll(t.themeincs);
+    }
 
     chanceincs.addAll(miscincs);
 
