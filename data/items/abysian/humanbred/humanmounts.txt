@@ -986,7 +986,7 @@
 #newitem
 #id "cave_cow_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_light_scale.png
 #armor
 #offsetx -8
 #offsety 6
@@ -1003,7 +1003,7 @@
 #newitem
 #id "cave_cow_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_mail.png
 #armor
 #offsetx -8
 #offsety 6
@@ -1020,7 +1020,7 @@
 #newitem
 #id "cave_cow_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_cataphract.png
 #armor
 #offsetx -8
 #offsety 6

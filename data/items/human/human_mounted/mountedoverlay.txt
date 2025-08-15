@@ -243,7 +243,7 @@
 #newitem
 #id chariot_camel_iron
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_iron_overlay.png
+#sprite /graphics/mounts/chariots/camel_chariot_iron_overlay.png
 #armor
 #enditem
 
@@ -257,14 +257,14 @@
 #newitem
 #id chariot_camel_oriental
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_oriental_overlay.png
+#sprite /graphics/mounts/chariots/camel_oriental_chariot_overlay.png
 #armor
 #enditem
 
 #newitem
 #id chariot_camel_gilt
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_oriental_gilt_overlay.png
+#sprite /graphics/mounts/chariots/camel_oriental_chariot_gilt_overlay.png
 #armor
 #enditem
 

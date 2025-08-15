@@ -138,7 +138,7 @@
 #newitem
 #id "camel"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -153,7 +153,7 @@
 #newitem
 #id "camel_leather_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_leather.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -170,7 +170,7 @@
 #newitem
 #id "camel_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_light_bronze.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -187,7 +187,7 @@
 #newitem
 #id "camel_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_light_scale.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -204,7 +204,7 @@
 #newitem
 #id "camel_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_mail_bronze.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -221,7 +221,7 @@
 #newitem
 #id "camel_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_mail.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -238,7 +238,7 @@
 #newitem
 #id "camel_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_bronze.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -255,7 +255,7 @@
 #newitem
 #id "camel_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_plate.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 63
@@ -373,7 +373,7 @@
 #newitem
 #id "boar"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar.png
+#sprite /graphics/mounts/chariots/boar_chariot.png
 #armor
 #needs overlay 10
 #offsetx 51
@@ -387,7 +387,7 @@
 #newitem
 #id "boar_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar.png
+#sprite /graphics/mounts/chariots/boar_chariot_armored_light_bronze.png
 #armor
 #needs overlay 10
 #offsetx 51
@@ -403,7 +403,7 @@
 #newitem
 #id "boar_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar.png
+#sprite /graphics/mounts/chariots/boar_chariot_armored_light_scale.png
 #armor
 #needs overlay 10
 #offsetx 51
@@ -419,7 +419,7 @@
 #newitem
 #id "boar_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar.png
+#sprite /graphics/mounts/chariots/boar_chariot_armored_mail_bronze.png
 #armor
 #needs overlay 10
 #offsetx 51
@@ -435,7 +435,7 @@
 #newitem
 #id "boar_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar.png
+#sprite /graphics/mounts/chariots/boar_chariot_armored_mail.png
 #armor
 #needs overlay 10
 #offsetx 51
@@ -451,7 +451,7 @@
 #newitem
 #id "boar_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar.png
+#sprite /graphics/mounts/chariots/boar_chariot_armored_bronze.png
 #armor
 #needs overlay 10
 #offsetx 51
@@ -467,7 +467,7 @@
 #newitem
 #id "boar_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar.png
+#sprite /graphics/mounts/chariots/boar_chariot_armored_plate.png
 #armor
 #needs overlay 10
 #offsetx 51

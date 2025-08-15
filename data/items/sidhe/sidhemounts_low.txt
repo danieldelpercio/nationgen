@@ -616,7 +616,7 @@
 #newitem
 #id "great_boar"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -632,7 +632,7 @@
 #newitem
 #id "great_boar_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -650,7 +650,7 @@
 #newitem
 #id "great_boar_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -668,7 +668,7 @@
 #newitem
 #id "great_boar_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -685,7 +685,7 @@
 #newitem
 #id "great_boar_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -702,7 +702,7 @@
 #newitem
 #id "great_boar_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -720,7 +720,7 @@
 #newitem
 #id "great_boar_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -738,7 +738,7 @@
 #newitem
 #id "great_boar_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
@@ -757,7 +757,7 @@
 #newitem
 #id "great_boar_golden_barding_mount"
 #gameid -1
-#sprite /graphics/mounts/standard/boarcavalry.png
+#sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4

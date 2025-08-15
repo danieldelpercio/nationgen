@@ -78,7 +78,7 @@
 #newitem
 #id "camel_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_oriental.png
+#sprite /graphics/mounts/chariots/camel_oriental_chariot.png
 #armor
 #offsetx 67
 #offsety -8
@@ -97,7 +97,7 @@
 #newitem
 #id "camel_light_scale_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_oriental.png
+#sprite /graphics/mounts/chariots/camel_oriental_chariot.png
 #armor
 #offsetx 67
 #offsety -8
@@ -118,7 +118,7 @@
 #newitem
 #id "camel_mail_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_oriental.png
+#sprite /graphics/mounts/chariots/camel_oriental_chariot.png
 #armor
 #offsetx 67
 #offsety -8
@@ -139,7 +139,7 @@
 #newitem
 #id "camel_cataphract_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_oriental.png
+#sprite /graphics/mounts/chariots/camel_oriental_chariot.png
 #armor
 #offsetx 67
 #offsety -8
@@ -160,7 +160,7 @@
 #newitem
 #id "camel_plate_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel_oriental.png
+#sprite /graphics/mounts/chariots/camel_oriental_chariot.png
 #armor
 #offsetx 67
 #offsety -8
@@ -260,7 +260,7 @@
 #newitem
 #id "boar_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar_oriental.png
+#sprite /graphics/mounts/chariots/boar_oriental_chariot.png
 #armor
 #needs overlay oriental_chariot
 #offsetx 51
@@ -277,7 +277,7 @@
 #newitem
 #id "boar_light_scale_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar_oriental.png
+#sprite /graphics/mounts/chariots/boar_oriental_chariot.png
 #armor
 #needs overlay oriental_chariot
 #offsetx 51
@@ -296,7 +296,7 @@
 #newitem
 #id "boar_mail_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar_oriental.png
+#sprite /graphics/mounts/chariots/boar_oriental_chariot.png
 #armor
 #needs overlay oriental_chariot
 #offsetx 51
@@ -315,7 +315,7 @@
 #newitem
 #id "boar_cataphract_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar_oriental.png
+#sprite /graphics/mounts/chariots/boar_oriental_chariot.png
 #armor
 #needs overlay oriental_chariot
 #offsetx 51
@@ -334,7 +334,7 @@
 #newitem
 #id "boar_plate_barding_oriental_chariot"
 #gameid -1
-#sprite /graphics/mounts/chariots/boar_oriental.png
+#sprite /graphics/mounts/chariots/boar_oriental_chariot.png
 #armor
 #needs overlay oriental_chariot
 #offsetx 51

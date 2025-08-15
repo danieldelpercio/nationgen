@@ -383,7 +383,7 @@
 #newitem
 #id "cave_cow_turtle_shell_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_turtle_shell.png
 #offsetx -4
 #offsety -10
 #armor
@@ -400,7 +400,7 @@
 #newitem
 #id "cave_cow_coral_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_coral.png
 #offsetx -4
 #offsety -10
 #armor

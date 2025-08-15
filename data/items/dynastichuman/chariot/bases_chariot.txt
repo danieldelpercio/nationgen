@@ -191,7 +191,7 @@
 #newitem
 #id "camel"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
@@ -210,7 +210,7 @@
 #newitem
 #id "camel_thick_linen_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_thick_linen.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
@@ -231,7 +231,7 @@
 #newitem
 #id "camel_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_light_bronze.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
@@ -252,7 +252,7 @@
 #newitem
 #id "camel_iron_mail_barding_mount"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_mail.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
@@ -273,7 +273,7 @@
 #newitem
 #id "camel_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/chariots/camel.png
+#sprite /graphics/mounts/chariots/camel_chariot_armored_bronze.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
@@ -426,7 +426,7 @@
 #offsetx 51
 #offsety -10
 #define "#mountmnr 'longdead_lizard_bronze_mail_barding_chariot'"
-#theme "iron"
+#theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
 #tag "animal 'longdead'"

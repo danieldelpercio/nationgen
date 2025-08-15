@@ -3267,7 +3267,7 @@
 #newitem
 #id "camel_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/camel.png
+#sprite /graphics/mounts/standard/camel_armored_light_bronze.png
 #armor
 #offsetx 0
 #offsety 53
@@ -3291,7 +3291,7 @@
 #newitem
 #id "camel_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/camel.png
+#sprite /graphics/mounts/standard/camel_armored_light_scale.png
 #armor
 #offsetx 0
 #offsety 53
@@ -3315,7 +3315,7 @@
 #newitem
 #id "camel_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/camel.png
+#sprite /graphics/mounts/standard/camel_armored_mail_bronze.png
 #armor
 #offsetx 0
 #offsety 53
@@ -3338,7 +3338,7 @@
 #newitem
 #id "camel_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/camel.png
+#sprite /graphics/mounts/standard/camel_armored_mail.png
 #armor
 #offsetx 0
 #offsety 53
@@ -3361,7 +3361,7 @@
 #newitem
 #id "camel_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/camel.png
+#sprite /graphics/mounts/standard/camel_armored_cataphract.png
 #armor
 #offsetx 0
 #offsety 53
@@ -3384,7 +3384,7 @@
 #newitem
 #id "camel_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/camel.png
+#sprite /graphics/mounts/standard/camel_armored_bronze.png
 #armor
 #offsetx 0
 #offsety 53
@@ -3408,7 +3408,7 @@
 #newitem
 #id "camel_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/camel.png
+#sprite /graphics/mounts/standard/camel_armored_plate.png
 #armor
 #offsetx 0
 #offsety 53
@@ -4053,7 +4053,7 @@
 #newitem
 #id "cave_cow_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_light_bronze.png
 #armor
 #offsetx -8
 #offsety 6
@@ -4073,7 +4073,7 @@
 #newitem
 #id "cave_cow_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_light_scale.png
 #armor
 #offsetx -8
 #offsety 6
@@ -4093,7 +4093,7 @@
 #newitem
 #id "cave_cow_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_mail_bronze.png
 #armor
 #offsetx -8
 #offsety 6
@@ -4113,7 +4113,7 @@
 #newitem
 #id "cave_cow_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_mail.png
 #armor
 #offsetx -8
 #offsety 6
@@ -4133,7 +4133,7 @@
 #newitem
 #id "cave_cow_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_cataphract.png
 #armor
 #offsetx -8
 #offsety 6
@@ -4154,7 +4154,7 @@
 #newitem
 #id "cave_cow_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_bronze.png
 #armor
 #offsetx -8
 #offsety 6
@@ -4176,7 +4176,7 @@
 #newitem
 #id "cave_cow_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_plate.png
 #armor
 #offsetx -8
 #offsety 6

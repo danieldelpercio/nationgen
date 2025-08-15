@@ -168,7 +168,7 @@
 #newitem
 #id "cave_cow_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_light_bronze.png
 #armor
 #define "#mountmnr 'cave_cow_light_bronze_barding_mount'"
 #define "#gcost -5"
@@ -186,7 +186,7 @@
 #newitem
 #id "cave_cow_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_bronze.png
 #armor
 #define "#mountmnr 'cave_cow_bronze_barding_mount'"
 #define "#gcost -5"
@@ -205,7 +205,7 @@
 #newitem
 #id "cave_cow_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_light_scale.png
 #armor
 #define "#mountmnr 'cave_cow_light_scale_barding_mount'"
 #define "#gcost -5"
@@ -223,7 +223,7 @@
 #newitem
 #id "cave_cow_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavecow.png
+#sprite /graphics/mounts/standard/cavecow_armored_plate.png
 #armor
 #define "#mountmnr 'cave_cow_plate_barding_mount'"
 #define "#gcost -5"
