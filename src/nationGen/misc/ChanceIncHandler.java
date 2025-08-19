@@ -7,6 +7,9 @@ import java.util.NavigableMap;
 import java.util.Optional;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import nationGen.NationGen;
+import nationGen.Settings.SettingsType;
 import nationGen.chances.ChanceInc;
 import nationGen.chances.ChanceIncData;
 import nationGen.chances.EntityChances;
@@ -432,7 +435,14 @@ public class ChanceIncHandler {
 
       for (ThemeInc themeInc : chanceincs) {
         if (themeInc.condition.test(data)) {
+          Boolean wasAboveZero = chances.getChance(f) > 0;
           chances.modifyChance(f, themeInc.modificationAmount);
+
+          if (wasAboveZero == true && chances.getChance(f) <= 0) {
+            if (NationGen.isInDebugMode()) {
+              System.out.println(f + " race filter for " + r.name + " was zeroed by #themeinc " + themeInc.source);
+            }
+          }
         }
       }
     }
@@ -482,7 +492,22 @@ public class ChanceIncHandler {
       for (ChanceInc chanceInc : f.chanceincs) {
         try {
           if (chanceInc.condition.test(data)) {
+            Boolean wasAboveZero = chances.getChance(f) > 0;
             chances.modifyChance(f, chanceInc.modificationAmount);
+
+            if (wasAboveZero == true && chances.getChance(f) <= 0) {
+              if (un != null) {
+                if (NationGen.isInDebugMode()) {
+                  System.out.println(f + " unit filter for " + un.pose.name + " pose of race " + race.name + "was zeroed by #themeinc " + chanceInc.source);
+                }
+              }
+
+              else if (race != null) {
+                if (NationGen.isInDebugMode()) {
+                  System.out.println(f + " race filter for " + race.name + " was zeroed by #chanceinc " + chanceInc.source);
+                }
+              }
+            }
           }
         } catch (Exception e) {
           throw new IllegalStateException(
@@ -519,7 +544,14 @@ public class ChanceIncHandler {
 
       for (T f : chances.getEntities()) {
         if (type ? f.types.contains(value) : f.name.equals(value)) {
+          Boolean wasAboveZero = chances.getChance(f) > 0;
           chances.modifyChance(f, modifier);
+
+          if (wasAboveZero == true && chances.getChance(f) <= 0) {
+            if (NationGen.isInDebugMode()) {
+              System.out.println(f + " filter was zeroed by #filteraffinity " + value + " " + modifier);
+            }
+          }
         }
       }
     }

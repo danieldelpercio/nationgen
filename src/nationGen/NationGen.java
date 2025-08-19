@@ -56,6 +56,7 @@ public class NationGen {
 
   private ReentrantLock pauseLock;
   private boolean shouldAbort = false;
+  private static boolean isDebug = false;
 
   private Instant start;
 
@@ -72,6 +73,7 @@ public class NationGen {
     this.pauseLock = pauseLock;
     this.settings = settings;
     this.restrictions = restrictions;
+    NationGen.isDebug = settings.get(SettingsType.debug) == 1;
 
     //System.out.println("Dominions 4 NationGen version " + version + " (" + date + ")");
     //System.out.println("------------------------------------------------------------------");
@@ -159,7 +161,6 @@ public class NationGen {
     int count = 0;
     int failedcount = 0;
     int totalfailed = 0;
-    boolean isDebug = settings.get(SettingsType.debug) == 1.0;
 
     while (generatedNations.size() < amount) {
       // Anyhow, a simple way to handle pausing is just to acquire a lock (which will be locked in the UI thread).
@@ -179,7 +180,7 @@ public class NationGen {
         ? seeds.get(generatedNations.size())
         : random.nextLong();
 
-      if (isDebug) {
+      if (NationGen.isInDebugMode()) {
         System.out.print(
           "- Generating nation " +
           (generatedNations.size() + 1) +
@@ -1022,5 +1023,9 @@ public class NationGen {
    */
   public NationGenAssets getAssets() {
     return assets;
+  }
+
+  public static Boolean isInDebugMode() {
+    return NationGen.isDebug;
   }
 }
