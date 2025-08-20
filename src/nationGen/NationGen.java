@@ -970,10 +970,6 @@ public class NationGen {
     mounts.add(mu);
   }
 
-  private void generatePD() {
-    
-  }
-
   public static BufferedImage generateBanner(
     Color c,
     String name,
