@@ -660,24 +660,39 @@ public class Unit {
   }
 
   private void resolveMountItem(Item mountItem) {
-    if (mountItem != null) {
-      Optional<Command> possibleMountmnr = mountItem.commands
-        .stream()
-        .filter(c -> c.command.equals("#mountmnr"))
-        .findAny();
-
-      if (possibleMountmnr.isPresent()) {
-        Command mountmnr = possibleMountmnr.get();
-        Optional<Mount> mount = nationGen.getAssets().mounts
-          .stream()
-          .filter(s -> s.name.equals(mountmnr.args.get(0).get()))
-          .findFirst();
-
-        if (mount.isPresent()) {
-          this.mountItem = mount.get();
-        }
-      }
+    if (mountItem == null) {
+      return;
     }
+
+    List<Command> itemCommands = mountItem.getCommands();
+
+    itemCommands.stream()
+      .filter(c -> c.command.equals("#mountmnr"))
+      .findFirst()
+      .ifPresent(mountMnrCommand -> {
+        String mountId = mountMnrCommand.args.get(0).get();
+
+        nationGen.getAssets().mounts
+          .stream()
+          .filter(s -> s.name.equals(mountId))
+          .findFirst()
+          .ifPresent(mount -> {
+            this.mountItem = mount;
+
+            if (mountItem.sprite.isBlank() == false) {
+              mount.commands.removeIf(c -> {
+                return c.command.equals("#spr1") || c.command.equals("#spr2");
+              });
+              mount.commands.add(Command.args("#spr1", "." + mountItem.sprite));
+              mount.commands.add(Command.args("#spr2", "shift"));
+            }
+
+            itemCommands.stream().filter(c -> c.command.equals("#barding")).findFirst().ifPresent(bardingCommand -> {
+              String bardingId = bardingCommand.args.get(0).get();
+              mount.commands.add(Command.args("#armor", bardingId));
+            });
+          });
+      });
   }
 
   public int getGoldCost() {

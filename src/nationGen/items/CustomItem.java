@@ -14,9 +14,16 @@ public class CustomItem extends Item {
 
   private List<Command> customItemCommands = new ArrayList<>();
   public Item olditem = null;
+  public MagicItem magicItem = null;
+
+  public CustomItem(NationGen nationGen) {
+    super(nationGen);
+    this.customItemCommands.add(new Command("#rcost", new Arg(0)));
+    this.customItemCommands.add(new Command("#def", new Arg(0)));
+  }
 
   public CustomItem getCopy() {
-    CustomItem item = this.getCustomItemCopy();
+    CustomItem item = (CustomItem)super.getCopy();
     item.olditem = this.olditem;
 
     for (Command command : customItemCommands) {
@@ -24,14 +31,6 @@ public class CustomItem extends Item {
     }
 
     return item;
-  }
-
-  public MagicItem magicItem = null;
-
-  public CustomItem(NationGen nationGen) {
-    super(nationGen);
-    this.customItemCommands.add(new Command("#rcost", new Arg(0)));
-    this.customItemCommands.add(new Command("#def", new Arg(0)));
   }
 
   public Optional<Command> getCustomCommand(String commandName) {

@@ -23,7 +23,6 @@ public class Item extends Drawable {
   //public LinkedHashMap<String, String> dependencies = new LinkedHashMap<>();
   //public LinkedHashMap<String, String> typedependencies = new LinkedHashMap<>();
 
-  public List<Command> commands = new ArrayList<>();
   public String slot = "";
   public String set = "";
 
@@ -46,8 +45,8 @@ public class Item extends Drawable {
     }
   }
 
-  public CustomItem getCustomItemCopy() {
-    CustomItem item = new CustomItem(nationGen);
+  public Item getCopy() {
+    Item item = new Item(nationGen);
     item.sprite = sprite;
     item.mask = mask;
     item.id = id;
@@ -65,10 +64,6 @@ public class Item extends Drawable {
     item.basechance = this.basechance;
     item.tags.addAll(tags);
     return item;
-  }
-
-  public Item getCopy() {
-    return this.getCustomItemCopy();
   }
 
   public Boolean isArmor() {
@@ -94,18 +89,26 @@ public class Item extends Drawable {
     return this.itemType == ItemType.MELEE;
   }
 
+  public Boolean isMountItem() {
+    this.attemptToDetermineItemType();
+    return this.itemType == ItemType.MOUNT;
+  }
+
   public ItemType getItemType() {
     this.attemptToDetermineItemType();
     return this.itemType;
   }
 
   private void attemptToDetermineItemType() {
-    if (this.itemType != null) {
-      return;
+    Boolean hasMountReference = this.commands.stream()
+      .anyMatch(c -> c.command.equals("#mountmnr"));
+
+    if (hasMountReference) {
+      this.itemType = ItemType.MOUNT;
     }
 
     // If it's got a range property, it might be ranged
-    if (nationGen.weapondb.GetInteger(this.id, "rng") != 0) {
+    else if (nationGen.weapondb.GetInteger(this.id, "rng") != 0) {
       // If its ammo is less than 4, it's a lowshots weapon
       if (nationGen.weapondb.GetInteger(this.id, "shots", 100) < 4) {
         this.itemType = ItemType.LOW_SHOTS;
