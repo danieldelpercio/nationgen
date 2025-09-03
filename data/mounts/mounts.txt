@@ -20,8 +20,6 @@
 #new secondshape
 #id "vanara_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -34,8 +32,6 @@
 #new secondshape
 #id "vanara_lorica_segmentata_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -49,8 +45,6 @@
 #new secondshape
 #id "vanara_imperial_plate_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -64,8 +58,6 @@
 #new secondshape
 #id "vanara_gold_lorica_segmentata_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -79,8 +71,6 @@
 #new secondshape
 #id "vanara_gold_imperial_plate_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -94,8 +84,6 @@
 #new secondshape
 #id "vanara_samurai_armor_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -109,8 +97,6 @@
 #new secondshape
 #id "vanara_ancestor_cuirass_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -124,8 +110,6 @@
 #new secondshape
 #id "vanara_ancestor_armor_bearer"
 #command "#copystats 3585"
-#command "#spr1 ./graphics/monkey/vanara_base.png"
-#command "#spr2 shift"
 #command "#animal"
 #command "#mr 8"
 #command "#forestsurvival"
@@ -214,8 +198,6 @@
 #new secondshape
 #id "flying_fish_mount"
 #command "#copystats 2858"
-#command "#spr1 ./graphics/machakans/mounts/flyingfish.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 22"
 #command "#hp 10"
@@ -238,8 +220,6 @@
 #new secondshape
 #id "flying_fish_leather_barding_mount"
 #command "#copystats 2858"
-#command "#spr1 ./graphics/machakans/mounts/flyingfish.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 22"
 #command "#hp 10"
@@ -263,8 +243,6 @@
 #new secondshape
 #id "flying_fish_light_scale_barding_mount"
 #command "#copystats 2858"
-#command "#spr1 ./graphics/machakans/mounts/flyingfish.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 22"
 #command "#hp 10"
@@ -287,8 +265,6 @@
 
 #new secondshape
 #id "huge_locust_mount"
-#command "#spr1 ./graphics/mounts/standard/huge_locust.png"
-#command "#spr2 shift"
 #command "#name 'Giant Locust'"
 #command "#size 4"
 #command "#mapmove 22"
@@ -316,8 +292,6 @@
 #new secondshape
 #id "giant_macaw_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -328,8 +302,6 @@
 #new secondshape
 #id "giant_macaw_light_bronze_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -341,8 +313,6 @@
 #new secondshape
 #id "giant_macaw_light_scale_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -354,8 +324,6 @@
 #new secondshape
 #id "giant_macaw_bronze_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -367,8 +335,6 @@
 #new secondshape
 #id "giant_macaw_iron_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -380,8 +346,6 @@
 #new secondshape
 #id "colorful_giant_macaw_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -392,8 +356,6 @@
 #new secondshape
 #id "colorful_giant_macaw_light_bronze_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -405,8 +367,6 @@
 #new secondshape
 #id "colorful_giant_macaw_light_scale_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -418,8 +378,6 @@
 #new secondshape
 #id "colorful_giant_macaw_bronze_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -431,8 +389,6 @@
 #new secondshape
 #id "colorful_giant_macaw_iron_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/hoburg/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Macaw'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -444,8 +400,6 @@
 #new secondshape
 #id "giant_parrot_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -456,8 +410,6 @@
 #new secondshape
 #id "giant_parrot_leather_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -469,8 +421,6 @@
 #new secondshape
 #id "giant_parrot_light_bronze_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -482,8 +432,6 @@
 #new secondshape
 #id "giant_parrot_light_scale_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -495,8 +443,6 @@
 #new secondshape
 #id "giant_parrot_bronze_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -508,8 +454,6 @@
 #new secondshape
 #id "giant_parrot_iron_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -521,8 +465,6 @@
 #new secondshape
 #id "colorful_giant_parrot_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -533,8 +475,6 @@
 #new secondshape
 #id "colorful_giant_parrot_leather_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -546,8 +486,6 @@
 #new secondshape
 #id "colorful_giant_parrot_light_bronze_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -559,8 +497,6 @@
 #new secondshape
 #id "colorful_giant_parrot_light_scale_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -572,8 +508,6 @@
 #new secondshape
 #id "colorful_giant_parrot_bronze_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -585,8 +519,6 @@
 #new secondshape
 #id "colorful_giant_parrot_iron_mail_barding_mount"
 #command "#copystats 1380"
-#command "#spr1 ./graphics/machakans/mounts/giant_parrot.png"
-#command "#spr2 shift"
 #command "#name 'Colorful Giant Parrot'"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -609,8 +541,6 @@
 #new secondshape
 #id "goat_light_bronze_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/goat_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -622,8 +552,6 @@
 #new secondshape
 #id "goat_light_scale_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/goat_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -635,8 +563,6 @@
 #new secondshape
 #id "goat_bronze_mail_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/goat_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -648,8 +574,6 @@
 #new secondshape
 #id "goat_iron_mail_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/goat_armored_mail.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -661,8 +585,6 @@
 #new secondshape
 #id "goat_cataphract_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/goat_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -674,8 +596,6 @@
 #new secondshape
 #id "goat_bronze_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/goat_armored_bronze.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -687,8 +607,6 @@
 #new secondshape
 #id "goat_plate_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/goat_armored_plate.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -711,8 +629,6 @@
 #new secondshape
 #id "black_goat_light_bronze_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/black_goat_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -724,8 +640,6 @@
 #new secondshape
 #id "black_goat_light_scale_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/black_goat_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -737,8 +651,6 @@
 #new secondshape
 #id "black_goat_bronze_mail_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/black_goat_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -750,8 +662,6 @@
 #new secondshape
 #id "black_goat_iron_mail_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/black_goat_armored_mail.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -763,8 +673,6 @@
 #new secondshape
 #id "black_goat_cataphract_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/black_goat_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -776,8 +684,6 @@
 #new secondshape
 #id "black_goat_bronze_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/black_goat_armored_bronze.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -789,8 +695,6 @@
 #new secondshape
 #id "black_goat_plate_barding_mount"
 #command "#copystats 2227"
-#command "#spr1 ./graphics/hoburg/mounts/black_goat_armored_plate.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -826,8 +730,6 @@
 
 #new secondshape
 #id "black_pyrenean_goat_light_bronze_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/black_pyrenean_goat_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Goat'"
 #command "#weapon 300"
@@ -853,8 +755,6 @@
 
 #new secondshape
 #id "black_pyrenean_goat_light_scale_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/black_pyrenean_goat_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Goat'"
 #command "#weapon 300"
@@ -880,8 +780,6 @@
 
 #new secondshape
 #id "black_pyrenean_goat_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/black_pyrenean_goat_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Goat'"
 #command "#weapon 300"
@@ -906,8 +804,6 @@
 
 #new secondshape
 #id "black_pyrenean_goat_iron_mail_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/black_pyrenean_goat_armored_mail.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Goat'"
 #command "#weapon 300"
@@ -932,8 +828,6 @@
 
 #new secondshape
 #id "black_pyrenean_goat_cataphract_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/black_pyrenean_goat_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Goat'"
 #command "#weapon 300"
@@ -958,8 +852,6 @@
 
 #new secondshape
 #id "black_pyrenean_goat_bronze_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/black_pyrenean_goat_armored_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Goat'"
 #command "#weapon 300"
@@ -984,8 +876,6 @@
 
 #new secondshape
 #id "black_pyrenean_goat_plate_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/black_pyrenean_goat_armored_plate.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Goat'"
 #command "#weapon 300"
@@ -1011,8 +901,6 @@
 #new secondshape
 #id "pigasus_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/hoburg/mounts/pigasus.png"
-#command "#spr2 shift"
 #command "#flying"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -1023,8 +911,6 @@
 #new secondshape
 #id "pigasus_leather_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/hoburg/mounts/pigasus.png"
-#command "#spr2 shift"
 #command "#flying"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
@@ -1134,8 +1020,6 @@
 #new secondshape
 #id "boar_light_bronze_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/mounts/standard/boar_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 264"
@@ -1146,8 +1030,6 @@
 #new secondshape
 #id "boar_light_scale_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/mounts/standard/boar_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 252"
@@ -1158,8 +1040,6 @@
 #new secondshape
 #id "boar_mail_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/mounts/standard/boar_armored_mail.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 172"
@@ -1170,8 +1050,6 @@
 #new secondshape
 #id "boar_bronze_mail_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/mounts/standard/boar_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 172"
@@ -1182,8 +1060,6 @@
 #new secondshape
 #id "boar_cataphract_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/mounts/standard/boar_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 253"
@@ -1194,8 +1070,6 @@
 #new secondshape
 #id "boar_bronze_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/mounts/standard/boar_armored_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 263"
@@ -1206,8 +1080,6 @@
 #new secondshape
 #id "boar_plate_barding_mount"
 #command "#copystats 549"
-#command "#spr1 ./graphics/mounts/standard/boar_armored_plate.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 254"
@@ -1218,8 +1090,6 @@
 #new secondshape
 #id "snail_mount"
 #command "#name 'Snail'"
-#command "#spr1 ./graphics/machakans/mounts/snail.png"
-#command "#spr2 shift"
 #command "#snake"
 #command "#str 5"
 #command "#mor 12"
@@ -1247,8 +1117,6 @@
 
 #new secondshape
 #id "mech_ant_mount"
-#command "#spr1 ./graphics/hoburg/mounts/mech_ant.png"
-#command "#spr2 shift"
 #command "#name 'Mechanical Ant'"
 #command "#size 6"
 #command "#hp 18"
@@ -1281,8 +1149,6 @@
 
 #new secondshape
 #id "mech_spider_mount"
-#command "#spr1 ./graphics/hoburg/mounts/mech_spider.png"
-#command "#spr2 shift"
 #command "#name 'Mechanical Spider'"
 #command "#size 4"
 #command "#hp 10"
@@ -1316,8 +1182,6 @@
 
 #new secondshape
 #id "mech_mosquito_mount"
-#command "#spr1 ./graphics/hoburg/mounts/mech_mosquito.png"
-#command "#spr2 shift"
 #command "#name 'Mechanical Mosquito'"
 #command "#size 3"
 #command "#hp 7"
@@ -1681,8 +1545,6 @@
 
 #new secondshape
 #id "black_jaguar_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Black Jaguar'"
 #command "#weapon 20"
@@ -1707,8 +1569,6 @@
 
 #new secondshape
 #id "black_jaguar_turtle_shell_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_turtle_shell.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1735,8 +1595,6 @@
 
 #new secondshape
 #id "black_jaguar_coral_barding_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_coral.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1764,8 +1622,6 @@
 
 #new secondshape
 #id "black_jaguar_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1792,8 +1648,6 @@
 
 #new secondshape
 #id "black_jaguar_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1820,8 +1674,6 @@
 
 #new secondshape
 #id "black_jaguar_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1847,8 +1699,6 @@
 
 #new secondshape
 #id "black_jaguar_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_mail.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1874,8 +1724,6 @@
 
 #new secondshape
 #id "black_jaguar_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1901,8 +1749,6 @@
 
 #new secondshape
 #id "black_jaguar_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1928,8 +1774,6 @@
 
 #new secondshape
 #id "black_jaguar_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_plate.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -1955,8 +1799,6 @@
 
 #new secondshape
 #id "black_jaguar_silver_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_jaguar_armored_silver.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#name 'Jaguar'"
 #command "#weapon 20"
@@ -3002,8 +2844,6 @@
 #new secondshape
 #id "amphiptere_mount"
 #command "#copystats 1412"
-#command "#spr1 ./graphics/mounts/standard/amphiptere.png"
-#command "#spr2 shift"
 #command "#name 'Amphiptere'"
 #command "#transformation 0"
 #command "#gcost 50"
@@ -3014,8 +2854,6 @@
 #new secondshape
 #id "amphiptere_leather_barding_mount"
 #command "#copystats 1412"
-#command "#spr1 ./graphics/mounts/standard/amphiptere_armored_leather.png"
-#command "#spr2 shift"
 #command "#name 'Amphiptere'"
 #command "#transformation 0"
 #command "#armor 251"
@@ -3027,8 +2865,6 @@
 #new secondshape
 #id "amphiptere_light_bronze_barding_mount"
 #command "#copystats 1412"
-#command "#spr1 ./graphics/mounts/standard/amphiptere_armored_lightbronze.png"
-#command "#spr2 shift"
 #command "#name 'Amphiptere'"
 #command "#transformation 0"
 #command "#armor 264"
@@ -3040,8 +2876,6 @@
 #new secondshape
 #id "amphiptere_light_scale_barding_mount"
 #command "#copystats 1412"
-#command "#spr1 ./graphics/mounts/standard/amphiptere_armored_lightscale.png"
-#command "#spr2 shift"
 #command "#name 'Amphiptere'"
 #command "#transformation 0"
 #command "#armor 252"
@@ -3053,8 +2887,6 @@
 #new secondshape
 #id "amphiptere_bronze_mail_barding_mount"
 #command "#copystats 1412"
-#command "#spr1 ./graphics/mounts/standard/amphiptere_armored_bronzemail.png"
-#command "#spr2 shift"
 #command "#name 'Amphiptere'"
 #command "#transformation 0"
 #command "#armor 172"
@@ -3066,8 +2898,6 @@
 #new secondshape
 #id "amphiptere_iron_mail_barding_mount"
 #command "#copystats 1412"
-#command "#spr1 ./graphics/mounts/standard/amphiptere_armored_mail.png"
-#command "#spr2 shift"
 #command "#name 'Amphiptere'"
 #command "#transformation 0"
 #command "#armor 172"
@@ -3079,8 +2909,6 @@
 #new secondshape
 #id "amphiptere_golden_barding_mount"
 #command "#copystats 1412"
-#command "#spr1 ./graphics/mounts/standard/amphiptere_armored_goldmail.png"
-#command "#spr2 shift"
 #command "#name 'Amphiptere'"
 #command "#transformation 0"
 #command "#armor 277"
@@ -3211,8 +3039,6 @@
 
 #new secondshape
 #id "giant_bat_leather_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/giant_bat_armored_leather.png"
-#command "#spr2 shift"
 #command "#name 'Giant Bat'"
 #command "#weapon 251"
 #command "#size 3"
@@ -3238,8 +3064,6 @@
 
 #new secondshape
 #id "giant_bat_light_scale_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/giant_bat_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#name 'Giant Bat'"
 #command "#weapon 251"
 #command "#size 3"
@@ -3265,8 +3089,6 @@
 
 #new secondshape
 #id "giant_bat_iron_mail_barding_mount"
-#command "#spr1 ./graphics/hoburg/mounts/giant_bat_armored_mail.png"
-#command "#spr2 shift"
 #command "#name 'Giant Bat'"
 #command "#weapon 251"
 #command "#size 3"
@@ -3355,8 +3177,6 @@
 
 #new secondshape
 #id "tiger_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_lightbronze.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3384,8 +3204,6 @@
 
 #new secondshape
 #id "tiger_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_light.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3413,8 +3231,6 @@
 
 #new secondshape
 #id "tiger_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_bronzescale.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3441,8 +3257,6 @@
 
 #new secondshape
 #id "tiger_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_scale.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3469,8 +3283,6 @@
 
 #new secondshape
 #id "tiger_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_scale.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3497,8 +3309,6 @@
 
 #new secondshape
 #id "tiger_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3525,8 +3335,6 @@
 
 #new secondshape
 #id "tiger_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_plate.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3553,8 +3361,6 @@
 
 #new secondshape
 #id "tiger_golden_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/tiger_armored_gold.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3581,8 +3387,6 @@
 
 #new secondshape
 #id "black_tiger_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3609,8 +3413,6 @@
 
 #new secondshape
 #id "black_tiger_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_lightbronze.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3638,8 +3440,6 @@
 
 #new secondshape
 #id "black_tiger_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_light.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3667,8 +3467,6 @@
 
 #new secondshape
 #id "black_tiger_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_bronzescale.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3695,8 +3493,6 @@
 
 #new secondshape
 #id "black_tiger_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_scale.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3723,8 +3519,6 @@
 
 #new secondshape
 #id "black_tiger_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_scale.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3751,8 +3545,6 @@
 
 #new secondshape
 #id "black_tiger_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3779,8 +3571,6 @@
 
 #new secondshape
 #id "black_tiger_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_plate.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3807,8 +3597,6 @@
 
 #new secondshape
 #id "black_tiger_silver_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_plate.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3835,8 +3623,6 @@
 
 #new secondshape
 #id "black_tiger_golden_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/black_tiger_armored_gold.png"
-#command "#spr2 shift"
 #command "#name 'Black Tiger'"
 #command "#weapon 322"
 #command "#weapon 236"
@@ -3863,8 +3649,6 @@
 
 #new secondshape
 #id "white_tiger_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger.png"
-#command "#spr2 shift"
 #command "#weapon 236"
 #command "#weapon 322"
 #command "#size 4"
@@ -3890,8 +3674,6 @@
 
 #new secondshape
 #id "white_tiger_turtle_shell_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_turtleshell.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -3919,8 +3701,6 @@
 
 #new secondshape
 #id "white_tiger_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_lightbronze.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -3948,8 +3728,6 @@
 
 #new secondshape
 #id "white_tiger_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_light.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -3977,8 +3755,6 @@
 
 #new secondshape
 #id "white_tiger_coral_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_coral.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4007,8 +3783,6 @@
 
 #new secondshape
 #id "white_tiger_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_bronzescale.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4035,8 +3809,6 @@
 
 #new secondshape
 #id "white_tiger_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_scale.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4063,8 +3835,6 @@
 
 #new secondshape
 #id "white_tiger_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_scale.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4091,8 +3861,6 @@
 
 #new secondshape
 #id "white_tiger_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4119,8 +3887,6 @@
 
 #new secondshape
 #id "white_tiger_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_plate.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4147,8 +3913,6 @@
 
 #new secondshape
 #id "white_tiger_ice_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_ice.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4175,8 +3939,6 @@
 
 #new secondshape
 #id "white_tiger_meteorite_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/white_tiger_armored_meteorite.png"
-#command "#spr2 shift"
 #command "#name 'Tiger'"
 #command "#weapon 236"
 #command "#weapon 322"
@@ -4229,8 +3991,6 @@
 
 #new secondshape
 #id "nightmare_leather_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_halfbarded.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4257,8 +4017,6 @@
 
 #new secondshape
 #id "nightmare_light_bronze_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_halfbarded.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4285,8 +4043,6 @@
 
 #new secondshape
 #id "nightmare_light_scale_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_halfbarded.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4313,8 +4069,6 @@
 
 #new secondshape
 #id "nightmare_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_halfbarded.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4340,8 +4094,6 @@
 
 #new secondshape
 #id "nightmare_iron_mail_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_halfbarded.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4367,8 +4119,6 @@
 
 #new secondshape
 #id "nightmare_bronze_cataphract_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_scalebarded1.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4394,8 +4144,6 @@
 
 #new secondshape
 #id "nightmare_cataphract_barding_mount_1"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_scalebarded1.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4421,8 +4169,6 @@
 
 #new secondshape
 #id "nightmare_cataphract_barding_mount_2"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_caparison.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4448,8 +4194,6 @@
 
 #new secondshape
 #id "nightmare_rusty_cataphract_barding_mount_1"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_scalebarded2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4475,8 +4219,6 @@
 
 #new secondshape
 #id "nightmare_rusty_cataphract_barding_mount_2"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_fullbarded1.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4502,8 +4244,6 @@
 
 #new secondshape
 #id "nightmare_rusty_cataphract_barding_mount_3"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_fullbarded2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4529,8 +4269,6 @@
 
 #new secondshape
 #id "nightmare_bronze_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_fullbarded2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4556,8 +4294,6 @@
 
 #new secondshape
 #id "nightmare_plate_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_fullbarded2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4583,8 +4319,6 @@
 
 #new secondshape
 #id "nightmare_golden_barding_mount"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_equine_fullbarded2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Nightmare'"
 #command "#fear 5"
@@ -4611,8 +4345,6 @@
 #new secondshape
 #id "leogryph_nightmare_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4637,8 +4369,6 @@
 #new secondshape
 #id "leogryph_nightmare_leather_barding_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4664,8 +4394,6 @@
 #new secondshape
 #id "leogryph_nightmare_light_bronze_barding_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4691,8 +4419,6 @@
 #new secondshape
 #id "leogryph_nightmare_light_scale_barding_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4718,8 +4444,6 @@
 #new secondshape
 #id "leogryph_nightmare_mail_barding_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4745,8 +4469,6 @@
 #new secondshape
 #id "leogryph_nightmare_cataphract_barding_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4772,8 +4494,6 @@
 #new secondshape
 #id "leogryph_nightmare_bronze_barding_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4799,8 +4519,6 @@
 #new secondshape
 #id "leogryph_nightmare_plate_barding_mount"
 #command "#name 'Leogryph Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_leogryph.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#ap 22"
@@ -4826,8 +4544,6 @@
 #new secondshape
 #id "feline_nightmare_mount"
 #command "#name 'Feline Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_feline.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#hp 12"
@@ -4852,8 +4568,6 @@
 #new secondshape
 #id "feline_nightmare_leather_barding_mount"
 #command "#name 'Feline Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_feline.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#hp 12"
@@ -4879,8 +4593,6 @@
 #new secondshape
 #id "feline_nightmare_light_scale_barding_mount"
 #command "#name 'Feline Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_feline.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#hp 12"
@@ -4906,8 +4618,6 @@
 #new secondshape
 #id "feline_nightmare_light_bronze_barding_mount"
 #command "#name 'Feline Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_feline.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#hp 12"
@@ -4933,8 +4643,6 @@
 #new secondshape
 #id "feline_nightmare_mail_barding_mount"
 #command "#name 'Feline Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_feline.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#mapmove 20"
 #command "#hp 12"
@@ -4960,8 +4668,6 @@
 #new secondshape
 #id "vine_nightmare_mount"
 #command "#name 'Vine Nightmare'"
-#command "#spr1 ./graphics/hoburg/mounts/vine_nightmare.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#hp 8"
 #command "#att 11"
@@ -4985,8 +4691,6 @@
 #new secondshape
 #id "vine_nightmare_light_bronze_barding_mount"
 #command "#name 'Vine Nightmare'"
-#command "#spr1 ./graphics/hoburg/mounts/vine_nightmare.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#hp 8"
 #command "#att 11"
@@ -5011,8 +4715,6 @@
 #new secondshape
 #id "vine_nightmare_light_scale_barding_mount"
 #command "#name 'Vine Nightmare'"
-#command "#spr1 ./graphics/hoburg/mounts/vine_nightmare.png"
-#command "#spr2 shift"
 #command "#size 3"
 #command "#hp 8"
 #command "#att 11"
@@ -5037,8 +4739,6 @@
 #new secondshape
 #id "lizard_nightmare_mount"
 #command "#name 'Lizard Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_lizard.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 15"
 #command "#prot 5"
@@ -5073,8 +4773,6 @@
 #new secondshape
 #id "lizard_nightmare_leather_barding_mount"
 #command "#name 'Lizard Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_lizard.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 15"
 #command "#prot 5"
@@ -5110,8 +4808,6 @@
 #new secondshape
 #id "lizard_nightmare_light_scale_barding_mount"
 #command "#name 'Lizard Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_lizard.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 15"
 #command "#prot 5"
@@ -5147,8 +4843,6 @@
 #new secondshape
 #id "lizard_nightmare_mail_barding_mount"
 #command "#name 'Lizard Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_lizard.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 15"
 #command "#prot 5"
@@ -5183,8 +4877,6 @@
 #new secondshape
 #id "lizard_nightmare_cataphract_barding_mount"
 #command "#name 'Lizard Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_lizard.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 15"
 #command "#prot 5"
@@ -5219,8 +4911,6 @@
 #new secondshape
 #id "lizard_nightmare_plate_barding_mount"
 #command "#name 'Lizard Nightmare'"
-#command "#spr1 ./graphics/amazon/mounts/nightmare_lizard.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 15"
 #command "#prot 5"
@@ -5254,8 +4944,6 @@
 
 #new secondshape
 #id "demonbred_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/demonbred_barded.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Barded Demonbred'"
 #command "#enc 5"
@@ -5280,8 +4968,6 @@
 
 #new secondshape
 #id "demonbred_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/demonbred_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Cataphracted Demonbred'"
 #command "#enc 5"
@@ -5549,8 +5235,6 @@
 #new secondshape
 #id "camel_leather_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_leather.png"
-#command "#spr2 shift"
 #command "#armor 251"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5560,8 +5244,6 @@
 #new secondshape
 #id "camel_turtle_shell_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_turtle_shell.png"
-#command "#spr2 shift"
 #command "#armor 137"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5571,8 +5253,6 @@
 #new secondshape
 #id "camel_ochre_turtle_shell_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_turtle_shell_ochre.png"
-#command "#spr2 shift"
 #command "#armor 137"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5582,8 +5262,6 @@
 #new secondshape
 #id "camel_green_turtle_shell_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_turtle_shell_green.png"
-#command "#spr2 shift"
 #command "#armor 137"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5593,8 +5271,6 @@
 #new secondshape
 #id "camel_coral_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_coral.png"
-#command "#spr2 shift"
 #command "#poisonarmor 5"
 #command "#armor 190"
 #command "#gcost 20"
@@ -5605,8 +5281,6 @@
 #new secondshape
 #id "camel_light_bronze_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#armor 264"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5616,8 +5290,6 @@
 #new secondshape
 #id "camel_light_scale_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#armor 252"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5627,8 +5299,6 @@
 #new secondshape
 #id "camel_bronze_mail_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5638,8 +5308,6 @@
 #new secondshape
 #id "camel_iron_mail_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_mail.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5649,8 +5317,6 @@
 #new secondshape
 #id "camel_cataphract_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#armor 253"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5660,8 +5326,6 @@
 #new secondshape
 #id "camel_bronze_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_bronze.png"
-#command "#spr2 shift"
 #command "#armor 263"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5671,8 +5335,6 @@
 #new secondshape
 #id "camel_plate_barding_mount"
 #command "#copystats 3538"
-#command "#spr1 ./graphics/mounts/standard/camel_armored_plate.png"
-#command "#spr2 shift"
 #command "#armor 254"
 #command "#gcost 20"
 #command "#rcost 2"
@@ -5681,8 +5343,6 @@
 
 #new secondshape
 #id "bear_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_small.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5712,8 +5372,6 @@
 
 #new secondshape
 #id "bear_turtle_shell_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_turtleshell.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5744,8 +5402,6 @@
 
 #new secondshape
 #id "bear_leather_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_small_armored_leather.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5776,8 +5432,6 @@
 
 #new secondshape
 #id "bear_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_lightbronze.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5808,8 +5462,6 @@
 
 #new secondshape
 #id "bear_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_lightscale.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5840,8 +5492,6 @@
 
 #new secondshape
 #id "bear_coral_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_coral.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5873,8 +5523,6 @@
 
 #new secondshape
 #id "bear_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_bronzemail.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5904,8 +5552,6 @@
 
 #new secondshape
 #id "bear_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_cataphract.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5935,8 +5581,6 @@
 
 #new secondshape
 #id "bear_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_cataphract.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5966,8 +5610,6 @@
 
 #new secondshape
 #id "bear_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_bronze.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -5997,8 +5639,6 @@
 
 #new secondshape
 #id "bear_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_plate.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -6028,8 +5668,6 @@
 
 #new secondshape
 #id "bear_golden_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_gold.png"
-#command "#spr2 ./graphics/mounts/standard/bear_small_upright.png"
 #command "#magicboost 53 -5"
 #command "#name Bear"
 #command "#weapon 20"
@@ -6060,8 +5698,6 @@
 #new secondshape
 #id "great_bear_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#gcost 40"
@@ -6071,8 +5707,6 @@
 #new secondshape
 #id "great_bear_turtle_shell_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_turtleshell.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 137"
@@ -6083,8 +5717,6 @@
 #new secondshape
 #id "great_bear_light_bronze_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_lightbronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 264"
@@ -6095,8 +5727,6 @@
 #new secondshape
 #id "great_bear_light_scale_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_lightscale.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 252"
@@ -6107,8 +5737,6 @@
 #new secondshape
 #id "great_bear_coral_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_coral.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#poisonarmor 5"
@@ -6120,8 +5748,6 @@
 #new secondshape
 #id "great_bear_bronze_mail_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_bronzemail.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 172"
@@ -6132,8 +5758,6 @@
 #new secondshape
 #id "great_bear_iron_mail_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 172"
@@ -6144,8 +5768,6 @@
 #new secondshape
 #id "great_bear_cataphract_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 253"
@@ -6156,8 +5778,6 @@
 #new secondshape
 #id "great_bear_bronze_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 254"
@@ -6168,8 +5788,6 @@
 #new secondshape
 #id "great_bear_plate_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_plate.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 254"
@@ -6180,8 +5798,6 @@
 #new secondshape
 #id "great_bear_golden_barding_mount"
 #command "#copystats 694"
-#command "#spr1 ./graphics/mounts/standard/bear_armored_gold.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -1"
 #command "#transformation 0"
 #command "#armor 277"
@@ -6191,8 +5807,6 @@
 
 #new secondshape
 #id "polar_bear_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6222,8 +5836,6 @@
 
 #new secondshape
 #id "polar_bear_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_lightbronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6254,8 +5866,6 @@
 
 #new secondshape
 #id "polar_bear_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_lightscale.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6286,8 +5896,6 @@
 
 #new secondshape
 #id "polar_bear_turtle_shell_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_turtleshell.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6318,8 +5926,6 @@
 
 #new secondshape
 #id "polar_bear_coral_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_coral.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6351,8 +5957,6 @@
 
 #new secondshape
 #id "polar_bear_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_bronzemail.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6382,8 +5986,6 @@
 
 #new secondshape
 #id "polar_bear_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6413,8 +6015,6 @@
 
 #new secondshape
 #id "polar_bear_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6444,8 +6044,6 @@
 
 #new secondshape
 #id "polar_bear_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6475,8 +6073,6 @@
 
 #new secondshape
 #id "polar_bear_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_plate.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6506,8 +6102,6 @@
 
 #new secondshape
 #id "polar_bear_ice_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_ice.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6537,8 +6131,6 @@
 
 #new secondshape
 #id "polar_bear_meteorite_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/bear_polar_armored_meteorite.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Ice Bear'"
 #command "#weapon 20"
@@ -6569,8 +6161,6 @@
 #new secondshape
 #id "caveman_fur_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Caveman'"
 #command "#armor 44"
@@ -6582,8 +6172,6 @@
 #new secondshape
 #id "caveman_bronze_scale_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Caveman'"
 #command "#armor 136"
@@ -6595,8 +6183,6 @@
 #new secondshape
 #id "caveman_scale_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Caveman'"
 #command "#armor 12"
@@ -6608,8 +6194,6 @@
 #new secondshape
 #id "caveman_bronze_mail_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Caveman'"
 #command "#armor 13"
@@ -6621,8 +6205,6 @@
 #new secondshape
 #id "caveman_iron_mail_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Caveman'"
 #command "#armor 13"
@@ -6634,8 +6216,6 @@
 #new secondshape
 #id "caveman_bronze_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Caveman'"
 #command "#armor 101"
@@ -6647,8 +6227,6 @@
 #new secondshape
 #id "caveman_plate_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Caveman'"
 #command "#armor 14"
@@ -6660,8 +6238,6 @@
 #new secondshape
 #id "occidental_caveman_fur_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_occidental.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
 #command "#armor 44"
@@ -6673,8 +6249,6 @@
 #new secondshape
 #id "occidental_caveman_bronze_scale_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_occidental.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
 #command "#armor 136"
@@ -6686,8 +6260,6 @@
 #new secondshape
 #id "occidental_caveman_scale_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_occidental.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
 #command "#armor 12"
@@ -6699,8 +6271,6 @@
 #new secondshape
 #id "occidental_caveman_bronze_mail_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_occidental.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
 #command "#armor 13"
@@ -6712,8 +6282,6 @@
 #new secondshape
 #id "occidental_caveman_iron_mail_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_occidental.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
 #command "#armor 13"
@@ -6725,8 +6293,6 @@
 #new secondshape
 #id "occidental_caveman_bronze_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_occidental.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
 #command "#armor 101"
@@ -6738,8 +6304,6 @@
 #new secondshape
 #id "occidental_caveman_plate_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_occidental.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
 #command "#armor 14"
@@ -6751,8 +6315,6 @@
 #new secondshape
 #id "hellbred_caveman_fur_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/horite.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Hellbred Caveman'"
 #command "#fireres 15"
@@ -6767,8 +6329,6 @@
 #new secondshape
 #id "hellbred_caveman_bronze_scale_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/horite.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Hellbred Caveman'"
 #command "#fireres 15"
@@ -6783,8 +6343,6 @@
 #new secondshape
 #id "hellbred_caveman_scale_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/horite.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Hellbred Caveman'"
 #command "#fireres 15"
@@ -6799,8 +6357,6 @@
 #new secondshape
 #id "hellbred_caveman_bronze_mail_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/horite.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Hellbred Caveman'"
 #command "#fireres 15"
@@ -6815,8 +6371,6 @@
 #new secondshape
 #id "hellbred_caveman_iron_mail_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/horite.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Hellbred Caveman'"
 #command "#fireres 15"
@@ -6831,8 +6385,6 @@
 #new secondshape
 #id "hellbred_caveman_bronze_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/horite.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Hellbred Caveman'"
 #command "#fireres 15"
@@ -6847,8 +6399,6 @@
 #new secondshape
 #id "hellbred_caveman_plate_armor_mount"
 #command "#copystats 2018"
-#command "#spr1 ./graphics/hoburg/mounts/horite.png"
-#command "#spr2 shift" 
 #command "#magicboost 53 -5"
 #command "#name 'Hellbred Caveman'"
 #command "#fireres 15"
@@ -7162,8 +6712,6 @@
 
 #new secondshape
 #id "elk_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7194,8 +6742,6 @@
 
 #new secondshape
 #id "elk_turtle_shell_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7227,8 +6773,6 @@
 
 #new secondshape
 #id "elk_coral_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7261,8 +6805,6 @@
 
 #new secondshape
 #id "elk_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7294,8 +6836,6 @@
 
 #new secondshape
 #id "elk_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7327,8 +6867,6 @@
 
 #new secondshape
 #id "elk_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7359,8 +6897,6 @@
 
 #new secondshape
 #id "elk_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7391,8 +6927,6 @@
 
 #new secondshape
 #id "elk_gossamer_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7423,8 +6957,6 @@
 
 #new secondshape
 #id "elk_cataphract_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7455,8 +6987,6 @@
 
 #new secondshape
 #id "elk_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7487,8 +7017,6 @@
 
 #new secondshape
 #id "elk_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7519,8 +7047,6 @@
 
 #new secondshape
 #id "elk_golden_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7551,8 +7077,6 @@
 
 #new secondshape
 #id "elk_ice_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7583,8 +7107,6 @@
 
 #new secondshape
 #id "elk_meteorite_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/elk.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Elk'"
 #command "#weapon 397"
@@ -7615,8 +7137,6 @@
 
 #new secondshape
 #id "peryton_mount"
-#command "#spr1 ./graphics/mounts/standard/peryton2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Peryton'"
 #command "#weapon 354"
@@ -7645,8 +7165,6 @@
 
 #new secondshape
 #id "peryton_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/peryton2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Peryton'"
 #command "#weapon 354"
@@ -7676,8 +7194,6 @@
 
 #new secondshape
 #id "peryton_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/peryton2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Peryton'"
 #command "#weapon 354"
@@ -7707,8 +7223,6 @@
 
 #new secondshape
 #id "peryton_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/peryton2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Peryton'"
 #command "#weapon 354"
@@ -7737,8 +7251,6 @@
 
 #new secondshape
 #id "peryton_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/peryton2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Peryton'"
 #command "#weapon 354"
@@ -7767,8 +7279,6 @@
 
 #new secondshape
 #id "peryton_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/peryton2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Peryton'"
 #command "#weapon 354"
@@ -7797,8 +7307,6 @@
 
 #new secondshape
 #id "peryton_gossamer_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/peryton2.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Peryton'"
 #command "#weapon 354"
@@ -7947,8 +7455,6 @@
 #new secondshape
 #id "steppe_horse_mount"
 #command "#copystats 3573"
-#command "#spr1 ./graphics/mounts/standard/drafthorse.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#gcost 15"
 #command "#rcost 2"
@@ -7958,8 +7464,6 @@
 #new secondshape
 #id "steppe_horse_leather_barding_mount"
 #command "#copystats 3573"
-#command "#spr1 ./graphics/mounts/standard/drafthorse.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 172"
 #command "#gcost 15"
@@ -7970,8 +7474,6 @@
 #new secondshape
 #id "steppe_horse_light_scale_barding_mount"
 #command "#copystats 3573"
-#command "#spr1 ./graphics/mounts/standard/drafthorse.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 252"
 #command "#gcost 15"
@@ -7982,8 +7484,6 @@
 #new secondshape
 #id "steppe_horse_mail_barding_mount"
 #command "#copystats 3573"
-#command "#spr1 ./graphics/mounts/standard/drafthorse.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 172"
 #command "#gcost 15"
@@ -7994,8 +7494,6 @@
 #new secondshape
 #id "steppe_horse_cataphract_barding_mount"
 #command "#copystats 3573"
-#command "#spr1 ./graphics/mounts/standard/drafthorse.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 253"
 #command "#gcost 15"
@@ -8006,8 +7504,6 @@
 #new secondshape
 #id "steppe_horse_plate_barding_mount"
 #command "#copystats 3573"
-#command "#spr1 ./graphics/mounts/standard/drafthorse.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 254"
 #command "#gcost 15"
@@ -8203,8 +7699,6 @@
 #new secondshape
 #id "war_horse_light_scale_barding_mount_2"
 #command "#copystats 3515"
-#command "#spr1 ./graphics/mounts/standard/armoredhorse1a.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#gcost 15"
 #command "#rcost 2"
@@ -8214,8 +7708,6 @@
 #new secondshape
 #id "war_horse_bronze_mail_barding_mount"
 #command "#copystats 3515"
-#command "#spr1 ./graphics/mounts/standard/armoredhorse1a.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 172"
 #command "#gcost 15"
@@ -8226,8 +7718,6 @@
 #new secondshape
 #id "war_horse_iron_mail_barding_mount"
 #command "#copystats 3515"
-#command "#spr1 ./graphics/mounts/standard/armoredhorse1a.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 172"
 #command "#gcost 15"
@@ -8323,8 +7813,6 @@
 #new secondshape
 #id "ghoul_horse_mount"
 #command "#name 'Ghoul Horse'"
-#command "#spr1 ./graphics/mounts/standard/ghoul_horse.png"
-#command "#spr2 shift"
 #armor
 #command "#size 5"
 #command "#hp 22"
@@ -8350,8 +7838,6 @@
 #new secondshape
 #id "ghoul_horse_light_scale_barding_mount"
 #command "#name 'Ghoul Horse'"
-#command "#spr1 ./graphics/mounts/standard/ghoul_horse_armored.png"
-#command "#spr2 shift"
 #command "#size 5"
 #command "#hp 22"
 #command "#prot 3"
@@ -8377,8 +7863,6 @@
 #new secondshape
 #id "ghoul_horse_iron_mail_barding_mount"
 #command "#name 'Ghoul Horse'"
-#command "#spr1 ./graphics/mounts/standard/ghoul_horse_armored.png"
-#command "#spr2 shift"
 #command "#size 5"
 #command "#hp 22"
 #command "#prot 3"
@@ -8404,8 +7888,6 @@
 #new secondshape
 #id "ghoul_horse_cataphract_barding_mount"
 #command "#name 'Ghoul Horse'"
-#command "#spr1 ./graphics/mounts/standard/ghoul_horse_armored.png"
-#command "#spr2 shift"
 #command "#size 5"
 #command "#hp 22"
 #command "#prot 3"
@@ -8431,8 +7913,6 @@
 #new secondshape
 #id "ghoul_horse_plate_barding_mount"
 #command "#name 'Ghoul Horse'"
-#command "#spr1 ./graphics/mounts/standard/ghoul_horse_armored.png"
-#command "#spr2 shift"
 #command "#size 5"
 #command "#hp 22"
 #command "#prot 3"
@@ -8597,8 +8077,6 @@
 #new secondshape
 #id "black_unicorn_leather_barding_mount"
 #command "#copystats 3526"
-#command "#spr1 ./graphics/mounts/standard/black_unicorn_armored_leather.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 251"
 #command "#gcost 30"
@@ -8610,7 +8088,6 @@
 #id "black_unicorn_light_scale_barding_mount"
 #command "#copystats 3526"
 #command "#copystats 3526"
-#command "#spr1 ./graphics/mounts/standard/black_unicorn_armored_light_scale.png"
 #command "#magicboost 53 -5"
 #command "#armor 252"
 #command "#gcost 30"
@@ -8622,7 +8099,6 @@
 #id "black_unicorn_bronze_mail_barding_mount"
 #command "#copystats 3526"
 #command "#copystats 3526"
-#command "#spr1 ./graphics/mounts/standard/black_unicorn_armored_mail_bronze.png"
 #command "#magicboost 53 -5"
 #command "#armor 172"
 #command "#gcost 30"
@@ -8634,7 +8110,6 @@
 #id "black_unicorn_gossamer_barding_mount"
 #command "#copystats 3526"
 #command "#copystats 3526"
-#command "#spr1 ./graphics/mounts/standard/black_unicorn_armored_gossamer.png"
 #command "#magicboost 53 -5"
 #command "#armor 274"
 #command "#gcost 30"
@@ -8646,7 +8121,6 @@
 #id "black_unicorn_cataphract_barding_mount"
 #command "#copystats 3526"
 #command "#copystats 3526"
-#command "#spr1 ./graphics/mounts/standard/black_unicorn_armored_cataphract.png"
 #command "#magicboost 53 -5"
 #command "#armor 253"
 #command "#gcost 30"
@@ -8658,7 +8132,6 @@
 #id "black_unicorn_plate_barding_mount"
 #command "#copystats 3526"
 #command "#copystats 3526"
-#command "#spr1 ./graphics/mounts/standard/black_unicorn_armored_plate.png"
 #command "#magicboost 53 -5"
 #command "#armor 254"
 #command "#gcost 30"
@@ -9653,8 +9126,6 @@
 #new secondshape
 #id "longdead_horse_thick_linen_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/horse_longdead.png"
-#command "#spr2 shift"
 #command "#armor thick_linen_barding"
 #command "#gcost 30"
 #command "#rcost 6"
@@ -9664,8 +9135,6 @@
 #new secondshape
 #id "longdead_horse_light_bronze_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/horse_longdead.png"
-#command "#spr2 shift"
 #command "#gcost 30"
 #command "#rcost 6"
 #mount
@@ -9674,8 +9143,6 @@
 #new secondshape
 #id "longdead_horse_bronze_mail_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/horse_longdead.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#gcost 30"
 #command "#rcost 6"
@@ -9685,8 +9152,6 @@
 #new secondshape
 #id "longdead_horse_bronze_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/horse_longdead.png"
-#command "#spr2 shift"
 #command "#armor 263"
 #command "#gcost 30"
 #command "#rcost 6"
@@ -9696,8 +9161,6 @@
 #new secondshape
 #id "longdead_lizard_thick_linen_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/lizard_longdead.png"
-#command "#spr2 shift"
 #command "#armor thick_linen_barding"
 #command "#gcost 30"
 #command "#rcost 6"
@@ -9707,8 +9170,6 @@
 #new secondshape
 #id "longdead_lizard_light_bronze_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/lizard_longdead.png"
-#command "#spr2 shift"
 #command "#gcost 30"
 #command "#rcost 6"
 #mount
@@ -9717,8 +9178,6 @@
 #new secondshape
 #id "longdead_lizard_bronze_mail_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/lizard_longdead.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#gcost 30"
 #command "#rcost 6"
@@ -9728,8 +9187,6 @@
 #new secondshape
 #id "longdead_lizard_bronze_barding_chariot"
 #command "#copystats 3569"
-#command "#spr1 ./graphics/mounts/chariots/lizard_longdead.png"
-#command "#spr2 shift"
 #command "#armor 263"
 #command "#gcost 30"
 #command "#rcost 6"
@@ -10354,8 +9811,6 @@
 #new secondshape
 #id "camel_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10367,8 +9822,6 @@
 #new secondshape
 #id "camel_thick_linen_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_thick_linen.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10381,8 +9834,6 @@
 #new secondshape
 #id "camel_leather_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_leather.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10395,8 +9846,6 @@
 #new secondshape
 #id "camel_light_bronze_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10409,8 +9858,6 @@
 #new secondshape
 #id "camel_light_scale_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10423,8 +9870,6 @@
 #new secondshape
 #id "camel_bronze_mail_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10437,8 +9882,6 @@
 #new secondshape
 #id "camel_iron_mail_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_mail.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10451,8 +9894,6 @@
 #new secondshape
 #id "camel_cataphract_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10465,8 +9906,6 @@
 #new secondshape
 #id "camel_bronze_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_bronze.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10479,8 +9918,6 @@
 #new secondshape
 #id "camel_plate_barding_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_chariot_armored_plate.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10493,8 +9930,6 @@
 #new secondshape
 #id "camel_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10506,8 +9941,6 @@
 #new secondshape
 #id "camel_light_bronze_barding_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10520,8 +9953,6 @@
 #new secondshape
 #id "camel_light_scale_barding_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10534,8 +9965,6 @@
 #new secondshape
 #id "camel_bronze_mail_barding_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10548,8 +9977,6 @@
 #new secondshape
 #id "camel_mail_barding_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot_armored_mail.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10562,8 +9989,6 @@
 #new secondshape
 #id "camel_cataphract_barding_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10576,8 +10001,6 @@
 #new secondshape
 #id "camel_bronze_barding_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot_armored_bronze.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10590,8 +10013,6 @@
 #new secondshape
 #id "camel_plate_barding_oriental_chariot"
 #command "#copystats 3563"
-#command "#spr1 ./graphics/mounts/chariots/camel_oriental_chariot_armored_plate.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#supplybonus +1"
 #command "#wastesurvival"
@@ -10604,8 +10025,6 @@
 #new secondshape
 #id "lizard_thick_linen_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor thick_linen_barding"
@@ -10617,8 +10036,6 @@
 #new secondshape
 #id "lizard_leather_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 251"
@@ -10630,8 +10047,6 @@
 #new secondshape
 #id "lizard_light_bronze_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 264"
@@ -10643,8 +10058,6 @@
 #new secondshape
 #id "lizard_light_scale_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 252"
@@ -10656,8 +10069,6 @@
 #new secondshape
 #id "lizard_bronze_mail_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 172"
@@ -10669,8 +10080,6 @@
 #new secondshape
 #id "lizard_iron_mail_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 172"
@@ -10682,8 +10091,6 @@
 #new secondshape
 #id "lizard_cataphract_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 253"
@@ -10695,8 +10102,6 @@
 #new secondshape
 #id "lizard_bronze_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 263"
@@ -10708,8 +10113,6 @@
 #new secondshape
 #id "lizard_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#gcost 25"
@@ -10720,8 +10123,6 @@
 #new secondshape
 #id "lizard_light_bronze_barding_oriental_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard_oriental.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 264"
@@ -10733,8 +10134,6 @@
 #new secondshape
 #id "lizard_light_scale_barding_oriental_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard_oriental.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 252"
@@ -10746,8 +10145,6 @@
 #new secondshape
 #id "lizard_mail_barding_oriental_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard_oriental.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 172"
@@ -10759,8 +10156,6 @@
 #new secondshape
 #id "lizard_cataphract_barding_oriental_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard_oriental.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 253"
@@ -10772,8 +10167,6 @@
 #new secondshape
 #id "lizard_bronze_barding_oriental_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard_oriental.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 263"
@@ -10785,8 +10178,6 @@
 #new secondshape
 #id "lizard_plate_barding_oriental_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard_oriental.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#armor 264"
@@ -10798,8 +10189,6 @@
 #new secondshape
 #id "lizard_barding_oriental_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/lizard_oriental.png"
-#command "#spr2 shift"
 #command "#nomovepen"
 #command "#coldblood"
 #command "#gcost 25"
@@ -10810,8 +10199,6 @@
 #new secondshape
 #id "two_lizard_light_scale_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/twolizard.png"
-#command "#spr2 shift"
 #command "#hp 40"
 #command "#size 7"
 #command "#ap 15"
@@ -10830,8 +10217,6 @@
 #new secondshape
 #id "two_lizard_iron_mail_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/twolizard.png"
-#command "#spr2 shift"
 #command "#hp 40"
 #command "#size 7"
 #command "#ap 15"
@@ -10850,8 +10235,6 @@
 #new secondshape
 #id "two_lizard_cataphract_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/twolizard.png"
-#command "#spr2 shift"
 #command "#hp 40"
 #command "#size 7"
 #command "#ap 15"
@@ -10870,8 +10253,6 @@
 #new secondshape
 #id "two_lizard_barding_chariot"
 #command "#copystats 3568"
-#command "#spr1 ./graphics/mounts/chariots/twolizard.png"
-#command "#spr2 shift"
 #command "#hp 40"
 #command "#size 7"
 #command "#ap 15"
@@ -10888,8 +10269,6 @@
 
 #new secondshape
 #id "swan_chariot"
-#command "#spr1 ./graphics/mounts/chariots/small_swan_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -10914,8 +10293,6 @@
 
 #new secondshape
 #id "swan_leather_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/small_swan_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -10941,8 +10318,6 @@
 
 #new secondshape
 #id "swan_light_bronze_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/small_swan_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -10968,8 +10343,6 @@
 
 #new secondshape
 #id "swan_light_scale_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/small_swan_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -10995,8 +10368,6 @@
 
 #new secondshape
 #id "swan_iron_mail_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/small_swan_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -11022,8 +10393,6 @@
 
 #new secondshape
 #id "black_swan_chariot"
-#command "#spr1 ./graphics/mounts/chariots/black_swan_chariot_armored_iron.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -11048,8 +10417,6 @@
 
 #new secondshape
 #id "black_swan_leather_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/black_swan_chariot_armored_leather.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -11075,8 +10442,6 @@
 
 #new secondshape
 #id "black_swan_light_bronze_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/black_swan_chariot_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -11102,8 +10467,6 @@
 
 #new secondshape
 #id "black_swan_light_scale_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/black_swan_chariot_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -11129,8 +10492,6 @@
 
 #new secondshape
 #id "black_swan_bronze_mail_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/black_swan_chariot_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -11156,8 +10517,6 @@
 
 #new secondshape
 #id "black_swan_iron_mail_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/black_swan_chariot_armored_mail.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan Chariot'"
 #command "#size 3"
 #command "#hp 8"
@@ -11183,8 +10542,6 @@
 
 #new secondshape
 #id "giant_swan_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11210,8 +10567,6 @@
 
 #new secondshape
 #id "giant_swan_leather_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11238,8 +10593,6 @@
 
 #new secondshape
 #id "giant_swan_light_bronze_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11266,8 +10619,6 @@
 
 #new secondshape
 #id "giant_swan_light_scale_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11294,8 +10645,6 @@
 
 #new secondshape
 #id "giant_swan_bronze_mail_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11322,8 +10671,6 @@
 
 #new secondshape
 #id "giant_swan_iron_mail_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11350,8 +10697,6 @@
 
 #new secondshape
 #id "giant_swan_cataphract_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11378,8 +10723,6 @@
 
 #new secondshape
 #id "giant_swan_bronze_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11406,8 +10749,6 @@
 
 #new secondshape
 #id "giant_swan_plate_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11434,8 +10775,6 @@
 
 #new secondshape
 #id "giant_swan_golden_barding_chariot"
-#command "#spr1 ./graphics/sidhe/mounts/chariot_swan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan Chariot'"
 #command "#prot 4"
 #command "#str 12"
@@ -11462,8 +10801,6 @@
 
 #new secondshape
 #id "boar_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11483,8 +10820,6 @@
 
 #new secondshape
 #id "boar_light_bronze_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11505,8 +10840,6 @@
 
 #new secondshape
 #id "boar_light_scale_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11527,8 +10860,6 @@
 
 #new secondshape
 #id "boar_bronze_mail_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11549,8 +10880,6 @@
 
 #new secondshape
 #id "boar_iron_mail_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot_armored_mail.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11571,8 +10900,6 @@
 
 #new secondshape
 #id "boar_cataphract_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11593,8 +10920,6 @@
 
 #new secondshape
 #id "boar_bronze_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot_armored_bronze.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11615,8 +10940,6 @@
 
 #new secondshape
 #id "boar_plate_barding_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_chariot_armored_plate.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11637,8 +10960,6 @@
 
 #new secondshape
 #id "boar_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11658,8 +10979,6 @@
 
 #new secondshape
 #id "boar_light_bronze_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11680,8 +10999,6 @@
 
 #new secondshape
 #id "boar_light_scale_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11702,8 +11019,6 @@
 
 #new secondshape
 #id "boar_mail_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot_armored_mail.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11724,8 +11039,6 @@
 
 #new secondshape
 #id "boar_bronze_mail_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11746,8 +11059,6 @@
 
 #new secondshape
 #id "boar_cataphract_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11768,8 +11079,6 @@
 
 #new secondshape
 #id "boar_bronze_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot_armored_bronze.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11790,8 +11099,6 @@
 
 #new secondshape
 #id "boar_plate_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/boar_oriental_chariot_armored_plate.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 15"
 #command "#trample"
@@ -11812,8 +11119,6 @@
 
 #new secondshape
 #id "tiger_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/tiger_oriental.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 22"
 #command "#trample"
@@ -11834,8 +11139,6 @@
 
 #new secondshape
 #id "tiger_light_bronze_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/tiger_oriental.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 22"
 #command "#trample"
@@ -11857,8 +11160,6 @@
 
 #new secondshape
 #id "tiger_light_scale_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/tiger_oriental.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 22"
 #command "#trample"
@@ -11880,8 +11181,6 @@
 
 #new secondshape
 #id "tiger_mail_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/tiger_oriental.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 22"
 #command "#trample"
@@ -11903,8 +11202,6 @@
 
 #new secondshape
 #id "tiger_cataphract_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/tiger_oriental.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 22"
 #command "#trample"
@@ -11926,8 +11223,6 @@
 
 #new secondshape
 #id "tiger_bronze_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/tiger_oriental.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 22"
 #command "#trample"
@@ -11949,8 +11244,6 @@
 
 #new secondshape
 #id "tiger_plate_barding_oriental_chariot"
-#command "#spr1 ./graphics/mounts/chariots/tiger_oriental.png"
-#command "#spr2 shift"
 #command "#copystats 3563"
 #command "#hp 22"
 #command "#trample"
@@ -12105,8 +11398,6 @@
 #new secondshape
 #id "cave_cow_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#gcost 30"
 #command "#rcost 6"
@@ -12116,8 +11407,6 @@
 #new secondshape
 #id "cave_cow_turtle_shell_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_turtle_shell.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 137"
 #command "#gcost 30"
@@ -12128,8 +11417,6 @@
 #new secondshape
 #id "cave_cow_coral_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_coral.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#poisonarmor 5"
 #command "#armor 190"
@@ -12141,8 +11428,6 @@
 #new secondshape
 #id "cave_cow_light_bronze_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_light_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 264"
 #command "#gcost 30"
@@ -12153,8 +11438,6 @@
 #new secondshape
 #id "cave_cow_light_scale_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 252"
 #command "#gcost 30"
@@ -12165,8 +11448,6 @@
 #new secondshape
 #id "cave_cow_bronze_mail_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_mail_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 172"
 #command "#gcost 30"
@@ -12177,8 +11458,6 @@
 #new secondshape
 #id "cave_cow_iron_mail_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_mail.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 172"
 #command "#gcost 30"
@@ -12189,8 +11468,6 @@
 #new secondshape
 #id "cave_cow_cataphract_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_cataphract.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 253"
 #command "#gcost 30"
@@ -12201,8 +11478,6 @@
 #new secondshape
 #id "cave_cow_bronze_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_bronze.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 263"
 #command "#gcost 30"
@@ -12213,8 +11488,6 @@
 #new secondshape
 #id "cave_cow_plate_barding_mount"
 #command "#copystats 2512"
-#command "#spr1 ./graphics/mounts/standard/cavecow_armored_plate.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#armor 254"
 #command "#gcost 30"
@@ -12225,8 +11498,6 @@
 #new secondshape
 #id "fossil_mount"
 #command "#copystats 1977"
-#command "#spr1 ./graphics/abysian/mounts/fossil.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#itemslots 786950"
 #command "#gcost 50"
@@ -12237,8 +11508,6 @@
 #new secondshape
 #id "fossil_rusty_mail_armor_mount"
 #command "#copystats 1977"
-#command "#spr1 ./graphics/abysian/mounts/fossil.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#itemslots 786950"
 #command "#armor 32"
@@ -12250,8 +11519,6 @@
 #new secondshape
 #id "fossil_hauberk_armor_mount"
 #command "#copystats 1977"
-#command "#spr1 ./graphics/abysian/mounts/fossil.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#itemslots 786950"
 #command "#gcost 50"
@@ -12261,8 +11528,6 @@
 
 #new secondshape
 #id "caveman_fossil_mount"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_fossil.png"
-#command "#spr2 shift"
 #command "#name 'Fossilized Caveman'"
 #command "#size 4"
 #command "#hp 9"
@@ -12301,8 +11566,6 @@
 
 #new secondshape
 #id "caveman_fossil_rusty_mail_armor_mount"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_fossil.png"
-#command "#spr2 shift"
 #command "#name 'Fossilized Caveman'"
 #command "#size 4"
 #command "#hp 9"
@@ -12342,8 +11605,6 @@
 
 #new secondshape
 #id "caveman_fossil_hauberk_mount"
-#command "#spr1 ./graphics/hoburg/mounts/caveman_fossil.png"
-#command "#spr2 shift"
 #command "#name 'Fossilized Caveman'"
 #command "#size 4"
 #command "#hp 9"
@@ -12645,8 +11906,6 @@
 
 #new secondshape
 #id "hyena_mount"
-#command "#spr1 ./graphics/mounts/standard/hyena.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Hyena'"
 #command "#enc 3"
@@ -12673,8 +11932,6 @@
 
 #new secondshape
 #id "hyena_leather_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/hyena.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Hyena'"
 #command "#enc 3"
@@ -12702,8 +11959,6 @@
 
 #new secondshape
 #id "hyena_light_bronze_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/hyena.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Hyena'"
 #command "#enc 3"
@@ -12731,8 +11986,6 @@
 
 #new secondshape
 #id "hyena_light_scale_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/hyena.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Hyena'"
 #command "#enc 3"
@@ -12760,8 +12013,6 @@
 
 #new secondshape
 #id "hyena_bronze_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/hyena.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Hyena'"
 #command "#enc 3"
@@ -12789,8 +12040,6 @@
 
 #new secondshape
 #id "hyena_iron_mail_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/hyena.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Hyena'"
 #command "#enc 3"
@@ -12818,8 +12067,6 @@
 
 #new secondshape
 #id "hyena_plate_barding_mount"
-#command "#spr1 ./graphics/mounts/standard/hyena.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#name 'Hyena'"
 #command "#enc 3"
@@ -12883,8 +12130,6 @@
 #new secondshape
 #id "crocodile_bronze_mail_barding_mount"
 #command "#copystats 2185"
-#command "#spr1 ./graphics/mounts/standard/crocodile_monster_armored.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -12897,8 +12142,6 @@
 #new secondshape
 #id "crocodile_iron_mail_barding_mount"
 #command "#copystats 2185"
-#command "#spr1 ./graphics/mounts/standard/crocodile_monster_armored.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -12911,8 +12154,6 @@
 #new secondshape
 #id "crocodile_cataphract_barding_mount"
 #command "#copystats 2185"
-#command "#spr1 ./graphics/mounts/standard/crocodile_monster_armored.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -12925,8 +12166,6 @@
 #new secondshape
 #id "crocodile_bronze_barding_mount"
 #command "#copystats 2185"
-#command "#spr1 ./graphics/mounts/standard/crocodile_monster_armored.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -12939,8 +12178,6 @@
 #new secondshape
 #id "crocodile_plate_barding_mount"
 #command "#copystats 2185"
-#command "#spr1 ./graphics/mounts/standard/crocodile_monster_armored.png"
-#command "#spr2 shift"
 #command "#armor 172"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -13166,8 +12403,6 @@
 #new secondshape
 #id "black_dog_mount"
 #command "#copystats 1560"
-#command "#spr1 ./graphics/hoburg/mounts/blackdog.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#gcost 5"
@@ -13178,8 +12413,6 @@
 #new secondshape
 #id "black_dog_leather_barding_mount"
 #command "#copystats 1560"
-#command "#spr1 ./graphics/hoburg/mounts/blackdog_armored_leather.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#armor 251"
@@ -13463,8 +12696,6 @@
 #new secondshape
 #id "barghest_light_bronze_barding_mount"
 #command "#name 'Barghest'"
-#command "#spr1 ./graphics/hoburg/mounts/barghest_light_bronze_barding.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#size 4"
 #command "#mapmove 20"
@@ -13496,8 +12727,6 @@
 #new secondshape
 #id "barghest_light_scale_barding_mount"
 #command "#name 'Barghest'"
-#command "#spr1 ./graphics/hoburg/mounts/barghest_light_scale_barding.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#size 4"
 #command "#mapmove 20"
@@ -13529,8 +12758,6 @@
 #new secondshape
 #id "barghest_bronze_mail_barding_mount"
 #command "#name 'Barghest'"
-#command "#spr1 ./graphics/hoburg/mounts/barghest_mail_bronze_barding.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#size 4"
 #command "#mapmove 20"
@@ -13561,8 +12788,6 @@
 #new secondshape
 #id "barghest_mail_barding_mount"
 #command "#name 'Barghest'"
-#command "#spr1 ./graphics/hoburg/mounts/barghest_mail_barding.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#size 4"
 #command "#mapmove 20"
@@ -13593,8 +12818,6 @@
 #new secondshape
 #id "barghest_gossamer_barding_mount"
 #command "#name 'Barghest'"
-#command "#spr1 ./graphics/hoburg/mounts/barghest_gossamer_barding.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#size 4"
 #command "#mapmove 20"
@@ -13917,8 +13140,6 @@
 #new secondshape
 #id "black_swan_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/mounts/standard/black_swan.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan'"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -13930,8 +13151,6 @@
 #new secondshape
 #id "black_swan_leather_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/mounts/standard/black_swan_armored_leather.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan'"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -13944,8 +13163,6 @@
 #new secondshape
 #id "black_swan_light_scale_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/mounts/standard/black_swan_armored_light_scale.png"
-#command "#spr2 shift"
 #command "#name 'Black Swan'"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
@@ -13958,8 +13175,6 @@
 #new secondshape
 #id "giant_swan_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -13981,8 +13196,6 @@
 #new secondshape
 #id "giant_swan_sharkskin_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14005,8 +13218,6 @@
 #new secondshape
 #id "giant_swan_leather_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14029,8 +13240,6 @@
 #new secondshape
 #id "giant_swan_turtle_shell_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14053,8 +13262,6 @@
 #new secondshape
 #id "giant_swan_light_bronze_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14077,8 +13284,6 @@
 #new secondshape
 #id "giant_swan_light_scale_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14101,8 +13306,6 @@
 #new secondshape
 #id "giant_swan_coral_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14126,8 +13329,6 @@
 #new secondshape
 #id "giant_swan_bronze_mail_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14150,8 +13351,6 @@
 #new secondshape
 #id "giant_swan_iron_mail_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14174,8 +13373,6 @@
 #new secondshape
 #id "giant_swan_bronze_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14198,8 +13395,6 @@
 #new secondshape
 #id "giant_swan_plate_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14222,8 +13417,6 @@
 #new secondshape
 #id "giant_swan_golden_barding_mount"
 #command "#copystats 2929"
-#command "#spr1 ./graphics/sidhe/mounts/giantswan.png"
-#command "#spr2 shift"
 #command "#name 'Giant Swan'"
 #command "#hp 18"
 #command "#prot 2"
@@ -14246,8 +13439,6 @@
 #new secondshape
 #id "winged_lion_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14270,8 +13461,6 @@
 #new secondshape
 #id "winged_lion_leather_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14295,8 +13484,6 @@
 #new secondshape
 #id "winged_lion_light_bronze_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14320,8 +13507,6 @@
 #new secondshape
 #id "winged_lion_light_scale_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14345,8 +13530,6 @@
 #new secondshape
 #id "winged_lion_bronze_mail_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14370,8 +13553,6 @@
 #new secondshape
 #id "winged_lion_iron_mail_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14395,8 +13576,6 @@
 #new secondshape
 #id "winged_lion_cataphract_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14420,8 +13599,6 @@
 #new secondshape
 #id "winged_lion_bronze_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14445,8 +13622,6 @@
 #new secondshape
 #id "winged_lion_plate_barding_mount"
 #command "#copystats 628"
-#command "#spr1 ./graphics/mounts/standard/winged_lion.png"
-#command "#spr2 shift"
 #command "#magicboost 53 -5"
 #command "#transformation 0"
 #command "#size 6"
@@ -14470,8 +13645,6 @@
 #new secondshape
 #id "huge_mantis_mount"
 #command "#name 'Giant Mantis'"
-#command "#spr1 ./graphics/mounts/standard/huge_mantis.png"
-#command "#spr2 shift"
 #command "#quadruped"
 #command "#size 3"
 #command "#hp 12"
@@ -14702,8 +13875,6 @@
 #new secondshape
 #id "sapphire_toad_mount"
 #command "#name 'Giant Frog'"
-#command "#spr1 ./graphics/mounts/standard/toad_sapphire.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#str 11"
 #command "#mor 12"
@@ -14735,8 +13906,6 @@
 #new secondshape
 #id "sapphire_toad_sharkskin_barding_mount"
 #command "#name 'Giant Frog'"
-#command "#spr1 ./graphics/mounts/standard/toad_sapphire.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#str 11"
 #command "#mor 12"
@@ -14769,8 +13938,6 @@
 #new secondshape
 #id "sapphire_toad_turtle_shell_barding_mount"
 #command "#name 'Giant Frog'"
-#command "#spr1 ./graphics/mounts/standard/toad_sapphire.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#str 11"
 #command "#mor 12"
@@ -14803,8 +13970,6 @@
 #new secondshape
 #id "sapphire_toad_coral_barding_mount"
 #command "#name 'Giant Frog'"
-#command "#spr1 ./graphics/mounts/standard/toad_sapphire.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#str 11"
 #command "#mor 12"
@@ -14838,8 +14003,6 @@
 #new secondshape
 #id "sapphire_toad_bronze_mail_barding_mount"
 #command "#name 'Giant Frog'"
-#command "#spr1 ./graphics/mounts/standard/toad_sapphire.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#str 11"
 #command "#mor 12"
@@ -14872,8 +14035,6 @@
 #new secondshape
 #id "sapphire_toad_bronze_barding_mount"
 #command "#name 'Giant Frog'"
-#command "#spr1 ./graphics/mounts/standard/toad_sapphire.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#str 11"
 #command "#mor 12"
@@ -14906,8 +14067,6 @@
 #new secondshape
 #id "giant_rat_mount"
 #command "#name 'Giant Rat'"
-#command "#spr1 ./graphics/mounts/standard/giant_rat.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#size 3"
 #command "#hp 12"
@@ -14939,8 +14098,6 @@
 #new secondshape
 #id "giant_rat_leather_barding_mount"
 #command "#name 'Giant Rat'"
-#command "#spr1 ./graphics/mounts/standard/giant_rat.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#size 3"
 #command "#hp 12"
@@ -14973,8 +14130,6 @@
 #new secondshape
 #id "giant_rat_turtle_shell_barding_mount"
 #command "#name 'Giant Rat'"
-#command "#spr1 ./graphics/mounts/standard/giant_rat.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#size 3"
 #command "#hp 12"
@@ -15007,8 +14162,6 @@
 #new secondshape
 #id "giant_rat_coral_barding_mount"
 #command "#name 'Giant Rat'"
-#command "#spr1 ./graphics/mounts/standard/giant_rat.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#size 3"
 #command "#hp 12"
@@ -15042,8 +14195,6 @@
 #new secondshape
 #id "giant_rat_light_scale_barding_mount"
 #command "#name 'Giant Rat'"
-#command "#spr1 ./graphics/mounts/standard/giant_rat.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#size 3"
 #command "#hp 12"
@@ -15076,8 +14227,6 @@
 #new secondshape
 #id "giant_rat_iron_mail_barding_mount"
 #command "#name 'Giant Rat'"
-#command "#spr1 ./graphics/mounts/standard/giant_rat.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#size 3"
 #command "#hp 12"
@@ -15110,8 +14259,6 @@
 #new secondshape
 #id "giant_rat_obsidian_barding_mount"
 #command "#name 'Giant Rat'"
-#command "#spr1 ./graphics/mounts/standard/giant_rat.png"
-#command "#spr2 shift"
 #command "#lizard"
 #command "#size 3"
 #command "#hp 12"
@@ -15144,8 +14291,6 @@
 #new secondshape
 #id "giant_rat_chariot"
 #command "#name 'Rat Chariot'"
-#command "#spr1 ./graphics/mounts/chariots/small_rat_iron.png"
-#command "#spr2 shift"
 #command "#quadruped"
 #command "#size 4"
 #command "#hp 12"
@@ -15178,8 +14323,6 @@
 #new secondshape
 #id "giant_rat_leather_barding_chariot"
 #command "#name 'Rat Chariot'"
-#command "#spr1 ./graphics/mounts/chariots/small_rat_iron.png"
-#command "#spr2 shift"
 #command "#quadruped"
 #command "#size 4"
 #command "#hp 12"
@@ -15213,8 +14356,6 @@
 #new secondshape
 #id "giant_rat_light_bronze_barding_chariot"
 #command "#name 'Rat Chariot'"
-#command "#spr1 ./graphics/mounts/chariots/small_rat_iron.png"
-#command "#spr2 shift"
 #command "#quadruped"
 #command "#size 4"
 #command "#hp 12"
@@ -15248,8 +14389,6 @@
 #new secondshape
 #id "giant_rat_light_scale_barding_chariot"
 #command "#name 'Rat Chariot'"
-#command "#spr1 ./graphics/mounts/chariots/small_rat_iron.png"
-#command "#spr2 shift"
 #command "#quadruped"
 #command "#size 4"
 #command "#hp 12"
@@ -15283,8 +14422,6 @@
 #new secondshape
 #id "giant_rat_bronze_mail_barding_chariot"
 #command "#name 'Rat Chariot'"
-#command "#spr1 ./graphics/mounts/chariots/small_rat_iron.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 12"
 #command "#prot 5"
@@ -15317,8 +14454,6 @@
 #new secondshape
 #id "giant_rat_iron_mail_barding_chariot"
 #command "#name 'Rat Chariot'"
-#command "#spr1 ./graphics/mounts/chariots/small_rat_iron.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 12"
 #command "#prot 5"
@@ -15351,8 +14486,6 @@
 #new secondshape
 #id "dwarf_elephant_mount"
 #command "#name 'Dwarf Elephant'"
-#command "#spr1 ./graphics/mounts/standard/elephant_dwarf.png"
-#command "#spr2 shift"
 #command "#copystats 3540"
 #command "#size 3"
 #command "#hp 12"
@@ -15374,8 +14507,6 @@
 #new secondshape
 #id "dwarf_elephant_barding_mount"
 #command "#name 'Dwarf Elephant'"
-#command "#spr1 ./graphics/mounts/standard/elephant_dwarf_armored.png"
-#command "#spr2 shift"
 #command "#copystats 3541"
 #command "#size 3"
 #command "#hp 12"
@@ -15398,8 +14529,6 @@
 #new secondshape
 #id "dwarf_elephant_iron_mail_barding_mount"
 #command "#name 'Dwarf Elephant'"
-#command "#spr1 ./graphics/mounts/standard/elephant_dwarf_armored.png"
-#command "#spr2 shift"
 #command "#copystats 3541"
 #command "#size 3"
 #command "#hp 12"
@@ -15423,8 +14552,6 @@
 #new secondshape
 #id "dwarf_elephant_plate_barding_mount"
 #command "#name 'Dwarf Elephant'"
-#command "#spr1 ./graphics/mounts/standard/elephant_dwarf_armored.png"
-#command "#spr2 shift"
 #command "#copystats 3541"
 #command "#size 3"
 #command "#hp 12"
@@ -15449,8 +14576,6 @@
 #new secondshape
 #id "dwarf_elephant_multiple_rider_mount"
 #command "#name 'Dwarf Elephant'"
-#command "#spr1 ./graphics/mounts/standard/elephant_dwarf.png"
-#command "#spr2 shift"
 #command "#copystats 2307"
 #command "#size 3"
 #command "#hp 12"
@@ -15472,8 +14597,6 @@
 #new secondshape
 #id "hippo_mount"
 #command "#name 'Hippopotamus'"
-#command "#spr1 ./graphics/mounts/standard/hippo.png"
-#command "#spr2 shift"
 #command "#size 7"
 #command "#hp 54"
 #command "#prot 14"
@@ -15503,8 +14626,6 @@
 #new secondshape
 #id "hippo_leather_barding_mount"
 #command "#name 'Hippopotamus'"
-#command "#spr1 ./graphics/mounts/standard/hippo.png"
-#command "#spr2 shift"
 #command "#size 7"
 #command "#hp 54"
 #command "#prot 14"
@@ -15535,8 +14656,6 @@
 #new secondshape
 #id "hippo_light_scale_barding_mount"
 #command "#name 'Hippopotamus'"
-#command "#spr1 ./graphics/mounts/standard/hippo.png"
-#command "#spr2 shift"
 #command "#size 7"
 #command "#hp 54"
 #command "#prot 14"
@@ -15566,8 +14685,6 @@
 #new secondshape
 #id "hippo_mail_barding_mount"
 #command "#name 'Hippopotamus'"
-#command "#spr1 ./graphics/mounts/standard/hippo.png"
-#command "#spr2 shift"
 #command "#size 7"
 #command "#hp 54"
 #command "#prot 14"
@@ -15597,8 +14714,6 @@
 #new secondshape
 #id "hippo_cataphract_barding_mount"
 #command "#name 'Hippopotamus'"
-#command "#spr1 ./graphics/mounts/standard/hippo.png"
-#command "#spr2 shift"
 #command "#size 7"
 #command "#hp 54"
 #command "#prot 14"
@@ -15628,8 +14743,6 @@
 #new secondshape
 #id "hippo_plate_barding_mount"
 #command "#name 'Hippopotamus'"
-#command "#spr1 ./graphics/mounts/standard/hippo.png"
-#command "#spr2 shift"
 #command "#size 7"
 #command "#hp 54"
 #command "#prot 14"
@@ -15660,8 +14773,6 @@
 #new secondshape
 #id "hippo_multiple_rider_mount"
 #command "#name 'Hippopotamus'"
-#command "#spr1 ./graphics/mounts/standard/hippo.png"
-#command "#spr2 shift"
 #command "#size 7"
 #command "#hp 52"
 #command "#prot 14"
@@ -15691,8 +14802,6 @@
 #new secondshape
 #id "flayed_serpent_mount"
 #command "#name 'Flayed Serpent'"
-#command "#spr1 ./graphics/amazon/mounts/flayed_serpent.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 17"
 #command "#prot 9"
@@ -15729,8 +14838,6 @@
 #new secondshape
 #id "flayed_serpent_leather_barding_mount"
 #command "#name 'Flayed Serpent'"
-#command "#spr1 ./graphics/amazon/mounts/flayed_serpent.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 17"
 #command "#prot 9"
@@ -15768,8 +14875,6 @@
 #new secondshape
 #id "flayed_serpent_light_scale_barding_mount"
 #command "#name 'Flayed Serpent'"
-#command "#spr1 ./graphics/amazon/mounts/flayed_serpent.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 17"
 #command "#prot 9"
@@ -15807,8 +14912,6 @@
 #new secondshape
 #id "flayed_serpent_mail_barding_mount"
 #command "#name 'Flayed Serpent'"
-#command "#spr1 ./graphics/amazon/mounts/flayed_serpent.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 17"
 #command "#prot 9"
@@ -15845,8 +14948,6 @@
 #new secondshape
 #id "flayed_serpent_cataphract_barding_mount"
 #command "#name 'Flayed Serpent'"
-#command "#spr1 ./graphics/amazon/mounts/flayed_serpent.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 17"
 #command "#prot 9"
@@ -15883,8 +14984,6 @@
 #new secondshape
 #id "flayed_serpent_plate_barding_mount"
 #command "#name 'Flayed Serpent'"
-#command "#spr1 ./graphics/amazon/mounts/flayed_serpent.png"
-#command "#spr2 shift"
 #command "#size 4"
 #command "#hp 17"
 #command "#prot 9"
