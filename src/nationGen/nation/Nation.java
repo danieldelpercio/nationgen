@@ -1121,12 +1121,12 @@ public class Nation {
     for (List<Unit> list : this.unitlists.values()) units.addAll(list);
     units.addAll(heroes);
 
-    List<MountUnit> mus = new ArrayList<>();
-    for (MountUnit mu : nationGen.mounts) {
-      if (units.contains(mu.otherForm)) mus.add(mu);
-    }
+    List<MountUnit> mountUnits = units.stream()
+      .filter(Unit::isMounted)
+      .map(Unit::getMountUnit)
+      .collect(Collectors.toList());
 
-    return mus;
+    return mountUnits;
   }
 
   public void writeSprites(String spritedir) {
@@ -1168,13 +1168,12 @@ public class Nation {
     lines.add("--- Unit definitions for " + this.name);
     lines.add("");
 
+    // Write the lines for the alternate shapes of the nation's troops
     for (ShapeChangeUnit su : getShapeChangeUnits()) {
       lines.addAll(su.writeLines(spritedir));
     }
-    for (MountUnit mu : getMountUnits()) {
-      lines.addAll(mu.writeLines(spritedir));
-    }
 
+    // Write the lines of all the nation's units
     for (List<Unit> list : unitlists.values()) {
       for (Unit u : list) {
         if (!u.invariantMonster) {
@@ -1195,12 +1194,14 @@ public class Nation {
       }
     }
 
+    // Write the lines of all the nation's commander troops
     for (List<Unit> list : comlists.values()) {
       for (Unit u : list) {
         lines.addAll(u.writeLines(spritedir));
       }
     }
 
+    // Write the lines of all the nation's heroes
     for (Unit u : heroes) {
       lines.addAll(u.writeLines(spritedir));
     }

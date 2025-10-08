@@ -38,7 +38,7 @@ public class Unit {
   public Name name = new Name();
   public Race race;
   public Pose pose;
-  public Mount mountItem;
+  public MountUnit mountUnit;
   public SlotMap slotmap = new SlotMap();
   public Color color = Color.white;
   public int id = -1;
@@ -149,22 +149,8 @@ public class Unit {
     return slotmap.get(slot) == null;
   }
 
-  public Unit getCopy() {
-    Unit unit = new Unit(nationGen, race, pose);
-
-    // Copy unit
-    unit.slotmap.addAllFrom(this.slotmap);
-
-    unit.color = color;
-    unit.nation = nation;
-    unit.polished = this.polished;
-    unit.invariantMonster = this.invariantMonster;
-    unit.caponly = caponly;
-    unit.tags.addAll(tags);
-    unit.commands.addAll(commands);
-    unit.appliedFilters.addAll(appliedFilters);
-    unit.mountItem = mountItem;
-    return unit;
+  public Boolean isIdResolved() {
+    return this.id > 0;
   }
 
   /**
@@ -259,6 +245,18 @@ public class Unit {
     }
 
     return n;
+  }
+
+  public void resolveId() {
+    if (this.isIdResolved()) {
+      return;
+    }
+
+    if (this.mountUnit != null) {
+      this.mountUnit.resolveId();
+    }
+
+    this.id = this.nationGen.getNextUnitId();
   }
 
   private int handleModifier(Arg mod, int value) {
@@ -680,8 +678,8 @@ public class Unit {
 
       // Remove cached mountItem if the item containing the mount is unequipped
       // This assumes that any given Unit will only ever had a single mount
-      if (oldItem.containsMount()) {
-        this.mountItem = null;
+      if (oldItem.isMountItem()) {
+        this.mountUnit = null;
       }
     }
 
@@ -689,46 +687,14 @@ public class Unit {
       handleDependency(slotName, false);
       handleAddThemeinc(newItem);
 
-      if (newItem.containsMount()) {
-        resolveMountItem(newItem);
+      if (newItem.isMountItem()) {
+        this.mountUnit = new MountUnit(newItem, this, this.nationGen);
       }
     }
   }
 
-  private void resolveMountItem(Item mountItem) {
-    if (mountItem == null) {
-      return;
-    }
-
-    List<Command> itemCommands = mountItem.getCommands();
-
-    itemCommands.stream()
-      .filter(c -> c.command.equals("#mountmnr"))
-      .findFirst()
-      .ifPresent(mountMnrCommand -> {
-        String mountId = mountMnrCommand.args.get(0).get();
-
-        nationGen.getAssets().mounts
-          .stream()
-          .filter(s -> s.name.equals(mountId))
-          .findFirst()
-          .ifPresent(mount -> {
-            this.mountItem = mount;
-
-            if (mountItem.sprite.isBlank() == false) {
-              mount.commands.removeIf(c -> {
-                return c.command.equals("#spr1") || c.command.equals("#spr2");
-              });
-              mount.commands.add(Command.args("#spr1", "." + mountItem.sprite));
-              mount.commands.add(Command.args("#spr2", "shift"));
-            }
-
-            itemCommands.stream().filter(c -> c.command.equals("#barding")).findFirst().ifPresent(bardingCommand -> {
-              String bardingId = bardingCommand.args.get(0).get();
-              mount.commands.add(Command.args("#armor", bardingId));
-            });
-          });
-      });
+  public MountUnit getMountUnit() {
+    return this.mountUnit;
   }
 
   public int getGoldCost() {
@@ -763,26 +729,11 @@ public class Unit {
   }
 
   public int getMountGoldCost() {
-    if (this.mountItem == null) {
+    if (this.mountUnit == null) {
       return 0;
     }
 
-    Optional<Command> gcost = this.mountItem.commands
-      .stream()
-      .filter(c -> c.command.equals("#gcost"))
-      .findFirst();
-
-    if (!gcost.isPresent()) {
-      return 0;
-    }
-
-    if (gcost.get().args.size() == 0) {
-      throw new IllegalArgumentException(
-        "Mount item " + mountItem.name + "'s #gcost does not have an argument!"
-      );
-    }
-
-    return Integer.parseInt(gcost.get().args.get(0).get());
+    return this.mountUnit.getGoldCost();
   }
 
   public String getName() {
@@ -1628,6 +1579,10 @@ public class Unit {
 
   public List<String> writeLines(String spritedir) {
     List<String> lines = new ArrayList<>();
+    
+    if (this.mountUnit != null) {
+      lines.addAll(this.mountUnit.writeLines(spritedir));
+    }
 
     lines.add(
       "--- " +
@@ -1837,7 +1792,21 @@ public class Unit {
 
     for (Command c : this.commands) {
       if (c.args.size() > 0) {
-        if (
+        if (c.command.equals("#mountmnr")) {
+          if (this.mountUnit.isIdResolved() == false) {
+            throw new IllegalStateException(
+              "Id for MountUnit " +
+              c.args.getString(0) +
+              " in Unit with pose '" +
+              this.pose.getName() +
+              "' is not resolved!"
+            );
+          }
+
+          lines.add(c.command + " " + this.mountUnit.id);
+        }
+
+        else if (
           // Item lines will be written later
           !c.command.equals("#itemslots") &&
           !c.command.equals("#weapon") &&
@@ -1856,51 +1825,13 @@ public class Unit {
     return lines;
   }
 
-  public List<String> writeWeaponLines() {
+  public List<String> writeWeaponLines(List<ItemData> weaponData) {
     List<String> lines = new ArrayList<>();
-    List<ItemData> weapons = new ArrayList<>();
-
-    // Get weapons that were added directly through templates, like
-    // natural weapons from bases (such as nagas)
-    this.getCommands()
-      .stream()
-      .filter(c -> c.command.equals("#weapon") && c.args.getInt(0) > 0)
-      .forEach(c -> {
-        String id = c.args.getString(0);
-        ItemData weaponData = new ItemData(id, "", nationGen);
-        weapons.add(weaponData);
-      });
-
-    // Get weapon items from the unit's slot map, and do a check
-    // to make sure the custom ones are resolved into ids by now
-    this.slotmap
-      .getWeapons()
-      .filter(weapon -> {
-        if (weapon.isCustomIdResolved() == false) {
-          throw new IllegalArgumentException(
-            this.name +
-            " unit (pose: " +
-            this.pose.name +
-            ", race: " +
-            this.race.name +
-            ", nation: " +
-            this.nation.name + " with seed " + this.nation.getSeed() +
-            ") has a custom weapon whose id was not resolved: " +
-            weapon.id
-          );
-        }
-        // Filter out non-weapon ids
-        return Integer.parseInt(weapon.id) > 0;
-      })
-      .forEach(weapon -> {
-        ItemData weaponData = new ItemData(weapon);
-        weapons.add(weaponData);
-      });
 
     // Sort weapons by descending range so that weapons with higher range appear higher.
     // When units with multiple ranged weapons have the shorter range defined first,
     // they will close into battle to fire with the shortest range (i.e. naga archers with a spit).
-    weapons.sort((a, b) -> {
+    weaponData.sort((a, b) -> {
       int unitStrength = this.getCommandValue("#str", 0);
       int rangeA = a.getWeaponRange(unitStrength);
       int rangeB = b.getWeaponRange(unitStrength);
@@ -1908,36 +1839,38 @@ public class Unit {
     });
 
     // Get id and name of weapons and add to the list of #weapon lines
-    weapons
-    .forEach(weapon -> lines.add(
-      "#weapon " +
-      weapon.getId() +
-      " --- " +
-      weapon.getDisplayName("weapon_name") +
-      ((weapon.hasName()) ? " / " + weapon.getName() : "")
-    ));
+    weaponData.forEach(itemData -> {
+      if (itemData.isCustomIdResolved() == false) {
+        throw new IllegalArgumentException(
+          this.name +
+          " unit (pose: " +
+          this.pose.name +
+          ", race: " +
+          this.race.name +
+          ", nation: " +
+          this.nation.name + " with seed " + this.nation.getSeed() +
+          ") has a custom weapon whose id was not resolved: " +
+          itemData.getId()
+        );
+      };
+      
+      lines.add(
+        "#weapon " +
+        itemData.getId() +
+        " --- " +
+        itemData.getDisplayName("weapon_name") +
+        ((itemData.hasName()) ? " / " + itemData.getName() : "")
+      );
+    });
 
     return lines;
   }
 
-  public List<String> writeArmorLines() {
+  public List<String> writeArmorLines(List<ItemData> armors) {
     List<String> lines = new ArrayList<>();
-    List<ItemData> armors = new ArrayList<>();
 
-    // Get armors that were added directly through templates,
-    // like bardings for mounts
-    this.getCommands()
-      .stream()
-      .filter(c -> c.command.equals("#armor") && c.args.getInt(0) > 0)
-      .forEach(c -> {
-        String id = c.args.getString(0);
-        ItemData armorData = new ItemData(id, "", nationGen);
-        armors.add(armorData);
-      });
-
-    this.slotmap.getArmor()
-    .filter(i -> {
-      if (!Generic.isNumeric(i.id)) {
+    armors.forEach(itemData -> {
+      if (itemData.isCustomIdResolved() == false) {
         throw new IllegalArgumentException(
           this.name +
           " unit (pose: " +
@@ -1947,25 +1880,18 @@ public class Unit {
           ", nation: " +
           this.nation.name + " with seed " + this.nation.getSeed() +
           ") has a custom armor whose id was not resolved: " +
-          i.id
+          itemData.getId()
         );
       }
-      // Only write items with actual ids. -1 ids are usually cosmetics
-      return Integer.parseInt(i.id) > 0;
-    })
-    .forEach(armor -> {
-      ItemData armorData = new ItemData(armor);
-      armors.add(armorData);
-    });
 
-    armors
-    .forEach(armor -> lines.add(
-      "#armor " +
-      armor.getId() +
-      " --- " +
-      armor.getDisplayName("armorname") +
-      ((armor.hasName()) ? " / " + armor.getName() : "")
-    ));
+      lines.add(
+        "#armor " +
+        itemData.getId() +
+        " --- " +
+        itemData.getDisplayName("armorname") +
+        ((itemData.hasName()) ? " / " + itemData.getName() : "")
+      );
+    });
 
     return lines;
   }

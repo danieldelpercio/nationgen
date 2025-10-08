@@ -1,45 +1,39 @@
 package nationGen.units;
 
+import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
 import nationGen.entities.Filter;
-import nationGen.misc.Command;
 
 public class Mount extends Filter {
+  private String barding;
 
   public Mount(NationGen nationGen) {
     super(nationGen);
   }
 
-  boolean nofeedback = false;
-  boolean keepname = false;
-  boolean nogcost = false;
-
-  public Mount getCopy() {
-    Mount mnt = new Mount(nationGen);
-    mnt.basechance = basechance;
-    mnt.name = name;
-    mnt.types.addAll(types);
-    mnt.tags.addAll(tags);
-    mnt.themes.addAll(themes);
-    mnt.nofeedback = nofeedback;
-    mnt.keepname = keepname;
-    mnt.nogcost = nogcost;
-    mnt.commands.addAll(this.commands);
-    return mnt;
+  public Mount(Mount mount) {
+    super(mount);
   }
 
-  @Override
-  public void handleOwnCommand(Command command) {
-    if (command.command.equals("#keepname")) {
-      this.keepname = true;
-      // Overrides filter implementation
-    } else if (command.command.equals("#command")) {
-      if (command.args.size() != 1) {
-        throw new IllegalArgumentException(
-          "#command or #define must have a single arg. Surround the command with quotes if needed."
-        );
-      }
-      this.commands.add(command.args.get(0).getCommand());
-    } else super.handleOwnCommand(command);
+  public Boolean hasBarding() {
+    return super.hasCommand("#armor");
+  }
+
+  public Boolean isNamed() {
+    return this.hasCommand("#name");
+  }
+
+  public String getBardingId() {
+    return this.barding;
+  }
+
+  public void setBarding(String id) {
+    if (CustomItemsHandler.isIdResolved(id)) {
+      this.barding = id;
+      return;
+    }
+
+    String resolvedId = nationGen.GetCustomItemsHandler().getCustomItemId(id);
+    this.barding = resolvedId;
   }
 }
