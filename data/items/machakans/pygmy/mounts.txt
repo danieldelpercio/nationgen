@@ -7,7 +7,7 @@
 #armor
 #offsetx -3
 #offsety -20
-#define "#mountmnr 'hyena_mount'"
+#mountmnr "hyena_mount"
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
@@ -22,7 +22,8 @@
 #armor
 #offsetx -3
 #offsety -20
-#define "#mountmnr 'hyena_leather_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 251
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
 #theme "leather"
 #tag "animal hyena"
@@ -39,7 +40,8 @@
 #armor
 #offsetx -3
 #offsety -20
-#define "#mountmnr 'hyena_light_scale_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 252
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
@@ -55,7 +57,8 @@
 #armor
 #offsetx -3
 #offsety -20
-#define "#mountmnr 'hyena_iron_mail_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 172
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
@@ -70,7 +73,8 @@
 #armor
 #offsetx -3
 #offsety -20
-#define "#mountmnr 'hyena_plate_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 254
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
 #theme "heavy"
 #theme "advanced"
@@ -89,7 +93,7 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'giant_parrot_mount'"
+#mountmnr "giant_parrot_mount"
 #define "#gcost -10"
 #theme "parrot"
 #theme "parrottotem"
@@ -108,8 +112,9 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'giant_parrot_leather_barding_mount'"
+#mountmnr "giant_parrot_mount"
 #define "#gcost -10"
+#barding 251
 #theme "parrot"
 #theme "parrottotem"
 #theme "totemanimal"
@@ -129,8 +134,9 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'giant_parrot_light_scale_barding_mount'"
+#mountmnr "giant_parrot_mount"
 #define "#gcost -10"
+#barding 252
 #theme "parrot"
 #theme "parrottotem"
 #theme "totemanimal"
@@ -149,8 +155,9 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'giant_parrot_iron_mail_barding_mount'"
+#mountmnr "giant_parrot_mount"
 #define "#gcost -10"
+#barding 172
 #theme "parrot"
 #theme "parrottotem"
 #theme "totemanimal"
@@ -172,7 +179,7 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'colorful_giant_parrot_mount'"
+#mountmnr "colorful_giant_parrot_mount"
 #define "#gcost -10"
 #theme "parrot"
 #theme "parrottotem"
@@ -192,8 +199,9 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'colorful_giant_parrot_leather_barding_mount'"
+#mountmnr "colorful_giant_parrot_mount"
 #define "#gcost -10"
+#barding 251
 #theme "parrot"
 #theme "parrottotem"
 #theme "totemanimal"
@@ -214,8 +222,9 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'colorful_giant_parrot_light_scale_barding_mount'"
+#mountmnr "colorful_giant_parrot_mount"
 #define "#gcost -10"
+#barding 252
 #theme "parrot"
 #theme "parrottotem"
 #theme "totemanimal"
@@ -235,8 +244,9 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'colorful_giant_parrot_iron_mail_barding_mount'"
+#mountmnr "colorful_giant_parrot_mount"
 #define "#gcost -10"
+#barding 172
 #theme "parrot"
 #theme "parrottotem"
 #theme "totemanimal"
@@ -257,7 +267,7 @@
 #armor
 #offsetx 0
 #offsety -7
-#define "#mountmnr 'red_ant_mount'"
+#mountmnr "red_ant_mount"
 #description "If the rider dies, the ant will carry on fighting until the end of the battle."
 #theme "ant"
 #theme "anttotem"
@@ -276,7 +286,8 @@
 #armor
 #offsetx 0
 #offsety -7
-#define "#mountmnr 'red_ant_leather_barding_mount'"
+#mountmnr "red_ant_mount"
+#barding 251
 #description "If the rider dies, the ant will carry on fighting until the end of the battle."
 #theme "ant"
 #theme "anttotem"
@@ -296,7 +307,8 @@
 #armor
 #offsetx 0
 #offsety -7
-#define "#mountmnr 'red_ant_light_scale_barding_mount'"
+#mountmnr "red_ant_mount"
+#barding 252
 #description "If the rider dies, the ant will carry on fighting until the end of the battle."
 #theme "ant"
 #theme "anttotem"
@@ -316,7 +328,8 @@
 #armor
 #offsetx 0
 #offsety -7
-#define "#mountmnr 'red_ant_iron_mail_barding_mount'"
+#mountmnr "red_ant_mount"
+#barding 172
 #description "If the rider dies, the ant will carry on fighting until the end of the battle."
 #theme "ant"
 #theme "anttotem"
@@ -336,7 +349,8 @@
 #armor
 #offsetx 0
 #offsety -7
-#define "#mountmnr 'red_ant_plate_barding_mount'"
+#mountmnr "red_ant_mount"
+#barding 254
 #description "If the rider dies, the ant will carry on fighting until the end of the battle."
 #theme "ant"
 #theme "anttotem"
@@ -358,7 +372,7 @@
 #offsety -7
 #offsetx -1
 #armor
-#define "#mountmnr 'dog_mount'"
+#mountmnr "dog_mount"
 #description "The dog is fiercely loyal and will follow the army even if its rider dies."
 #theme "dog"
 #theme "light"
@@ -374,7 +388,8 @@
 #offsety -7
 #offsetx -1
 #armor
-#define "#mountmnr 'dog_leather_barding_mount'"
+#mountmnr "dog_mount"
+#barding 251
 #description "The dog is fiercely loyal and will follow the army even if its rider dies."
 #theme "dog"
 #theme "light"
@@ -392,7 +407,8 @@
 #offsety -7
 #offsetx -1
 #armor
-#define "#mountmnr 'dog_light_scale_barding_mount'"
+#mountmnr "dog_mount"
+#barding 252
 #description "The dog is fiercely loyal and will follow the army even if its rider dies."
 #theme "dog"
 #theme "light"
@@ -409,7 +425,8 @@
 #offsety -7
 #offsetx -1
 #armor
-#define "#mountmnr 'dog_iron_mail_barding_mount'"
+#mountmnr "dog_mount"
+#barding 172
 #description "The dog is fiercely loyal and will follow the army even if its rider dies."
 #theme "dog"
 #tag "animal dog"
@@ -424,7 +441,8 @@
 #offsety -7
 #offsetx -1
 #armor
-#define "#mountmnr 'dog_plate_barding_mount'"
+#mountmnr "dog_mount"
+#barding 254
 #description "The dog is fiercely loyal and will follow the army even if its rider dies."
 #theme "dog"
 #theme "heavy"
@@ -443,7 +461,7 @@
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_mount'"
+#mountmnr "forest_spider_mount"
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
 #define "#gcost -5"
 #theme "spider"
@@ -456,16 +474,17 @@
 #enditem
 
 #newitem
-#id "forest_spider_leather_barding_spider"
+#id "forest_spider_leather_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/spider2.png
 #armor
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_leather_barding_spider_mount'"
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
+#mountmnr "forest_spider_mount"
 #define "#gcost -5"
+#barding 251
 #theme "spider"
 #theme "spidertotem"
 #theme "totemanimal"
@@ -477,14 +496,15 @@
 #enditem
 
 #newitem
-#id "forest_spider_light_scale_spider"
+#id "forest_spider_light_scale"
 #gameid -1
 #sprite /graphics/mounts/standard/spider2.png
 #armor
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_light_scale_spider_mount'"
+#mountmnr "forest_spider_mount"
+#barding 252
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
 #define "#gcost -5"
 #theme "spider"
@@ -498,16 +518,17 @@
 #enditem
 
 #newitem
-#id "forest_spider_iron_mail_barding_spider"
+#id "forest_spider_iron_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/spider2.png
 #armor
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_iron_mail_barding_spider_mount'"
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
+#mountmnr "forest_spider_mount"
 #define "#gcost -5"
+#barding 172
 #theme "spider"
 #theme "spidertotem"
 #theme "totemanimal"
@@ -525,7 +546,8 @@
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_plate_barding_mount'"
+#mountmnr "forest_spider_mount"
+#barding 254
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
 #define "#gcost -5"
 #theme "spider"
@@ -546,7 +568,7 @@
 #offsetx 22
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_mount'"
+#mountmnr "crocodile_mount"
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #theme "specialmount"
 #theme "primitive"
@@ -565,7 +587,8 @@
 #offsetx 22
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_light_scale_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 252
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #theme "specialmount"
 #theme "crocodile"
@@ -584,7 +607,8 @@
 #offsetx 22
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_iron_mail_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 172
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #theme "specialmount"
 #theme "crocodile"
@@ -603,7 +627,8 @@
 #offsetx 22
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_plate_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 254
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #theme "specialmount"
 #theme "advanced"
@@ -625,7 +650,7 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'flying_fish_mount'"
+#mountmnr "flying_fish_mount"
 #theme "fish"
 #theme "fishtotem"
 #theme "totemanimal"
@@ -646,7 +671,8 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'flying_fish_leather_barding_mount'"
+#mountmnr "flying_fish_mount"
+#barding 251
 #theme "fish"
 #theme "fishtotem"
 #theme "totemanimal"
@@ -669,7 +695,8 @@
 #armor
 #offsetx -3
 #offsety -28
-#define "#mountmnr 'flying_fish_light_scale_barding_mount'"
+#mountmnr "flying_fish_mount"
+#barding 252
 #theme "fish"
 #theme "fishtotem"
 #theme "totemanimal"
@@ -691,7 +718,7 @@
 #armor
 #offsetx -2
 #offsety -6
-#define "#mountmnr 'snail_mount'"
+#mountmnr "snail_mount"
 #theme "snail"
 #theme "snailtotem"
 #theme "totemanimal"
@@ -713,7 +740,7 @@
 #armor
 #offsetx -3
 #offsety -16
-#define "#mountmnr 'huge_locust_mount'"
+#mountmnr "huge_locust_mount"
 #theme "locust"
 #theme "locusttotem"
 #theme "totemanimal"
@@ -733,7 +760,7 @@
 #offsetx -1
 #offsety -12
 #description "If the rider dies, the mantis will carry on fighting until the end of the battle."
-#define "#mountmnr 'huge_mantis_mount'"
+#mountmnr "huge_mantis_mount"
 #define "#wastesurvival"
 #define "#secondtmpshape huge_mantismount"
 #theme "mantis"
@@ -755,7 +782,7 @@
 #offsetx 2
 #offsety -5
 #description "If the rider dies, the swan will carry on fighting until the end of the battle."
-#define "#mountmnr 'swan_mount'"
+#mountmnr "swan_mount"
 #theme "swan"
 #theme "swantotem"
 #theme "birdtotem"
@@ -776,7 +803,8 @@
 #offsetx 2
 #offsety -5
 #description "If the rider dies, the swan will carry on fighting until the end of the battle."
-#define "#mountmnr 'swan_leather_barding_mount'"
+#mountmnr "swan_mount"
+#barding 251
 #theme "swan"
 #theme "swantotem"
 #theme "birdtotem"
@@ -798,7 +826,8 @@
 #offsetx 2
 #offsety -5
 #description "If the rider dies, the swan will carry on fighting until the end of the battle."
-#define "#mountmnr 'swan_light_scale_barding_barding_mount'"
+#mountmnr "swan_mount"
+#barding 252
 #theme "swan"
 #theme "swantotem"
 #theme "birdtotem"
@@ -819,7 +848,7 @@
 #armor
 #offsetx 15
 #offsety -7
-#define "#mountmnr 'swan_chariot'"
+#mountmnr "swan_chariot"
 #theme "swan"
 #theme "swantotem"
 #theme "birdtotem"
@@ -840,7 +869,8 @@
 #armor
 #offsetx 15
 #offsety -7
-#define "#mountmnr 'swan_leather_barding_chariot'"
+#mountmnr "swan_chariot"
+#barding 251
 #theme "swan"
 #theme "swantotem"
 #theme "birdtotem"
@@ -862,7 +892,8 @@
 #armor
 #offsetx 15
 #offsety -7
-#define "#mountmnr 'swan_light_scale_barding_chariot'"
+#mountmnr "swan_chariot"
+#barding 252
 #theme "swan"
 #theme "swantotem"
 #theme "birdtotem"
@@ -883,7 +914,8 @@
 #armor
 #offsetx 15
 #offsety -7
-#define "#mountmnr 'swan_iron_mail_barding_chariot'"
+#mountmnr "swan_chariot"
+#barding 172
 #theme "swan"
 #theme "swantotem"
 #theme "birdtotem"
@@ -904,7 +936,7 @@
 #armor
 #offsetx 1
 #offsety -11
-#define "#mountmnr 'giant_rat_mount'"
+#mountmnr "giant_rat_mount"
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #theme "rat"
 #theme "rattotem"
@@ -921,7 +953,8 @@
 #armor
 #offsetx 1
 #offsety -11
-#define "#mountmnr 'giant_rat_leather_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 251
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #theme "rat"
 #theme "rattotem"
@@ -939,7 +972,8 @@
 #armor
 #offsetx 1
 #offsety -11
-#define "#mountmnr 'giant_rat_light_scale_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 252
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #theme "rat"
 #theme "rattotem"
@@ -956,7 +990,8 @@
 #armor
 #offsetx 1
 #offsety -11
-#define "#mountmnr 'giant_rat_iron_mail_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 172
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #theme "rat"
 #theme "rattotem"
@@ -975,7 +1010,7 @@
 #armor
 #offsetx 21
 #offsety -8
-#define "#mountmnr 'giant_rat_chariot'"
+#mountmnr "giant_rat_chariot"
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -995,7 +1030,8 @@
 #armor
 #offsetx 21
 #offsety -8
-#define "#mountmnr 'giant_rat_leather_barding_chariot'"
+#mountmnr "giant_rat_chariot"
+#barding 251
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -1016,7 +1052,8 @@
 #armor
 #offsetx 21
 #offsety -8
-#define "#mountmnr 'giant_rat_light_scale_barding_chariot'"
+#mountmnr "giant_rat_chariot"
+#barding 252
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -1036,7 +1073,8 @@
 #armor
 #offsetx 21
 #offsety -8
-#define "#mountmnr 'giant_rat_iron_mail_barding_chariot'"
+#mountmnr "giant_rat_chariot"
+#barding 172
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -1056,7 +1094,7 @@
 #armor
 #offsetx -1
 #offsety -15
-#define "#mountmnr 'dwarf_elephant_mount'"
+#mountmnr "dwarf_elephant_mount"
 #define "#gcost -5"
 #description "If the rider dies, the loyal elephant will fight on, and should it survive, another rider will be found."
 #theme "elephant"
@@ -1075,8 +1113,9 @@
 #armor
 #offsetx -1
 #offsety -15
-#define "#mountmnr 'dwarf_elephant_barding_mount'"
+#mountmnr "dwarf_elephant_mount"
 #define "#gcost -5"
+#barding 144
 #description "If the rider dies, the loyal elephant will fight on, and should it survive, another rider will be found."
 #theme "elephant"
 #theme "elephanttotem"
@@ -1095,8 +1134,9 @@
 #armor
 #offsetx -1
 #offsety -15
-#define "#mountmnr 'dwarf_elephant_iron_mail_barding_mount'"
+#mountmnr "dwarf_elephant_mount"
 #define "#gcost -5"
+#barding 172
 #description "If the rider dies, the loyal elephant will fight on, and should it survive, another rider will be found."
 #theme "elephant"
 #theme "elephanttotem"
@@ -1115,8 +1155,9 @@
 #armor
 #offsetx -1
 #offsety -15
-#define "#mountmnr 'dwarf_elephant_plate_barding_mount'"
+#mountmnr "dwarf_elephant_mount"
 #define "#gcost -5"
+#barding 254
 #description "If the rider dies, the loyal elephant will fight on, and should it survive, another rider will be found."
 #theme "elephant"
 #theme "elephanttotem"

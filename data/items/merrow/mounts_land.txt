@@ -6,7 +6,7 @@
 #offsety -13
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_mount'"
+#mountmnr "riding_horse_mount"
 #theme "light"
 #theme terrestrial
 #tag "animal horse"
@@ -22,7 +22,8 @@
 #offsety -13
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_leather_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 251
 #theme "light"
 #theme terrestrial
 #theme "leather"
@@ -39,7 +40,8 @@
 #offsety -13
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_light_bronze_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 264
 #theme "light"
 #theme terrestrial
 #theme "bronze"
@@ -56,7 +58,8 @@
 #offsety -13
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_mail_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 172
 #theme terrestrial
 #theme "bronze"
 #tag "animal horse"
@@ -71,7 +74,8 @@
 #offsety -13
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_cataphract_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 253
 #theme terrestrial
 #theme "bronze"
 #tag "animal horse"
@@ -86,7 +90,8 @@
 #offsety -13
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 263
 #theme terrestrial
 #theme "bronze"
 #tag "animal horse"
@@ -102,7 +107,8 @@
 #offsety -13
 #armor
 #needs overlay armoredhorse1aoverlay
-#define "#mountmnr 'war_horse_leather_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 251
 #tag "animal horse"
 #theme "light"
 #theme "leather"
@@ -119,7 +125,8 @@
 #offsety -13
 #armor
 #needs overlay armoredhorse1aoverlay
-#define "#mountmnr 'war_horse_light_bronze_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 264
 #tag "animal horse"
 #theme "bronze"
 #theme terrestrial
@@ -135,7 +142,8 @@
 #offsety -13
 #armor
 #needs overlay armoredhorse1aoverlay
-#define "#mountmnr 'war_horse_bronze_mail_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 172
 #tag "animal horse"
 #theme "bronze"
 #theme terrestrial
@@ -151,7 +159,8 @@
 #offsety -13
 #armor
 #needs overlay armoredhorse1aoverlay
-#define "#mountmnr 'war_horse_bronze_cataphract_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 253
 #tag "animal horse"
 #theme "bronze"
 #theme "heavy"
@@ -169,7 +178,8 @@
 #offsety -13
 #armor
 #needs overlay armoredhorse1aoverlay
-#define "#mountmnr 'war_horse_bronze_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 263
 #tag "animal horse"
 #theme "bronze"
 #theme "heavy"
@@ -188,7 +198,7 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_mount'"
+#mountmnr "kelpie_land_mount"
 #define "#amphibian"
 #tag "animal kelpie"
 #tag "minprot 6"
@@ -204,8 +214,9 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_sharkskin_barding_mount'"
+#mountmnr "kelpie_land_mount"
 #define "#amphibian"
+#barding sharkskin_barding
 #theme "sharkskin"
 #tag "animal kelpie"
 #tag "minprot 6"
@@ -222,8 +233,9 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_turtle_shell_barding_mount'"
+#mountmnr "kelpie_land_mount"
 #define "#amphibian"
+#barding 137
 #theme "shell"
 #tag "animal kelpie"
 #tag "minprot 6"
@@ -240,8 +252,9 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_light_bronze_barding_mount'"
+#mountmnr "kelpie_land_mount"
 #define "#amphibian"
+#barding 264
 #theme "bronze"
 #tag "animal kelpie"
 #tag "minprot 6"
@@ -258,8 +271,9 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_coral_barding_mount'"
+#mountmnr "kelpie_land_mount"
 #define "#amphibian"
+#barding 190
 #theme "coral"
 #tag "animal kelpie"
 #tag "minprot 6"
@@ -276,7 +290,8 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_bronze_mail_barding_mount'"
+#mountmnr "kelpie_land_mount"
+#barding 172
 #define "#amphibian"
 #theme "bronze"
 #tag "animal kelpie"
@@ -294,8 +309,9 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_bronze_cataphract_barding_mount'"
+#mountmnr "kelpie_land_mount"
 #define "#amphibian"
+#barding 253
 #theme "bronze"
 #theme "heavy"
 #tag "animal kelpie"
@@ -313,8 +329,9 @@
 #offsety -13
 #needs overlay kelpie_land_overlay
 #armor
-#define "#mountmnr 'kelpie_land_bronze_barding_mount'"
+#mountmnr "kelpie_land_mount"
 #define "#amphibian"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal kelpie"
@@ -332,7 +349,7 @@
 #offsety -15
 #needs overlay no_overlay
 #armor
-#define "#mountmnr 'nightmare_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
 #define "#float"
 #description "Leaves a nightmare behind when the rider dies"
@@ -351,9 +368,10 @@
 #offsety -15
 #needs overlay no_overlay
 #armor
-#define "#mountmnr 'nightmare_leather_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
 #define "#float"
+#barding 251
 #description "Leaves a nightmare behind when the rider dies"
 #theme terrestrial
 #theme "leather"
@@ -371,9 +389,10 @@
 #offsety -15
 #needs overlay no_overlay
 #armor
-#define "#mountmnr 'nightmare_light_bronze_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
 #define "#float"
+#barding 264
 #description "Leaves a nightmare behind when the rider dies"
 #theme terrestrial
 #theme "bronze"
@@ -392,9 +411,10 @@
 #offsety -15
 #needs overlay no_overlay
 #armor
-#define "#mountmnr 'nightmare_bronze_mail_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
 #define "#float"
+#barding 172
 #description "Leaves a nightmare behind when the rider dies"
 #theme terrestrial
 #theme "bronze"
@@ -413,9 +433,10 @@
 #offsety -15
 #needs overlay no_overlay
 #armor
-#define "#mountmnr 'nightmare_bronze_cataphract_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
 #define "#float"
+#barding 253
 #description "Leaves a nightmare behind when the rider dies"
 #theme terrestrial
 #theme "bronze"
@@ -435,9 +456,10 @@
 #offsety -15
 #needs overlay no_overlay
 #armor
-#define "#mountmnr 'nightmare_bronze_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
 #define "#float"
+#barding 263
 #description "Leaves a nightmare behind when the rider dies"
 #theme terrestrial
 #theme "bronze"
@@ -460,7 +482,7 @@
 #armor
 #offsetx 0
 #offsety -11
-#define "#mountmnr 'peryton_mount'"
+#mountmnr "peryton_mount"
 #theme "flying"
 #tag "animal peryton"
 #basechance 2.5
@@ -477,9 +499,10 @@
 #armor
 #offsetx 0
 #offsety -11
-#define "#mountmnr 'peryton_light_bronze_barding_mount'"
+#mountmnr "peryton_mount"
 #theme "flying"
 #theme "bronze"
+#barding 264
 #tag "animal peryton"
 #basechance 2
 #chanceinc prot 11 *2
@@ -496,7 +519,8 @@
 #armor
 #offsetx 0
 #offsety -11
-#define "#mountmnr 'peryton_bronze_mail_barding_mount'"
+#mountmnr "peryton_mount"
+#barding 172
 #theme "flying"
 #theme "bronze"
 #tag "animal peryton"
@@ -515,7 +539,8 @@
 #armor
 #offsetx 0
 #offsety -11
-#define "#mountmnr 'peryton_bronze_barding_mount'"
+#mountmnr "peryton_mount"
+#barding 263
 #theme "flying"
 #theme "bronze"
 #theme "heavy"
@@ -534,7 +559,7 @@
 #armor
 #offsetx -4
 #offsety -3
-#define "#mountmnr 'giant_swan_mount'"
+#mountmnr "giant_swan_mount"
 #theme "light"
 #tag "animal swan"
 #tag "maxprot 12"
@@ -549,7 +574,8 @@
 #armor
 #offsetx -4
 #offsety -3
-#define "#mountmnr 'giant_swan_sharkskin_barding_mount'"
+#mountmnr "giant_swan_mount"
+#barding sharkskin_barding
 #theme "light"
 #theme "leather"
 #tag "animal swan"
@@ -566,7 +592,8 @@
 #armor
 #offsetx -4
 #offsety -3
-#define "#mountmnr 'giant_swan_turtle_shell_barding_mount'"
+#mountmnr "giant_swan_mount"
+#barding 137
 #theme "light"
 #theme "shell"
 #tag "animal swan"
@@ -583,9 +610,10 @@
 #armor
 #offsetx -4
 #offsety -3
-#define "#mountmnr 'giant_swan_light_bronze_barding_mount'"
+#mountmnr "giant_swan_mount"
 #theme "light"
 #theme "bronze"
+#barding 264
 #tag "animal swan"
 #tag "maxprot 14"
 #basechance 8
@@ -600,7 +628,8 @@
 #armor
 #offsetx -4
 #offsety -3
-#define "#mountmnr 'giant_swan_coral_barding_mount'"
+#mountmnr "giant_swan_mount"
+#barding 190
 #theme "light"
 #theme "coral"
 #tag "animal swan"
@@ -617,7 +646,8 @@
 #armor
 #offsetx -4
 #offsety -3
-#define "#mountmnr 'giant_swan_bronze_mail_barding_mount'"
+#mountmnr "giant_swan_mount"
+#barding 172
 #theme "bronze"
 #tag "animal swan"
 #tag "maxprot 15"
@@ -635,7 +665,7 @@
 #armor
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
 #theme "light"
 #tag "animal dog"
@@ -653,7 +683,8 @@
 #armor
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_sharkskin_barding_mount'"
+#mountmnr "sea_dog_mount"
+#barding sharkskin_barding
 #define "#swimming"
 #theme "light"
 #theme "sharkskin"
@@ -673,8 +704,9 @@
 #armor
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_turtle_shell_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 137
 #theme "light"
 #theme "shell"
 #tag "animal dog"
@@ -693,10 +725,11 @@
 #armor
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_light_bronze_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
 #theme "light"
 #theme "bronze"
+#barding 264
 #tag "animal dog"
 #tag "guaranteedprefix dog"
 #tag "maxprot 14"
@@ -713,8 +746,9 @@
 #armor
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_coral_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 190
 #theme "light"
 #theme "coral"
 #tag "animal dog"
@@ -733,8 +767,9 @@
 #armor
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_bronze_mail_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 172
 #theme "bronze"
 #tag "animal dog"
 #tag "guaranteedprefix dog"
@@ -752,8 +787,9 @@
 #armor
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_bronze_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 263
 #theme "heavy"
 #theme "bronze"
 #tag "animal dog"
@@ -771,7 +807,7 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'jaguar_toad_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
 #define "#amphibian"
 #description "The giant toad will fight until the end of the battle should the rider die"
@@ -789,7 +825,8 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'jaguar_toad_sharkskin_barding_mount'"
+#mountmnr "jaguar_toad_mount"
+#barding sharkskin_barding
 #define "#swimming"
 #define "#amphibian"
 #description "The giant toad will fight until the end of the battle should the rider die"
@@ -809,9 +846,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'jaguar_toad_turtle_shell_barding_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 137
 #description "The giant toad will fight until the end of the battle should the rider die"
 #theme "shell"
 #tag "animal 'giant toad'"
@@ -829,9 +867,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'jaguar_toad_coral_barding_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 190
 #description "The giant toad will fight until the end of the battle should the rider die"
 #theme "coral"
 #tag "animal 'giant toad'"
@@ -849,9 +888,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'jaguar_toad_bronze_mail_barding_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 172
 #description "The giant toad will fight until the end of the battle should the rider die"
 #theme "bronze"
 #tag "animal 'giant toad'"
@@ -869,9 +909,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'jaguar_toad_bronze_barding_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 263
 #description "The giant toad will fight until the end of the battle should the rider die"
 #theme "bronze"
 #tag "animal 'giant toad'"
@@ -890,7 +931,7 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'sapphire_toad_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
 #define "#amphibian"
 #description "The giant frog will fight until the end of the battle should the rider die"
@@ -908,7 +949,8 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'sapphire_toad_sharkskin_barding_mount'"
+#mountmnr "sapphire_toad_mount"
+#barding sharkskin_barding
 #define "#swimming"
 #define "#amphibian"
 #description "The giant frog will fight until the end of the battle should the rider die"
@@ -928,9 +970,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'sapphire_toad_turtle_shell_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 137
 #description "The giant frog will fight until the end of the battle should the rider die"
 #theme "shell"
 #tag "animal 'giant frog'"
@@ -948,9 +991,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'sapphire_toad_coral_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 190
 #description "The giant frog will fight until the end of the battle should the rider die"
 #theme "coral"
 #tag "animal 'giant frog'"
@@ -968,9 +1012,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'sapphire_toad_bronze_mail_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 172
 #description "The giant frog will fight until the end of the battle should the rider die"
 #theme "bronze"
 #tag "animal 'giant frog'"
@@ -988,9 +1033,10 @@
 #armor
 #offsetx -1
 #offsety -4
-#define "#mountmnr 'sapphire_toad_bronze_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
 #define "#amphibian"
+#barding 263
 #description "The giant frog will fight until the end of the battle should the rider die"
 #theme "bronze"
 #tag "animal 'giant frog'"

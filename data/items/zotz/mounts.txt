@@ -9,7 +9,7 @@
 #offsety 20
 #needs overlay scorpion_overlay
 #description "Leaves a giant scorpion behind when the rider dies"
-#define "#mountmnr 'scorpion_beast_mount'"
+#mountmnr "scorpion_beast_mount"
 #theme "heavy"
 #tag "animal scorpion"
 #tag "guaranteedprefix scorpion"
@@ -26,7 +26,8 @@
 #offsety 20
 #needs overlay scorpion_overlay
 #description "Leaves a giant scorpion behind when the rider dies"
-#define "#mountmnr 'scorpion_beast_leather_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 251
 #theme "heavy"
 #theme "leather"
 #tag "animal scorpion"
@@ -44,7 +45,8 @@
 #offsety 20
 #needs overlay scorpion_overlay
 #description "Leaves a giant scorpion behind when the rider dies"
-#define "#mountmnr 'scorpion_beast_light_scale_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 252
 #theme "heavy"
 #theme "iron"
 #tag "animal scorpion"
@@ -63,7 +65,8 @@
 #offsety 20
 #needs overlay scorpion_overlay
 #description "Leaves a giant scorpion behind when the rider dies"
-#define "#mountmnr 'scorpion_beast_cataphract_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 253
 #theme "heavy"
 #theme "iron"
 #tag "animal scorpion"
@@ -82,7 +85,8 @@
 #offsety 20
 #needs overlay scorpion_overlay
 #description "Leaves a giant scorpion behind when the rider dies"
-#define "#mountmnr 'scorpion_beast_obsidian_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding obsidian_barding
 #theme "heavy"
 #theme "advanced"
 #tag "animal scorpion"
@@ -101,7 +105,7 @@
 #offsetx 6
 #offsety 18
 #description "The jaguar will persist even if the rider dies."
-#define "#mountmnr 'jaguar_mount'"
+#mountmnr "jaguar_mount"
 #define "#stealthy '+40'"
 #define "#gcost +10"
 #theme "specialmount"
@@ -120,9 +124,10 @@
 #offsetx 6
 #offsety 18
 #description "The jaguar will persist even if the rider dies."
-#define "#mountmnr 'jaguar_leather_barding_mount'"
+#mountmnr "jaguar_mount"
 #define "#stealthy '+40'"
 #define "#gcost +10"
+#barding 251
 #theme "specialmount"
 #theme "light"
 #theme "leather"
@@ -141,9 +146,10 @@
 #offsetx 6
 #offsety 18
 #description "The jaguar will persist even if the rider dies."
-#define "#mountmnr 'jaguar_light_scale_barding_mount'"
+#mountmnr "jaguar_mount"
 #define "#stealthy '+40'"
 #define "#gcost +10"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -162,9 +168,10 @@
 #offsetx 6
 #offsety 18
 #description "The jaguar will persist even if the rider dies."
-#define "#mountmnr 'jaguar_obsidian_barding_mount'"
+#mountmnr "jaguar_mount"
 #define "#stealthy '+40'"
 #define "#gcost +10"
+#barding obsidian_barding
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -183,7 +190,7 @@
 #armor
 #offsetx 48
 #offsety 25
-#define "#mountmnr 'cave_grub_mount'"
+#mountmnr "cave_grub_mount"
 #define "#gcost -10"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -201,8 +208,9 @@
 #armor
 #offsetx 48
 #offsety 25
-#define "#mountmnr 'cave_grub_leather_barding_mount'"
+#mountmnr "cave_grub_mount"
 #define "#gcost -10"
+#barding 251
 #theme "leather"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -221,8 +229,9 @@
 #armor
 #offsetx 48
 #offsety 25
-#define "#mountmnr 'cave_grub_light_scale_barding_mount'"
+#mountmnr "cave_grub_mount"
 #define "#gcost -10"
+#barding 252
 #theme "iron"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -241,8 +250,9 @@
 #armor
 #offsetx 48
 #offsety 25
-#define "#mountmnr 'cave_grub_obsidian_barding_mount'"
+#mountmnr "cave_grub_mount"
 #define "#gcost -10"
+#barding obsidian_barding
 #theme "heavy"
 #theme "advanced"
 #tag "animal 'cave grub'"
@@ -265,7 +275,7 @@
 #offsety 20
 #needs overlay spider_overlay
 #description "The giant spider will persist even if the rider dies."
-#define "#mountmnr 'cave_spider_mount'"
+#mountmnr "cave_spider_mount"
 #theme "specialmount"
 #tag "animal spider"
 #tag "guaranteedprefix spider"
@@ -282,7 +292,8 @@
 #offsety 20
 #needs overlay spider_overlay
 #description "The giant spider will persist even if the rider dies."
-#define "#mountmnr 'cave_spider_leather_barding_mount'"
+#mountmnr "cave_spider_mount"
+#barding 251
 #theme "specialmount"
 #theme "leather"
 #tag "animal spider"
@@ -301,7 +312,8 @@
 #offsety 20
 #needs overlay spider_overlay
 #description "The giant spider will persist even if the rider dies."
-#define "#mountmnr 'cave_spider_light_scale_barding_mount'"
+#mountmnr "cave_spider_mount"
+#barding 252
 #theme "specialmount"
 #theme "iron"
 #tag "animal spider"
@@ -320,7 +332,8 @@
 #offsety 20
 #needs overlay spider_overlay
 #description "The giant spider will persist even if the rider dies."
-#define "#mountmnr 'cave_spider_obsidian_barding_mount'"
+#mountmnr "cave_spider_mount"
+#barding obsidian_barding
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -340,7 +353,7 @@
 #offsetx 15
 #offsety 22
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_mount'"
+#mountmnr "giant_rat_mount"
 #define "#stealthy '+40'"
 #define "#gcost +5"
 #theme "rat"
@@ -360,9 +373,10 @@
 #offsetx 15
 #offsety 22
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_leather_barding_mount'"
+#mountmnr "giant_rat_mount"
 #define "#stealthy '+40'"
 #define "#gcost +5"
+#barding 251
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -382,9 +396,10 @@
 #offsetx 15
 #offsety 22
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_light_scale_barding_mount'"
+#mountmnr "giant_rat_mount"
 #define "#stealthy '+40'"
 #define "#gcost +5"
+#barding 252
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -404,9 +419,10 @@
 #offsetx 15
 #offsety 22
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_obsidian_barding_mount'"
+#mountmnr "giant_rat_mount"
 #define "#stealthy '+40'"
 #define "#gcost +5"
+#barding obsidian_barding
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"

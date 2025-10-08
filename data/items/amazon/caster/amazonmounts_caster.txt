@@ -6,7 +6,7 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_mount'"
+#mountmnr "riding_horse_mount"
 #theme "light"
 #tag "animal horse"
 #tag "maxprot 12"
@@ -20,7 +20,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_leather_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #tag "animal horse"
@@ -36,7 +37,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_light_bronze_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 264
 #theme "light"
 #theme "bronze"
 #tag "animal horse"
@@ -52,7 +54,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_light_scale_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 252
 #theme "light"
 #theme "iron"
 #tag "animal horse"
@@ -68,7 +71,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_mail_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 172
 #theme "bronze"
 #tag "animal horse"
 #tag "maxprot 18"
@@ -83,7 +87,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_iron_mail_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 172
 #theme "iron"
 #tag "animal horse"
 #tag "maxprot 18"
@@ -98,7 +103,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_cataphract_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #tag "animal horse"
@@ -113,7 +119,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal horse"
@@ -128,7 +135,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_plate_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #tag "animal horse"
@@ -143,7 +151,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_silver_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 255
 #theme "heavy"
 #theme "advanced"
 #tag "animal horse"
@@ -158,7 +167,8 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_golden_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 277
 #theme "heavy"
 #theme "advanced"
 #tag "animal horse"
@@ -175,7 +185,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_leather_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 251
 #theme "leather"
 #theme "light"
 #tag "animal horse"
@@ -194,7 +205,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_light_bronze_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 264
 #theme "bronze"
 #theme "light"
 #tag "animal horse"
@@ -214,7 +226,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_light_scale_barding_mount_1'"
+#mountmnr "war_horse_mount"
+#barding 252
 #theme "iron"
 #theme "light"
 #tag "animal horse"
@@ -234,7 +247,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_light_scale_barding_mount_2'"
+#mountmnr "war_horse_mount"
+#barding 252
 #theme "iron"
 #theme "light"
 #tag "animal horse"
@@ -254,7 +268,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_bronze_mail_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 172
 #theme "bronze"
 #tag "animal horse"
 #tag "name commander 'catapract commander'"
@@ -273,7 +288,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_iron_mail_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 172
 #theme "iron"
 #tag "animal horse"
 #tag "name commander 'catapract commander'"
@@ -292,7 +308,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_cataphract_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #tag "animal horse"
@@ -311,7 +328,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_bronze_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal horse"
@@ -330,7 +348,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_plate_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #tag "animal horse"
@@ -349,7 +368,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_silver_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 255
 #theme "heavy"
 #theme "advanced"
 #tag "animal horse"
@@ -368,7 +388,8 @@
 #armor
 #offsetx -3
 #needs overlay 5
-#define "#mountmnr 'war_horse_golden_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 277
 #theme "heavy"
 #theme "advanced"
 #tag "animal horse"
@@ -389,7 +410,7 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
 #theme "flying"
 #tag "animal pegasus"
@@ -407,8 +428,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_leather_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 251
 #theme "flying"
 #theme "leather"
 #tag "animal pegasus"
@@ -427,8 +449,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_light_bronze_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 264
 #theme "flying"
 #theme "bronze"
 #tag "animal pegasus"
@@ -447,8 +470,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_light_scale_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 252
 #theme "flying"
 #theme "iron"
 #tag "animal pegasus"
@@ -467,8 +491,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_bronze_mail_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 172
 #theme "flying"
 #theme "bronze"
 #tag "animal pegasus"
@@ -487,8 +512,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_iron_mail_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 172
 #theme "flying"
 #theme "iron"
 #tag "animal pegasus"
@@ -507,8 +533,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_cataphract_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 253
 #theme "flying"
 #theme "iron"
 #theme "heavy"
@@ -528,8 +555,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_bronze_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 263
 #theme "flying"
 #theme "bronze"
 #theme "heavy"
@@ -549,8 +577,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_plate_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 254
 #theme "flying"
 #theme "iron"
 #theme "heavy"
@@ -570,8 +599,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_silver_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 255
 #theme "flying"
 #theme "advanced"
 #theme "heavy"
@@ -591,8 +621,9 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_golden_barding_mount'"
+#mountmnr "pegasus_mount"
 #define "#gcost -5"
+#barding 277
 #theme "flying"
 #theme "advanced"
 #theme "heavy"
@@ -614,7 +645,7 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_mount'"
+#mountmnr "gryphon_mount"
 #theme "flying"
 #theme "specialmount"
 #tag "animal gryphon"
@@ -632,7 +663,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_leather_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 251
 #theme "flying"
 #theme "specialmount"
 #theme "leather"
@@ -652,7 +684,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_light_bronze_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 264
 #theme "flying"
 #theme "specialmount"
 #theme "bronze"
@@ -672,7 +705,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_light_scale_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 252
 #theme "flying"
 #theme "specialmount"
 #theme "iron"
@@ -692,7 +726,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_bronze_mail_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 172
 #theme "flying"
 #theme "specialmount"
 #theme "bronze"
@@ -712,7 +747,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_iron_mail_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 172
 #theme "flying"
 #theme "specialmount"
 #theme "iron"
@@ -732,7 +768,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_cataphract_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 253
 #theme "flying"
 #theme "specialmount"
 #theme "iron"
@@ -753,7 +790,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_bronze_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 263
 #theme "flying"
 #theme "specialmount"
 #theme "bronze"
@@ -774,7 +812,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_plate_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 254
 #theme "flying"
 #theme "specialmount"
 #theme "iron"
@@ -795,7 +834,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_silver_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 255
 #theme "flying"
 #theme "specialmount"
 #theme "advanced"
@@ -816,7 +856,8 @@
 #offsety 64
 #needs overlay gryphon_overlay
 #description "If the rider dies, the gryphon will carry on fighting until the end of the battle."
-#define "#mountmnr 'gryphon_golden_barding_mount'"
+#mountmnr "gryphon_mount"
+#barding 277
 #theme "flying"
 #theme "specialmount"
 #theme "advanced"
@@ -837,7 +878,7 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_mount'"
+#mountmnr "leogryph_mount"
 #theme "specialmount"
 #tag "animal leogryph"
 #tag "guaranteedprefix leogryph"
@@ -852,7 +893,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_leather_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 251
 #theme "specialmount"
 #theme "leather"
 #tag "animal leogryph"
@@ -869,7 +911,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_light_bronze_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 264
 #theme "specialmount"
 #theme "bronze"
 #tag "animal leogryph"
@@ -886,7 +929,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_light_scale_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 252
 #theme "specialmount"
 #theme "iron"
 #tag "animal leogryph"
@@ -903,7 +947,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_bronze_mail_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal leogryph"
@@ -920,7 +965,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_iron_mail_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal leogryph"
@@ -937,7 +983,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_cataphract_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -955,7 +1002,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_bronze_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -973,7 +1021,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_plate_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -991,7 +1040,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_silver_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 255
 #theme "specialmount"
 #theme "advanced"
 #theme "heavy"
@@ -1009,7 +1059,8 @@
 #offsety 5
 #offsetx -3
 #description "If the rider dies, the leogryph will carry on fighting until the end of the battle."
-#define "#mountmnr 'leogryph_golden_barding_mount'"
+#mountmnr "leogryph_mount"
+#barding 277
 #theme "specialmount"
 #theme "advanced"
 #theme "heavy"
@@ -1029,7 +1080,7 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_mount'"
+#mountmnr "serpent_mount"
 #theme "light"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -1046,7 +1097,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_leather_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #tag "animal serpent"
@@ -1065,7 +1117,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_light_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 264
 #theme "light"
 #theme "bronze"
 #tag "animal serpent"
@@ -1084,7 +1137,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_light_scale_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 252
 #theme "light"
 #theme "iron"
 #tag "animal serpent"
@@ -1103,7 +1157,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_bronze_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "bronze"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -1121,7 +1176,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_iron_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "iron"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -1139,7 +1195,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_cataphract_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #tag "animal serpent"
@@ -1157,7 +1214,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal serpent"
@@ -1175,7 +1233,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_plate_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #tag "animal serpent"
@@ -1193,7 +1252,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_silver_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 255
 #theme "heavy"
 #theme "advanced"
 #tag "animal serpent"
@@ -1211,7 +1271,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_golden_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 277
 #theme "heavy"
 #theme "advanced"
 #tag "animal serpent"
@@ -1229,7 +1290,7 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_mount'"
+#mountmnr "green_lizard_mount"
 #theme "light"
 #theme "specialmount"
 #tag "animal lizard"
@@ -1246,7 +1307,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_leather_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 251
 #theme "light"
 #theme "specialmount"
 #theme "leather"
@@ -1265,7 +1327,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_light_bronze_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 264
 #theme "light"
 #theme "specialmount"
 #theme "bronze"
@@ -1284,7 +1347,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_light_scale_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 252
 #theme "light"
 #theme "specialmount"
 #theme "iron"
@@ -1303,7 +1367,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_bronze_mail_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal lizard"
@@ -1321,7 +1386,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_iron_mail_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal lizard"
@@ -1339,7 +1405,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_cataphract_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -1357,7 +1424,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_bronze_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -1375,7 +1443,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_plate_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -1393,7 +1462,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_silver_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 255
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -1411,7 +1481,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_golden_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 277
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"

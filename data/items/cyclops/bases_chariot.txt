@@ -3,7 +3,7 @@
 ---- Horses
 
 #newitem
-#id "two_horse"
+#id "two_horse_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -11,7 +11,7 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_leather_barding_chariot'"
+#mountmnr "two_horse_chariot"
 #tag "chariot"
 #tag "animal 'horse'"
 #tag "minprot 8"
@@ -20,7 +20,7 @@
 #enditem
 
 #newitem
-#id "two_horse_leather_barding"
+#id "two_horse_leather_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -28,7 +28,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_leather_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 251
 #tag "chariot"
 #tag "animal 'horse'"
 #tag "minprot 8"
@@ -38,7 +39,7 @@
 #enditem
 
 #newitem
-#id "two_horse_light_bronze_barding"
+#id "two_horse_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -46,7 +47,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_light_bronze_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -57,7 +59,7 @@
 #enditem
 
 #newitem
-#id "two_horse_light_scale_barding"
+#id "two_horse_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -65,7 +67,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_light_scale_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -76,7 +79,7 @@
 #enditem
 
 #newitem
-#id "two_horse_bronze_barding"
+#id "two_horse_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -84,7 +87,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_bronze_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 263
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -95,7 +99,7 @@
 #enditem
 
 #newitem
-#id "two_horse_plate_barding"
+#id "two_horse_plate_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -103,7 +107,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_plate_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 254
 #theme "iron"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -114,7 +119,7 @@
 #enditem
 
 #newitem
-#id "two_horse_golden_barding"
+#id "two_horse_golden_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -122,7 +127,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_golden_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 277
 #theme "advanced"
 #theme "elite"
 #tag "chariot"
@@ -134,7 +140,7 @@
 #enditem
 
 #newitem
-#id "two_horse_gleaming_barding"
+#id "two_horse_gleaming_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -142,7 +148,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_gleaming_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding gleaming_barding
 #theme "advanced"
 #theme "sacred"
 #tag "chariot"
@@ -154,7 +161,7 @@
 #enditem
 
 #newitem
-#id "two_horse_cyclope_barding"
+#id "two_horse_cyclope_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse_big.png
 #recolormask /graphics/mounts/chariots/twohorse_big_recolormask.png
@@ -162,7 +169,8 @@
 #needs overlay twohorse_big_overlay
 #offsetx 40
 #offsety -4
-#define "#mountmnr 'two_horse_cyclope_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding cyclope_barding
 #theme "advanced"
 #theme "sacred"
 #tag "chariot"

@@ -92,7 +92,7 @@
 #newitem
 #id shortsword_bronze
 #gameid 645
-#sprite graphics/ichtyid/weapon/bronze_shortsword.png
+#sprite /graphics/ichtyid/weapon/bronze_shortsword.png
 #theme "advanced"
 #theme "bronze"
 #enditem
@@ -100,7 +100,7 @@
 #newitem
 #id shortsword_coral
 #gameid coralshortsword
-#sprite graphics/ichtyid/weapon/coral_shortsword.png
+#sprite /graphics/ichtyid/weapon/coral_shortsword.png
 #theme "coral"
 #theme "marine"
 #enditem
@@ -108,14 +108,14 @@
 #newitem
 #id dagger
 #gameid 674
-#sprite graphics/ichtyid/weapon/bronze_dagger.png
+#sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id dagger_stone
 #gameid 671
-#sprite graphics/ichtyid/weapon/stone_dagger.png
+#sprite /graphics/ichtyid/weapon/stone_dagger.png
 #theme "stone"
 #theme "primitive"
 #theme "boreal"
@@ -134,7 +134,7 @@
 #newitem
 #id club_coral
 #gameid 45
-#sprite graphics/ichtyid/weapon/coral_club.png
+#sprite /graphics/ichtyid/weapon/coral_club.png
 #theme "coral"
 #theme "marine"
 #enditem

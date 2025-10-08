@@ -145,14 +145,14 @@
 #newitem
 #id dagger
 #gameid 674
-#sprite graphics/ichtyid/weapon/bronze_dagger.png
+#sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id dagger_stone
 #gameid 671
-#sprite graphics/ichtyid/weapon/stone_dagger.png
+#sprite /graphics/ichtyid/weapon/stone_dagger.png
 #theme "stone"
 #enditem
 
@@ -168,7 +168,7 @@
 #newitem
 #id club_coral
 #gameid 45
-#sprite graphics/ichtyid/weapon/coral_club.png
+#sprite /graphics/ichtyid/weapon/coral_club.png
 #theme "coral"
 #theme "marine"
 #enditem

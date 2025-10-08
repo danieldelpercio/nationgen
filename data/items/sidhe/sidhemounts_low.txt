@@ -9,7 +9,7 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_mount'"
+#mountmnr "serpent_mount"
 #theme "light"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -26,7 +26,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_leather_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #tag "animal serpent"
@@ -45,7 +46,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_light_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 264
 #theme "light"
 #theme "bronze"
 #tag "animal serpent"
@@ -64,7 +66,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_light_scale_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 252
 #theme "light"
 #theme "iron"
 #tag "animal serpent"
@@ -83,7 +86,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_bronze_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "bronze"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -101,7 +105,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_iron_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "iron"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -119,7 +124,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_cataphract_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #tag "animal serpent"
@@ -137,7 +143,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal serpent"
@@ -155,7 +162,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_plate_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #tag "animal serpent"
@@ -173,7 +181,8 @@
 #offsety 14
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_golden_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 277
 #theme "heavy"
 #theme "advanced"
 #tag "animal serpent"
@@ -191,7 +200,7 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_mount'"
+#mountmnr "green_lizard_mount"
 #theme "light"
 #theme "specialmount"
 #tag "animal lizard"
@@ -208,7 +217,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_leather_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 251
 #theme "light"
 #theme "specialmount"
 #theme "leather"
@@ -227,7 +237,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_light_bronze_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 264
 #theme "light"
 #theme "specialmount"
 #theme "bronze"
@@ -246,7 +257,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_light_scale_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 252
 #theme "light"
 #theme "specialmount"
 #theme "iron"
@@ -265,7 +277,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_bronze_mail_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal lizard"
@@ -283,7 +296,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_iron_mail_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal lizard"
@@ -301,7 +315,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_cataphract_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -319,7 +334,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_bronze_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -337,7 +353,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_plate_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -355,7 +372,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_golden_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 277
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -374,7 +392,7 @@
 #offsetx 35
 #offsety 7
 #needs overlay spider_overlay
-#define "#mountmnr 'great_spider_mount'"
+#mountmnr "great_spider_mount"
 #description "The giant spider will persist even if the rider dies."
 #theme "specialmount"
 #tag "animal spider"
@@ -392,7 +410,8 @@
 #offsetx 35
 #offsety 7
 #needs overlay spider_overlay
-#define "#mountmnr 'great_spider_light_bronze_barding_mount'"
+#mountmnr "great_spider_mount"
+#barding 264
 #description "The giant spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "bronze"
@@ -412,7 +431,8 @@
 #offsetx 35
 #offsety 7
 #needs overlay spider_overlay
-#define "#mountmnr 'great_spider_light_scale_barding_mount'"
+#mountmnr "great_spider_mount"
+#barding 252
 #description "The giant spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "iron"
@@ -432,7 +452,8 @@
 #offsetx 35
 #offsety 7
 #needs overlay spider_overlay
-#define "#mountmnr 'great_spider_bronze_mail_barding_mount'"
+#mountmnr "great_spider_mount"
+#barding 172
 #description "The giant spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "bronze"
@@ -452,7 +473,8 @@
 #offsetx 35
 #offsety 7
 #needs overlay spider_overlay
-#define "#mountmnr 'great_spider_iron_mail_barding_mount'"
+#mountmnr "great_spider_mount"
+#barding 172
 #description "The giant spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "iron"
@@ -472,7 +494,8 @@
 #offsetx 35
 #offsety 7
 #needs overlay spider_overlay
-#define "#mountmnr 'great_spider_cataphract_barding_mount'"
+#mountmnr "great_spider_mount"
+#barding 253
 #description "The giant spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "iron"
@@ -492,7 +515,7 @@
 #armor
 #offsetx 35
 #offsety 58
-#define "#mountmnr 'hunter_spider_mount'"
+#mountmnr "hunter_spider_mount"
 #description "The hunter spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "heavy"
@@ -512,7 +535,8 @@
 #armor
 #offsetx 35
 #offsety 58
-#define "#mountmnr 'hunter_spider_light_bronze_barding_mount'"
+#mountmnr "hunter_spider_mount"
+#barding 264
 #description "The hunter spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "heavy"
@@ -533,7 +557,8 @@
 #armor
 #offsetx 35
 #offsety 58
-#define "#mountmnr 'hunter_spider_light_scale_barding_mount'"
+#mountmnr "hunter_spider_mount"
+#barding 252
 #description "The hunter spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "heavy"
@@ -554,7 +579,8 @@
 #armor
 #offsetx 35
 #offsety 58
-#define "#mountmnr 'hunter_spider_bronze_mail_barding_mount'"
+#mountmnr "hunter_spider_mount"
+#barding 172
 #description "The hunter spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "heavy"
@@ -576,7 +602,8 @@
 #armor
 #offsetx 35
 #offsety 58
-#define "#mountmnr 'hunter_spider_iron_mail_barding_mount'"
+#mountmnr "hunter_spider_mount"
+#barding 172
 #description "The hunter spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "heavy"
@@ -598,7 +625,8 @@
 #armor
 #offsetx 35
 #offsety 58
-#define "#mountmnr 'hunter_spider_cataphract_barding_mount'"
+#mountmnr "hunter_spider_mount"
+#barding 253
 #description "The hunter spider will persist even if the rider dies."
 #theme "specialmount"
 #theme "heavy"
@@ -620,7 +648,7 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_mount'"
+#mountmnr "great_boar_mount"
 #theme "specialmount"
 #tag "animal boar"
 #tag "guaranteedprefix boar"
@@ -636,7 +664,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_light_bronze_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 264
 #theme "specialmount"
 #theme "bronze"
 #tag "animal boar"
@@ -654,7 +683,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_light_scale_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 252
 #theme "specialmount"
 #theme "iron"
 #tag "animal boar"
@@ -672,7 +702,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_bronze_mail_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal boar"
@@ -689,7 +720,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_iron_mail_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal boar"
@@ -706,7 +738,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_cataphract_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -724,7 +757,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_bronze_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -742,7 +776,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_plate_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -755,13 +790,14 @@
 #enditem
 
 #newitem
-#id "great_boar_golden_barding_mount"
+#id "great_boar_golden_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/boar.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_golden_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 277
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -780,7 +816,7 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_mount'"
+#mountmnr "tiger_mount"
 #theme "specialmount"
 #theme "light"
 #tag "animal tiger"
@@ -797,7 +833,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_light_bronze_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -816,7 +853,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_light_scale_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -835,7 +873,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_bronze_mail_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal tiger"
@@ -852,7 +891,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_iron_mail_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal tiger"
@@ -869,7 +909,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_cataphract_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 253
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -887,7 +928,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_bronze_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 263
 #theme "specialmount"
 #theme "heavy"
 #theme "bronze"
@@ -905,7 +947,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_plate_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 254
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -924,7 +967,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_golden_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 277
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -943,7 +987,7 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_mount'"
+#mountmnr "black_tiger_mount"
 #theme "specialmount"
 #theme "light"
 #theme "sacred"
@@ -961,7 +1005,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_light_bronze_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -980,7 +1025,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_light_scale_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -999,7 +1045,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_bronze_mail_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #theme "sacred"
@@ -1016,7 +1063,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_iron_mail_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #theme "sacred"
@@ -1033,7 +1081,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_cataphract_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 253
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -1051,7 +1100,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_bronze_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 263
 #theme "specialmount"
 #theme "heavy"
 #theme "bronze"
@@ -1069,7 +1119,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_plate_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 254
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -1088,7 +1139,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_golden_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 277
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -1107,7 +1159,7 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_mount'"
+#mountmnr "jaguar_mount"
 #theme "specialmount"
 #theme "light"
 #tag "animal jaguar"
@@ -1123,7 +1175,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_light_bronze_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -1141,7 +1194,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_light_scale_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -1159,7 +1213,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_bronze_mail_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal jaguar"
@@ -1169,13 +1224,14 @@
 #enditem
 
 #newitem
-#id "jaguar_iron_mail_barding_mount"
+#id "jaguar_iron_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/jaguar.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_iron_mail_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal jaguar"
@@ -1191,7 +1247,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_cataphract_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -1208,7 +1265,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_bronze_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -1225,7 +1283,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_plate_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -1243,7 +1302,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'jaguar_golden_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 277
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -1263,7 +1323,7 @@
 #offsety 13
 #needs overlay 13
 #description "The amphiptere will fight until the end of the battle should the rider die"
-#define "#mountmnr 'amphiptere_mount'"
+#mountmnr "amphiptere_mount"
 #theme "specialmount"
 #tag "animal amphiptere"
 #tag "guaranteedprefix amphiptere"
@@ -1284,7 +1344,8 @@
 #offsety 13
 #needs overlay 13
 #description "The amphiptere will fight until the end of the battle should the rider die"
-#define "#mountmnr 'amphiptere_light_bronze_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 264
 #theme "specialmount"
 #theme "bronze"
 #tag "animal amphiptere"
@@ -1306,7 +1367,8 @@
 #offsety 13
 #needs overlay 13
 #description "The amphiptere will fight until the end of the battle should the rider die"
-#define "#mountmnr 'amphiptere_light_scale_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 252
 #theme "specialmount"
 #theme "iron"
 #tag "animal amphiptere"
@@ -1328,7 +1390,8 @@
 #offsety 13
 #needs overlay 13
 #description "The amphiptere will fight until the end of the battle should the rider die"
-#define "#mountmnr 'amphiptere_bronze_mail_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal amphiptere"
@@ -1349,7 +1412,8 @@
 #offsety 13
 #needs overlay 13
 #description "The amphiptere will fight until the end of the battle should the rider die"
-#define "#mountmnr 'amphiptere_iron_mail_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal amphiptere"
@@ -1370,7 +1434,8 @@
 #offsety 13
 #needs overlay 13
 #description "The amphiptere will fight until the end of the battle should the rider die"
-#define "#mountmnr 'amphiptere_golden_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 277
 #theme "specialmount"
 #theme "advanced"
 #tag "animal amphiptere"

@@ -3,7 +3,7 @@
 ---- Horse Chariots
 
 #newitem
-#id "two_horse_leather_barding"
+#id "two_horse_leather_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse.png
 #recolormask /graphics/mounts/chariots/twohorse_recolormask.png
@@ -11,7 +11,8 @@
 #needs overlay twohorse_overlay
 #offsetx 76
 #offsety -3
-#define "#mountmnr 'two_horse_leather_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 251
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 20"
@@ -20,7 +21,7 @@
 #enditem
 
 #newitem
-#id "two_horse_light_scale_barding"
+#id "two_horse_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse.png
 #recolormask /graphics/mounts/chariots/twohorse_recolormask.png
@@ -28,7 +29,8 @@
 #needs overlay twohorse_overlay
 #offsetx 76
 #offsety -3
-#define "#mountmnr 'two_horse_light_scale_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 252
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 20"
@@ -38,7 +40,7 @@
 #enditem
 
 #newitem
-#id "two_horse_mail_barding"
+#id "two_horse_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse.png
 #recolormask /graphics/mounts/chariots/twohorse_recolormask.png
@@ -46,7 +48,8 @@
 #needs overlay twohorse_overlay
 #offsetx 76
 #offsety -3
-#define "#mountmnr 'two_horse_mail_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 172
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 20"
@@ -56,7 +59,7 @@
 #enditem
 
 #newitem
-#id "two_horse_cataphract_barding"
+#id "two_horse_cataphract_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse.png
 #recolormask /graphics/mounts/chariots/twohorse_recolormask.png
@@ -64,7 +67,8 @@
 #needs overlay twohorse_overlay
 #offsetx 76
 #offsety -3
-#define "#mountmnr 'two_horse_cataphract_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 253
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 20"
@@ -74,7 +78,7 @@
 #enditem
 
 #newitem
-#id "two_horse_plate_barding"
+#id "two_horse_plate_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/twohorse.png
 #recolormask /graphics/mounts/chariots/twohorse_recolormask.png
@@ -82,7 +86,8 @@
 #needs overlay twohorse_overlay
 #offsetx 76
 #offsety -3
-#define "#mountmnr 'two_horse_plate_barding_chariot'"
+#mountmnr "two_horse_chariot"
+#barding 254
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 20"

@@ -7,7 +7,7 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_mount'"
+#mountmnr "riding_horse_mount"
 #theme "light"
 #tag "animal horse"
 #tag "maxprot 11"
@@ -22,7 +22,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_leather_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #tag "animal horse"
@@ -38,7 +39,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_turtle_shell_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 137
 #theme "light"
 #theme "shell"
 #tag "animal horse"
@@ -54,7 +56,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_coral_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 190
 #theme "light"
 #theme "coral"
 #tag "animal horse"
@@ -70,7 +73,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_light_bronze_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 264
 #theme "bronze"
 #tag "animal horse"
 #basechance 8
@@ -85,7 +89,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_light_scale_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 252
 #theme "iron"
 #tag "animal horse"
 #basechance 8
@@ -100,7 +105,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_mail_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 172
 #theme "bronze"
 #tag "animal horse"
 #basechance 6
@@ -115,7 +121,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_iron_mail_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 172
 #theme "iron"
 #tag "animal horse"
 #basechance 6
@@ -130,7 +137,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal horse"
@@ -146,7 +154,8 @@
 #offsety -20
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_plate_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -167,7 +176,7 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_mount'"
+#mountmnr "camel_mount"
 #theme "light"
 #tag "animal camel"
 #tag "maxprot 11"
@@ -185,7 +194,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_leather_barding_mount'"
+#mountmnr "camel_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #tag "animal camel"
@@ -205,7 +215,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_ochre_turtle_shell_barding_mount'"
+#mountmnr "camel_mount"
+#barding 137
 #theme "light"
 #theme "shell"
 #tag "animal camel"
@@ -225,7 +236,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_coral_barding_mount'"
+#mountmnr "camel_mount"
+#barding 190
 #theme "light"
 #theme "coral"
 #tag "animal camel"
@@ -245,7 +257,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_light_bronze_barding_mount'"
+#mountmnr "camel_mount"
+#barding 264
 #theme "bronze"
 #tag "animal camel"
 #basechance 10
@@ -263,7 +276,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_light_scale_barding_mount'"
+#mountmnr "camel_mount"
+#barding 252
 #theme "iron"
 #tag "animal camel"
 #basechance 10
@@ -281,7 +295,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_bronze_mail_barding_mount'"
+#mountmnr "camel_mount"
+#barding 172
 #theme "bronze"
 #tag "animal camel"
 #basechance 10
@@ -299,7 +314,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_iron_mail_barding_mount'"
+#mountmnr "camel_mount"
+#barding 172
 #theme "iron"
 #tag "animal camel"
 #basechance 10
@@ -317,7 +333,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_bronze_barding_mount'"
+#mountmnr "camel_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal camel"
@@ -336,7 +353,8 @@
 #armor
 #offsetx 5
 #offsety 35
-#define "#mountmnr 'camel_plate_barding_mount'"
+#mountmnr "camel_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -355,7 +373,7 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_mount'"
+#mountmnr "cave_cow_mount"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
 #basechance 10
@@ -370,7 +388,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_turtle_shell_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 137
 #theme "shell"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -387,7 +406,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_coral_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 190
 #theme "coral"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -404,7 +424,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_light_bronze_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 264
 #theme "bronze"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -421,7 +442,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_light_scale_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 252
 #theme "iron"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -438,7 +460,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_bronze_mail_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 172
 #theme "bronze"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -455,7 +478,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_iron_mail_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 172
 #theme "iron"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -472,7 +496,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_bronze_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 263
 #theme "bronze"
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -489,7 +514,8 @@
 #offsety -12
 #armor
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
-#define "#mountmnr 'cave_cow_plate_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -510,7 +536,7 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_mount'"
+#mountmnr "serpent_mount"
 #theme "light"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -527,7 +553,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_leather_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #tag "animal serpent"
@@ -546,7 +573,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_turtle_shell_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 137
 #theme "light"
 #theme "shell"
 #tag "animal serpent"
@@ -565,7 +593,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_coral_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 190
 #theme "light"
 #theme "coral"
 #tag "animal serpent"
@@ -584,7 +613,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_light_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 264
 #theme "light"
 #theme "bronze"
 #tag "animal serpent"
@@ -602,7 +632,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_light_scale_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 252
 #theme "light"
 #theme "iron"
 #tag "animal serpent"
@@ -620,7 +651,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_bronze_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "bronze"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -637,7 +669,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_iron_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "iron"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -654,7 +687,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal serpent"
@@ -672,7 +706,8 @@
 #offsety -5
 #needs overlay 6
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
-#define "#mountmnr 'serpent_plate_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -691,7 +726,7 @@
 #offsetx 0
 #offsety -5
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_mount'"
+#mountmnr "giant_rat_mount"
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -708,7 +743,8 @@
 #offsetx 0
 #offsety -5
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_leather_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 251
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -727,7 +763,8 @@
 #offsetx 0
 #offsety -5
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_turtle_shell_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 137
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -746,7 +783,8 @@
 #offsetx 0
 #offsety -5
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
-#define "#mountmnr 'giant_rat_coral_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 190
 #theme "rat"
 #theme "rattotem"
 #theme "totemanimal"
@@ -765,7 +803,7 @@
 #armor
 #offsety -13
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
 #command "#amphibian"
 #theme "light"
@@ -782,8 +820,9 @@
 #armor
 #offsety -13
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_turtle_shell_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 137
 #command "#amphibian"
 #theme "light"
 #theme "shell"
@@ -800,8 +839,9 @@
 #armor
 #offsety -13
 #description "The loyal sea dog will continue to fight even if its rider dies."
-#define "#mountmnr 'sea_dog_coral_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 190
 #command "#amphibian"
 #theme "light"
 #theme "coral"
@@ -819,7 +859,7 @@
 #armor
 #offsetx 0
 #offsety -13
-#define "#mountmnr 'jaguar_toad_mount'"
+#mountmnr "jaguar_toad_mount"
 #description "The giant toad will fight until the end of the battle should the rider die"
 #tag "animal 'giant toad'"
 #tag "guaranteedprefix toad"
@@ -835,7 +875,8 @@
 #armor
 #offsetx 0
 #offsety -13
-#define "#mountmnr 'jaguar_toad_turtle_shell_barding_mount'"
+#mountmnr "jaguar_toad_mount"
+#barding 137
 #description "The giant toad will fight until the end of the battle should the rider die"
 #theme "shell"
 #tag "animal 'giant toad'"
@@ -853,7 +894,8 @@
 #armor
 #offsetx 0
 #offsety -13
-#define "#mountmnr 'jaguar_toad_coral_barding_mount'"
+#mountmnr "jaguar_toad_mount"
+#barding 190
 #description "The giant toad will fight until the end of the battle should the rider die"
 #theme "coral"
 #tag "animal 'giant toad'"
@@ -872,7 +914,7 @@
 #armor
 #offsetx 0
 #offsety -13
-#define "#mountmnr 'sapphire_toad_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
 #description "The giant frog will fight until the end of the battle should the rider die"
 #tag "animal 'giant frog'"
@@ -889,8 +931,9 @@
 #armor
 #offsetx 0
 #offsety -13
-#define "#mountmnr 'sapphire_toad_turtle_shell_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
+#barding 137
 #description "The giant frog will fight until the end of the battle should the rider die"
 #theme "shell"
 #tag "animal 'giant frog'"
@@ -908,8 +951,9 @@
 #armor
 #offsetx 0
 #offsety -13
-#define "#mountmnr 'sapphire_toad_coral_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
+#barding 190
 #description "The giant frog will fight until the end of the battle should the rider die"
 #theme "coral"
 #tag "animal 'giant frog'"

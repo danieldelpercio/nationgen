@@ -3,14 +3,14 @@
 ---- Horses
 
 #newitem
-#id "horse"
+#id "horse_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_chariot'"
+#mountmnr "horse_chariot"
 #define "#gcost -5"
 #tag "chariot"
 #tag "minprot 10"
@@ -20,15 +20,16 @@
 #enditem
 
 #newitem
-#id "horse_thick_linen_barding"
+#id "horse_thick_linen_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_thick_linen_barding_chariot'"
+#mountmnr "horse_chariot"
 #define "#gcost -5"
+#barding thick_linen_barding
 #theme "cloth"
 #theme "primitive"
 #tag "chariot"
@@ -39,15 +40,16 @@
 #enditem
 
 #newitem
-#id "horse_light_bronze_barding"
+#id "horse_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_light_bronze_barding_chariot'"
+#mountmnr "horse_chariot"
 #define "#gcost -5"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -58,15 +60,16 @@
 #enditem
 
 #newitem
-#id "horse_bronze_mail_barding"
+#id "horse_bronze_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_bronze_mail_barding_chariot'"
+#mountmnr "horse_chariot"
 #define "#gcost -5"
+#barding 172
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -77,15 +80,16 @@
 #enditem
 
 #newitem
-#id "horse_iron_mail_barding"
+#id "horse_iron_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_iron_mail_barding_chariot'"
+#mountmnr "horse_chariot"
 #define "#gcost -5"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -96,15 +100,16 @@
 #enditem
 
 #newitem
-#id "horse_bronze_barding"
+#id "horse_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_bronze_barding_chariot'"
+#mountmnr "horse_chariot"
 #define "#gcost -5"
+#barding 263
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -116,14 +121,15 @@
 
 
 #newitem
-#id "longdead_horse_thick_linen_barding"
+#id "longdead_horse_thick_linen_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_longdead.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'longdead_horse_thick_linen_barding_chariot'"
+#mountmnr "longdead_horse_chariot"
+#barding thick_linen_barding
 #theme "cloth"
 #theme "primitive"
 #tag "chariot"
@@ -133,14 +139,15 @@
 #enditem
 
 #newitem
-#id "longdead_horse_light_bronze_barding"
+#id "longdead_horse_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_longdead.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'longdead_horse_light_bronze_barding_chariot'"
+#mountmnr "longdead_horse_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 11"
@@ -151,14 +158,15 @@
 #enditem
 
 #newitem
-#id "longdead_horse_bronze_mail_barding"
+#id "longdead_horse_bronze_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_longdead.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'longdead_horse_bronze_mail_barding_chariot'"
+#mountmnr "longdead_horse_chariot"
+#barding 172
 #tag "chariot"
 #tag "minprot 11"
 #tag "animal 'longdead'"
@@ -168,14 +176,15 @@
 #enditem
 
 #newitem
-#id "longdead_horse_bronze_barding"
+#id "longdead_horse_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_longdead.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'longdead_horse_bronze_barding_chariot'"
+#mountmnr "longdead_horse_chariot"
+#barding 263
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 11"
@@ -189,14 +198,14 @@
 ---- Camels
 
 #newitem
-#id "camel"
+#id "camel_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/camel_chariot.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_chariot'"
+#mountmnr "camel_chariot"
 #define "#gcost -5"
 #tag "chariot"
 #tag "minprot 10"
@@ -208,15 +217,16 @@
 #enditem
 
 #newitem
-#id "camel_thick_linen_barding"
+#id "camel_thick_linen_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/camel_chariot_armored_thick_linen.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_thick_linen_barding_chariot'"
+#mountmnr "camel_chariot"
 #define "#gcost -5"
+#barding thick_linen_barding
 #theme "cloth"
 #theme "primitive"
 #tag "chariot"
@@ -229,15 +239,16 @@
 #enditem
 
 #newitem
-#id "camel_light_bronze_barding"
+#id "camel_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/camel_chariot_armored_light_bronze.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_light_bronze_barding_chariot'"
+#mountmnr "camel_chariot"
 #define "#gcost -5"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -250,15 +261,16 @@
 #enditem
 
 #newitem
-#id "camel_iron_mail_barding_mount"
+#id "camel_iron_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/camel_chariot_armored_mail.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_iron_mail_barding_chariot'"
+#mountmnr "camel_chariot"
 #define "#gcost -5"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -271,15 +283,16 @@
 #enditem
 
 #newitem
-#id "camel_bronze_barding"
+#id "camel_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/camel_chariot_armored_bronze.png
 #armor
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_bronze_barding_chariot'"
+#mountmnr "camel_chariot"
 #define "#gcost -5"
+#barding 263
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -295,14 +308,15 @@
 ---- Lizards
 
 #newitem
-#id "lizard_thick_linen_barding"
+#id "lizard_thick_linen_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_thick_linen_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding thick_linen_barding
 #theme "cloth"
 #theme "primitive"
 #tag "chariot"
@@ -313,14 +327,15 @@
 #enditem
 
 #newitem
-#id "lizard_light_bronze_barding"
+#id "lizard_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_light_bronze_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -331,14 +346,15 @@
 #enditem
 
 #newitem
-#id "lizard_iron_mail_barding"
+#id "lizard_iron_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_iron_mail_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -348,14 +364,15 @@
 #enditem
 
 #newitem
-#id "lizard_bronze_barding"
+#id "lizard_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_bronze_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 263
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -365,14 +382,15 @@
 #enditem
 
 #newitem
-#id "lizard_barding"
+#id "lizard_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 289
 #tag "chariot"
 #tag "minprot 10"
 #tag "animal 'lizard'"
@@ -382,14 +400,15 @@
 
 
 #newitem
-#id "longdead_lizard_thick_linen_barding"
+#id "longdead_lizard_thick_linen_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard_longdead.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'longdead_lizard_thick_linen_barding_chariot'"
+#mountmnr "longdead_lizard_chariot"
+#barding thick_linen_barding
 #theme "cloth"
 #theme "primitive"
 #tag "chariot"
@@ -400,14 +419,15 @@
 #enditem
 
 #newitem
-#id "longdead_lizard_light_bronze_barding"
+#id "longdead_lizard_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard_longdead.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'longdead_lizard_light_bronze_barding_chariot'"
+#mountmnr "longdead_lizard_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -418,14 +438,15 @@
 #enditem
 
 #newitem
-#id "longdead_lizard_bronze_mail_barding"
+#id "longdead_lizard_bronze_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard_longdead.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'longdead_lizard_bronze_mail_barding_chariot'"
+#mountmnr "longdead_lizard_chariot"
+#barding 172
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -436,14 +457,15 @@
 #enditem
 
 #newitem
-#id "longdead_lizard_bronze_barding"
+#id "longdead_lizard_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard_longdead.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'longdead_lizard_bronze_barding_chariot'"
+#mountmnr "longdead_lizard_chariot"
+#barding 263
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"

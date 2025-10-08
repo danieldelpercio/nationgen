@@ -8,7 +8,7 @@
 #sprite /graphics/mounts/standard/brownhorse.png
 #armor
 #needs overlay 1
-#define "#mountmnr 'riding_horse_mount'"
+#mountmnr "riding_horse_mount"
 #tag "animal horse"
 #theme "light"
 #tag "maxprot 11"
@@ -22,7 +22,8 @@
 #sprite /graphics/mounts/standard/armoredhorse1.png
 #armor
 #needs overlay 2
-#define "#mountmnr 'destrier_plate_barding_mount'"
+#mountmnr "destrier_mount"
+#barding 254
 #tag "animal horse"
 #theme "heavy"
 #theme "iron"
@@ -40,7 +41,7 @@
 #sprite /graphics/mounts/standard/ghoul_horse.png
 #armor
 #needs overlay ghoul_horse_overlay
-#define "#mountmnr 'ghoul_horse_mount'"
+#mountmnr "ghoul_horse_mount"
 #tag "animal horse"
 #theme "light"
 #tag "maxprot 11"
@@ -53,7 +54,8 @@
 #sprite /graphics/mounts/standard/ghoul_horse_armored.png
 #armor
 #needs overlay ghoul_horse_armored_overlay
-#define "#mountmnr 'ghoul_horse_light_scale_barding_mount'"
+#mountmnr "ghoul_horse_mount"
+#barding 252
 #tag "animal horse"
 #theme "light"
 #theme "iron"
@@ -68,7 +70,8 @@
 #sprite /graphics/mounts/standard/ghoul_horse_armored.png
 #armor
 #needs overlay ghoul_horse_armored_overlay
-#define "#mountmnr 'ghoul_horse_iron_mail_barding_mount'"
+#mountmnr "ghoul_horse_mount"
+#barding 172
 #tag "animal horse"
 #theme "iron"
 #tag "minprot 12"
@@ -82,7 +85,8 @@
 #sprite /graphics/mounts/standard/ghoul_horse_armored.png
 #armor
 #needs overlay ghoul_horse_armored_overlay
-#define "#mountmnr 'ghoul_horse_cataphract_barding_mount'"
+#mountmnr "ghoul_horse_mount"
+#barding 253
 #tag "animal horse"
 #theme "heavy"
 #theme "iron"
@@ -97,7 +101,8 @@
 #sprite /graphics/mounts/standard/ghoul_horse_armored.png
 #armor
 #needs overlay ghoul_horse_armored_overlay
-#define "#mountmnr 'ghoul_horse_plate_barding_mount'"
+#mountmnr "ghoul_horse_mount"
+#barding 254
 #tag "animal horse"
 #theme "heavy"
 #theme "iron"
@@ -114,7 +119,7 @@
 #sprite /graphics/amazon/mounts/nightmare_equine.png
 #armor
 #needs overlay longdead_overlay
-#define "#mountmnr 'skeletal_horse_mount'"
+#mountmnr "skeletal_horse_mount"
 #tag "animal horse"
 #theme "light"
 #tag "maxprot 13"
@@ -129,8 +134,9 @@
 #sprite /graphics/amazon/mounts/nightmare_equine_fullbarded2.png
 #armor
 #needs overlay longdead_armored_overlay
-#define "#mountmnr 'nightmare_plate_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
+#barding 254
 #tag "animal horse"
 #theme "heavy"
 #theme "iron"
@@ -145,7 +151,7 @@
 #sprite /graphics/mounts/standard/nightmare.png
 #armor
 #offsety 1
-#define "#mountmnr 'nightmare_mount'"
+#mountmnr "nightmare_mount"
 #define "#enc 15"
 #tag "animal nightmare"
 #description "Leaves a nightmare behind when the rider dies"
@@ -162,7 +168,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear.png
 #armor
-#define "#mountmnr 'great_bear_mount'"
+#mountmnr "great_bear_mount"
 #offsety -2
 #offsetx -1
 #tag "animal bear"
@@ -177,7 +183,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_lightscale.png
 #armor
-#define "#mountmnr 'great_bear_light_scale_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 252
 #offsety -2
 #offsetx -1
 #tag "animal bear"
@@ -193,7 +200,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_cataphract.png
 #armor
-#define "#mountmnr 'great_bear_iron_mail_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 172
 #offsety -2
 #offsetx -1
 #tag "animal bear"
@@ -210,7 +218,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_cataphract.png
 #armor
-#define "#mountmnr 'great_bear_cataphract_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 253
 #offsety -2
 #offsetx -1
 #tag "animal bear"
@@ -227,7 +236,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_plate.png
 #armor
-#define "#mountmnr 'great_bear_plate_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 254
 #offsety -2
 #offsetx -1
 #tag "animal bear"
@@ -244,7 +254,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_small.png
 #armor
-#define "#mountmnr 'bear_mount'"
+#mountmnr "bear_mount"
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsety 6
 #offsetx -1
@@ -260,7 +270,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_small_armored_mail.png
 #armor
-#define "#mountmnr 'bear_light_scale_barding_mount'"
+#mountmnr "bear_mount"
+#barding 252
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsety 6
 #offsetx -1
@@ -277,7 +288,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_small_armored_mail.png
 #armor
-#define "#mountmnr 'bear_iron_mail_barding_mount'"
+#mountmnr "bear_mount"
+#barding 172
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsety 6
 #offsetx -1
@@ -295,7 +307,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_small_armored_mail.png
 #armor
-#define "#mountmnr 'bear_cataphract_barding_mount'"
+#mountmnr "bear_mount"
+#barding 253
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsety 6
 #offsetx -1
@@ -313,7 +326,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_small_armored_plate.png
 #armor
-#define "#mountmnr 'bear_plate_barding_mount'"
+#mountmnr "bear_mount"
+#barding 254
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsety 6
 #offsetx -1
@@ -336,7 +350,7 @@
 #armor
 #offsetx 23
 #offsety 6
-#define "#mountmnr 'scorpion_beast_mount'"
+#mountmnr "scorpion_beast_mount"
 #tag "animal scorpion"
 #description "Leaves a giant scorpion behind when the rider dies"
 #tag "guaranteedprefix scorpion"
@@ -355,7 +369,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_light_scale_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 252
 #tag "animal scorpion"
 #description "Leaves a giant scorpion behind when the rider dies"
 #tag "guaranteedprefix scorpion"
@@ -375,7 +390,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_iron_mail_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 172
 #tag "animal scorpion"
 #description "Leaves a giant scorpion behind when the rider dies"
 #tag "guaranteedprefix scorpion"
@@ -395,7 +411,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_cataphract_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 253
 #tag "animal scorpion"
 #description "Leaves a giant scorpion behind when the rider dies"
 #tag "guaranteedprefix scorpion"
@@ -415,7 +432,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_plate_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 254
 #tag "animal scorpion"
 #description "Leaves a giant scorpion behind when the rider dies"
 #tag "guaranteedprefix scorpion"
@@ -438,7 +456,8 @@
 #needs overlay fossil_overlay
 #offsetx 34
 #offsety 31
-#define "#mountmnr 'fossil_rusty_mail_armor_mount'"
+#mountmnr "fossil_mount"
+#barding 31
 #tag "animal fossil"
 #description "Leaves a fossilized giant behind when the rider dies"
 #tag "guaranteedprefix fossil"
@@ -456,7 +475,8 @@
 #needs overlay fossil_overlay
 #offsetx 34
 #offsety 31
-#define "#mountmnr 'fossil_hauberk_armor_mount'"
+#mountmnr "fossil_mount"
+#barding 11
 #tag "animal fossil"
 #description "Leaves a fossilized giant behind when the rider dies"
 #tag "guaranteedprefix fossil"
@@ -476,7 +496,7 @@
 #sprite /graphics/mounts/standard/direwolf1.png
 #armor
 #needs overlay direwolf1_overlay
-#define "#mountmnr 'dire_wolf_mount_1'"
+#mountmnr "dire_wolf_mount_1"
 #tag "animal wolf"
 #tag "guaranteedprefix wolf"
 #description "If the rider dies, the wolf will carry on fighting until the end of the battle."
@@ -493,7 +513,8 @@
 #sprite /graphics/mounts/standard/direwolf1.png
 #armor
 #needs overlay direwolf1_overlay
-#define "#mountmnr 'dire_wolf_leather_barding_mount_1'"
+#mountmnr "dire_wolf_mount_1"
+#barding 251
 #tag "animal wolf"
 #theme "light"
 #tag "guaranteedprefix wolf"
@@ -510,7 +531,8 @@
 #sprite /graphics/mounts/standard/direwolf1.png
 #armor
 #needs overlay direwolf1_overlay
-#define "#mountmnr 'dire_wolf_light_scale_barding_mount_1'"
+#mountmnr "dire_wolf_mount_1"
+#barding 252
 #tag "animal wolf"
 #theme "light"
 #tag "guaranteedprefix wolf"
@@ -528,7 +550,8 @@
 #sprite /graphics/mounts/standard/direwolf1.png
 #armor
 #needs overlay direwolf1_overlay
-#define "#mountmnr 'dire_wolf_iron_mail_barding_mount_1'"
+#mountmnr "dire_wolf_mount_1"
+#barding 172
 #tag "animal wolf"
 #theme "heavy"
 #tag "guaranteedprefix wolf"
@@ -546,7 +569,8 @@
 #sprite /graphics/mounts/standard/direwolf1.png
 #armor
 #needs overlay direwolf1_overlay
-#define "#mountmnr 'dire_wolf_cataphract_barding_mount_1'"
+#mountmnr "dire_wolf_mount_1"
+#barding 253
 #tag "animal wolf"
 #theme "heavy"
 #tag "guaranteedprefix wolf"
@@ -564,7 +588,8 @@
 #sprite /graphics/mounts/standard/direwolf1.png
 #armor
 #needs overlay direwolf1_overlay
-#define "#mountmnr 'dire_wolf_plate_barding_mount_1'"
+#mountmnr "dire_wolf_mount_1"
+#barding 254
 #tag "animal wolf"
 #theme "heavy"
 #tag "guaranteedprefix wolf"

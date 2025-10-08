@@ -7,7 +7,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar.png
 #armor
-#define "#mountmnr 'boar_mount'"
+#mountmnr "boar_mount"
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -29,7 +29,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar_armored_light_bronze.png
 #armor
-#define "#mountmnr 'boar_light_bronze_barding_mount'"
+#mountmnr "boar_mount"
+#barding 264
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -53,7 +54,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar_armored_light_scale.png
 #armor
-#define "#mountmnr 'boar_light_scale_barding_mount'"
+#mountmnr "boar_mount"
+#barding 252
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -77,7 +79,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar_armored_mail_bronze.png
 #armor
-#define "#mountmnr 'boar_bronze_mail_barding_mount'"
+#mountmnr "boar_mount"
+#barding 172
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -100,7 +103,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar_armored_mail.png
 #armor
-#define "#mountmnr 'boar_mail_barding_mount'"
+#mountmnr "boar_mount"
+#barding 172
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -123,7 +127,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar_armored_cataphract.png
 #armor
-#define "#mountmnr 'boar_cataphract_barding_mount'"
+#mountmnr "boar_mount"
+#barding 253
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -147,7 +152,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar_armored_bronze.png
 #armor
-#define "#mountmnr 'boar_bronze_barding_mount'"
+#mountmnr "boar_mount"
+#barding 263
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -172,7 +178,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/boar_armored_plate.png
 #armor
-#define "#mountmnr 'boar_plate_barding_mount'"
+#mountmnr "boar_mount"
+#barding 254
 #theme "boar"
 #theme "austral"
 #theme "boreal"
@@ -198,7 +205,7 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_mount'"
+#mountmnr "gloso_mount"
 #theme "light"
 #theme "boar"
 #theme "abysian"
@@ -214,7 +221,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_light_bronze_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 264
 #theme "light"
 #theme "boar"
 #theme "abysian"
@@ -232,7 +240,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_light_scale_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 252
 #theme "light"
 #theme "boar"
 #theme "abysian"
@@ -250,7 +259,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_mail_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 172
 #theme "boar"
 #theme "abysian"
 #theme "bronze"
@@ -267,7 +277,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_mail_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 172
 #theme "boar"
 #theme "abysian"
 #theme "iron"
@@ -284,7 +295,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_cataphract_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 253
 #theme "boar"
 #theme "abysian"
 #theme "iron"
@@ -302,7 +314,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_bronze_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 263
 #theme "boar"
 #theme "abysian"
 #theme "bronze"
@@ -321,7 +334,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/demonbred_hog.png
 #armor
-#define "#mountmnr 'gloso_plate_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 254
 #theme "boar"
 #theme "abysian"
 #theme "iron"
@@ -343,7 +357,7 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat.png
 #armor
-#define "#mountmnr 'goat_mount'"
+#mountmnr "goat_mount"
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -365,7 +379,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat_armored_light_bronze.png
 #armor
-#define "#mountmnr 'goat_light_bronze_barding_mount'"
+#mountmnr "goat_mount"
+#barding 264
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -388,7 +403,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat_armored_light_scale.png
 #armor
-#define "#mountmnr 'goat_light_scale_barding_mount'"
+#mountmnr "goat_mount"
+#barding 252
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -411,7 +427,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat_armored_mail_bronze.png
 #armor
-#define "#mountmnr 'goat_bronze_mail_barding_mount'"
+#mountmnr "goat_mount"
+#barding 172
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -433,7 +450,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat_armored_mail.png
 #armor
-#define "#mountmnr 'goat_iron_mail_barding_mount'"
+#mountmnr "goat_mount"
+#barding 172
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -455,7 +473,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat_armored_cataphract.png
 #armor
-#define "#mountmnr 'goat_cataphract_barding_mount'"
+#mountmnr "goat_mount"
+#barding 253
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -478,7 +497,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat_armored_bronze.png
 #armor
-#define "#mountmnr 'goat_bronze_barding_mount'"
+#mountmnr "goat_mount"
+#barding 263
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -498,11 +518,12 @@
 #enditem
 
 #newitem
-#id "goat_plate_barding_mount"
+#id "goat_plate_barding"
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat_armored_plate.png
 #armor
-#define "#mountmnr 'goat_plate_barding_mount'"
+#mountmnr "goat_mount"
+#barding 254
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -527,7 +548,7 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/goat.png
 #armor
-#define "#mountmnr 'black_goat_mount'"
+#mountmnr "black_goat_mount"
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -549,7 +570,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_goat_armored_light_bronze.png
 #armor
-#define "#mountmnr 'black_goat_light_bronze_barding_mount'"
+#mountmnr "black_goat_mount"
+#barding 264
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -572,7 +594,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_goat_armored_light_scale.png
 #armor
-#define "#mountmnr 'black_goat_light_scale_barding_mount'"
+#mountmnr "black_goat_mount"
+#barding 252
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -595,7 +618,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_goat_armored_mail_bronze.png
 #armor
-#define "#mountmnr 'black_goat_bronze_mail_barding_mount'"
+#mountmnr "black_goat_mount"
+#barding 172
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -617,7 +641,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_goat_armored_mail.png
 #armor
-#define "#mountmnr 'black_goat_iron_mail_barding_mount'"
+#mountmnr "black_goat_mount"
+#barding 172
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -639,7 +664,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_goat_armored_cataphract.png
 #armor
-#define "#mountmnr 'black_goat_cataphract_barding_mount'"
+#mountmnr "black_goat_mount"
+#barding 253
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -662,7 +688,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_goat_armored_bronze.png
 #armor
-#define "#mountmnr 'black_goat_bronze_barding_mount'"
+#mountmnr "black_goat_mount"
+#barding 263
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -682,11 +709,12 @@
 #enditem
 
 #newitem
-#id "black_goat_plate_barding_mount"
+#id "black_goat_plate_barding"
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_goat_armored_plate.png
 #armor
-#define "#mountmnr 'black_goat_plate_barding_mount'"
+#mountmnr "black_goat_mount"
+#barding 254
 #theme "goat"
 #theme "austral"
 #theme "boreal"
@@ -711,7 +739,7 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
 #theme "abysian"
@@ -731,9 +759,10 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_light_bronze.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_light_bronze_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 264
 #theme "abysian"
 #theme "goat"
 #theme "bronze"
@@ -747,13 +776,14 @@
 #enditem
 
 #newitem
-#id "black_pyrenean_goat_light_scale_barding_mount"
+#id "black_pyrenean_goat_light_scale_barding"
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_light_scale.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_light_scale_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 252
 #theme "abysian"
 #theme "goat"
 #theme "iron"
@@ -771,9 +801,10 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_mail_bronze.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_bronze_mail_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 172
 #theme "abysian"
 #theme "goat"
 #theme "bronze"
@@ -787,13 +818,14 @@
 #enditem
 
 #newitem
-#id "black_pyrenean_goat_iron_mail_barding_mount"
+#id "black_pyrenean_goat_iron_mail_barding"
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_mail.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_iron_mail_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 172
 #theme "abysian"
 #theme "goat"
 #theme "iron"
@@ -811,9 +843,10 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_cataphract.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_cataphract_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 253
 #theme "abysian"
 #theme "goat"
 #theme "iron"
@@ -832,9 +865,10 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_bronze.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_bronze_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 263
 #theme "abysian"
 #theme "goat"
 #theme "bronze"
@@ -854,9 +888,10 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_bronze_gold_trim.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_bronze_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 263
 #theme "abysian"
 #theme "goat"
 #theme "bronze"
@@ -876,9 +911,10 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_plate.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_plate_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 254
 #theme "abysian"
 #theme "goat"
 #theme "iron"
@@ -898,9 +934,10 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/black_pyrenean_goat_armored_plate_gold_trim.png
 #armor
-#define "#mountmnr 'black_pyrenean_goat_plate_barding_mount'"
+#mountmnr "black_pyrenean_goat_mount"
 #define "#gcost +5"
 #define "#rcost +4"
+#barding 254
 #theme "abysian"
 #theme "goat"
 #theme "iron"
@@ -924,7 +961,7 @@
 #sprite /graphics/hoburg/mounts/giant_parrot.png
 #needs overlay giant_macaw_overlay
 #armor
-#define "#mountmnr 'giant_macaw_mount'"
+#mountmnr "giant_macaw_mount"
 #offsetx -1
 #offsety -30
 #theme "primitive"
@@ -945,7 +982,8 @@
 #sprite /graphics/hoburg/mounts/giant_parrot.png
 #needs overlay giant_macaw_overlay
 #armor
-#define "#mountmnr 'giant_macaw_light_bronze_barding_mount'"
+#mountmnr "giant_macaw_mount"
+#barding 264
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -967,7 +1005,8 @@
 #sprite /graphics/hoburg/mounts/giant_parrot.png
 #needs overlay giant_macaw_overlay
 #armor
-#define "#mountmnr 'giant_macaw_light_scale_barding_mount'"
+#mountmnr "giant_macaw_mount"
+#barding 252
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -989,7 +1028,8 @@
 #sprite /graphics/hoburg/mounts/giant_parrot.png
 #needs overlay giant_macaw_overlay
 #armor
-#define "#mountmnr 'giant_macaw_bronze_mail_barding_mount'"
+#mountmnr "giant_macaw_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -1011,7 +1051,8 @@
 #sprite /graphics/hoburg/mounts/giant_parrot.png
 #needs overlay giant_macaw_overlay
 #armor
-#define "#mountmnr 'giant_macaw_iron_mail_barding_mount'"
+#mountmnr "giant_macaw_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -1035,7 +1076,7 @@
 #recolormask /graphics/hoburg/mounts/giant_parrot_recolormask.png
 #needs overlay colorful_macaw_overlay
 #armor
-#define "#mountmnr 'colorful_giant_macaw_mount'"
+#mountmnr "colorful_giant_macaw_mount"
 #offsetx -1
 #offsety -30
 #theme "primitive"
@@ -1057,7 +1098,8 @@
 #recolormask /graphics/hoburg/mounts/giant_parrot_recolormask.png
 #needs overlay colorful_macaw_overlay
 #armor
-#define "#mountmnr 'colorful_giant_macaw_light_bronze_barding_mount'"
+#mountmnr "colorful_giant_macaw_mount"
+#barding 264
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -1080,7 +1122,8 @@
 #recolormask /graphics/hoburg/mounts/giant_parrot_recolormask.png
 #needs overlay colorful_macaw_overlay
 #armor
-#define "#mountmnr 'colorful_giant_macaw_light_scale_barding_mount'"
+#mountmnr "colorful_giant_macaw_mount"
+#barding 252
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -1103,7 +1146,8 @@
 #recolormask /graphics/hoburg/mounts/giant_parrot_recolormask.png
 #needs overlay colorful_macaw_overlay
 #armor
-#define "#mountmnr 'colorful_giant_macaw_bronze_mail_barding_mount'"
+#mountmnr "colorful_giant_macaw_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -1126,7 +1170,8 @@
 #recolormask /graphics/hoburg/mounts/giant_parrot_recolormask.png
 #needs overlay colorful_macaw_overlay
 #armor
-#define "#mountmnr 'colorful_giant_macaw_iron_mail_barding_mount'"
+#mountmnr "colorful_giant_macaw_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "occidental"
@@ -1149,7 +1194,7 @@
 #sprite /graphics/machakans/mounts/giant_parrot.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'giant_parrot_mount'"
+#mountmnr "giant_parrot_mount"
 #offsetx -1
 #offsety -30
 #theme "primitive"
@@ -1171,7 +1216,8 @@
 #sprite /graphics/machakans/mounts/giant_parrot.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'giant_parrot_light_bronze_barding_mount'"
+#mountmnr "giant_parrot_mount"
+#barding 264
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1194,7 +1240,8 @@
 #sprite /graphics/machakans/mounts/giant_parrot.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'giant_parrot_light_scale_barding_mount'"
+#mountmnr "giant_parrot_mount"
+#barding 252
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1217,7 +1264,8 @@
 #sprite /graphics/machakans/mounts/giant_parrot.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'giant_parrot_bronze_mail_barding_mount'"
+#mountmnr "giant_parrot_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1240,7 +1288,8 @@
 #sprite /graphics/machakans/mounts/giant_parrot.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'giant_parrot_iron_mail_barding_mount'"
+#mountmnr "giant_parrot_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1265,7 +1314,7 @@
 #recolormask /graphics/machakans/mounts/giant_parrot_recolormask.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'colorful_giant_parrot_mount'"
+#mountmnr "colorful_giant_parrot_mount"
 #offsetx -1
 #offsety -30
 #theme "primitive"
@@ -1288,7 +1337,8 @@
 #recolormask /graphics/machakans/mounts/giant_parrot_recolormask.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'colorful_giant_parrot_light_bronze_barding_mount'"
+#mountmnr "colorful_giant_parrot_mount"
+#barding 264
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1312,7 +1362,8 @@
 #recolormask /graphics/machakans/mounts/giant_parrot_recolormask.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'colorful_giant_parrot_light_scale_barding_mount'"
+#mountmnr "colorful_giant_parrot_mount"
+#barding 252
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1336,7 +1387,8 @@
 #recolormask /graphics/machakans/mounts/giant_parrot_recolormask.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'colorful_giant_parrot_bronze_mail_barding_mount'"
+#mountmnr "colorful_giant_parrot_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1360,7 +1412,8 @@
 #recolormask /graphics/machakans/mounts/giant_parrot_recolormask.png
 #needs overlay giant_parrot_overlay
 #armor
-#define "#mountmnr 'colorful_giant_parrot_iron_mail_barding_mount'"
+#mountmnr "colorful_giant_parrot_mount"
+#barding 172
 #offsetx -1
 #offsety -30
 #theme "austral"
@@ -1385,7 +1438,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/caveman.png
 #armor
-#define "#mountmnr 'caveman_fur_armor_mount'"
+#mountmnr "caveman_mount"
+#barding 44
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_overlay
 #theme "primitive"
@@ -1407,7 +1461,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/caveman.png
 #armor
-#define "#mountmnr 'caveman_bronze_scale_armor_mount'"
+#mountmnr "caveman_mount"
+#barding 136
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_overlay
 #theme "primitive"
@@ -1431,7 +1486,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/caveman.png
 #armor
-#define "#mountmnr 'caveman_scale_armor_mount'"
+#mountmnr "caveman_mount"
+#barding 12
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_overlay
 #theme "primitive"
@@ -1455,7 +1511,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/caveman.png
 #armor
-#define "#mountmnr 'caveman_bronze_mail_armor_mount'"
+#mountmnr "caveman_mount"
+#barding 172
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_overlay
 #theme "primitive"
@@ -1479,7 +1536,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/caveman.png
 #armor
-#define "#mountmnr 'caveman_iron_mail_armor_mount'"
+#mountmnr "caveman_mount"
+#barding 172
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_overlay
 #theme "primitive"
@@ -1503,7 +1561,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/caveman.png
 #armor
-#define "#mountmnr 'caveman_bronze_armor_mount'"
+#mountmnr "caveman_mount"
+#barding 101
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_overlay
 #theme "primitive"
@@ -1529,7 +1588,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/caveman.png
 #armor
-#define "#mountmnr 'caveman_plate_armor_mount'"
+#mountmnr "caveman_mount"
+#barding 14
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_overlay
 #theme "primitive"
@@ -1557,7 +1617,8 @@
 #sprite /graphics/hoburg/mounts/caveman_occidental.png
 #recolormask /graphics/hoburg/mounts/caveman_occidental_recolormask.png
 #armor
-#define "#mountmnr 'occidental_caveman_fur_armor_mount'"
+#mountmnr "occidental_caveman_mount"
+#barding 44
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_occidental_overlay
 #theme "primitive"
@@ -1576,7 +1637,8 @@
 #sprite /graphics/hoburg/mounts/caveman_occidental.png
 #recolormask /graphics/hoburg/mounts/caveman_occidental_recolormask.png
 #armor
-#define "#mountmnr 'occidental_caveman_bronze_scale_armor_mount'"
+#mountmnr "occidental_caveman_mount"
+#barding 136
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_occidental_overlay
 #theme "primitive"
@@ -1597,7 +1659,8 @@
 #sprite /graphics/hoburg/mounts/caveman_occidental.png
 #recolormask /graphics/hoburg/mounts/caveman_occidental_recolormask.png
 #armor
-#define "#mountmnr 'occidental_caveman_scale_armor_mount'"
+#mountmnr "occidental_caveman_mount"
+#barding 12
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_occidental_overlay
 #theme "primitive"
@@ -1618,7 +1681,8 @@
 #sprite /graphics/hoburg/mounts/caveman_occidental.png
 #recolormask /graphics/hoburg/mounts/caveman_occidental_recolormask.png
 #armor
-#define "#mountmnr 'occidental_caveman_bronze_mail_armor_mount'"
+#mountmnr "occidental_caveman_mount"
+#barding 172
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_occidental_overlay
 #theme "primitive"
@@ -1639,7 +1703,8 @@
 #sprite /graphics/hoburg/mounts/caveman_occidental.png
 #recolormask /graphics/hoburg/mounts/caveman_occidental_recolormask.png
 #armor
-#define "#mountmnr 'occidental_caveman_iron_mail_armor_mount'"
+#mountmnr "occidental_caveman_mount"
+#barding 172
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_occidental_overlay
 #theme "primitive"
@@ -1660,7 +1725,8 @@
 #sprite /graphics/hoburg/mounts/caveman_occidental.png
 #recolormask /graphics/hoburg/mounts/caveman_occidental_recolormask.png
 #armor
-#define "#mountmnr 'occidental_caveman_bronze_armor_mount'"
+#mountmnr "occidental_caveman_mount"
+#barding 101
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_occidental_overlay
 #theme "primitive"
@@ -1683,7 +1749,8 @@
 #sprite /graphics/hoburg/mounts/caveman_occidental.png
 #recolormask /graphics/hoburg/mounts/caveman_occidental_recolormask.png
 #armor
-#define "#mountmnr 'occidental_caveman_plate_armor_mount'"
+#mountmnr "occidental_caveman_mount"
+#barding 14
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_occidental_overlay
 #theme "primitive"
@@ -1706,7 +1773,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/horite.png
 #armor
-#define "#mountmnr 'hellbred_caveman_fur_armor_mount'"
+#mountmnr "hellbred_caveman_mount"
+#barding 44
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_hellbred_overlay
 #theme "primitive"
@@ -1724,7 +1792,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/horite.png
 #armor
-#define "#mountmnr 'hellbred_caveman_bronze_scale_armor_mount'"
+#mountmnr "hellbred_caveman_mount"
+#barding 136
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_hellbred_overlay
 #theme "primitive"
@@ -1744,7 +1813,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/horite.png
 #armor
-#define "#mountmnr 'hellbred_caveman_scale_armor_mount'"
+#mountmnr "hellbred_caveman_mount"
+#barding 12
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_hellbred_overlay
 #theme "primitive"
@@ -1764,7 +1834,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/horite.png
 #armor
-#define "#mountmnr 'hellbred_caveman_bronze_mail_armor_mount'"
+#mountmnr "hellbred_caveman_mount"
+#barding 172
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_hellbred_overlay
 #theme "primitive"
@@ -1784,7 +1855,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/horite.png
 #armor
-#define "#mountmnr 'hellbred_caveman_iron_mail_armor_mount'"
+#mountmnr "hellbred_caveman_mount"
+#barding 172
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_hellbred_overlay
 #theme "primitive"
@@ -1804,7 +1876,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/horite.png
 #armor
-#define "#mountmnr 'hellbred_caveman_bronze_armor_mount'"
+#mountmnr "hellbred_caveman_mount"
+#barding 101
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_hellbred_overlay
 #theme "primitive"
@@ -1826,7 +1899,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/horite.png
 #armor
-#define "#mountmnr 'hellbred_caveman_plate_armor_mount'"
+#mountmnr "hellbred_caveman_mount"
+#barding 14
 #description "The caveman is fiercely loyal and will follow the hoburg army even if its rider dies"
 #needs overlay caveman_hellbred_overlay
 #theme "primitive"
@@ -1851,7 +1925,7 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/mech_ant.png
 #armor
-#define "#mountmnr 'mech_ant_mount'"
+#mountmnr "mech_ant_mount"
 #tag "animal 'mechanical ant'"
 #tag "guaranteedprefix 'mechanized'"
 #offsety -18
@@ -1878,7 +1952,7 @@
 #tag "animal 'mechanical spider'"
 #tag "guaranteedprefix 'mechanized'"
 #needs overlay "mechspider_overlay"
-#define "#mountmnr 'mech_spider_mount'"
+#mountmnr "mech_spider_mount"
 #offsety -5
 #offsetx 5
 #minprot 10
@@ -1903,7 +1977,7 @@
 #tag "animal 'mechanical mosquito'"
 #tag "guaranteedprefix 'mechanized'"
 #needs overlay "mechmosquito_overlay"
-#define "#mountmnr 'mech_mosquito_mount'"
+#mountmnr "mech_mosquito_mount"
 #offsety -15
 #offsetx -14
 #minprot 10
@@ -1930,7 +2004,7 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_mount'"
+#mountmnr "crocodile_mount"
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -1955,7 +2029,8 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_light_bronze_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 264
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -1982,7 +2057,8 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_light_scale_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 252
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -2008,7 +2084,8 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_bronze_mail_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 172
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -2034,7 +2111,8 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_iron_mail_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 172
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -2060,7 +2138,8 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_cataphract_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 253
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -2087,7 +2166,8 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_bronze_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 263
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -2114,7 +2194,8 @@
 #offsetx 25
 #offsety -7
 #armor
-#define "#mountmnr 'crocodile_plate_barding_mount'"
+#mountmnr "crocodile_mount"
+#barding 254
 #description "If the rider dies, the crocodile will carry on fighting until the end of the battle."
 #tag "animal crocodile"
 #theme "heavy"
@@ -2142,7 +2223,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/hyena.png
 #armor
-#define "#mountmnr 'hyena_mount'"
+#mountmnr "hyena_mount"
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
@@ -2168,7 +2249,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/hyena.png
 #armor
-#define "#mountmnr 'hyena_light_bronze_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 264
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
@@ -2194,7 +2276,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/hyena.png
 #armor
-#define "#mountmnr 'hyena_light_scale_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 252
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
@@ -2220,7 +2303,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/hyena.png
 #armor
-#define "#mountmnr 'hyena_bronze_mail_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 172
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
@@ -2244,7 +2328,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/hyena.png
 #armor
-#define "#mountmnr 'hyena_iron_mail_barding_mount'"
+#mountmnr "hyena_mount"
+#barding 172
 #tag "animal hyena"
 #tag "guaranteedprefix hyena"
 #description "If the rider dies, the hyena will carry on fighting until the end of the battle."
@@ -2274,7 +2359,7 @@
 #needs overlay caveman_fossil_overlay
 #offsetx 5
 #offsety 27
-#define "#mountmnr 'caveman_fossil_mount'"
+#mountmnr "caveman_fossil_mount"
 #tag "animal fossil"
 #theme "heavy"
 #theme "caveman"
@@ -2294,7 +2379,8 @@
 #needs overlay caveman_fossil_overlay
 #offsetx 5
 #offsety 27
-#define "#mountmnr 'caveman_fossil_rusty_mail_armor_mount'"
+#mountmnr "caveman_fossil_mount"
+#barding 31
 #tag "animal fossil"
 #theme "heavy"
 #theme "caveman"
@@ -2314,7 +2400,7 @@
 #needs overlay caveman_fossil_overlay
 #offsetx 5
 #offsety 27
-#define "#mountmnr 'caveman_fossil_hauberk_mount'"
+#mountmnr "caveman_fossil_hauberk_mount"
 #tag "animal fossil"
 #theme "heavy"
 #theme "caveman"
@@ -2330,12 +2416,12 @@
 ---- Chariots
 
 #newitem
-#id "swan_chariot"
+#id "swan_chariot_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_swan_bronze.png
 #needs overlay chariot_swan_bronze_overlay
 #armor
-#define "#mountmnr 'swan_chariot'"
+#mountmnr "swan_chariot"
 #tag "animal swan"
 #tag "chariot"
 #theme "swan"
@@ -2359,12 +2445,13 @@
 #enditem
 
 #newitem
-#id "swan_light_bronze_barding"
+#id "swan_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_swan_bronze.png
 #needs overlay chariot_swan_bronze_overlay
 #armor
-#define "#mountmnr 'swan_light_bronze_barding_chariot'"
+#mountmnr "swan_chariot"
+#barding 264
 #tag "animal swan"
 #tag "chariot"
 #theme "swan"
@@ -2390,12 +2477,13 @@
 #enditem
 
 #newitem
-#id "swan_light_scale_barding"
+#id "swan_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_swan_bronze.png
 #needs overlay chariot_swan_bronze_overlay
 #armor
-#define "#mountmnr 'swan_light_scale_barding_chariot'"
+#mountmnr "swan_chariot"
+#barding 252
 #tag "animal swan"
 #tag "chariot"
 #theme "swan"
@@ -2422,12 +2510,12 @@
 
 
 #newitem
-#id "black_swan"
+#id "black_swan_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/black_swan_chariot_armored_iron.png
 #needs overlay chariot_swan_iron_overlay
 #armor
-#define "#mountmnr 'black_swan_chariot'"
+#mountmnr "black_swan_chariot"
 #tag "animal swan"
 #tag "chariot"
 #theme "swan"
@@ -2445,12 +2533,13 @@
 #enditem
 
 #newitem
-#id "black_swan_light_bronze_barding"
+#id "black_swan_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/black_swan_chariot_armored_light_bronze.png
 #needs overlay chariot_swan_bronze_overlay
 #armor
-#define "#mountmnr 'black_swan_light_bronze_barding_chariot'"
+#mountmnr "black_swan_chariot"
+#barding 264
 #tag "animal swan"
 #tag "chariot"
 #theme "swan"
@@ -2468,12 +2557,13 @@
 #enditem
 
 #newitem
-#id "black_swan_light_scale_barding"
+#id "black_swan_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/black_swan_chariot_armored_light_scale.png
 #needs overlay chariot_swan_iron_overlay
 #armor
-#define "#mountmnr 'black_swan_light_scale_barding_chariot'"
+#mountmnr "black_swan_chariot"
+#barding 252
 #tag "animal swan"
 #tag "chariot"
 #theme "swan"
@@ -2492,12 +2582,12 @@
 
 
 #newitem
-#id "giant_rat"
+#id "giant_rat_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_rat_iron.png
 #needs overlay chariot_small_iron_overlay
 #armor
-#define "#mountmnr 'giant_rat_chariot'"
+#mountmnr "giant_rat_chariot"
 #tag "animal rat"
 #tag "chariot"
 #theme "rat"
@@ -2514,12 +2604,13 @@
 #enditem
 
 #newitem
-#id "giant_rat_light_bronze_barding"
+#id "giant_rat_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_rat_iron.png
 #needs overlay chariot_small_iron_overlay
 #armor
-#define "#mountmnr 'giant_rat_light_bronze_barding_chariot'"
+#mountmnr "giant_rat_chariot"
+#barding 264
 #tag "animal rat"
 #tag "chariot"
 #theme "rat"
@@ -2538,12 +2629,13 @@
 #enditem
 
 #newitem
-#id "giant_rat_light_scale_barding"
+#id "giant_rat_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_rat_iron.png
 #needs overlay chariot_small_iron_overlay
 #armor
-#define "#mountmnr 'giant_rat_light_scale_barding_chariot'"
+#mountmnr "giant_rat_chariot"
+#barding 252
 #tag "animal rat"
 #tag "chariot"
 #theme "rat"
@@ -2562,12 +2654,13 @@
 #enditem
 
 #newitem
-#id "giant_rat_bronze_mail_barding"
+#id "giant_rat_bronze_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_rat_iron.png
 #needs overlay chariot_small_iron_overlay
 #armor
-#define "#mountmnr 'giant_rat_bronze_mail_barding_chariot'"
+#mountmnr "giant_rat_chariot"
+#barding 172
 #tag "animal rat"
 #tag "chariot"
 #theme "rat"
@@ -2585,12 +2678,13 @@
 #enditem
 
 #newitem
-#id "giant_rat_iron_mail_barding"
+#id "giant_rat_iron_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/small_rat_iron.png
 #needs overlay chariot_small_iron_overlay
 #armor
-#define "#mountmnr 'giant_rat_iron_mail_barding_chariot'"
+#mountmnr "giant_rat_chariot"
+#barding 172
 #tag "animal rat"
 #tag "chariot"
 #theme "rat"
@@ -2616,7 +2710,7 @@
 #sprite /graphics/hoburg/mounts/vine_nightmare.png
 #needs overlay vine_nightmare_overlay
 #armor
-#define "#mountmnr 'vine_nightmare_mount'"
+#mountmnr "vine_nightmare_mount"
 #define "#enc 15"
 #description "The riders animate their undead hogs with their own life force; this is exhausting, but the nightmares cause fear in their enemies."
 #tag "guaranteedprefix nightmare"
@@ -2636,8 +2730,9 @@
 #sprite /graphics/hoburg/mounts/vine_nightmare.png
 #needs overlay vine_nightmare_overlay
 #armor
-#define "#mountmnr 'vine_nightmare_light_bronze_barding_mount'"
+#mountmnr "vine_nightmare_mount"
 #define "#enc 15"
+#barding 264
 #description "The riders animate their undead hogs with their own life force; this is exhausting, but the nightmares cause fear in their enemies."
 #tag "guaranteedprefix nightmare"
 #theme "specialmount"
@@ -2655,7 +2750,8 @@
 #sprite /graphics/hoburg/mounts/vine_nightmare.png
 #needs overlay vine_nightmare_overlay
 #armor
-#define "#mountmnr 'vine_nightmare_light_scale_barding_mount'"
+#mountmnr "vine_nightmare_mount"
+#barding 252
 #define "#enc 15"
 #description "The riders animate their undead hogs with their own life force; this is exhausting, but the nightmares cause fear in their enemies."
 #tag "guaranteedprefix nightmare"
@@ -2677,7 +2773,7 @@
 #sprite /graphics/mounts/standard/elephant_dwarf.png
 #needs overlay elephant_dwarf_overlay
 #armor
-#define "#mountmnr 'dwarf_elephant_mount'"
+#mountmnr "dwarf_elephant_mount"
 #tag "animal elephant"
 #tag "guaranteedprefix elephant"
 #theme "elephant"
@@ -2698,7 +2794,8 @@
 #sprite /graphics/mounts/standard/elephant_dwarf_armored.png
 #needs overlay elephant_dwarf_armored_overlay
 #armor
-#define "#mountmnr 'dwarf_elephant_barding_mount'"
+#mountmnr "dwarf_elephant_mount"
+#barding 144
 #tag "animal elephant"
 #tag "guaranteedprefix elephant"
 #theme "elephant"

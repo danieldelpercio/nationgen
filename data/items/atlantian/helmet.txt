@@ -17,7 +17,7 @@
 #newitem
 #id "coralcap"
 #gameid 24
-#sprite graphics/atlantian/head/coralcap.png
+#sprite /graphics/atlantian/head/coralcap.png
 #armor
 #tag "eliteversion coralcap-elite"
 #tag "eliteversion coralcap-elite2"
@@ -26,7 +26,7 @@
 #newitem
 #id "coralcap-elite"
 #gameid 24
-#sprite graphics/atlantian/head/coralcap2.png
+#sprite /graphics/atlantian/head/coralcap2.png
 #recolormask /graphics/atlantian/head/coralcap2_recolormask.png
 #armor
 #theme "elite"
@@ -36,7 +36,7 @@
 #newitem
 #id "coralcap-elite2"
 #gameid 24
-#sprite graphics/atlantian/head/coralcap3.png
+#sprite /graphics/atlantian/head/coralcap3.png
 #recolormask /graphics/atlantian/head/coralcap3_recolormask.png
 #armor
 #theme "elite"
