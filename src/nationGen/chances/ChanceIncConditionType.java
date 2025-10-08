@@ -457,7 +457,7 @@ public enum ChanceIncConditionType {
       return d ->
         d.n
             .selectTroops()
-            .filter(u -> u.caponly)
+            .filter(Unit::isCapOnly)
             .filter(u -> u.getResCost(true) > res)
             .count() >=
           count !=
@@ -628,7 +628,7 @@ public enum ChanceIncConditionType {
         Item i = d.u.getSlot(slot);
         if (i != null) {
           boolean contains = false;
-          if ((!armor || i.armor) && (!weapon || !i.armor)) {
+          if ((!armor || i.isArmor()) && (!weapon || i.isWeapon())) {
             if (id.isEmpty() || i.id.equals(id.get())) {
               contains = true;
             } else if (i instanceof CustomItem) {
@@ -636,7 +636,7 @@ public enum ChanceIncConditionType {
               contains = (ci.olditem != null &&
                 ci.olditem.id != null &&
                 ci.olditem.id.equals(id.get())) ||
-              (Integer.parseInt(i.id) >= (i.armor ? 250 : 800) &&
+              (Integer.parseInt(i.id) >= (i.isArmor() ? 250 : 800) &&
                 i.tags.getString("OLDID").stream().anyMatch(id.get()::equals));
             }
           }
@@ -663,8 +663,8 @@ public enum ChanceIncConditionType {
         Item i = d.u.getSlot(slot);
         if (i != null) {
           return (
-            ((!armor || i.armor) &&
-              (!weapon || !i.armor) &&
+            ((!armor || i.isArmor()) &&
+              (!weapon || i.isWeapon()) &&
               (name.isEmpty() || i.name.equals(name.get()))) !=
             not
           );

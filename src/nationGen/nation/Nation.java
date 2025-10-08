@@ -1244,7 +1244,7 @@ public class Nation {
               } else lines.add("#" + tag + " " + u.getId());
             }
 
-            if (!u.caponly) lines.add(line + " " + u.getId());
+            if (!u.isCapOnly()) lines.add(line + " " + u.getId());
           }
 
           listnames.remove((str + "-" + i));
@@ -1260,7 +1260,7 @@ public class Nation {
             else lines.add("#" + tag + " " + u.getId());
           }
 
-          if (!u.caponly) lines.add(line + " " + u.getId());
+          if (!u.isCapOnly()) lines.add(line + " " + u.getId());
         }
       }
     }

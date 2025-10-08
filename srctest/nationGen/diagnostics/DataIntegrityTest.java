@@ -124,7 +124,7 @@ public class DataIntegrityTest {
             if (!"".equals(i.sprite)) {
               String renderslot = "".equals(i.renderslot) ? slot : i.renderslot;
               if ("offhand".equals(renderslot)) {
-                renderslot = i.armor ? "offhanda" : "offhandw";
+                renderslot = i.isArmor() ? "offhanda" : "offhandw";
               }
               spriteRenderSlots.add(renderslot);
             }

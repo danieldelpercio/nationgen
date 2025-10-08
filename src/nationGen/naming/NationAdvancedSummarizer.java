@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 import nationGen.entities.Filter;
 import nationGen.entities.Race;
 import nationGen.entities.Theme;
+import nationGen.items.Item;
 import nationGen.magic.MagicPath;
 import nationGen.magic.MagicPathInts;
 import nationGen.misc.Command;
@@ -263,7 +264,7 @@ public class NationAdvancedSummarizer {
   private List<String> getWeaponNames(Unit u) {
     return u.slotmap
       .items()
-      .filter(i -> !i.armor)
+      .filter(Item::isWeapon)
       .filter(i -> i.isCustomIdResolved())
       .map(i -> weapondb.GetValue(i.id, "weapon_name"))
       .collect(Collectors.toList());
@@ -272,7 +273,7 @@ public class NationAdvancedSummarizer {
   private List<String> getArmorNames(Unit u) {
     return u.slotmap
       .items()
-      .filter(i -> i.armor)
+      .filter(Item::isArmor)
       .filter(i -> i.isCustomIdResolved())
       .map(i -> armordb.GetValue(i.id, "armorname"))
       .collect(Collectors.toList());
@@ -379,7 +380,7 @@ public class NationAdvancedSummarizer {
   private List<String> getTroopSpecialFeatures(Unit u) {
     // Filters and item special things
     List<String> stuff = new ArrayList<>();
-    if (u.caponly) stuff.add("Capital only");
+    if (u.isCapOnly()) stuff.add("Capital only");
 
     boolean str = false;
     boolean holy = false;

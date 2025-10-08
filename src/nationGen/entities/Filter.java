@@ -2,6 +2,8 @@ package nationGen.entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import nationGen.NationGen;
 import nationGen.chances.ChanceInc;
 import nationGen.chances.ThemeInc;
@@ -20,12 +22,55 @@ public class Filter extends Entity {
   public List<String> thesaurus = new ArrayList<>();
   public List<Filter> nextDesc = new ArrayList<>();
   public List<Filter> prevDesc = new ArrayList<>();
-  public List<Filter> bridgeDesc = new ArrayList<>();
+  public List<Filter> bridgeDesc = new ArrayList<>(); 
   public String descSet = "";
 
   public Filter(NationGen nationGen) {
     super(nationGen);
     description = this;
+  }
+
+  public Filter(Filter filter) {
+    super(filter);
+    this.commands = new ArrayList<>(filter.commands)
+      .stream()
+      .map(c -> new Command(c))
+      .collect(Collectors.toList());
+
+    this.chanceincs = new ArrayList<>(filter.chanceincs)
+      .stream()
+      .map(c -> new ChanceInc(c))
+      .collect(Collectors.toList());
+
+    this.themeincs = new ArrayList<>(filter.themeincs)
+      .stream()
+      .map(t -> new ThemeInc(t))
+      .collect(Collectors.toList());
+
+    this.types = new ArrayList<>(filter.types);
+    this.power = filter.power;
+
+    this.description = (filter.description != null && filter != filter.description) ?
+      new Filter(filter.description) :
+      this;
+
+    this.thesaurus = new ArrayList<>(filter.thesaurus);
+    this.nextDesc = new ArrayList<>(filter.nextDesc)
+      .stream()
+      .map(d -> new Filter(d))
+      .collect(Collectors.toList());
+
+    this.prevDesc = new ArrayList<>(filter.prevDesc)
+      .stream()
+      .map(d -> new Filter(d))
+      .collect(Collectors.toList());
+
+    this.bridgeDesc = new ArrayList<>(filter.bridgeDesc)
+      .stream()
+      .map(d -> new Filter(d))
+      .collect(Collectors.toList());
+    
+    this.descSet = filter.descSet;
   }
 
   public List<Command> getCommands() {
@@ -44,6 +89,10 @@ public class Filter extends Entity {
     return this.getCommands()
       .stream()
       .anyMatch(Command::isShapeshiftCommand);
+  }
+
+  public Boolean isInheritable() {
+    return this.tags.containsName("noinheritance") == false;
   }
 
   public Boolean hasType(String type) {
@@ -73,8 +122,16 @@ public class Filter extends Entity {
     return this.getCommands().stream().anyMatch(fc -> fc.command.equals(commandBase));
   }
 
+  public Boolean hasCommand(String commandString) {
+    return this.getCommands().stream().anyMatch(fc -> fc.command.equals(commandString));
+  }
+
   public Boolean hasAnyCommand() {
     return this.getCommands().isEmpty() == false;
+  }
+
+  public void setDescription(Filter filterDescription) {
+    this.description = filterDescription;
   }
 
   @Override

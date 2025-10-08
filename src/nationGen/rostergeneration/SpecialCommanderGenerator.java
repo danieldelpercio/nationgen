@@ -106,7 +106,7 @@ public class SpecialCommanderGenerator {
         // cap only
         double chance = f.tags.getDouble("caponlychance").orElse(1D);
 
-        if (r.nextDouble() < chance) u.caponly = true;
+        if (r.nextDouble() < chance) u.setCapOnly(true);
 
         // put to lists
         if (f.tags.containsName("troop")) {

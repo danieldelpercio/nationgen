@@ -349,8 +349,13 @@ public class NationDescriber {
 
     String description = dr.replace(desc.toString()).replaceAll("\"", "");
 
-    if (tmpDesc != null) u.setCommandValue("#descr", description);
-    else u.commands.add(Command.args("#descr", description));
+    if (tmpDesc != null) {
+      u.setCommandValue("#descr", description);
+    }
+
+    else {
+      u.commands.add(Command.args("#descr", description));
+    }
   }
 
   private void describeForms() {

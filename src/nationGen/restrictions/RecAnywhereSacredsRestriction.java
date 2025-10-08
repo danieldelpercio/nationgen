@@ -29,7 +29,7 @@ public class RecAnywhereSacredsRestriction implements NationRestriction {
 
   @Override
   public boolean doesThisPass(Nation n) {
-    return n.selectTroops("sacred").anyMatch(u -> !u.caponly);
+    return n.selectTroops("sacred").anyMatch(Predicate.not(Unit::isCapOnly));
   }
 
   @Override

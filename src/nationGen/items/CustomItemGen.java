@@ -187,8 +187,7 @@ public class CustomItemGen {
     int maxPower,
     List<MagicItem> magicItems
   ) {
-    ItemType type = originalItem.getItemType();
-    Optional<MagicItem> possibleEffect = this.selectRandomEnchantment(unit, type, maxPower, magicItems);
+    Optional<MagicItem> possibleEffect = this.selectRandomEnchantment(unit, originalItem, maxPower, magicItems);
 
     if (possibleEffect.isPresent() == false) {
       return;
@@ -207,7 +206,7 @@ public class CustomItemGen {
     // Increase item gold cost if enchantment has extra cost for its type
     for (Args args : enchantment.tags.getAllArgs("gcost")) {
       String itemTypeWithExtraCost = args.get(0).get();
-      Boolean hasExtraCostForItemType = itemTypeWithExtraCost.equals(type.getId());
+      Boolean hasExtraCostForItemType = originalItem.anyTypesMatchString(itemTypeWithExtraCost);
 
       if (hasExtraCostForItemType == true) {
         Command enchantmentGoldCost = new Command("#gcost", args.get(1));
@@ -218,7 +217,7 @@ public class CustomItemGen {
     // Increase item resource cost if enchantment has extra cost for its type
     for (Args args : enchantment.tags.getAllArgs("rcost")) {
       String itemTypeWithExtraCost = args.get(0).get();
-      Boolean hasExtraCostForItemType = itemTypeWithExtraCost.equals(type.getId());
+      Boolean hasExtraCostForItemType = originalItem.anyTypesMatchString(itemTypeWithExtraCost);
 
       if (hasExtraCostForItemType == true) {
         Command enchantmentResourceCost = new Command("#rcost", args.get(1));
@@ -258,7 +257,7 @@ public class CustomItemGen {
   }
 
   private Optional<MagicItem> selectRandomEnchantment(
-    Unit unit, ItemType type, int maxPower, List<MagicItem> magicItems
+    Unit unit, Item originalItem, int maxPower, List<MagicItem> magicItems
   ) {
     List<MagicItem> possibleEffects = new ArrayList<>();
 
@@ -268,7 +267,7 @@ public class CustomItemGen {
       boolean isTypeRestricted = !m.tags
         .getAllStrings("no")
         .stream()
-        .noneMatch(type.getId()::equals);
+        .noneMatch(t -> originalItem.anyTypesMatchString(t));
 
       if (isTypeRestricted == false && m.power <= maxPower) {
         possibleEffects.add(m);
@@ -374,8 +373,8 @@ public class CustomItemGen {
       return Optional.empty();
     }
 
-    // Custom armor not done
-    if (item.armor == true) {
+    // Custom armor not implemented
+    if (item.isArmor()) {
       return copyPropertiesFromArmor(item);
     }
 

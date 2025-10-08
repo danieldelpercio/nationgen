@@ -403,7 +403,7 @@ public class MageGenerator extends TroopGenerator {
       applyStats(mages.get(i).get(j));
 
       if (caponlyprimaries && i == 2) {
-        mages.get(i).get(j).caponly = true;
+        mages.get(i).get(j).setCapOnly(true);
       }
 
       if (slowrecrand < slowrecmod && i == 2) {
@@ -514,17 +514,16 @@ public class MageGenerator extends TroopGenerator {
       this.resolveAge(extramages);
       this.applyStats(extramages.get(0));
 
-      extramages.get(0).caponly = this.random.nextBoolean();
-      if (!caponlyprimaries) extramages.get(0).caponly = true;
-      else if (primaries > 1 || secondaries > 1) extramages.get(0).caponly =
-        true;
+      extramages.get(0).setCapOnly(this.random.nextBoolean());
+      if (!caponlyprimaries) extramages.get(0).setCapOnly(true);
+      else if (primaries > 1 || secondaries > 1) extramages.get(0).setCapOnly(true);
       else if (
         extramages.get(0).getMagicAmount(0.25) > 6 ||
         (extramages.get(0).getMagicAmount(0.25) > 5 && random.nextBoolean())
-      ) extramages.get(0).caponly = true;
+      ) extramages.get(0).setCapOnly(true);
 
       if (
-        !extramages.get(0).caponly &&
+        !extramages.get(0).isCapOnly() &&
         this.random.nextDouble() > 0.125 &&
         extramages.get(0).getMagicAmount(0.25) > 3
       ) extramages.get(0).commands.add(Command.args("#rpcost", "4"));
@@ -1315,7 +1314,7 @@ public class MageGenerator extends TroopGenerator {
       // STR or cap only for h3
       if (currentStrength == 3 && r.nextDouble() > 0.5) currentRP = 4;
       else if (currentStrength == 3) {
-        u.caponly = true;
+        u.setCapOnly(true);
         if (r.nextDouble() > 0.9) currentRP = 4;
       }
 
@@ -2113,7 +2112,7 @@ public class MageGenerator extends TroopGenerator {
           nationGen.weapondb.GetInteger(unit.getSlot("weapon").id, "lgt") >= 3
         ) {
           if (
-            unit.getSlot("offhand") != null && !unit.getSlot("offhand").armor
+            unit.getSlot("offhand") != null && !unit.getSlot("offhand").isArmor()
           ) unit.setSlot("offhand", null);
         } else if (
           nationGen.weapondb.GetInteger(unit.getSlot("weapon").id, "2h") == 1

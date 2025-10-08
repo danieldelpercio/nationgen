@@ -473,7 +473,7 @@ public class RosterGenerator {
       if (
         p2.getItems("offhand") != null &&
         u.getSlot("offhand") != null &&
-        u.getSlot("offhand").armor
+        u.getSlot("offhand").isArmor()
       ) for (Item i : p2.getItems("offhand").filterArmor(true)) if (
         i.id.equals(u.getSlot("offhand").id) &&
         (!i.sprite.equals(u.getSlot("offhand").sprite) &&

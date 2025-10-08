@@ -45,12 +45,15 @@ public class NationGen {
   public Dom3DB units;
   public Dom3DB sites;
 
+  public long seed = 0;
+  public String modname = "";
+  public boolean manyseeds = false;
+
   public Settings settings;
   private CustomItemsHandler customItemsHandler;
   private IdHandler idHandler;
 
   public List<ShapeChangeUnit> forms = new ArrayList<>();
-  public List<MountUnit> mounts = new ArrayList<>();
   private List<Spell> spellsToWrite = new ArrayList<>();
   private List<Spell> freeSpells = new ArrayList<>();
 
@@ -99,10 +102,6 @@ public class NationGen {
     System.gc();
     //this.writeDebugInfo();
   }
-
-  public long seed = 0;
-  public String modname = "";
-  public boolean manyseeds = false;
 
   public void generate(int amount) {
     Random random = new Random();
@@ -381,6 +380,10 @@ public class NationGen {
     armordb = new Dom3DB("/db/armor.csv");
     weapondb = new Dom3DB("/db/weapon.csv");
     sites = new Dom3DB("/db/sites.csv");
+  }
+
+  public int getNextUnitId() {
+    return idHandler.nextUnitId();
   }
 
   /**

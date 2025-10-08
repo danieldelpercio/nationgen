@@ -127,7 +127,7 @@ public class Pose extends Filter {
                 )
               );
 
-            if (citem.armor) {
+            if (citem.isArmor()) {
               nationGen.armordb.addToMap(i.id, citem.getHashMap());
             } else {
               nationGen.weapondb.addToMap(i.id, citem.getHashMap());
@@ -136,7 +136,7 @@ public class Pose extends Filter {
           if (!"".equals(i.sprite)) {
             String renderslot = "".equals(i.renderslot) ? slot : i.renderslot;
             if ("offhand".equals(renderslot)) {
-              renderslot = i.armor ? "offhanda" : "offhandw";
+              renderslot = i.isArmor() ? "offhanda" : "offhandw";
             }
             spriteRenderSlots.add(renderslot);
           }
