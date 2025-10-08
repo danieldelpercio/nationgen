@@ -406,7 +406,7 @@ public class NationGen {
 
       // check for custom spells first
       if (spell == null) {
-        for (Filter sf : assets.customspells) {
+        for (Filter sf : assets.customspells.getAllValues()) {
           if (sf.name.equals(spellName)) {
             spell = new Spell(this);
             spell.name = spellName;
@@ -456,13 +456,13 @@ public class NationGen {
 
   public void writeDebugInfo() {
     double total = 0;
-    for (Race r : assets.races) {
+    for (Race r : assets.races.getAllValues()) {
       if (!r.tags.containsName("secondary")) {
         total += r.basechance;
       }
     }
 
-    for (Race r : assets.races) {
+    for (Race r : assets.races.getAllValues()) {
       if (!r.tags.containsName("secondary")) {
         System.out.println(r.name + ": " + (r.basechance / total));
       }
@@ -871,6 +871,7 @@ public class NationGen {
 
   private void handleShapeshift(Command c, Unit u) {
     ShapeShift shift = assets.secondshapes
+      .getAllValues()
       .stream()
       .filter(s -> s.name.equals(c.args.get(0).get()))
       .findFirst()

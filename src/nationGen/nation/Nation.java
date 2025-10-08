@@ -128,7 +128,7 @@ public class Nation {
     // choose primary race
     List<Race> allRaces = new ArrayList<>();
 
-    for (Race r : assets.races) {
+    for (Race r : assets.races.getAllValues()) {
       if (!r.tags.containsName("secondary")) {
         allRaces.add(r);
       }
@@ -150,7 +150,7 @@ public class Nation {
 
     // Secondary race after themes since themes may affect it
     allRaces.clear();
-    allRaces.addAll(assets.races);
+    allRaces.addAll(assets.races.getAllValues());
     allRaces.remove(race);
 
     race = chandler.handleChanceIncs(allRaces).getRandom(random);
