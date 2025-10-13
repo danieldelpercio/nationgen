@@ -14,8 +14,8 @@
 
 #chanceinc moduleid herogen *0
 
-#montagpose_min 8
-#montagpose_max 8
+#montagpose_min 4
+#montagpose_max 4
 
 #load basesprite /data/items/foulspawn/small/bases_cavalry.txt
 
@@ -26,7 +26,7 @@
 
 #load weapon /data/items/foulspawn/small/weapon_placeholder.txt
 
-#maxunits 1
+#maxunits 2
 
 #endpose
 
@@ -44,7 +44,7 @@
 
 #chanceinc moduleid herogen *0
 
-#montagpose_min 5
+#montagpose_min 3
 #montagpose_max 5
 
 #load basesprite /data/items/foulspawn/small/bases_cavalry.txt
@@ -56,7 +56,7 @@
 
 #load weapon /data/items/foulspawn/small/weapon_placeholder.txt
 
-#maxunits 1
+#maxunits 2
 
 #endpose
 
@@ -74,7 +74,7 @@
 
 #chanceinc moduleid herogen *0
 
-#montagpose_min 5
+#montagpose_min 3
 #montagpose_max 5
 
 #load basesprite /data/items/foulspawn/small/bases_cavalry.txt
@@ -86,7 +86,7 @@
 
 #load weapon /data/items/foulspawn/small/weapon_placeholder.txt
 
-#maxunits 1
+#maxunits 2
 
 #endpose
 

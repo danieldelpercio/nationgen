@@ -95,6 +95,7 @@
 #type "maw"
 #type "tentacle"
 #type "tentacle_large"
+#itemslot hand +1
 #command "#gcost +4"
 #enditem
 

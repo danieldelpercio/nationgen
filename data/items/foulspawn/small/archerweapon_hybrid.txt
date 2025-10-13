@@ -46,6 +46,7 @@
 #gameid 387
 #tentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -53,6 +54,7 @@
 #id tentacle_strangle
 #gameid 116
 #tentacle
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 

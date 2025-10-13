@@ -105,7 +105,6 @@
 #newitem
 #id "crab"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/crab.png
 #command "#gcost +4"
 #command "#hp +2"
@@ -146,7 +145,6 @@
 #newitem
 #id "shark"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/shark.png
 #command "#gcost +4"
 #command "#hp +0"
@@ -167,7 +165,6 @@
 #newitem
 #id "octopus"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/octopus.png
 #command "#gcost +3"
 #command "#hp +0"
@@ -189,7 +186,6 @@
 #newitem
 #id "mantis"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/mantis.png
 #command "#gcost +4"
 #command "#hp +0"
@@ -209,7 +205,6 @@
 #newitem
 #id "cobra"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/cobra.png
 #command "#gcost +4"
 #command "#hp +2"
@@ -230,7 +225,6 @@
 #newitem
 #id "maw"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/maw.png
 #command "#gcost +0"
 #command "#hp +0"
@@ -274,7 +268,6 @@
 #newitem
 #id "eye"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/eye.png
 #command "#gcost +0"
 #command "#hp -1"

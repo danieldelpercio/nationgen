@@ -88,7 +88,7 @@
 
 #no_free_fist
 
-#load basesprite /data/items/foulspawn/medium/bases.txt
+#load basesprite /data/items/foulspawn/medium/bases_caster.txt
 #load rarm /data/items/foulspawn/medium/rarm.txt
 #load larm /data/items/foulspawn/medium/larm.txt
 #load rleg /data/items/foulspawn/medium/rleg_priest.txt

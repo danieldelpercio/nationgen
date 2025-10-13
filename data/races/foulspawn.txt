@@ -7,7 +7,7 @@
 #freetheme corruption
 
 #monsters foulspawn_monsters
-#monsterchance 0.5
+#monsterchance 0.75
 
 #pose foulspawninfantry
 #pose foulspawnranged
@@ -24,7 +24,7 @@
 #additionalgods gods_without_realm
 
 -- Change this later
-#maxprimaryracetroops 4
+#maxprimaryracetroops 7
 #maxthisracetroops_as_secondary 2
 
 #maxtroops 8

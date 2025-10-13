@@ -16,6 +16,7 @@
 #gameid 387
 #tentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -24,6 +25,7 @@
 #basechance 0.5
 #gameid 116
 #tentacle
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -33,6 +35,7 @@
 #gameid 387
 #smalltentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -41,6 +44,7 @@
 #basechance 0.2
 #gameid 116
 #smalltentacle
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -67,6 +71,7 @@
 #gameid 63
 #smalltentacle
 #command "#gcost +2"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -76,6 +81,7 @@
 #gameid 282
 #smalltentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 

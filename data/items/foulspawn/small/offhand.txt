@@ -20,6 +20,7 @@
 #gameid 387
 #tentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype larm tentacle
 #type melee
 #enditem
@@ -29,6 +30,7 @@
 #gameid 116
 #tentacle
 #needstype larm tentacle
+#itemslot hand +1
 #type melee
 #enditem
 
@@ -45,6 +47,7 @@
 #gameid 116
 #neck
 #needstype larm snake
+#itemslot hand +1
 #type melee
 #enditem
 
@@ -58,7 +61,7 @@
 
 #newitem
 #id swan_peck
-#gameid beak
+#gameid 404
 #neck
 #needstype larm swan
 #type melee

@@ -51,6 +51,7 @@
 #gameid 387
 #tentacle
 #degenerate
+#itemslot hand +1
 #command "#gcost +1"
 #needstype rarm tentacle
 #enditem
@@ -61,6 +62,7 @@
 #gameid 116
 #tentacle
 #degenerate
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -81,6 +83,7 @@
 #tentacle
 #degenerate
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
