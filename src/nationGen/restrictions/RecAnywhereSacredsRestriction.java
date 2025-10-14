@@ -1,8 +1,11 @@
 package nationGen.restrictions;
 
 import java.awt.*;
+import java.util.function.Predicate;
+
 import javax.swing.*;
 import nationGen.nation.Nation;
+import nationGen.units.Unit;
 
 /**
  *

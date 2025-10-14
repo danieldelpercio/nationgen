@@ -2,6 +2,8 @@ package nationGen.restrictions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
+
 import nationGen.misc.Command;
 import nationGen.nation.Nation;
 import nationGen.units.Unit;
