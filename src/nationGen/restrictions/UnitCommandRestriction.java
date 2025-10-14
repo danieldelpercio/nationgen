@@ -50,16 +50,14 @@ public class UnitCommandRestriction extends TextBoxListRestriction {
       return true;
     }
 
-    boolean pass = false;
-
     if (comboselection == null) comboselection = "All";
 
     if (comboselection.equals("Cap-only")) {
-      return n.selectUnits().filter(u -> u.caponly).anyMatch(this::checkUnit);
+      return n.selectUnits().filter(Unit::isCapOnly).anyMatch(this::checkUnit);
     }
 
     if (comboselection.equals("Normal-rec")) {
-      return n.selectUnits().filter(u -> !u.caponly).anyMatch(this::checkUnit);
+      return n.selectUnits().filter(Predicate.not(Unit::isCapOnly)).anyMatch(this::checkUnit);
     }
 
     return (
