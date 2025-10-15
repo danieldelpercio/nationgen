@@ -199,12 +199,11 @@
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
 #eliteversion robe_fur_mixed_ornate
 #gameid 158
-#mr +7
 #armor
 #theme "leather"
 #theme "primitive"
 #notfortier 1
-#notfortier 2
+#tier 2
 #tier 3
 #needs sash nosash
 #enditem
@@ -247,12 +246,11 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_light_ornate.png
 #eliteversion robe_fur_mixed_ornate
 #gameid 44
-#mr +7
 #armor
 #theme "leather"
 #theme "primitive"
 #notfortier 1
-#notfortier 2
+#tier 2
 #tier 3
 #needs sash nosash
 #enditem
@@ -291,12 +289,11 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_dark_ornate.png
 #eliteversion robe_fur_mixed_ornate
 #gameid 44
-#mr +7
 #armor
 #theme "leather"
 #theme "primitive"
 #notfortier 1
-#notfortier 2
+#tier 2
 #tier 3
 #needs sash nosash
 #enditem
@@ -326,7 +323,7 @@
 #theme "primitive"
 #notfortier 1
 #tier 2
-#notfortier 3
+#tier 3
 #needs sash nosash
 #enditem
 
@@ -335,7 +332,6 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_mixed_ornate.png
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
 #gameid 44
-#mr +7
 #armor
 #theme "leather"
 #theme "primitive"
@@ -421,7 +417,7 @@
 #theme "advanced"
 #notfortier 1
 #tier 2
-#notfortier 3
+#tier 3
 #needs sash nosash
 #enditem
 
@@ -432,11 +428,10 @@
 #eliteversion toga_dark
 #gameid -1
 #armor
-#mr +7
 #theme "naked"
 #theme "advanced"
 #notfortier 1
-#notfortier 2
+#tier 2
 #tier 3
 #needs sash nosash
 #enditem
@@ -473,11 +468,10 @@
 #recolormask /graphics/ogre/armor/robes/toga_faint_recolormask.png
 #eliteversion toga_light
 #gameid 158
-#mr +7
 #armor
 #theme "advanced"
 #notfortier 1
-#notfortier 2
+#tier 2
 #tier 3
 #needs sash nosash
 #enditem
@@ -492,7 +486,7 @@
 #theme "advanced"
 #notfortier 1
 #tier 2
-#notfortier 3
+#tier 3
 #needs sash nosash
 #enditem
 
@@ -502,7 +496,6 @@
 #recolormask self
 #eliteversion toga_light
 #gameid 158
-#mr +7
 #armor
 #theme "advanced"
 #notfortier 1
@@ -517,7 +510,6 @@
 #recolormask self
 #eliteversion toga_dark
 #gameid 158
-#mr +7
 #armor
 #theme "advanced"
 #notfortier 1
