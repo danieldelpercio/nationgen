@@ -5,12 +5,15 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
-import nationGen.entities.Race;
 import nationGen.magic.MagicPath;
+import nationGen.magic.MagicPathInts;
 import nationGen.magic.MagicPathLevel;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
+import nationGen.units.Unit;
 
 public class MageWithAccessRestriction
   extends TwoListRestrictionWithComboBox<String, String> {
@@ -19,7 +22,7 @@ public class MageWithAccessRestriction
 
   public MageWithAccessRestriction() {
     super(
-      "<html>Nation needs have 1 in 4 (100% random for 4 paths or better) access to at least one of the paths listed in the right box on a single mage</html>",
+      "<html>Nation needs to have 1 in 4 (100% random for 4 paths or better) access to at least one of the paths listed in the right box on a single mage</html>",
       "Magic: Mage with access"
     );
     this.extraTextField = true;
@@ -74,16 +77,39 @@ public class MageWithAccessRestriction
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
+  public TestResult doesThisPass(Nation nation) {
     if (neededPaths.size() == 0) {
       System.out.println(
         "Magic: Mage with Access nation restriction has no paths set!"
       );
-      return true;
+      return TestResult.pass();
     }
 
-    List<MagicPathLevel> pathLevels = neededPaths
-      .stream()
+    List<MagicPathLevel> requiredPaths = gatherRequiredPaths();
+    Boolean countRandoms = comboselection == null || comboselection.equals("True");
+    Optional<Unit> mageWithRequiredPaths = nation.selectCommanders("mage")
+      .filter(u -> this.checkMage(u, requiredPaths, countRandoms))
+      .findFirst();
+
+    if (mageWithRequiredPaths.isPresent()) {
+      return TestResult.pass();
+    }
+
+    String formattedRequiredPaths = requiredPaths.stream()
+      .map(path -> path.toString())
+      .reduce("", (partialString, pathString) -> {
+        if (partialString.isBlank()) {
+          return pathString;
+        }
+
+        return partialString + ", " + pathString;
+      });
+
+    return TestResult.fail("Failed " + this.toString() + ": no mage in nation with required paths [" + formattedRequiredPaths + "]");
+  }
+
+  private List<MagicPathLevel> gatherRequiredPaths() {
+    return neededPaths.stream()
       .map(Generic::parseArgs)
       .map(args ->
         new MagicPathLevel(
@@ -92,14 +118,11 @@ public class MageWithAccessRestriction
         )
       )
       .collect(Collectors.toList());
+  }
 
-    boolean randoms = comboselection == null || comboselection.equals("True");
-    return n
-      .selectCommanders("mage")
-      .map(u -> u.getMagicPicks(randoms))
-      .anyMatch(paths ->
-        pathLevels.stream().allMatch(p -> paths.get(p.path) >= p.level)
-      );
+  private Boolean checkMage(Unit unit, List<MagicPathLevel> requiredPaths, Boolean countRandoms) {
+    MagicPathInts magicPicks = unit.getMagicPicks(countRandoms);
+    return requiredPaths.stream().allMatch(p -> magicPicks.get(p.path) >= p.level);
   }
 
   @Override

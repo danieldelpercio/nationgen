@@ -3,14 +3,18 @@ package nationGen.restrictions;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
+
 import nationGen.NationGenAssets;
 import nationGen.entities.Race;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
+import nationGen.units.Unit;
 
 public class NoUnitOfRaceRestriction
   extends TwoListRestrictionWithComboBox<Race, String> {
 
-  public List<String> possibleRaceNames = new ArrayList<>();
+  public List<String> blacklistedRaceNames = new ArrayList<>();
 
   private NationGenAssets assets;
 
@@ -22,8 +26,9 @@ public class NoUnitOfRaceRestriction
 
     this.assets = assets;
     this.comboboxlabel = "Units to match:";
+    this.comboselection = "All";
     
-    assets.races.stream()
+    assets.races.getAllValues().stream()
       .sorted(Comparator.comparing(Race::getName))
       .forEach(r -> rmodel.addElement(r));
   
@@ -42,37 +47,50 @@ public class NoUnitOfRaceRestriction
       int i = 0;
       i < chosen.getModel().getSize();
       i++
-    ) res.possibleRaceNames.add(chosen.getModel().getElementAt(i).name);
+    ) res.blacklistedRaceNames.add(chosen.getModel().getElementAt(i).name);
 
     res.comboselection = this.comboselection;
     return res;
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
-    if (possibleRaceNames.size() == 0) {
+  public TestResult doesThisPass(Nation n) {
+    if (blacklistedRaceNames.size() == 0) {
       System.out.println(
         "No units of race nation restriction has no races set!"
       );
-      return true;
+      return TestResult.pass();
     }
 
-    if (comboselection == null) comboselection = "All";
+    List<Unit> unitsToCheck = this.gatherUnitsToCheck(n);
+    Optional<Unit> unitOfBlacklistedRace = unitsToCheck.stream().filter(u -> {
+      return blacklistedRaceNames.contains(u.race.name);
+    }).findFirst();
 
-    return !(
-      ((comboselection.equals("Troops") || comboselection.equals("All")) &&
-        n
-          .selectTroops()
-          .anyMatch(u -> possibleRaceNames.contains(u.race.name))) ||
-      ((comboselection.equals("Commanders") || comboselection.equals("All")) &&
-        n
-          .selectCommanders()
-          .anyMatch(u -> possibleRaceNames.contains(u.race.name))) ||
-      ((comboselection.equals("Sacred troops")) &&
-        n
-          .selectTroops("sacred")
-          .anyMatch(u -> possibleRaceNames.contains(u.race.name)))
-    );
+    if (unitOfBlacklistedRace.isPresent() == false) {
+      return TestResult.pass();
+    }
+
+    return TestResult.fail("Failed " + this.toString() + ": nation cannot have units of any race from " + blacklistedRaceNames.toString() + " is blacklisted");
+  }
+
+  private List<Unit> gatherUnitsToCheck(Nation nation) {
+    List<Unit> unitsToCheck = new ArrayList<>();
+    Boolean checkAll = this.comboselection == "All";
+    
+    if (this.comboselection == "Troops" || checkAll) {
+      unitsToCheck.addAll(nation.selectTroops().toList());
+    }
+
+    if (this.comboselection == "Commanders" || checkAll) {
+      unitsToCheck.addAll(nation.selectCommanders().toList());
+    }
+
+    if (this.comboselection == "Sacred troops" || checkAll) {
+      unitsToCheck.addAll(nation.selectTroops().toList());
+    }
+
+    return unitsToCheck;
   }
 
   @Override

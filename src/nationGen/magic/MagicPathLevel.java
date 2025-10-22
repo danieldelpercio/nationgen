@@ -9,4 +9,9 @@ public class MagicPathLevel {
     this.path = path;
     this.level = level;
   }
+
+  @Override
+  public String toString() {
+    return this.path.toString() + " " + this.level;
+  }
 }

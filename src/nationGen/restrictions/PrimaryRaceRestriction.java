@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import nationGen.NationGenAssets;
 import nationGen.entities.Race;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 
 public class PrimaryRaceRestriction extends TwoListRestriction<Race> {
@@ -20,7 +21,7 @@ public class PrimaryRaceRestriction extends TwoListRestriction<Race> {
 
     this.assets = assets;
 
-    assets.races.stream()
+    assets.races.getAllValues().stream()
       .sorted(Comparator.comparing(Race::getName))
       .forEach(r -> {
         if (r.isSecondary() == false) {
@@ -39,12 +40,20 @@ public class PrimaryRaceRestriction extends TwoListRestriction<Race> {
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
+  public TestResult doesThisPass(Nation n) {
     if (possibleRaceNames.isEmpty()) {
       System.out.println("Primary Race nation restriction has no races set!");
-      return true;
+      return TestResult.pass();
     }
-    return possibleRaceNames.contains(n.races.get(0).name);
+
+    String primaryRaceName = n.races.get(0).getName();
+    Boolean hasRequiredRace = possibleRaceNames.contains(primaryRaceName);
+
+    if (hasRequiredRace) {
+      return TestResult.pass();
+    }
+
+    return TestResult.fail("Failed " + this.toString() + ": primary race is none of [" + possibleRaceNames.toString() + "]");
   }
 
   @Override

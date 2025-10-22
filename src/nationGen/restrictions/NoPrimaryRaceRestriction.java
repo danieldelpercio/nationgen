@@ -5,11 +5,12 @@ import java.util.Comparator;
 import java.util.List;
 import nationGen.NationGenAssets;
 import nationGen.entities.Race;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 
 public class NoPrimaryRaceRestriction extends TwoListRestriction<Race> {
 
-  public List<String> possibleRaceNames = new ArrayList<String>();
+  public List<String> blacklistedRaceNames = new ArrayList<String>();
 
   private NationGenAssets assets;
 
@@ -21,7 +22,7 @@ public class NoPrimaryRaceRestriction extends TwoListRestriction<Race> {
 
     this.assets = assets;
 
-    assets.races.stream()
+    assets.races.getAllValues().stream()
       .sorted(Comparator.comparing(Race::getName))
       .forEach(r -> {
         if (r.isSecondary() == false) {
@@ -37,23 +38,35 @@ public class NoPrimaryRaceRestriction extends TwoListRestriction<Race> {
       int i = 0;
       i < chosen.getModel().getSize();
       i++
-    ) res.possibleRaceNames.add(chosen.getModel().getElementAt(i).name);
+    ) res.blacklistedRaceNames.add(chosen.getModel().getElementAt(i).name);
     return res;
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
-    if (possibleRaceNames.size() == 0) {
+  public TestResult doesThisPass(Nation n) {
+    if (blacklistedRaceNames.size() == 0) {
       System.out.println(
         "No Primary Race nation restriction has no races set!"
       );
-      return true;
+      return TestResult.pass();
     }
-    return !possibleRaceNames.contains(n.races.get(0).name);
+
+    String primaryRaceName = n.races.get(0).getName();
+    Boolean hasBlacklistedRace = blacklistedRaceNames.contains(primaryRaceName);
+
+    if (hasBlacklistedRace == false) {
+      return TestResult.pass();
+    }
+
+    return TestResult.fail("Failed " + this.toString() + ": primary race cannot be any of [" + blacklistedRaceNames.toString() + "]");
   }
 
   @Override
   public RestrictionType getType() {
     return RestrictionType.NoPrimaryRace;
+  }
+
+  public String print() {
+    return "";
   }
 }

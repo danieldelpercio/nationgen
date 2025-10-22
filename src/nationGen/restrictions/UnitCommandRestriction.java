@@ -2,7 +2,11 @@ package nationGen.restrictions;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
+import java.util.function.Predicate;
+
 import nationGen.misc.Command;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 import nationGen.units.Unit;
 
@@ -25,6 +29,8 @@ public class UnitCommandRestriction extends TextBoxListRestriction {
       "Cap-only",
       "Normal-rec",
     };
+
+    this.comboselection = "All";
     this.comboboxlabel = "Units to match:";
     this.textFieldLabel = "Command to add:";
     this.textfieldDefaultText = "#flying";
@@ -44,32 +50,49 @@ public class UnitCommandRestriction extends TextBoxListRestriction {
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
+  public TestResult doesThisPass(Nation n) {
     if (commandRestrictions.size() == 0) {
       System.out.println("Unit command nation restriction has no races set!");
-      return true;
+      return TestResult.pass();
     }
 
-    boolean pass = false;
+    List<Unit> unitsToCheck = this.gatherUnitsToCheck(n);
+    Optional<Unit> unitWithPossibleCommand = unitsToCheck.stream().filter(this::checkUnit).findFirst();
 
-    if (comboselection == null) comboselection = "All";
-
-    if (comboselection.equals("Cap-only")) {
-      return n.selectUnits().filter(u -> u.caponly).anyMatch(this::checkUnit);
+    if (unitWithPossibleCommand.isPresent()) {
+      return TestResult.pass();
     }
 
-    if (comboselection.equals("Normal-rec")) {
-      return n.selectUnits().filter(u -> !u.caponly).anyMatch(this::checkUnit);
+    return TestResult.fail("Failed " + this.toString() + ": missing at least one of [" + commandRestrictions.toString() + "]");
+  }
+
+  private List<Unit> gatherUnitsToCheck(Nation nation) {
+    List<Unit> unitsToCheck = new ArrayList<>();
+    Boolean checkAll = this.comboselection == "All";
+
+    if (this.comboselection.equals("Cap-only")) {
+      unitsToCheck.addAll(nation.selectUnits().filter(Unit::isCapOnly).toList());
     }
 
-    return (
-      ((comboselection.equals("Troops") || comboselection.equals("All")) &&
-        n.selectTroops().anyMatch(this::checkUnit)) ||
-      ((comboselection.equals("Commanders") || comboselection.equals("All")) &&
-        n.selectCommanders().anyMatch(this::checkUnit)) ||
-      (comboselection.equals("Sacred troops") &&
-        n.selectTroops("sacred").anyMatch(this::checkUnit))
-    );
+    else if (this.comboselection.equals("Normal-rec")) {
+      unitsToCheck.addAll(nation.selectUnits().filter(Predicate.not(Unit::isCapOnly)).toList());
+    }
+    
+    else {
+      if (this.comboselection == "Troops" || checkAll) {
+        unitsToCheck.addAll(nation.selectTroops().toList());
+      }
+
+      if (this.comboselection == "Commanders" || checkAll) {
+        unitsToCheck.addAll(nation.selectCommanders().toList());
+      }
+
+      if (this.comboselection == "Sacred troops" || checkAll) {
+        unitsToCheck.addAll(nation.selectTroops("sacred").toList());
+      }
+    }
+
+    return unitsToCheck;
   }
 
   private boolean checkUnit(Unit u) {

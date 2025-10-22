@@ -3,15 +3,17 @@ package nationGen.restrictions;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+
 import nationGen.NationGenAssets;
-import nationGen.entities.Filter;
 import nationGen.entities.Theme;
-import nationGen.magic.MagicPath;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 
 public class NationThemeRestriction extends TwoListRestriction<String> {
 
-  public List<String> possibleRaceNames = new ArrayList<String>();
+  public List<String> possibleThemes = new ArrayList<String>();
 
   private NationGenAssets assets;
 
@@ -48,41 +50,35 @@ public class NationThemeRestriction extends TwoListRestriction<String> {
       int i = 0;
       i < chosen.getModel().getSize();
       i++
-    ) res.possibleRaceNames.add(chosen.getModel().getElementAt(i));
+    ) res.possibleThemes.add(chosen.getModel().getElementAt(i));
     return res;
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
-    if (possibleRaceNames.size() == 0) {
+  public TestResult doesThisPass(Nation n) {
+    if (possibleThemes.size() == 0) {
       System.out.println(
         "Nation or primary race theme nation restriction has no races set!"
       );
-      return true;
+      return TestResult.pass();
     }
 
-    boolean ok = false;
-    for (Theme t : n.nationthemes) {
-      for (String str : possibleRaceNames) {
+    List<Theme> allNationThemes = Stream.concat(
+        n.nationthemes.stream(),
+        n.races.get(0).themefilters.stream()
+      )
+      .collect(Collectors.toList());
+
+    for (Theme t : allNationThemes) {
+      for (String str : possibleThemes) {
         String name = str.split(" - ")[1];
         if (t.name.equals(name)) {
-          ok = true;
-          break;
+          return TestResult.pass();
         }
       }
     }
 
-    for (Theme t : n.races.get(0).themefilters) {
-      for (String str : possibleRaceNames) {
-        String name = str.split(" - ")[1];
-        if (t.name.equals(name)) {
-          ok = true;
-          break;
-        }
-      }
-    }
-
-    return ok;
+    return TestResult.fail("Failed " + this.toString() + ": missing at least a theme from [" + possibleThemes.toString() + "]");
   }
 
   @Override

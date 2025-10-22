@@ -6,6 +6,7 @@ import java.util.List;
 import nationGen.magic.MageGenerator;
 import nationGen.magic.MagicPath;
 import nationGen.magic.MagicPathInts;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 import nationGen.units.Unit;
 
@@ -22,8 +23,9 @@ public class MagicDiversityRestriction
       "Magic: Diversity"
     );
     this.comboboxlabel = "25% probability randoms allowed";
-    String[] ops = { "True", "False" };
-    this.comboboxoptions = ops;
+    this.comboboxoptions = new String[] { "True", "False" };
+    this.comboselection = this.comboboxoptions[0];
+
     this.hascombobox = true;
     this.textFieldLabel = "Path amount:";
     this.textfieldDefaultText = "1";
@@ -45,33 +47,34 @@ public class MagicDiversityRestriction
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
+  public TestResult doesThisPass(Nation n) {
     if (possibleRaceNames.size() == 0) {
       System.out.println(
         "Magic diversity nation restriction has no races set!"
       );
-      return true;
+      return TestResult.pass();
     }
 
-    List<Unit> tempmages = n.listCommanders("mage");
-
-    MagicPathInts nonrandom_paths = MageGenerator.getAllPicks(tempmages, false);
-    MagicPathInts random_paths = MageGenerator.getAllPicks(tempmages, true);
+    List<Unit> mages = n.listCommanders("mage");
+    MagicPathInts nonRandomPaths = MageGenerator.getAllPicks(mages, false);
+    MagicPathInts randomPaths = MageGenerator.getAllPicks(mages, true);
 
     for (RestrictionMagicEntry res : possibleRaceNames) {
-      MagicPathInts crap;
-      if (res.randoms) crap = random_paths;
-      else crap = nonrandom_paths;
-
+      MagicPathInts paths = (res.randoms) ? randomPaths : nonRandomPaths;
       int diversity = 0;
-      for (MagicPath path : MagicPath.values()) if (
-        crap.get(path) >= res.level
-      ) diversity++;
 
-      if (diversity >= res.paths) return true;
+      for (MagicPath path : MagicPath.values()) {
+        if (paths.get(path) >= res.level) {
+          diversity++;
+        }
+      }
+
+      if (diversity >= res.paths) {
+        return TestResult.pass();
+      }
     }
 
-    return false;
+    return TestResult.fail("Failed " + this.toString() + ": ");
   }
 
   @Override
@@ -83,8 +86,7 @@ public class MagicDiversityRestriction
         textfield2.getText().length() > 0 &&
         !rmodel.contains(textfield.getText() + " - " + textfield2.getText())
       ) {
-        boolean randoms =
-          comboselection == null || comboselection.equals("True");
+        boolean randoms = comboselection.equals("True");
 
         rmodel.addElement(
           new RestrictionMagicEntry(

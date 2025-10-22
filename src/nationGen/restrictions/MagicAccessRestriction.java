@@ -5,9 +5,13 @@ import java.awt.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+
 import nationGen.magic.MageGenerator;
 import nationGen.magic.MagicPath;
 import nationGen.magic.MagicPathInts;
+import nationGen.magic.MagicPathLevel;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 
 public class MagicAccessRestriction
@@ -26,6 +30,7 @@ public class MagicAccessRestriction
 
     this.comboboxlabel = "25% probability randoms allowed";
     this.comboboxoptions = new String[] { "True", "False" };
+    this.comboselection = this.comboboxoptions[0];
 
     MagicPath.NON_HOLY
       .stream()
@@ -71,28 +76,50 @@ public class MagicAccessRestriction
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
-    boolean randoms = comboselection == null || comboselection.equals("True");
-
-    MagicPathInts nonrandom_paths = MageGenerator.getAllPicks(
-      n.listCommanders("mage"),
-      randoms
-    );
-
+  public TestResult doesThisPass(Nation n) {
     if (neededPaths.size() == 0) {
       System.out.println("Magic access nation restriction has no paths set!");
-      return true;
+      return TestResult.pass();
     }
 
-    boolean pass = false;
-    for (String p : neededPaths) {
-      List<String> args = Generic.parseArgs(p);
-      MagicPath path = MagicPath.fromName(args.get(0));
-      int level = Integer.parseInt(args.get(1));
-      if (nonrandom_paths.get(path) >= level) pass = true;
+    Boolean countRandoms = comboselection.equals("True");
+    List<MagicPathLevel> requiredPaths = gatherRequiredPaths();
+    MagicPathInts nonRandomPaths = MageGenerator.getAllPicks(
+      n.listCommanders("mage"),
+      countRandoms
+    );
+
+    Boolean hasRequiredPaths = requiredPaths.stream().anyMatch(p -> {
+      return nonRandomPaths.get(p.path) >= p.level;
+    });
+
+    if (hasRequiredPaths) {
+      return TestResult.pass();
     }
 
-    return pass;
+    String formattedRequiredPaths = requiredPaths.stream()
+      .map(path -> path.toString())
+      .reduce("", (partialString, pathString) -> {
+        if (partialString.isBlank()) {
+          return pathString;
+        }
+
+        return partialString + ", " + pathString;
+      });
+
+    return TestResult.fail("Failed " + this.toString() + ": nation has no access to any of [" + formattedRequiredPaths + "]");
+  }
+
+  private List<MagicPathLevel> gatherRequiredPaths() {
+    return neededPaths.stream()
+      .map(Generic::parseArgs)
+      .map(args ->
+        new MagicPathLevel(
+          MagicPath.fromName(args.get(0)),
+          Integer.parseInt(args.get(1))
+        )
+      )
+      .collect(Collectors.toList());
   }
 
   @Override

@@ -3,11 +3,12 @@ package nationGen.restrictions;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-
-import javax.swing.text.html.parser.Entity;
+import java.util.Optional;
+import java.util.function.Predicate;
 
 import nationGen.NationGenAssets;
 import nationGen.entities.Filter;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 import nationGen.units.Unit;
 
@@ -34,6 +35,7 @@ public class UnitFilterRestriction
 
     this.assets = assets;
     this.comboboxlabel = "Units to match:";
+    this.comboselection = "All";
 
     this.assets.filters
       .keySet()
@@ -68,28 +70,40 @@ public class UnitFilterRestriction
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
+  public TestResult doesThisPass(Nation n) {
     if (possibleFilterNames.size() == 0) {
       System.out.println("Units of filter restriction has no filters set!");
-      return true;
+      return TestResult.pass();
     }
 
-    String targs = comboselection; // what the filter TARGetS (None applies to "all" of the units)
-    if (comboselection == null) {
-      comboselection = targs = "All";
-    } else if (comboselection.equals("None")) {
-      targs = "All";
+    Boolean checkNone = this.comboselection == "None";
+    List<Unit> unitsToCheck = this.gatherUnitsToCheck(n);
+    Optional<Unit> unitWithPossibleFilter = unitsToCheck.stream().filter(this::checkUnit).findFirst();
+
+    if (checkNone || unitWithPossibleFilter.isPresent()) {
+      return TestResult.pass();
     }
 
-    return (
-      (((targs.equals("Troops") || targs.equals("All")) &&
-          n.selectTroops().anyMatch(this::checkUnit)) ||
-        ((targs.equals("Commanders") || targs.equals("All")) &&
-          n.selectCommanders().anyMatch(this::checkUnit)) ||
-        ((targs.equals("Sacred troops")) &&
-          n.selectTroops("sacred").anyMatch(this::checkUnit))) ^
-      comboselection.equals("None")
-    );
+    return TestResult.fail("Failed " + this.toString() + ": missing at least one of [" + possibleFilterNames.toString() + "]");
+  }
+  
+  private List<Unit> gatherUnitsToCheck(Nation nation) {
+    List<Unit> unitsToCheck = new ArrayList<>();
+    Boolean checkAll = this.comboselection == "All";
+
+    if (this.comboselection == "Troops" || checkAll) {
+      unitsToCheck.addAll(nation.selectTroops().toList());
+    }
+
+    if (this.comboselection == "Commanders" || checkAll) {
+      unitsToCheck.addAll(nation.selectCommanders().toList());
+    }
+
+    if (this.comboselection == "Sacred troops" || checkAll) {
+      unitsToCheck.addAll(nation.selectTroops("sacred").toList());
+    }
+
+    return unitsToCheck;
   }
 
   private boolean checkUnit(Unit u) {

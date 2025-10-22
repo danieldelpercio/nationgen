@@ -2,6 +2,8 @@ package nationGen.restrictions;
 
 import java.awt.LayoutManager;
 import javax.swing.JPanel;
+
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 
 public interface NationRestriction {
@@ -29,7 +31,7 @@ public interface NationRestriction {
 
   public LayoutManager getLayout();
 
-  public boolean doesThisPass(Nation n);
+  public TestResult doesThisPass(Nation n);
 
   public String toString();
 

@@ -40,8 +40,7 @@ public class Nation {
   public String name = "UNNAMED";
   public String epithet = "NO EPITHET";
 
-  public boolean passed = true;
-  public String restrictionFailed = "";
+  public TestResult restrictionTest;
 
   public NationGen nationGen;
   private NationGenAssets assets;
@@ -128,7 +127,7 @@ public class Nation {
     // choose primary race
     List<Race> allRaces = new ArrayList<>();
 
-    for (Race r : assets.races) {
+    for (Race r : assets.races.getAllValues()) {
       if (!r.tags.containsName("secondary")) {
         allRaces.add(r);
       }
@@ -150,7 +149,7 @@ public class Nation {
 
     // Secondary race after themes since themes may affect it
     allRaces.clear();
-    allRaces.addAll(assets.races);
+    allRaces.addAll(assets.races.getAllValues());
     allRaces.remove(race);
 
     race = chandler.handleChanceIncs(allRaces).getRandom(random);
@@ -569,7 +568,7 @@ public class Nation {
     getRaces();
 
     if (
-      !checkRestrictions(
+      !nationPassesRestrictions(
         restrictions,
         RestrictionType.NoPrimaryRace,
         RestrictionType.PrimaryRace,
@@ -582,7 +581,7 @@ public class Nation {
     generateMagesAndPriests();
 
     if (
-      !checkRestrictions(
+      !nationPassesRestrictions(
         restrictions,
         RestrictionType.MageWithAccess,
         RestrictionType.MagicAccess,
@@ -597,7 +596,7 @@ public class Nation {
     generateSacreds();
 
     if (
-      !checkRestrictions(
+      !nationPassesRestrictions(
         restrictions,
         RestrictionType.SacredRace,
         RestrictionType.RecAnywhereSacreds
@@ -615,7 +614,7 @@ public class Nation {
     generateComs();
 
     if (
-      !checkRestrictions(
+      !nationPassesRestrictions(
         restrictions,
         RestrictionType.UnitCommand,
         RestrictionType.UnitFilter,
@@ -1121,12 +1120,12 @@ public class Nation {
     for (List<Unit> list : this.unitlists.values()) units.addAll(list);
     units.addAll(heroes);
 
-    List<MountUnit> mus = new ArrayList<>();
-    for (MountUnit mu : nationGen.mounts) {
-      if (units.contains(mu.otherForm)) mus.add(mu);
-    }
+    List<MountUnit> mountUnits = units.stream()
+      .filter(Unit::isMounted)
+      .map(Unit::getMountUnit)
+      .collect(Collectors.toList());
 
-    return mus;
+    return mountUnits;
   }
 
   public void writeSprites(String spritedir) {
@@ -1168,13 +1167,12 @@ public class Nation {
     lines.add("--- Unit definitions for " + this.name);
     lines.add("");
 
+    // Write the lines for the alternate shapes of the nation's troops
     for (ShapeChangeUnit su : getShapeChangeUnits()) {
       lines.addAll(su.writeLines(spritedir));
     }
-    for (MountUnit mu : getMountUnits()) {
-      lines.addAll(mu.writeLines(spritedir));
-    }
 
+    // Write the lines of all the nation's units
     for (List<Unit> list : unitlists.values()) {
       for (Unit u : list) {
         if (!u.invariantMonster) {
@@ -1195,12 +1193,14 @@ public class Nation {
       }
     }
 
+    // Write the lines of all the nation's commander troops
     for (List<Unit> list : comlists.values()) {
       for (Unit u : list) {
         lines.addAll(u.writeLines(spritedir));
       }
     }
 
+    // Write the lines of all the nation's heroes
     for (Unit u : heroes) {
       lines.addAll(u.writeLines(spritedir));
     }
@@ -1244,7 +1244,7 @@ public class Nation {
               } else lines.add("#" + tag + " " + u.getId());
             }
 
-            if (!u.caponly) lines.add(line + " " + u.getId());
+            if (!u.isCapOnly()) lines.add(line + " " + u.getId());
           }
 
           listnames.remove((str + "-" + i));
@@ -1260,7 +1260,7 @@ public class Nation {
             else lines.add("#" + tag + " " + u.getId());
           }
 
-          if (!u.caponly) lines.add(line + " " + u.getId());
+          if (!u.isCapOnly()) lines.add(line + " " + u.getId());
         }
       }
     }
@@ -1440,20 +1440,26 @@ public class Nation {
     return lines;
   }
 
-  public boolean checkRestrictions(
+  public boolean nationPassesRestrictions(
     List<NationRestriction> restrictions,
     RestrictionType... restrictionTypes
   ) {
+    Set<RestrictionType> typesToCheck = Set.of(restrictionTypes);
+
     for (var restriction : restrictions) {
-      if (
-        Set.of(restrictionTypes).contains(restriction.getType()) &&
-        !restriction.doesThisPass(this)
-      ) {
-        passed = false;
-        restrictionFailed = restriction.toString().toUpperCase();
+      Boolean needsChecked =  typesToCheck.contains(restriction.getType());
+
+      if (needsChecked == false) {
+        continue;
+      }
+
+      this.restrictionTest = restriction.doesThisPass(this);
+
+      if (this.restrictionTest.failed) {
         return false;
       }
     }
-    return true;
+    
+  return true;
   }
 }

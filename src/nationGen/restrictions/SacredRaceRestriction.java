@@ -5,6 +5,7 @@ import java.util.Comparator;
 import java.util.List;
 import nationGen.NationGenAssets;
 import nationGen.entities.Race;
+import nationGen.misc.TestResult;
 import nationGen.nation.Nation;
 
 public class SacredRaceRestriction extends TwoListRestriction<Race> {
@@ -21,6 +22,7 @@ public class SacredRaceRestriction extends TwoListRestriction<Race> {
     this.assets = assets;
 
     this.assets.races
+      .getAllValues()
       .stream()
       .sorted(Comparator.comparing(Race::getName))
       .forEach(r -> rmodel.addElement(r));
@@ -37,15 +39,20 @@ public class SacredRaceRestriction extends TwoListRestriction<Race> {
   }
 
   @Override
-  public boolean doesThisPass(Nation n) {
+  public TestResult doesThisPass(Nation n) {
     if (possibleRaceNames.size() == 0) {
       System.out.println("Sacred race nation restriction has no races set!");
-      return true;
+      return TestResult.pass();
     }
 
-    return n
-      .selectTroops("sacred")
+    Boolean hasSacredsOfPossibleRace = n.selectTroops("sacred")
       .anyMatch(u -> possibleRaceNames.contains(u.race.name));
+
+    if (hasSacredsOfPossibleRace) {
+      return TestResult.pass();
+    }
+
+    return TestResult.fail("Failed " + this.toString() + ": no sacred of any of race [" + possibleRaceNames.toString() + "]");
   }
 
   @Override
