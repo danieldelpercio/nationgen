@@ -159,7 +159,7 @@
 #newitem
 #id "great_spider"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider.png
 #armor
 #offsetx 35
 #offsety 7
@@ -177,7 +177,7 @@
 #newitem
 #id "great_spider_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider_armored_light_bronze.png
 #armor
 #offsetx 35
 #offsety 7
@@ -198,7 +198,7 @@
 #newitem
 #id "great_spider_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider_armored_light_scale.png
 #armor
 #offsetx 35
 #offsety 7

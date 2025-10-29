@@ -583,7 +583,7 @@
 #newitem
 #id "crocodile_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_light_scale.png
 #offsetx 22
 #offsety -7
 #armor
@@ -603,7 +603,7 @@
 #newitem
 #id "crocodile_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_mail.png
 #offsetx 22
 #offsety -7
 #armor
@@ -623,7 +623,7 @@
 #newitem
 #id "crocodile_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_plate.png
 #offsetx 22
 #offsety -7
 #armor

@@ -437,7 +437,7 @@
 #newitem
 #id "cave_grub"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub.png
 #armor
 #offsetx 38
 #offsety -2
@@ -456,7 +456,7 @@
 #newitem
 #id "cave_grub_turtle_shell_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_turtle_shell.png
 #armor
 #offsetx 38
 #offsety -2
@@ -478,7 +478,7 @@
 #newitem
 #id "cave_grub_coral_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_coral.png
 #armor
 #offsetx 38
 #offsety -2

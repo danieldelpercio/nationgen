@@ -186,7 +186,7 @@
 #newitem
 #id "cave_grub"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub.png
 #armor
 #offsetx 48
 #offsety 25
@@ -204,7 +204,7 @@
 #newitem
 #id "cave_grub_leather_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_leather.png
 #armor
 #offsetx 48
 #offsety 25
@@ -225,7 +225,7 @@
 #newitem
 #id "cave_grub_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_light_scale.png
 #armor
 #offsetx 48
 #offsety 25
@@ -246,7 +246,7 @@
 #newitem
 #id "cave_grub_obsidian_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_obsidian.png
 #armor
 #offsetx 48
 #offsety 25

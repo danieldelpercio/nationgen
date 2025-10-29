@@ -3,7 +3,7 @@
 #newitem
 #id "cave_grub"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub.png
 #armor
 #offsetx 33
 #offsety -4
@@ -22,7 +22,7 @@
 #newitem
 #id "cave_grub_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_light_bronze.png
 #armor
 #offsetx 33
 #offsety -4
@@ -44,7 +44,7 @@
 #newitem
 #id "cave_grub_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_mail_bronze.png
 #armor
 #offsetx 33
 #offsety -4
@@ -66,7 +66,7 @@
 #newitem
 #id "cave_grub_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_bronze.png
 #armor
 #offsetx 33
 #offsety -4
@@ -89,7 +89,7 @@
 #newitem
 #id "cave_grub_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_light_scale.png
 #armor
 #offsetx 33
 #offsety -4
@@ -111,7 +111,7 @@
 #newitem
 #id "cave_grub_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_mail.png
 #armor
 #offsetx 33
 #offsety -4
@@ -133,7 +133,7 @@
 #newitem
 #id "cave_grub_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_plate.png
 #armor
 #offsetx 33
 #offsety -4

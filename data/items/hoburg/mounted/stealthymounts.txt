@@ -227,7 +227,7 @@
 #newitem
 #id "deer"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer.png
 #armor
 #mountmnr "deer_mount"
 #offsety -14
@@ -253,7 +253,7 @@
 #newitem
 #id "deer_leather_barding"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer_armored_leather.png
 #armor
 #mountmnr "deer_mount"
 #barding 251
@@ -603,7 +603,7 @@
 #newitem
 #id "cu_sidhe"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe.png
 #offsety -22
 #offsetx -3
 #armor
@@ -623,7 +623,7 @@
 #newitem
 #id "cu_sidhe_gossamer_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_gossamer.png
 #offsety -22
 #offsetx -3
 #armor

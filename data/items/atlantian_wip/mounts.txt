@@ -189,7 +189,7 @@
 #newitem
 #id "cavegrub"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub.png
 #armor
 #basechance 0.125
 #offsetx 38

@@ -165,7 +165,7 @@
 #newitem
 #id "cu_sidhe"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe.png
 #armor
 #offsetx -5
 #offsety 1
@@ -181,7 +181,7 @@
 #newitem
 #id "cu_sidhe_light_bronze_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_light_bronze.png
 #armor
 #offsetx -5
 #offsety 1
@@ -200,7 +200,7 @@
 #newitem
 #id "cu_sidhe_light_scale_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_light_scale.png
 #armor
 #offsetx -5
 #offsety 1
@@ -219,7 +219,7 @@
 #newitem
 #id "cu_sidhe_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_mail_bronze.png
 #armor
 #offsetx -5
 #offsety 1
@@ -237,7 +237,7 @@
 #newitem
 #id "cu_sidhe_iron_mail_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_mail.png
 #armor
 #offsetx -5
 #offsety 1
@@ -255,7 +255,7 @@
 #newitem
 #id "cu_sidhe_gossamer_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_gossamer.png
 #armor
 #offsetx -5
 #offsety 1

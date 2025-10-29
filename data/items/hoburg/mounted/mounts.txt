@@ -1436,7 +1436,7 @@
 #newitem
 #id "caveman_fur_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman.png
+#sprite /graphics/hoburg/mounts/caveman_armored_furs.png
 #armor
 #mountmnr "caveman_mount"
 #barding 44
@@ -1459,7 +1459,7 @@
 #newitem
 #id "caveman_bronze_scale_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman.png
+#sprite /graphics/hoburg/mounts/caveman_armored_scale_hauberk_bronze.png
 #armor
 #mountmnr "caveman_mount"
 #barding 136
@@ -1484,7 +1484,7 @@
 #newitem
 #id "caveman_scale_armor" 
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman.png
+#sprite /graphics/hoburg/mounts/caveman_armored_scale_hauberk.png
 #armor
 #mountmnr "caveman_mount"
 #barding 12
@@ -1509,7 +1509,7 @@
 #newitem
 #id "caveman_bronze_mail_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman.png
+#sprite /graphics/hoburg/mounts/caveman_armored_mail_hauberk_bronze.png
 #armor
 #mountmnr "caveman_mount"
 #barding 172
@@ -1534,7 +1534,7 @@
 #newitem
 #id "caveman_iron_mail_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman.png
+#sprite /graphics/hoburg/mounts/caveman_armored_mail_hauberk.png
 #armor
 #mountmnr "caveman_mount"
 #barding 172
@@ -1559,7 +1559,7 @@
 #newitem
 #id "caveman_bronze_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman.png
+#sprite /graphics/hoburg/mounts/caveman_armored_bronze.png
 #armor
 #mountmnr "caveman_mount"
 #barding 101
@@ -1586,7 +1586,7 @@
 #newitem
 #id "caveman_plate_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman.png
+#sprite /graphics/hoburg/mounts/caveman_armored_plate.png
 #armor
 #mountmnr "caveman_mount"
 #barding 14
@@ -2025,7 +2025,7 @@
 #newitem
 #id "crocodile_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_light_bronze.png
 #offsetx 25
 #offsety -7
 #armor
@@ -2053,7 +2053,7 @@
 #newitem
 #id "crocodile_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_light_scale.png
 #offsetx 25
 #offsety -7
 #armor
@@ -2080,7 +2080,7 @@
 #newitem
 #id "crocodile_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_mail_bronze.png
 #offsetx 25
 #offsety -7
 #armor
@@ -2107,7 +2107,7 @@
 #newitem
 #id "crocodile_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_mail.png
 #offsetx 25
 #offsety -7
 #armor
@@ -2134,7 +2134,7 @@
 #newitem
 #id "crocodile_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_cataphract.png
 #offsetx 25
 #offsety -7
 #armor
@@ -2162,7 +2162,7 @@
 #newitem
 #id "crocodile_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_bronze.png
 #offsetx 25
 #offsety -7
 #armor
@@ -2190,7 +2190,7 @@
 #newitem
 #id "crocodile_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/crocodile_mount.png
+#sprite /graphics/mounts/standard/crocodile_mount_armored_plate.png
 #offsetx 25
 #offsety -7
 #armor
@@ -2374,7 +2374,7 @@
 #newitem
 #id "caveman_fossil_rusty_mail_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman_fossil.png
+#sprite /graphics/hoburg/mounts/caveman_fossil_armored_mail_rusty.png
 #armor
 #needs overlay caveman_fossil_overlay
 #offsetx 5
@@ -2395,7 +2395,7 @@
 #newitem
 #id "caveman_fossil_hauberk"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman_fossil.png
+#sprite /graphics/hoburg/mounts/caveman_fossil_armored_hauberk.png
 #armor
 #needs overlay caveman_fossil_overlay
 #offsetx 5

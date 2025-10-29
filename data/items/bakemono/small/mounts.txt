@@ -128,7 +128,7 @@
 #newitem
 #id "great_boar_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_light_scale.png
 #armor
 #offsetx -2
 #offsety -18
@@ -150,7 +150,7 @@
 #newitem
 #id "great_boar_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_mail.png
 #armor
 #offsetx -2
 #offsety -18

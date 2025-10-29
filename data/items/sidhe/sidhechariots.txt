@@ -379,7 +379,7 @@
 #newitem
 #id "cu_sidhe_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -395,7 +395,7 @@
 #newitem
 #id "cu_sidhe_leather_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_leather.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -413,7 +413,7 @@
 #newitem
 #id "cu_sidhe_light_bronze_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_light_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -432,7 +432,7 @@
 #newitem
 #id "cu_sidhe_light_scale_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_light_scale.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -451,7 +451,7 @@
 #newitem
 #id "cu_sidhe_bronze_mail_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_mail_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -470,7 +470,7 @@
 #newitem
 #id "cu_sidhe_iron_mail_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_mail.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -489,7 +489,7 @@
 #newitem
 #id "cu_sidhe_cataphract_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_cataphract_with_helmet.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -508,7 +508,7 @@
 #newitem
 #id "cu_sidhe_bronze_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -527,7 +527,7 @@
 #newitem
 #id "cu_sidhe_plate_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_plate.png
 #armor
 #needs overlay 11
 #offsetx 55
@@ -546,7 +546,7 @@
 #newitem
 #id "cu_sidhe_golden_barding_chariot"
 #gameid -1
-#sprite /graphics/sidhe/mounts/chariot_cusidhe.png
+#sprite /graphics/sidhe/mounts/chariot_cu_sidhe_armored_gold.png
 #armor
 #needs overlay 11
 #offsetx 55
