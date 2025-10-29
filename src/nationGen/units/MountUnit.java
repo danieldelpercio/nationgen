@@ -7,16 +7,10 @@ import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import nationGen.NationGen;
-import nationGen.NationGenAssets;
 import nationGen.entities.Filter;
-import nationGen.entities.Pose;
-import nationGen.entities.Race;
 import nationGen.items.Item;
-import nationGen.items.ItemData;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
 import nationGen.misc.FileUtil;
@@ -315,7 +309,7 @@ public class MountUnit extends Unit {
     }
 
     if (this.mount.isNamed()) {
-      lines.add("#name \"" + this.getName() + "\"");
+      lines.add("#name \"" + this.mount.getName() + "\"");
     }
     
     if (sacred) {

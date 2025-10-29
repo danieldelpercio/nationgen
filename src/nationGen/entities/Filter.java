@@ -2,6 +2,7 @@ package nationGen.entities;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import nationGen.NationGen;
@@ -83,6 +84,10 @@ public class Filter extends Entity {
 
   public String getName() {
     return this.name;
+  }
+
+  public Optional<Command> getCommand(String command) {
+    return this.getCommands().stream().filter(c -> c.command.equals(command)).findFirst();
   }
 
   public Boolean isShapeshiftFilter() {
