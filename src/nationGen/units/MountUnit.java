@@ -70,8 +70,9 @@ public class MountUnit extends Unit {
     this.gcost = mountUnit.gcost;
   }
 
-  public List<Command> gatherAllCommands() {
-    List<Command> commands = this.getCommands();
+  @Override
+  public List<Command> getCommands() {
+    List<Command> commands = super.getCommands();
     commands.addAll(this.mount.getCommands());
     return commands;
   }
@@ -144,7 +145,7 @@ public class MountUnit extends Unit {
     }
 
     // And remember to copy commands from the actual base mount stats
-    for (Command c : this.mount.commands) {
+    for (Command c : this.mount.getCommands()) {
       // Set mount name
       if (c.command.equals("#name") && c.args.size() > 0) {
         c.args.set(0, new Arg(Generic.capitalize(c.args.get(0).get())));
@@ -158,13 +159,7 @@ public class MountUnit extends Unit {
 
       // Add extra gcost
       else if (c.command.equals("#gcost")) {
-        polishFilter.commands.add(c);
         this.gcost = c.args.get(0).getInt();
-      }
-
-      // Add the other non-sprite commands
-      else if (!c.command.startsWith("#spr")) {
-        polishFilter.commands.add(c);
       }
     }
 

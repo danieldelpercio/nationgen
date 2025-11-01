@@ -937,7 +937,7 @@ public class Unit {
       return list;
     }
 
-    return this.mountUnit.gatherAllCommands();
+    return this.mountUnit.getCommands();
   }
 
   private Boolean handleLowEncCommandPolish(Tags tags) {
