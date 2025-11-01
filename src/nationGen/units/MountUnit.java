@@ -70,6 +70,12 @@ public class MountUnit extends Unit {
     this.gcost = mountUnit.gcost;
   }
 
+  public List<Command> gatherAllCommands() {
+    List<Command> commands = this.getCommands();
+    commands.addAll(this.mount.getCommands());
+    return commands;
+  }
+
   public void loadMountItemData(Item mountItem) {
     if (mountItem.isMountItem() == false) {
       throw new IllegalArgumentException("Expected mountItem to have a #mountmnr command but found none!");
@@ -223,6 +229,15 @@ public class MountUnit extends Unit {
     return base;
   }
 
+  private String getSpritePath(String spritedir, String spriteCommand) {
+    return spritedir + "/" + this.getSpriteFilename(spriteCommand);
+  }
+
+  private String getSpriteFilename(String spriteCommand) {
+    String letter = (spriteCommand.equals("#spr1")) ? "a" : "b";
+    return "mount_" + this.id + "_" + letter + ".tga";
+  }
+
   @Override
   public void writeSprites(String spritedir) {
     // Handle sprites
@@ -241,7 +256,7 @@ public class MountUnit extends Unit {
         }
         FileUtil.writeTGA(
           spr1,
-          "/mods/" + spritedir + "/mount_" + id + "_a.tga"
+          "/mods/" + this.getSpritePath(spritedir, c.command)
         );
       }
     }
@@ -262,7 +277,7 @@ public class MountUnit extends Unit {
         }
         FileUtil.writeTGA(
           spr2,
-          "/mods/" + spritedir + "/mount_" + id + "_b.tga"
+          "/mods/" + this.getSpritePath(spritedir, c.command)
         );
       }
     }
@@ -301,11 +316,11 @@ public class MountUnit extends Unit {
     }
 
     if (this.mount.commands.stream().anyMatch(c -> c.command.equals("#spr1"))) {
-      lines.add("#spr1 \"" + spritedir + "/mount_" + id + "_a.tga" + "\"");
+      lines.add("#spr1 \"" + this.getSpritePath(spritedir, "#spr1") + "\"");
     }
   
     if (this.mount.commands.stream().anyMatch(c -> c.command.equals("#spr2"))) {
-      lines.add("#spr2 \"" + spritedir + "/mount_" + id + "_b.tga" + "\"");
+      lines.add("#spr2 \"" + this.getSpritePath(spritedir, "#spr2") + "\"");
     }
 
     if (this.mount.isNamed()) {

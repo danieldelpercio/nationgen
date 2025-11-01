@@ -930,6 +930,16 @@ public class Unit {
     return tempCommands;
   }
 
+  public List<Command> getMountCommands() {
+    List<Command> list = new ArrayList<>();
+
+    if (this.isMounted() == false) {
+      return list;
+    }
+
+    return this.mountUnit.gatherAllCommands();
+  }
+
   private Boolean handleLowEncCommandPolish(Tags tags) {
     if (!tags.containsName("lowencthreshold")) return false;
 

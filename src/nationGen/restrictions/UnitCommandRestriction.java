@@ -8,7 +8,7 @@ import nationGen.misc.Command;
 import nationGen.nation.Nation;
 import nationGen.units.Unit;
 
-public class UnitCommandRestriction extends TextBoxListRestriction {
+public class UnitCommandRestriction extends TextBoxListRestrictionWithCheckboxes {
 
   private List<String> commandRestrictions = new ArrayList<>();
 
@@ -28,6 +28,8 @@ public class UnitCommandRestriction extends TextBoxListRestriction {
       "Normal-rec",
     };
     this.comboboxlabel = "Units to match:";
+    this.leftCheckboxLabel = "Match all commands";
+    this.rightCheckboxLabel = "Check mount commands";
     this.textFieldLabel = "Command to add:";
     this.textfieldDefaultText = "#flying";
   }
@@ -42,6 +44,8 @@ public class UnitCommandRestriction extends TextBoxListRestriction {
     ) res.commandRestrictions.add(chosen.getModel().getElementAt(i));
 
     res.comboselection = this.comboselection;
+    res.isLeftCheckboxMarked = this.isLeftCheckboxMarked;
+    res.isRightCheckboxMarked = this.isRightCheckboxMarked;
     return res;
   }
 
@@ -73,17 +77,38 @@ public class UnitCommandRestriction extends TextBoxListRestriction {
   }
 
   private boolean checkUnit(Unit u) {
-    for (String str : commandRestrictions) {
-      Command oc = Command.parse(str);
-      for (Command c : u.getCommands()) {
-        if (
-          c.command.equals(oc.command) && (oc.args.isEmpty() || c.equals(oc))
-        ) {
-          return true;
-        }
-      }
+    List<Command> unitCommands = u.getCommands();
+    List<Command> requiredCommands = commandRestrictions.stream().map(str -> Command.parse(str)).toList();
+
+    if (this.shouldCheckMountCommands()) {
+      unitCommands.addAll(u.getMountCommands());
     }
-    return false;
+
+    if (this.shouldMatchAllCommands()) {
+      return requiredCommands.stream().allMatch(reqCommand -> {
+        return unitCommands.stream().anyMatch(unitCommand -> {
+          return unitCommand.command.equals(reqCommand.command) &&
+            (reqCommand.args.isEmpty() || unitCommand.equals(reqCommand));
+        });
+      });
+    }
+
+    else {
+      return requiredCommands.stream().anyMatch(reqCommand -> {
+        return unitCommands.stream().anyMatch(unitCommand -> {
+          return unitCommand.command.equals(reqCommand.command) &&
+            (reqCommand.args.isEmpty() || unitCommand.equals(reqCommand));
+        });
+      });
+    }
+  }
+
+  private Boolean shouldMatchAllCommands() {
+    return this.isLeftCheckboxMarked;
+  }
+
+  private Boolean shouldCheckMountCommands() {
+    return this.isRightCheckboxMarked;
   }
 
   @Override
