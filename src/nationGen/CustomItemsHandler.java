@@ -9,6 +9,7 @@ import java.util.Optional;
 import nationGen.items.CustomItem;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
+import nationGen.misc.ResourceStorage;
 
 /**
  *
@@ -20,19 +21,21 @@ import nationGen.misc.Command;
  */
 public class CustomItemsHandler {
 
-  private List<CustomItem> chosenCustomItems; // List of items used by natgen in current runthrough.
+  private ResourceStorage<CustomItem> customItemStorage = new ResourceStorage<>(CustomItem.class);
   private List<CustomItem> customItems; // Superset of chosenCustomItems. Has all generated custom items + some which are cached.
+  private List<CustomItem> chosenCustomItems; // List of items used by natgen in current runthrough.
   private IdHandler idHandler; // Local ref of id handler to generate new IDs when fresh custom item needs a new ID.
   private Dom3DB weapondb; // Local ref of weapondb to remove nationgen dependency.
   private Dom3DB armordb; // Local ref of armordb to remove nationgen dependency.
 
   public CustomItemsHandler(
-    List<CustomItem> existingItems,
+    NationGen nationGen,
     Dom3DB weapondb,
     Dom3DB armordb
   ) {
     chosenCustomItems = new ArrayList<>();
-    customItems = existingItems;
+    customItemStorage.load(nationGen, "./data/items/custom/index.txt");
+    customItems = customItemStorage.getAllValues();
     idHandler = null;
     this.weapondb = weapondb;
     this.armordb = armordb;

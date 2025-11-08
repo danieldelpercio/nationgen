@@ -2,7 +2,6 @@ package nationGen.nation.startarmy;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.stream.Collectors;
 
 import com.elmokki.Generic;
@@ -13,7 +12,6 @@ import nationGen.misc.Command;
 import nationGen.misc.Tags;
 import nationGen.nation.Nation;
 import nationGen.nation.pd.Militia;
-import nationGen.nation.pd.PDProvinceType;
 import nationGen.nation.pd.PDUnitType;
 import nationGen.units.LeadershipType;
 import nationGen.units.Unit;
@@ -135,7 +133,7 @@ public class StartArmy {
       throw new IllegalStateException(
         "Expected " +
         NUMBER_OF_START_ARMY_UNIT_TYPES +
-        " types of units for the nation's starting army; instead only got" +
+        " types of units for the nation's starting army; instead only got " +
         this.armyUnits.size()
       );
     }
@@ -171,17 +169,17 @@ public class StartArmy {
     Unit firstArmyUnit;
     Unit secondArmyUnit;
 
-    // Try to make both units different from each other, even if sometimes
-    // unforted and forted PD units end up having the same unit selected
     for (PDUnitType basicType : pdUnitTypes) {
       firstArmyUnit = this.militia.getMilitiaUnit(basicType);
+      selectedUnits.add(0, firstArmyUnit);
 
       for (PDUnitType fortType : fortPdUnitTypes) {
         secondArmyUnit = this.militia.getMilitiaUnit(fortType);
+        selectedUnits.add(1, secondArmyUnit);
 
+        // Try to make both units different from each other, even if sometimes
+        // unforted and forted PD units end up having the same unit selected
         if (firstArmyUnit.hashCode() != secondArmyUnit.hashCode()) {
-          selectedUnits.add(firstArmyUnit);
-          selectedUnits.add(secondArmyUnit);
           break;
         }
       }

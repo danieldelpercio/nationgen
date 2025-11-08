@@ -206,7 +206,7 @@ Loads sacred filters from given definition set
 Loads elite filters from given definition set
 
 #magicitems <set>
-Loads magici tems (for sacreds etc) from given definition set
+Loads magic items (for sacreds etc) from given definition set
 
 #epithet_era_names <set>
 Loads epithet parts from given definition set
@@ -293,7 +293,7 @@ Loads sacred filters from given definition set
 Loads elite filters from given definition set
 
 #magicitems <set>
-Loads magici tems (for sacreds etc) from given definition set
+Loads magic items (for sacreds etc) from given definition set
 
 
 #magicpriority <path> <number>

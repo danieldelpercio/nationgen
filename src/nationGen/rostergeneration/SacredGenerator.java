@@ -339,9 +339,9 @@ public class SacredGenerator extends TroopGenerator {
   }
 
   private void customizeWeaponry(Unit unit, int power) {
-    List<MagicItem> magicItems = ChanceIncHandler.retrieveFilters(
+    List<MagicItem> weaponEnchantments = ChanceIncHandler.retrieveFilters(
       "magicitems",
-      "defaultprimary",
+      "magicweapons_default",
       assets.magicitems,
       unit.pose,
       unit.race
@@ -355,7 +355,7 @@ public class SacredGenerator extends TroopGenerator {
     // Check if main weapon should get customized
     if (getsCustomWeapon(unit, mainWeapon, 1, false) == true) {
       // Customize main weapon and get the cost of it
-      int powerCost = customizeWeapon(unit, "weapon", power, magicItems);
+      int powerCost = customizeWeapon(unit, "weapon", power, weaponEnchantments);
 
       // Spend the power cost. Only relevant for whether bonus or offhand is also customized
       power -= powerCost;
@@ -364,7 +364,7 @@ public class SacredGenerator extends TroopGenerator {
     // Check if bonus weapon should get customized
     if (getsCustomWeapon(unit, bonusWeapon, 0.25, power > 1) == true) {
       // Customize bonus weapon and get the cost of it
-      int powerCost = customizeWeapon(unit, "bonusweapon", power, magicItems);
+      int powerCost = customizeWeapon(unit, "bonusweapon", power, weaponEnchantments);
 
       // Spend the power cost. Only relevant for whether offhand is also customized
       power -= powerCost;
@@ -378,7 +378,7 @@ public class SacredGenerator extends TroopGenerator {
     // Check if offhand weapon should get customized
     if (getsCustomWeapon(unit, offhandWeapon, 0.25, power > 1) == true) {
       // Customize offhand weapon
-      customizeWeapon(unit, "offhand", power, magicItems);
+      customizeWeapon(unit, "offhand", power, weaponEnchantments);
     }
   }
 
@@ -397,7 +397,7 @@ public class SacredGenerator extends TroopGenerator {
     );
   }
 
-  private int customizeWeapon(Unit unit, String slot, int power, List<MagicItem> magicItems) {
+  private int customizeWeapon(Unit unit, String slot, int power, List<MagicItem> weaponEnchantments) {
     double powerUpChances = 1 - random.nextDouble();
     Item weapon = unit.getSlot(slot);
 
@@ -412,7 +412,7 @@ public class SacredGenerator extends TroopGenerator {
         power,
         // TODO: tie this powerUpChance to something, rather than being fully random?
         powerUpChances,
-        magicItems
+        weaponEnchantments
       );
 
     if (possibleWeapon.isPresent() == false) {

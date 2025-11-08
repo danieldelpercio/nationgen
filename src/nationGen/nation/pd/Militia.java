@@ -201,7 +201,7 @@ public class Militia {
 
   public Unit getWallUnit() {
     if (this.wallUnit == null) {
-      this.wallUnit = this.generateWallUnit(true);
+      this.wallUnit = this.generateWallUnit(false);
     }
 
     return this.wallUnit;
@@ -217,7 +217,7 @@ public class Militia {
 
   public Unit getGateUnit() {
     if (this.gateUnit == null) {
-      this.gateUnit = this.generateGateUnit(true);
+      this.gateUnit = this.generateGateUnit(false);
     }
 
     return this.gateUnit;
@@ -551,7 +551,7 @@ public class Militia {
     }
 
     // Try to get unit
-    Unit unit = selectWallUnit(candidateUnits);
+    Unit unit = selectDefenderUnit(candidateUnits);
 
     // Failsafe: Just get something
     if (unit == null) {
@@ -563,40 +563,10 @@ public class Militia {
         candidateUnits.addAll(nation.combineTroopsToList("montagtroops"));
       }
 
-      unit = selectWallUnit(candidateUnits);
+      unit = selectDefenderUnit(candidateUnits);
     }
 
     return unit;
-  }
-
-  /**
-   * Out of a given list of units, selects the best suited to be the wall defense.
-   * @param units
-   * @return
-   */
-  private Unit selectWallUnit(List<Unit> units) {
-    double totalRes = 0;
-    double totalGold = 0;
-    for (Unit u : units) {
-      totalRes += u.getResCost(true);
-      totalGold += u.getGoldCost();
-    }
-    double exclusionGoldCost = (totalGold / units.size());
-    double exclusionResCost = (totalRes / units.size());
-
-    Unit best = units.get(0);
-    double bestscore = scoreForMilitia(best, exclusionResCost, exclusionGoldCost);
-    for (Unit u : units) {
-      double score =
-        scoreForMilitia(u, exclusionResCost, exclusionGoldCost) *
-        ((u.getCommandValue("#castledef", 0) + 1));
-      if (bestscore >= score) {
-        bestscore = score;
-        best = u;
-      }
-    }
-
-    return best;
   }
 
   /**
@@ -608,7 +578,7 @@ public class Militia {
     List<Unit> candidateUnits = nation.combineTroopsToList("infantry");
     removeUnsuitable(isMontagAllowed, candidateUnits);
 
-    Unit unit = selectGateUnit(candidateUnits);
+    Unit unit = selectDefenderUnit(candidateUnits);
 
     // Failsafe: Just get something
     if (unit == null) {
@@ -620,20 +590,24 @@ public class Militia {
         candidateUnits.addAll(nation.combineTroopsToList("montagtroops"));
       }
 
-      unit = selectGateUnit(candidateUnits);
+      unit = selectDefenderUnit(candidateUnits);
     }
 
     return unit;
   }
   
   /**
-   * Out of a given list of units, selects the best suited to be the gate guards.
+   * Out of a given list of units, selects the best suited to be castle defense.
    * @param units
    * @return
    */
-  private Unit selectGateUnit(List<Unit> units) {
+  private Unit selectDefenderUnit(List<Unit> units) {
     double totalRes = 0;
     double totalGold = 0;
+
+    if (units.size() == 0) {
+      return null;
+    }
 
     for (Unit u : units) {
       totalRes += u.getResCost(true);

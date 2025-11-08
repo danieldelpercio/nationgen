@@ -86,11 +86,7 @@ public class NationGen {
     loadDom3DB();
     System.out.println("done!");
     System.out.print("Loading definitions... ");
-    customItemsHandler = new CustomItemsHandler(
-      Item.readFile(this, "./data/items/customitems.txt", CustomItem.class),
-      weapondb,
-      armordb
-    );
+    customItemsHandler = new CustomItemsHandler(this, weapondb, armordb);
     assets = new NationGenAssets();
     assets.load(this);
     //		assets.loadRaces("./data/races/races.txt", this); // ugh.  Looks like *somehow* assets is circularly depended in races.
