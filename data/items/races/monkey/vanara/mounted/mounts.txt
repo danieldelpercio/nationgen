@@ -1856,7 +1856,7 @@
 #newitem
 #id "black_tiger_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/black_tiger_armored_lightbronze.png
+#sprite /graphics/mounts/standard/black_tiger_armored_light_bronze.png
 #armor
 #offsetx -4
 #offsety 4
@@ -1878,7 +1878,7 @@
 #newitem
 #id "black_tiger_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/black_tiger_armored_light.png
+#sprite /graphics/mounts/standard/black_tiger_armored_light_scale.png
 #armor
 #offsetx -4
 #offsety 4
@@ -1900,7 +1900,7 @@
 #newitem
 #id "black_tiger_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/black_tiger_armored_bronzescale.png
+#sprite /graphics/mounts/standard/black_tiger_armored_mail_bronze.png
 #armor
 #offsetx -4
 #offsety 4
@@ -1921,7 +1921,7 @@
 #newitem
 #id "black_tiger_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/black_tiger_armored_scale.png
+#sprite /graphics/mounts/standard/black_tiger_armored_mail.png
 #armor
 #offsetx -4
 #offsety 4
@@ -1942,7 +1942,7 @@
 #newitem
 #id "black_tiger_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/black_tiger_armored_scale.png
+#sprite /graphics/mounts/standard/black_tiger_armored_mail.png
 #armor
 #offsetx -4
 #offsety 4

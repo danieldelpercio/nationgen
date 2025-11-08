@@ -975,7 +975,6 @@
 #command "#copystats 2018"
 #command "#magicboost 53 -5"
 #command "#name 'Occidental Caveman'"
-#command "#armor 44"
 #command "#gcost 40"
 #command "#rcost 2"
 #mount
@@ -989,7 +988,6 @@
 #command "#fireres 15"
 #command "#hp 29"
 #command "#mr 9"
-#command "#armor 44"
 #command "#gcost 50"
 #command "#rcost 3"
 #mount
