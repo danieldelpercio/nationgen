@@ -60,7 +60,7 @@
 #newitem
 #id oh_bronzedagger
 #gameid 674
-#sprite graphics/ichtyid/weapon/bronze_dagger.png
+#sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #offsetx 18
 #offsety 13
 #theme "bronze"
@@ -71,7 +71,7 @@
 #newitem
 #id oh_coralclub
 #gameid 45
-#sprite graphics/ichtyid/weapon/coral_club_oh.png
+#sprite /graphics/ichtyid/weapon/coral_club_oh.png
 #offsetx 11
 #offsety 6
 #theme "coral"
@@ -95,7 +95,7 @@
 #newitem
 #id oh_ coralshortsword
 #gameid coralshortsword
-#sprite graphics/ichtyid/weapon/coral_shortsword_oh.png
+#sprite /graphics/ichtyid/weapon/coral_shortsword_oh.png
 #offsetx 13
 #offsety 6
 #theme "coral"
@@ -106,7 +106,7 @@
 #newitem
 #id offhandshortsword_bronze
 #gameid 645
-#sprite graphics/ichtyid/weapon/bronze_shortsword_oh.png
+#sprite /graphics/ichtyid/weapon/bronze_shortsword_oh.png
 #offsetx 12
 #offsety 6
 #theme "bronze"

@@ -24,12 +24,13 @@
 #recolormask /graphics/monkey/vanara_base_old_imperial_recolormask.png
 #command "#mr 9"
 #command "#animal"
-#command "#mountmnr 'vanara_lorica_segmentata_bearer'"
+#command "#mountmnr 'vanara_bearer'"
 #command "#nofmounts 4"
 #command "#bonusspells 1"
 -- 1 head, 1 body, 4 miscs
 #command "#itemslots 4005888"
 #command "#gcost +10"
+#barding 99
 #eliteversion "vanara_gold_lorica_segmentata_bearer_palanquin"
 #subrace vanara
 #subraceprefix vanara
@@ -47,12 +48,13 @@
 #recolormask /graphics/monkey/vanara_base_old_imperial_recolormask.png
 #command "#mr 9"
 #command "#animal"
-#command "#mountmnr 'vanara_gold_lorica_segmentata_bearer'"
+#command "#mountmnr 'vanara_bearer'"
 #command "#nofmounts 4"
 #command "#bonusspells 1"
 -- 1 head, 1 body, 4 miscs
 #command "#itemslots 4005888"
 #command "#gcost +10"
+#barding 99
 #subrace vanara
 #subraceprefix vanara
 #theme "imperial"
@@ -69,12 +71,13 @@
 #recolormask /graphics/monkey/vanara_base_old_imperial_recolormask.png
 #command "#mr 9"
 #command "#animal"
-#command "#mountmnr 'vanara_imperial_plate_bearer'"
+#command "#mountmnr 'vanara_bearer'"
 #command "#nofmounts 4"
 #command "#bonusspells 1"
 -- 1 head, 1 body, 4 miscs
 #command "#itemslots 4005888"
 #command "#gcost +10"
+#barding 14
 #eliteversion "vanara_gold_imperial_plate_bearer_palanquin"
 #subrace vanara
 #subraceprefix vanara
@@ -92,12 +95,13 @@
 #recolormask /graphics/monkey/vanara_base_old_imperial_recolormask.png
 #command "#mr 9"
 #command "#animal"
-#command "#mountmnr 'vanara_gold_imperial_plate_bearer'"
+#command "#mountmnr 'vanara_bearer'"
 #command "#nofmounts 4"
 #command "#bonusspells 1"
 -- 1 head, 1 body, 4 miscs
 #command "#itemslots 4005888"
 #command "#gcost +10"
+#barding 14
 #subrace vanara
 #subraceprefix vanara
 #theme "imperial"
@@ -114,12 +118,13 @@
 #recolormask /graphics/monkey/vanara_base_old_imperial_recolormask.png
 #command "#mr 9"
 #command "#animal"
-#command "#mountmnr 'vanara_samurai_armor_bearer'"
+#command "#mountmnr 'vanara_bearer'"
 #command "#nofmounts 4"
 #command "#bonusspells 1"
 -- 1 head, 1 body, 4 miscs
 #command "#itemslots 4005888"
 #command "#gcost +10"
+#barding 129
 #subrace vanara
 #subraceprefix vanara
 #theme "oriental"
@@ -136,12 +141,13 @@
 #recolormask /graphics/monkey/vanara_base_old_imperial_recolormask.png
 #command "#mr 9"
 #command "#animal"
-#command "#mountmnr 'vanara_ancestor_cuirass_bearer'"
+#command "#mountmnr 'vanara_bearer'"
 #command "#nofmounts 4"
 #command "#bonusspells 1"
 -- 1 head, 1 body, 4 miscs
 #command "#itemslots 4005888"
 #command "#gcost +10"
+#barding 154
 #eliteversion "vanara_ancestor_armor_bearer_palanquin"
 #subrace vanara
 #subraceprefix vanara
@@ -161,12 +167,13 @@
 #recolormask /graphics/monkey/vanara_base_old_imperial_recolormask.png
 #command "#mr 9"
 #command "#animal"
-#command "#mountmnr 'vanara_ancestor_armor_bearer'"
+#command "#mountmnr 'vanara_bearer'"
 #command "#nofmounts 4"
 #command "#bonusspells 1"
 -- 1 head, 1 body, 4 miscs
 #command "#itemslots 4005888"
 #command "#gcost +10"
+#barding 146
 #subrace vanara
 #subraceprefix vanara
 #theme "oriental"

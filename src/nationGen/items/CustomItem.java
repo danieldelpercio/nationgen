@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+
 import nationGen.NationGen;
 import nationGen.entities.MagicItem;
 import nationGen.misc.Arg;
@@ -14,24 +16,23 @@ public class CustomItem extends Item {
 
   private List<Command> customItemCommands = new ArrayList<>();
   public Item olditem = null;
-
-  public CustomItem getCopy() {
-    CustomItem item = this.getCustomItemCopy();
-    item.olditem = this.olditem;
-
-    for (Command command : customItemCommands) {
-      item.customItemCommands.add(command.copy());
-    }
-
-    return item;
-  }
-
   public MagicItem magicItem = null;
 
   public CustomItem(NationGen nationGen) {
     super(nationGen);
     this.customItemCommands.add(new Command("#rcost", new Arg(0)));
     this.customItemCommands.add(new Command("#def", new Arg(0)));
+  }
+
+  public CustomItem(CustomItem customItem) {
+    super(customItem);
+    this.customItemCommands = new ArrayList<>(customItem.customItemCommands)
+      .stream()
+      .map(c -> new Command(c))
+      .collect(Collectors.toList());
+
+    this.olditem = (customItem.olditem != null) ? new Item(customItem.olditem) : null;
+    this.magicItem = (customItem.magicItem != null) ? new MagicItem(customItem.magicItem) : null;
   }
 
   public Optional<Command> getCustomCommand(String commandName) {
@@ -240,7 +241,7 @@ public class CustomItem extends Item {
           map.put("res", command.args.get(0).get());
           break;
         case "#name":
-          if (this.armor) {
+          if (this.isArmor()) {
             map.put("armorname", command.args.get(0).get());
           } else {
             map.put("weapon_name", command.args.get(0).get());
@@ -265,7 +266,7 @@ public class CustomItem extends Item {
   public List<String> writeLines() {
     List<String> lines = new ArrayList<>();
 
-    if (armor) {
+    if (this.isArmor()) {
       lines.add("#newarmor " + id);
     }
 
@@ -287,7 +288,7 @@ public class CustomItem extends Item {
     CustomItem customItem = new CustomItem(nationGen);
 
     // Minimal valid weapon customItemCommands. Might get overwritten below if already exist
-    if (item.armor == false) {
+    if (item.isArmor() == false) {
       customItem.setCustomCommand("#att", 0);
       customItem.setCustomCommand("#len", 0);
       customItem.setCustomCommand("#dmg", 0);
@@ -304,7 +305,6 @@ public class CustomItem extends Item {
     customItem.basechance = item.basechance;
     customItem.renderslot = item.renderslot;
     customItem.renderprio = item.renderprio;
-    customItem.armor = item.armor;
     customItem.olditem = item;
 
     return customItem;

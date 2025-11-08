@@ -9,7 +9,7 @@
 #offsety -11
 #offsetx -3
 #armor
-#define "#mountmnr 'black_dog_mount'"
+#mountmnr "black_dog_mount"
 #eliteversion barghest
 #theme "fae"
 #theme "austral"
@@ -32,7 +32,8 @@
 #offsety -11
 #offsetx -3
 #armor
-#define "#mountmnr 'black_dog_leather_barding_mount'"
+#mountmnr "black_dog_mount"
+#barding 251
 #eliteversion barghest
 #theme "fae"
 #theme "austral"
@@ -54,7 +55,7 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/wolf.png
 #armor
-#define "#mountmnr 'wolf_mount'"
+#mountmnr "wolf_mount"
 #offsety -8
 #offsetx -2
 #theme "primitive"
@@ -81,7 +82,8 @@
 #gameid -1
 #sprite /graphics/hoburg/mounts/wolf.png
 #armor
-#define "#mountmnr 'wolf_leather_barding_mount'"
+#mountmnr "wolf_mount"
+#barding 251
 #offsety -8
 #offsetx -2
 #theme "primitive"
@@ -110,7 +112,7 @@
 #sprite /graphics/hoburg/mounts/hawk.png
 #armor
 #needs overlay hawkoverlay
-#define "#mountmnr 'great_hawk_mount'"
+#mountmnr "great_hawk_mount"
 #offsety 30
 #offsetx 26
 #theme "primitive"
@@ -137,7 +139,8 @@
 #sprite /graphics/hoburg/mounts/hawk.png
 #armor
 #needs overlay hawkoverlay
-#define "#mountmnr 'great_hawk_leather_barding_mount'"
+#mountmnr "great_hawk_mount"
+#barding 251
 #offsety 30
 #offsetx 26
 #theme "primitive"
@@ -168,7 +171,7 @@
 #offsetx 30
 #needs overlay giant_bat_overlay
 #needs legs pants2
-#define "#mountmnr 'giant_bat_mount'"
+#mountmnr "giant_bat_mount"
 #description "The giant bat fight until the end of the battle if the rider perishes"
 #theme "primitive"
 #theme "occidental"
@@ -198,7 +201,8 @@
 #offsetx 30
 #needs overlay giant_bat_overlay
 #needs legs pants2
-#define "#mountmnr 'giant_bat_leather_barding_mount'"
+#mountmnr "giant_bat_mount"
+#barding 251
 #description "The giant bat fight until the end of the battle if the rider perishes"
 #theme "primitive"
 #theme "occidental"
@@ -223,9 +227,9 @@
 #newitem
 #id "deer"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer.png
 #armor
-#define "#mountmnr 'deer_mount'"
+#mountmnr "deer_mount"
 #offsety -14
 #offsetx 0
 #theme "primitive"
@@ -249,9 +253,10 @@
 #newitem
 #id "deer_leather_barding"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer_armored_leather.png
 #armor
-#define "#mountmnr 'deer_leather_barding_mount'"
+#mountmnr "deer_mount"
+#barding 251
 #offsety -14
 #offsetx 0
 #theme "primitive"
@@ -279,7 +284,7 @@
 #sprite /graphics/mounts/standard/red_ant.png
 #needs overlay red_ant_overlay
 #armor
-#define "#mountmnr 'red_ant_mount'"
+#mountmnr "red_ant_mount"
 #description "If the rider dies, the ant will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety -4
@@ -304,7 +309,8 @@
 #sprite /graphics/mounts/standard/red_ant.png
 #needs overlay red_ant_overlay
 #armor
-#define "#mountmnr 'red_ant_leather_barding_mount'"
+#mountmnr "red_ant_mount"
+#barding 251
 #description "If the rider dies, the ant will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety -4
@@ -330,7 +336,7 @@
 #sprite /graphics/mounts/standard/swan.png
 #needs overlay swan_overlay
 #armor
-#define "#mountmnr 'swan_mount'"
+#mountmnr "swan_mount"
 #description "If the rider dies, the swan will carry on fighting until the end of the battle."
 #offsetx 0
 #offsety -4
@@ -359,7 +365,8 @@
 #sprite /graphics/mounts/standard/swan.png
 #needs overlay swan_overlay
 #armor
-#define "#mountmnr 'swan_leather_barding_mount'"
+#mountmnr "swan_mount"
+#barding 251
 #description "If the rider dies, the swan will carry on fighting until the end of the battle."
 #offsetx 0
 #offsety -4
@@ -389,7 +396,7 @@
 #sprite /graphics/mounts/standard/black_swan.png
 #needs overlay black_swan_overlay
 #armor
-#define "#mountmnr 'black_swan_mount'"
+#mountmnr "black_swan_mount"
 #offsetx 0
 #offsety -4
 #theme "swan"
@@ -411,7 +418,8 @@
 #sprite /graphics/mounts/standard/black_swan_armored_leather.png
 #needs overlay black_swan_overlay
 #armor
-#define "#mountmnr 'black_swan_leather_barding_mount'"
+#mountmnr "black_swan_mount"
+#barding 251
 #offsetx 0
 #offsety -4
 #theme "swan"
@@ -433,7 +441,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/giant_rat.png
 #armor
-#define "#mountmnr 'giant_rat_mount'"
+#mountmnr "giant_rat_mount"
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #offsetx 4
 #offsety -13
@@ -458,7 +466,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/giant_rat.png
 #armor
-#define "#mountmnr 'giant_rat_leather_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 251
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #offsetx 4
 #offsety -13
@@ -485,7 +494,7 @@
 #sprite /graphics/mounts/standard/elephant_dwarf.png
 #needs overlay elephant_dwarf_overlay
 #armor
-#define "#mountmnr 'dwarf_elephant_mount'"
+#mountmnr "dwarf_elephant_mount"
 #theme "elephant"
 #theme "primitive"
 #theme "austral"
@@ -506,7 +515,7 @@
 #offsety -22
 #offsetx 6
 #armor
-#define "#mountmnr 'unicorn_mount'"
+#mountmnr "unicorn_mount"
 #define "#gcost -5"
 #theme "fae"
 #theme "elite"
@@ -528,8 +537,9 @@
 #offsety -22
 #offsetx 6
 #armor
-#define "#mountmnr 'unicorn_gossamer_barding_mount'"
+#mountmnr "unicorn_mount"
 #define "#gcost -5"
+#barding 274
 #theme "fae"
 #theme "elite"
 #theme "boreal"
@@ -551,7 +561,7 @@
 #offsetx 30
 #offsety 36
 #armor
-#define "#mountmnr 'black_unicorn_mount'"
+#mountmnr "black_unicorn_mount"
 #define "#gcost -5"
 #theme "fae"
 #theme "elite"
@@ -573,8 +583,9 @@
 #offsetx 30
 #offsety 36
 #armor
-#define "#mountmnr 'black_unicorn_gossamer_barding_mount'"
+#mountmnr "black_unicorn_mount"
 #define "#gcost -5"
+#barding 274
 #theme "fae"
 #theme "elite"
 #theme "boreal"
@@ -592,11 +603,11 @@
 #newitem
 #id "cu_sidhe"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe.png
 #offsety -22
 #offsetx -3
 #armor
-#define "#mountmnr 'cu_sidhe_mount'"
+#mountmnr "cu_sidhe_mount"
 #theme "fae"
 #theme "austral"
 #theme "boreal"
@@ -612,11 +623,12 @@
 #newitem
 #id "cu_sidhe_gossamer_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_gossamer.png
 #offsety -22
 #offsetx -3
 #armor
-#define "#mountmnr 'cu_sidhe_gossamer_barding_mount'"
+#mountmnr "cu_sidhe_mount"
+#barding 274
 #theme "fae"
 #theme "austral"
 #theme "boreal"
@@ -637,7 +649,7 @@
 #offsety -22
 #offsetx -3
 #armor
-#define "#mountmnr 'barghest_mount'"
+#mountmnr "barghest_mount"
 #theme "fae"
 #theme "elite"
 #theme "austral"
@@ -659,7 +671,8 @@
 #offsety -22
 #offsetx -3
 #armor
-#define "#mountmnr 'barghest_gossamer_barding_mount'"
+#mountmnr "barghest_mount"
+#barding 274
 #theme "fae"
 #theme "elite"
 #theme "austral"
@@ -681,7 +694,7 @@
 #sprite /graphics/hoburg/mounts/pigasus.png
 #armor
 #needs overlay pigasus_overlay
-#define "#mountmnr 'pigasus_mount'"
+#mountmnr "pigasus_mount"
 #offsety -12
 #offsetx 1
 #theme "boar"
@@ -702,7 +715,8 @@
 #sprite /graphics/hoburg/mounts/pigasus.png
 #armor
 #needs overlay pigasus_overlay
-#define "#mountmnr 'pigasus_leather_barding_mount'"
+#mountmnr "pigasus_mount"
+#barding 251
 #offsety -12
 #offsetx 1
 #theme "boar"
@@ -728,7 +742,7 @@
 #offsety 32
 #offsetx 30
 #needs overlay ozelotl_overlay
-#define "#mountmnr 'ozelotl_mount'"
+#mountmnr "ozelotl_mount"
 #description "The ozelotl will fight until the end of the battle if the rider perishes"
 #theme "primitive"
 #theme "occidental"
@@ -749,7 +763,7 @@
 #offsety 31
 #offsetx 31
 #needs overlay hellspawn_overlay
-#define "#mountmnr 'hellspawn_mount'"
+#mountmnr "hellspawn_mount"
 #define "#enc 15"
 #description "The hellspawn will fight until the end of the battle if the rider perishes"
 #theme "abysian"
@@ -766,7 +780,7 @@
 #armor
 #offsety -12
 #offsetx 1
-#define "#mountmnr 'gloso_mount'"
+#mountmnr "gloso_mount"
 #theme "abysian"
 #theme "boar"
 #tag "animal boar"

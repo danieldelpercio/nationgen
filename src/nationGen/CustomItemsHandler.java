@@ -1,6 +1,8 @@
 package nationGen;
 
 import com.elmokki.Dom3DB;
+import com.elmokki.Generic;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -43,7 +45,7 @@ public class CustomItemsHandler {
    */
   private void PopulateDB() {
     customItems.forEach((CustomItem ci) -> {
-      if (ci.armor) {
+      if (ci.isArmor()) {
         armordb.addToMap(ci.name, ci.getHashMap());
       } else {
         weapondb.addToMap(ci.name, ci.getHashMap());
@@ -78,27 +80,25 @@ public class CustomItemsHandler {
     CustomItem customItem = null;
     for (CustomItem ci : customItems) {
       if (ci.name.equals(name) && !chosenCustomItems.contains(ci)) {
-        customItem = ci.getCopy();
+        customItem = new CustomItem(ci);
         break;
       }
     }
 
     if (customItem == null) {
-      System.out.println(
-        "WARNING: No custom item named " + name + " was found!"
+      throw new IllegalArgumentException(
+        "CustomItemsHandler error: No custom item named " + name + " was found!"
       );
-      return "-1";
     }
 
     if (idHandler != null) {
-      if (customItem.armor) {
+      if (customItem.isArmor()) {
         customItem.id = idHandler.nextArmorId() + "";
       } else {
         customItem.id = idHandler.nextWeaponId() + "";
       }
     } else {
-      System.out.println("ERROR: idHandler was not initialized!");
-      customItem.id = "-1";
+      throw new IllegalArgumentException("CustomItemsHandler error: idHandler was not initialized!");
     }
 
     customItem.getCustomCommand("#secondaryeffect")
@@ -110,10 +110,10 @@ public class CustomItemsHandler {
     chosenCustomItems.add(customItem);
     //this.customitems.remove(customItem);
 
-    if (!customItem.armor) {
-      weapondb.addToMap(customItem.id, customItem.getHashMap());
-    } else {
+    if (!customItem.isArmor()) {
       armordb.addToMap(customItem.id, customItem.getHashMap());
+    } else {
+      weapondb.addToMap(customItem.id, customItem.getHashMap());
     }
 
     return customItem.id;
@@ -155,5 +155,9 @@ public class CustomItemsHandler {
       }
     }
     return lines;
+  }
+
+  static public Boolean isIdResolved(String itemId) {
+    return Generic.isNumeric(itemId);
   }
 }

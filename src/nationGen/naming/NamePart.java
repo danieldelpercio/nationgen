@@ -10,6 +10,7 @@ import nationGen.magic.MagicPath;
 import nationGen.misc.Arg;
 import nationGen.misc.Args;
 import nationGen.misc.Command;
+import nationGen.misc.FileUtil;
 import nationGen.units.Unit;
 
 public class NamePart extends Filter {
@@ -109,7 +110,7 @@ public class NamePart extends Filter {
   }
 
   public static NamePart fromLine(String line, NationGen ng) {
-    if (line.startsWith("-") || line.equals("")) return null;
+    if (FileUtil.isLineComment(line) || line.isBlank()) return null;
 
     NamePart part = new NamePart(ng);
     List<String> args = Generic.parseArgs(line);

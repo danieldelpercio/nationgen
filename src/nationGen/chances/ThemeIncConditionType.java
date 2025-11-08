@@ -107,7 +107,7 @@ public enum ThemeIncConditionType {
       return d -> {
         if (d.f instanceof Item) {
           Item i = (Item) d.f;
-          boolean ferrous = i.armor
+          boolean ferrous = i.isArmor()
             ? (d.nationGen.armordb.GetInteger(i.id, "ferrous", 0) == 1)
             : (d.nationGen.weapondb.GetInteger(i.id, "ironweapon", 0) == 1);
           return ferrous != not;
@@ -127,7 +127,7 @@ public enum ThemeIncConditionType {
       return d -> {
         if (d.f instanceof Item) {
           Item i = (Item) d.f;
-          if (!i.armor) {
+          if (i.isWeapon()) {
             boolean slash =
               d.nationGen.weapondb.GetInteger(i.id, "dt_slash", 0) == 1;
             boolean blunt =
@@ -161,7 +161,7 @@ public enum ThemeIncConditionType {
         if (d.f instanceof Item) {
           Item i = (Item) d.f;
 
-          if (i.armor && !i.slot.equals("offhand")) {
+          if (i.isArmor() && !i.slot.equals("offhand")) {
             int prot = d.nationGen.armordb.GetInteger(i.id, "prot", 0);
             return (prot >= target) != (not ^ below);
           }
@@ -182,7 +182,7 @@ public enum ThemeIncConditionType {
         if (d.f instanceof Item) {
           Item i = (Item) d.f;
 
-          if (i.armor && !i.slot.equals("offhand")) {
+          if (i.isArmor() && !i.slot.equals("offhand")) {
             int enc = d.nationGen.armordb.GetInteger(i.id, "enc", 0);
             return (enc >= target) != (not ^ below);
           }
@@ -204,7 +204,7 @@ public enum ThemeIncConditionType {
         if (d.f instanceof Item) {
           Item i = (Item) d.f;
 
-          if (i.armor) {
+          if (i.isArmor()) {
             int value = d.nationGen.armordb.GetInteger(i.id, attribute);
             return (value >= target) != (not ^ below);
           }
@@ -226,7 +226,7 @@ public enum ThemeIncConditionType {
         if (d.f instanceof Item) {
           Item i = (Item) d.f;
 
-          if (!i.armor) {
+          if (i.isWeapon()) {
             int value = d.nationGen.weapondb.GetInteger(i.id, attribute);
             return (value >= target) != (not ^ below);
           }

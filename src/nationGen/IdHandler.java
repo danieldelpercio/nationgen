@@ -71,7 +71,7 @@ public class IdHandler {
 
   public void loadFile(String filename) {
     for (String line : FileUtil.readLines(filename)) {
-      if (line.length() == 0 || line.startsWith("-")) continue;
+      if (line.isBlank() || FileUtil.isLineComment(line)) continue;
 
       List<String> args = parseLine(line);
       String command = args.get(0);

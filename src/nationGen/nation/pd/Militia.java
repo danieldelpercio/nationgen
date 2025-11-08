@@ -697,7 +697,7 @@ public class Militia {
         this.nation.nationid +
         " (primary race: "+
         this.nation.races.get(0).name +
-        ") does not have any suitable units for militia. As a fallback, all of its units will be used as candidates, but consider adding more unit poses to the race");
+        ") does not have any suitable units for militia. As a fallback, all of its units will be used as candidates, but consider adding suitable unit poses to the race");
     }
   }
 

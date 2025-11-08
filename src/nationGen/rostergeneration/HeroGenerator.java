@@ -262,7 +262,7 @@ public class HeroGenerator {
     Race r = null;
     while (r == null) {
       if (n.random.nextDouble() < 0.05 && assets.races.size() > 2) {
-        List<Race> races = new ArrayList<>(assets.races);
+        List<Race> races = new ArrayList<>(assets.races.getAllValues());
         races.removeAll(n.races);
         r = chandler.handleChanceIncs(races).getRandom(n.random);
 

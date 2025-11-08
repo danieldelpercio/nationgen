@@ -12,6 +12,12 @@ public class Tags {
 
   private HashMap<String, List<Args>> tagValues = new HashMap<>();
 
+  public Tags() {};
+
+  public Tags(Tags tags) {
+    this.tagValues = new HashMap<>(tags.tagValues);
+  }
+
   private List<Args> computeArgsList(String name) {
     return this.tagValues.computeIfAbsent(name, n -> new ArrayList<>());
   }

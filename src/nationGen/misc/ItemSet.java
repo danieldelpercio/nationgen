@@ -140,7 +140,7 @@ public class ItemSet extends ArrayList<Item> {
 
     for (Item item : this) {
       if (item.isCustomIdResolved()) {
-        if (item.id.equals(i.id) && i.armor == item.armor) return true;
+        if (item.id.equals(i.id) && i.isArmor() == item.isArmor()) return true;
       } else if (item.id.equals(i.id) && item.name.equals(i.name)) return true;
     }
     return false;
@@ -295,7 +295,7 @@ public class ItemSet extends ArrayList<Item> {
 
   public ItemSet filterArmor(boolean keepArmor) {
     ItemSet newlist = new ItemSet();
-    for (Item i : this) if (i.armor == keepArmor) newlist.add(i);
+    for (Item i : this) if (i.isArmor() == keepArmor) newlist.add(i);
 
     return newlist;
   }
@@ -326,7 +326,7 @@ public class ItemSet extends ArrayList<Item> {
 
       for (Item i2 : newlist) {
         if (
-          i2.armor == i.armor &&
+          i2.isArmor() == i.isArmor() &&
           i2.id.equals(i.id) &&
           i.slot.equals(i2.slot) &&
           (i.isCustomIdResolved() || !i.id.equals("-2"))

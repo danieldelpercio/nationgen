@@ -3,14 +3,14 @@
 ---- Horses
 
 #newitem
-#id "horse"
+#id "horse_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_chariot'"
+#mountmnr "horse_chariot"
 #theme "primitive"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -20,14 +20,15 @@
 #enditem
 
 #newitem
-#id "horse_leather_barding"
+#id "horse_leather_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_leather_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 251
 #theme "leather"
 #theme "primitive"
 #tag "chariot"
@@ -38,14 +39,15 @@
 #enditem
 
 #newitem
-#id "horse_light_bronze_barding"
+#id "horse_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_light_bronze_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -56,14 +58,15 @@
 #enditem
 
 #newitem
-#id "horse_light_scale_barding"
+#id "horse_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_light_scale_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -74,14 +77,15 @@
 #enditem
 
 #newitem
-#id "horse_bronze_mail_barding"
+#id "horse_bronze_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_bronze_mail_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 172
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -91,14 +95,15 @@
 #enditem
 
 #newitem
-#id "horse_iron_mail_barding"
+#id "horse_iron_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_iron_mail_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "animal 'horse'"
@@ -108,14 +113,15 @@
 #enditem
 
 #newitem
-#id "horse_cataphract_barding"
+#id "horse_cataphract_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_cataphract_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #tag "chariot"
@@ -126,14 +132,15 @@
 #enditem
 
 #newitem
-#id "horse_bronze_barding"
+#id "horse_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_bronze_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "chariot"
@@ -144,14 +151,15 @@
 #enditem
 
 #newitem
-#id "horse_plate_barding"
+#id "horse_plate_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_bronze.png
 #armor
 #needs overlay 11
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'horse_plate_barding_chariot'"
+#mountmnr "horse_chariot"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -166,14 +174,15 @@
 ---- Lizards
 
 #newitem
-#id "lizard_thick_linen_barding"
+#id "lizard_thick_linen_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_thick_linen_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding thick_linen_barding
 #theme "cloth"
 #theme "primitive"
 #tag "chariot"
@@ -184,14 +193,15 @@
 #enditem
 
 #newitem
-#id "lizard_light_bronze_barding"
+#id "lizard_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_light_bronze_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'lizard'"
@@ -202,14 +212,15 @@
 #enditem
 
 #newitem
-#id "lizard_light_scale_barding"
+#id "lizard_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_light_scale_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "animal 'lizard'"
@@ -220,14 +231,15 @@
 #enditem
 
 #newitem
-#id "lizard_bronze_mail_barding"
+#id "lizard_bronze_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_bronze_mail_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 172
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'lizard'"
@@ -237,14 +249,15 @@
 #enditem
 
 #newitem
-#id "lizard_iron_mail_barding"
+#id "lizard_iron_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_iron_mail_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "animal 'lizard'"
@@ -254,14 +267,15 @@
 #enditem
 
 #newitem
-#id "lizard_bronze_barding"
+#id "lizard_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_bronze_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "chariot"
@@ -272,14 +286,15 @@
 #enditem
 
 #newitem
-#id "lizard_barding"
+#id "lizard_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard.png
 #armor
 #needs overlay 12
 #offsetx 51
 #offsety -10
-#define "#mountmnr 'lizard_barding_chariot'"
+#mountmnr "lizard_chariot"
+#barding 289
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -294,14 +309,14 @@
 ---- Boars
 
 #newitem
-#id "boar"
+#id "boar_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_chariot'"
+#mountmnr "boar_chariot"
 #theme "primitive"
 #tag "chariot"
 #tag "animal 'boar'"
@@ -311,14 +326,15 @@
 #enditem
 
 #newitem
-#id "boar_light_bronze_barding"
+#id "boar_light_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot_armored_light_bronze.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_light_bronze_barding_chariot'"
+#mountmnr "boar_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'boar'"
@@ -328,14 +344,15 @@
 #enditem
 
 #newitem
-#id "boar_light_scale_barding"
+#id "boar_light_scale_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot_armored_light_scale.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_light_scale_barding_chariot'"
+#mountmnr "boar_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "animal 'boar'"
@@ -345,14 +362,15 @@
 #enditem
 
 #newitem
-#id "boar_bronze_mail_barding"
+#id "boar_bronze_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot_armored_mail_bronze.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_bronze_mail_barding_chariot'"
+#mountmnr "boar_chariot"
+#barding 172
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'boar'"
@@ -362,14 +380,15 @@
 #enditem
 
 #newitem
-#id "boar_iron_mail_barding"
+#id "boar_iron_mail_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot_armored_mail.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_iron_mail_barding_chariot'"
+#mountmnr "boar_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "animal 'boar'"
@@ -379,14 +398,15 @@
 #enditem
 
 #newitem
-#id "boar_cataphract_barding"
+#id "boar_cataphract_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot_armored_cataphract.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_cataphract_barding_chariot'"
+#mountmnr "boar_chariot"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -398,14 +418,15 @@
 #enditem
 
 #newitem
-#id "boar_bronze_barding"
+#id "boar_bronze_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot_armored_bronze.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_bronze_barding_chariot'"
+#mountmnr "boar_chariot"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "chariot"
@@ -416,14 +437,15 @@
 #enditem
 
 #newitem
-#id "boar_plate_barding"
+#id "boar_plate_barding_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_chariot_armored_plate.png
 #armor
 #needs overlay 10
 #offsetx 55
 #offsety -8
-#define "#mountmnr 'boar_plate_barding_chariot'"
+#mountmnr "boar_chariot"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -438,7 +460,7 @@
 ---- Camels
 
 #newitem
-#id "camel"
+#id "camel_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -447,7 +469,7 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_chariot'"
+#mountmnr "camel_chariot"
 #theme "primitive"
 #tag "chariot"
 #tag "animal 'camel'"
@@ -457,7 +479,7 @@
 #enditem
 
 #newitem
-#id "camel_light_bronze_barding"
+#id "camel_light_bronze_barding_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -466,7 +488,8 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_light_bronze_barding_chariot'"
+#mountmnr "camel_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'camel'"
@@ -476,7 +499,7 @@
 #enditem
 
 #newitem
-#id "camel_light_scale_barding"
+#id "camel_light_scale_barding_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -485,7 +508,8 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_light_scale_barding_chariot'"
+#mountmnr "camel_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "animal 'camel'"
@@ -495,7 +519,7 @@
 #enditem
 
 #newitem
-#id "camel_bronze_mail_barding"
+#id "camel_bronze_mail_barding_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -504,7 +528,8 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_bronze_mail_barding_chariot'"
+#mountmnr "camel_chariot"
+#barding 172
 #theme "bronze"
 #tag "chariot"
 #tag "animal 'camel'"
@@ -514,7 +539,7 @@
 #enditem
 
 #newitem
-#id "camel_iron_mail_barding"
+#id "camel_iron_mail_barding_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -523,7 +548,8 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_iron_mail_barding_chariot'"
+#mountmnr "camel_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "animal 'camel'"
@@ -533,7 +559,7 @@
 #enditem
 
 #newitem
-#id "camel_cataphract_barding"
+#id "camel_cataphract_barding_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -542,7 +568,8 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_cataphract_barding_chariot'"
+#mountmnr "camel_chariot"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -554,7 +581,7 @@
 #enditem
 
 #newitem
-#id "camel_bronze_barding"
+#id "camel_bronze_barding_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -563,7 +590,8 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_bronze_barding_chariot'"
+#mountmnr "camel_chariot"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "chariot"
@@ -574,7 +602,7 @@
 #enditem
 
 #newitem
-#id "camel_plate_barding"
+#id "camel_plate_barding_chariot"
 #chanceinc "nationcommand #idealcold above -1 *0"
 #chanceinc "nationcommand #idealcold below -1 *2"
 #gameid -1
@@ -583,7 +611,8 @@
 #needs overlay chariot_camel_iron
 #offsetx 67
 #offsety -8
-#define "#mountmnr 'camel_plate_barding_chariot'"
+#mountmnr "camel_chariot"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"

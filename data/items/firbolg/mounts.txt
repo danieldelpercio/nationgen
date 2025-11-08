@@ -7,7 +7,7 @@
 #armor
 #offsety 1
 #needs overlay 1
-#define "#mountmnr 'riding_horse_mount'"
+#mountmnr "riding_horse_mount"
 #theme "light"
 #tag "animal horse"
 #tag "maxprot 11"
@@ -22,7 +22,8 @@
 #armor
 #offsety 1
 #needs overlay 1
-#define "#mountmnr 'riding_horse_leather_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #theme "primitive"
@@ -39,7 +40,8 @@
 #armor
 #offsety 1
 #needs overlay 1
-#define "#mountmnr 'riding_horse_light_bronze_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 264
 #theme "light"
 #theme "bronze"
 #tag "animal horse"
@@ -55,7 +57,8 @@
 #armor
 #offsety 1
 #needs overlay 1
-#define "#mountmnr 'riding_horse_light_scale_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 252
 #theme "light"
 #theme "iron"
 #tag "animal horse"
@@ -71,7 +74,8 @@
 #armor
 #offsety 1
 #needs overlay 1
-#define "#mountmnr 'riding_horse_bronze_mail_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 172
 #theme "bronze"
 #tag "animal horse"
 #epicness 0.25
@@ -86,7 +90,8 @@
 #armor
 #offsety 1
 #needs overlay 1
-#define "#mountmnr 'riding_horse_iron_mail_barding_mount'"
+#mountmnr "riding_horse_mount"
+#barding 172
 #theme "iron"
 #tag "animal horse"
 #epicness 0.25
@@ -100,7 +105,8 @@
 #sprite /graphics/mounts/standard/armoredhorse1.png
 #armor
 #needs overlay 2
-#define "#mountmnr 'destrier_plate_barding_mount'"
+#mountmnr "destrier_mount"
+#barding 254
 #theme "heavy"
 #theme "iron"
 #tag "animal horse"
@@ -119,7 +125,8 @@
 #sprite /graphics/mounts/standard/armoredhorse2.png
 #armor
 #needs overlay armoredhorse2overlay
-#define "#mountmnr 'war_horse_leather_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #theme "primitive"
@@ -138,7 +145,8 @@
 #sprite /graphics/mounts/standard/armoredhorse1a.png
 #armor
 #needs overlay armoredhorse1aoverlay
-#define "#mountmnr 'war_horse_light_scale_barding_mount_2'"
+#mountmnr "war_horse_mount"
+#barding 252
 #theme "bronze"
 #tag "animal horse"
 #tag "name commander 'knight'"
@@ -154,7 +162,8 @@
 #sprite /graphics/mounts/standard/armoredhorse2a.png
 #armor
 #needs overlay armoredhorse2overlay
-#define "#mountmnr 'war_horse_light_scale_barding_mount_1'"
+#mountmnr "war_horse_mount"
+#barding 252
 #theme "iron"
 #tag "animal horse"
 #tag "name commander 'knight'"
@@ -171,7 +180,8 @@
 #sprite /graphics/mounts/standard/armoredhorse2a.png
 #armor
 #needs overlay armoredhorse2overlay
-#define "#mountmnr 'war_horse_iron_mail_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 172
 #theme "heavy"
 #theme "bronze"
 #tag "animal horse"
@@ -190,7 +200,8 @@
 #sprite /graphics/mounts/standard/armoredhorse2a.png
 #armor
 #needs overlay armoredhorse2overlay
-#define "#mountmnr 'war_horse_iron_mail_barding_mount'"
+#mountmnr "war_horse_mount"
+#barding 172
 #theme "heavy"
 #theme "iron"
 #tag "animal horse"
@@ -211,7 +222,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/fayhorse.png
 #armor
-#define "#mountmnr 'fay_horse_mount'"
+#mountmnr "fay_horse_mount"
 #tag "animal horse"
 #tag "minprot 6"
 #tag "maxprot 16"
@@ -224,7 +235,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/fayhorse.png
 #armor
-#define "#mountmnr 'fay_steed_mount'"
+#mountmnr "fay_steed_mount"
 #theme "heavy"
 #tag "animal horse"
 #tag "minprot 12"
@@ -240,7 +251,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/fayhorse.png
 #armor
-#define "#mountmnr 'unseelie_steed_mount'"
+#mountmnr "unseelie_steed_mount"
 #theme "heavy"
 #tag "animal horse"
 #tag "minprot 12"
@@ -264,7 +275,7 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_mount'"
+#mountmnr "pegasus_mount"
 #theme "flying"
 #tag "animal pegasus"
 #tag "guaranteedprefix pegasus"
@@ -281,7 +292,8 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_light_bronze_barding_mount'"
+#mountmnr "pegasus_mount"
+#barding 264
 #theme "flying"
 #theme "bronze"
 #tag "animal pegasus"
@@ -293,14 +305,15 @@
 #enditem
 
 #newitem
-#id "pegasus_light_scale_barding_mount"
+#id "pegasus_mount"
 #gameid -1
 #sprite /graphics/mounts/standard/pegasus.png
 #armor
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_light_scale_barding_mount'"
+#mountmnr "pegasus_mount"
+#barding 252
 #theme "flying"
 #theme "iron"
 #tag "animal pegasus"
@@ -319,7 +332,8 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_iron_mail_barding_mount'"
+#mountmnr "pegasus_mount"
+#barding 172
 #theme "flying"
 #theme "iron"
 #tag "animal pegasus"
@@ -338,7 +352,8 @@
 #offsetx 28
 #offsety 64
 #needs overlay 8
-#define "#mountmnr 'pegasus_silver_barding_mount'"
+#mountmnr "pegasus_mount"
+#barding 255
 #theme "flying"
 #theme "heavy"
 #tag "animal pegasus"
@@ -358,7 +373,7 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'peryton_mount'"
+#mountmnr "peryton_mount"
 #theme "flying"
 #tag "animal peryton"
 #tag "name commander windlord"
@@ -375,7 +390,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'peryton_light_bronze_barding_mount'"
+#mountmnr "peryton_mount"
+#barding 264
 #theme "flying"
 #theme "bronze"
 #tag "animal peryton"
@@ -394,7 +410,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'peryton_light_scale_barding_mount'"
+#mountmnr "peryton_mount"
+#barding 252
 #theme "flying"
 #theme "iron"
 #tag "animal peryton"
@@ -413,7 +430,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'peryton_gossamer_barding_mount'"
+#mountmnr "peryton_mount"
+#barding 274
 #theme "flying"
 #tag "animal peryton"
 #tag "name commander windlord"
@@ -432,7 +450,7 @@
 #gameid -1
 #sprite /graphics/mounts/standard/unicorn.png
 #armor
-#define "#mountmnr 'unicorn_mount'"
+#mountmnr "unicorn_mount"
 #tag "animal unicorn"
 #tag "guaranteedprefix unicorn"
 #tag "minprot 6"
@@ -446,7 +464,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/unicorn.png
 #armor
-#define "#mountmnr 'unicorn_gossamer_barding_mount'"
+#mountmnr "unicorn_mount"
+#barding 274
 #tag "animal unicorn"
 #tag "guaranteedprefix unicorn"
 #tag "minprot 6"
@@ -461,7 +480,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/unicorn.png
 #armor
-#define "#mountmnr 'unicorn_silver_barding_mount'"
+#mountmnr "unicorn_mount"
+#barding 255
 #tag "animal unicorn"
 #tag "guaranteedprefix unicorn"
 #tag "minprot 6"
@@ -478,7 +498,7 @@
 #armor
 #offsetx 27
 #offsety 60
-#define "#mountmnr 'black_unicorn_mount'"
+#mountmnr "black_unicorn_mount"
 #tag "animal 'black unicorn'"
 #tag "guaranteedprefix 'black unicorn'"
 #tag "minprot 6"
@@ -495,7 +515,8 @@
 #armor
 #offsetx 27
 #offsety 60
-#define "#mountmnr 'black_unicorn_gossamer_barding_mount'"
+#mountmnr "black_unicorn_mount"
+#barding 274
 #tag "animal 'black unicorn'"
 #tag "guaranteedprefix 'black unicorn'"
 #tag "minprot 6"
@@ -513,7 +534,8 @@
 #armor
 #offsetx 27
 #offsety 60
-#define "#mountmnr 'black_unicorn_silver_barding_mount'"
+#mountmnr "black_unicorn_mount"
+#barding 255
 #tag "animal 'black unicorn'"
 #tag "guaranteedprefix 'black unicorn'"
 #tag "minprot 6"
@@ -529,11 +551,11 @@
 #newitem
 #id "cu_sidhe"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe.png
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'cu_sidhe_mount'"
+#mountmnr "cu_sidhe_mount"
 #tag "animal dog"
 #tag "guaranteedprefix 'cu sidhe'"
 #tag "minprot 5"
@@ -545,11 +567,12 @@
 #newitem
 #id "cu_sidhe_light_bronze_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_light_bronze.png
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'cu_sidhe_light_bronze_barding_mount'"
+#mountmnr "cu_sidhe_mount"
+#barding 264
 #theme "bronze"
 #tag "animal dog"
 #tag "guaranteedprefix 'cu sidhe'"
@@ -563,11 +586,12 @@
 #newitem
 #id "cu_sidhe_light_scale_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_light_scale.png
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'cu_sidhe_light_scale_barding_mount'"
+#mountmnr "cu_sidhe_mount"
+#barding 252
 #theme "iron"
 #tag "animal dog"
 #tag "guaranteedprefix 'cu sidhe'"
@@ -579,13 +603,14 @@
 #enditem
 
 #newitem
-#id "cu_sidhe_bronze_mail_barding_mount"
+#id "cu_sidhe_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_mail_bronze.png
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'cu_sidhe_mail_barding_mount'"
+#mountmnr "cu_sidhe_mount"
+#barding 172
 #theme "bronze"
 #tag "animal dog"
 #tag "guaranteedprefix 'cu sidhe'"
@@ -598,11 +623,12 @@
 #newitem
 #id "cu_sidhe_iron_mail_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_mail.png
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'cu_sidhe_mail_barding_mount'"
+#mountmnr "cu_sidhe_mount"
+#barding 172
 #theme "iron"
 #tag "animal dog"
 #tag "guaranteedprefix 'cu sidhe'"
@@ -615,11 +641,12 @@
 #newitem
 #id "cu_sidhe_gossamer_barding"
 #gameid -1
-#sprite /graphics/sidhe/mounts/cusidhe.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_gossamer.png
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'cu_sidhe_gossamer_barding_mount'"
+#mountmnr "cu_sidhe_mount"
+#barding 274
 #tag "animal dog"
 #tag "guaranteedprefix 'cu sidhe'"
 #tag "minprot 5"
@@ -636,7 +663,7 @@
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'barghest_mount'"
+#mountmnr "barghest_mount"
 #tag "animal dog"
 #tag "guaranteedprefix barghest"
 #tag "minprot 5"
@@ -652,7 +679,8 @@
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'barghest_light_bronze_barding_mount'"
+#mountmnr "barghest_mount"
+#barding 264
 #theme "bronze"
 #tag "animal dog"
 #tag "guaranteedprefix barghest"
@@ -664,13 +692,14 @@
 #enditem
 
 #newitem
-#id "barghest_light_scale_barding_mount"
+#id "barghest_light_scale_barding"
 #gameid -1
 #sprite /graphics/hoburg/mounts/barghest_light_scale_barding.png
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'barghest_light_scale_barding_mount'"
+#mountmnr "barghest_mount"
+#barding 252
 #theme "iron"
 #tag "animal dog"
 #tag "guaranteedprefix barghest"
@@ -688,7 +717,8 @@
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'barghest_bronze_mail_barding_mount'"
+#mountmnr "barghest_mount"
+#barding 172
 #theme "bronze"
 #tag "animal dog"
 #tag "guaranteedprefix barghest"
@@ -705,7 +735,8 @@
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'barghest_mail_barding_mount'"
+#mountmnr "barghest_mount"
+#barding 172
 #theme "iron"
 #tag "animal dog"
 #tag "guaranteedprefix barghest"
@@ -722,8 +753,8 @@
 #armor
 #offsetx -5
 #offsety 2
-#define "#mountmnr 'barghest_gossamer_barding_mount'"
-#theme "iron"
+#mountmnr "barghest_mount"
+#barding 274
 #tag "animal dog"
 #tag "guaranteedprefix barghest"
 #tag "minprot 5"
@@ -743,7 +774,7 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'elk_mount'"
+#mountmnr "elk_mount"
 #description "Leaves an elk behind when the rider dies"
 #tag "animal elk"
 #tag "guaranteedprefix elk"
@@ -760,7 +791,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'elk_light_bronze_barding_mount'"
+#mountmnr "elk_mount"
+#barding 264
 #description "Leaves an elk behind when the rider dies"
 #theme "bronze"
 #tag "animal elk"
@@ -779,7 +811,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'elk_light_scale_barding_mount'"
+#mountmnr "elk_mount"
+#barding 252
 #description "Leaves an elk behind when the rider dies"
 #theme "iron"
 #tag "animal elk"
@@ -798,7 +831,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'elk_iron_mail_barding_mount'"
+#mountmnr "elk_mount"
+#barding 172
 #description "Leaves an elk behind when the rider dies"
 #theme "bronze"
 #tag "animal elk"
@@ -816,7 +850,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'elk_iron_mail_barding_mount'"
+#mountmnr "elk_mount"
+#barding 172
 #description "Leaves an elk behind when the rider dies"
 #theme "iron"
 #tag "animal elk"
@@ -834,7 +869,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'elk_gossamer_barding_mount'"
+#mountmnr "elk_mount"
+#barding 274
 #description "Leaves an elk behind when the rider dies"
 #tag "animal elk"
 #tag "guaranteedprefix elk"

@@ -10,8 +10,9 @@
 #armor
 #offsetx 74
 #offsety -3
-#define "#mountmnr 'two_lizard_light_scale_barding_chariot'"
+#mountmnr "two_lizard_chariot"
 #define "#twiceborn 3196"
+#barding 252
 #tag "chariot"
 #tag "animal 'lizard'"
 #tag "noble"
@@ -28,7 +29,8 @@
 #armor
 #offsetx 74
 #offsety -3
-#define "#mountmnr 'two_lizard_iron_mail_barding_chariot'"
+#mountmnr "two_lizard_chariot"
+#barding 172
 #define "#twiceborn 3196"
 #tag "chariot"
 #tag "animal 'lizard'"
@@ -47,8 +49,9 @@
 #armor
 #offsetx 74
 #offsety -3
-#define "#mountmnr 'two_lizard_cataphract_barding_chariot'"
+#mountmnr "two_lizard_chariot"
 #define "#twiceborn 3196"
+#barding 253
 #tag "chariot"
 #tag "animal 'lizard'"
 #tag "noble"
@@ -66,8 +69,9 @@
 #armor
 #offsetx 74
 #offsety -3
-#define "#mountmnr 'two_lizard_barding_chariot'"
+#mountmnr "two_lizard_chariot"
 #define "#twiceborn 3196"
+#barding 289
 #tag "chariot"
 #tag "animal 'lizard'"
 #tag "noble"

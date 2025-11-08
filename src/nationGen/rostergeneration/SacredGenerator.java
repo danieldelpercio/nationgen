@@ -254,7 +254,7 @@ public class SacredGenerator extends TroopGenerator {
     )
       .map(unit::getSlot)
       .filter(Objects::nonNull)
-      .filter(i -> !i.armor)
+      .filter(Item::isWeapon)
       .anyMatch(i -> i.tags.containsName("guaranteedmagic"));
 
     // If unit is meant to get a magic weapon already, or we lucked into it,
@@ -491,7 +491,7 @@ public class SacredGenerator extends TroopGenerator {
       template.power = power;
       template.sacred = sacred;
       unitGen.handleMontagUnits(u, template, "montagsacreds");
-      u.caponly = true;
+      u.setCapOnly(true);
     }
     
     else {
@@ -731,7 +731,7 @@ public class SacredGenerator extends TroopGenerator {
     );
 
     if (random.nextDouble() < u.capOnlyChance) {
-      u.caponly = true;
+      u.setCapOnly(true);
     }
   }
 
@@ -1029,7 +1029,7 @@ public class SacredGenerator extends TroopGenerator {
       u.pose.getItems("offhand") != null &&
       u.pose.getItems("offhand").possibleItems() > 0 &&
       isDualWieldEligible(u) &&
-      (u.getSlot("offhand") == null || u.getSlot("offhand").armor)
+      (u.getSlot("offhand") == null || u.getSlot("offhand").isArmor())
     ) {
       ItemSet items = fetchItems(u, "offhand", sacred, epicchance);
       ItemSet weaps = items.filterArmor(false);

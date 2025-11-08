@@ -115,7 +115,7 @@ public class ShapeChangeUnit extends Unit {
         otherForm.pose.getCommands()
       );
       for (Command c : clist) {
-        if (assets.secondShapeRacePoseCommands.contains(c.command)) {
+        if (assets.isRacePoseCommandInheritableByShape(c)) {
           sf.commands.add(c);
           //handleCommand(commands, c);
         }
@@ -133,7 +133,7 @@ public class ShapeChangeUnit extends Unit {
         // Add filters
         for (Command c : f.getCommands()) {
           if (
-            assets.secondShapeNonMountCommands.contains(c.command) &&
+            assets.isCommandInheritableByShape(c) &&
             !thisForm.tags.containsName("mount")
           ) {
             sf.commands.add(c);
@@ -141,7 +141,7 @@ public class ShapeChangeUnit extends Unit {
           }
 
           if (
-            assets.secondShapeMountCommands.contains(c.command) &&
+            assets.isCommandInheritableByMount(c) &&
             thisForm.tags.containsName("mount")
           ) {
             sf.commands.add(c);
@@ -287,8 +287,8 @@ public class ShapeChangeUnit extends Unit {
     writeBodytypeLine().ifPresent(lines::add);
 
     // Write weapons and armor
-    lines.addAll(writeWeaponLines());
-    lines.addAll(writeArmorLines());
+    lines.addAll(super.writeWeaponLines(super.getEquippedWeapons()));
+    lines.addAll(super.writeArmorLines(super.getEquippedArmors()));
 
     // Write itemslots if they were skipped before
     if (hasItemSlots) lines.add("#itemslots " + this.getItemSlots());

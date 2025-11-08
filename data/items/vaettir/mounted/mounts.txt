@@ -8,7 +8,7 @@
 #offsety -7
 #offsetx -5
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'wolf_mount'"
+#mountmnr "wolf_mount"
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -27,7 +27,8 @@
 #offsety -7
 #offsetx -5
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'wolf_leather_barding_mount'"
+#mountmnr "wolf_mount"
+#barding 251
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -47,7 +48,8 @@
 #offsety -7
 #offsetx -5
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'wolf_light_scale_barding_mount'"
+#mountmnr "wolf_mount"
+#barding 252
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -67,7 +69,8 @@
 #offsety -7
 #offsetx -5
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'wolf_iron_mail_barding_mount'"
+#mountmnr "wolf_mount"
+#barding 172
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -89,7 +92,7 @@
 #offsetx -3
 #needs overlay direwolf2_overlay
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'dire_wolf_vaetti_mount'"
+#mountmnr "dire_wolf_vaetti_mount"
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -109,7 +112,8 @@
 #offsetx -3
 #needs overlay direwolf2_overlay
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'dire_wolf_vaetti_leather_barding_mount'"
+#mountmnr "dire_wolf_vaetti_mount"
+#barding 251
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -131,7 +135,8 @@
 #offsetx -3
 #needs overlay direwolf2_overlay
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'dire_wolf_vaetti_light_scale_barding_mount'"
+#mountmnr "dire_wolf_vaetti_mount"
+#barding 252
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -153,7 +158,8 @@
 #offsetx -3
 #needs overlay direwolf2_overlay
 #description "If the rider dies, the wolf will continue to fight alongside its Vaetti companions."
-#define "#mountmnr 'dire_wolf_vaetti_iron_mail_barding_mount'"
+#mountmnr "dire_wolf_vaetti_mount"
+#barding 172
 #theme "wolf"
 #theme "wolftotem"
 #theme "totemanimal"
@@ -174,7 +180,7 @@
 #armor
 #offsetx -2
 #offsety -18
-#define "#mountmnr 'great_boar_mount'"
+#mountmnr "great_boar_mount"
 #theme "boar"
 #theme "boartotem"
 #theme "totemanimal"
@@ -192,7 +198,7 @@
 #armor
 #offsetx -2
 #offsety -18
-#define "#mountmnr 'great_boar_mount'"
+#mountmnr "great_boar_mount"
 #theme "boar"
 #theme "boartotem"
 #theme "totemanimal"
@@ -206,11 +212,12 @@
 #newitem
 #id "great_boar_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_light_scale.png
 #armor
 #offsetx -2
 #offsety -18
-#define "#mountmnr 'great_boar_light_scale_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 252
 #theme "boar"
 #theme "boartotem"
 #theme "totemanimal"
@@ -226,11 +233,12 @@
 #newitem
 #id "great_boar_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_mail.png
 #armor
 #offsetx -2
 #offsety -18
-#define "#mountmnr 'great_boar_iron_mail_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 172
 #theme "boar"
 #theme "boartotem"
 #theme "totemanimal"
@@ -252,7 +260,7 @@
 #offsety -20
 #offsetx 0
 #description "Leaves an elk behind when the rider dies"
-#define "#mountmnr 'elk_mount'"
+#mountmnr "elk_mount"
 #define "#stealthy +0"
 #theme "deer"
 #theme "deertotem"
@@ -272,8 +280,9 @@
 #offsety -20
 #offsetx 0
 #description "Leaves an elk behind when the rider dies"
-#define "#mountmnr 'elk_light_scale_barding_mount'"
+#mountmnr "elk_mount"
 #define "#stealthy +0"
+#barding 252
 #theme "deer"
 #theme "deertotem"
 #theme "totemanimal"
@@ -294,8 +303,9 @@
 #offsety -20
 #offsetx 0
 #description "Leaves an elk behind when the rider dies"
-#define "#mountmnr 'elk_iron_mail_barding_mount'"
+#mountmnr "elk_mount"
 #define "#stealthy +0"
+#barding 172
 #theme "heavy"
 #theme "deer"
 #theme "deertotem"
@@ -311,11 +321,11 @@
 #newitem
 #id "deer"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer.png
 #armor
 #offsety -13
 #offsetx -1
-#define "#mountmnr 'deer_mount'"
+#mountmnr "deer_mount"
 #define "#stealthy +0"
 #theme "deer"
 #theme "deertotem"
@@ -329,12 +339,13 @@
 #newitem
 #id "deer_leather_barding"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer_armored_leather.png
 #armor
 #offsety -13
 #offsetx -1
-#define "#mountmnr 'deer_leather_barding_mount'"
+#mountmnr "deer_mount"
 #define "#stealthy +0"
+#barding 251
 #theme "deer"
 #theme "deertotem"
 #theme "totemanimal"
@@ -349,12 +360,13 @@
 #newitem
 #id "deer_light_scale_barding"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer_armored_light_scale.png
 #armor
 #offsety -13
 #offsetx -1
-#define "#mountmnr 'deer_light_scale_barding_mount'"
+#mountmnr "deer_mount"
 #define "#stealthy +0"
+#barding 252
 #theme "deer"
 #theme "deertotem"
 #theme "totemanimal"
@@ -369,12 +381,13 @@
 #newitem
 #id "deer_iron_mail_barding"
 #gameid -1
-#sprite /graphics/hoburg/mounts/deer.png
+#sprite /graphics/mounts/standard/deer_armored_mail.png
 #armor
 #offsety -13
 #offsetx -1
-#define "#mountmnr 'deer_iron_mail_barding_mount'"
+#mountmnr "deer_mount"
 #define "#stealthy +0"
+#barding 172
 #theme "deer"
 #theme "deertotem"
 #theme "totemanimal"
@@ -395,7 +408,7 @@
 #offsety 30
 #offsetx 25
 #needs overlay hawkoverlay
-#define "#mountmnr 'great_hawk_mount'"
+#mountmnr "great_hawk_mount"
 #theme "specialmount"
 #theme "hawk"
 #theme "hawktotem"
@@ -414,7 +427,8 @@
 #offsety 30
 #offsetx 25
 #needs overlay hawkoverlay
-#define "#mountmnr 'great_hawk_leather_barding_mount'"
+#mountmnr "great_hawk_mount"
+#barding 251
 #theme "specialmount"
 #theme "hawk"
 #theme "hawktotem"
@@ -435,7 +449,8 @@
 #offsety 30
 #offsetx 25
 #needs overlay hawkoverlay
-#define "#mountmnr 'great_hawk_light_scale_barding_mount'"
+#mountmnr "great_hawk_mount"
+#barding 252
 #theme "specialmount"
 #theme "hawk"
 #theme "hawktotem"
@@ -457,7 +472,7 @@
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_mount'"
+#mountmnr "forest_spider_mount"
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
 #define "#gcost -5"
 #theme "spider"
@@ -470,16 +485,17 @@
 #enditem
 
 #newitem
-#id "forest_spider_leather_barding_spider"
+#id "forest_spider_leather_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/spider2.png
 #armor
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_leather_barding_spider_mount'"
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
+#mountmnr "forest_spider_mount"
 #define "#gcost -5"
+#barding 251
 #theme "spider"
 #theme "spidertotem"
 #theme "totemanimal"
@@ -491,14 +507,15 @@
 #enditem
 
 #newitem
-#id "forest_spider_light_scale_spider"
+#id "forest_spider_light_scale"
 #gameid -1
 #sprite /graphics/mounts/standard/spider2.png
 #armor
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_light_scale_spider_mount'"
+#mountmnr "forest_spider_mount"
+#barding 252
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
 #define "#gcost -5"
 #theme "spider"
@@ -512,14 +529,14 @@
 #enditem
 
 #newitem
-#id "forest_spider_iron_mail_barding_spider"
+#id "forest_spider_iron_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/spider2.png
 #armor
 #offsetx 3
 #offsety -2
 #needs overlay spider2_overlay
-#define "#mountmnr 'forest_spider_iron_mail_barding_spider_mount'"
+#mountmnr "forest_spider_mount"
 #description "If the rider dies, the spider will carry on fighting until the end of the battle."
 #define "#gcost -5"
 #theme "spider"
@@ -539,7 +556,7 @@
 #armor
 #offsety -24
 #offsetx -1
-#define "#mountmnr 'great_bear_mount'"
+#mountmnr "great_bear_mount"
 #theme "bear"
 #theme "beartotem"
 #theme "totemanimal"
@@ -557,7 +574,8 @@
 #armor
 #offsety -24
 #offsetx -1
-#define "#mountmnr 'great_bear_light_scale_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 252
 #theme "bear"
 #theme "beartotem"
 #theme "totemanimal"
@@ -576,7 +594,8 @@
 #armor
 #offsety -24
 #offsetx -1
-#define "#mountmnr 'great_bear_iron_mail_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 172
 #theme "bear"
 #theme "beartotem"
 #theme "totemanimal"
@@ -596,7 +615,7 @@
 #sprite /graphics/mounts/standard/bear_small.png
 #armor
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
-#define "#mountmnr 'bear_mount'"
+#mountmnr "bear_mount"
 #offsety -16
 #offsetx -1
 #theme "bear"
@@ -615,7 +634,8 @@
 #sprite /graphics/mounts/standard/bear_small_armored_mail.png
 #armor
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
-#define "#mountmnr 'bear_light_scale_barding_mount'"
+#mountmnr "bear_mount"
+#barding 252
 #offsety -16
 #offsetx -1
 #theme "bear"
@@ -636,7 +656,8 @@
 #sprite /graphics/mounts/standard/bear_small_armored_mail.png
 #armor
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
-#define "#mountmnr 'bear_iron_mail_barding_mount'"
+#mountmnr "bear_mount"
+#barding 172
 #offsety -16
 #offsetx -1
 #theme "bear"
@@ -659,7 +680,7 @@
 #armor
 #offsetx -2
 #offsety -18
-#define "#mountmnr 'white_tiger_mount'"
+#mountmnr "white_tiger_mount"
 #theme "tiger"
 #theme "tigertotem"
 #theme "totemanimal"
@@ -676,7 +697,8 @@
 #armor
 #offsetx -2
 #offsety -18
-#define "#mountmnr 'white_tiger_light_scale_barding_mount'"
+#mountmnr "white_tiger_mount"
+#barding 252
 #theme "tiger"
 #theme "tigertotem"
 #theme "totemanimal"
@@ -696,7 +718,8 @@
 #armor
 #offsetx -2
 #offsety -18
-#define "#mountmnr 'white_tiger_iron_mail_barding_mount'"
+#mountmnr "white_tiger_mount"
+#barding 172
 #theme "tiger"
 #theme "tigertotem"
 #theme "totemanimal"
@@ -717,7 +740,7 @@
 #offsetx 2
 #offsety -16
 #description "If the rider dies, the lion will carry on fighting until the end of the battle."
-#define "#mountmnr 'lion_mount'"
+#mountmnr "lion_mount"
 #theme "specialmount"
 #theme "lion"
 #theme "liontotem"
@@ -736,7 +759,8 @@
 #offsetx 2
 #offsety -16
 #description "If the rider dies, the lion will carry on fighting until the end of the battle."
-#define "#mountmnr 'lion_light_scale_barding_mount'"
+#mountmnr "lion_mount"
+#barding 252
 #theme "specialmount"
 #theme "lion"
 #theme "liontotem"
@@ -757,7 +781,8 @@
 #offsetx 2
 #offsety -16
 #description "If the rider dies, the lion will carry on fighting until the end of the battle."
-#define "#mountmnr 'lion_iron_mail_barding_mount'"
+#mountmnr "lion_mount"
+#barding 172
 #theme "specialmount"
 #theme "lion"
 #theme "liontotem"
@@ -778,7 +803,7 @@
 #armor
 #offsetx 3
 #offsety -11
-#define "#mountmnr 'giant_rat_mount'"
+#mountmnr "giant_rat_mount"
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #theme "rat"
 #theme "rattotem"
@@ -796,7 +821,8 @@
 #armor
 #offsetx 3
 #offsety -11
-#define "#mountmnr 'giant_rat_light_scale_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 252
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #theme "rat"
 #theme "rattotem"
@@ -816,7 +842,8 @@
 #armor
 #offsetx 3
 #offsety -11
-#define "#mountmnr 'giant_rat_iron_mail_barding_mount'"
+#mountmnr "giant_rat_mount"
+#barding 172
 #description "If the rider dies, the rat will carry on fighting until the end of the battle."
 #theme "rat"
 #theme "rattotem"

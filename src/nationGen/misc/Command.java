@@ -22,9 +22,16 @@ public class Command {
     if (Generic.containsSpace(cmd)) {
       throw new IllegalArgumentException("Command name can't contain a space.");
     }
+
     this.command = cmd;
     this.args = args;
     this.comment = comment;
+  }
+
+  public Command(Command commandToCopy) {
+    this.command = commandToCopy.command;
+    this.args = new Args(commandToCopy.args);
+    this.comment = commandToCopy.comment;
   }
 
   /**
@@ -121,6 +128,12 @@ public class Command {
     if (o == null || getClass() != o.getClass()) return false;
     Command command1 = (Command) o;
     return command.equals(command1.command) && args.equals(command1.args);
+  }
+
+  // Tries to match only the base command string, regardless of actual value
+  // i.e. #coldres contains the #coldres 5 command
+  public Boolean contains(Command other) {
+    return this.command.equals(other.command);
   }
 
   @Override

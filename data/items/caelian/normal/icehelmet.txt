@@ -4,7 +4,7 @@
 #chanceinc itemtheme armor ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
 #gameid 29
-#sprite graphics/caelian/helmet/icecap.png
+#sprite /graphics/caelian/helmet/icecap.png
 #eliteversion icehelm_elite
 #armor
 #theme "ice"
@@ -17,7 +17,7 @@
 #chanceinc itemtheme armor ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
 #gameid 124
-#sprite graphics/caelian/helmet/icehelmet.png
+#sprite /graphics/caelian/helmet/icehelmet.png
 #eliteversion icehelm_elite
 #armor
 #theme "ice"
@@ -31,7 +31,7 @@
 #chanceinc itemtheme armor ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
 #gameid 124
-#sprite graphics/caelian/helmet/icehelmet.png
+#sprite /graphics/caelian/helmet/icehelmet.png
 #theme "ice"
 #theme "elite"
 #type ice
@@ -46,7 +46,7 @@
 #chanceinc "personalcommand below #coldres 5 *0"
 #id "icehelmet"
 #gameid icehelmet_full
-#sprite graphics/caelian/helmet/icehelmet_full.png
+#sprite /graphics/caelian/helmet/icehelmet_full.png
 #eliteversion icehelmet_elite
 #armor
 #theme "advanced"
@@ -62,7 +62,7 @@
 #chanceinc "personalcommand below #coldres 5 *0"
 #id "icehelmet_elite"
 #gameid icehelmet_full
-#sprite graphics/caelian/helmet/icehelmet_full.png
+#sprite /graphics/caelian/helmet/icehelmet_full.png
 #theme ice
 #theme "elite"
 #theme "advanced"

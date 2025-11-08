@@ -125,32 +125,27 @@ public class DescriptionReplacer {
     String[] slots = { "weapon", "offhand" };
 
     for (Unit u : units) {
-      for (String str : slots) {
-        Item i = u.getSlot(str);
-        if (i != null && !i.armor && i.isCustomIdResolved()) {
-          if (
-            !n.nationGen.weapondb.GetValue(i.id, "weapon_name").equals("") &&
-            !weapons.contains(
-              n.nationGen.weapondb.GetValue(i.id, "weapon_name")
-            )
-          ) {
-            weapons.add(
-              NameGenerator.addPreposition(
-                n.nationGen.weapondb.GetValue(i.id, "weapon_name").toLowerCase()
-              )
-            );
-            weapons_plural.add(
-              NameGenerator.plural(
-                n.nationGen.weapondb.GetValue(i.id, "weapon_name").toLowerCase()
-              )
-            );
-          } else if (
-            !weapons.contains(
-              n.nationGen.weapondb.GetValue(i.id, "weapon_name")
-            )
-          ) {
-            weapons.add("NOT IN WEAPONDB: " + i.name + " in " + i.slot);
-            weapons_plural.add("NOT IN WEAPONDB: " + i.name + " in " + i.slot);
+      for (String slotName : slots) {
+        Item item = u.getSlot(slotName);
+
+        if (item != null && item.isWeapon() && item.isCustomIdResolved()) {
+          String weaponName = item.getValueFromDb("weapon_name");
+          Boolean weaponNameExistsInDb = weaponName.isBlank() == false;
+
+          if (weaponNameExistsInDb == false) {
+            System.out.println("Weapon id" + item.id + "(weapon name: " + item.name + ") in slot " + slotName + " (unit with pose " + u.pose.getName() + ") has no weapon_name value in the DB");
+            weapons.add("NOT IN WEAPONDB: " + item.name + " in " + item.slot);
+            weapons_plural.add("NOT IN WEAPONDB: " + item.name + " in " + item.slot);
+            continue;
+          }
+
+          if (!weapons.contains(weaponName)) {
+            String lowerCasedName = weaponName.toLowerCase();
+            String preposition = NameGenerator.addPreposition(lowerCasedName);
+            String plural = NameGenerator.plural(lowerCasedName);
+
+            weapons.add(preposition);
+            weapons_plural.add(plural);
           }
         }
       }
@@ -162,23 +157,22 @@ public class DescriptionReplacer {
       for (Unit u : units) {
         for (String slot : slots) {
           Item i = u.getSlot(slot);
-          if (i != null && !i.armor && i.isCustomIdResolved()) {
-            if (
-              !n.nationGen.weapondb.GetValue(i.id, "weapon_name").equals("") &&
-              !weapons.contains(
-                n.nationGen.weapondb.GetValue(i.id, "weapon_name")
-              )
-            ) {
+          if (i != null && i.isWeapon() && i.isCustomIdResolved()) {
+            String weaponName = i.getValueFromDb("weapon_name");
+            Boolean weaponNameExistsInDb = weaponName.isBlank() == false;
+            Boolean isNotInList = !weapons.contains(weaponName);
+
+            if (weaponNameExistsInDb && isNotInList) {
               List<String> tmp = new ArrayList<String>();
 
               if (
-                n.nationGen.weapondb.GetValue(i.id, "dt_blunt").equals("1")
+                i.getValueFromDb("dt_blunt").equals("1")
               ) tmp.add("blunt");
               if (
-                n.nationGen.weapondb.GetValue(i.id, "dt_slash").equals("1")
+                i.getValueFromDb("dt_slash").equals("1")
               ) tmp.add("slashing");
               if (
-                n.nationGen.weapondb.GetValue(i.id, "dt_pierce").equals("1")
+                i.getValueFromDb("dt_pierce").equals("1")
               ) tmp.add("piercing");
 
               for (String str : tmp) if (
@@ -219,7 +213,7 @@ public class DescriptionReplacer {
 
       int prot = 0;
 
-      if (i != null && i.armor && i.isCustomIdResolved()) {
+      if (i != null && i.isArmor() && i.isCustomIdResolved()) {
         prot = n.nationGen.armordb.GetInteger(i.id, "prot", 0);
 
         if (

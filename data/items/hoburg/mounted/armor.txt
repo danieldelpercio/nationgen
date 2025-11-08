@@ -248,7 +248,7 @@
 #id "bronze imperial scale cuirass"
 #gameid 142
 #basechance 0.25
-#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_mounted.png
 #armor
 #theme "bronze"
 #theme "civilized"
@@ -259,7 +259,7 @@
 #newitem
 #id "bronze lorica squamata"
 #gameid 117
-#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_mounted.png
 #armor
 #theme "bronze"
 #theme "imperial"
@@ -269,7 +269,7 @@
 #id "bronze imperial scale hauberk"
 #gameid 136
 #basechance 0.25
-#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_mounted.png
 #armor
 #theme "bronze"
 #theme "civilized"
@@ -280,7 +280,7 @@
 #id "bronze imperial full scale"
 #gameid bronzescale_full
 #basechance 0.25
-#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_mounted.png
 #armor
 #theme "advanced"
 #theme "bronze"
@@ -512,7 +512,7 @@
 #newitem
 #id "imperial bronze plate cuirass"
 #gameid 100
-#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_mounted.png
 #armor
 #theme "advanced"
 #theme "bronze"
@@ -524,7 +524,7 @@
 #newitem
 #id "bronze lorica segmentata"
 #gameid 99
-#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_mounted.png
 #armor
 #theme "bronze"
 #theme "imperial"
@@ -533,7 +533,7 @@
 #newitem
 #id "imperial bronze plate hauberk"
 #gameid 101
-#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_mounted.png
 #armor
 #theme "advanced"
 #theme "bronze"
@@ -545,7 +545,7 @@
 #newitem -- full plate
 #id "imperial bronze full plate"
 #gameid bronzeplate_full
-#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_bronze_mounted.png
+#sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_mounted.png
 #armor
 #theme "advanced"
 #theme "bronze"

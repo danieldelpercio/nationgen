@@ -11,7 +11,7 @@
 #offsetx 1
 #offsety 8
 #needs overlay drafthorse_overlay
-#define "#mountmnr 'steppe_horse_mount'"
+#mountmnr "steppe_horse_mount"
 #theme "light"
 #tag "animal horse"
 #tag "maxprot 12"
@@ -28,7 +28,8 @@
 #offsetx 1
 #offsety 8
 #needs overlay drafthorse_overlay
-#define "#mountmnr 'steppe_horse_leather_barding_mount'"
+#mountmnr "steppe_horse_mount"
+#barding 251
 #theme "light"
 #tag "animal horse"
 #tag "maxprot 12"
@@ -46,8 +47,9 @@
 #offsetx 1
 #offsety 8
 #needs overlay drafthorse_overlay
-#define "#mountmnr 'steppe_horse_light_scale_barding_mount'"
+#mountmnr "steppe_horse_mount"
 #theme "light"
+#barding 252
 #tag "animal horse"
 #epicness 0.25
 #basechance 17
@@ -63,7 +65,8 @@
 #offsetx 1
 #offsety 8
 #needs overlay drafthorse_overlay
-#define "#mountmnr 'steppe_horse_mail_barding_mount'"
+#mountmnr "steppe_horse_mount"
+#barding 172
 #theme "heavy"
 #tag "animal horse"
 #epicness 0.25
@@ -80,7 +83,8 @@
 #offsetx 1
 #offsety 8
 #needs overlay drafthorse_overlay
-#define "#mountmnr 'steppe_horse_cataphract_barding_mount'"
+#mountmnr "steppe_horse_mount"
+#barding 253
 #theme "heavy"
 #tag "animal horse"
 #epicness 0.25
@@ -97,7 +101,8 @@
 #offsetx 1
 #offsety 8
 #needs overlay drafthorse_overlay
-#define "#mountmnr 'steppe_horse_plate_barding_mount'"
+#mountmnr "steppe_horse_mount"
+#barding 254
 #theme "heavy"
 #tag "animal horse"
 #epicness 0.25
@@ -115,7 +120,7 @@
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_mount'"
+#mountmnr "camel_mount"
 #theme "light"
 #tag "animal camel"
 #tag "maxprot 12"
@@ -130,7 +135,8 @@
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_leather_barding_mount'"
+#mountmnr "camel_mount"
+#barding 251
 #theme "light"
 #tag "animal camel"
 #tag "maxprot 12"
@@ -146,8 +152,9 @@
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_light_scale_barding_mount'"
+#mountmnr "camel_mount"
 #theme "light"
+#barding 252
 #tag "animal camel"
 #epicness 0.25
 #basechance 5.6
@@ -161,7 +168,8 @@
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_bronze_mail_barding_mount'"
+#mountmnr "camel_mount"
+#barding 172
 #theme "bronze"
 #tag "animal camel"
 #epicness 0.25
@@ -170,13 +178,14 @@
 #enditem
 
 #newitem
-#id "camel_iron_mail_barding_mount"
+#id "camel_iron_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/camel_armored_mail.png
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_iron_mail_barding_mount'"
+#mountmnr "camel_mount"
+#barding 172
 #tag "animal camel"
 #epicness 0.25
 #basechance 4
@@ -190,7 +199,8 @@
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_cataphract_barding_mount'"
+#mountmnr "camel_mount"
+#barding 253
 #tag "animal camel"
 #epicness 0.25
 #basechance 2.33
@@ -204,7 +214,8 @@
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_bronze_barding_mount'"
+#mountmnr "camel_mount"
+#barding 263
 #tag "animal camel"
 #epicness 0.25
 #basechance 1.66
@@ -218,7 +229,8 @@
 #armor
 #offsetx 3
 #offsety 63
-#define "#mountmnr 'camel_plate_barding_mount'"
+#mountmnr "camel_mount"
+#barding 254
 #tag "animal camel"
 #epicness 0.25
 #basechance 1.66
@@ -235,7 +247,7 @@
 #armor
 #offsetx 30
 #offsety 57
-#define "#mountmnr 'moose_mount'"
+#mountmnr "moose_mount"
 #tag "animal moose"
 #tag "guaranteedprefix moose"
 #tag "minprot 0"
@@ -251,7 +263,8 @@
 #armor
 #offsetx 30
 #offsety 57
-#define "#mountmnr 'moose_leather_barding_mount'"
+#mountmnr "moose_mount"
+#barding 251
 #tag "animal moose"
 #tag "guaranteedprefix moose"
 #tag "minprot 0"
@@ -268,7 +281,8 @@
 #armor
 #offsetx 30
 #offsety 57
-#define "#mountmnr 'moose_light_scale_barding_mount'"
+#mountmnr "moose_mount"
+#barding 252
 #tag "animal moose"
 #tag "guaranteedprefix moose"
 #tag "minprot 0"
@@ -285,7 +299,8 @@
 #armor
 #offsetx 30
 #offsety 57
-#define "#mountmnr 'moose_iron_mail_barding_mount'"
+#mountmnr "moose_mount"
+#barding 172
 #tag "animal moose"
 #tag "guaranteedprefix moose"
 #description "Leaves a moose behind when the rider dies"
@@ -300,7 +315,8 @@
 #armor
 #offsetx 30
 #offsety 57
-#define "#mountmnr 'moose_cataphract_barding_mount'"
+#mountmnr "moose_mount"
+#barding 253
 #tag "animal moose"
 #tag "guaranteedprefix moose"
 #description "Leaves a moose behind when the rider dies"
@@ -315,7 +331,8 @@
 #armor
 #offsetx 30
 #offsety 57
-#define "#mountmnr 'moose_plate_barding_mount'"
+#mountmnr "moose_mount"
+#barding 254
 #tag "animal moose"
 #tag "guaranteedprefix moose"
 #description "Leaves a moose behind when the rider dies"
@@ -331,8 +348,8 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear.png
 #armor
-#define "#mountmnr 'great_bear_mount'"
-#define "#gcost +35"
+#mountmnr "great_bear_mount"
+#define "#gcost +5"
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety 8
@@ -348,8 +365,9 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_small_armored_leather.png
 #armor
-#define "#mountmnr 'bear_leather_barding_mount'"
-#define "#gcost +35"
+#mountmnr "bear_mount"
+#define "#gcost +5"
+#barding 251
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety 8
@@ -366,8 +384,9 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_lightscale.png
 #armor
-#define "#mountmnr 'bear_light_scale_barding_mount'"
-#define "#gcost +35"
+#mountmnr "bear_mount"
+#define "#gcost +5"
+#barding 252
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety 8
@@ -384,8 +403,9 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_cataphract.png
 #armor
-#define "#mountmnr 'bear_iron_mail_barding_mount'"
-#define "#gcost +35"
+#mountmnr "bear_mount"
+#define "#gcost +5"
+#barding 172
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety 8
@@ -402,8 +422,9 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_cataphract.png
 #armor
-#define "#mountmnr 'bear_cataphract_barding_mount'"
-#define "#gcost +35"
+#mountmnr "bear_mount"
+#define "#gcost +5"
+#barding 253
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety 8
@@ -420,8 +441,9 @@
 #gameid -1
 #sprite /graphics/mounts/standard/bear_armored_plate.png
 #armor
-#define "#mountmnr 'bear_plate_barding_mount'"
-#define "#gcost +35"
+#mountmnr "bear_mount"
+#define "#gcost +5"
+#barding 254
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #offsetx 1
 #offsety 8
@@ -443,7 +465,7 @@
 #armor
 #offsetx 35
 #offsety 62
-#define "#mountmnr 'hippo_mount'"
+#mountmnr "hippo_mount"
 #define "#swampsurvival"
 #description "If the rider dies, the hippopotamus will rampage through its companion's slayers before lumbering off the battlefield."
 #theme "heavy"
@@ -459,8 +481,9 @@
 #armor
 #offsetx 35
 #offsety 62
-#define "#mountmnr 'hippo_leather_barding_mount'"
+#mountmnr "hippo_mount"
 #define "#swampsurvival"
+#barding 251
 #description "If the rider dies, the hippopotamus will rampage through its companion's slayers before lumbering off the battlefield."
 #theme "heavy"
 #tag "animal hippo"
@@ -476,8 +499,9 @@
 #armor
 #offsetx 35
 #offsety 62
-#define "#mountmnr 'hippo_light_scale_barding_mount'"
+#mountmnr "hippo_mount"
 #define "#swampsurvival"
+#barding 252
 #description "If the rider dies, the hippopotamus will rampage through its companion's slayers before lumbering off the battlefield."
 #theme "heavy"
 #tag "animal hippo"
@@ -493,8 +517,9 @@
 #armor
 #offsetx 35
 #offsety 62
-#define "#mountmnr 'hippo_mail_barding_mount'"
+#mountmnr "hippo_mount"
 #define "#swampsurvival"
+#barding 172
 #description "If the rider dies, the hippopotamus will rampage through its companion's slayers before lumbering off the battlefield."
 #theme "heavy"
 #tag "animal hippo"
@@ -510,8 +535,9 @@
 #armor
 #offsetx 35
 #offsety 62
-#define "#mountmnr 'hippo_cataphract_barding_mount'"
+#mountmnr "hippo_mount"
 #define "#swampsurvival"
+#barding 253
 #description "If the rider dies, the hippopotamus will rampage through its companion's slayers before lumbering off the battlefield."
 #theme "heavy"
 #tag "animal hippo"
@@ -527,8 +553,9 @@
 #armor
 #offsetx 35
 #offsety 62
-#define "#mountmnr 'hippo_plate_barding_mount'"
+#mountmnr "hippo_mount"
 #define "#swampsurvival"
+#barding 254
 #description "If the rider dies, the hippopotamus will rampage through its companion's slayers before lumbering off the battlefield."
 #theme "heavy"
 #tag "animal hippo"

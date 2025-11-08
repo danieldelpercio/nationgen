@@ -9,7 +9,7 @@
 #armor
 #offsetx 35
 #offsety 33
-#define "#mountmnr 'moose_mount'"
+#mountmnr "moose_mount"
 #description "Leaves a moose behind when the rider dies"
 #tag "animal moose"
 #tag "guaranteedprefix moose"
@@ -23,7 +23,8 @@
 #armor
 #offsetx 35
 #offsety 33
-#define "#mountmnr 'moose_turtle_shell_barding_mount'"
+#mountmnr "moose_mount"
+#barding 137
 #description "Leaves a moose behind when the rider dies"
 #tag "animal moose"
 #tag "guaranteedprefix moose"
@@ -39,7 +40,8 @@
 #armor
 #offsetx 35
 #offsety 33
-#define "#mountmnr 'moose_coral_barding_mount'"
+#mountmnr "moose_mount"
+#barding 190
 #description "Leaves a moose behind when the rider dies"
 #tag "animal moose"
 #tag "guaranteedprefix moose"
@@ -55,7 +57,8 @@
 #armor
 #offsetx 35
 #offsety 33
-#define "#mountmnr 'moose_ice_barding_mount'"
+#mountmnr "moose_mount"
+#barding ice_barding
 #description "Leaves a moose behind when the rider dies"
 #tag "animal moose"
 #tag "guaranteedprefix moose"
@@ -71,7 +74,8 @@
 #armor
 #offsetx 35
 #offsety 33
-#define "#mountmnr 'moose_meteorite_barding_mount'"
+#mountmnr "moose_mount"
+#barding meteorite_barding
 #description "Leaves a moose behind when the rider dies"
 #tag "animal moose"
 #tag "guaranteedprefix moose"
@@ -90,7 +94,7 @@
 #armor
 #offsetx 0
 #offsety -14
-#define "#mountmnr 'elk_mount'"
+#mountmnr "elk_mount"
 #description "Leaves an elk behind when the rider dies"
 #tag "animal elk"
 #tag "guaranteedprefix elk"
@@ -105,7 +109,8 @@
 #armor
 #offsetx 0
 #offsety -14
-#define "#mountmnr 'elk_turtle_shell_barding_mount'"
+#mountmnr "elk_mount"
+#barding 137
 #description "Leaves an elk behind when the rider dies"
 #tag "animal elk"
 #tag "guaranteedprefix elk"
@@ -122,7 +127,8 @@
 #armor
 #offsetx 0
 #offsety -14
-#define "#mountmnr 'elk_coral_barding_mount'"
+#mountmnr "elk_mount"
+#barding 190
 #description "Leaves an elk behind when the rider dies"
 #tag "animal elk"
 #tag "guaranteedprefix elk"
@@ -138,7 +144,8 @@
 #armor
 #offsetx 0
 #offsety -14
-#define "#mountmnr 'elk_ice_barding_mount'"
+#mountmnr "elk_mount"
+#barding ice_barding
 #description "Leaves an elk behind when the rider dies"
 #tag "animal elk"
 #tag "guaranteedprefix elk"
@@ -155,7 +162,8 @@
 #armor
 #offsetx 0
 #offsety -14
-#define "#mountmnr 'elk_meteorite_barding_mount'"
+#mountmnr "elk_mount"
+#barding meteorite_barding
 #description "Leaves an elk behind when the rider dies"
 #tag "animal elk"
 #tag "guaranteedprefix elk"
@@ -173,7 +181,7 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'great_bear_mount'"
+#mountmnr "great_bear_mount"
 #tag "animal bear"
 #tag "name commander beastmaster"
 #tag "guaranteedprefix bear"
@@ -188,7 +196,8 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'great_bear_turtle_shell_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 137
 #tag "animal bear"
 #tag "name commander beastmaster"
 #tag "guaranteedprefix bear"
@@ -205,7 +214,8 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'great_bear_coral_barding_mount'"
+#mountmnr "great_bear_mount"
+#barding 190
 #tag "animal bear"
 #tag "name commander beastmaster"
 #tag "guaranteedprefix bear"
@@ -222,7 +232,7 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'polar_bear_mount'"
+#mountmnr "polar_bear_mount"
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -240,7 +250,8 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'polar_bear_turtle_shell_barding_mount'"
+#mountmnr "polar_bear_mount"
+#barding 137
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -260,7 +271,8 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'polar_bear_coral_barding_mount'"
+#mountmnr "polar_bear_mount"
+#barding 190
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -279,7 +291,8 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'polar_bear_ice_barding_mount'"
+#mountmnr "polar_bear_mount"
+#barding ice_barding
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -298,7 +311,8 @@
 #offsetx -4
 #offsety -19
 #armor
-#define "#mountmnr 'polar_bear_meteorite_barding_mount'"
+#mountmnr "polar_bear_mount"
+#barding meteorite_barding
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -318,7 +332,7 @@
 #offsetx -3
 #offsety -11
 #armor
-#define "#mountmnr 'bear_mount'"
+#mountmnr "bear_mount"
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -334,7 +348,8 @@
 #offsetx -3
 #offsety -11
 #armor
-#define "#mountmnr 'bear_turtle_shell_barding_mount'"
+#mountmnr "bear_mount"
+#barding 137
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -352,7 +367,8 @@
 #offsetx -3
 #offsety -11
 #armor
-#define "#mountmnr 'bear_coral_barding_mount'"
+#mountmnr "bear_mount"
+#barding 190
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #tag "animal bear"
 #tag "name commander beastmaster"
@@ -372,7 +388,7 @@
 #offsetx -4
 #offsety -10
 #armor
-#define "#mountmnr 'cave_cow_mount'"
+#mountmnr "cave_cow_mount"
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -387,7 +403,8 @@
 #offsetx -4
 #offsety -10
 #armor
-#define "#mountmnr 'cave_cow_turtle_shell_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 137
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -404,7 +421,8 @@
 #offsetx -4
 #offsety -10
 #armor
-#define "#mountmnr 'cave_cow_coral_barding_mount'"
+#mountmnr "cave_cow_mount"
+#barding 190
 #description "If the rider dies, the cave cow will carry on fighting until the end of the battle."
 #tag "animal 'cave cow'"
 #tag "guaranteedprefix 'cave cow'"
@@ -419,11 +437,11 @@
 #newitem
 #id "cave_grub"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub.png
 #armor
 #offsetx 38
 #offsety -2
-#define "#mountmnr 'cave_grub_mount'"
+#mountmnr "cave_grub_mount"
 #description "The cave grub will fight until the end of the battle should the rider die"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -438,11 +456,12 @@
 #newitem
 #id "cave_grub_turtle_shell_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_turtle_shell.png
 #armor
 #offsetx 38
 #offsety -2
-#define "#mountmnr 'cave_grub_turtle_shell_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 137
 #description "The cave grub will fight until the end of the battle should the rider die"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -459,11 +478,12 @@
 #newitem
 #id "cave_grub_coral_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_coral.png
 #armor
 #offsetx 38
 #offsety -2
-#define "#mountmnr 'cave_grub_coral_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 190
 #description "The cave grub will fight until the end of the battle should the rider die"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -486,7 +506,7 @@
 #offsety -16
 #armor
 #needs overlay direwolf2_overlay
-#define "#mountmnr 'dire_wolf_mount_2'"
+#mountmnr "dire_wolf_mount_2"
 #description "If the rider dies, the wolf will carry on fighting until the end of the battle."
 #theme "light"
 #tag "animal wolf"
@@ -503,7 +523,8 @@
 #offsety -16
 #armor
 #needs overlay direwolf2_overlay
-#define "#mountmnr 'dire_wolf_turtle_shell_barding_mount_2'"
+#mountmnr "dire_wolf_mount_2"
+#barding 137
 #description "If the rider dies, the wolf will carry on fighting until the end of the battle."
 #theme "light"
 #tag "animal wolf"
@@ -521,7 +542,8 @@
 #offsety -16
 #armor
 #needs overlay direwolf2_overlay
-#define "#mountmnr 'dire_wolf_coral_barding_mount_2'"
+#mountmnr "dire_wolf_mount_2"
+#barding 190
 #description "If the rider dies, the wolf will carry on fighting until the end of the battle."
 #theme "light"
 #tag "animal wolf"
@@ -542,7 +564,7 @@
 #offsetx -3
 #offsety -2
 #needs overlay 6
-#define "#mountmnr 'serpent_mount'"
+#mountmnr "serpent_mount"
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
 #theme "light"
 #tag "animal serpent"
@@ -559,7 +581,8 @@
 #offsetx -3
 #offsety -2
 #needs overlay 6
-#define "#mountmnr 'serpent_turtle_shell_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 137
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -577,7 +600,8 @@
 #offsetx -3
 #offsety -2
 #needs overlay 6
-#define "#mountmnr 'serpent_coral_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 190
 #description "If the rider dies, the serpent will carry on fighting until the end of the battle."
 #theme "light"
 #tag "animal serpent"
@@ -596,7 +620,7 @@
 #armor
 #offsetx -3
 #offsety -11
-#define "#mountmnr 'white_tiger_mount'"
+#mountmnr "white_tiger_mount"
 #theme "specialmount"
 #theme "light"
 #tag "animal tiger"
@@ -614,7 +638,8 @@
 #armor
 #offsetx -3
 #offsety -11
-#define "#mountmnr 'white_tiger_turtle_shell_barding_mount'"
+#mountmnr "white_tiger_mount"
+#barding 137
 #theme "light"
 #theme "primitive"
 #tag "animal tiger"
@@ -633,7 +658,8 @@
 #armor
 #offsetx -3
 #offsety -11
-#define "#mountmnr 'white_tiger_coral_barding_mount'"
+#mountmnr "white_tiger_mount"
+#barding 190
 #theme "light"
 #tag "animal tiger"
 #tag "guaranteedprefix white tiger"
@@ -651,7 +677,8 @@
 #armor
 #offsetx -3
 #offsety -11
-#define "#mountmnr 'white_tiger_ice_barding_mount'"
+#mountmnr "white_tiger_mount"
+#barding ice_barding
 #tag "animal tiger"
 #tag "guaranteedprefix white tiger"
 #theme "specialmount"
@@ -668,7 +695,8 @@
 #armor
 #offsetx -3
 #offsety -11
-#define "#mountmnr 'white_tiger_meteorite_barding_mount'"
+#mountmnr "white_tiger_mount"
+#barding meteorite_barding
 #tag "animal tiger"
 #tag "guaranteedprefix white tiger"
 #theme "specialmount"
@@ -687,7 +715,7 @@
 #sprite /graphics/mounts/standard/seadog.png
 #armor
 #offsety -10
-#define "#mountmnr 'sea_dog_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
@@ -705,8 +733,9 @@
 #sprite /graphics/mounts/standard/seadog.png
 #armor
 #offsety -10
-#define "#mountmnr 'sea_dog_turtle_shell_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 137
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
 #theme "light"
@@ -724,8 +753,9 @@
 #sprite /graphics/mounts/standard/seadog.png
 #armor
 #offsety -10
-#define "#mountmnr 'sea_dog_coral_barding_mount'"
+#mountmnr "sea_dog_mount"
 #define "#swimming"
+#barding 190
 #command "#amphibian"
 #description "The loyal sea dog will continue to fight even if its rider dies."
 #theme "light"
@@ -746,7 +776,7 @@
 #armor
 #offsetx -6
 #offsety -9
-#define "#mountmnr 'jaguar_mount'"
+#mountmnr "jaguar_mount"
 #define "#swimming"
 #description "The jaguar will persist even if the rider dies."
 #theme "specialmount"
@@ -765,8 +795,9 @@
 #armor
 #offsetx -6
 #offsety -9
-#define "#mountmnr 'jaguar_turtle_shell_barding_mount'"
+#mountmnr "jaguar_mount"
 #define "#swimming"
+#barding 137
 #description "The jaguar will persist even if the rider dies."
 #theme "specialmount"
 #theme "light"
@@ -784,8 +815,9 @@
 #armor
 #offsetx -6
 #offsety -9
-#define "#mountmnr 'jaguar_coral_barding_mount'"
+#mountmnr "jaguar_mount"
 #define "#swimming"
+#barding 190
 #description "The jaguar will persist even if the rider dies."
 #theme "specialmount"
 #theme "light"
@@ -802,7 +834,7 @@
 #armor
 #offsetx -6
 #offsety -9
-#define "#mountmnr 'black_jaguar_mount'"
+#mountmnr "black_jaguar_mount"
 #define "#swimming"
 #description "The black jaguar will persist even if the rider dies."
 #theme "specialmount"
@@ -821,8 +853,9 @@
 #armor
 #offsetx -6
 #offsety -9
-#define "#mountmnr 'black_jaguar_turtle_shell_barding_mount'"
+#mountmnr "black_jaguar_mount"
 #define "#swimming"
+#barding 137
 #description "The black jaguar will persist even if the rider dies."
 #theme "specialmount"
 #theme "light"
@@ -840,8 +873,9 @@
 #armor
 #offsetx -6
 #offsety -9
-#define "#mountmnr 'black_jaguar_coral_barding_mount'"
+#mountmnr "black_jaguar_mount"
 #define "#swimming"
+#barding 190
 #description "The black jaguar will persist even if the rider dies."
 #theme "specialmount"
 #theme "light"
@@ -861,7 +895,7 @@
 #armor
 #offsetx 2
 #offsety -9
-#define "#mountmnr 'jaguar_toad_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
 #description "The giant toad will fight until the end of the battle should the rider die"
 #tag "animal 'giant toad'"
@@ -878,8 +912,9 @@
 #armor
 #offsetx 2
 #offsety -9
-#define "#mountmnr 'jaguar_toad_turtle_shell_barding_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
+#barding 137
 #description "The giant toad will fight until the end of the battle should the rider die"
 #theme "primitive"
 #tag "animal 'giant toad'"
@@ -896,8 +931,9 @@
 #armor
 #offsetx 2
 #offsety -9
-#define "#mountmnr 'jaguar_toad_coral_barding_mount'"
+#mountmnr "jaguar_toad_mount"
 #define "#swimming"
+#barding 190
 #description "The giant toad will fight until the end of the battle should the rider die"
 #tag "animal 'giant toad'"
 #tag "guaranteedprefix toad"
@@ -914,7 +950,7 @@
 #armor
 #offsetx 2
 #offsety -9
-#define "#mountmnr 'sapphire_toad_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
 #description "The giant frog will fight until the end of the battle should the rider die"
 #tag "animal 'giant frog'"
@@ -931,8 +967,9 @@
 #armor
 #offsetx 2
 #offsety -9
-#define "#mountmnr 'sapphire_toad_turtle_shell_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
+#barding 137
 #description "The giant frog will fight until the end of the battle should the rider die"
 #theme "primitive"
 #tag "animal 'giant frog'"
@@ -949,8 +986,9 @@
 #armor
 #offsetx 2
 #offsety -9
-#define "#mountmnr 'sapphire_toad_coral_barding_mount'"
+#mountmnr "sapphire_toad_mount"
 #define "#swimming"
+#barding 190
 #description "The giant frog will fight until the end of the battle should the rider die"
 #tag "animal 'giant frog'"
 #tag "guaranteedprefix frog"

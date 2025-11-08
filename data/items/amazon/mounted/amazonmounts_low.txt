@@ -7,7 +7,7 @@
 #sprite /graphics/amazon/mounts/nightmare_lizard.png
 #armor
 #needs overlay lizard_nightmare_overlay
-#define "#mountmnr 'lizard_nightmare_mount'"
+#mountmnr "lizard_nightmare_mount"
 #define "#enc 15"
 #tag "guaranteedprefix nightmare"
 #theme "specialmount"
@@ -26,8 +26,9 @@
 #sprite /graphics/amazon/mounts/nightmare_lizard.png
 #armor
 #needs overlay lizard_nightmare_overlay
-#define "#mountmnr 'lizard_nightmare_leather_barding_mount'"
+#mountmnr "lizard_nightmare_mount"
 #define "#enc 15"
+#barding 251
 #tag "guaranteedprefix nightmare"
 #theme "specialmount"
 #tag "animal nightmare"
@@ -46,8 +47,9 @@
 #sprite /graphics/amazon/mounts/nightmare_lizard.png
 #armor
 #needs overlay lizard_nightmare_overlay
-#define "#mountmnr 'lizard_nightmare_light_scale_barding_mount'"
+#mountmnr "lizard_nightmare_mount"
 #define "#enc 15"
+#barding 252
 #tag "guaranteedprefix nightmare"
 #theme "specialmount"
 #tag "animal nightmare"
@@ -66,8 +68,9 @@
 #sprite /graphics/amazon/mounts/nightmare_lizard.png
 #armor
 #needs overlay lizard_nightmare_overlay
-#define "#mountmnr 'lizard_nightmare_mail_barding_mount'"
+#mountmnr "lizard_nightmare_mount"
 #define "#enc 15"
+#barding 172
 #tag "guaranteedprefix nightmare"
 #theme "specialmount"
 #tag "animal nightmare"
@@ -86,8 +89,9 @@
 #sprite /graphics/amazon/mounts/nightmare_lizard.png
 #armor
 #needs overlay lizard_nightmare_overlay
-#define "#mountmnr 'lizard_nightmare_cataphract_barding_mount'"
+#mountmnr "lizard_nightmare_mount"
 #define "#enc 15"
+#barding 253
 #tag "guaranteedprefix nightmare"
 #theme "specialmount"
 #tag "animal nightmare"
@@ -106,8 +110,9 @@
 #sprite /graphics/amazon/mounts/nightmare_lizard.png
 #armor
 #needs overlay lizard_nightmare_overlay
-#define "#mountmnr 'lizard_nightmare_plate_barding_mount'"
+#mountmnr "lizard_nightmare_mount"
 #define "#enc 15"
+#barding 254
 #tag "guaranteedprefix nightmare"
 #theme "specialmount"
 #tag "animal nightmare"
@@ -126,7 +131,7 @@
 #offsety 15
 #sprite /graphics/amazon/mounts/flayed_serpent.png
 #armor
-#define "#mountmnr 'flayed_serpent_mount'"
+#mountmnr "flayed_serpent_mount"
 #needs overlay flayed_serpent_overlay
 #define "#enc 15"
 #tag "guaranteedprefix flayed"
@@ -146,7 +151,8 @@
 #offsety 15
 #sprite /graphics/amazon/mounts/flayed_serpent.png
 #armor
-#define "#mountmnr 'flayed_serpent_leather_barding_mount'"
+#mountmnr "flayed_serpent_mount"
+#barding 251
 #needs overlay flayed_serpent_overlay
 #define "#enc 15"
 #tag "guaranteedprefix flayed"
@@ -167,9 +173,10 @@
 #offsety 15
 #sprite /graphics/amazon/mounts/flayed_serpent.png
 #armor
-#define "#mountmnr 'flayed_serpent_light_scale_barding_mount'"
+#mountmnr "flayed_serpent_mount"
 #needs overlay flayed_serpent_overlay
 #define "#enc 15"
+#barding 252
 #tag "guaranteedprefix flayed"
 #theme "specialmount"
 #tag "animal 'flayed serpent'"
@@ -188,9 +195,10 @@
 #offsety 15
 #sprite /graphics/amazon/mounts/flayed_serpent.png
 #armor
-#define "#mountmnr 'flayed_serpent_mail_barding_mount'"
+#mountmnr "flayed_serpent_mount"
 #needs overlay flayed_serpent_overlay
 #define "#enc 15"
+#barding 172
 #tag "guaranteedprefix flayed"
 #theme "specialmount"
 #tag "animal 'flayed serpent'"
@@ -209,9 +217,10 @@
 #offsety 15
 #sprite /graphics/amazon/mounts/flayed_serpent.png
 #armor
-#define "#mountmnr 'flayed_serpent_cataphract_barding_mount'"
+#mountmnr "flayed_serpent_mount"
 #needs overlay flayed_serpent_overlay
 #define "#enc 15"
+#barding 253
 #tag "guaranteedprefix flayed"
 #theme "specialmount"
 #tag "animal 'flayed serpent'"
@@ -230,9 +239,10 @@
 #offsety 15
 #sprite /graphics/amazon/mounts/flayed_serpent.png
 #armor
-#define "#mountmnr 'flayed_serpent_plate_barding_mount'"
+#mountmnr "flayed_serpent_mount"
 #needs overlay flayed_serpent_overlay
 #define "#enc 15"
+#barding 254
 #tag "guaranteedprefix flayed"
 #theme "specialmount"
 #tag "animal 'flayed serpent'"

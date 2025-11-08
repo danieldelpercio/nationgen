@@ -4,7 +4,7 @@
 #sprite /graphics/mounts/standard/fayhorse.png
 #armor
 #offsety 1
-#define "#mountmnr 'fay_horse_mount'"
+#mountmnr "fay_horse_mount"
 #theme "primitive"
 #tag "animal horse"
 #tag "minprot 6"
@@ -18,7 +18,8 @@
 #sprite /graphics/mounts/standard/fayhorse.png
 #armor
 #offsety 1
-#define "#mountmnr 'fay_horse_leather_barding_mount'"
+#mountmnr "fay_horse_mount"
+#barding 251
 #theme "primitive"
 #theme "leather"
 #tag "animal horse"
@@ -34,7 +35,8 @@
 #sprite /graphics/mounts/standard/fayhorse.png
 #armor
 #offsety 1
-#define "#mountmnr 'fay_horse_light_scale_barding_mount'"
+#mountmnr "fay_horse_mount"
+#barding 252
 #theme "iron"
 #tag "animal horse"
 #tag "minprot 6"
@@ -49,7 +51,8 @@
 #sprite /graphics/mounts/standard/fayhorse.png
 #armor
 #offsety 1
-#define "#mountmnr 'fay_horse_iron_mail_barding_mount'"
+#mountmnr "fay_horse_mount"
+#barding 172
 #theme "iron"
 #tag "animal horse"
 #tag "minprot 6"

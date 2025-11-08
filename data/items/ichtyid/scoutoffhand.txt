@@ -12,7 +12,7 @@
 #newitem
 #id offhandshortsword_bronze
 #gameid 645
-#sprite graphics/ichtyid/weapon/bronze_shortsword_oh.png
+#sprite /graphics/ichtyid/weapon/bronze_shortsword_oh.png
 #theme "advanced"
 #theme "bronze"
 #basechance 0.5
@@ -21,7 +21,7 @@
 #newitem
 #id offhandshortsword_coral
 #gameid coralshortsword
-#sprite graphics/ichtyid/weapon/coral_shortsword_oh.png
+#sprite /graphics/ichtyid/weapon/coral_shortsword_oh.png
 #basechance 0.5
 #theme "coral"
 #theme "marine"
@@ -30,7 +30,7 @@
 #newitem
 #id offhanddagger
 #gameid 674
-#sprite graphics/ichtyid/weapon/bronze_dagger.png
+#sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #offsetx 5
 #offsety 7
 #theme "bronze"
@@ -49,7 +49,7 @@
 #newitem
 #id offhandclub_coral
 #gameid 45
-#sprite graphics/ichtyid/weapon/coral_club_oh.png
+#sprite /graphics/ichtyid/weapon/coral_club_oh.png
 #theme "coral"
 #theme "marine"
 #enditem

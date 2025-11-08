@@ -8,7 +8,7 @@
 #needs overlay firedrake_overlay
 #offsetx -7
 #offsety 16
-#define "#mountmnr 'fire_drake_mount'"
+#mountmnr "fire_drake_mount"
 #tag "animal drake"
 #tag "minprot 10"
 #tag "maxprot 100"
@@ -23,7 +23,8 @@
 #needs overlay firedrake_overlay
 #offsetx -7
 #offsety 16
-#define "#mountmnr 'fire_drake_light_scale_barding_mount'"
+#mountmnr "fire_drake_mount"
+#barding 252
 #tag "animal drake"
 #tag "minprot 10"
 #tag "maxprot 100"
@@ -39,7 +40,8 @@
 #needs overlay firedrake_overlay
 #offsetx -7
 #offsety 16
-#define "#mountmnr 'fire_drake_mail_barding_mount'"
+#mountmnr "fire_drake_mount"
+#barding 172
 #theme "heavy"
 #tag "animal drake"
 #tag "minprot 10"
@@ -56,7 +58,8 @@
 #needs overlay firedrake_overlay
 #offsetx -7
 #offsety 16
-#define "#mountmnr 'fire_drake_cataphract_barding_mount'"
+#mountmnr "fire_drake_mount"
+#barding 253
 #theme "heavy"
 #tag "animal drake"
 #tag "minprot 10"
@@ -73,7 +76,8 @@
 #needs overlay firedrake_overlay
 #offsetx -7
 #offsety 16
-#define "#mountmnr 'fire_drake_plate_barding_mount'"
+#mountmnr "fire_drake_mount"
+#barding 254
 #theme "heavy"
 #tag "animal drake"
 #tag "minprot 10"
@@ -92,7 +96,7 @@
 #armor
 #offsetx -7
 #offsety 14
-#define "#mountmnr 'salamander_mount'"
+#mountmnr "salamander_mount"
 #tag "animal salamander"
 #tag "minprot 10"
 #tag "maxprot 100"
@@ -106,7 +110,8 @@
 #armor
 #offsetx -7
 #offsety 14
-#define "#mountmnr 'salamander_light_scale_barding_mount'"
+#mountmnr "salamander_mount"
+#barding 252
 #tag "animal salamander"
 #tag "minprot 10"
 #tag "maxprot 100"
@@ -121,7 +126,8 @@
 #armor
 #offsetx -7
 #offsety 14
-#define "#mountmnr 'salamander_mail_barding_mount'"
+#mountmnr "salamander_mount"
+#barding 172
 #theme "heavy"
 #tag "animal salamander"
 #tag "minprot 10"
@@ -137,7 +143,8 @@
 #armor
 #offsetx -7
 #offsety 14
-#define "#mountmnr 'salamander_cataphract_barding_mount'"
+#mountmnr "salamander_mount"
+#barding 253
 #theme "heavy"
 #tag "animal salamander"
 #tag "minprot 10"
@@ -153,7 +160,8 @@
 #armor
 #offsetx -7
 #offsety 14
-#define "#mountmnr 'salamander_plate_barding_mount'"
+#mountmnr "salamander_mount"
+#barding 254
 #theme "heavy"
 #tag "animal salamander"
 #tag "minprot 10"
@@ -173,7 +181,7 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_mount'"
+#mountmnr "scorpion_beast_mount"
 #tag "animal scorpion"
 #theme "heavy"
 #description "Leaves a giant scorpion behind when the rider dies"
@@ -191,7 +199,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_light_scale_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 252
 #tag "animal scorpion"
 #theme "heavy"
 #description "Leaves a giant scorpion behind when the rider dies"
@@ -210,7 +219,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_iron_mail_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 172
 #tag "animal scorpion"
 #theme "heavy"
 #description "Leaves a giant scorpion behind when the rider dies"
@@ -229,7 +239,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_cataphract_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 253
 #tag "animal scorpion"
 #theme "heavy"
 #description "Leaves a giant scorpion behind when the rider dies"
@@ -248,7 +259,8 @@
 #offsetx 23
 #offsety 6
 #needs overlay scorpion_overlay
-#define "#mountmnr 'scorpion_beast_plate_barding_mount'"
+#mountmnr "scorpion_beast_mount"
+#barding 254
 #tag "animal scorpion"
 #theme "heavy"
 #description "Leaves a giant scorpion behind when the rider dies"
@@ -270,7 +282,8 @@
 #needs overlay fossil_overlay
 #offsetx 34
 #offsety 31
-#define "#mountmnr 'fossil_rusty_mail_armor_mount'"
+#mountmnr "fossil_mount"
+#barding 31
 #tag "animal fossil"
 #theme "heavy"
 #description "Leaves a fossilized giant behind when the rider dies"
@@ -288,7 +301,8 @@
 #needs overlay fossil_overlay
 #offsetx 34
 #offsety 31
-#define "#mountmnr 'fossil_hauberk_armor_mount'"
+#mountmnr "fossil_mount"
+#barding 11
 #tag "animal fossil"
 #theme "heavy"
 #description "Leaves a fossilized giant behind when the rider dies"
@@ -309,7 +323,7 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'gloso_mount'"
+#mountmnr "gloso_mount"
 #tag "animal gloso"
 #description "Leaves a burning black sow behind when the rider dies"
 #tag "maxprot 15"
@@ -323,7 +337,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'gloso_light_scale_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 252
 #tag "animal gloso"
 #description "Leaves a burning black sow behind when the rider dies"
 #tag "maxprot 20"
@@ -338,7 +353,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'gloso_mail_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 172
 #theme "heavy"
 #tag "animal gloso"
 #description "Leaves a burning black sow behind when the rider dies"
@@ -354,7 +370,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'gloso_cataphract_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 253
 #theme "heavy"
 #tag "animal gloso"
 #description "Leaves a burning black sow behind when the rider dies"
@@ -370,7 +387,8 @@
 #armor
 #offsetx -2
 #offsety 2
-#define "#mountmnr 'gloso_plate_barding_mount'"
+#mountmnr "gloso_mount"
+#barding 254
 #theme "heavy"
 #tag "animal gloso"
 #description "Leaves a burning black sow behind when the rider dies"
@@ -388,7 +406,7 @@
 #sprite /graphics/mounts/standard/nightmare.png
 #armor
 #offsety -2
-#define "#mountmnr 'nightmare_mount'"
+#mountmnr "nightmare_mount"
 #define "#gcost -10"
 #define "#enc 15"
 #tag "animal nightmare"
@@ -403,9 +421,10 @@
 #sprite /graphics/mounts/standard/nightmare.png
 #armor
 #offsety -2
-#define "#mountmnr 'nightmare_light_scale_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#gcost -10"
 #define "#enc 15"
+#barding 252
 #tag "animal nightmare"
 #description "Leaves a nightmare behind when the rider dies"
 #tag "minprot 10"
@@ -419,9 +438,10 @@
 #sprite /graphics/mounts/standard/nightmare.png
 #armor
 #offsety -2
-#define "#mountmnr 'nightmare_cataphract_barding_mount_1'"
+#mountmnr "nightmare_mount"
 #define "#gcost -10"
 #define "#enc 15"
+#barding 253
 #theme "heavy"
 #tag "animal nightmare"
 #description "Leaves a nightmare behind when the rider dies"
@@ -436,9 +456,10 @@
 #sprite /graphics/mounts/standard/nightmare.png
 #armor
 #offsety -2
-#define "#mountmnr 'nightmare_plate_barding_mount'"
+#mountmnr "nightmare_mount"
 #define "#gcost -10"
 #define "#enc 15"
+#barding 254
 #theme "heavy"
 #tag "animal nightmare"
 #description "Leaves a nightmare behind when the rider dies"

@@ -50,9 +50,15 @@ public class Dom3DB {
    */
   public void addToMap(String id, HashMap<String, String> attributes) {
     List<String> row = new ArrayList<>(this.definition.size());
+    List<String> existingRow = entryMap.get(id);
+
+    // Don't constantly reload the same id over and over again
+    if (existingRow != null) {
+      return;
+    }
+
     for (String col : this.definition) {
       String val = attributes.get(col);
-
       row.add(val != null ? val : "id".equals(col) ? id : "");
     }
 

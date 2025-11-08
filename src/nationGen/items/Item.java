@@ -2,10 +2,11 @@ package nationGen.items;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+import java.util.stream.Collectors;
 
-import com.elmokki.Generic;
+import com.elmokki.Dom3DB;
 
+import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
 import nationGen.chances.ThemeInc;
 import nationGen.entities.Drawable;
@@ -15,15 +16,14 @@ import nationGen.misc.Command;
 public class Item extends Drawable {
 
   public String id = "-1";
-  public boolean armor = false;
   public Filter filter = null;
-  private ItemType itemType;
+  private List<ItemType> itemTypes = new ArrayList<>();
+  private String bardingId;
 
-  public ArrayList<ItemDependency> dependencies = new ArrayList<>();
+  public List<ItemDependency> dependencies = new ArrayList<>();
   //public LinkedHashMap<String, String> dependencies = new LinkedHashMap<>();
   //public LinkedHashMap<String, String> typedependencies = new LinkedHashMap<>();
 
-  public List<Command> commands = new ArrayList<>();
   public String slot = "";
   public String set = "";
 
@@ -31,98 +31,125 @@ public class Item extends Drawable {
     super(nationGen);
   }
 
-  public boolean containsMount() {
-    Optional<Command> possibleMountmnr = this.commands
+  public Item(Item item) {
+    super(item);
+    this.id = item.id;
+    this.filter = (item.filter != null) ? new Filter(item.filter) : null;
+    this.itemTypes = new ArrayList<>(item.itemTypes);
+    this.dependencies = new ArrayList<>(item.dependencies)
       .stream()
-      .filter(c -> c.command.equals("#mountmnr"))
-      .findAny();
+      .map(d -> new ItemDependency(d))
+      .collect(Collectors.toList());
 
-    if (possibleMountmnr.isPresent()) {
-      return true;
+    this.slot = item.slot;
+    this.set = item.set;
+  }
+
+  public String getValueFromDb(String dbColumn) {
+    Dom3DB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
+    String itemIdInDb = this.id;
+    String value = db.GetValue(itemIdInDb, dbColumn);
+
+    if (value.isBlank()) {
+      itemIdInDb = this.name;
+      value = db.GetValue(itemIdInDb, dbColumn);
     }
 
-    else {
-      return false;
+    if (value.isBlank()) {
+      itemIdInDb = this.tags.getString("OLDID").orElse("");
+      value = db.GetValue(itemIdInDb, dbColumn);
     }
+
+    return value;
   }
 
-  public CustomItem getCustomItemCopy() {
-    CustomItem item = new CustomItem(nationGen);
-    item.sprite = sprite;
-    item.mask = mask;
-    item.id = id;
-    item.armor = armor;
-    item.offsetx = offsetx;
-    item.offsety = offsety;
-    item.dependencies.addAll(dependencies);
-    item.commands.addAll(commands);
-    item.slot = slot;
-    item.set = set;
-    item.renderslot = renderslot;
-    item.renderprio = renderprio;
-    item.name = this.name;
-    item.filter = this.filter;
-    item.basechance = this.basechance;
-    item.tags.addAll(tags);
-    return item;
+  public String getBardingId() {
+    return this.bardingId;
   }
 
-  public Item getCopy() {
-    return this.getCustomItemCopy();
+  public Boolean anyTypesMatchString(String typeStr) {
+    return this.itemTypes.stream().anyMatch(t -> t.getId() == typeStr);
   }
 
+  public Boolean isOfType(ItemType type) {
+    Boolean hasType = this.itemTypes.contains(type);
+
+    if (hasType == false && type.check(this) == true) {
+      hasType = true;
+      this.itemTypes.add(type);
+    }
+
+    return hasType;
+  }
+
+  // Armor type for now has to be determined at file-parsing time
+  // through the #armor tag. This is because armor and weapon DBs
+  // share ids, so any given item id will be present on both.
   public Boolean isArmor() {
-    return this.armor == true;
+    return this.itemTypes.contains(ItemType.ARMOR);
+  }
+  
+  public Boolean isBarding() {
+    return this.isArmor() && this.isOfType(ItemType.BARDING);
+  }
+  
+  public Boolean isBodyArmorBarding() {
+    return this.isArmor() && this.isOfType(ItemType.BODY_ARMOR);
+  }
+  
+  public Boolean hasHelmet() {
+    return this.isArmor() && this.isOfType(ItemType.HELMET);
+  }
+  
+  public Boolean isShield() {
+    return this.isArmor() && this.isOfType(ItemType.SHIELD);
   }
 
+  // Weapon type for now has to be determined at file-parsing time
+  // through the #armor tag. This is because armor and weapon DBs
+  // share ids, so any given item id will be present on both.
   public Boolean isWeapon() {
-    return this.armor == false;
+    return this.isArmor() == false;
   }
 
   public Boolean isRangedWeapon() {
-    this.attemptToDetermineItemType();
-    return this.itemType == ItemType.RANGED;
+    return this.isOfType(ItemType.RANGED);
   }
 
   public Boolean isLowAmmoWeapon() {
-    this.attemptToDetermineItemType();
-    return this.itemType == ItemType.LOW_SHOTS;
+    return this.isOfType(ItemType.LOW_SHOTS);
   }
 
   public Boolean isMeleeWeapon() {
-    this.attemptToDetermineItemType();
-    return this.itemType == ItemType.MELEE;
+    return this.isOfType(ItemType.MELEE);
   }
 
-  public ItemType getItemType() {
-    this.attemptToDetermineItemType();
-    return this.itemType;
+  public Boolean isMountItem() {
+    return this.isOfType(ItemType.MOUNT);
   }
 
-  private void attemptToDetermineItemType() {
-    if (this.itemType != null) {
-      return;
-    }
-
-    // If it's got a range property, it might be ranged
-    if (nationGen.weapondb.GetInteger(this.id, "rng") != 0) {
-      // If its ammo is less than 4, it's a lowshots weapon
-      if (nationGen.weapondb.GetInteger(this.id, "shots", 100) < 4) {
-        this.itemType = ItemType.LOW_SHOTS;
-      }
-      
-      else {
-        this.itemType = ItemType.RANGED;
-      }
-    }
-
-    else {
-      this.itemType = ItemType.MELEE;
-    } 
+  public List<ItemType> getItemTypes() {
+    return this.itemTypes;
   }
 
+  /**
+   * A "Dominions id" is an id above 0 which can or must be written into
+   * an #armor or #weapon command. A "basesprite" item does not have a
+   * Dominions id, but an equipped Greatsword does.
+   * @return
+   */
+  public Boolean hasDominionsId() {
+    return Integer.parseInt(this.id) > 0;
+  }
+
+  /**
+   * A custom id is a NationGen-specific id, such as "obsidian_barding",
+   * which must be resolved into a numeric id when writing the final mod
+   * .dm file where the custom item is defined.
+   * @return
+   */
   public boolean isCustomIdResolved() {
-    return Generic.isNumeric(this.id);
+    return CustomItemsHandler.isIdResolved(this.id);
   }
 
   /**
@@ -137,7 +164,7 @@ public class Item extends Drawable {
    */
   static public Item resolveId(Item item) {
     if (item.isCustomIdResolved() == false) {
-      Item copy = item.getCopy();
+      Item copy = new Item(item);
       copy.tags.add("OLDID", item.id);
       copy.id = item.nationGen.GetCustomItemsHandler().getCustomItemId(item.id);
       return copy;
@@ -158,7 +185,15 @@ public class Item extends Drawable {
           this.id = command.args.get(0).get();
           break;
         case "#armor":
-          this.armor = true;
+          this.itemTypes.add(ItemType.ARMOR);
+          break;
+        case "#barding":
+          this.bardingId = command.args.getString(0);
+          this.itemTypes.add(ItemType.BARDING);
+          break;
+        case "#mountmnr":
+          this.itemTypes.add(ItemType.MOUNT);
+          this.commands.add(command);
           break;
         case "#addthemeinc":
           if (this.filter == null) {

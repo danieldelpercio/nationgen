@@ -38,19 +38,19 @@ public class Unit {
   public Name name = new Name();
   public Race race;
   public Pose pose;
-  public Mount mountItem;
+  public MountUnit mountUnit;
   public SlotMap slotmap = new SlotMap();
   public Color color = Color.white;
   public int id = -1;
   public List<Command> commands = new ArrayList<>();
   public NationGen nationGen;
-  public boolean caponly = false;
+  private Boolean caponly = false;
   public double capOnlyChance;
   public double survivability;
   public Tags tags = new Tags();
   public List<Filter> appliedFilters = new ArrayList<>();
-  public boolean polished = false;
-  public boolean invariantMonster = false; // Is the unit a monster that must be used as-is instead of copying? (E.g., hydras)
+  public Boolean polished = false;
+  public Boolean invariantMonster = false; // Is the unit a monster that must be used as-is instead of copying? (E.g., hydras)
   
   static final public int HUMAN_SIZE = 3;
 
@@ -66,6 +66,30 @@ public class Unit {
   public Unit(NationGen nationGen, Race race, Pose pose, Nation n) {
     this(nationGen, race, pose);
     this.nation = n;
+  }
+
+  public Unit(Unit unit) {
+    this.nationGen = unit.nationGen;
+    this.race = unit.race;
+    this.pose = unit.pose;
+    this.slotmap = new SlotMap(unit.slotmap);
+    this.color = unit.color;
+    this.nation = unit.nation;
+    this.polished = unit.polished;
+    this.invariantMonster = unit.invariantMonster;
+    this.caponly = unit.caponly;
+    this.tags = new Tags(unit.tags);
+    this.commands = new ArrayList<>(unit.commands)
+      .stream()
+      .map(c -> new Command(c))
+      .collect(Collectors.toList());
+
+    this.appliedFilters = new ArrayList<>(unit.appliedFilters)
+      .stream()
+      .map(f -> new Filter(f))
+      .collect(Collectors.toList());
+
+    this.mountUnit = (unit.mountUnit != null) ? new MountUnit(unit.mountUnit, this) : null;
   }
 
   public int getId() {
@@ -88,7 +112,7 @@ public class Unit {
     return rootId;
   }
 
-  public boolean hasCommand(String cmd) {
+  public Boolean hasCommand(String cmd) {
     return this.getCommands()
       .stream()
       .filter(c -> c.command.equals(cmd))
@@ -96,7 +120,7 @@ public class Unit {
       .isPresent();
   }
 
-  public boolean hasExactCommand(String cmd) {
+  public Boolean hasExactCommand(String cmd) {
     return this.getCommand(cmd).isPresent();
   }
 
@@ -105,7 +129,7 @@ public class Unit {
     List<Command> allCommands = this.getCommands();
     return allCommands
       .stream()
-      .filter(c -> c.equals(parsedCommand))
+      .filter(c -> parsedCommand.contains(c))
       .findFirst();
   }
 
@@ -121,26 +145,12 @@ public class Unit {
     return slotmap.get(s);
   }
 
-  public boolean isSlotEmpty(String slot) {
+  public Boolean isSlotEmpty(String slot) {
     return slotmap.get(slot) == null;
   }
 
-  public Unit getCopy() {
-    Unit unit = new Unit(nationGen, race, pose);
-
-    // Copy unit
-    unit.slotmap.addAllFrom(this.slotmap);
-
-    unit.color = color;
-    unit.nation = nation;
-    unit.polished = this.polished;
-    unit.invariantMonster = this.invariantMonster;
-    unit.caponly = caponly;
-    unit.tags.addAll(tags);
-    unit.commands.addAll(commands);
-    unit.appliedFilters.addAll(appliedFilters);
-    unit.mountItem = mountItem;
-    return unit;
+  public Boolean isIdResolved() {
+    return this.id > 0;
   }
 
   /**
@@ -156,7 +166,7 @@ public class Unit {
    * @param randoms if true, randoms at 25% chance are included
    * @return
    */
-  public MagicPathInts getMagicPicks(boolean randoms) {
+  public MagicPathInts getMagicPicks(Boolean randoms) {
     MagicPathInts picks = new MagicPathInts();
 
     double prob = 1;
@@ -237,6 +247,18 @@ public class Unit {
     return n;
   }
 
+  public void resolveId() {
+    if (this.isIdResolved()) {
+      return;
+    }
+
+    if (this.mountUnit != null) {
+      this.mountUnit.resolveId();
+    }
+
+    this.id = this.nationGen.getNextUnitId();
+  }
+
   private int handleModifier(Arg mod, int value) {
     Optional<Operator> operator = mod.getOperator();
     if (
@@ -281,7 +303,7 @@ public class Unit {
     }
     // no feet, but arm
     else if (Generic.containsBitmask(slots, 2)) {
-      boolean mounted = this.getSlot("mount") != null;
+      Boolean mounted = this.getSlot("mount") != null;
       if (mounted) return Optional.of("#mountedhumanoid");
       else return Optional.of("#naga");
     }
@@ -405,33 +427,37 @@ public class Unit {
     return slots;
   }
 
-  public boolean isMontag() {
+  public Boolean isCapOnly() {
+    return this.caponly;
+  }
+
+  public Boolean isMontag() {
     return this.hasCommand("#montag") ||
       this.pose.roles.contains("montagtroops") ||
       this.pose.tags.containsName("montagpose");
   }
 
-  public boolean isUndead() {
+  public Boolean isUndead() {
     return this.hasCommand("#undead");
   }
 
-  public boolean isAlmostUndead() {
+  public Boolean isAlmostUndead() {
     return this.hasCommand("#almostundead");
   }
 
-  public boolean isDemon() {
+  public Boolean isDemon() {
     return this.hasCommand("#demon");
   }
 
-  public boolean requiresUndeadLeadership() {
+  public Boolean requiresUndeadLeadership() {
     return this.isUndead() || this.isAlmostUndead() || this.isDemon();
   }
 
-  public boolean isMagicBeing() {
+  public Boolean isMagicBeing() {
     return this.hasCommand("#magicbeing");
   }
 
-  public boolean isMage() {
+  public Boolean isMage() {
     return this.commands.stream()
       .filter(c -> {
         return c.command.equals("#magicskill") ||
@@ -441,15 +467,19 @@ public class Unit {
       .isPresent();
   }
 
-  public boolean isWarriorMage() {
+  public Boolean isWarriorMage() {
     return this.tags.containsName("warriormage");
   }
 
-  public boolean isPriest() {
+  public Boolean isPriest() {
     return this.tags.containsName("priest");
   }
 
-  public boolean isRanged() {
+  public Boolean isMounted() {
+    return this.mountUnit != null;
+  }
+
+  public Boolean isRanged() {
     Item weapon = getSlot("weapon");
 
     if (weapon == null) return false;
@@ -458,7 +488,7 @@ public class Unit {
       .GetInteger(weapon.id, "rng", 0) > 0;
   }
 
-  public boolean isSecondaryRanged() {
+  public Boolean isSecondaryRanged() {
     Item bonusWeapon = getSlot("bonusweapon");
 
     if (bonusWeapon == null) return false;
@@ -467,7 +497,7 @@ public class Unit {
       .GetInteger(bonusWeapon.id, "rng", 0) > 0;
   }
 
-  public boolean hasRangeOfAtLeast(int range) {
+  public Boolean hasRangeOfAtLeast(int range) {
     Item weapon = getSlot("weapon");
 
     if (weapon == null) return false;
@@ -476,7 +506,7 @@ public class Unit {
       .GetInteger(weapon.id, "rng", 0) >= range;
   }
 
-  public boolean hasSecondaryRangeOfAtLeast(int range) {
+  public Boolean hasSecondaryRangeOfAtLeast(int range) {
     Item bonusWeapon = getSlot("bonusweapon");
 
     if (bonusWeapon == null) return false;
@@ -506,7 +536,7 @@ public class Unit {
     }
   }
 
-  private void handleDependency(String slotname, boolean lagged) {
+  private void handleDependency(String slotname, Boolean lagged) {
     if (getSlot(slotname) == null) {
       return;
     }
@@ -637,6 +667,10 @@ public class Unit {
     handleSlotChange(slotname, olditem, newitem);
   }
 
+  public void setCapOnly(Boolean shouldBeCapOnly) {
+    this.caponly = shouldBeCapOnly;
+  }
+
   private void handleSlotChange(String slotName, Item oldItem, Item newItem) {
     if (oldItem != null) {
       handleRemoveThemeinc(oldItem);
@@ -644,8 +678,8 @@ public class Unit {
 
       // Remove cached mountItem if the item containing the mount is unequipped
       // This assumes that any given Unit will only ever had a single mount
-      if (oldItem.containsMount()) {
-        this.mountItem = null;
+      if (oldItem.isMountItem()) {
+        this.mountUnit = null;
       }
     }
 
@@ -653,31 +687,14 @@ public class Unit {
       handleDependency(slotName, false);
       handleAddThemeinc(newItem);
 
-      if (newItem.containsMount()) {
-        resolveMountItem(newItem);
+      if (newItem.isMountItem()) {
+        this.mountUnit = new MountUnit(newItem, this, this.nationGen);
       }
     }
   }
 
-  private void resolveMountItem(Item mountItem) {
-    if (mountItem != null) {
-      Optional<Command> possibleMountmnr = mountItem.commands
-        .stream()
-        .filter(c -> c.command.equals("#mountmnr"))
-        .findAny();
-
-      if (possibleMountmnr.isPresent()) {
-        Command mountmnr = possibleMountmnr.get();
-        Optional<Mount> mount = nationGen.getAssets().mounts
-          .stream()
-          .filter(s -> s.name.equals(mountmnr.args.get(0).get()))
-          .findFirst();
-
-        if (mount.isPresent()) {
-          this.mountItem = mount.get();
-        }
-      }
-    }
+  public MountUnit getMountUnit() {
+    return this.mountUnit;
   }
 
   public int getGoldCost() {
@@ -712,26 +729,11 @@ public class Unit {
   }
 
   public int getMountGoldCost() {
-    if (this.mountItem == null) {
+    if (this.mountUnit == null) {
       return 0;
     }
 
-    Optional<Command> gcost = this.mountItem.commands
-      .stream()
-      .filter(c -> c.command.equals("#gcost"))
-      .findFirst();
-
-    if (!gcost.isPresent()) {
-      return 0;
-    }
-
-    if (gcost.get().args.size() == 0) {
-      throw new IllegalArgumentException(
-        "Mount item " + mountItem.name + "'s #gcost does not have an argument!"
-      );
-    }
-
-    return Integer.parseInt(gcost.get().args.get(0).get());
+    return this.mountUnit.getGoldCost();
   }
 
   public String getName() {
@@ -755,21 +757,21 @@ public class Unit {
       .orElse(LeadershipAbility.getNoLeadership(type));
   }
 
-  public boolean hasLeadership(LeadershipType type) {
+  public Boolean hasLeadership(LeadershipType type) {
     return this.getLeadership(type)
       .equals(LeadershipAbility.getNoLeadership(type)) == false;
   }
 
-  public boolean hasAnyLeadership() {
+  public Boolean hasAnyLeadership() {
     return List.of(LeadershipType.values())
       .stream().anyMatch(t -> this.hasLeadership(t) != false);
   }
 
-  public int getResCost(boolean useSize) {
+  public int getResCost(Boolean useSize) {
     return getResCost(useSize, this.getCommands());
   }
 
-  private int getResCost(boolean useSize, List<Command> commands) {
+  private int getResCost(Boolean useSize, List<Command> commands) {
     int size = Unit.HUMAN_SIZE;
     int ressize = -1;
     int extrares = 0;
@@ -794,7 +796,7 @@ public class Unit {
     int res =
       this.slotmap.items()
         .filter(i -> i.isCustomIdResolved())
-        .mapToInt(i -> (i.armor ? armordb : weapondb).GetInteger(i.id, "res"))
+        .mapToInt(i -> (i.isArmor() ? armordb : weapondb).GetInteger(i.id, "res"))
         .sum();
 
     if (useSize) {
@@ -928,7 +930,17 @@ public class Unit {
     return tempCommands;
   }
 
-  private boolean handleLowEncCommandPolish(Tags tags) {
+  public List<Command> getMountCommands() {
+    List<Command> list = new ArrayList<>();
+
+    if (this.isMounted() == false) {
+      return list;
+    }
+
+    return this.mountUnit.getCommands();
+  }
+
+  private Boolean handleLowEncCommandPolish(Tags tags) {
     if (!tags.containsName("lowencthreshold")) return false;
 
     int treshold = tags.getValue("lowencthreshold").orElseThrow().getInt();
@@ -936,7 +948,7 @@ public class Unit {
     int enc = 0;
     if (getSlot("armor") != null) enc +=
     nationGen.armordb.GetInteger(getSlot("armor").id, "enc");
-    if (getSlot("offhand") != null && getSlot("offhand").armor) enc +=
+    if (getSlot("offhand") != null && getSlot("offhand").isArmor()) enc +=
     nationGen.armordb.GetInteger(getSlot("offhand").id, "enc");
     if (getSlot("helmet") != null) enc +=
     nationGen.armordb.GetInteger(getSlot("helmet").id, "enc");
@@ -956,8 +968,8 @@ public class Unit {
     return false;
   }
 
-  private boolean hasCopyStats() {
-    boolean copystats = false;
+  private Boolean hasCopyStats() {
+    Boolean copystats = false;
     for (Command c : this.getCommands()) {
       if (c.command.equals("#copystats")) copystats = true;
     }
@@ -996,7 +1008,7 @@ public class Unit {
     handleLowEncCommandPolish(u.race.tags);
     for (Filter f : appliedFilters) handleLowEncCommandPolish(f.tags);
 
-    boolean copystats = hasCopyStats();
+    Boolean copystats = hasCopyStats();
 
     if (u.name.toString(this).equals("\"\"")) {
       System.out.println("UNIT NAMING ERROR! PLEASE REPORT THE SEED!");
@@ -1020,7 +1032,7 @@ public class Unit {
     }
 
     // Ambidextrous. Should be after custom equipment handling and before command cleanup
-    if (this.getSlot("offhand") != null && !this.getSlot("offhand").armor) {
+    if (this.getSlot("offhand") != null && !this.getSlot("offhand").isArmor()) {
       int len = 0;
 
       if (this.getSlot("weapon") != null) len = len +
@@ -1122,9 +1134,9 @@ public class Unit {
       int target = args.get(args.size() - 2).getInt();
       String cost = args.get(args.size() - 1).get();
 
-      boolean at = args.contains(new Arg("at"));
-      boolean below = args.contains(new Arg("below"));
-      boolean above = args.contains(new Arg("above"));
+      Boolean at = args.contains(new Arg("at"));
+      Boolean below = args.contains(new Arg("below"));
+      Boolean above = args.contains(new Arg("above"));
 
       if (
         (commandValue > target && above) ||
@@ -1393,7 +1405,7 @@ public class Unit {
     Dom3DB armordb = nationGen.armordb;
     Dom3DB weapondb = nationGen.weapondb;
 
-    if (i.armor) return (
+    if (i.isArmor()) return (
       "#armor " +
       i.id +
       " --- " +
@@ -1401,6 +1413,7 @@ public class Unit {
       " / " +
       i.name
     );
+
     else return (
       "#weapon " +
       i.id +
@@ -1411,13 +1424,13 @@ public class Unit {
     );
   }
 
-  public boolean isLight() {
+  public Boolean isLight() {
     if (this.getTotalProt(true) > 10) return false;
 
     return true;
   }
 
-  public boolean isHeavy() {
+  public Boolean isHeavy() {
     if (this.getTotalProt(true) <= 12) return false;
 
     return true;
@@ -1438,7 +1451,7 @@ public class Unit {
     return getTotalProt(true);
   }
 
-  public int getTotalProt(boolean naturalprot) {
+  public int getTotalProt(Boolean naturalprot) {
     int armorprot = 0;
     int helmetprot = 0;
     int natural = 0;
@@ -1452,7 +1465,7 @@ public class Unit {
     Dom3DB armordb = nationGen.armordb;
 
     for (String slot : slotmap.getSlots()) {
-      if (getSlot(slot) != null && getSlot(slot).armor) {
+      if (getSlot(slot) != null && getSlot(slot).isArmor()) {
         if (armordb.GetInteger(getSlot(slot).id, "type") == 5) {
           armorprot += armordb.GetInteger(getSlot(slot).id, "prot", 0);
         } else if (armordb.GetInteger(getSlot(slot).id, "type") == 6) {
@@ -1494,7 +1507,7 @@ public class Unit {
     for (String slot : slotmap.getSlots()) {
       if (
         getSlot(slot) != null &&
-        getSlot(slot).armor &&
+        getSlot(slot).isArmor() &&
         getSlot(slot).isCustomIdResolved()
       ) {
         eqenc += armordb.GetInteger(getSlot(slot).id, "enc", 0);
@@ -1522,7 +1535,7 @@ public class Unit {
 
     for (String slot : slotmap.getSlots()) {
       if (getSlot(slot) != null && getSlot(slot).isCustomIdResolved()) {
-        if (getSlot(slot).armor) {
+        if (getSlot(slot).isArmor()) {
           eqdef += armordb.GetInteger(getSlot(slot).id, "def", 0);
         }
         else {
@@ -1542,8 +1555,8 @@ public class Unit {
 
     for (String slot : slotmap.getSlots()) {
       if (getSlot(slot) != null && getSlot(slot).isCustomIdResolved()) {
-        if (getSlot(slot).armor) {
-          boolean isShield = armordb.GetInteger(getSlot(slot).id, "type", 0) == 4;
+        if (getSlot(slot).isArmor()) {
+          Boolean isShield = armordb.GetInteger(getSlot(slot).id, "type", 0) == 4;
 
           if (isShield == true) {
             parry += armordb.GetInteger(getSlot(slot).id, "def", 0);
@@ -1561,8 +1574,8 @@ public class Unit {
 
     for (String slot : slotmap.getSlots()) {
       if (getSlot(slot) != null && getSlot(slot).isCustomIdResolved()) {
-        if (getSlot(slot).armor) {
-          boolean isShield = armordb.GetInteger(getSlot(slot).id, "type", 0) == 4;
+        if (getSlot(slot).isArmor()) {
+          Boolean isShield = armordb.GetInteger(getSlot(slot).id, "type", 0) == 4;
 
           if (isShield == true) {
             shieldProt += armordb.GetInteger(getSlot(slot).id, "prot", 0);
@@ -1576,6 +1589,10 @@ public class Unit {
 
   public List<String> writeLines(String spritedir) {
     List<String> lines = new ArrayList<>();
+    
+    if (this.mountUnit != null) {
+      lines.addAll(this.mountUnit.writeLines(spritedir));
+    }
 
     lines.add(
       "--- " +
@@ -1652,12 +1669,11 @@ public class Unit {
       lines.add("#spr1 \"" + (spritedir + "/unit_" + this.id + "_a.tga\""));
       lines.add("#spr2 \"" + (spritedir + "/unit_" + this.id + "_b.tga\""));
     }
-    //lines.add("#descr \"" + desc + "\"");
 
     // Write commands before weapons/armor so that #clearweapons/#cleararmor (after #copystats) doesn't clear them
     lines.addAll(writeCommandLines());
-    lines.addAll(writeWeaponLines());
-    lines.addAll(writeArmorLines());
+    lines.addAll(writeWeaponLines(this.getEquippedWeapons()));
+    lines.addAll(writeArmorLines(this.getEquippedArmors()));
 
     if (!this.name.toString(this).equals("UNNAMED")) {
       lines.add("#name \"" + name.toString(this) + "\"");
@@ -1729,6 +1745,55 @@ public class Unit {
     return baserp;
   }
 
+  protected List<ItemData> getEquippedWeapons() {
+    List<ItemData> weapons = new ArrayList<>();
+
+    // Get weapons that were added directly through templates, like
+    // natural weapons from bases (such as nagas)
+    this.getCommands()
+      .stream()
+      .filter(c -> c.command.equals("#weapon") && c.args.getInt(0) > 0)
+      .forEach(c -> {
+        String id = c.args.getString(0);
+        ItemData weaponData = new ItemData(id, "", this.nationGen);
+        weapons.add(weaponData);
+      });
+
+    // Get weapon items from the unit's slot map, and do a check
+    // to make sure the custom ones are resolved into ids by now
+    this.slotmap
+      .getEquippedWeapons()
+      .forEach(weapon -> {
+        ItemData weaponData = new ItemData(weapon);
+        weapons.add(weaponData);
+      });
+
+    return weapons;
+  }
+
+  protected List<ItemData> getEquippedArmors() {
+    List<ItemData> armors = new ArrayList<>();
+
+    // Get armors that were added directly through data templates as comands
+    this.getCommands()
+      .stream()
+      .filter(c -> c.command.equals("#armor") && c.args.getInt(0) > 0)
+      .forEach(c -> {
+        String id = c.args.getString(0);
+        ItemData armorData = new ItemData(id, "", this.nationGen);
+        armors.add(armorData);
+      });
+
+    // Get armors equipped in the Unit's slotmap
+    this.slotmap.getEquippedArmors()
+    .forEach(armor -> {
+      ItemData armorData = new ItemData(armor);
+      armors.add(armorData);
+    });
+
+    return armors;
+  }
+
   private List<String> writeCommandLines() {
     List<String> lines = new ArrayList<>();
 
@@ -1737,7 +1802,21 @@ public class Unit {
 
     for (Command c : this.commands) {
       if (c.args.size() > 0) {
-        if (
+        if (c.command.equals("#mountmnr")) {
+          if (this.mountUnit.isIdResolved() == false) {
+            throw new IllegalStateException(
+              "Id for MountUnit " +
+              c.args.getString(0) +
+              " in Unit with pose '" +
+              this.pose.getName() +
+              "' is not resolved!"
+            );
+          }
+
+          lines.add(c.command + " " + this.mountUnit.id);
+        }
+
+        else if (
           // Item lines will be written later
           !c.command.equals("#itemslots") &&
           !c.command.equals("#weapon") &&
@@ -1756,51 +1835,13 @@ public class Unit {
     return lines;
   }
 
-  public List<String> writeWeaponLines() {
+  public List<String> writeWeaponLines(List<ItemData> weaponData) {
     List<String> lines = new ArrayList<>();
-    List<ItemData> weapons = new ArrayList<>();
-
-    // Get weapons that were added directly through templates, like
-    // natural weapons from bases (such as nagas)
-    this.getCommands()
-      .stream()
-      .filter(c -> c.command.equals("#weapon") && c.args.getInt(0) > 0)
-      .forEach(c -> {
-        String id = c.args.getString(0);
-        ItemData weaponData = new ItemData(id, "", nationGen);
-        weapons.add(weaponData);
-      });
-
-    // Get weapon items from the unit's slot map, and do a check
-    // to make sure the custom ones are resolved into ids by now
-    this.slotmap
-      .getWeapons()
-      .filter(weapon -> {
-        if (weapon.isCustomIdResolved() == false) {
-          throw new IllegalArgumentException(
-            this.name +
-            " unit (pose: " +
-            this.pose.name +
-            ", race: " +
-            this.race.name +
-            ", nation: " +
-            this.nation.name + " with seed " + this.nation.getSeed() +
-            ") has a custom weapon whose id was not resolved: " +
-            weapon.id
-          );
-        }
-        // Filter out non-weapon ids
-        return Integer.parseInt(weapon.id) > 0;
-      })
-      .forEach(weapon -> {
-        ItemData weaponData = new ItemData(weapon);
-        weapons.add(weaponData);
-      });
 
     // Sort weapons by descending range so that weapons with higher range appear higher.
     // When units with multiple ranged weapons have the shorter range defined first,
     // they will close into battle to fire with the shortest range (i.e. naga archers with a spit).
-    weapons.sort((a, b) -> {
+    weaponData.sort((a, b) -> {
       int unitStrength = this.getCommandValue("#str", 0);
       int rangeA = a.getWeaponRange(unitStrength);
       int rangeB = b.getWeaponRange(unitStrength);
@@ -1808,36 +1849,38 @@ public class Unit {
     });
 
     // Get id and name of weapons and add to the list of #weapon lines
-    weapons
-    .forEach(weapon -> lines.add(
-      "#weapon " +
-      weapon.getId() +
-      " --- " +
-      weapon.getDisplayName("weapon_name") +
-      ((weapon.hasName()) ? " / " + weapon.getName() : "")
-    ));
+    weaponData.forEach(itemData -> {
+      if (itemData.isCustomIdResolved() == false) {
+        throw new IllegalArgumentException(
+          this.name +
+          " unit (pose: " +
+          this.pose.name +
+          ", race: " +
+          this.race.name +
+          ", nation: " +
+          this.nation.name + " with seed " + this.nation.getSeed() +
+          ") has a custom weapon whose id was not resolved: " +
+          itemData.getId()
+        );
+      };
+      
+      lines.add(
+        "#weapon " +
+        itemData.getId() +
+        " --- " +
+        itemData.getDisplayName("weapon_name") +
+        ((itemData.hasName()) ? " / " + itemData.getName() : "")
+      );
+    });
 
     return lines;
   }
 
-  public List<String> writeArmorLines() {
+  public List<String> writeArmorLines(List<ItemData> armors) {
     List<String> lines = new ArrayList<>();
-    List<ItemData> armors = new ArrayList<>();
 
-    // Get armors that were added directly through templates,
-    // like bardings for mounts
-    this.getCommands()
-      .stream()
-      .filter(c -> c.command.equals("#armor") && c.args.getInt(0) > 0)
-      .forEach(c -> {
-        String id = c.args.getString(0);
-        ItemData armorData = new ItemData(id, "", nationGen);
-        armors.add(armorData);
-      });
-
-    this.slotmap.getArmor()
-    .filter(i -> {
-      if (!Generic.isNumeric(i.id)) {
+    armors.forEach(itemData -> {
+      if (itemData.isCustomIdResolved() == false) {
         throw new IllegalArgumentException(
           this.name +
           " unit (pose: " +
@@ -1847,25 +1890,18 @@ public class Unit {
           ", nation: " +
           this.nation.name + " with seed " + this.nation.getSeed() +
           ") has a custom armor whose id was not resolved: " +
-          i.id
+          itemData.getId()
         );
       }
-      // Only write items with actual ids. -1 ids are usually cosmetics
-      return Integer.parseInt(i.id) > 0;
-    })
-    .forEach(armor -> {
-      ItemData armorData = new ItemData(armor);
-      armors.add(armorData);
-    });
 
-    armors
-    .forEach(armor -> lines.add(
-      "#armor " +
-      armor.getId() +
-      " --- " +
-      armor.getDisplayName("armorname") +
-      ((armor.hasName()) ? " / " + armor.getName() : "")
-    ));
+      lines.add(
+        "#armor " +
+        itemData.getId() +
+        " --- " +
+        itemData.getDisplayName("armorname") +
+        ((itemData.hasName()) ? " / " + itemData.getName() : "")
+      );
+    });
 
     return lines;
   }
@@ -1940,17 +1976,17 @@ public class Unit {
       ) renderSlot(g, this, s, false);
       else if (
         s.equals("offhandw") &&
-        (getSlot("offhand") != null && !getSlot("offhand").armor)
+        (getSlot("offhand") != null && !getSlot("offhand").isArmor())
       ) renderSlot(g, this, "offhand", true);
       else if (
         s.equals("offhanda") &&
-        (getSlot("offhand") != null && getSlot("offhand").armor)
+        (getSlot("offhand") != null && getSlot("offhand").isArmor())
       ) renderSlot(g, this, "offhand", true);
       else renderSlot(g, this, s, true);
     }
   }
 
-  private void renderSlot(Graphics g, Unit u, String slot, boolean useoffset) {
+  private void renderSlot(Graphics g, Unit u, String slot, Boolean useoffset) {
     List<Item> possibleitems = slotmap
       .items()
       .filter(i -> slot.equals(i.renderslot))
@@ -1966,7 +2002,7 @@ public class Unit {
     }
   }
 
-  private void renderItem(Graphics g, Item i, boolean useoffset) {
+  private void renderItem(Graphics g, Item i, Boolean useoffset) {
     if (i == null) return;
 
     if (useoffset) {

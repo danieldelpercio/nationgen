@@ -198,7 +198,7 @@ public class TroopGenerator {
    * @param u
    * @return
    */
-  public Unit equipUnit(Unit u) {
+  public Unit equipMontagUnit(Unit u) {
     Pose pose = u.pose;
     Race race = u.race;
 
@@ -273,7 +273,7 @@ public class TroopGenerator {
       }
 
       // Copy unit
-      unit = t.template.getCopy();
+      unit = new Unit(t.template);
 
       boolean success;
       if (!t.role.equals("mounted")) {
@@ -333,7 +333,7 @@ public class TroopGenerator {
         t.role.equals("infantry") &&
         unit.pose.getItems("offhand") != null &&
         isDualWieldEligible(unit) &&
-        (unit.getSlot("offhand") == null || unit.getSlot("offhand").armor)
+        (unit.getSlot("offhand") == null || unit.getSlot("offhand").isShield())
       ) {
         double local_dwchance = this.getDualWieldChance(unit, 0.05);
 
@@ -722,7 +722,7 @@ public class TroopGenerator {
     ) rescost +=
     2 * nationGen.weapondb.GetInteger(u.getSlot("weapon").id, "res");
 
-    if (u.getSlot("offhand") != null && u.getSlot("offhand").armor) rescost +=
+    if (u.getSlot("offhand") != null && u.getSlot("offhand").isShield()) rescost +=
     4 * nationGen.armordb.GetInteger(u.getSlot("offhand").id, "res");
     else if (u.getSlot("offhand") != null) rescost +=
     4 * nationGen.weapondb.GetInteger(u.getSlot("offhand").id, "res");

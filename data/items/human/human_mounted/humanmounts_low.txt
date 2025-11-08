@@ -10,7 +10,7 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_mount'"
+#mountmnr "serpent_mount"
 #theme "light"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -26,7 +26,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_leather_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 251
 #theme "light"
 #theme "leather"
 #tag "animal serpent"
@@ -44,7 +45,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_light_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 264
 #theme "light"
 #theme "bronze"
 #tag "animal serpent"
@@ -62,7 +64,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_light_scale_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 252
 #theme "light"
 #theme "iron"
 #tag "animal serpent"
@@ -80,7 +83,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_bronze_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "bronze"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -97,7 +101,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_iron_mail_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 172
 #theme "iron"
 #tag "animal serpent"
 #tag "guaranteedprefix serpent"
@@ -114,7 +119,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_cataphract_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #tag "animal serpent"
@@ -131,7 +137,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_bronze_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #theme "advanced"
@@ -149,7 +156,8 @@
 #offsetx -7
 #offsety 14
 #needs overlay 6
-#define "#mountmnr 'serpent_plate_barding_mount'"
+#mountmnr "serpent_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"
@@ -168,7 +176,7 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_mount'"
+#mountmnr "serpent_stupid_mount"
 #theme "specialmount"
 #theme "heavy"
 #tag "animal serpent"
@@ -185,7 +193,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_leather_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 251
 #theme "specialmount"
 #theme "light"
 #theme "leather"
@@ -203,7 +212,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_light_bronze_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -221,7 +231,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_light_scale_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -239,7 +250,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_bronze_mail_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal serpent"
@@ -256,7 +268,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_iron_mail_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal serpent"
@@ -273,7 +286,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_cataphract_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -292,7 +306,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_bronze_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -311,7 +326,8 @@
 #offsetx -5
 #offsety 13
 #needs overlay 7
-#define "#mountmnr 'serpent_stupid_plate_barding_mount'"
+#mountmnr "serpent_stupid_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -332,7 +348,7 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_mount'"
+#mountmnr "green_lizard_mount"
 #theme "specialmount"
 #theme "light"
 #tag "animal lizard"
@@ -349,7 +365,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_leather_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 251
 #theme "specialmount"
 #theme "light"
 #theme "leather"
@@ -368,7 +385,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_light_bronze_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -387,7 +405,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_light_scale_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -406,7 +425,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_bronze_mail_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal lizard"
@@ -423,7 +443,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_iron_mail_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal lizard"
@@ -440,7 +461,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_cataphract_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 253
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -458,7 +480,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_bronze_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 263
 #theme "specialmount"
 #theme "heavy"
 #theme "bronze"
@@ -476,7 +499,8 @@
 #offsetx -5
 #offsety 3
 #needs overlay 3
-#define "#mountmnr 'green_lizard_plate_barding_mount'"
+#mountmnr "green_lizard_mount"
+#barding 254
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -495,7 +519,7 @@
 #armor
 #offsetx 8
 #offsety 11
-#define "#mountmnr 'cave_drake_mount'"
+#mountmnr "cave_drake_mount"
 #tag "animal drake"
 #theme "specialmount"
 #tag "guaranteedprefix drake"
@@ -511,12 +535,12 @@
 #newitem
 #id "great_spider"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider.png
 #armor
 #offsetx 35
 #offsety 7
 #needs overlay spider_overlay
-#define "#mountmnr 'great_spider_mount'"
+#mountmnr "great_spider_mount"
 #theme "specialmount"
 #tag "animal spider"
 #tag "guaranteedprefix spider"
@@ -534,7 +558,7 @@
 #armor
 #offsetx 35
 #offsety 58
-#define "#mountmnr 'hunter_spider_mount'"
+#mountmnr "hunter_spider_mount"
 #theme "specialmount"
 #theme "heavy"
 #tag "animal spider"
@@ -556,7 +580,7 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_mount'"
+#mountmnr "great_boar_mount"
 #theme "specialmount"
 #tag "animal boar"
 #tag "guaranteedprefix boar"
@@ -568,11 +592,12 @@
 #newitem
 #id "great_boar_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_light_bronze.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_light_bronze_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 264
 #theme "specialmount"
 #theme "bronze"
 #tag "animal boar"
@@ -586,11 +611,12 @@
 #newitem
 #id "great_boar_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_light_scale.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_light_scale_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 252
 #theme "specialmount"
 #theme "iron"
 #tag "animal boar"
@@ -604,11 +630,12 @@
 #newitem
 #id "great_boar_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_mail_bronze.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_bronze_mail_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal boar"
@@ -621,11 +648,12 @@
 #newitem
 #id "great_boar_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_mail.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_iron_mail_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal boar"
@@ -638,11 +666,12 @@
 #newitem
 #id "great_boar_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_cataphract.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_cataphract_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -656,11 +685,12 @@
 #newitem
 #id "great_boar_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_bronze.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_bronze_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -674,11 +704,12 @@
 #newitem
 #id "great_boar_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/boar.png
+#sprite /graphics/mounts/standard/boar_armored_plate.png
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'great_boar_plate_barding_mount'"
+#mountmnr "great_boar_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -698,7 +729,7 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_mount'"
+#mountmnr "tiger_mount"
 #theme "specialmount"
 #theme "light"
 #tag "animal tiger"
@@ -715,7 +746,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_light_bronze_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -734,7 +766,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_light_scale_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -753,7 +786,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_bronze_mail_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal tiger"
@@ -770,7 +804,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_iron_mail_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal tiger"
@@ -787,7 +822,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_cataphract_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 253
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -805,7 +841,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_bronze_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 263
 #theme "specialmount"
 #theme "heavy"
 #theme "bronze"
@@ -823,7 +860,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'tiger_plate_barding_mount'"
+#mountmnr "tiger_mount"
+#barding 254
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -843,7 +881,7 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_mount'"
+#mountmnr "black_tiger_mount"
 #theme "specialmount"
 #theme "light"
 #theme "sacred"
@@ -861,7 +899,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_light_bronze_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -880,7 +919,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_light_scale_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -899,7 +939,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_bronze_mail_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #theme "sacred"
@@ -916,7 +957,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_iron_mail_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #theme "sacred"
@@ -933,7 +975,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_cataphract_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 253
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -951,7 +994,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_bronze_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 263
 #theme "specialmount"
 #theme "heavy"
 #theme "bronze"
@@ -969,7 +1013,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_plate_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 254
 #theme "specialmount"
 #theme "heavy"
 #theme "iron"
@@ -988,7 +1033,8 @@
 #armor
 #offsetx -4
 #offsety 4
-#define "#mountmnr 'black_tiger_silver_barding_mount'"
+#mountmnr "black_tiger_mount"
+#barding 255
 #theme "specialmount"
 #theme "heavy"
 #theme "advanced"
@@ -1007,7 +1053,7 @@
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_mount'"
+#mountmnr "jaguar_mount"
 #theme "specialmount"
 #theme "light"
 #tag "animal jaguar"
@@ -1023,7 +1069,8 @@
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_light_bronze_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 264
 #theme "specialmount"
 #theme "light"
 #theme "bronze"
@@ -1041,7 +1088,8 @@
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_light_scale_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 252
 #theme "specialmount"
 #theme "light"
 #theme "iron"
@@ -1059,7 +1107,8 @@
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_bronze_mail_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal jaguar"
@@ -1069,13 +1118,14 @@
 #enditem
 
 #newitem
-#id "jaguar_iron_mail_barding_mount"
+#id "jaguar_iron_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/jaguar.png
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_iron_mail_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal jaguar"
@@ -1091,7 +1141,8 @@
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_cataphract_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 253
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -1108,7 +1159,8 @@
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_bronze_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 263
 #theme "specialmount"
 #theme "bronze"
 #theme "heavy"
@@ -1125,7 +1177,8 @@
 #armor
 #offsetx -4
 #offsety 7
-#define "#mountmnr 'jaguar_plate_barding_mount'"
+#mountmnr "jaguar_mount"
+#barding 254
 #theme "specialmount"
 #theme "iron"
 #theme "heavy"
@@ -1147,7 +1200,7 @@
 #offsetx 23
 #offsety 13
 #needs overlay 13
-#define "#mountmnr 'amphiptere_mount'"
+#mountmnr "amphiptere_mount"
 #theme "specialmount"
 #tag "animal amphiptere"
 #tag "guaranteedprefix amphiptere"
@@ -1166,7 +1219,8 @@
 #offsetx 23
 #offsety 13
 #needs overlay 13
-#define "#mountmnr 'amphiptere_leather_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 251
 #theme "specialmount"
 #theme "leather"
 #tag "animal amphiptere"
@@ -1187,7 +1241,8 @@
 #offsetx 23
 #offsety 13
 #needs overlay 13
-#define "#mountmnr 'amphiptere_light_bronze_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 264
 #theme "specialmount"
 #theme "bronze"
 #tag "animal amphiptere"
@@ -1208,7 +1263,8 @@
 #offsetx 23
 #offsety 13
 #needs overlay 13
-#define "#mountmnr 'amphiptere_light_scale_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 252
 #theme "specialmount"
 #theme "iron"
 #tag "animal amphiptere"
@@ -1229,7 +1285,8 @@
 #offsetx 23
 #offsety 13
 #needs overlay 13
-#define "#mountmnr 'amphiptere_bronze_mail_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 172
 #theme "specialmount"
 #theme "bronze"
 #tag "animal amphiptere"
@@ -1249,7 +1306,8 @@
 #offsetx 23
 #offsety 13
 #needs overlay 13
-#define "#mountmnr 'amphiptere_iron_mail_barding_mount'"
+#mountmnr "amphiptere_mount"
+#barding 172
 #theme "specialmount"
 #theme "iron"
 #tag "animal amphiptere"
@@ -1265,11 +1323,11 @@
 #newitem
 #id "cave_grub"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_mount'"
+#mountmnr "cave_grub_mount"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
 #tag "name commander beastmaster"
@@ -1283,11 +1341,12 @@
 #newitem
 #id "cave_grub_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_light_bronze.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_light_bronze_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 264
 #theme "bronze"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -1303,11 +1362,12 @@
 #newitem
 #id "cave_grub_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_light_scale.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_light_scale_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 252
 #theme "iron"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -1323,11 +1383,12 @@
 #newitem
 #id "cave_grub_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_mail_bronze.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_bronze_mail_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 172
 #theme "bronze"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -1342,11 +1403,12 @@
 #newitem
 #id "cave_grub_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_mail.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_iron_mail_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 172
 #theme "iron"
 #tag "animal 'cave grub'"
 #tag "guaranteedprefix grub"
@@ -1361,11 +1423,12 @@
 #newitem
 #id "cave_grub_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_cataphract.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_cataphract_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 253
 #theme "iron"
 #theme "heavy"
 #tag "animal 'cave grub'"
@@ -1381,11 +1444,12 @@
 #newitem
 #id "cave_grub_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_bronze.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_bronze_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 263
 #theme "bronze"
 #theme "heavy"
 #tag "animal 'cave grub'"
@@ -1401,11 +1465,12 @@
 #newitem
 #id "cave_grub_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/cavegrub.png
+#sprite /graphics/mounts/standard/cave_grub_armored_plate.png
 #armor
 #offsetx 29
 #offsety 14
-#define "#mountmnr 'cave_grub_plate_barding_mount'"
+#mountmnr "cave_grub_mount"
+#barding 254
 #theme "iron"
 #theme "heavy"
 #theme "advanced"

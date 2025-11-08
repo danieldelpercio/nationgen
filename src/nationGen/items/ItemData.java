@@ -2,6 +2,8 @@ package nationGen.items;
 
 import java.util.Optional;
 
+import com.elmokki.Generic;
+
 import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
 
@@ -82,5 +84,9 @@ public class ItemData {
     // -1 range is full strength, -2 is half strength (/2), -3 is / 3
     strengthScaling = Math.abs(range);
     return unitStrength / strengthScaling;
+  }
+
+  public boolean isCustomIdResolved() {
+    return Generic.isNumeric(this.id);
   }
 }

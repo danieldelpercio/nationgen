@@ -12,6 +12,22 @@ public class SlotMap {
   private LinkedHashMap<String, Deque<Item>> slotmemory =
     new LinkedHashMap<>();
 
+  public SlotMap() {};
+
+  // Deep-copy constructor
+  public SlotMap(SlotMap slotMap) {
+    slotMap.slotmemory.forEach((slotName, itemDeque) -> {
+      Deque<Item> copiedDeque = new LinkedList<>();
+
+      itemDeque.forEach(item -> {
+        Item itemCopy = (item != null) ? new Item(item) : null;
+        copiedDeque.push(itemCopy);
+      });
+
+      this.slotmemory.put(slotName, copiedDeque);
+    });
+  }
+
   public Set<String> getSlots() {
     return slotmemory.keySet();
   }
@@ -33,19 +49,19 @@ public class SlotMap {
     return stack == null ? null : stack.peek();
   }
 
-  Stream<Item> getArmor() {
+  Stream<Item> getEquippedArmors() {
     return this.items()
-      .filter(i -> i.armor == true);
+      .filter(i -> i.isArmor() && i.hasDominionsId());
   }
 
-  Stream<Item> getWeapons() {
+  Stream<Item> getEquippedWeapons() {
     return this.items()
-      .filter(i -> i.armor == false);
+      .filter(i -> i.isWeapon() && i.hasDominionsId());
   }
 
   Stream<Item> getResolvedWeapons() {
     return this.items()
-      .filter(i -> i.armor == false && i.isCustomIdResolved());
+      .filter(i -> i.isWeapon() == true && i.isCustomIdResolved());
   }
 
   void push(String slot, Item item) {

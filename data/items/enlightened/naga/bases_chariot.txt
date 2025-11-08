@@ -10,7 +10,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'horse_cataphract_barding_oriental_chariot'"
+#mountmnr "horse_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -27,7 +28,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'horse_cataphract_barding_oriental_chariot'"
+#mountmnr "horse_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -44,7 +46,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'horse_cataphract_barding_oriental_chariot'"
+#mountmnr "horse_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -61,7 +64,7 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'horse_cataphract_barding_oriental_chariot'"
+#mountmnr "horse_chariot"
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -78,7 +81,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'horse_bronze_barding_oriental_chariot'"
+#mountmnr "horse_chariot"
+#barding 263
 #theme "bronze"
 #theme "elite"
 #tag "chariot"
@@ -89,14 +93,15 @@
 #enditem
 
 #newitem
-#id "horse_plate_barding_oriental_chariot"
+#id "horse_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/horse_oriental.png
 #armor
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'horse_plate_barding_oriental_chariot'"
+#mountmnr "horse_chariot"
+#barding 254
 #theme "iron"
 #theme "elite"
 #tag "chariot"
@@ -117,7 +122,7 @@
 #needs overlay chariot_camel_gilt
 #offsetx 60
 #offsety -7
-#define "#mountmnr 'camel_oriental_chariot'"
+#mountmnr "camel_oriental_chariot"
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 15"
@@ -133,7 +138,8 @@
 #needs overlay chariot_camel_gilt
 #offsetx 60
 #offsety -7
-#define "#mountmnr 'camel_light_bronze_barding_oriental_chariot'"
+#mountmnr "camel_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -150,7 +156,8 @@
 #needs overlay chariot_camel_gilt
 #offsetx 60
 #offsety -7
-#define "#mountmnr 'camel_light_scale_barding_oriental_chariot'"
+#mountmnr "camel_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -167,7 +174,8 @@
 #needs overlay chariot_camel_gilt
 #offsetx 60
 #offsety -7
-#define "#mountmnr 'camel_mail_barding_oriental_chariot'"
+#mountmnr "camel_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -184,7 +192,7 @@
 #needs overlay chariot_camel_gilt
 #offsetx 60
 #offsety -7
-#define "#mountmnr 'camel_cataphract_barding_oriental_chariot'"
+#mountmnr "camel_chariot"
 #theme "iron"
 #theme "elite"
 #tag "chariot"
@@ -202,7 +210,8 @@
 #needs overlay chariot_camel_gilt
 #offsetx 60
 #offsety -7
-#define "#mountmnr 'camel_bronze_barding_oriental_chariot'"
+#mountmnr "camel_chariot"
+#barding 263
 #theme "bronze"
 #theme "elite"
 #tag "chariot"
@@ -220,7 +229,8 @@
 #needs overlay chariot_camel_gilt
 #offsetx 60
 #offsety -7
-#define "#mountmnr 'camel_plate_barding_oriental_chariot'"
+#mountmnr "camel_chariot"
+#barding 254
 #theme "iron"
 #theme "elite"
 #tag "chariot"
@@ -242,8 +252,9 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'lizard_light_bronze_barding_oriental_chariot'"
+#mountmnr "lizard_chariot"
 #define "#gcost -5"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -261,8 +272,9 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'lizard_light_scale_barding_oriental_chariot'"
+#mountmnr "lizard_chariot"
 #define "#gcost -5"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -280,8 +292,9 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'lizard_mail_barding_oriental_chariot'"
+#mountmnr "lizard_chariot"
 #define "#gcost -5"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -299,7 +312,7 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'lizard_cataphract_barding_oriental_chariot'"
+#mountmnr "lizard_chariot"
 #define "#gcost -5"
 #theme "iron"
 #theme "elite"
@@ -311,7 +324,7 @@
 #enditem
 
 #newitem
-#id "lizard_bronze_barding_oriental_chariot"
+#id "lizard_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard_oriental.png
 #recolormask /graphics/mounts/chariots/lizard_oriental_recolormask.png
@@ -319,8 +332,9 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'lizard_bronze_barding_oriental_chariot'"
+#mountmnr "lizard_chariot"
 #define "#gcost -5"
+#barding 263
 #theme "bronze"
 #theme "elite"
 #tag "chariot"
@@ -331,7 +345,7 @@
 #enditem
 
 #newitem
-#id "lizard_plate_barding_oriental_chariot"
+#id "lizard_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/lizard_oriental.png
 #recolormask /graphics/mounts/chariots/lizard_oriental_recolormask.png
@@ -339,8 +353,9 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'lizard_plate_barding_oriental_chariot'"
+#mountmnr "lizard_chariot"
 #define "#gcost -5"
+#barding 254
 #theme "iron"
 #theme "elite"
 #tag "chariot"
@@ -359,8 +374,9 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'lizard_barding_oriental_chariot'"
+#mountmnr "lizard_chariot"
 #define "#gcost -5"
+#barding 289
 #theme "elite"
 #tag "chariot"
 #tag "minprot 10"
@@ -380,7 +396,7 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_oriental_chariot'"
+#mountmnr "boar_oriental_chariot"
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 15"
@@ -396,7 +412,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_light_bronze_barding_oriental_chariot'"
+#mountmnr "boar_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -413,7 +430,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_light_scale_barding_oriental_chariot'"
+#mountmnr "boar_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -430,7 +448,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_mail_barding_oriental_chariot'"
+#mountmnr "boar_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -447,7 +466,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_mail_barding_oriental_chariot'"
+#mountmnr "boar_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -464,7 +484,7 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_cataphract_barding_oriental_chariot'"
+#mountmnr "boar_chariot"
 #theme "iron"
 #theme "elite"
 #tag "chariot"
@@ -475,14 +495,15 @@
 #enditem
 
 #newitem
-#id "boar_bronze_barding_oriental_chariot"
+#id "boar_chariot"
 #gameid -1
 #sprite /graphics/mounts/chariots/boar_oriental_chariot_armored_bronze.png
 #armor
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_bronze_barding_oriental_chariot'"
+#mountmnr "boar_chariot"
+#barding 263
 #theme "bronze"
 #theme "elite"
 #tag "chariot"
@@ -500,7 +521,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'boar_plate_barding_oriental_chariot'"
+#mountmnr "boar_chariot"
+#barding 254
 #theme "iron"
 #theme "elite"
 #tag "chariot"
@@ -521,7 +543,7 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'tiger_oriental_chariot'"
+#mountmnr "tiger_oriental_chariot"
 #tag "chariot"
 #tag "minprot 10"
 #tag "maxprot 15"
@@ -537,7 +559,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'tiger_light_bronze_barding_oriental_chariot'"
+#mountmnr "tiger_oriental_chariot"
+#barding 264
 #theme "bronze"
 #tag "chariot"
 #tag "minprot 10"
@@ -554,7 +577,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'tiger_light_scale_barding_oriental_chariot'"
+#mountmnr "tiger_oriental_chariot"
+#barding 252
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -571,7 +595,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'tiger_mail_barding_oriental_chariot'"
+#mountmnr "tiger_oriental_chariot"
+#barding 172
 #theme "iron"
 #tag "chariot"
 #tag "minprot 10"
@@ -588,7 +613,7 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'tiger_cataphract_barding_oriental_chariot'"
+#mountmnr "tiger_oriental_chariot"
 #theme "iron"
 #theme "elite"
 #tag "chariot"
@@ -606,7 +631,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'tiger_bronze_barding_oriental_chariot'"
+#mountmnr "tiger_oriental_chariot"
+#barding 263
 #theme "bronze"
 #theme "elite"
 #tag "chariot"
@@ -624,7 +650,8 @@
 #needs overlay oriental_chariot_gilt
 #offsetx 45
 #offsety -6
-#define "#mountmnr 'tiger_plate_barding_oriental_chariot'"
+#mountmnr "tiger_oriental_chariot"
+#barding 254
 #theme "iron"
 #theme "elite"
 #tag "chariot"

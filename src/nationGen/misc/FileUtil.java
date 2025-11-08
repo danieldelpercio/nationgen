@@ -243,4 +243,12 @@ public final class FileUtil {
     int input = signedShort & 0xFFFF;
     return (short) ((input << 8) | ((input & 0xFF00) >>> 8));
   }
+
+  public static Boolean isLineComment(String line) {
+    if (line == null) {
+      throw new IllegalArgumentException("Expected line to be a String; got null instead");
+    }
+
+    return line.startsWith("-");
+  }
 }

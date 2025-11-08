@@ -81,7 +81,7 @@
 #newitem
 #id spider_overlay
 #gameid -1
-#sprite /graphics/mounts/standard/spider1_overlay.png
+#sprite /graphics/mounts/standard/great_spider_overlay.png
 #armor
 #enditem
 

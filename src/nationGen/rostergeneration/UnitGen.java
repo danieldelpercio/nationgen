@@ -536,7 +536,7 @@ public class UnitGen {
     for (Item i : to.getItems(slot)) {
       if (i != null) if (
         i.id.equals(ui.id) &&
-        i.armor == ui.armor &&
+        i.isArmor() == ui.isArmor() &&
         ((i.tags.containsName("elite") == ui.tags.containsName("elite")) ||
           i.tags.containsName("sacred") == ui.tags.containsName("sacred"))
       ) return i;
@@ -544,7 +544,7 @@ public class UnitGen {
 
     // Same id and armor type
     for (Item i : to.getItems(slot)) {
-      if (i != null) if (i.id.equals(ui.id) && i.armor == ui.armor) return i;
+      if (i != null) if (i.id.equals(ui.id) && i.isArmor() == ui.isArmor()) return i;
     }
 
     return null;

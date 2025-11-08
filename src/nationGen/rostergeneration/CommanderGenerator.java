@@ -298,7 +298,7 @@ public class CommanderGenerator extends TroopGenerator {
       //NamePart part = new NamePart();
       //part.text = "Commander";
 
-      Unit unit = u.getCopy();
+      Unit unit = new Unit(u);
 
       // Remove montags
       List<Command> toremove = new ArrayList<>();
@@ -436,7 +436,7 @@ public class CommanderGenerator extends TroopGenerator {
         com.commands.add(Command.args("#gcost", "+5"));
       }
 
-      if (com.caponly && r.nextDouble() > 0.5) com.caponly = false;
+      if (com.isCapOnly() && r.nextDouble() > 0.5) com.setCapOnly(false);
 
       com.commands.add(Command.args("#gcost", "+30"));
 
@@ -881,8 +881,8 @@ public class CommanderGenerator extends TroopGenerator {
     }
 
     // Try to get an elite armor of some suitable sort
-    if (u.getSlot(slot).armor && helmet == null && !slot.equals("offhand")) {
-      int helmetprot = item.armor
+    if (u.getSlot(slot).isArmor() && helmet == null && !slot.equals("offhand")) {
+      int helmetprot = item.isArmor()
         ? nationGen.armordb.GetInteger(item.id, "prot")
         : 0;
 
