@@ -14,6 +14,7 @@
 #gameid 387
 #tentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -21,6 +22,7 @@
 #id tentacle_strangle
 #gameid 116
 #tentacle
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -29,6 +31,7 @@
 #gameid 387
 #smalltentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -36,6 +39,7 @@
 #id tentacle_strangle
 #gameid 116
 #smalltentacle
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -60,6 +64,7 @@
 #gameid 63
 #smalltentacle
 #command "#gcost +2"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -68,6 +73,7 @@
 #gameid 282
 #smalltentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 

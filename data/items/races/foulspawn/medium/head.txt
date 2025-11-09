@@ -200,7 +200,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "angler"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/angler.png
@@ -224,7 +223,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "muuch"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/muuch.png
@@ -245,7 +243,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "muuch-serpent"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/muuch-serpent.png
@@ -270,7 +267,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "sakmuuch"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/sakmuuch.png
@@ -328,7 +324,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "goat"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/goat.png
@@ -347,7 +342,6 @@
 #enditem
 
 #newitem
-#basechance 1.75
 #id "goat-serpent"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/goat-serpent.png
@@ -370,7 +364,6 @@
 #enditem
 
 #newitem
-#basechance 0.25
 #id "chimera"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/goat-serpent.png
@@ -394,7 +387,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "ram"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/ram.png
@@ -431,7 +423,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "bear"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/bear.png
@@ -451,7 +442,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "bat"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/bat.png
@@ -471,7 +461,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "rat"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/rat.png
@@ -511,7 +500,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "serpent"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/serpent.png
@@ -532,7 +520,6 @@
 #enditem
 
 #newitem
-#basechance 2
 #id "serpents"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/serpents.png
@@ -556,7 +543,6 @@
 
 #newitem
 #id "tentacle-blue"
-#basechance 0.5
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/tentacle_blue.png
 #command "#gcost +10"
@@ -583,7 +569,6 @@
 
 #newitem
 #id "tentacle-pink"
-#basechance 0.5
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/tentacle_pink.png
 #command "#gcost +10"
@@ -608,7 +593,6 @@
 #enditem
 
 #newitem
-#basechance 0.5
 #id "draconian"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/drake_swamp.png
@@ -628,7 +612,6 @@
 #enditem
 
 #newitem
-#basechance 0.25
 #id "firedrake"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/drake_fire.png
@@ -652,7 +635,6 @@
 #enditem
 
 #newitem
-#basechance 0.25
 #id "frostdrake"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/drake_frost.png
@@ -675,7 +657,6 @@
 #enditem
 
 #newitem
-#basechance 0.25
 #id "swampdrake"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/drake_swamp.png
@@ -699,7 +680,6 @@
 #enditem
 
 #newitem
-#basechance 0.25
 #id "wyvern"
 #gameid -1
 #sprite /graphics/foulspawn/medium/head/wyvern.png
@@ -723,7 +703,6 @@
 #newitem
 #id "octopus"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/octopus.png
 #offsetx 4
 #offsety -17
@@ -746,7 +725,6 @@
 #newitem
 #id "maw"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/maw.png
 #offsetx 2
 #offsety -17
@@ -769,7 +747,6 @@
 #newitem
 #id "eye"
 #gameid -1
-#basechance 0.5
 #sprite /graphics/foulspawn/small/head/eye.png
 #offsetx 2
 #offsety -17
@@ -793,7 +770,6 @@
 #newitem
 #id "grub"
 #gameid -1
-#basechance 0.25
 #sprite /graphics/foulspawn/medium/head/grub.png
 #command "#gcost +7"
 #command "#prot -2"

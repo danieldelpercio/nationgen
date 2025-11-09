@@ -90,6 +90,7 @@
 #id tongue_sleep
 #gameid 387
 #type "maw"
+#itemslot hand +1
 #command "#gcost +1"
 #enditem
 

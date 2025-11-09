@@ -20,6 +20,7 @@
 #gameid 116
 #type "tentacle"
 #command "#gcost +3"
+#itemslot hand +1
 #enditem
 
 #newitem
@@ -27,6 +28,7 @@
 #gameid 387
 #type "tentacle"
 #command "#gcost +5"
+#itemslot hand +1
 #enditem
 
 #newitem

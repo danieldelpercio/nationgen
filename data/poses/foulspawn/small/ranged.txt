@@ -20,10 +20,10 @@
 
 #chanceinc moduleid herogen *0
 
-#montagpose_min 8
-#montagpose_max 8
+#montagpose_min 4
+#montagpose_max 4
 
-#maxunits 1
+#maxunits 2
 #endpose
 
 
@@ -38,7 +38,7 @@
 #montagpose "pure ranged" 1
 #montagpose "hybrid ranged" 3
 
-#montagpose_min 5
+#montagpose_min 3
 #montagpose_max 5
 
 #load basesprite /data/items/races/foulspawn/small/bases_ranged.txt
@@ -50,7 +50,7 @@
 
 #chanceinc moduleid herogen *0
 
-#maxunits 1
+#maxunits 2
 #endpose
 
 

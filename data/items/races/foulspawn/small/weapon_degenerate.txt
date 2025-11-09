@@ -71,6 +71,7 @@
 #gameid 387
 #tentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -79,6 +80,7 @@
 #basechance 0.25
 #gameid 116
 #tentacle
+#itemslot hand +1
 #needstype rarm tentacle
 #enditem
 
@@ -88,6 +90,7 @@
 #gameid 387
 #smalltentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -95,6 +98,7 @@
 #id tentacle_strangle
 #gameid 116
 #smalltentacle
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -104,6 +108,7 @@
 #gameid 282
 #smalltentacle
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm smalltentacle
 #enditem
 
@@ -130,6 +135,7 @@
 #gameid 116
 #neck
 #command "#gcost +1"
+#itemslot hand +1
 #needstype rarm snake
 #type melee
 #enditem
@@ -145,7 +151,7 @@
 
 #newitem
 #id swan_peck
-#gameid beak
+#gameid 404
 #neck
 #needstype rarm swan
 #type melee
