@@ -252,6 +252,22 @@ public class Militia {
 
   public List<String> writeModLines() {
     List<String> lines = new ArrayList<>();
+    Unit wallUnit = this.getWallUnit();
+    Unit gateUnit = this.getGateUnit();
+    Integer gateUnitId = gateUnit.getRootId();
+    Integer wallUnitId = wallUnit.getRootId();
+
+    // If this nation's militia did not succeed in getting a
+    // gate unit use Heavy Infantry (id: 40) as a default
+    if (gateUnitId == -1) {
+      gateUnitId = 40;
+    }
+
+    // If this nation's militia did not succeed in getting a
+    // wall unit, use Archer (32) as a default
+    if (wallUnitId == -1) {
+      wallUnitId = 32;
+    }
 
     lines.add("#defcom1 " + this.getPdCommander().getRootId());
 
@@ -384,7 +400,7 @@ public class Militia {
     possibleUnits.addAll(nation.combineTroopsToList("mounted"));
     possibleUnits.addAll(nation.combineTroopsToList("ranged"));
 
-    if (!isMontagAllowed) {
+    if (isMontagAllowed) {
       possibleUnits.addAll(
         nation.combineTroopsToList("montagtroops")
       );
@@ -645,6 +661,7 @@ public class Militia {
     List<Unit> units
   ) {
     List<Unit> unsuitable = new ArrayList<>();
+    List<Unit> montags = new ArrayList<>();
 
     for (Unit u : units) {
       boolean cannotBePd = Generic.getAllUnitTags(u).containsName("cannot_be_pd");
@@ -654,11 +671,15 @@ public class Militia {
       }
 
       else if (u.isMontag() == true && isMontagAllowed == false) {
-        unsuitable.add(u);
+        montags.add(u);
       }
     }
 
-    // Remove unsuitable units assuming that there would still be some left to pick
+    // Remove whichever montags are unsuitable. Note that things like gate and wall
+    // defenders in Dominions don't accept montags, so we *need* to remove them in those cases.
+    units.removeAll(montags);
+
+    // Remove other unsuitable units assuming that there would still be some left to pick
     if (unsuitable.size() < units.size()) {
       units.removeAll(unsuitable);
     }
