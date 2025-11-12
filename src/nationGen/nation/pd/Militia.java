@@ -73,6 +73,23 @@ public class Militia {
   // the units that were selected for PD are, the less we'll get.
   private final int MILITIA_BUDGET = 400;
 
+  // The default #guardmult and #wallmult to use to determine amount of gate/wall units.
+  private final int CASTLE_DEFENDERS_MULT = 20;
+
+  // The defaults below are mostly for Foulspawn, since wall and gates don't
+  // accept montag ids, even though PD and starting armies do. Some foulspawn
+  // nations will be entirely made of montag units.
+
+  // Default commander to use if no valid one could be found (indie Commander)
+  private final int DEFAULT_GATE_COMMANDER_ID = 36;
+  private final int DEFAULT_WALL_COMMANDER_ID = 36;
+
+  // Default gate unit to use if no valid one could be found (Heavy Infantry)
+  private final int DEFAULT_GATE_UNIT_ID = 40;
+
+  // Default wall unit to use if no valid one could be found (Archer)
+  private final int DEFAULT_WALL_UNIT_ID = 32;
+
   public Militia(Nation nation, boolean isMontagAllowed, Settings settings) {
       this.nation = nation;
       this.random = new Random(this.nation.random.nextInt());
@@ -252,22 +269,16 @@ public class Militia {
 
   public List<String> writeModLines() {
     List<String> lines = new ArrayList<>();
-    Unit wallUnit = this.getWallUnit();
-    Unit gateUnit = this.getGateUnit();
-    Integer gateUnitId = gateUnit.getRootId();
-    Integer wallUnitId = wallUnit.getRootId();
+    lines.addAll(this.writePdLines());
+    lines.add("");
+    lines.addAll(this.writeGateDefenseLines());
+    lines.add("");
+    lines.addAll(this.writeWallDefenseLines());
+    return lines;
+  }
 
-    // If this nation's militia did not succeed in getting a
-    // gate unit use Heavy Infantry (id: 40) as a default
-    if (gateUnitId == -1) {
-      gateUnitId = 40;
-    }
-
-    // If this nation's militia did not succeed in getting a
-    // wall unit, use Archer (32) as a default
-    if (wallUnitId == -1) {
-      wallUnitId = 32;
-    }
+  public List<String> writePdLines() {
+    List<String> lines = new ArrayList<>();
 
     lines.add("#defcom1 " + this.getPdCommander().getRootId());
 
@@ -283,7 +294,6 @@ public class Militia {
     });
 
     lines.add("");
-
     lines.add("#defcom2 " + this.getFortPdCommander().getRootId());
 
     this.getUsedFortPdTypes()
@@ -297,18 +307,64 @@ public class Militia {
       );
     });
 
-    lines.add("");
+    return lines;
+  }
 
-    // Wall units
-    lines.add("#wallcom " + this.getWallCommander().getRootId());
-    lines.add("#wallunit " + this.getWallUnit().getRootId());
-    lines.add("#wallmult " + this.getAmountOfCastleDefenders(this.getWallUnit()));
+  public List<String> writeGateDefenseLines() {
+    List<String> lines = new ArrayList<>();
+    Unit gateCommander = this.getGateCommander();
+    Unit gateUnit = this.getGateUnit();
+
+    Integer gateCommanderId = gateCommander.getRootId();
+    Integer gateUnitId = gateUnit.getRootId();
+
+    Integer gateUnitAmount = this.getAmountOfCastleDefenders(gateUnit);
+
+    if (gateCommanderId < 0) {
+      gateCommanderId = DEFAULT_GATE_COMMANDER_ID;
+    }
+
+    // If this nation's militia did not succeed in getting a
+    // valid gate unit use Heavy Infantry (id: 40) as a default
+    if (gateUnitId < 0) {
+      gateUnitId = DEFAULT_GATE_UNIT_ID;
+      gateUnitAmount = (int) Math.floor(CASTLE_DEFENDERS_MULT * 0.5);
+    }
 
     // Gate units
-    lines.add("#guardcom " + this.getGateCommander().getRootId());
-    lines.add("#guardunit " + this.getGateUnit().getRootId());
-    lines.add("#guardmult " + this.getAmountOfCastleDefenders(this.getGateUnit()));
+    lines.add("#guardcom " + gateCommanderId);
+    lines.add("#guardunit " + gateUnitId);
+    lines.add("#guardmult " + gateUnitAmount);
+    return lines;
+  }
 
+  public List<String> writeWallDefenseLines() {
+    List<String> lines = new ArrayList<>();
+    Unit wallCommander = this.getWallCommander();
+    Unit wallUnit = this.getWallUnit();
+
+    Integer wallCommanderId = wallCommander.getRootId();
+    Integer wallUnitId = wallUnit.getRootId();
+
+    Integer wallUnitAmount = this.getAmountOfCastleDefenders(wallUnit);
+
+    // If this nation's militia did not succeed in getting a
+    // valid gate/wall commander use Commander (id: 36) as a default
+    if (wallCommanderId < 0) {
+      wallCommanderId = DEFAULT_WALL_COMMANDER_ID;
+      wallUnitAmount = CASTLE_DEFENDERS_MULT * 2;
+    }
+
+    // If this nation's militia did not succeed in getting a
+    // valid wall unit, use Archer (32) as a default
+    if (wallUnitId < 0) {
+      wallUnitId = DEFAULT_WALL_UNIT_ID;
+    }
+
+    // Gate units
+    lines.add("#wallcom " + wallCommanderId);
+    lines.add("#wallunit " + wallUnitId);
+    lines.add("#wallmult " + wallUnitAmount);
     return lines;
   }
 
