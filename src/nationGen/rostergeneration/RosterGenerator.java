@@ -395,7 +395,10 @@ public class RosterGenerator {
     Unit u = null;
     while (u == null) {
       ItemSet armors = new ItemSet();
-      for (TroopTemplate t : templates) armors.add(t.armor);
+
+      for (TroopTemplate t : templates) {
+        armors.add(t.armor);
+      }
 
       List<Pose> poses = new ArrayList<>();
       for (Pose p : getPosesWithoutMaxUnits(race.getPoses(role), race)) {
@@ -411,19 +414,26 @@ public class RosterGenerator {
       if (chandler.handleChanceIncs(race, poses).isEmpty()) {
         return null;
       }
+
       Pose p = chandler.getRandom(poses, race);
-      if (p == null) return null;
+
+      if (p == null) {
+        return null;
+      }
 
       // Remove armors that are on poses of the same type
       ItemSet pointless = new ItemSet();
       for (TroopTemplate t : templates) {
         if (t.template.pose.roles.contains(role)) {
           pointless.add(t.armor);
-          for (Item i : t.template.pose.getItems("armor")) if (
-            i.id.equals(t.armor.id) && i.isCustomIdResolved()
-          ) pointless.add(i);
+          for (Item i : t.template.pose.getItems("armor")) {
+             if (i.id.equals(t.armor.id) && i.hasDominionsId()) {
+              pointless.add(i);
+            }
+          }
         }
       }
+
       armors.removeAll(pointless);
       tgen.used.removeAll(pointless);
 

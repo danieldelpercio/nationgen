@@ -128,7 +128,7 @@ public class DescriptionReplacer {
       for (String slotName : slots) {
         Item item = u.getSlot(slotName);
 
-        if (item != null && item.isWeapon() && item.isCustomIdResolved()) {
+        if (item != null && item.isWeapon() && item.hasDominionsId()) {
           String weaponName = item.getValueFromDb("weapon_name");
           Boolean weaponNameExistsInDb = weaponName.isBlank() == false;
 
@@ -157,7 +157,7 @@ public class DescriptionReplacer {
       for (Unit u : units) {
         for (String slot : slots) {
           Item i = u.getSlot(slot);
-          if (i != null && i.isWeapon() && i.isCustomIdResolved()) {
+          if (i != null && i.isWeapon() && i.hasDominionsId()) {
             String weaponName = i.getValueFromDb("weapon_name");
             Boolean weaponNameExistsInDb = weaponName.isBlank() == false;
             Boolean isNotInList = !weapons.contains(weaponName);
@@ -213,7 +213,7 @@ public class DescriptionReplacer {
 
       int prot = 0;
 
-      if (i != null && i.isArmor() && i.isCustomIdResolved()) {
+      if (i != null && i.isArmor() && i.hasDominionsId()) {
         prot = n.nationGen.armordb.GetInteger(i.id, "prot", 0);
 
         if (

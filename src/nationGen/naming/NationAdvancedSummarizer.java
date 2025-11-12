@@ -265,7 +265,7 @@ public class NationAdvancedSummarizer {
     return u.slotmap
       .items()
       .filter(Item::isWeapon)
-      .filter(i -> i.isCustomIdResolved())
+      .filter(Item::hasDominionsId)
       .map(i -> weapondb.GetValue(i.id, "weapon_name"))
       .collect(Collectors.toList());
   }
@@ -274,7 +274,7 @@ public class NationAdvancedSummarizer {
     return u.slotmap
       .items()
       .filter(Item::isArmor)
-      .filter(i -> i.isCustomIdResolved())
+      .filter(Item::hasDominionsId)
       .map(i -> armordb.GetValue(i.id, "armorname"))
       .collect(Collectors.toList());
   }
