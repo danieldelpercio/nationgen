@@ -135,11 +135,13 @@ public class Item extends Drawable {
   /**
    * A "Dominions id" is an id above 0 which can or must be written into
    * an #armor or #weapon command. A "basesprite" item does not have a
-   * Dominions id, but an equipped Greatsword does.
+   * Dominions id, but an equipped Greatsword does. "Item" is a misleading
+   * name in NationGen, since it can refer both to the equipped Dominions
+   * items as well as to cosmetic sprite parts, such as "hands" or "shadow".
    * @return
    */
   public Boolean hasDominionsId() {
-    return Integer.parseInt(this.id) > 0;
+    return this.id.equals("-1") == false;
   }
 
   /**
