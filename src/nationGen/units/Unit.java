@@ -663,6 +663,7 @@ public class Unit {
       newitem = Item.resolveId(newitem);
     }
 
+    slotmap.pop(slotname);
     slotmap.push(slotname, newitem);
     handleSlotChange(slotname, olditem, newitem);
   }
