@@ -295,7 +295,7 @@ public class NameGenerator {
   }
 
   public static String addPreposition(String str) {
-    if (isVowel(str.toLowerCase().charAt(0) + " ")) return "an " + str;
+    if (isVowel(str.toLowerCase().charAt(0) + "")) return "an " + str;
     else return "a " + str;
   }
 
@@ -407,6 +407,8 @@ public class NameGenerator {
       /*do nothing*/
     } else if (line.toLowerCase().endsWith("van")) {
       line = line + "ir";
+    } else if (line.toLowerCase().endsWith("us")) {
+      line = line.substring(0, line.lastIndexOf("us")) + "ii";
     } else line = line + "s";
 
     return line + end;
