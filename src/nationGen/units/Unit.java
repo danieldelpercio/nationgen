@@ -113,15 +113,16 @@ public class Unit {
   }
 
   public Boolean hasCommand(String cmd) {
-    return this.getCommands()
-      .stream()
-      .filter(c -> c.command.equals(cmd))
-      .findAny()
-      .isPresent();
+    Command parsed = Command.parse(cmd);
+    return this.hasCommand(parsed);
   }
 
-  public Boolean hasExactCommand(String cmd) {
-    return this.getCommand(cmd).isPresent();
+  public Boolean hasCommand(Command cmd) {
+    return this.getCommands()
+      .stream()
+      .filter(c -> c.equals(cmd))
+      .findAny()
+      .isPresent();
   }
 
   public Optional<Command> getCommand(String commandString) {
@@ -427,6 +428,28 @@ public class Unit {
     return slots;
   }
 
+  public List<Unit> getMontagShapes() {
+    List<Unit> montagUnits = new ArrayList<>();
+    Optional<Command> firstshapeCommand = this.getCommand("#firstshape");
+
+    if (firstshapeCommand.isEmpty()) {
+      return montagUnits;
+    }
+
+    Command parsedFirstshape = firstshapeCommand.get();
+    Integer negativeMontagNumber = parsedFirstshape.args.getInt(0);
+    String montag = Math.abs(negativeMontagNumber) + "";
+    Command montagCmd = Command.args("#montag", montag);
+
+    this.nation.listTroops().forEach(t -> {
+      if (t.hasCommand(montagCmd)) {
+        montagUnits.add(t);
+      }
+    });
+
+    return montagUnits;
+  }
+
   public Boolean isCapOnly() {
     return this.caponly;
   }
@@ -435,6 +458,18 @@ public class Unit {
     return this.hasCommand("#montag") ||
       this.pose.roles.contains("montagtroops") ||
       this.pose.tags.containsName("montagpose");
+  }
+
+  public Boolean isMontagRecruitableDummy() {
+    Optional<Command> firstshapeCommand = this.getCommand("#firstshape");
+
+    if (firstshapeCommand.isEmpty()) {
+      return false;
+    }
+
+    Integer firstshapeNumber = firstshapeCommand.get().args.getInt(0);
+    Boolean isMontagNumber = firstshapeNumber < 0;
+    return firstshapeCommand.isPresent() && isMontagNumber;
   }
 
   public Boolean isUndead() {
