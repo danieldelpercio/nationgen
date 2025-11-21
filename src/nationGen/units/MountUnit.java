@@ -92,7 +92,7 @@ public class MountUnit extends Unit {
 
         if (mountItem.sprite.isBlank() == false) {
           this.mount.commands.removeIf(c -> {
-            return c.command.equals("#spr1") || c.command.equals("#spr2");
+            return c.command.equals("#spr1") || c.command.equals("#spr2") || c.command.equals("#copyspr");
           });
           this.mount.commands.add(Command.args("#spr1", "." + mountItem.sprite));
           this.mount.commands.add(Command.args("#spr2", "shift"));
