@@ -1445,29 +1445,6 @@ public class Unit {
     else return 10;
   }
 
-  public String writeSlotLine(Item i) {
-    Dom3DB armordb = nationGen.armordb;
-    Dom3DB weapondb = nationGen.weapondb;
-
-    if (i.isArmor()) return (
-      "#armor " +
-      i.id +
-      " --- " +
-      armordb.GetValue(i.id, "armorname") +
-      " / " +
-      i.name
-    );
-
-    else return (
-      "#weapon " +
-      i.id +
-      " --- " +
-      weapondb.GetValue(i.id, "wpname") +
-      " / " +
-      i.name
-    );
-  }
-
   public Boolean isLight() {
     if (this.getTotalProt(true) > 10) return false;
 
