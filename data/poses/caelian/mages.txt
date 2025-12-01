@@ -3,6 +3,7 @@
 --- mage priest
 
 #newpose
+#id "caelian mages and priests"
 #role "mage"
 #role "priest"
 

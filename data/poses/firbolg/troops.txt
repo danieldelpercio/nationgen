@@ -51,6 +51,7 @@
 
 ----------- Skirmishers
 #newpose
+#id "firbolg skirmishers"
 #role "ranged"
 #role "scout"
 

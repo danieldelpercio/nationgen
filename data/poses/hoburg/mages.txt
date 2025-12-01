@@ -1,5 +1,6 @@
 ------- mage/priest
 #newpose
+#id "hoburg mages and priests"
 #role "mage"
 #role "priest"
 

@@ -53,6 +53,7 @@
 ------- Archer
 
 #newpose
+#id "muuch ranged"
 #role "ranged"
 #role "sacred"
 
@@ -79,6 +80,7 @@
 -------- scout
 
 #newpose
+#id "muuch scouts"
 #role "scout"
 
 #load basesprite /data/items/races/muuch/muuchbases.txt

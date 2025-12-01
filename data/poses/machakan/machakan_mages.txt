@@ -2,6 +2,7 @@
 --- No legs, so do not use this pose for non-robe armors or draw legs to your body armor.
 
 #newpose
+#id "machakan mages and priests"
 #role "mage"
 #role "priest"
 

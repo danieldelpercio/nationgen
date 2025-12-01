@@ -2,6 +2,7 @@
 -------- Normal
 
 #newpose
+#id "zotz mages and priests"
 #role "mage"
 #role "priest"
 

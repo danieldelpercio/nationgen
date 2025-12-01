@@ -2,7 +2,7 @@
 #newpose
 
 #basechance 1
-
+#id "hoburg stealthy mages and priests"
 #role "mage"
 #role "priest"
 

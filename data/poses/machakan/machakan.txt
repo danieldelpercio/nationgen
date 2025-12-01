@@ -2,6 +2,7 @@
 -------- Normal
 
 #newpose
+#id "machakan infantry"
 #role "infantry"
 #role "scout"
 
@@ -23,6 +24,7 @@
 -------- 2h infantry
 
 #newpose
+#id "machakan 2h infantry"
 #role "infantry"
 #role "scout"
 
@@ -44,6 +46,7 @@
 ------- Mounted
 
 #newpose
+#id "machakan cavalry"
 #id "mounted"
 #role "mounted"
 
@@ -72,7 +75,7 @@
 ------- Low mounted
 
 #newpose
-#id "mounted low"
+#id "machakan low cavalry"
 #role "mounted"
 
 
@@ -101,6 +104,7 @@
 ------- Archer
 
 #newpose
+#id "machakan ranged"
 #race 0
 #role "ranged"
 

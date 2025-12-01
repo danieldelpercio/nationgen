@@ -63,6 +63,7 @@
 ------------- scout
 
 #newpose
+#id "scouts"
 #role "scout"
 
 #renderorder "shadow weapon cloakb basesprite shirt legs armor cloakf quiver bonusweapon offhandw hands hair helmet offhanda overlay"
