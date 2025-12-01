@@ -312,9 +312,16 @@ public class TroopGenerator {
 
   protected boolean armInfantry(Unit unit, TroopTemplate t) {
     ItemSet possibleWeapons = t.template.pose.getItems("weapon");
-    if (possibleWeapons.possibleItems() - t.weapons.size() <= 0) {
+
+    if (possibleWeapons == null) {
       return false;
-    } else {
+    }
+
+    else if (possibleWeapons.possibleItems() - t.weapons.size() <= 0) {
+      return false;
+    }
+    
+    else {
       ItemSet tempweps = new ItemSet();
       for (TroopTemplate t2 : templates) if (
         t.armor.id.equals(t2.armor.id) &&
@@ -342,6 +349,7 @@ public class TroopGenerator {
         }
       }
     }
+
     return true;
   }
 
@@ -675,7 +683,15 @@ public class TroopGenerator {
     Race race,
     TroopTemplate t
   ) {
-    if (role.equals("ranged")) return;
+    Item equippedBonusWeapon = u.getSlot("bonusweapon");
+
+    if (role.equals("ranged")) {
+      return;
+    }
+
+    if (equippedBonusWeapon != null && equippedBonusWeapon.hasDominionsId()) {
+      return;
+    }
 
     ItemSet bonuses = used.filterSlot("bonusweapon").filterForPose(t.pose);
     if (bonuses.possibleItems() < 1 || random.nextDouble() < 0.5) {
