@@ -698,7 +698,15 @@ public class Unit {
       newitem = Item.resolveId(newitem);
     }
 
-    slotmap.pop(slotname);
+    // HIC SUNT DRACONIS
+    // Do not pop the slot here. Even if it feels like a new item
+    // should replace the previous existing item in the same slot,
+    // the slotmap is very specifically designed so that each slot
+    // operates as a stack. Only the top item of the stack is relevant.
+    // But if that item gets subsequently removed due to downstream code,
+    // such as in the process of removing an item dependency, we want the
+    // slot stack to have the previously equipped item so that things are
+    // as they initially were, rather than ending up with a null slot.
     slotmap.push(slotname, newitem);
     handleSlotChange(slotname, olditem, newitem);
   }
