@@ -21,7 +21,7 @@ public class SlotMap {
 
       itemDeque.forEach(item -> {
         Item itemCopy = (item != null) ? new Item(item) : null;
-        copiedDeque.push(itemCopy);
+        copiedDeque.addLast(itemCopy);
       });
 
       this.slotmemory.put(slotName, copiedDeque);
