@@ -133,8 +133,8 @@ public class Pose extends Filter {
               nationGen.weapondb.addToMap(i.id, citem.getHashMap());
             }
           }
-          if (!"".equals(i.sprite)) {
-            String renderslot = "".equals(i.renderslot) ? slot : i.renderslot;
+          if (i.sprite.isBlank() == false) {
+            String renderslot = i.renderslot.isBlank() ? slot : i.renderslot;
             if ("offhand".equals(renderslot)) {
               renderslot = i.isArmor() ? "offhanda" : "offhandw";
             }
