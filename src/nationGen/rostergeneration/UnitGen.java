@@ -856,11 +856,7 @@ public class UnitGen {
   }
 
   public void handleExtraGeneration(Unit u) {
-    Tags tags = new Tags();
-    tags.addAll(u.pose.tags);
-    tags.addAll(u.race.tags);
-    u.slotmap.items().forEach(i -> tags.addAll(i.tags));
-    for (Filter f : u.appliedFilters) tags.addAll(f.tags);
+    Tags tags = u.getAllTags();
 
     for (Args args : tags.getAllArgs("generateitem")) {
       String slot = args.get(1).get();

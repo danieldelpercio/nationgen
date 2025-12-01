@@ -984,6 +984,23 @@ public class Unit {
     return this.mountUnit.getCommands();
   }
 
+  public Tags getAllTags() {
+    Tags allTags = new Tags();
+    allTags.addAll(this.tags);
+    allTags.addAll(this.pose.tags);
+    allTags.addAll(this.race.tags);
+
+    this.slotmap.items().forEach(i -> {
+      allTags.addAll(i.tags);
+    });
+
+    this.appliedFilters.forEach(f -> {
+      tags.addAll(f.tags);
+    });
+
+    return allTags;
+  }
+
   private Boolean handleLowEncCommandPolish(Tags tags) {
     if (!tags.containsName("lowencthreshold")) return false;
 
