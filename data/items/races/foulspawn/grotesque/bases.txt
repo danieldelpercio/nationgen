@@ -1,0 +1,23 @@
+#newitem
+#id "humanoid"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/torsos/humanoid_torso.png
+#command "#gcost 82"
+#command "#rpcost 22000"
+#command "#hp 58"
+#command "#size 9"
+#command "#prot 6"
+#command "#mr 15"
+#command "#mor 17"
+#command "#str 19"
+#command "#att 12"
+#command "#def 6"
+#command "#prec 8"
+#command "#enc 3"
+#command "#mapmove 14"
+#command "#ap 3"
+#command "#maxage 50"
+#command "#fireres 10"
+#command "#poisonres 10"
+#command "#shockres 10"
+#enditem

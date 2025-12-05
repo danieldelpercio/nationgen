@@ -1,0 +1,16 @@
+#newitem
+#id "draconian_wing_left"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_back_arms/draconian_wing_left.png
+#needs left_back_hand none
+#enditem
+
+#newitem
+#id "draconian_wings_left"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_back_arms/draconian_wing_left.png
+#type no_hand
+#needs left_back_hand none
+#needs right_back_arm_weapon matching_right_wing
+#command "#flying"
+#enditem

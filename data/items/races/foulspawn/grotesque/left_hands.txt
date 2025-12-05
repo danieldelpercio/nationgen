@@ -1,0 +1,6 @@
+#newitem
+#id "humanoid"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_hands/humanoid_left_hand.png
+#itemslot hand +1
+#enditem

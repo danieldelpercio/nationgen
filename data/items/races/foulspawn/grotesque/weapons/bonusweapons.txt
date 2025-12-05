@@ -1,0 +1,23 @@
+
+-- Drake weapons
+
+#newitem
+#id drake_fire
+#basechance 0
+#gameid 567
+#nogen
+#enditem
+
+#newitem
+#id drake_frost
+#basechance 0
+#gameid 568
+#nogen
+#enditem
+
+#newitem
+#id drake_gas
+#basechance 0
+#gameid 569
+#nogen
+#enditem

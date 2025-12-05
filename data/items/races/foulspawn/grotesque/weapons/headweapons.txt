@@ -1,0 +1,12 @@
+
+#newitem
+#id none
+#gameid -1
+#enditem
+
+#newitem
+#id bite
+#gameid 20
+#type "bite"
+#type "mightbite"
+#enditem

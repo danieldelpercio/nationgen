@@ -1,0 +1,8 @@
+#newitem
+#id "humanoid"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_legs/humanoid_right_leg.png
+#command "#gcost +3"
+#command "#hp +5"
+#command "#ap +2"
+#enditem

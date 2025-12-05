@@ -1,0 +1,9 @@
+#newitem
+#id "degenerate"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/degenerate_right_arm.png
+#command "#gcost +3"
+#command "#hp +2"
+#command "#str +2"
+#needs right_hand degenerate
+#enditem

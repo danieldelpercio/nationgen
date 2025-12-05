@@ -1,0 +1,22 @@
+
+#newitem
+#id pincer
+#gameid 273
+#type pincer
+#needs right_back_arm pincer
+#enditem
+
+#newitem
+#id wing_shield
+#gameid wing_shield
+#type draconian
+#needs right_back_arm draconian_wing_right
+#chanceinc slotname left_back_arm draconian_wing_left *0
+#armor
+#enditem
+
+#newitem
+#id matching_right_wing
+#gameid -1
+#needstype right_back_arm matching_wing
+#enditem

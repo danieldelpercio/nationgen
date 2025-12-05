@@ -1,0 +1,25 @@
+--- #new initializes both armors and weapons
+--- #armor will indicate that the item is armor
+--- Use exact syntax you'd use for dom6 except for #newweapon, #newarmor and #end
+--- Dominions mod commands are prefixed by #command; i.e. #command "#hp 5"
+
+-- Grotesque
+
+#new customarmor
+#id wing_shield
+#armor
+#command "#copyarmor 112"
+#command "#def 8"
+#command "#enc 0"
+#command "#name 'Wing Shield'"
+#end
+
+#new customweapon
+#id "sweeping_fist"
+#command "#copyweapon 92"
+#command "#aoe 1"
+#command "#charge"
+#command "#norepel"
+#command "#defroll"
+#command "#name 'Sweeping Fist'"
+#end

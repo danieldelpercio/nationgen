@@ -1,0 +1,19 @@
+#newitem
+#id "pincer"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_back_arms/pincer_right_back_arm.png
+#command "#gcost +6"
+#command "#prot +2"
+#command "#hp +2"
+#command "#str +1"
+#type pincer
+#needs right_back_hand pincer
+#enditem
+
+#newitem
+#id "draconian_wing_right"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_back_arms/draconian_wing_right.png
+#type matching_wing
+#needs right_back_hand none
+#enditem

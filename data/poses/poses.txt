@@ -249,6 +249,7 @@
 #load foulspawnranged ./data/poses/foulspawn/small/ranged.txt
 #load foulspawncavalry ./data/poses/foulspawn/small/cavalry.txt
 #load foulspawnmages ./data/poses/foulspawn/small/mages.txt
+#load grotesques ./data/poses/foulspawn/grotesque/grotesques.txt
 
 ---- Illithids, various hybrids, and illithid-specific slave units
 #load hybridtroops ./data/poses/illithid/hybrid_infantry.txt

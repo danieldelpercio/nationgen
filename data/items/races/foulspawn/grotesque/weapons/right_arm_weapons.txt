@@ -1,0 +1,7 @@
+
+#newitem
+#id strangulation
+#gameid 116
+#type degenerate
+#needs right_arm degenerate
+#enditem

@@ -1,0 +1,59 @@
+#newpose
+#id "grotesques"
+#basechance 1
+#role "infantry"
+#role "elite infantry"
+
+#renderorder "shadow right_back_arm right_back_hand right_back_arm_weapon left_back_arm left_back_hand left_back_arm_weapon bonusweapon basesprite shirt right_arm weapon right_leg left_leg pants left_arm head overlay armor right_hand left_hand left_hand_overlay"
+
+#load basesprite /data/items/races/foulspawn/grotesque/bases.txt
+
+#load right_back_arm /data/items/races/foulspawn/grotesque/right_back_arms.txt
+#load left_back_arm /data/items/races/foulspawn/grotesque/left_back_arms.txt
+
+#load right_back_hand /data/items/races/foulspawn/grotesque/right_back_hands.txt
+#load left_back_hand /data/items/races/foulspawn/grotesque/left_back_hands.txt
+
+#load right_arm /data/items/races/foulspawn/grotesque/right_arms.txt
+#load left_arm /data/items/races/foulspawn/grotesque/left_arms.txt
+
+#load right_hand /data/items/races/foulspawn/grotesque/right_hands.txt
+#load left_hand /data/items/races/foulspawn/grotesque/left_hands.txt
+
+#load right_leg /data/items/races/foulspawn/grotesque/right_legs.txt
+#load left_leg /data/items/races/foulspawn/grotesque/left_legs.txt
+
+#load head /data/items/races/foulspawn/grotesque/heads.txt
+#load shadow /data/items/races/foulspawn/grotesque/shadows.txt
+#load shirt /data/items/races/foulspawn/grotesque/shirts.txt
+#load pants /data/items/races/foulspawn/grotesque/pants.txt
+#load armor /data/items/races/foulspawn/grotesque/armors.txt
+
+#load weapon /data/items/races/foulspawn/grotesque/weapons/right_arm_weapons.txt
+#load offhand /data/items/races/foulspawn/grotesque/weapons/left_arm_weapons.txt
+#load right_back_arm_weapon /data/items/races/foulspawn/grotesque/weapons/right_back_arm_weapons.txt
+#load left_back_arm_weapon /data/items/races/foulspawn/grotesque/weapons/left_back_arm_weapons.txt
+#load bonusweapon /data/items/races/foulspawn/grotesque/weapons/bonusweapons.txt
+#load headweapon /data/items/races/foulspawn/grotesque/weapons/headweapons.txt
+
+#generateitem 1 head
+#generateitem 1 shirt
+#generateitem 1 pants
+#generateitem 1 left_leg
+#generateitem 1 right_leg
+#generateitem 1 offhand
+#generateitem 1 right_back_arm_weapon
+#generateitem 1 left_back_arm_weapon
+
+#baseitemslot hand 0
+#baseitemslot head 1
+#baseitemslot misc 2
+
+#maxunits 1
+#maxvarieties 1
+#no_free_fist
+#cannot_be_pd
+#cannot_be_commander
+#forcedname "Grotesque"
+#chanceinc moduleid herogen 1
+#endpose

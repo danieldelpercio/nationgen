@@ -1,0 +1,11 @@
+#newitem
+#id "none"
+#gameid -1
+#enditem
+
+#newitem
+#id "pincer"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_back_hands/pincer_right_back_hand.png
+#type pincer
+#enditem

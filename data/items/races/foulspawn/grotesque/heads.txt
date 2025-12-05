@@ -1,0 +1,69 @@
+
+#newitem
+#id humanoid
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/humanoid_head.png
+#type humanoid
+#enditem
+
+#newitem
+#id "firedrake"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/drake_fire_head.png
+#command "#gcost +14"
+#command "#hp +4"
+#command "#prot +3"
+#command "#mr +1"
+#command "#mor +4"
+#command "#att +2"
+#command "#ap -2"
+#command "#enc +1"
+#command "#fireres +5"
+#command "#undisciplined"
+#command "#coldblood"
+#needstype headweapon bite
+#needs bonusweapon drake_fire
+#itemslot head 0
+#type barehead
+#enditem
+
+#newitem
+#id "frostdrake"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/drake_frost_head.png
+#command "#gcost +15"
+#command "#hp +6"
+#command "#prot +4"
+#command "#mr +1"
+#command "#mor +4"
+#command "#att +2"
+#command "#ap -2"
+#command "#enc +1"
+#command "#coldres +5"
+#command "#undisciplined"
+#needstype headweapon bite
+#needs bonusweapon drake_frost
+#itemslot head 0
+#type barehead
+#enditem
+
+#newitem
+#id "swampdrake"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/drake_swamp_head.png
+#command "#gcost +16"
+#command "#hp +7"
+#command "#prot +4"
+#command "#mr +1"
+#command "#mor +4"
+#command "#att +2"
+#command "#ap -2"
+#command "#enc +1"
+#command "#poisonres +10"
+#command "#undisciplined"
+#command "#coldblood"
+#needstype headweapon bite
+#needs bonusweapon drake_gas
+#itemslot head 0
+#type barehead
+#enditem

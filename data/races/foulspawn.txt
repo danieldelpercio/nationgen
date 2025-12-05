@@ -13,6 +13,7 @@
 #pose foulspawnranged
 #pose foulspawncavalry
 #pose foulspawnmages
+#pose grotesques
 
 #magicpatterns defaultprimary
 #magicpatterns defaultsecondary

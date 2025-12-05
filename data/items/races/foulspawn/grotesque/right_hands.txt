@@ -1,0 +1,6 @@
+#newitem
+#id "degenerate"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_hands/degenerate_right_hand.png
+#itemslot hand +1
+#enditem

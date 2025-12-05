@@ -1,0 +1,15 @@
+
+#newitem
+#id none
+#gameid -1
+#needstype left_back_arm no_hand
+#enditem
+
+#newitem
+#id wing_shield
+#gameid wing_shield
+#type draconian
+#needs left_back_arm draconian_wing_left
+#chanceinc slotname right_back_arm draconian_wing_right *0
+#armor
+#enditem

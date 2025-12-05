@@ -1,0 +1,9 @@
+#newitem
+#id "degenerate"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_legs/degenerate_left_leg.png
+#command "#gcost +3"
+#command "#hp +3"
+#command "#mr +1"
+#command "#ap +1"
+#enditem
