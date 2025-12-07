@@ -3,4 +3,17 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_hands/humanoid_left_hand.png
 #itemslot hand +1
+#type humanoid
+#type hand_slot
+#enditem
+
+#newitem
+#id "niefel"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_hands/niefel_left_hand.png
+#itemslot hand +1
+#type niefel
+#type humanoid
+#type hand_slot
+#theme boreal
 #enditem

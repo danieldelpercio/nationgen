@@ -3,5 +3,5 @@
 #id sweeping_fist
 #gameid sweeping_fist
 #type humanoid
-#needs left_arm humanoid
+#needstype left_arm humanoid
 #enditem

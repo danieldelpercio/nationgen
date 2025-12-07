@@ -6,4 +6,18 @@
 #command "#hp +2"
 #command "#str +2"
 #needs left_hand humanoid
+#type humanoid
+#enditem
+
+#newitem
+#id "niefel"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_arms/niefel_left_arm.png
+#command "#gcost +6"
+#command "#hp +5"
+#command "#str +3"
+#needstype left_hand hand_slot
+#type niefel
+#type humanoid
+#theme boreal
 #enditem

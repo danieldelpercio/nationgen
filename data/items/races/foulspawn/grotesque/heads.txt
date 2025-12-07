@@ -7,6 +7,17 @@
 #enditem
 
 #newitem
+#id niefel
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/niefel_head.png
+#command "#gcost +5"
+#command "#hp +4"
+#command "#coldres +5"
+#type niefel
+#theme boreal
+#enditem
+
+#newitem
 #id "firedrake"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/drake_fire_head.png
@@ -24,7 +35,8 @@
 #needstype headweapon bite
 #needs bonusweapon drake_fire
 #itemslot head 0
-#type barehead
+#type no_slot
+#type coldblooded
 #enditem
 
 #newitem
@@ -44,7 +56,8 @@
 #needstype headweapon bite
 #needs bonusweapon drake_frost
 #itemslot head 0
-#type barehead
+#type no_slot
+#type coldblooded
 #enditem
 
 #newitem
@@ -65,5 +78,6 @@
 #needstype headweapon bite
 #needs bonusweapon drake_gas
 #itemslot head 0
-#type barehead
+#type no_slot
+#type coldblooded
 #enditem
