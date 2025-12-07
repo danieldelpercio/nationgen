@@ -1,6 +1,7 @@
 ---------- Tusked one casters
 
 #newpose
+#id "tsuked ones mages and priests"
 #role "mage"
 #role "priest"
 
