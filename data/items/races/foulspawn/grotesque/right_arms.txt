@@ -41,7 +41,6 @@
 #command "#str +5"
 #needs right_hand pale_one_boulder
 #itemslot hand +1
-#type humanoid
 #enditem
 
 #newitem
