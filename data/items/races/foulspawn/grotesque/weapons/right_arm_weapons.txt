@@ -5,3 +5,37 @@
 #type degenerate
 #needs right_arm degenerate
 #enditem
+
+#newitem
+#id sweeping_fist
+#gameid sweeping_fist
+#type humanoid
+#type hand_slot
+#needstype right_arm humanoid
+#enditem
+
+#newitem
+#id boulder
+#gameid boulder
+#type weapon
+#needs right_arm gigante_boulder
+#enditem
+
+#newitem
+#id club
+#gameid 165
+#sprite /graphics/foulspawn/grotesque/weapons/club_right_arm.png
+#type weapon
+#needs right_arm giant
+#needstype offhand hand_slot
+#ignore_dw_restrictions
+#enditem
+
+#newitem
+#id broadsword
+#gameid 8
+#sprite /graphics/foulspawn/grotesque/weapons/broadsword_right_arm.png
+#type weapon
+#needs right_arm giant
+#ignore_dw_restrictions
+#enditem

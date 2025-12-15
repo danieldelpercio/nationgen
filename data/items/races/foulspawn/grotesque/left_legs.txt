@@ -6,4 +6,25 @@
 #command "#hp +3"
 #command "#mr +1"
 #command "#ap +1"
+#type degenerate
+#enditem
+
+#newitem
+#id "tyrant_snake"
+#gameid 735
+#sprite /graphics/foulspawn/grotesque/left_legs/tyrant_snake_left_leg.png
+#command "#gcost +15"
+#command "#ap +1"
+#command "#poisonres +5"
+#type coldblooded
+#enditem
+
+#newitem
+#id "giant"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_legs/giant_left_leg.png
+#command "#gcost +5"
+#command "#ap +5"
+#command "#mountainsurvival"
+#type humanoid
 #enditem

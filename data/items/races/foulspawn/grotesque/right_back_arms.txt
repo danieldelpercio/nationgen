@@ -17,3 +17,11 @@
 #type matching_wing
 #needs right_back_hand none
 #enditem
+
+#newitem
+#id "hydra"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_back_arms/hydra_right_back_arm.png
+#type coldblooded
+#needs right_back_hand none
+#enditem

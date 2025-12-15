@@ -20,3 +20,10 @@
 #gameid -1
 #needstype right_back_arm matching_wing
 #enditem
+
+#newitem
+#id hydra
+#gameid 490
+#needs right_back_arm hydra
+#type "coldblooded"
+#enditem

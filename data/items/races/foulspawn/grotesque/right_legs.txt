@@ -6,3 +6,12 @@
 #command "#hp +5"
 #command "#ap +2"
 #enditem
+
+#newitem
+#id "tyrant_snake"
+#gameid 735
+#sprite /graphics/foulspawn/grotesque/right_legs/tyrant_snake_right_leg.png
+#command "#gcost +15"
+#command "#ap +1"
+#command "#poisonres +5"
+#enditem

@@ -7,3 +7,51 @@
 #command "#str +2"
 #needs right_hand degenerate
 #enditem
+
+#newitem
+#id "giant"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/giant_right_arm.png
+#command "#gcost +10"
+#command "#hp +5"
+#command "#str +4"
+#needs right_hand none
+#itemslot hand +1
+#type humanoid
+#enditem
+
+#newitem
+#id "gigante"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/gigante_right_arm.png
+#command "#gcost +15"
+#command "#hp +5"
+#command "#str +5"
+#needs right_hand gigante
+#itemslot hand +1
+#type humanoid
+#enditem
+
+#newitem
+#id "gigante_boulder"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/gigante_right_arm.png
+#command "#gcost +15"
+#command "#hp +5"
+#command "#str +5"
+#needs right_hand pale_one_boulder
+#itemslot hand +1
+#type humanoid
+#enditem
+
+#newitem
+#id "cyclops"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/cyclops_right_arm.png
+#command "#gcost +5"
+#command "#str +2"
+#command "#fireres +3"
+#needs right_hand none
+#itemslot hand +1
+#type humanoid
+#enditem

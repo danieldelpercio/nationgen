@@ -10,3 +10,22 @@
 #type "bite"
 #type "mightbite"
 #enditem
+
+#newitem
+#id strong_poison_bite
+#gameid 488
+#type "bite"
+#type "poison"
+#enditem
+
+#newitem
+#id snake_tresses
+#gameid 736
+#type "poison"
+#enditem
+
+#newitem
+#id golden_horns
+#gameid 522
+#type "horns"
+#enditem

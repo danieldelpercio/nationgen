@@ -13,8 +13,72 @@
 #command "#gcost +5"
 #command "#hp +4"
 #command "#coldres +5"
+#type humanoid
 #type niefel
 #theme boreal
+#enditem
+
+#newitem
+#id laestrygonian
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/laestrygonian_head.png
+#command "#gcost +30"
+#command "#hp +10"
+#command "#mr +1"
+#command "#fireres +5"
+#command "#poisonres +5"
+#command "#berserk +4"
+#command "#incunrest +120"
+#command "#popkill +100"
+#command "#unsurr +2"
+#needs headweapon snake_tresses
+#basechance 0.1
+#type humanoid
+#enditem
+
+#newitem
+#id tyrant
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/tyrant_head.png
+#command "#gcost +15"
+#command "#hp +8"
+#command "#mr +1"
+#command "#poisonres +5"
+#command "#berserk +3"
+#command "#incunrest +80"
+#command "#popkill +80"
+#type humanoid
+#enditem
+
+#newitem
+#id nephil
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/nephil_head.png
+#command "#gcost +40"
+#command "#hp +5"
+#command "#mr +1"
+#command "#fireres +5"
+#command "#fear +5"
+#command "#fearofflood +5"
+#command "#incunrest +120"
+#command "#popkill +120"
+#needs headweapon golden_horns
+#type humanoid
+#enditem
+
+#newitem
+#id hydra
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/hydra_head.png
+#command "#gcost +25"
+#command "#poisonres +5"
+#command "#undisciplined"
+#command "#coldblood"
+#command "#regeneration +5"
+#needs headweapon strong_poison_bite
+#itemslot head 0
+#type hydra
+#type coldblooded
 #enditem
 
 #newitem
@@ -32,7 +96,7 @@
 #command "#fireres +5"
 #command "#undisciplined"
 #command "#coldblood"
-#needstype headweapon bite
+#needs headweapon bite
 #needs bonusweapon drake_fire
 #itemslot head 0
 #type no_slot
@@ -53,7 +117,7 @@
 #command "#enc +1"
 #command "#coldres +5"
 #command "#undisciplined"
-#needstype headweapon bite
+#needs headweapon bite
 #needs bonusweapon drake_frost
 #itemslot head 0
 #type no_slot
@@ -75,7 +139,7 @@
 #command "#poisonres +10"
 #command "#undisciplined"
 #command "#coldblood"
-#needstype headweapon bite
+#needs headweapon bite
 #needs bonusweapon drake_gas
 #itemslot head 0
 #type no_slot

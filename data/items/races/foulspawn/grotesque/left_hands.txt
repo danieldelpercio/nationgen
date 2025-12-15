@@ -1,4 +1,9 @@
 #newitem
+#id "none"
+#gameid -1
+#enditem
+
+#newitem
 #id "humanoid"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_hands/humanoid_left_hand.png

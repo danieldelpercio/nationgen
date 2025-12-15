@@ -3,5 +3,30 @@
 #id sweeping_fist
 #gameid sweeping_fist
 #type humanoid
+#type hand_slot
 #needstype left_arm humanoid
+#enditem
+
+#newitem
+#id hydra_heads
+#gameid hydra_heads
+#type coldblooded
+#needs left_arm hydra_heads
+#enditem
+
+#newitem
+#id boulder
+#gameid boulder
+#type coldblooded
+#needs left_arm pale_one_boulder
+#enditem
+
+#newitem
+#id cyclops_maul
+#gameid 14
+#sprite /graphics/foulspawn/grotesque/weapons/maul_left_arm.png
+#type weapon
+#needs left_arm cyclops
+#needstype weapon hand_slot
+#ignore_dw_restrictions
 #enditem

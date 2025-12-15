@@ -23,3 +23,16 @@
 #command "#defroll"
 #command "#name 'Sweeping Fist'"
 #end
+
+#new customweapon
+#id "hydra_heads"
+#command "#copyweapon 490"
+#command "#nratt 2"
+#command "#name 'Lesser Hydra Heads'"
+#end
+
+#new customweapon
+#id "boulder"
+#command "#copyweapon 424"
+#command "#range0"
+#end

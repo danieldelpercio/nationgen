@@ -4,7 +4,9 @@
 #role "infantry"
 #role "elite infantry"
 
-#renderorder "shadow right_back_arm right_back_hand right_back_arm_weapon left_back_arm left_back_hand left_back_arm_weapon bonusweapon basesprite shirt right_arm weapon right_leg left_leg pants left_arm head overlay armor right_hand left_hand left_hand_overlay"
+#command "#reclimit 1"
+
+#renderorder "shadow right_back_arm right_back_hand right_back_arm_weapon left_back_arm left_back_hand left_back_arm_weapon bonusweapon right_leg basesprite shirt right_arm weapon left_leg pants left_arm offhandw head overlay armor right_hand left_hand left_hand_overlay offhanda"
 
 #load basesprite /data/items/races/foulspawn/grotesque/bases.txt
 
@@ -38,7 +40,6 @@
 
 #generateitem 1 head
 #generateitem 1 shirt
-#generateitem 1 pants
 #generateitem 1 left_leg
 #generateitem 1 right_leg
 #generateitem 1 offhand
