@@ -74,8 +74,30 @@
 #command "#gcost +10"
 #command "#str +2"
 #command "#fireres +3"
-#command "#resources +10"
 #needs left_hand none
 #itemslot hand +1
 #type humanoid
+#enditem
+
+#newitem
+#id "carrion"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_arms/carrion_left_arm.png
+#command "#gcost +15"
+#command "#str +1"
+#command "#plant"
+#needs left_hand none
+#type undead
+#enditem
+
+#newitem
+#id "typhon"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_arms/typhon_left_arm.png
+#command "#gcost +20"
+#command "#str +1"
+#command "#regeneration +3"
+#command "#fireres -2"
+#needs left_hand none
+#type coldblooded
 #enditem

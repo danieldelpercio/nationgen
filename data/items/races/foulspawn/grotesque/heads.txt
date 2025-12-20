@@ -56,7 +56,6 @@
 #sprite /graphics/foulspawn/grotesque/heads/nephil_head.png
 #command "#gcost +40"
 #command "#hp +5"
-#command "#mr +1"
 #command "#fireres +5"
 #command "#fear +5"
 #command "#fearofflood +5"
@@ -64,6 +63,18 @@
 #command "#popkill +120"
 #needs headweapon golden_horns
 #type humanoid
+#enditem
+
+#newitem
+#id carrion
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/carrion_head.png
+#command "#gcost +25"
+#command "#mr +1"
+#command "#coldres +5"
+#command "#fear +5"
+#command "#undead"
+#type undead
 #enditem
 
 #newitem

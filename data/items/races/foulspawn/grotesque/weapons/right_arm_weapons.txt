@@ -39,3 +39,17 @@
 #needs right_arm giant
 #ignore_dw_restrictions
 #enditem
+
+#newitem
+#id sleep_vines
+#gameid 71
+#type undead
+#needs right_arm carrion
+#enditem
+
+#newitem
+#id typhon_heads
+#gameid 491
+#type coldblooded
+#needs right_arm typhon
+#enditem

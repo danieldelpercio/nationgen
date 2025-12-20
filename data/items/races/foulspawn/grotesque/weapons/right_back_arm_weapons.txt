@@ -19,6 +19,7 @@
 #id matching_right_wing
 #gameid -1
 #needstype right_back_arm matching_wing
+#basechance 0
 #enditem
 
 #newitem
@@ -26,4 +27,11 @@
 #gameid 490
 #needs right_back_arm hydra
 #type "coldblooded"
+#enditem
+
+#newitem
+#id typhon_heads
+#gameid 491
+#type coldblooded
+#needs right_back_arm typhon
 #enditem

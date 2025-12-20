@@ -15,3 +15,13 @@
 #command "#ap +1"
 #command "#poisonres +5"
 #enditem
+
+#newitem
+#id "carrion"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_legs/carrion_right_leg.png
+#command "#gcost +10"
+#command "#ap +3"
+#command "#forestsurvival"
+#type undead
+#enditem

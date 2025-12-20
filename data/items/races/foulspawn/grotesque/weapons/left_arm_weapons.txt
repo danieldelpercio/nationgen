@@ -28,5 +28,20 @@
 #type weapon
 #needs left_arm cyclops
 #needstype weapon hand_slot
+#command "#resources +10"
 #ignore_dw_restrictions
+#enditem
+
+#newitem
+#id sleep_vines
+#gameid 71
+#type undead
+#needs left_arm carrion
+#enditem
+
+#newitem
+#id typhon_heads
+#gameid 491
+#type coldblooded
+#needs left_arm typhon
 #enditem
