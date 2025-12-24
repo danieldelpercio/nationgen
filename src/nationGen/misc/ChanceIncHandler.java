@@ -498,7 +498,7 @@ public class ChanceIncHandler {
             if (wasAboveZero == true && chances.getChance(f) <= 0) {
               if (un != null) {
                 if (NationGen.isInDebugMode()) {
-                  System.out.println(f + " unit filter for " + un.pose.name + " pose of race " + race.name + "was zeroed by #themeinc " + chanceInc.source);
+                  System.out.println(f + " unit filter for " + un.pose.name + " pose of race " + race.name + " was zeroed by #themeinc " + chanceInc.source);
                 }
               }
 
