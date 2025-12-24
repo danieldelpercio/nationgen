@@ -78,6 +78,22 @@
 #enditem
 
 #newitem
+#id ifrit
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/ifrit_head.png
+#command "#gcost +25"
+#command "#mr +1"
+#command "#fireres +10"
+#command "#magicpower +1"
+#command "#magicbeing"
+#command "#taskmaster +3"
+#command "#ironvul +1"
+#command "#saltvul +2"
+#command "#spiritsight"
+#type djinn
+#enditem
+
+#newitem
 #id hydra
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/hydra_head.png

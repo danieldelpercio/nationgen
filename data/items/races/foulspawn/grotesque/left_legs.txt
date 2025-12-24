@@ -38,3 +38,13 @@
 #command "#forestsurvival"
 #type undead
 #enditem
+
+#newitem
+#id "atlantian"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_legs/atlantian_left_leg.png
+#command "#gcost +10"
+#command "#ap +4"
+#command "#swimming"
+#type atlantian
+#enditem

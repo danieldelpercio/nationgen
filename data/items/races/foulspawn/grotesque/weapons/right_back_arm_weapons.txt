@@ -7,11 +7,23 @@
 #enditem
 
 #newitem
-#id wing_shield
-#gameid wing_shield
+#id draconian_wing_shield
+#gameid draconian_wing_shield
 #type draconian
 #needs right_back_arm draconian_wing_right
 #chanceinc slotname left_back_arm draconian_wing_left *0
+#chanceinc slotname left_back_arm angel_wing_left *0
+#armor
+#enditem
+
+#newitem
+#id angel_wing_shield
+#gameid angel_wing_shield
+#type angel
+#command "#airshield 60"
+#needs right_back_arm angel_wing_right
+#chanceinc slotname left_back_arm draconian_wing_left *0
+#chanceinc slotname left_back_arm angel_wing_left *0
 #armor
 #enditem
 

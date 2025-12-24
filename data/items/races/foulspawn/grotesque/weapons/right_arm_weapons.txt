@@ -22,11 +22,30 @@
 #enditem
 
 #newitem
-#id club
+#id great_club
 #gameid 165
-#sprite /graphics/foulspawn/grotesque/weapons/club_right_arm.png
+#sprite /graphics/foulspawn/grotesque/weapons/great_club_right_arm.png
 #type weapon
 #needs right_arm giant
+#needstype offhand hand_slot
+#ignore_dw_restrictions
+#enditem
+
+#newitem
+#id club
+#gameid 252
+#sprite /graphics/foulspawn/grotesque/weapons/club_right_arm.png
+#type weapon
+#needstype right_arm hand_slot
+#ignore_dw_restrictions
+#enditem
+
+#newitem
+#id spear
+#gameid 1
+#sprite /graphics/foulspawn/grotesque/weapons/spear_right_arm.png
+#type weapon
+#needstype right_arm hand_slot
 #needstype offhand hand_slot
 #ignore_dw_restrictions
 #enditem

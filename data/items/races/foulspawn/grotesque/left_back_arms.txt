@@ -3,6 +3,15 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_back_arms/draconian_wing_left.png
 #needs left_back_hand none
+#type draconian
+#enditem
+
+#newitem
+#id "angel_wing_left"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_back_arms/angel_wing_left_back_arm.png
+#needs left_back_hand none
+#type angel
 #enditem
 
 #newitem
@@ -13,6 +22,18 @@
 #needs left_back_hand none
 #needs right_back_arm_weapon matching_right_wing
 #command "#flying"
+#type draconian
+#enditem
+
+#newitem
+#id "angel_wings_left"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_back_arms/angel_wing_left_back_arm.png
+#type no_hand
+#needs left_back_hand none
+#needs right_back_arm_weapon matching_right_wing
+#command "#flying"
+#type angel
 #enditem
 
 #newitem

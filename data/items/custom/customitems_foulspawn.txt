@@ -6,10 +6,19 @@
 -- Grotesque
 
 #new customarmor
-#id wing_shield
+#id draconian_wing_shield
 #armor
 #command "#copyarmor 112"
 #command "#def 8"
+#command "#enc 0"
+#command "#name 'Wing Shield'"
+#end
+
+#new customarmor
+#id angel_wing_shield
+#armor
+#command "#copyarmor 112"
+#command "#def 6"
 #command "#enc 0"
 #command "#name 'Wing Shield'"
 #end

@@ -80,6 +80,18 @@
 #enditem
 
 #newitem
+#id "djinn"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_arms/djinn_left_arm.png
+#command "#gcost +15"
+#command "#str +1"
+#command "#fireres +5"
+#needs left_hand none
+#itemslot hand +1
+#type humanoid
+#enditem
+
+#newitem
 #id "carrion"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_arms/carrion_left_arm.png

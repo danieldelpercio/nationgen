@@ -53,6 +53,20 @@
 #needs right_hand none
 #itemslot hand +1
 #type humanoid
+#type hand_slot
+#enditem
+
+#newitem
+#id "djinn"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/djinn_right_arm.png
+#command "#gcost +5"
+#command "#str +1"
+#command "#fireres +5"
+#needs right_hand none
+#itemslot hand +1
+#type humanoid
+#type hand_slot
 #enditem
 
 #newitem
