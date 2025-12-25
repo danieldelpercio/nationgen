@@ -3,6 +3,7 @@ package nationGen.units;
 import java.util.Deque;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
+import java.util.List;
 import java.util.Objects;
 import java.util.Set;
 import java.util.stream.Stream;
@@ -80,5 +81,9 @@ public class SlotMap {
 
   private Deque<Item> getSlotStack(String slot) {
     return slotmemory.computeIfAbsent(slot, k -> new LinkedList<>());
+  }
+
+  public List<Item> getItemsInSlotStack(String slotName) {
+    return this.getSlotStack(slotName).stream().filter(i -> i != null).toList();
   }
 }

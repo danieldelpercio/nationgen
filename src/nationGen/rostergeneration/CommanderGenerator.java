@@ -10,7 +10,6 @@ import nationGen.NationGenAssets;
 import nationGen.chances.EntityChances;
 import nationGen.entities.Filter;
 import nationGen.items.Item;
-import nationGen.magic.MagicPath;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
 import nationGen.misc.ItemSet;
@@ -206,11 +205,17 @@ public class CommanderGenerator extends TroopGenerator {
 
     List<Unit> cantbes =
       this.getUnitsWithTag(possibleComs, "cannot_be_commander");
-    if (cantbes.size() < possibleComs.size()) possibleComs.removeAll(cantbes);
+    
+    if (cantbes.size() < possibleComs.size()) {
+      possibleComs.removeAll(cantbes);
+    }
 
     List<Unit> shouldbes =
       this.getUnitsWithTag(possibleComs, "should_be_commander");
-    if (shouldbes.size() > 0) possibleComs = shouldbes;
+
+    if (shouldbes.size() > 0) {
+      possibleComs = shouldbes;
+    }
 
     // Add one random infantry com
     if (

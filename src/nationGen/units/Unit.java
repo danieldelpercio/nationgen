@@ -1001,6 +1001,16 @@ public class Unit {
     return allTags;
   }
 
+  public List<String> getAllThemes() {
+    List<String> unitThemes = new ArrayList<>();
+    unitThemes.addAll(this.race.themes);
+    unitThemes.addAll(this.pose.themes);
+    this.race.themefilters.forEach(f -> unitThemes.addAll(f.themes));
+    this.appliedFilters.forEach(f -> unitThemes.addAll(f.themes));
+    this.slotmap.items().forEach(i -> unitThemes.addAll(i.themes));
+    return unitThemes;
+  }
+
   private Boolean handleLowEncCommandPolish(Tags tags) {
     if (!tags.containsName("lowencthreshold")) return false;
 
@@ -1717,6 +1727,13 @@ public class Unit {
       lines.add("#name \"" + name.toString(this) + "\"");
     }
 
+    if (NationGen.isInDebugMode()) {
+      lines.add("");
+      lines.add("DEBUG INFORMATION:");
+      lines.addAll(writeDebugSlotMapLines(this.slotmap));
+      lines.add("");
+    }
+
     lines.add("#end");
     lines.add("");
 
@@ -1944,6 +1961,30 @@ public class Unit {
     return lines;
   }
 
+  public List<String> writeDebugSlotMapLines(SlotMap slotMap) {
+    List<String> lines = new ArrayList<>();
+
+    lines.add("---- Slotmap (most recently assigned; i.e. effectively equipped <- oldest assigned; i.e. effectively unused)");
+
+    for (String slotName : slotMap.getSlots()) {
+      String slotDescription = "-- " + slotName + ": ";
+      List<Item> itemsInSlot = slotMap.getItemsInSlotStack(slotName);
+
+      for (Item item : itemsInSlot) {
+        slotDescription += item.getName() + " <- ";
+      }
+
+      if (itemsInSlot.size() > 0) {
+        slotDescription = slotDescription.substring(0, slotDescription.length() - 4);
+      }
+
+      lines.add(slotDescription);
+    }
+
+    lines.add("----");
+    return lines;
+  }
+
   public void writeSprites(String spritedir) {
     if (getSlot("basesprite") == null) {
       throw new IllegalStateException(
@@ -2009,18 +2050,31 @@ public class Unit {
           getSlot("overlay").getOffsetY() == 0)
       ) {
         renderSlot(g, this, s, false);
-      } else if (
+      }
+      
+      else if (
         s.equals("basesprite") && slotmap.get(mountslot) == null
-      ) renderSlot(g, this, s, false);
+      ) {
+        renderSlot(g, this, s, false);
+      }
+
       else if (
         s.equals("offhandw") &&
         (getSlot("offhand") != null && !getSlot("offhand").isArmor())
-      ) renderSlot(g, this, "offhand", true);
+      ) {
+        renderSlot(g, this, "offhand", true);
+      }
+
       else if (
         s.equals("offhanda") &&
         (getSlot("offhand") != null && getSlot("offhand").isArmor())
-      ) renderSlot(g, this, "offhand", true);
-      else renderSlot(g, this, s, true);
+      ) {
+        renderSlot(g, this, "offhand", true);
+      }
+
+      else {
+        renderSlot(g, this, s, true);
+      }
     }
   }
 
