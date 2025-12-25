@@ -2495,7 +2495,7 @@
 #armor
 #command "#name 'Ice Barding'"
 #command "#type 9"
-#command "#prot 17"
+#command "#protparts 20 17"
 #command "#def -2"
 #command "#enc 2"
 #command "#rcost 22"
@@ -2507,7 +2507,7 @@
 #armor
 #command "#name 'Meteorite Barding'"
 #command "#type 9"
-#command "#prot 23"
+#command "#protparts 24 23"
 #command "#def -3"
 #command "#enc 5"
 #command "#rcost 30"
@@ -2519,7 +2519,7 @@
 #armor
 #command "#name 'Gleaming Barding'"
 #command "#type 9"
-#command "#prot 18"
+#command "#protparts 21 18"
 #command "#def -2"
 #command "#enc 4"
 #command "#rcost 22"
@@ -2531,7 +2531,7 @@
 #armor
 #command "#name 'Cyclopean Barding'"
 #command "#type 9"
-#command "#prot 19"
+#command "#protparts 22 19"
 #command "#def -2"
 #command "#enc 4"
 #command "#rcost 25"
@@ -2561,7 +2561,7 @@
 #armor
 #command "#name 'Obsidian Barding'"
 #command "#type 9"
-#command "#prot 15"
+#command "#protparts 18 15"
 #command "#def -1"
 #command "#enc 2"
 #command "#rcost 20"
