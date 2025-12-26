@@ -6,7 +6,7 @@
 -- #sprite /graphics/abysian/naked.png
 #armor
 #theme "naked"
-#needstype basesprite claw
+#type light
 #enditem
 
 --- Chain Mail
@@ -17,7 +17,7 @@
 #sprite /graphics/abysian/armor/chain_cuirass.png
 #armor
 #theme "iron"
-#needstype basesprite claw
+#type light
 #enditem
 
 #newitem
@@ -26,7 +26,7 @@
 #sprite /graphics/abysian/armor/chain_hauberk.png
 #armor
 #theme "iron"
-#needstype basesprite hands
+#type heavy
 #enditem
 
 #newitem -- full chain
@@ -37,7 +37,7 @@
 #theme "iron"
 #theme "advanced"
 #tag "name mounted knight"
-#needstype basesprite hands
+#type heavy
 #enditem
 
 
@@ -49,7 +49,7 @@
 #sprite /graphics/abysian/armor/scale_cuirass.png
 #armor
 #theme "iron"
-#needstype basesprite claw
+#type light
 #enditem
 
 #newitem
@@ -58,7 +58,7 @@
 #sprite /graphics/abysian/armor/scale_hauberk.png
 #armor
 #theme "iron"
-#needstype basesprite hands
+#type heavy
 #enditem
 
 #newitem -- full scale
@@ -68,7 +68,7 @@
 #armor
 #theme "iron"
 #theme "advanced"
-#needstype basesprite hands
+#type heavy
 #enditem
 
 
@@ -81,6 +81,7 @@
 #armor
 #theme "iron"
 #theme "advanced"
+#type light
 #enditem
 
 #newitem
@@ -91,7 +92,7 @@
 #theme "iron"
 #theme "advanced"
 #tag "name mounted knight"
-#needstype basesprite hands
+#type heavy
 #enditem
 
 #newitem -- full plate
@@ -102,5 +103,5 @@
 #theme "iron"
 #theme "advanced"
 #tag "name mounted knight"
-#needstype basesprite hands
+#type heavy
 #enditem
