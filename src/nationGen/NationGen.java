@@ -15,8 +15,6 @@ import java.util.concurrent.locks.ReentrantLock;
 import nationGen.Settings.SettingsType;
 import nationGen.entities.Filter;
 import nationGen.entities.Race;
-import nationGen.items.CustomItem;
-import nationGen.items.Item;
 import nationGen.magic.MagicPath;
 import nationGen.magic.Spell;
 import nationGen.misc.*;
