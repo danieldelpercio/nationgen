@@ -13,9 +13,9 @@
 #id "niefel"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_arms/niefel_left_arm.png
-#command "#gcost +6"
+#command "#gcost +5"
 #command "#hp +5"
-#command "#str +3"
+#command "#str +2"
 #needstype left_hand hand_slot
 #type niefel
 #type humanoid
@@ -27,10 +27,9 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_arms/giant_left_arm.png
 #command "#gcost +10"
-#command "#hp +5"
+#command "#hp +8"
 #command "#str +4"
-#needs left_hand none
-#itemslot hand +1
+#needs left_hand empty
 #type humanoid
 #enditem
 
@@ -38,11 +37,10 @@
 #id "gigante"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_arms/gigante_left_arm.png
-#command "#gcost +15"
-#command "#hp +5"
+#command "#gcost +10"
+#command "#hp +3"
 #command "#str +5"
-#needs left_hand none
-#itemslot hand +1
+#needs left_hand empty
 #type humanoid
 #enditem
 
@@ -51,7 +49,9 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_arms/hydra_heads_left_arm.png
 #command "#gcost +15"
+#command "#att +1"
 #command "#regeneration +5"
+#command "#unsurr +1"
 #needs left_hand none
 #type coldblooded
 #enditem
@@ -84,7 +84,7 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_arms/djinn_left_arm.png
 #command "#gcost +15"
-#command "#str +1"
+#command "#str +2"
 #command "#fireres +5"
 #needs left_hand none
 #itemslot hand +1
@@ -95,7 +95,7 @@
 #id "carrion"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_arms/carrion_left_arm.png
-#command "#gcost +15"
+#command "#gcost +5"
 #command "#str +1"
 #command "#plant"
 #needs left_hand none
@@ -108,8 +108,10 @@
 #sprite /graphics/foulspawn/grotesque/left_arms/typhon_left_arm.png
 #command "#gcost +20"
 #command "#str +1"
+#command "#att +1"
 #command "#regeneration +3"
-#command "#fireres -2"
+#command "#fireres -3"
+#command "#unsurr +1"
 #needs left_hand none
 #type coldblooded
 #enditem

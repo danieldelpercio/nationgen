@@ -10,8 +10,7 @@
 #id niefel
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/niefel_head.png
-#command "#gcost +5"
-#command "#hp +4"
+#command "#gcost +10"
 #command "#coldres +5"
 #type humanoid
 #type niefel
@@ -23,13 +22,13 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/laestrygonian_head.png
 #command "#gcost +30"
-#command "#hp +10"
+#command "#hp +5"
 #command "#mr +1"
 #command "#fireres +5"
 #command "#poisonres +5"
 #command "#berserk +4"
-#command "#incunrest +120"
-#command "#popkill +100"
+#command "#incunrest +12"
+#command "#popkill +10"
 #command "#unsurr +2"
 #needs headweapon snake_tresses
 #basechance 0.1
@@ -41,12 +40,12 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/tyrant_head.png
 #command "#gcost +15"
-#command "#hp +8"
+#command "#hp +3"
 #command "#mr +1"
 #command "#poisonres +5"
 #command "#berserk +3"
-#command "#incunrest +80"
-#command "#popkill +80"
+#command "#incunrest +8"
+#command "#popkill +8"
 #type humanoid
 #enditem
 
@@ -54,13 +53,13 @@
 #id nephil
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/nephil_head.png
-#command "#gcost +40"
+#command "#gcost +30"
 #command "#hp +5"
 #command "#fireres +5"
 #command "#fear +5"
 #command "#fearofflood +5"
-#command "#incunrest +120"
-#command "#popkill +120"
+#command "#incunrest +12"
+#command "#popkill +12"
 #needs headweapon golden_horns
 #type humanoid
 #enditem
@@ -71,9 +70,11 @@
 #sprite /graphics/foulspawn/grotesque/heads/carrion_head.png
 #command "#gcost +25"
 #command "#mr +1"
+#command "#mor +3"
 #command "#coldres +5"
 #command "#fear +5"
-#command "#undead"
+#command "#almostundead"
+#command "#plant"
 #type undead
 #enditem
 
@@ -97,7 +98,10 @@
 #id hydra
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/hydra_head.png
-#command "#gcost +25"
+#command "#gcost +20"
+#command "#mor +3"
+#command "#att +2"
+#command "#enc +1"
 #command "#poisonres +5"
 #command "#undisciplined"
 #command "#coldblood"
@@ -112,13 +116,12 @@
 #id "firedrake"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/drake_fire_head.png
-#command "#gcost +14"
+#command "#gcost +25"
 #command "#hp +4"
 #command "#prot +3"
 #command "#mr +1"
-#command "#mor +4"
+#command "#mor +3"
 #command "#att +2"
-#command "#ap -2"
 #command "#enc +1"
 #command "#fireres +5"
 #command "#undisciplined"
@@ -134,13 +137,12 @@
 #id "frostdrake"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/drake_frost_head.png
-#command "#gcost +15"
+#command "#gcost +25"
 #command "#hp +6"
 #command "#prot +4"
 #command "#mr +1"
-#command "#mor +4"
+#command "#mor +3"
 #command "#att +2"
-#command "#ap -2"
 #command "#enc +1"
 #command "#coldres +5"
 #command "#undisciplined"
@@ -155,13 +157,12 @@
 #id "swampdrake"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/drake_swamp_head.png
-#command "#gcost +16"
+#command "#gcost +25"
 #command "#hp +7"
 #command "#prot +4"
 #command "#mr +1"
-#command "#mor +4"
+#command "#mor +3"
 #command "#att +2"
-#command "#ap -2"
 #command "#enc +1"
 #command "#poisonres +10"
 #command "#undisciplined"

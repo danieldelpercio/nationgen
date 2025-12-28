@@ -35,6 +35,7 @@
 #id "hydra"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_back_arms/hydra_right_back_arm.png
+#command "#unsurr +1"
 #type coldblooded
 #type no_hand
 #needs right_back_hand none
@@ -44,6 +45,15 @@
 #id "typhon"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_back_arms/typhon_right_back_arm.png
+#command "#unsurr +1"
+#type no_hand
+#needs right_back_hand none
+#enditem
+
+#newitem
+#id "pink_tentacles"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_back_arms/pink_tentacles_right_back_arm.png
 #type no_hand
 #needs right_back_hand none
 #enditem

@@ -1,6 +1,15 @@
 #newitem
 #id "none"
 #gameid -1
+#basechance 0
+#enditem
+
+#newitem
+#id "empty"
+#gameid -1
+#itemslot hand +1
+#type hand_slot
+#basechance 0
 #enditem
 
 #newitem

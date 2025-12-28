@@ -7,7 +7,7 @@
 #freetheme corruption
 
 #monsters foulspawn_monsters
-#monsterchance 0.75
+#monsterchance 0.5
 
 #pose foulspawninfantry
 #pose foulspawnranged

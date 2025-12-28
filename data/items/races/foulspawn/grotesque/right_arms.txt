@@ -13,10 +13,9 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_arms/giant_right_arm.png
 #command "#gcost +10"
-#command "#hp +5"
+#command "#hp +8"
 #command "#str +4"
-#needs right_hand none
-#itemslot hand +1
+#needs right_hand empty
 #type humanoid
 #enditem
 
@@ -24,11 +23,10 @@
 #id "gigante"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_arms/gigante_right_arm.png
-#command "#gcost +15"
-#command "#hp +5"
+#command "#gcost +10"
+#command "#hp +3"
 #command "#str +5"
 #needs right_hand gigante
-#itemslot hand +1
 #type humanoid
 #enditem
 
@@ -37,10 +35,9 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_arms/gigante_right_arm.png
 #command "#gcost +15"
-#command "#hp +5"
+#command "#hp +3"
 #command "#str +5"
 #needs right_hand pale_one_boulder
-#itemslot hand +1
 #enditem
 
 #newitem
@@ -50,8 +47,7 @@
 #command "#gcost +5"
 #command "#str +2"
 #command "#fireres +3"
-#needs right_hand none
-#itemslot hand +1
+#needs right_hand empty
 #type humanoid
 #type hand_slot
 #enditem
@@ -63,8 +59,7 @@
 #command "#gcost +5"
 #command "#str +1"
 #command "#fireres +5"
-#needs right_hand none
-#itemslot hand +1
+#needs right_hand empty
 #type humanoid
 #type hand_slot
 #enditem
@@ -73,7 +68,7 @@
 #id "carrion"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_arms/carrion_right_arm.png
-#command "#gcost +15"
+#command "#gcost +5"
 #command "#str +1"
 #command "#plant"
 #needs right_hand none
@@ -86,8 +81,10 @@
 #sprite /graphics/foulspawn/grotesque/right_arms/typhon_right_arm.png
 #command "#gcost +20"
 #command "#str +1"
+#command "#att +1"
 #command "#regeneration +3"
-#command "#fireres -2"
+#command "#fireres -3"
+#command "#unsurr +1"
 #needs right_hand none
 #type coldblooded
 #enditem

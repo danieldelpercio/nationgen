@@ -40,6 +40,7 @@
 #id "typhon"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_back_arms/typhon_left_back_arm.png
+#command "#unsurr +1"
 #type no_hand
 #needs left_back_hand none
 #enditem

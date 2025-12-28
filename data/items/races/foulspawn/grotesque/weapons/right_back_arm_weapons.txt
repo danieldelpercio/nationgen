@@ -47,3 +47,10 @@
 #type coldblooded
 #needs right_back_arm typhon
 #enditem
+
+#newitem
+#id pink_tentacles
+#gameid 271
+#type degenerate
+#needs right_back_arm pink_tentacles
+#enditem

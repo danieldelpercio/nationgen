@@ -1,6 +1,6 @@
 #newpose
 #id "grotesques"
-#basechance 1
+#basechance 500000
 #role "infantry"
 #role "elite infantry"
 
@@ -48,6 +48,7 @@
 
 #baseitemslot hand 0
 #baseitemslot head 1
+#baseitemslot foot 2
 #baseitemslot misc 2
 
 #maxunits 1
