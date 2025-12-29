@@ -1,5 +1,11 @@
 
 #newitem
+#id wing_pair
+#gameid -1
+#needstype left_back_arm wing_pair
+#enditem
+
+#newitem
 #id draconian_wing_shield
 #gameid draconian_wing_shield
 #type draconian

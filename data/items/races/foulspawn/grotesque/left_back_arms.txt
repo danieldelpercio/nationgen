@@ -18,7 +18,7 @@
 #id "draconian_wings_left"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_back_arms/draconian_wing_left.png
-#type no_hand
+#type wing_pair
 #needs left_back_hand none
 #needs right_back_arm_weapon matching_right_wing
 #command "#flying"
@@ -29,7 +29,7 @@
 #id "angel_wings_left"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/left_back_arms/angel_wing_left_back_arm.png
-#type no_hand
+#type wing_pair
 #needs left_back_hand none
 #needs right_back_arm_weapon matching_right_wing
 #command "#flying"
