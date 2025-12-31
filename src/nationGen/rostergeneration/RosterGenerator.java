@@ -308,9 +308,11 @@ public class RosterGenerator {
 
     // Choose templates of suitable race and role
     List<TroopTemplate> temptemplates = new ArrayList<>();
-    for (TroopTemplate t : templates) if (
-      !shouldSkipTemplate(t, isPrimaryRace, t.maxvar, race, role)
-    ) temptemplates.add(t);
+    for (TroopTemplate t : templates) {
+      if (!shouldSkipTemplate(t, isPrimaryRace, race, role)) {
+        temptemplates.add(t);
+      }
+    }
 
     // If we don't have templates or skip chance triggers, let's get a new template
 
