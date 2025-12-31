@@ -376,22 +376,22 @@ public class Unit {
         Arg modifier = args.get(1);
         switch (slot) {
           case "head":
-            head += handleModifier(modifier, head);
+            head = handleModifier(modifier, head);
             break;
           case "misc":
-            misc += handleModifier(modifier, misc);
+            misc = handleModifier(modifier, misc);
             break;
           case "body":
-            body += handleModifier(modifier, body);
+            body = handleModifier(modifier, body);
             break;
           case "hand":
-            hand += handleModifier(modifier, hand);
+            hand = handleModifier(modifier, hand);
             break;
           case "feet":
-            feet += handleModifier(modifier, feet);
+            feet = handleModifier(modifier, feet);
             break;
           case "bow":
-            bow += handleModifier(modifier, bow);
+            bow = handleModifier(modifier, bow);
             break;
         }
       }
