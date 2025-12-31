@@ -340,7 +340,6 @@ public class RosterGenerator {
    * Ugly method for checking whether to skip, but this makes the main code clearer.
    * @param t
    * @param isPrimaryRace
-   * @param maxvarieties
    * @param race
    * @param role
    * @return
@@ -348,7 +347,6 @@ public class RosterGenerator {
   private boolean shouldSkipTemplate(
     TroopTemplate t,
     boolean isPrimaryRace,
-    int maxvarieties,
     Race race,
     String role
   ) {
