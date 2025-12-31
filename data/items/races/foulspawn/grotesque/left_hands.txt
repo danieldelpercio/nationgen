@@ -8,7 +8,7 @@
 #id "empty"
 #gameid -1
 #itemslot hand +1
-#type hand_slot
+#type left_hand_slot
 #basechance 0
 #enditem
 
@@ -18,7 +18,7 @@
 #sprite /graphics/foulspawn/grotesque/left_hands/humanoid_left_hand.png
 #itemslot hand +1
 #type humanoid
-#type hand_slot
+#type left_hand_slot
 #enditem
 
 #newitem
@@ -28,6 +28,6 @@
 #itemslot hand +1
 #type niefel
 #type humanoid
-#type hand_slot
+#type left_hand_slot
 #theme boreal
 #enditem

@@ -8,7 +8,7 @@
 #id "empty"
 #gameid -1
 #itemslot hand +1
-#type hand_slot
+#type right_hand_slot
 #basechance 0
 #enditem
 

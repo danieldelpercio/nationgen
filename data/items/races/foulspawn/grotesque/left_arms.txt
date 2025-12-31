@@ -5,7 +5,7 @@
 #command "#gcost +3"
 #command "#hp +2"
 #command "#str +2"
-#needstype left_hand hand_slot
+#needstype left_hand left_hand_slot
 #type humanoid
 #enditem
 
@@ -16,7 +16,7 @@
 #command "#gcost +5"
 #command "#hp +5"
 #command "#str +2"
-#needstype left_hand hand_slot
+#needstype left_hand left_hand_slot
 #type niefel
 #type humanoid
 #theme boreal
@@ -74,8 +74,7 @@
 #command "#gcost +10"
 #command "#str +2"
 #command "#fireres +3"
-#needs left_hand none
-#itemslot hand +1
+#needs left_hand empty
 #type humanoid
 #enditem
 
@@ -86,8 +85,7 @@
 #command "#gcost +15"
 #command "#str +2"
 #command "#fireres +5"
-#needs left_hand none
-#itemslot hand +1
+#needs left_hand empty
 #type humanoid
 #enditem
 

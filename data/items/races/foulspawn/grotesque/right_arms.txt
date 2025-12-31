@@ -49,7 +49,7 @@
 #command "#fireres +3"
 #needs right_hand empty
 #type humanoid
-#type hand_slot
+#type right_hand_slot
 #enditem
 
 #newitem
@@ -61,7 +61,7 @@
 #command "#fireres +5"
 #needs right_hand empty
 #type humanoid
-#type hand_slot
+#type right_hand_slot
 #enditem
 
 #newitem
