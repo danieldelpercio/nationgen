@@ -63,3 +63,28 @@
 #command "#swimming"
 #type atlantian
 #enditem
+
+#newitem
+#id "earth"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_legs/earth_left_leg.png
+#command "#gcost +15"
+#command "#hp +5"
+#command "#str +3"
+#command "#ap +2"
+#command "#mapmove +2"
+#command "#reinvigoration +1"
+#type humanoid
+#enditem
+
+#newitem
+#id "scorpion"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_legs/scorpion_left_leg.png
+#command "#gcost +15"
+#command "#prot +2"
+#command "#ap +6"
+#command "#mapmove +2"
+#command "#wastesurvival"
+#type animal
+#enditem

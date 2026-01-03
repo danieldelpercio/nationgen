@@ -32,3 +32,10 @@
 #type coldblooded
 #needs left_back_arm typhon
 #enditem
+
+#newitem
+#id foulspawn
+#gameid foulspawn_claw
+#type degenerate
+#needs left_back_arm foulspawn
+#enditem

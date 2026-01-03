@@ -21,3 +21,10 @@
 #gameid 569
 #nogen
 #enditem
+
+#newitem
+#id venomous_fangs
+#basechance 0
+#gameid 239
+#type "poison"
+#enditem

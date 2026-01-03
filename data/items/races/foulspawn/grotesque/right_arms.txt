@@ -76,7 +76,7 @@
 #enditem
 
 #newitem
-#id "typhon"
+#id "typhon"  
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_arms/typhon_right_arm.png
 #command "#gcost +20"
@@ -87,4 +87,75 @@
 #command "#unsurr +1"
 #needs right_hand none
 #type coldblooded
+#enditem
+
+#newitem
+#id "foulspawn"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/foulspawn_right_arm.png
+#command "#gcost +5"
+#command "#str +2"
+#command "#att +1"
+#needs right_hand none
+#type degenerate
+#enditem
+
+#newitem
+#id "mantis"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/mantis_right_arm.png
+#command "#gcost +10"
+#command "#prot +1"
+#command "#att +2"
+#command "#ap +2"
+#command "#poisonres +3"
+#needs right_hand none
+#type animal
+#enditem
+
+#newitem
+#id "scorpion"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/scorpion_right_arm.png
+#command "#gcost +20"
+#command "#prot +2"
+#command "#att +1"
+#needs right_hand none
+#type animal
+#enditem
+
+#newitem
+#id "green_tentacle"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/green_tentacle_right_arm.png
+#command "#gcost +5"
+#needs right_hand none
+#type tentacle
+#enditem
+
+#newitem
+#id "green_prehensile_tentacle"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/green_tentacle_right_arm.png
+#command "#gcost +10"
+#needs right_hand empty
+#type prehensile_tentacle
+#enditem
+
+#newitem
+#id "pink_tentacles"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/pink_tentacles_right_arm.png
+#command "#gcost +5"
+#needs right_hand none
+#type tentacle
+#enditem
+
+#newitem
+#id "pink_prehensile_tentacles"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_arms/pink_tentacles_right_arm.png
+#command "#gcost +10"
+#needs right_hand empty
+#type prehensile_tentacle
 #enditem

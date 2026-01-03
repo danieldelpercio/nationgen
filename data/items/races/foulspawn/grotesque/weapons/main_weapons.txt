@@ -36,7 +36,7 @@
 
 #newitem
 #id left_arm_cyclops_maul
-#gameid 14
+#gameid maul_aoe
 #sprite /graphics/foulspawn/grotesque/weapons/maul_left_arm.png
 #type weapon
 #needs left_arm cyclops
@@ -88,5 +88,86 @@
 #gameid 491
 #type coldblooded
 #needs right_arm typhon
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_foulspawn_claw
+#gameid foulspawn_claw
+#type degenerate
+#needs right_arm foulspawn
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_mantis_claw
+#gameid mantis_claw
+#type animal
+#needs right_arm mantis
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_scorpion_pincer
+#gameid 273
+#type animal
+#needs right_arm scorpion
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_tentacle
+#gameid 85
+#type tentacle
+#type degenerate
+#needstype right_arm tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_tentacle_strangle
+#gameid 116
+#type tentacle
+#needstype right_arm prehensile_tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_tentacle_sleep
+#gameid 387
+#type tentacle
+#needstype right_arm prehensile_tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_tentacle_disease
+#gameid 142
+#type tentacle
+#needstype right_arm tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_tentacle_weakness
+#gameid 550
+#type tentacle
+#needstype right_arm tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_tentacle_life_drain
+#gameid 271
+#type tentacle
+#needstype right_arm tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id right_arm_tentacle_flame_sting
+#gameid 652
+#type tentacle
+#needstype right_arm tentacle
 #needstype offhand left_arm
 #enditem

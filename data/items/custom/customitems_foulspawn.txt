@@ -45,3 +45,38 @@
 #command "#copyweapon 424"
 #command "#range0"
 #end
+
+#new customweapon
+#id "maul_aoe"
+#command "#copyweapon 14"
+#command "#aoe 1"
+#end
+
+#new customweapon
+#id "foulspawn_claw"
+#command "#copyweapon 236"
+#command "#armorpiercing"
+#command "#name 'Piercing Claw'"
+#end
+
+#new customweapon
+#id "mantis_claw"
+#command "#copyweapon 742"
+#command "#dmg 2"
+#command "#magic"
+#end
+
+#new customweapon
+#id "shambler_claw"
+#command "#copyweapon 29"
+#command "#aoe 1"
+#command "#charge"
+#command "#defroll"
+#command "#name 'Sweeping Claw'"
+#end
+
+#new customweapon
+#id "flame_sting_tentacle"
+#command "#copyweapon 652"
+#command "#thirdstr"
+#end

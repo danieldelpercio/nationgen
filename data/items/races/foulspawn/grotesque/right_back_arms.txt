@@ -56,4 +56,21 @@
 #sprite /graphics/foulspawn/grotesque/right_back_arms/pink_tentacles_right_back_arm.png
 #type no_hand
 #needs right_back_hand none
+#type tentacle
+#enditem
+
+#newitem
+#id "pink_prehensile_tentacles"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_back_arms/pink_tentacles_right_back_arm.png
+#needs right_back_hand empty
+#type tentacle
+#enditem
+
+#newitem
+#id "foulspawn"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/right_back_arms/foulspawn_right_back_arm.png
+#type no_hand
+#needs right_back_hand none
 #enditem

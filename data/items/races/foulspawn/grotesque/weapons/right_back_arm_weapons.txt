@@ -49,8 +49,56 @@
 #enditem
 
 #newitem
-#id pink_tentacles
-#gameid 271
+#id foulspawn
+#gameid foulspawn_claw
 #type degenerate
-#needs right_back_arm pink_tentacles
+#needs right_back_arm foulspawn
+#enditem
+
+#newitem
+#id tentacle
+#gameid 85
+#type tentacle
+#type degenerate
+#needstype right_back_arm tentacle
+#enditem
+
+#newitem
+#id tentacle_strangle
+#gameid 116
+#type tentacle
+#needstype right_back_arm prehensile_tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id tentacle_sleep
+#gameid 387
+#type tentacle
+#needstype right_back_arm prehensile_tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id tentacle_disease
+#gameid 142
+#type tentacle
+#needstype right_back_arm tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id tentacle_weakness
+#gameid 550
+#type tentacle
+#needstype right_back_arm tentacle
+#needstype offhand left_arm
+#enditem
+
+#newitem
+#id tentacle_life_drain
+#gameid 271
+#type tentacle
+#needstype right_back_arm tentacle
+#needstype offhand left_arm
 #enditem

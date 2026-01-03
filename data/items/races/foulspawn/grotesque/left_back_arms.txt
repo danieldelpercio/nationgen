@@ -44,3 +44,11 @@
 #type no_hand
 #needs left_back_hand none
 #enditem
+
+#newitem
+#id "foulspawn"
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/left_back_arms/foulspawn_left_back_arm.png
+#type no_hand
+#needs left_back_hand none
+#enditem

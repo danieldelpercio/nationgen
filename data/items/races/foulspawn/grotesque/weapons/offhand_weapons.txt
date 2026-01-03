@@ -48,3 +48,93 @@
 #type coldblooded
 #needs left_arm typhon
 #enditem
+
+#newitem
+#id left_arm_foulspawn
+#gameid foulspawn_claw
+#type left_arm
+#type degenerate
+#needs left_arm foulspawn
+#enditem
+
+#newitem
+#id left_arm_mantis_claw
+#gameid mantis_claw
+#type left_arm
+#type animal
+#needs left_arm mantis
+#enditem
+
+#newitem
+#id left_arm_scorpion_pincer
+#gameid 273
+#type left_arm
+#type animal
+#needs left_arm scorpion
+#enditem
+
+#newitem
+#id left_arm_shambler_claw
+#gameid shambler_claw
+#type left_arm
+#type atlantian
+#type left_hand_slot
+#needs left_arm shambler
+#enditem
+
+#newitem
+#id left_arm_tentacle
+#gameid 85
+#type left_arm
+#type tentacle
+#type degenerate
+#needstype left_arm tentacle
+#enditem
+
+#newitem
+#id left_arm_tentacle_strangle
+#gameid 116
+#type left_arm
+#type tentacle
+#needstype left_arm prehensile_tentacle
+#enditem
+
+#newitem
+#id left_arm_tentacle_sleep
+#gameid 387
+#type left_arm
+#type tentacle
+#needstype left_arm prehensile_tentacle
+#enditem
+
+#newitem
+#id left_arm_tentacle_disease
+#gameid 142
+#type left_arm
+#type tentacle
+#needstype left_arm tentacle
+#enditem
+
+#newitem
+#id left_arm_tentacle_weakness
+#gameid 550
+#type left_arm
+#type tentacle
+#needstype left_arm tentacle
+#enditem
+
+#newitem
+#id left_arm_tentacle_life_drain
+#gameid 271
+#type left_arm
+#type tentacle
+#needstype left_arm tentacle
+#enditem
+
+#newitem
+#id left_arm_tentacle_flame_sting
+#gameid 652
+#type left_arm
+#type tentacle
+#needstype left_arm tentacle
+#enditem

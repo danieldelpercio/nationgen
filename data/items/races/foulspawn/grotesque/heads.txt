@@ -95,6 +95,92 @@
 #enditem
 
 #newitem
+#id bakemonos
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/bakemonos_head.png
+#command "#gcost +5"
+#command "#mor +1"
+#command "#darkvision 50"
+#command "#mountainsurvival"
+#command "#unsurr +1"
+#command "#undisciplined"
+#itemslot head +1
+#type humanoid
+#enditem
+
+#newitem
+#id ogres
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/ogres_head.png
+#command "#gcost +5"
+#command "#mor +1"
+#command "#mountainsurvival"
+#command "#unsurr +1"
+#itemslot head +1
+#type humanoid
+#enditem
+
+#newitem
+#id bear
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/bear_head.png
+#command "#gcost +5"
+#command "#mor +1"
+#command "#att +1"
+#command "#mr -1"
+#command "#darkvision 50"
+#command "#forestsurvival"
+#command "#mountainsurvival"
+#command "#undisciplined"
+#command "#animal"
+#needs headweapon bite
+#type animal
+#enditem
+
+#newitem
+#id canid_ogre
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/canid_ogre_head.png
+#command "#gcost +20"
+#command "#mor +1"
+#command "#darkvision 25"
+#command "#forestsurvival"
+#command "#mountainsurvival"
+#command "#unsurr +1"
+#itemslot head +1
+#needs headweapon bite
+#type humanoid
+#enditem
+
+#newitem
+#id elephant
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/elephant_head.png
+#command "#gcost +5"
+#command "#prot +4"
+#command "#mr -1"
+#command "#animal"
+#needs headweapon tusk
+#type animal
+#enditem
+
+#newitem
+#id goat_snake
+#gameid -1
+#sprite /graphics/foulspawn/grotesque/heads/goat_snake_head.png
+#command "#gcost +5"
+#command "#mr -1"
+#command "#forestsurvival"
+#command "#mountainsurvival"
+#command "#unsurr +1"
+#command "#undisciplined"
+#command "#animal"
+#needs headweapon head_butt
+#needs bonusweapon venomous_fangs
+#type animal
+#enditem
+
+#newitem
 #id hydra
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/hydra_head.png
@@ -116,9 +202,9 @@
 #id "firedrake"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/drake_fire_head.png
-#command "#gcost +25"
+#command "#gcost +30"
 #command "#hp +4"
-#command "#prot +3"
+#command "#prot +2"
 #command "#mr +1"
 #command "#mor +3"
 #command "#att +2"
@@ -137,9 +223,9 @@
 #id "frostdrake"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/drake_frost_head.png
-#command "#gcost +25"
+#command "#gcost +30"
 #command "#hp +6"
-#command "#prot +4"
+#command "#prot +3"
 #command "#mr +1"
 #command "#mor +3"
 #command "#att +2"
@@ -157,9 +243,9 @@
 #id "swampdrake"
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/heads/drake_swamp_head.png
-#command "#gcost +25"
+#command "#gcost +30"
 #command "#hp +7"
-#command "#prot +4"
+#command "#prot +3"
 #command "#mr +1"
 #command "#mor +3"
 #command "#att +2"
