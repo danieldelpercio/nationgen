@@ -68,7 +68,6 @@
 #gameid 116
 #type tentacle
 #needstype right_back_arm prehensile_tentacle
-#needstype offhand left_arm
 #enditem
 
 #newitem
@@ -76,7 +75,6 @@
 #gameid 387
 #type tentacle
 #needstype right_back_arm prehensile_tentacle
-#needstype offhand left_arm
 #enditem
 
 #newitem
@@ -84,7 +82,6 @@
 #gameid 142
 #type tentacle
 #needstype right_back_arm tentacle
-#needstype offhand left_arm
 #enditem
 
 #newitem
@@ -92,7 +89,6 @@
 #gameid 550
 #type tentacle
 #needstype right_back_arm tentacle
-#needstype offhand left_arm
 #enditem
 
 #newitem
@@ -100,5 +96,4 @@
 #gameid 271
 #type tentacle
 #needstype right_back_arm tentacle
-#needstype offhand left_arm
 #enditem

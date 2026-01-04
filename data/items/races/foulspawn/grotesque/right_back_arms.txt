@@ -64,7 +64,7 @@
 #gameid -1
 #sprite /graphics/foulspawn/grotesque/right_back_arms/pink_tentacles_right_back_arm.png
 #needs right_back_hand empty
-#type tentacle
+#type prehensile_tentacle
 #enditem
 
 #newitem

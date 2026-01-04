@@ -1,6 +1,6 @@
 #newpose
 #id "grotesques"
-#basechance 500000
+#basechance 9999999
 #role "infantry"
 
 #command "#reclimit 1"

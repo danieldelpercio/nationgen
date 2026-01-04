@@ -166,7 +166,7 @@
 
 #newitem
 #id right_arm_tentacle_flame_sting
-#gameid 652
+#gameid flame_sting_tentacle
 #type tentacle
 #needstype right_arm tentacle
 #needstype offhand left_arm

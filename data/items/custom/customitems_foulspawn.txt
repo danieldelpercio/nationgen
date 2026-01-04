@@ -50,6 +50,7 @@
 #id "maul_aoe"
 #command "#copyweapon 14"
 #command "#aoe 1"
+#command "#name 'Massive Maul'"
 #end
 
 #new customweapon
