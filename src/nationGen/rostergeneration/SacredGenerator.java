@@ -1111,11 +1111,11 @@ public class SacredGenerator extends TroopGenerator {
       u.pose.types.contains("ranged") ||
       u.pose.types.contains("elite ranged") ||
       u.pose.types.contains("sacred ranged")
-    ) if (u.getGoldCost() < 15 && u.getResCost(true) < 15) u.commands.add(
-      Command.args("#gcost", "+10")
-    );
+    ) if (u.getGoldCost(true) < 15 && u.getResCost(true, true) < 15) {
+      u.commands.add(Command.args("#gcost", "+10"));
+    }
 
-    int cgcost = u.getGoldCost();
+    int cgcost = u.getGoldCost(true);
     int costThreshold = u.getCommandValue("#size", 2) * 25;
 
     cgcost -= costThreshold;
@@ -1130,9 +1130,9 @@ public class SacredGenerator extends TroopGenerator {
     if (
       u.isRanged() &&
       u.getSlot("mount") == null &&
-      u.getGoldCost() - discount > (costThreshold * 0.8)
+      u.getGoldCost(false) - discount > (costThreshold * 0.8)
     ) {
-      discount += (u.getGoldCost() - discount) / 5;
+      discount += (u.getGoldCost(false) - discount) / 5;
     }
 
     u.commands.add(Command.args("#gcost", "-" + discount));

@@ -172,8 +172,8 @@ public class CustomItemGen {
     int itemResCost = Math.max((int) Math.round(1.5 * (double) powerUps), 3);
 
     // Use item cost to calculate extra cost to the unit (either item cost or 10% of unit cost)
-    int extraUnitGoldCost = (int)Math.max(itemGoldCost, unit.getGoldCost() * 0.1);
-    int extraUnitResCost = (int)Math.max(itemResCost, unit.getResCost(true) * 0.1);
+    int extraUnitGoldCost = (int)Math.max(itemGoldCost, unit.getGoldCost(true) * 0.1);
+    int extraUnitResCost = (int)Math.max(itemResCost, unit.getResCost(true, true) * 0.1);
 
     // Add the costs to the unit
     unit.commands.add(Command.args("#gcost", "+" + extraUnitGoldCost));

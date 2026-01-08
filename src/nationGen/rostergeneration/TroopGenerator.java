@@ -730,7 +730,7 @@ public class TroopGenerator {
 
     double chance = bonusrangedness + local_bwchance;
 
-    double rescost = u.getResCost(false);
+    double rescost = u.getResCost(false, false);
 
     rescost += 4 * nationGen.weapondb.GetInteger(u.getSlot("weapon").id, "res");
     if (

@@ -684,9 +684,9 @@ public class RosterGenerator {
     templates.remove(0);
 
     while (templates.size() > 0) {
-      int gcost = templates.get(0).getGoldCost();
+      int gcost = templates.get(0).getGoldCost(true);
       for (int i = newlist.size() - 1; i >= 0; i--) {
-        if (gcost > newlist.get(i).getGoldCost()) {
+        if (gcost > newlist.get(i).getGoldCost(true)) {
           newlist.add(templates.get(0));
           templates.remove(0);
           break;

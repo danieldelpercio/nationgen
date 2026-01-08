@@ -602,10 +602,10 @@ public class ChanceIncHandler {
     for (Unit u : troopList) {
       if (
         u.pose.roles.contains("mounted") || u.pose.roles.contains("chariot")
-      ) totalgold += u.getGoldCost() * 0.66;
-      else totalgold += u.getGoldCost();
+      ) totalgold += u.getGoldCost(true) * 0.66;
+      else totalgold += u.getGoldCost(true);
 
-      totalres += u.getResCost(true);
+      totalres += u.getResCost(true, true);
     }
 
     data.avgres = totalres / unitCount;

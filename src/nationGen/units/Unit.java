@@ -13,6 +13,7 @@ import java.util.Random;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import nationGen.NationGen;
+import nationGen.Settings.SettingsType;
 import nationGen.entities.Filter;
 import nationGen.entities.MagicFilter;
 import nationGen.entities.Pose;
@@ -741,18 +742,24 @@ public class Unit {
     return this.mountUnit;
   }
 
-  public int getGoldCost() {
+  public int getGoldCost(Boolean includeMountCost) {
     List<Command> commands = this.getCommands();
-    double holy = 1;
-    double slowrec = 1;
+    double sacredMultiplier = 1;
+    double slowRecMultiplier = 1;
 
     int cost = 0;
     for (Command c : commands) {
       if (c.command.equals("#gcost")) {
         cost += c.args.get(0).getInt();
       }
-      if (c.command.equals("#holy")) holy = 1.3;
-      if (c.command.equals("#slowrec")) slowrec = 0.9;
+
+      if (c.command.equals("#holy")) {
+        sacredMultiplier = this.nationGen.settings.get(SettingsType.goldSacredCostMultiplier);
+      }
+
+      if (c.command.equals("#slowrec")) {
+        slowRecMultiplier = this.nationGen.settings.get(SettingsType.goldSlowRecCostMultiplier);
+      }
     }
 
     int stats = this.getCopyStats();
@@ -766,10 +773,14 @@ public class Unit {
     }
 
     if (!polished) {
-      return (int) Math.round((double) cost * holy * slowrec);
-    } else {
-      return cost;
+      cost = (int) Math.round((double) cost * sacredMultiplier * slowRecMultiplier);
     }
+
+    if (includeMountCost == true) {
+      cost += this.getMountGoldCost();
+    }
+
+    return cost;
   }
 
   public int getMountGoldCost() {
@@ -811,11 +822,11 @@ public class Unit {
       .stream().anyMatch(t -> this.hasLeadership(t) != false);
   }
 
-  public int getResCost(Boolean useSize) {
-    return getResCost(useSize, this.getCommands());
+  public int getResCost(Boolean useSize, Boolean includeMount) {
+    return getResCost(useSize, includeMount, this.getCommands());
   }
 
-  private int getResCost(Boolean useSize, List<Command> commands) {
+  private int getResCost(Boolean useSize, Boolean includeMount, List<Command> commands) {
     int size = Unit.HUMAN_SIZE;
     int ressize = -1;
     int extrares = 0;
@@ -848,8 +859,20 @@ public class Unit {
       else res = (size * res) / Unit.HUMAN_SIZE;
     }
 
-    // Dom3 minimum res amount is 1.
+    if (includeMount) {
+      res += this.getMountResCost();
+    }
+
+    // Dom minimum res amount is 1.
     return Math.max(res + extrares, 1);
+  }
+
+  public int getMountResCost() {
+    if (this.mountUnit == null) {
+      return 0;
+    }
+
+    return this.mountUnit.getResCost();
   }
 
   public List<Command> getCommands() {
@@ -916,7 +939,7 @@ public class Unit {
           // If we have many, we use the first one. The order is Race, pose, filter, theme.
           // Assumedly these exist mostly in one of these anyway
           int cost = arg.getInt();
-          int currentcost = getResCost(true, allCommands);
+          int currentcost = getResCost(true, true, allCommands);
 
           cost -= currentcost;
 
@@ -1224,12 +1247,14 @@ public class Unit {
     for (Command c : commands) {
       // Goldcost for holy units
       if (c.command.equals("#holy")) {
-        this.handleCommand(commands, Command.args("#gcost", "*1.3"));
+        Number sacredCostMultiplier = this.nationGen.settings.get(SettingsType.goldSacredCostMultiplier);
+        this.handleCommand(commands, Command.args("#gcost", "*" + sacredCostMultiplier));
       }
 
       // Discount for slowrec units
       if (c.command.equals("#slowrec")) {
-        this.handleCommand(commands, Command.args("#gcost", "*0.9"));
+        Number slowRecCostMultiplier = this.nationGen.settings.get(SettingsType.goldSlowRecCostMultiplier);
+        this.handleCommand(commands, Command.args("#gcost", "*" + slowRecCostMultiplier));
       }
 
       if (
@@ -1279,20 +1304,14 @@ public class Unit {
           nu.getStringCommandValue("#montag", "").equals(firstshape) && u != nu
         ) {
           nu.polish();
-          res += nu.getResCost(true);
-          gold += nu.getGoldCost();
-
-          // Add gold of this unit's equipped mount. This is normally done automatically by
-          // Dominions with the defined #gcost of the mount monster, but this is a montag
-          // unit that transforms into different units when recruited, and the base unit
-          // will not have a mount nor include any mount gold costs, so they need to get added here.
-          gold += nu.getMountGoldCost();
+          res += nu.getResCost(true, true);
+          gold += nu.getGoldCost(true);
           n++;
         }
       }
 
       if (n > 0) {
-        res = (int) Math.round((double) res / (double) n) - getResCost(true);
+        res = (int) Math.round((double) res / (double) n) - getResCost(true, true);
         gold = (int) Math.round((double) gold / (double) n);
         this.handleCommand(commands, new Command("#gcost", new Arg(gold)));
         this.handleCommand(commands, new Command("#rcost", new Arg(res)));
@@ -1307,7 +1326,7 @@ public class Unit {
       Generic.isNumeric(c.args.get(0).get().substring(5))
     ) percentCostCommands.add(c);
 
-    int gcost = percentCostCommands.size() > 0 ? this.getGoldCost() : 0;
+    int gcost = percentCostCommands.size() > 0 ? this.getGoldCost(true) : 0;
 
     for (Command c : percentCostCommands) {
       if (gcost == 0) continue;
@@ -1648,9 +1667,9 @@ public class Unit {
       " (" +
       race.name +
       "), Gold: " +
-      getGoldCost() +
+      getGoldCost(true) +
       ", Resources: " +
-      getResCost(true) +
+      getResCost(true, true) +
       ", Roles: " +
       pose.roles +
       " (" +

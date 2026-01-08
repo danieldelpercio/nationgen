@@ -109,6 +109,10 @@ public class MountUnit extends Unit {
     return this.gcost;
   }
 
+  public int getResCost() {
+    return this.getResCost(false, false);
+  }
+
   public void polish(NationGen n, Nation nation) {
     Filter polishFilter = new Filter(n);
     polishFilter.name = "Mount unit";

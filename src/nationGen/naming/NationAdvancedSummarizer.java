@@ -305,9 +305,9 @@ public class NationAdvancedSummarizer {
     line.append("), ");
 
     line
-      .append(u.getGoldCost())
+      .append(u.getGoldCost(true))
       .append("g, ")
-      .append(u.getResCost(true))
+      .append(u.getResCost(true, true))
       .append("r, ");
 
     List<String> gear = new ArrayList<>();

@@ -26,6 +26,8 @@ public class Settings {
     resUpperThresholdChange,
     goldUpperThreshold,
     goldUpperThresholdChange,
+    goldSacredCostMultiplier,
+    goldSlowRecCostMultiplier,
     resLowerThreshold,
     resLowerThresholdChange,
     goldLowerThreshold,

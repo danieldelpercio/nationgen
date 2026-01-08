@@ -700,8 +700,8 @@ public class Militia {
     }
 
     for (Unit u : units) {
-      totalRes += u.getResCost(true);
-      totalGold += u.getGoldCost();
+      totalRes += u.getResCost(true, true);
+      totalGold += u.getGoldCost(true);
     }
 
     double exclusionGoldCost = (totalGold / units.size());
@@ -786,7 +786,7 @@ public class Militia {
     List<Double> goldCostMultipliers = tags.getAllDoubles("pd_targetgcostmulti");
 
     for (Unit u : possibleUnits) {
-      totalGold += u.getGoldCost();
+      totalGold += u.getGoldCost(true);
     }
 
     // Set a fixed target if #pd_targetgcost exists on the nation,
@@ -818,7 +818,7 @@ public class Militia {
     List<Double> resCostMultipliers = tags.getAllDoubles("pd_targetrcostmulti");
 
     for (Unit u : possibleUnits) {
-      totalRes += u.getResCost(true);
+      totalRes += u.getResCost(true, true);
     }
 
     // Set a fixed target if #pd_targetgcost exists on the nation,
@@ -895,7 +895,7 @@ public class Militia {
    * @return how suitable this unit's gold cost makes it to be part of PD.
    */
   private double getUnitGoldScoreForMilitia(Unit unit, double exclusionGold) {
-    double unitGoldCost = unit.getGoldCost();
+    double unitGoldCost = unit.getGoldCost(true);
     double exponent = 0.7;
     double goldScore = 0;
 
@@ -924,7 +924,7 @@ public class Militia {
    * @return how suitable this unit's resource cost makes it to be part of PD.
    */
   private double getUnitResScoreForMilitia(Unit unit, double exclusionRes) {
-    double unitResCost = unit.getResCost(false);
+    double unitResCost = unit.getResCost(true, true);
     double exponent = 0.7;
     double resScore = 0;
 
@@ -954,7 +954,7 @@ public class Militia {
    * @return
    */
   private double calculateMilitiaUnitMultiplier(Unit unit) {
-    int res = getAdjustedUnitResCost(unit, false);
+    int res = getAdjustedUnitResCost(unit, true, true);
     int gold = getAdjustedUnitGoldCost(unit);
     double score = gold + res;
     double multiplier = this.MILITIA_BUDGET / score;
@@ -982,8 +982,8 @@ public class Militia {
    * @param useSize
    * @return adjusted resource cost for PD calculations
    */
-  private int getAdjustedUnitResCost(Unit unit, boolean useSize) {
-    int res = unit.getResCost(useSize);
+  private int getAdjustedUnitResCost(Unit unit, boolean useSize, boolean includeMount) {
+    int res = unit.getResCost(useSize, includeMount);
 
     double adjustedUpperResCost = res + this.resUpperThresholdChangeSetting;
     double adjustedLowerResCost = res + this.resLowerThresholdChangeSetting;
@@ -1026,7 +1026,7 @@ public class Militia {
    * @return adjusted gold cost for PD calculations
    */
   private int getAdjustedUnitGoldCost(Unit unit) {
-    int gold = unit.getGoldCost();
+    int gold = unit.getGoldCost(true);
 
     double adjustedUpperGoldCost = gold + this.goldUpperThresholdChangeSetting;
     double adjustedLowerGoldCost = gold + this.goldLowerThresholdChangeSetting;

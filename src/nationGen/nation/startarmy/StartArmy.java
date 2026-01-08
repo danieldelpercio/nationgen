@@ -263,8 +263,8 @@ public class StartArmy {
    * @return
    */
   private double calculateArmyUnitAmount(Unit unit) {
-    int res = getAdjustedUnitResCost(unit, false);
-    int gold = getAdjustedUnitGoldCost(unit);
+    int res = getAdjustedUnitResCost(unit, true, true);
+    int gold = getAdjustedUnitGoldCost(unit, true);
     double score = gold + res;
     double multiplier = this.ARMY_BUDGET / score;
     multiplier = multiplier * this.militiaMultiplierSetting;
@@ -280,8 +280,8 @@ public class StartArmy {
    * @param useSize
    * @return adjusted resource cost for start army amount calculations
    */
-  private int getAdjustedUnitResCost(Unit unit, boolean useSize) {
-    int res = unit.getResCost(useSize);
+  private int getAdjustedUnitResCost(Unit unit, boolean useSize, boolean includeMount) {
+    int res = unit.getResCost(useSize, includeMount);
 
     double adjustedUpperResCost = res + this.resUpperThresholdChangeSetting;
     double adjustedLowerResCost = res + this.resLowerThresholdChangeSetting;
@@ -325,8 +325,8 @@ public class StartArmy {
    * @param useSize
    * @return adjusted gold cost for start army amount calculations
    */
-  private int getAdjustedUnitGoldCost(Unit unit) {
-    int gold = unit.getGoldCost();
+  private int getAdjustedUnitGoldCost(Unit unit, boolean includeMount) {
+    int gold = unit.getGoldCost(includeMount);
 
     double adjustedUpperGoldCost = gold + this.goldUpperThresholdChangeSetting;
     double adjustedLowerGoldCost = gold + this.goldLowerThresholdChangeSetting;

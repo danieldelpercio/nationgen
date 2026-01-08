@@ -1185,9 +1185,9 @@ public class Nation {
             " (Unit ID " +
             u.getId() +
             "), Gold: " +
-            u.getGoldCost() +
+            u.getGoldCost(true) +
             ", Resources: " +
-            u.getResCost(true) +
+            u.getResCost(true, true) +
             "\n"
           );
         }

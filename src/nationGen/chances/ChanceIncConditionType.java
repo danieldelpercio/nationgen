@@ -440,7 +440,7 @@ public enum ChanceIncConditionType {
       int count = args.nextInt();
 
       return d ->
-        d.n.selectTroops().filter(u -> u.getResCost(true) > res).count() >=
+        d.n.selectTroops().filter(u -> u.getResCost(true, true) > res).count() >=
           count !=
         not;
     }
@@ -458,7 +458,7 @@ public enum ChanceIncConditionType {
         d.n
             .selectTroops()
             .filter(Unit::isCapOnly)
-            .filter(u -> u.getResCost(true) > res)
+            .filter(u -> u.getResCost(true, true) > res)
             .count() >=
           count !=
         not;
