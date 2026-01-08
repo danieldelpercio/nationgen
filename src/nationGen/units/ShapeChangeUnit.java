@@ -59,7 +59,6 @@ public class ShapeChangeUnit extends Unit {
         if (
           c.command.equals("#gcost") && !thisForm.tags.containsName("nogcost")
         ) {
-          //System.out.println(c.args.get(0) + " ADDED " + " / " + otherForm.getGoldCost_DEBUG());
           gcost = c.args.get(0).getInt();
         }
       }
@@ -82,7 +81,6 @@ public class ShapeChangeUnit extends Unit {
         c.command.equals("#gcost") &&
         thisForm.tags.containsName("specifiedgcost")
       ) {
-        //System.out.println(c.args.get(0) + " ADDED " + " / " + otherForm.getGoldCost_DEBUG());
         sf.commands.add(c);
         gcost = c.args.get(0).getInt();
       }
