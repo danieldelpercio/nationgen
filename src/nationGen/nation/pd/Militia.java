@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.TreeMap;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 import com.elmokki.Generic;
@@ -450,6 +451,9 @@ public class Militia {
   private Map<PDUnitType, Unit> generateMilitia(List<PDUnitType> types, double goldMultiplier, double resMultiplier, boolean isMontagAllowed) {
     TreeMap<PDUnitType, Unit> militia = new TreeMap<PDUnitType, Unit>();
     int rangedUnitsSelected = 0;
+    
+    // Don't add more than half the units as ranged
+    double maxRangedUnitsAllowed = Math.floor(types.size() / 2);
 
     // Create a list of all possible militia units based on the nation's poses
     List<Unit> possibleUnits = this.nation.combineTroopsToList("infantry");
@@ -471,25 +475,29 @@ public class Militia {
     double exclusionGoldCost = this.getExclusionGoldCost(possibleUnits) * goldMultiplier;
     double exclusionResCost = this.getExclusionResCost(possibleUnits) * resMultiplier;
 
-    // Do the magic
     for (PDUnitType pdUnitType : types) {
+      // Max ranged units reached; remove the rest from the possible units' list
+      if (rangedUnitsSelected == maxRangedUnitsAllowed) {
+        possibleUnits = possibleUnits
+          .stream()
+          .filter(Predicate.not(Unit::isRanged))
+          .collect(Collectors.toList());
+      }
+
       // Expected several different unit types to fill all PD types, but didn't get enough
-      if (possibleUnits.size() == 0) {
+      if (possibleUnits.isEmpty()) {
         System.out.println(
-          "Not enough suitable unit poses to fill all unforted PD ranks (race: " +
+          "Not enough suitable unit poses to fill remaining PD ranks (race: " +
           this.nation.races.get(0).name +
-          ", nation: " +
-          this.nation.nationid +
+          ", nation seed: " +
+          this.nation.getSeed() +
           ". This is fine (first rank unit will be reused instead), but consider creating more varied poses for this race."
         );
         break;
       }
 
-      // Don't add more than half the units as ranged
-      boolean canBeRanged = rangedUnitsSelected < Math.floor(types.size() / 2);
-
       // Select unit that best fits the target gold/resources
-      Unit best = selectBestMilitiaUnit(possibleUnits, exclusionGoldCost, exclusionResCost, canBeRanged);
+      Unit best = selectBestMilitiaUnit(possibleUnits, exclusionGoldCost, exclusionResCost);
 
       // Remove from pool and add to our militia
       possibleUnits.remove(best);
@@ -498,6 +506,16 @@ public class Militia {
       if (best.isRanged()) {
         rangedUnitsSelected++;
       }
+    }
+
+    if (militia.isEmpty()) {
+      throw new IllegalStateException(
+        "No single suitable unit pose to fill PD ranks was found! (race: " +
+        this.nation.races.get(0).name +
+        ", nation seed: " +
+        this.nation.getSeed() +
+        ". Are too many poses tagged with #cannot_be_pd?"
+      );
     }
 
     // Reuse the first found rank unit to fill up the remaining PD ranks
@@ -748,7 +766,8 @@ public class Militia {
         this.nation.nationid +
         " (primary race: "+
         this.nation.races.get(0).name +
-        ") does not have any suitable units for militia. As a fallback, all of its units will be used as candidates, but consider adding suitable unit poses to the race");
+        ") does not have any suitable units for militia. As a fallback, all of its units will be used as candidates, but consider adding suitable unit poses to the race"
+      );
     }
   }
 
@@ -829,19 +848,13 @@ public class Militia {
   private Unit selectBestMilitiaUnit(
     List<Unit> possibleUnits,
     double exclusionGoldCost,
-    double exclusionResCost,
-    boolean canBeRanged
+    double exclusionResCost
   ) {
-    List<Unit> filteredUnits = possibleUnits
-      .stream()
-      .filter(u -> canBeRanged || u.isRanged() == false)
-      .collect(Collectors.toList());
-
-    Unit best = filteredUnits.get(0);
+    Unit best = possibleUnits.get(0);
     double bestscore = scoreForMilitia(best, exclusionGoldCost, exclusionResCost);
 
     // Iterate through all units, updating the best one if a better one is found
-    for (Unit unit : filteredUnits) {
+    for (Unit unit : possibleUnits) {
       double score = scoreForMilitia(unit, exclusionGoldCost, exclusionResCost);
 
       if (bestscore >= score) {

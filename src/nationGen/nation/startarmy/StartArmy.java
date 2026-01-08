@@ -161,9 +161,8 @@ public class StartArmy {
   }
 
   private List<Unit> generateStartArmyUnits() {
-    // Reverse the selected PD types for less chances of start army being same as start PD
     List<PDUnitType> pdUnitTypes = this.militia.getUsedBasicPdTypes().reversed();
-    List<PDUnitType> fortPdUnitTypes = this.militia.getUsedFortPdTypes().reversed();
+    List<PDUnitType> fortPdUnitTypes = this.militia.getUsedFortPdTypes();
     List<Unit> selectedUnits = new ArrayList<>();
 
     Unit firstArmyUnit;
@@ -180,7 +179,7 @@ public class StartArmy {
         // Try to make both units different from each other, even if sometimes
         // unforted and forted PD units end up having the same unit selected
         if (firstArmyUnit.hashCode() != secondArmyUnit.hashCode()) {
-          break;
+          return selectedUnits;
         }
       }
     }
