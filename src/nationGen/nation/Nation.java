@@ -22,7 +22,6 @@ import nationGen.magic.SpellGen;
 import nationGen.misc.*;
 import nationGen.naming.Summary;
 import nationGen.nation.pd.Militia;
-import nationGen.nation.pd.PDUnitType;
 import nationGen.nation.startarmy.StartArmy;
 import nationGen.restrictions.NationRestriction;
 import nationGen.restrictions.NationRestriction.RestrictionType;
