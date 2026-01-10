@@ -85,12 +85,12 @@ public class StartArmy {
       this.goldUpperThresholdChangeSetting = settings.get(SettingsType.goldUpperThresholdChange);
       this.goldLowerThresholdChangeSetting = settings.get(SettingsType.goldLowerThresholdChange);
 
-      this.armyUnits.addAll(this.generateStartArmyUnits());
+      this.armyUnits.addAll(this.selectStartArmyUnits());
   }
 
   public Unit getArmyCommander() {
     if (this.armyCommander == null) {
-      this.armyCommander = this.generateArmyCommander();
+      this.armyCommander = this.selectArmyCommander();
     }
 
     return this.armyCommander;
@@ -98,7 +98,7 @@ public class StartArmy {
 
   public Unit getScout() {
     if (this.scout == null) {
-      this.scout = this.generateScout();
+      this.scout = this.selectScout();
     }
 
     return this.scout;
@@ -160,7 +160,7 @@ public class StartArmy {
     return lines;
   }
 
-  private List<Unit> generateStartArmyUnits() {
+  private List<Unit> selectStartArmyUnits() {
     List<PDUnitType> pdUnitTypes = this.militia.getUsedBasicPdTypes().reversed();
     List<PDUnitType> fortPdUnitTypes = this.militia.getUsedFortPdTypes();
     List<Unit> selectedUnits = new ArrayList<>();
@@ -187,7 +187,7 @@ public class StartArmy {
     return selectedUnits;
   }
 
-  private Unit generateArmyCommander() {
+  private Unit selectArmyCommander() {
     List<Unit> commanders = this.nation.listCommanders("commander");
 
     List<Unit> pdUnits = militia.getUsedBasicPdTypes()
@@ -198,7 +198,7 @@ public class StartArmy {
     return this.selectArmyCommander(commanders, pdUnits);
   }
 
-  private Unit generateScout() {
+  private Unit selectScout() {
     List<Unit> scouts = this.nation.listCommanders("scout");
 
     if (scouts.size() == 0) {

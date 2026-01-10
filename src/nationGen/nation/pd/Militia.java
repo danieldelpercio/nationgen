@@ -126,11 +126,11 @@ public class Militia {
       }
 
       this.pdUnits.putAll(
-        this.generateUnfortedProvinceMilitia(this.pdRanks, isMontagAllowed)
+        this.selectUnfortedProvinceMilitia(this.pdRanks, isMontagAllowed)
       );
 
       this.pdUnits.putAll(
-        this.generateFortedProvinceMilitia(this.fortPdRanks, isMontagAllowed)
+        this.selectFortedProvinceMilitia(this.fortPdRanks, isMontagAllowed)
       );
   }
 
@@ -203,7 +203,7 @@ public class Militia {
 
   public Unit getPdCommander() {
     if (this.pdCommander == null) {
-      this.pdCommander = this.generatePdCommander();
+      this.pdCommander = this.selectPdCommander();
     }
 
     return this.pdCommander;
@@ -211,7 +211,7 @@ public class Militia {
 
   public Unit getFortPdCommander() {
     if (this.fortPdCommander == null) {
-      this.fortPdCommander = this.generateFortPdCommander();
+      this.fortPdCommander = this.selectFortPdCommander();
     }
 
     return this.fortPdCommander;
@@ -219,7 +219,7 @@ public class Militia {
 
   public Unit getWallUnit() {
     if (this.wallUnit == null) {
-      this.wallUnit = this.generateWallUnit(false);
+      this.wallUnit = this.selectWallUnit(false);
     }
 
     return this.wallUnit;
@@ -227,7 +227,7 @@ public class Militia {
 
   public Unit getWallCommander() {
     if (this.wallCommander == null) {
-      this.wallCommander = this.generatePdCommander();
+      this.wallCommander = this.selectPdCommander();
     }
 
     return this.wallCommander;
@@ -235,7 +235,7 @@ public class Militia {
 
   public Unit getGateUnit() {
     if (this.gateUnit == null) {
-      this.gateUnit = this.generateGateUnit(false);
+      this.gateUnit = this.selectGateUnit(false);
     }
 
     return this.gateUnit;
@@ -243,7 +243,7 @@ public class Militia {
 
   public Unit getGateCommander() {
     if (this.gateCommander == null) {
-      this.gateCommander = this.generatePdCommander();
+      this.gateCommander = this.selectPdCommander();
     }
 
     return this.gateCommander;
@@ -414,9 +414,9 @@ public class Militia {
    * @param isMontagAllowed
    * @return
    */
-  private Map<PDUnitType, Unit> generateUnfortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
+  private Map<PDUnitType, Unit> selectUnfortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
     List<PDUnitType> pdUnitTypes = this.getUsedBasicPdTypes();
-    return generateMilitia(pdUnitTypes, 1, 1, isMontagAllowed);
+    return selectMilitia(pdUnitTypes, 1, 1, isMontagAllowed);
   }
 
   /**
@@ -430,9 +430,9 @@ public class Militia {
    * @param isMontagAllowed
    * @return
    */
-  private Map<PDUnitType, Unit> generateFortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
+  private Map<PDUnitType, Unit> selectFortedProvinceMilitia(int numberOfRanks, boolean isMontagAllowed) {
     List<PDUnitType> pdUnitTypes = this.getUsedFortPdTypes();
-    return generateMilitia(pdUnitTypes, 1, 0.8, isMontagAllowed);
+    return selectMilitia(pdUnitTypes, 1, 0.8, isMontagAllowed);
   }
 
   /**
@@ -448,7 +448,7 @@ public class Militia {
    * @param isMontagAllowed Are montags allowed as part of this militia?
    * @return A TreeMap (ordered Map) where each key corresponds to one of the PD commands
    */
-  private Map<PDUnitType, Unit> generateMilitia(List<PDUnitType> types, double goldMultiplier, double resMultiplier, boolean isMontagAllowed) {
+  private Map<PDUnitType, Unit> selectMilitia(List<PDUnitType> types, double goldMultiplier, double resMultiplier, boolean isMontagAllowed) {
     TreeMap<PDUnitType, Unit> militia = new TreeMap<PDUnitType, Unit>();
     int rangedUnitsSelected = 0;
     
@@ -529,7 +529,7 @@ public class Militia {
     return militia;
   }
 
-  private Unit generatePdCommander() {
+  private Unit selectPdCommander() {
     List<Unit> commanders = this.nation.listCommanders("commander");
     List<Unit> priests = nation.listCommanders("priest");
     double randomChance = this.random.nextDouble();
@@ -546,7 +546,7 @@ public class Militia {
     return this.selectPdCommander(commanders, pdUnits);
   }
   
-  private Unit generateFortPdCommander() {
+  private Unit selectFortPdCommander() {
     List<Unit> commanders = this.nation.listCommanders("commander");
     List<Unit> priests = nation.listCommanders("priest");
     double randomChance = this.random.nextDouble();
@@ -613,7 +613,7 @@ public class Militia {
    * @param isMontagAllowed
    * @return
    */
-  private Unit generateWallUnit(boolean isMontagAllowed) {
+  private Unit selectWallUnit(boolean isMontagAllowed) {
     List<Unit> candidateUnits = nation.combineTroopsToList("ranged");
     List<Unit> goodRangedInfantry = nation.combineTroopsToList("infantry")
       .stream()
@@ -664,7 +664,7 @@ public class Militia {
    * @param isMontagAllowed
    * @return
    */
-  private Unit generateGateUnit(boolean isMontagAllowed) {
+  private Unit selectGateUnit(boolean isMontagAllowed) {
     List<Unit> candidateUnits = nation.combineTroopsToList("infantry");
     removeUnsuitable(isMontagAllowed, candidateUnits);
 
