@@ -31,6 +31,8 @@
 #maxtroops 8
 #mintroops 4
 
+#extrapdmulti 8
+
 #generationchance ranged 0.5
 #sacredrangedchance 0.1
 #specialcommanderchance 1
