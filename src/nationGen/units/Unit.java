@@ -18,6 +18,7 @@ import nationGen.entities.Filter;
 import nationGen.entities.MagicFilter;
 import nationGen.entities.Pose;
 import nationGen.entities.Race;
+import nationGen.entities.Theme;
 import nationGen.items.Item;
 import nationGen.items.ItemData;
 import nationGen.items.ItemDependency;
@@ -740,6 +741,194 @@ public class Unit {
 
   public MountUnit getMountUnit() {
     return this.mountUnit;
+  }
+
+  /**
+   * Calculates all of the #price_per_command tags of the unit.
+   * @param unit The unit to price
+   * @param unitTags The unit Tags
+   * @return Total extra gold cost of all #price_per_command tags.
+   */
+  public static int calculatePricePerCommands(Unit unit, Tags unitTags) {
+    int total = 0;
+    List<Args> pricePerCommandArgs = unitTags.getAllArgs("price_per_command");
+
+    for (Args args : pricePerCommandArgs) {
+      String commandToPrice = args.get(0).get();
+      int commandValue = unit.getCommandValue(commandToPrice, 0);
+      double costPerCommandPoint = args.get(1).getDouble();
+      int commandValueThreshold = 0;
+
+      if (args.size() > 2) {
+        commandValueThreshold = args.get(2).getInt();
+      }
+
+      // No extra price to calculate on this command
+      if (commandValue <= commandValueThreshold) {
+        continue;
+      }
+
+      // Add price of every command point above the threshold
+      int valueOverThreshold = commandValue - commandValueThreshold;
+      int modifiedCost = (int) Math.round((double) valueOverThreshold * costPerCommandPoint);
+      total += modifiedCost;
+    }
+
+    return total;
+  }
+
+  /**
+   * Calculates all of the #price_per_applied_filter tags of the unit.
+   * @param unit The unit to price
+   * @param unitTags The unit Tags
+   * @return Total extra gold cost of all #price_per_applied_filter tags.
+   */
+  public static int calculatePricePerAppliedFilters(Unit unit, Tags unitTags) {
+    int total = 0;
+    Stream<Filter> appliedFiltersStream = unit.appliedFilters.stream();
+    List<Args> pricePerAppliedFilterArgs = unitTags.getAllArgs("price_per_applied_filter");
+
+    for (Args args : pricePerAppliedFilterArgs) {
+      int filterPower = args.get(0).getInt();
+      int numberOfAppliedFilters = (int) appliedFiltersStream.filter(f -> f.power >= filterPower).count();
+      double costPerFilter = args.get(1).getDouble();
+      int filterPowerThreshold = 0;
+
+      if (args.size() > 2) {
+        filterPowerThreshold = args.get(2).getInt();
+      }
+
+      if (numberOfAppliedFilters <= filterPowerThreshold) {
+        continue;
+      }
+
+      int numberOfFiltersOverThreshold = numberOfAppliedFilters - filterPowerThreshold;
+      int modifiedCost = (int) Math.round((double) numberOfFiltersOverThreshold * costPerFilter);
+      total += modifiedCost;
+    }
+
+    return total;
+  }
+
+  /** Calculates all of the #price_if_command tags of the unit.
+   * @param unit The unit to price
+   * @param unitTags The unit's Tags object
+   * @return Total extra gold cost of all #price_if_command tags.
+   */
+  public static int calculatePriceIfCommandTags(Unit unit, Tags unitTags) {
+    int total = 0;
+    List<Args> priceIfCommandArgs = unitTags.getAllArgs("price_if_command");
+
+    for (Args args : priceIfCommandArgs) {
+      String commandToPrice = args.get(args.size() - 3).get();
+      int commandValue = unit.getCommandValue(commandToPrice, 0);
+      int target = args.get(args.size() - 2).getInt();
+      int costIfValueBeyondTarget = args.get(args.size() - 1).getInt();
+
+      Boolean at = args.contains(new Arg("at"));
+      Boolean below = args.contains(new Arg("below"));
+      Boolean above = args.contains(new Arg("above"));
+
+      if (
+        (commandValue > target && above) ||
+        (commandValue == target && at) ||
+        ((commandValue < target) && below)
+      ) {
+        total += costIfValueBeyondTarget;
+      }
+    }
+
+    return total;
+  }
+
+  /**
+   * Resolves the %cost placeholder values of commands which depend on the unit's final gold cost.
+   * For example, #chaosrec commands typically reduce the unit's cost by a given percentage of its
+   * final cost, such as 5 or 10%. They will initially be expressed in the data files as something
+   * like "#chaosrec %cost10". If the unit would cost 50 gold, this function will resolve that
+   * command into "#chaosrec 5" (a 5% of 50 gold).
+   * 
+   * @param unit The Unit on which to apply the resolved command.
+   * @param unitGoldCost The gold cost of said Unit (more efficient than recalculating it here).
+   * @param commands The list of commands that needs to be parsed for unresolved %cost arguments.
+   */
+  public static void resolvePercentageCostCommands(Unit unit, int unitGoldCost, List<Command> commands) {
+    // Find all commands with an unresolved %cost argument
+    List<Command> percentCostCommands = commands.stream()
+      .filter(c -> {
+        return c.args.size() > 0 &&
+          c.args.get(0).get().startsWith("%cost") &&
+          Generic.isNumeric(c.args.get(0).get().substring(5));
+      })
+      .collect(Collectors.toList());
+
+    if (percentCostCommands.isEmpty()) {
+      return;
+    }
+
+    for (Command c : percentCostCommands) {
+      double percentage = Double.parseDouble(c.args.get(0).get().substring(5));
+      double multiplier = percentage / 100;
+
+      // Calculate the %cost based on the unit's gold cost
+      int resolvedCommandCost = (int) Math.round((double) unitGoldCost * multiplier);
+
+      // Re-add the command with the final, resolved value instead of the %cost
+      Command d = Command.args(c.command, resolvedCommandCost + "");
+      unit.handleCommand(commands, d);
+    }
+  }
+
+  public static UnitCost calculateMontagMeanCost(Unit montagUnit) {
+    int unitCount = 0;
+    int goldSum = 0;
+    int resourceSum = 0;
+
+    // Find the parent montag id associated with these poses
+    String montagId = montagUnit.getStringCommandValue("#firstshape", "");
+
+    // Find all the sub poses which have been tied to this montag id
+    List<Unit> montagUnits = montagUnit.nation.getMontagUnits(montagId);
+    
+    for (Unit unit : montagUnits) {
+      if (unit == montagUnit) {
+        continue;
+      }
+
+      resourceSum += unit.getResCost(true, true);
+      goldSum += unit.getGoldCost(true);
+      unitCount++;
+    }
+
+    if (unitCount == 0) {
+      return new UnitCost(0, 0, 0);
+    }
+    
+    int meanGoldCost = (int) Math.round((double) goldSum / (double) unitCount);
+    int meanResourceCost = (int) Math.round((double) resourceSum / (double) unitCount);
+    return new UnitCost(meanGoldCost, meanResourceCost, 0);
+  }
+
+  /**
+   * Gathers the tags related to a unit from its race, pose, filters and items.
+   * @param unit
+   * @return A Tags object with all related tags.
+   */
+  public static Tags gatherAllTags(Unit unit) {
+    Tags tags = new Tags();
+    tags.addAll(unit.race.tags);
+    tags.addAll(unit.pose.tags);
+
+    for (Filter f : unit.appliedFilters) {
+      tags.addAll(f.tags);
+    }
+
+    for (Theme t : unit.race.themefilters) {
+      tags.addAll(t.tags);
+    }
+
+    unit.slotmap.items().forEach(i -> tags.addAll(i.tags));
+    return tags;
   }
 
   public int getGoldCost(Boolean includeMountCost) {

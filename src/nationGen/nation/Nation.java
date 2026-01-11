@@ -1114,6 +1114,16 @@ public class Nation {
     return sus;
   }
 
+  public List<Unit> getMontagUnits(String targetMontagId) {
+    return this.unitlists.values().stream()
+    .flatMap(List::stream)
+    .filter(u -> {
+      String unitMontagId = u.getStringCommandValue("#montag", "");
+      return unitMontagId.equals(targetMontagId);
+    })
+    .collect(Collectors.toList());
+  }
+
   public List<MountUnit> getMountUnits() {
     List<Unit> units = new ArrayList<>();
     for (List<Unit> list : this.comlists.values()) units.addAll(list);
