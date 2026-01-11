@@ -13,6 +13,6 @@ public class Utils {
   }
 
   public static <T extends Number> int roundInGroupsOf(T value, int inGroupsOf) {
-    return (int) Math.round((double) value / inGroupsOf) * inGroupsOf;
+    return (int) Math.round( value.doubleValue() / inGroupsOf ) * inGroupsOf;
   }
 }
