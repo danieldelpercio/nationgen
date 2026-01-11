@@ -9,7 +9,6 @@ import nationGen.chances.EntityChances;
 import nationGen.chances.ThemeInc;
 import nationGen.entities.*;
 import nationGen.magic.*;
-import nationGen.misc.Arg;
 import nationGen.misc.ChanceIncHandler;
 import nationGen.misc.Command;
 import nationGen.nation.Nation;

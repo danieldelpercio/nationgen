@@ -9,7 +9,6 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 import nationGen.NationGen;
-import nationGen.Settings.SettingsType;
 import nationGen.chances.ChanceInc;
 import nationGen.chances.ChanceIncData;
 import nationGen.chances.EntityChances;

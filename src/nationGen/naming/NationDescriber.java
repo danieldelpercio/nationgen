@@ -14,7 +14,6 @@ import nationGen.misc.ChanceIncHandler;
 import nationGen.misc.Command;
 import nationGen.nation.Nation;
 import nationGen.units.ShapeChangeUnit;
-import nationGen.units.ShapeShift;
 import nationGen.units.Unit;
 
 public class NationDescriber {
