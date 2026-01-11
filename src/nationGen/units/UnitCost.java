@@ -25,4 +25,8 @@ public class UnitCost {
         this.resources = resourceCost;
         this.recPoints = recPointCost;
     }
+
+    public static UnitCost zero() {
+        return new UnitCost(0, 0, 0);
+    }
 }

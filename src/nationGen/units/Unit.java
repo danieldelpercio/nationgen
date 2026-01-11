@@ -32,6 +32,7 @@ import nationGen.misc.Command;
 import nationGen.misc.FileUtil;
 import nationGen.misc.Operator;
 import nationGen.misc.Tags;
+import nationGen.misc.Utils;
 import nationGen.naming.Name;
 import nationGen.nation.Nation;
 
@@ -462,16 +463,15 @@ public class Unit {
       this.pose.tags.containsName("montagpose");
   }
 
-  public Boolean isMontagRecruitableDummy() {
+  public Boolean isMontagRecruitableTemplate() {
     Optional<Command> firstshapeCommand = this.getCommand("#firstshape");
 
     if (firstshapeCommand.isEmpty()) {
       return false;
     }
 
-    Integer firstshapeNumber = firstshapeCommand.get().args.getInt(0);
-    Boolean isMontagNumber = firstshapeNumber < 0;
-    return firstshapeCommand.isPresent() && isMontagNumber;
+    String firstshapeId = this.getStringCommandValue("#firstshape", "");
+    return firstshapeId.isBlank() == false;
   }
 
   public Boolean isUndead() {
@@ -879,31 +879,30 @@ public class Unit {
     }
   }
 
-  public static UnitCost calculateMontagMeanCost(Unit montagUnit) {
-    int unitCount = 0;
-    int goldSum = 0;
-    int resourceSum = 0;
-
+  public static List<Unit> polishChildrenMontagUnits(Unit parentMontagTemplate) {
     // Find the parent montag id associated with these poses
-    String montagId = montagUnit.getStringCommandValue("#firstshape", "");
+    String montagId = parentMontagTemplate.getStringCommandValue("#firstshape", "");
 
     // Find all the sub poses which have been tied to this montag id
-    List<Unit> montagUnits = montagUnit.nation.getMontagUnits(montagId);
-    
-    for (Unit unit : montagUnits) {
-      if (unit == montagUnit) {
-        continue;
-      }
+    List<Unit> montagUnits = parentMontagTemplate.nation.getMontagUnits(montagId);
+    montagUnits.forEach(u -> u.polish());
+    return montagUnits;
+  }
 
-      resourceSum += unit.getResCost(true, true);
-      goldSum += unit.getGoldCost(true);
-      unitCount++;
-    }
+  public static UnitCost calculateMeanCostOfUnits(List<Unit> units) {
+    int goldSum = 0;
+    int resourceSum = 0;
+    int unitCount = units.size();
 
     if (unitCount == 0) {
-      return new UnitCost(0, 0, 0);
+      return UnitCost.zero();
     }
     
+    for (Unit unit : units) {
+      resourceSum += unit.getResCost(true, true);
+      goldSum += unit.getGoldCost(true);
+    }
+
     int meanGoldCost = (int) Math.round((double) goldSum / (double) unitCount);
     int meanResourceCost = (int) Math.round((double) resourceSum / (double) unitCount);
     return new UnitCost(meanGoldCost, meanResourceCost, 0);
@@ -933,43 +932,74 @@ public class Unit {
 
   public int getGoldCost(Boolean includeMountCost) {
     List<Command> commands = this.getCommands();
+    Tags unitTags = Generic.getAllUnitTags(this);
+    int copyStatsTarget = this.getCopyStats();
     double sacredMultiplier = 1;
     double slowRecMultiplier = 1;
 
-    int cost = 0;
+    int totalCost = 0;
+    int pricePerCommandsCost = Unit.calculatePricePerCommands(this, unitTags);
+    int pricePerAppliedFiltersCost = Unit.calculatePricePerAppliedFilters(this, unitTags);
+    int pricePerIfCommandTags = Unit.calculatePriceIfCommandTags(this, unitTags);
+    totalCost += pricePerCommandsCost + pricePerAppliedFiltersCost + pricePerIfCommandTags;
+
+    // If Unit has a #copystats command and no pricing tags have modified cost yet,
+    // we start assuming that the cost of the #copystats target should be final
+    Boolean shouldUseCopyStatsFinalCost = copyStatsTarget > -1 && totalCost == 0;
+
     for (Command c : commands) {
       if (c.command.equals("#gcost")) {
-        cost += c.args.get(0).getInt();
+        shouldUseCopyStatsFinalCost = false;
+        totalCost += c.args.get(0).getInt();
       }
 
       if (c.command.equals("#holy")) {
+        shouldUseCopyStatsFinalCost = false;
         sacredMultiplier = this.nationGen.settings.get(SettingsType.goldSacredCostMultiplier);
+        totalCost *= sacredMultiplier;
       }
 
       if (c.command.equals("#slowrec")) {
+        shouldUseCopyStatsFinalCost = false;
         slowRecMultiplier = this.nationGen.settings.get(SettingsType.goldSlowRecCostMultiplier);
+        totalCost *= slowRecMultiplier;
       }
     }
 
-    int stats = this.getCopyStats();
-    if (stats > -1) {
-      cost = this.nationGen.units.GetInteger("" + stats, "basecost");
-      if (cost >= 10000) {
-        cost -= 10000;
+    // Unit is using #copystats, so figure out the target's cost to account for it
+    if (copyStatsTarget > -1) {
+      int copyStatsBasecost = this.nationGen.units.GetInteger("" + copyStatsTarget, "basecost");
+
+      if (copyStatsBasecost >= 10000) {
+        copyStatsBasecost -= 10000;
       }
 
-      return cost;
+      // If the Unit doesn't have #gcost tags but has #copystats, we assume it's a final cost
+      if (shouldUseCopyStatsFinalCost == true) {
+        return copyStatsBasecost;
+      }
+
+      // Otherwise we just take it as a base cost
+      totalCost += copyStatsBasecost;
     }
 
-    if (!polished) {
-      cost = (int) Math.round((double) cost * sacredMultiplier * slowRecMultiplier);
+    // TODO: if no other cost logic applies to montag template, should move this to an earlier step to break out early
+    if (this.isMontagRecruitableTemplate()) {
+      // TODO: is there a way to decouple polishing of children montags from gold cost calc?
+      List<Unit> montagChildren = Unit.polishChildrenMontagUnits(this);
+      Boolean shouldUseMontagMeanCost = !this.pose.tags.containsName("no_montag_mean_costs");
+
+      if (shouldUseMontagMeanCost) {
+        UnitCost meanMontagCosts = Unit.calculateMeanCostOfUnits(montagChildren);
+        totalCost = meanMontagCosts.gold;
+      }
     }
 
     if (includeMountCost == true) {
-      cost += this.getMountGoldCost();
+      totalCost += this.getMountGoldCost();
     }
 
-    return cost;
+    return totalCost;
   }
 
   public int getMountGoldCost() {
@@ -1286,12 +1316,14 @@ public class Unit {
     if (this.polished) return;
 
     final Unit u = this;
+    Boolean copystats = this.hasCopyStats();
 
     handleLowEncCommandPolish(u.pose.tags);
     handleLowEncCommandPolish(u.race.tags);
-    for (Filter f : appliedFilters) handleLowEncCommandPolish(f.tags);
 
-    Boolean copystats = hasCopyStats();
+    for (Filter f : appliedFilters) {
+      handleLowEncCommandPolish(f.tags);
+    }
 
     if (u.name.toString(this).equals("\"\"")) {
       System.out.println("UNIT NAMING ERROR! PLEASE REPORT THE SEED!");
@@ -1352,100 +1384,10 @@ public class Unit {
       }
     }
 
-    // Autocalc enabler
-    //u.commands.add(new Command("#gcost", Args.of(new Arg(92)), "+10000"));
-
-    // #price_per_command
-    Tags unitTags = Generic.getAllUnitTags(this);
-    List<Args> pricePerCommandArgs = unitTags.getAllArgs("price_per_command");
-
-    for (Args args : pricePerCommandArgs) {
-      String commandString = args.get(0).get();
-      int commandValue = u.getCommandValue(commandString, 0);
-      double cost = args.get(1).getDouble();
-      int threshold = 0;
-
-      if (args.size() > 2) {
-        threshold = args.get(2).getInt();
-      }
-
-      if (commandValue <= threshold) {
-        continue;
-      }
-
-      int valueOverThreshold = commandValue - threshold;
-      int modifiedCost = (int) Math.round((double) valueOverThreshold * cost);
-      String modifiedCostString = Command.parseValueToAddString(modifiedCost);
-
-      if (modifiedCost != 0) {
-        commands.add(Command.args("#gcost", modifiedCostString));
-      }
-    }
-
-    // #price_per_applied_filter
-    List<Args> pricePerAppliedFilterArgs = unitTags.getAllArgs("price_per_applied_filter");
-
-    for (Args args : pricePerAppliedFilterArgs) {
-      int filterPower = args.get(0).getInt();
-      int numberOfAppliedFilters = (int) u.appliedFilters.stream().filter(f -> f.power >= filterPower).count();
-      double cost = args.get(1).getDouble();
-      int threshold = 0;
-
-      if (args.size() > 2) {
-        threshold = args.get(2).getInt();
-      }
-
-      if (numberOfAppliedFilters <= threshold) {
-        continue;
-      }
-
-      int numberOfFiltersOverThreshold = numberOfAppliedFilters - threshold;
-      int modifiedCost = (int) Math.round((double) numberOfFiltersOverThreshold * cost);
-      String modifiedCostString = Command.parseValueToAddString(modifiedCost);
-
-      if (modifiedCost != 0) {
-        commands.add(Command.args("#gcost", modifiedCostString));
-      }
-    }
-
-    // #price_if_command
-    List<Args> priceIfCommandArgs = unitTags.getAllArgs("price_if_command");
-
-    for (Args args : priceIfCommandArgs) {
-      String commandString = args.get(args.size() - 3).get();
-      int commandValue = u.getCommandValue(commandString, 0);
-      int target = args.get(args.size() - 2).getInt();
-      String cost = args.get(args.size() - 1).get();
-
-      Boolean at = args.contains(new Arg("at"));
-      Boolean below = args.contains(new Arg("below"));
-      Boolean above = args.contains(new Arg("above"));
-
-      if (
-        (commandValue > target && above) ||
-        (commandValue == target && at) ||
-        ((commandValue < target) && below)
-      ) {
-        commands.add(Command.args("#gcost", cost));
-      }
-    }
-
     // Clean up commands
     List<Command> commands = u.getCommands();
 
     for (Command c : commands) {
-      // Goldcost for holy units
-      if (c.command.equals("#holy")) {
-        Number sacredCostMultiplier = this.nationGen.settings.get(SettingsType.goldSacredCostMultiplier);
-        this.handleCommand(commands, Command.args("#gcost", "*" + sacredCostMultiplier));
-      }
-
-      // Discount for slowrec units
-      if (c.command.equals("#slowrec")) {
-        Number slowRecCostMultiplier = this.nationGen.settings.get(SettingsType.goldSlowRecCostMultiplier);
-        this.handleCommand(commands, Command.args("#gcost", "*" + slowRecCostMultiplier));
-      }
-
       if (
         c.args.size() > 0 &&
         c.args.get(0) != null &&
@@ -1476,70 +1418,23 @@ public class Unit {
         }
       }
     }
+
+    // Add all gathered and polished commands to unit's own commands field
+    // This is why polish() should ALWAYS be done at the end of generation
     u.commands = commands;
+    int goldCost = this.getGoldCost(true);
 
-    // Montag mean costs
-    if (
-      this.pose.tags.containsName("montagpose") &&
-      !this.pose.tags.containsName("no_montag_mean_costs")
-    ) {
-      int n = 0;
-      int res = 0;
-      int gold = 0;
-
-      String firstshape = getStringCommandValue("#firstshape", "");
-      for (List<Unit> lu : nation.unitlists.values()) {
-        for (Unit nu : lu) if (
-          nu.getStringCommandValue("#montag", "").equals(firstshape) && u != nu
-        ) {
-          nu.polish();
-          res += nu.getResCost(true, true);
-          gold += nu.getGoldCost(true);
-          n++;
-        }
-      }
-
-      if (n > 0) {
-        res = (int) Math.round((double) res / (double) n) - getResCost(true, true);
-        gold = (int) Math.round((double) gold / (double) n);
-        this.handleCommand(commands, new Command("#gcost", new Arg(gold)));
-        this.handleCommand(commands, new Command("#rcost", new Arg(res)));
-      }
+    if (goldCost > 30) {
+      goldCost = Utils.roundInGroupsOf(goldCost, 5);
     }
 
-    // %cost stuff
+    Command gcostCommand = Command.args("#gcost", Integer.toString(goldCost));
+    handleCommand(commands, gcostCommand);
 
-    for (Command c : commands) if (
-      c.args.size() > 0 &&
-      c.args.get(0).get().startsWith("%cost") &&
-      Generic.isNumeric(c.args.get(0).get().substring(5))
-    ) percentCostCommands.add(c);
-
-    int gcost = percentCostCommands.size() > 0 ? this.getGoldCost(true) : 0;
-
-    for (Command c : percentCostCommands) {
-      if (gcost == 0) continue;
-
-      double multi = Double.parseDouble(c.args.get(0).get().substring(5)) / 100;
-
-      int price = (int) Math.round((double) gcost * multi);
-      Command d = Command.args(c.command, price + "");
-      handleCommand(commands, d);
-    }
-
-    // Separate loop to round gcost at the end
     // Check for morale over 50
     for (Command c : commands) {
-      if (c.args.size() == 0) continue;
-
-      // goldcost rounding if gcost > 30
-      if (c.command.equals("#gcost")) {
-        int cost = c.args.get(0).getInt();
-
-        if (cost > 30) {
-          cost = (int) Math.round((double) cost / 5) * 5;
-          c.args.set(0, new Arg(cost));
-        }
+      if (c.args.size() == 0) {
+        continue;
       }
 
       // morale 50 if over 50
