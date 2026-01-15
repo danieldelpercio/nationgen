@@ -1419,9 +1419,6 @@ public class Unit {
       }
     }
 
-    // Add all gathered and polished commands to unit's own commands field
-    // This is why polish() should ALWAYS be done at the end of generation
-    u.commands = commands;
     int goldCost = this.getGoldCost(true);
 
     if (goldCost > 30) {
@@ -1430,6 +1427,10 @@ public class Unit {
 
     Command gcostCommand = Command.args("#gcost", Integer.toString(goldCost));
     handleCommand(commands, gcostCommand);
+
+    // Add all gathered and polished commands to unit's own commands field
+    // This is why polish() should ALWAYS be done at the end of generation
+    u.commands = commands;
 
     // Check for morale over 50
     for (Command c : commands) {

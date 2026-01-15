@@ -1130,7 +1130,7 @@ public class SacredGenerator extends TroopGenerator {
     if (
       u.isRanged() &&
       u.getSlot("mount") == null &&
-      u.getGoldCost(false) - discount > (costThreshold * 0.8)
+      u.getGoldCost(true) - discount > (costThreshold * 0.8)
     ) {
       discount += (u.getGoldCost(false) - discount) / 5;
     }
