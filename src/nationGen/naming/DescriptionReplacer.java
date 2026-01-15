@@ -233,7 +233,7 @@ public class DescriptionReplacer {
 
     for (Unit unit : units) {
       for (String slotName : slots) {
-        if (unit.isMontagRecruitableDummy()) {
+        if (unit.isMontagRecruitableTemplate()) {
           List<Unit> montagUnits = unit.getMontagShapes();
           List<Item> montagItems = this.getEquipments(montagUnits, slots);
           equipments.addAll(montagItems);
@@ -260,7 +260,7 @@ public class DescriptionReplacer {
     List<MountUnit> mounts = new ArrayList<>();
 
     for (Unit unit : units) {
-      if (unit.isMontagRecruitableDummy()) {
+      if (unit.isMontagRecruitableTemplate()) {
         List<Unit> montagUnits = unit.getMontagShapes();
         List<MountUnit> montagMounts = this.getMounts(montagUnits);
         mounts.addAll(montagMounts);
