@@ -27,6 +27,7 @@
 -------- scout
 
 #newpose
+#id "ichtyid scouts"
 #role "scout"
 
 #renderorder "shadow weapon basesprite scales armor bonusweapon offhandw hands helmet offhanda"
