@@ -100,6 +100,6 @@ public enum ItemType {
   // item id will be present on both. The only way to diferentiate
   // them is declaring #armor as a tag on the item data template.
   private static Boolean isWeapon(Item item) {
-    return item.isWeapon();
+    return false;
   }
 }
