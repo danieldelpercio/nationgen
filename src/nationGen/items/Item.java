@@ -15,8 +15,7 @@ import nationGen.misc.Command;
 
 public class Item extends Drawable {
 
-  private String gameId = "-1";
-  private Boolean isGameIdResolved = false;
+  public String id = "-1";
 
   public Filter filter = null;
   private List<ItemType> itemTypes = new ArrayList<>();
@@ -35,8 +34,7 @@ public class Item extends Drawable {
 
   public Item(Item item) {
     super(item);
-    this.gameId = item.gameId;
-    this.isGameIdResolved = item.isGameIdResolved;
+    this.id = item.id;
     this.filter = (item.filter != null) ? new Filter(item.filter) : null;
     this.itemTypes = new ArrayList<>(item.itemTypes);
     this.dependencies = new ArrayList<>(item.dependencies)
@@ -46,10 +44,6 @@ public class Item extends Drawable {
 
     this.slot = item.slot;
     this.set = item.set;
-  }
-
-  public String getGameId() {
-    return this.gameId;
   }
 
   public String getValueFromDb(String dbColumn, String defaultValue) {
@@ -64,7 +58,7 @@ public class Item extends Drawable {
 
   public String getValueFromDb(String dbColumn) {
     Dom3DB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
-    String itemIdInDb = this.gameId;
+    String itemIdInDb = this.id;
     String value = db.GetValue(itemIdInDb, dbColumn);
 
     if (value.isBlank()) {
@@ -167,7 +161,7 @@ public class Item extends Drawable {
    * @return
    */
   public Boolean hasDominionsId() {
-    return this.gameId.equals("-1") == false;
+    return this.id.equals("-1") == false;
   }
 
   /**
@@ -177,7 +171,7 @@ public class Item extends Drawable {
    * @return
    */
   public boolean isCustomIdResolved() {
-    return CustomItemsHandler.isIdResolved(this.gameId);
+    return CustomItemsHandler.isIdResolved(this.id);
   }
 
   /**
@@ -193,8 +187,8 @@ public class Item extends Drawable {
   static public Item resolveId(Item item) {
     if (item.isCustomIdResolved() == false) {
       Item copy = new Item(item);
-      copy.tags.add("OLDID", item.getGameId());
-      copy.gameId = item.nationGen.GetCustomItemsHandler().getCustomItemId(item.getGameId());
+      copy.tags.add("OLDID", item.id);
+      copy.id = item.nationGen.GetCustomItemsHandler().getCustomItemId(item.id);
       return copy;
     }
 
