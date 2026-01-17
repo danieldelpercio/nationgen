@@ -15,7 +15,9 @@ import nationGen.misc.Command;
 
 public class Item extends Drawable {
 
-  public String id = "-1";
+  private String gameId = "-1";
+  private Boolean isGameIdResolved = false;
+
   public Filter filter = null;
   private List<ItemType> itemTypes = new ArrayList<>();
   private String bardingId;
@@ -33,7 +35,8 @@ public class Item extends Drawable {
 
   public Item(Item item) {
     super(item);
-    this.id = item.id;
+    this.gameId = item.gameId;
+    this.isGameIdResolved = item.isGameIdResolved;
     this.filter = (item.filter != null) ? new Filter(item.filter) : null;
     this.itemTypes = new ArrayList<>(item.itemTypes);
     this.dependencies = new ArrayList<>(item.dependencies)
@@ -45,9 +48,23 @@ public class Item extends Drawable {
     this.set = item.set;
   }
 
+  public String getGameId() {
+    return this.gameId;
+  }
+
+  public String getValueFromDb(String dbColumn, String defaultValue) {
+    String value = this.getValueFromDb(dbColumn);
+
+    if (value.isBlank()) {
+      return defaultValue;
+    }
+
+    return value;
+  }
+
   public String getValueFromDb(String dbColumn) {
     Dom3DB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
-    String itemIdInDb = this.id;
+    String itemIdInDb = this.gameId;
     String value = db.GetValue(itemIdInDb, dbColumn);
 
     if (value.isBlank()) {
@@ -71,8 +88,20 @@ public class Item extends Drawable {
     return this.itemTypes.stream().anyMatch(t -> t.getId() == typeStr);
   }
 
+  public void addType(ItemType type) {
+    if (this.hasType(type) == false) {
+      return;
+    }
+
+    this.itemTypes.add(type);
+  }
+
+  public Boolean hasType(ItemType type) {
+    return this.itemTypes.contains(type);
+  }
+
   public Boolean isOfType(ItemType type) {
-    Boolean hasType = this.itemTypes.contains(type);
+    Boolean hasType = this.hasType(type);
 
     if (hasType == false && type.check(this) == true) {
       hasType = true;
@@ -86,7 +115,7 @@ public class Item extends Drawable {
   // through the #armor tag. This is because armor and weapon DBs
   // share ids, so any given item id will be present on both.
   public Boolean isArmor() {
-    return this.itemTypes.contains(ItemType.ARMOR);
+    return this.hasType(ItemType.ARMOR);
   }
   
   public Boolean isBarding() {
@@ -105,11 +134,8 @@ public class Item extends Drawable {
     return this.isArmor() && this.isOfType(ItemType.SHIELD);
   }
 
-  // Weapon type for now has to be determined at file-parsing time
-  // through the #armor tag. This is because armor and weapon DBs
-  // share ids, so any given item id will be present on both.
   public Boolean isWeapon() {
-    return this.isArmor() == false;
+    return this.isOfType(ItemType.WEAPON);
   }
 
   public Boolean isRangedWeapon() {
@@ -141,7 +167,7 @@ public class Item extends Drawable {
    * @return
    */
   public Boolean hasDominionsId() {
-    return this.id.equals("-1") == false;
+    return this.gameId.equals("-1") == false;
   }
 
   /**
@@ -151,7 +177,7 @@ public class Item extends Drawable {
    * @return
    */
   public boolean isCustomIdResolved() {
-    return CustomItemsHandler.isIdResolved(this.id);
+    return CustomItemsHandler.isIdResolved(this.gameId);
   }
 
   /**
@@ -167,8 +193,8 @@ public class Item extends Drawable {
   static public Item resolveId(Item item) {
     if (item.isCustomIdResolved() == false) {
       Item copy = new Item(item);
-      copy.tags.add("OLDID", item.id);
-      copy.id = item.nationGen.GetCustomItemsHandler().getCustomItemId(item.id);
+      copy.tags.add("OLDID", item.getGameId());
+      copy.gameId = item.nationGen.GetCustomItemsHandler().getCustomItemId(item.getGameId());
       return copy;
     }
 
@@ -275,6 +301,28 @@ public class Item extends Drawable {
         ")",
         e
       );
+    }
+  }
+
+  @Override
+  protected void finish() {
+    if (this.hasDominionsId() == false) {
+      return;
+    }
+
+    if (this.isArmor()) {
+      return;
+    }
+
+    String range = this.getValueFromDb("rng", "0");
+    this.addType(ItemType.WEAPON);
+
+    if (Integer.parseInt(range) > 0) {
+      this.addType(ItemType.RANGED);
+    }
+
+    else {
+      this.addType(ItemType.MELEE);
     }
   }
 }

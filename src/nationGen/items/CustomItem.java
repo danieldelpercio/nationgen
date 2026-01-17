@@ -170,6 +170,27 @@ public class CustomItem extends Item {
     }
   }
 
+  @Override
+  protected void finish() {
+    if (this.hasDominionsId() == false) {
+      return;
+    }
+
+    if (this.isArmor()) {
+      return;
+    }
+
+    this.addType(ItemType.WEAPON);
+
+    if (this.hasCustomCommand("#range")) {
+      this.addType(ItemType.RANGED);
+    }
+
+    else {
+      this.addType(ItemType.MELEE);
+    }
+  }
+
   public LinkedHashMap<String, String> getHashMap() {
     LinkedHashMap<String, String> map = new LinkedHashMap<>();
     map.put("id#", id + "");

@@ -33,7 +33,7 @@ public enum ItemType {
   // item id will be present on both. The only way to diferentiate
   // them is declaring #armor as a tag on the item data template.
   private static Boolean isArmor(Item item) {
-    return item.isArmor();
+    return false;
   }
 
   private static Boolean isBarding(Item item) {

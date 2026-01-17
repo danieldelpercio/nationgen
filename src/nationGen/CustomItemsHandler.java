@@ -161,6 +161,6 @@ public class CustomItemsHandler {
   }
 
   static public Boolean isIdResolved(String itemId) {
-    return Generic.isNumeric(itemId);
+    return Generic.isNumeric(itemId) && Integer.parseInt(itemId) > -1;
   }
 }

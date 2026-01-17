@@ -516,40 +516,41 @@ public class Unit {
     return this.mountUnit != null;
   }
 
+  public Boolean isDualWielding() {
+    Item weapon = this.getSlot("weapon");
+    Item offhand = this.getSlot("offhand");
+    Boolean isOffhandMelee = offhand != null && offhand.isMeleeWeapon();
+    return weapon != null && weapon.isMeleeWeapon() && isOffhandMelee;
+  }
+
   public Boolean isRanged() {
     Item weapon = getSlot("weapon");
-
-    if (weapon == null) return false;
-
-    return nationGen.weapondb
-      .GetInteger(weapon.id, "rng", 0) > 0;
+    return weapon != null && weapon.isRangedWeapon();
   }
 
   public Boolean isSecondaryRanged() {
     Item bonusWeapon = getSlot("bonusweapon");
-
-    if (bonusWeapon == null) return false;
-
-    return nationGen.weapondb
-      .GetInteger(bonusWeapon.id, "rng", 0) > 0;
+    return bonusWeapon != null && bonusWeapon.isRangedWeapon();
   }
 
   public Boolean hasRangeOfAtLeast(int range) {
     Item weapon = getSlot("weapon");
 
-    if (weapon == null) return false;
+    if (weapon == null) {
+      return false;
+    }
 
-    return nationGen.weapondb
-      .GetInteger(weapon.id, "rng", 0) >= range;
+    return Integer.parseInt(weapon.getValueFromDb("rng", "0")) >= range;
   }
 
   public Boolean hasSecondaryRangeOfAtLeast(int range) {
     Item bonusWeapon = getSlot("bonusweapon");
 
-    if (bonusWeapon == null) return false;
+    if (bonusWeapon == null) {
+      return false;
+    }
 
-    return nationGen.weapondb
-      .GetInteger(bonusWeapon.id, "rng", 0) >= range;
+    return Integer.parseInt(bonusWeapon.getValueFromDb("rng", "0")) >= range;
   }
 
   public Boolean isShapeshifter() {
@@ -1313,19 +1314,22 @@ public class Unit {
   }
 
   public void polish() {
-    if (this.polished) return;
+    if (this.polished) {
+      return;
+    }
 
-    final Unit u = this;
-    Boolean copystats = this.hasCopyStats();
+    final Unit unit = this;
+    Item weapon = unit.getSlot("weapon");
+    Item offhand = unit.getSlot("offhand");
 
-    handleLowEncCommandPolish(u.pose.tags);
-    handleLowEncCommandPolish(u.race.tags);
+    handleLowEncCommandPolish(unit.pose.tags);
+    handleLowEncCommandPolish(unit.race.tags);
 
     for (Filter f : appliedFilters) {
       handleLowEncCommandPolish(f.tags);
     }
 
-    if (u.name.toString(this).equals("\"\"")) {
+    if (unit.name.toString(this).equals("\"\"")) {
       System.out.println("UNIT NAMING ERROR! PLEASE REPORT THE SEED!");
     }
 
@@ -1347,45 +1351,27 @@ public class Unit {
     }
 
     // Ambidextrous. Should be after custom equipment handling and before command cleanup
-    if (this.getSlot("offhand") != null && !this.getSlot("offhand").isArmor()) {
-      int len = 0;
+    if (this.isDualWielding()) {
+      int totalLength = Integer.parseInt(offhand.getValueFromDb("lgt", "0"));
 
-      if (this.getSlot("weapon") != null) len = len +
-      this.nationGen.weapondb.GetInteger(this.getSlot("weapon").id, "lgt");
+      if (weapon != null) {
+        totalLength += Integer.parseInt(weapon.getValueFromDb("lgt", "0"));
+      }
 
-      len = len +
-      this.nationGen.weapondb.GetInteger(this.getSlot("offhand").id, "lgt");
-
-      this.commands.add(Command.args("#ambidextrous", "+" + Math.max(1, len)));
+      this.commands.add(Command.args("#ambidextrous", "+" + Math.max(1, totalLength)));
     }
 
     // Fist for things without proper weapons
-    if (
-      !pose.tags.containsName("no_free_fist") &&
-      !copystats &&
-      getClass() != ShapeChangeUnit.class
-    ) if (
-      this.getSlot("weapon") == null ||
-      this.getSlot("weapon").hasDominionsId() == false ||
-      nationGen.weapondb.GetInteger(getSlot("weapon").id, "rng") != 0
-    ) {
-      if (
-        this.getSlot("bonusweapon") == null ||
-        this.getSlot("bonusweapon").hasDominionsId() == false ||
-        nationGen.weapondb.GetInteger(getSlot("bonusweapon").id, "rng") != 0
-      ) {
-        this.commands.add(
-            new Command(
-              "#weapon",
-              Args.of(new Arg(92)),
-              "Fist given to units that could otherwise only kick."
-            )
-        );
-      }
+    if (this.lacksMeleeWeapon()) {
+      int fistWeaponDominionsId = 92;
+      Arg fistArg = new Arg(fistWeaponDominionsId);
+      String commandDescription = "Fist given to units that could otherwise only kick.";
+      Command fistWeaponCommand = new Command("#weapon", Args.of(fistArg), commandDescription);
+      this.commands.add(fistWeaponCommand);
     }
-
+                                                        
     // Clean up commands
-    List<Command> commands = u.getCommands();
+    List<Command> commands = unit.getCommands();
 
     for (Command c : commands) {
       if (
@@ -1430,7 +1416,7 @@ public class Unit {
 
     // Add all gathered and polished commands to unit's own commands field
     // This is why polish() should ALWAYS be done at the end of generation
-    u.commands = commands;
+    unit.commands = commands;
 
     // Check for morale over 50
     for (Command c : commands) {
@@ -1450,10 +1436,39 @@ public class Unit {
     }
 
     if (this.isMage()) {
-      MageGenerator.ensureSpecialLeadership(u, false);
+      MageGenerator.ensureSpecialLeadership(unit, false);
     }
 
     polished = true;
+  }
+
+  public Boolean lacksMeleeWeapon() {
+    Item weapon = this.getSlot("weapon");
+    Item bonusWeapon = this.getSlot("bonusweapon");
+    Boolean cannotHaveFreeFist = pose.tags.containsName("no_free_fist");
+    Boolean isShapeChangeClass = getClass() == ShapeChangeUnit.class;
+
+    if (cannotHaveFreeFist == true) {
+      return false;
+    }
+
+    if (isShapeChangeClass) {
+      return false;
+    }
+
+    if (this.hasCopyStats()) {
+      return false;
+    }
+
+    if (weapon != null && weapon.hasDominionsId() && weapon.isMeleeWeapon()) {
+      return false;
+    }
+
+    if (bonusWeapon != null && bonusWeapon.hasDominionsId() && bonusWeapon.isMeleeWeapon()) {
+      return false;
+    }
+
+    return true;
   }
 
   protected void handleCommand(List<Command> commands, Command c) {
