@@ -77,10 +77,10 @@ public class ItemSet extends ArrayList<Item> {
   ) {
     ItemSet newlist = new ItemSet();
     for (Item i : this) {
-      int prot = armordb.GetInteger(i.id, "prot");
+      int prot = i.getIntegerFromDb("prot", 0);
       if (
         includeDef
-          ? (prot + armordb.GetInteger(i.id, "def") <= max && prot >= min)
+          ? (prot + i.getIntegerFromDb("def", 0) <= max && prot >= min)
           : (prot <= max && prot >= min)
       ) {
         newlist.add(i);
@@ -92,8 +92,8 @@ public class ItemSet extends ArrayList<Item> {
   public ItemSet filterDef(Dom3DB armordb, int min, int max) {
     ItemSet newlist = new ItemSet();
     for (Item i : this) if (
-      armordb.GetInteger(i.id, "def") <= max &&
-      armordb.GetInteger(i.id, "def") >= min
+      i.getIntegerFromDb("def", 0) <= max &&
+      i.getIntegerFromDb("def", 0) >= min
     ) newlist.add(i);
 
     return newlist;
@@ -114,7 +114,7 @@ public class ItemSet extends ArrayList<Item> {
   public Item getItemWithID(String string, String slot) {
     ItemSet possibles = this; //this.filterTheme("elite", false).filterTheme("sacred", false);
     for (Item item : possibles) {
-      if (item.id.equals(string) && item.slot.equals(slot)) return item;
+      if (item.getGameId().equals(string) && item.slot.equals(slot)) return item;
     }
     return null;
   }
@@ -123,7 +123,7 @@ public class ItemSet extends ArrayList<Item> {
     ItemSet newset = new ItemSet();
     ItemSet possibles = this; //this.filterTheme("elite", false).filterTheme("sacred", false);
     for (Item item : possibles) {
-      if (item.id.equals(string) && item.slot.equals(slot)) newset.add(item);
+      if (item.getGameId().equals(string) && item.slot.equals(slot)) newset.add(item);
     }
     return newset;
   }
@@ -140,37 +140,72 @@ public class ItemSet extends ArrayList<Item> {
 
     for (Item item : this) {
       if (item.hasDominionsId()) {
-        if (item.id.equals(i.id) && i.isArmor() == item.isArmor()) return true;
-      } else if (item.id.equals(i.id) && item.name.equals(i.name)) return true;
+        if (item.getGameId().equals(i.getGameId()) && i.isArmor() == item.isArmor()) return true;
+      } else if (item.getGameId().equals(i.getGameId()) && item.name.equals(i.name)) return true;
     }
     return false;
   }
 
+  /**
+   * Filters a database by whether the items in it include or exclude
+   * the provided property value.
+   * 
+   * @param filterProperty The property name that we're querying 
+   * @param filterValue The desired value in a given item we're filtering for
+   * @param exclude If value == wanted, exclude from list instead
+   * @param db The Dom3DB to query
+   * @return A list only including (or excluding) the relevant items
+   */
   public ItemSet filterDom3DB(
-    String value,
-    String wanted,
-    boolean keepwanted,
+    String filterProperty,
+    String filterValue,
+    boolean exclude,
     Dom3DB db
   ) {
     ItemSet newlist = new ItemSet();
-    for (Item i : this) if (
-      db.GetValue(i.id, value, "0").equals(wanted) == keepwanted
-    ) newlist.add(i);
+
+    for (Item i : this) {
+      String itemValue = i.getValueFromDb(filterProperty, "0");
+      Boolean isEqualValue = itemValue.equals(filterValue);
+      Boolean shouldKeepItem = isEqualValue == true && exclude == false;
+
+      if (shouldKeepItem) {
+        newlist.add(i);
+      }
+    }
 
     return newlist;
   }
 
+  /**
+   * Filters a database by whether the items in it have a property value
+   * that is higher than the provided filterValue.
+   * 
+   * @param filterProperty The property name that we're querying 
+   * @param filterValue The desired value in a given item we're filtering for
+   * @param hasToBeLower Include items whose value is lower than filterValue instead
+   * @param db The Dom3DB to query
+   * @return A list only including (or excluding) the relevant items
+   */
   public ItemSet filterDom3DBInteger(
-    String value,
-    int wanted,
-    boolean below,
+    String filterProperty,
+    int filterValue,
+    boolean hasToBeLower,
     Dom3DB db
   ) {
     ItemSet newlist = new ItemSet();
-    for (Item i : this) if (
-      below && db.GetInteger(i.id, value) < wanted
-    ) newlist.add(i);
-    else if (!below && db.GetInteger(i.id, value) > wanted) newlist.add(i);
+
+    for (Item i : this) {
+      Integer itemValue = i.getIntegerFromDb(filterProperty, 0);
+
+      if (hasToBeLower && itemValue < filterValue) {
+        newlist.add(i);
+      }
+        
+      else if (!hasToBeLower && itemValue > filterValue) {
+        newlist.add(i);
+      }
+    }
 
     return newlist;
   }
@@ -182,12 +217,12 @@ public class ItemSet extends ArrayList<Item> {
         if (!p.roles.contains(role)) continue;
 
         if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-          if (i2.id.equals(i.id) && i.hasDominionsId() == false) newlist.add(i2);
-          else if (i2.id.equals(i.id) && i.name.equals(i2.name)) newlist.add(
+          if (i2.getGameId().equals(i.getGameId()) && i.hasDominionsId() == false) newlist.add(i2);
+          else if (i2.getGameId().equals(i.getGameId()) && i.name.equals(i2.name)) newlist.add(
             i2
           );
           else if (
-            i2.id.equals(i.id) && i.sprite.equals(i2.sprite)
+            i2.getGameId().equals(i.getGameId()) && i.sprite.equals(i2.sprite)
           ) newlist.add(i2);
         }
       }
@@ -226,14 +261,14 @@ public class ItemSet extends ArrayList<Item> {
     for (Item i : this) {
       if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
         if (
-          i.id.equals(i2.id) &&
+          i.getGameId().equals(i2.getGameId()) &&
           i.hasDominionsId() &&
           (i.name.equals(i2.name) ||
             i.sprite.equals(i2.name) ||
             i2.tags.contains("replacement", i.name))
         ) newlist.add(i2);
         else if (
-          i.id.equals(i2.id) &&
+          i.getGameId().equals(i2.getGameId()) &&
           (i.name.equals(i2.name) || i.sprite.equals(i2.name))
         ) newlist.add(i2);
       }
@@ -242,9 +277,9 @@ public class ItemSet extends ArrayList<Item> {
     if (newlist.possibleItems() == 0) {
       for (Item i : this) {
         if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-          if (i.id.equals(i2.id) && i.hasDominionsId()) newlist.add(i2);
+          if (i.getGameId().equals(i2.getGameId()) && i.hasDominionsId()) newlist.add(i2);
           else if (
-            i.id.equals(i2.id) &&
+            i.getGameId().equals(i2.getGameId()) &&
             (i.name.equals(i2.name) || i.sprite.equals(i2.sprite))
           ) newlist.add(i2);
         }
@@ -327,7 +362,7 @@ public class ItemSet extends ArrayList<Item> {
       for (Item i2 : newlist) {
         if (
           i2.isArmor() == i.isArmor() &&
-          i2.id.equals(i.id) &&
+          i2.getGameId().equals(i.getGameId()) &&
           i.slot.equals(i2.slot) &&
           i.hasDominionsId()
         ) derps.add(i2);

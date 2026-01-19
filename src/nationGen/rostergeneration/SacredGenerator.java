@@ -1047,7 +1047,7 @@ public class SacredGenerator extends TroopGenerator {
       u.pose.getItems("bonusweapon") != null &&
       u.pose.getItems("bonusweapon").possibleItems() > 0
     ) {
-      int prot = nationGen.armordb.GetInteger(u.getSlot("armor").id, "prot");
+      int prot = u.getSlot("armor").getIntegerFromDb("prot", 0);
       double local_bwchance = 0.4 + this.getBonusWeaponChance(u);
       if (random.nextDouble() < local_bwchance - (double) prot * 0.02) {
         Item weapon = chandler.getRandom(

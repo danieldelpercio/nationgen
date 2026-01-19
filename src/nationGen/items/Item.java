@@ -15,7 +15,7 @@ import nationGen.misc.Command;
 
 public class Item extends Drawable {
 
-  public String id = "-1";
+  private String id = "-1";
 
   public Filter filter = null;
   private List<ItemType> itemTypes = new ArrayList<>();
@@ -46,6 +46,14 @@ public class Item extends Drawable {
     this.set = item.set;
   }
 
+  public String getGameId() {
+    return this.id;
+  }
+
+  public void setGameId(String gameId) {
+    this.id = gameId;
+  }
+
   public String getValueFromDb(String dbColumn, String defaultValue) {
     String value = this.getValueFromDb(dbColumn);
 
@@ -72,6 +80,24 @@ public class Item extends Drawable {
     }
 
     return value;
+  }
+
+  public Integer getIntegerFromDb(String dbColumn, Integer defaultValue) {
+    String value = this.getValueFromDb(dbColumn, "");
+    Integer parsedValue;
+
+    if (value.isBlank()) {
+      return defaultValue;
+    }
+
+    try {
+      parsedValue = Integer.parseInt(value);
+      return parsedValue;
+    }
+
+    catch(Exception e) {
+      return defaultValue;
+    }
   }
 
   public String getBardingId() {
@@ -116,11 +142,11 @@ public class Item extends Drawable {
     return this.isArmor() && this.isOfType(ItemType.BARDING);
   }
   
-  public Boolean isBodyArmorBarding() {
+  public Boolean isBodyArmor() {
     return this.isArmor() && this.isOfType(ItemType.BODY_ARMOR);
   }
   
-  public Boolean hasHelmet() {
+  public Boolean isHelmet() {
     return this.isArmor() && this.isOfType(ItemType.HELMET);
   }
   
@@ -142,6 +168,14 @@ public class Item extends Drawable {
 
   public Boolean isMeleeWeapon() {
     return this.isOfType(ItemType.MELEE);
+  }
+
+  public Boolean isOneHandedWeapon() {
+    return this.getIntegerFromDb("2h", 0) != 1;
+  }
+
+  public Boolean isTwoHandedWeapon() {
+    return this.getIntegerFromDb("2h", 0) == 1;
   }
 
   public Boolean isMountItem() {

@@ -399,7 +399,7 @@ public class UnitGen {
     Command targettag
   ) {
     // Find chest armor protection to apply mounts' minprot and maxprot filters
-    int prot = nationGen.armordb.GetInteger(u.getSlot("armor").id, "prot");
+    int prot = u.getSlot("armor").getIntegerFromDb("prot", 0);
     ItemSet finalMountPool = new ItemSet();
     Command racialMountPreference = null;
     Item selectedMount = null;
@@ -522,20 +522,20 @@ public class UnitGen {
 
     // Same name and slot
     for (Item i : to.getItems(slot)) {
-      if (i != null) if (i.name.equals(ui.name) && i.id.equals(ui.id)) return i;
+      if (i != null) if (i.name.equals(ui.name) && i.getGameId().equals(ui.getGameId())) return i;
     }
 
     // Same image and id
     for (Item i : to.getItems(slot)) {
       if (i != null) if (
-        i.sprite.equals(ui.sprite) && i.id.equals(ui.id)
+        i.sprite.equals(ui.sprite) && i.getGameId().equals(ui.getGameId())
       ) return i;
     }
 
     // Same id and armor type
     for (Item i : to.getItems(slot)) {
       if (i != null) if (
-        i.id.equals(ui.id) &&
+        i.getGameId().equals(ui.getGameId()) &&
         i.isArmor() == ui.isArmor() &&
         ((i.tags.containsName("elite") == ui.tags.containsName("elite")) ||
           i.tags.containsName("sacred") == ui.tags.containsName("sacred"))
@@ -544,7 +544,7 @@ public class UnitGen {
 
     // Same id and armor type
     for (Item i : to.getItems(slot)) {
-      if (i != null) if (i.id.equals(ui.id) && i.isArmor() == ui.isArmor()) return i;
+      if (i != null) if (i.getGameId().equals(ui.getGameId()) && i.isArmor() == ui.isArmor()) return i;
     }
 
     return null;
@@ -606,11 +606,11 @@ public class UnitGen {
         // 50% chance to not give a twohander if possible and not mage
         if (
           included
-              .filterDom3DB("2h", "Yes", false, nationGen.weapondb)
+              .filterDom3DB("2h", "1", true, nationGen.weapondb)
               .possibleItems() ==
             0 &&
           included
-            .filterDom3DB("2h", "Yes", true, nationGen.weapondb)
+            .filterDom3DB("2h", "1", false, nationGen.weapondb)
             .possibleItems() !=
           0 &&
           random.nextDouble() > 0.5 &&
@@ -618,8 +618,8 @@ public class UnitGen {
         ) {
           ItemSet test = all.filterDom3DB(
             "2h",
-            "Yes",
-            false,
+            "1",
+            true,
             nationGen.weapondb
           );
           if (test.possibleItems() > 0) all = test;
@@ -628,7 +628,7 @@ public class UnitGen {
         Item armor = u.getSlot("armor");
         int prot = armor == null
           ? 0
-          : nationGen.armordb.GetInteger(armor.id, "prot");
+          : armor.getIntegerFromDb("prot", 0);
 
         if (prot < 10 && random.nextDouble() > 0.5 && !mage) {
           ItemSet test = all.filterDom3DBInteger(
@@ -696,7 +696,7 @@ public class UnitGen {
 
           boolean availableLance = false;
           for (Item i : u.pose.getItems("lanceslot")) if (
-            i.id.equals("4") || i.tags.containsName("lance")
+            i.getGameId().equals("4") || i.tags.containsName("lance")
           ) availableLance = true;
 
           if (10 + random.nextInt(20) > ap && availableLance) canGetLance =
@@ -712,22 +712,22 @@ public class UnitGen {
             if (
               u.pose.getItems("lanceslot") != null
             ) for (Item i : u.pose.getItems("lanceslot")) if (
-              i.id.equals("4") || i.tags.containsName("lance")
+              i.getGameId().equals("4") || i.tags.containsName("lance")
             ) lances.add(i);
 
             ItemSet onehand = included
               .filterSlot("weapon")
-              .filterDom3DB("2h", "Yes", false, nationGen.weapondb);
+              .filterDom3DB("2h", "1", true, nationGen.weapondb);
 
             if (chandler.handleChanceIncs(u, onehand).isEmpty()) {
               onehand = u.pose
                 .getItems("weapon")
-                .filterDom3DB("2h", "Yes", false, nationGen.weapondb);
+                .filterDom3DB("2h", "1", true, nationGen.weapondb);
             }
 
             ItemSet llances = new ItemSet();
             for (Item i : u.pose.getItems("weapon")) if (
-              i.id.equals("357") || i.tags.containsName("lightlance")
+              i.getGameId().equals("357") || i.tags.containsName("lightlance")
             ) llances.add(i);
 
             onehand.removeAll(llances);
@@ -744,7 +744,7 @@ public class UnitGen {
           } else if (choice == 2) {
             ItemSet lances = new ItemSet();
             for (Item i : u.pose.getItems("weapon")) if (
-              i.id.equals("357") || i.tags.containsName("lightlance")
+              i.getGameId().equals("357") || i.tags.containsName("lightlance")
             ) lances.add(i);
 
             if (lances.possibleItems() > 0) {
@@ -754,11 +754,11 @@ public class UnitGen {
           } else if (choice == 3) {
             ItemSet onehand = included
               .filterSlot("weapon")
-              .filterDom3DB("2h", "Yes", true, nationGen.weapondb);
+              .filterDom3DB("2h", "1", false, nationGen.weapondb);
             if (chandler.handleChanceIncs(u, onehand).isEmpty()) onehand =
               u.pose
                 .getItems("weapon")
-                .filterDom3DB("2h", "Yes", true, nationGen.weapondb);
+                .filterDom3DB("2h", "1", false, nationGen.weapondb);
 
             if (onehand.possibleItems() > 0) {
               weapon = chandler.getRandom(onehand, u);

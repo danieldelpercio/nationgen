@@ -108,8 +108,8 @@ public enum ThemeIncConditionType {
         if (d.f instanceof Item) {
           Item i = (Item) d.f;
           boolean ferrous = i.isArmor()
-            ? (d.nationGen.armordb.GetInteger(i.id, "ferrous", 0) == 1)
-            : (d.nationGen.weapondb.GetInteger(i.id, "ironweapon", 0) == 1);
+            ? (i.getIntegerFromDb("ferrous", 0) == 1)
+            : (i.getIntegerFromDb("ironweapon", 0) == 1);
           return ferrous != not;
         }
         return false;
@@ -129,12 +129,12 @@ public enum ThemeIncConditionType {
           Item i = (Item) d.f;
           if (i.isWeapon()) {
             boolean slash =
-              d.nationGen.weapondb.GetInteger(i.id, "dt_slash", 0) == 1;
+              i.getIntegerFromDb("dt_slash", 0) == 1;
             boolean blunt =
-              d.nationGen.weapondb.GetInteger(i.id, "dt_blunt", 0) == 1;
+              i.getIntegerFromDb("dt_blunt", 0) == 1;
             boolean pierce =
-              d.nationGen.weapondb.GetInteger(i.id, "dt_pierce", 0) == 1;
-            int lgt = d.nationGen.weapondb.GetInteger(i.id, "lgt", 0);
+              i.getIntegerFromDb("dt_pierce", 0) == 1;
+            int lgt = i.getIntegerFromDb("lgt", 0);
 
             int penalty = 0;
             if (!pierce && (blunt || slash)) penalty = lgt;
@@ -162,7 +162,7 @@ public enum ThemeIncConditionType {
           Item i = (Item) d.f;
 
           if (i.isArmor() && !i.slot.equals("offhand")) {
-            int prot = d.nationGen.armordb.GetInteger(i.id, "prot", 0);
+            int prot = i.getIntegerFromDb("prot", 0);
             return (prot >= target) != (not ^ below);
           }
         }
@@ -183,7 +183,7 @@ public enum ThemeIncConditionType {
           Item i = (Item) d.f;
 
           if (i.isArmor() && !i.slot.equals("offhand")) {
-            int enc = d.nationGen.armordb.GetInteger(i.id, "enc", 0);
+            int enc = i.getIntegerFromDb("enc", 0);
             return (enc >= target) != (not ^ below);
           }
         }
@@ -205,7 +205,7 @@ public enum ThemeIncConditionType {
           Item i = (Item) d.f;
 
           if (i.isArmor()) {
-            int value = d.nationGen.armordb.GetInteger(i.id, attribute);
+            int value = i.getIntegerFromDb(attribute, 0);
             return (value >= target) != (not ^ below);
           }
         }
@@ -227,7 +227,7 @@ public enum ThemeIncConditionType {
           Item i = (Item) d.f;
 
           if (i.isWeapon()) {
-            int value = d.nationGen.weapondb.GetInteger(i.id, attribute);
+            int value = i.getIntegerFromDb(attribute, 0);
             return (value >= target) != (not ^ below);
           }
         }

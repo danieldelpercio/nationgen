@@ -37,39 +37,31 @@ public enum ItemType {
   }
 
   private static Boolean isBarding(Item item) {
-    Boolean hasBardingType = item.nationGen.armordb
-      .GetInteger(item.id, "type") == 9;
-
+    Boolean hasBardingType = item.getIntegerFromDb("type", 0) == 9;
     return hasBardingType;
   }
 
   private static Boolean isBodyArmor(Item item) {
-    Boolean hasBodyArmorType = item.nationGen.armordb
-      .GetInteger(item.id, "type") == 5;
+    Boolean hasBodyArmorType = item.getIntegerFromDb("type", 0) == 5;
 
     return hasBodyArmorType;
   }
 
   private static Boolean isHelmet(Item item) {
-    Boolean hasHelmetType = item.nationGen.armordb
-      .GetInteger(item.id, "type") == 6;
+    Boolean hasHelmetType = item.getIntegerFromDb("type", 0) == 6;
 
     return hasHelmetType;
   }
 
   private static Boolean isLowAmmo(Item item) {
     // If its ammo is less than 4, it's a lowshots weapon
-    Boolean hasLowAmmo = item.nationGen.weapondb
-      .GetInteger(item.id, "shots", 100) < 4;
-
+    Boolean hasLowAmmo = item.getIntegerFromDb("shots", 100) < 4;
     return hasLowAmmo;
   }
 
   private static Boolean isMelee(Item item) {
     // If its range is 0, it's melee
-    Boolean hasZeroRange = item.nationGen.weapondb
-      .GetInteger(item.id, "rng") == 0;
-
+    Boolean hasZeroRange = item.getIntegerFromDb("rng", 0) == 0;
     return hasZeroRange;
   }
 
@@ -82,16 +74,12 @@ public enum ItemType {
 
   private static Boolean isRanged(Item item) {
     // If it's got a range property, it should be ranged
-    Boolean hasRange = item.nationGen.weapondb
-      .GetInteger(item.id, "rng") != 0;
-
+    Boolean hasRange = item.getIntegerFromDb("rng", 0) != 0;
     return hasRange;
   }
 
   private static Boolean isShield(Item item) {
-    Boolean hasShieldType = item.nationGen.armordb
-      .GetInteger(item.id, "type") == 4;
-
+    Boolean hasShieldType = item.getIntegerFromDb("type", 0) == 4;
     return hasShieldType;
   }
 

@@ -151,11 +151,8 @@ public class Summary {
           sacredunit.pose.roles.contains("sacred ranged")
         ) {
           if (
-            n.nationGen.weapondb.GetInteger(
-              sacredunit.getSlot("weapon").id,
-              "rng"
-            ) >
-            12
+            sacredunit.getSlot("weapon")
+            .getIntegerFromDb("rng", 0) > 12
           ) sacred.append("ranger");
           else sacred.append("skirmisher");
         }

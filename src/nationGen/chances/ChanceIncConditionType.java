@@ -629,14 +629,14 @@ public enum ChanceIncConditionType {
         if (i != null) {
           boolean contains = false;
           if ((!armor || i.isArmor()) && (!weapon || i.isWeapon())) {
-            if (id.isEmpty() || i.id.equals(id.get())) {
+            if (id.isEmpty() || i.getGameId().equals(id.get())) {
               contains = true;
             } else if (i instanceof CustomItem) {
               CustomItem ci = (CustomItem) i;
               contains = (ci.olditem != null &&
-                ci.olditem.id != null &&
-                ci.olditem.id.equals(id.get())) ||
-              (Integer.parseInt(i.id) >= (i.isArmor() ? 250 : 800) &&
+                ci.olditem.getGameId() != null &&
+                ci.olditem.getGameId().equals(id.get())) ||
+              (Integer.parseInt(i.getGameId()) >= (i.isArmor() ? 250 : 800) &&
                 i.tags.getString("OLDID").stream().anyMatch(id.get()::equals));
             }
           }

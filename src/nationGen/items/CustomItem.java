@@ -193,7 +193,7 @@ public class CustomItem extends Item {
 
   public LinkedHashMap<String, String> getHashMap() {
     LinkedHashMap<String, String> map = new LinkedHashMap<>();
-    map.put("id#", id + "");
+    map.put("id#", this.getGameId() + "");
     map.put("#att", "1");
     map.put("shots", "0");
     map.put("rng", "0");
@@ -288,11 +288,11 @@ public class CustomItem extends Item {
     List<String> lines = new ArrayList<>();
 
     if (this.isArmor()) {
-      lines.add("#newarmor " + id);
+      lines.add("#newarmor " + this.getGameId());
     }
 
     else {
-      lines.add("#newweapon " + id);
+      lines.add("#newweapon " + this.getGameId());
     }
 
     for (Command command : this.customItemCommands) {

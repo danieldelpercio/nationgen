@@ -790,9 +790,11 @@ public class CommanderGenerator extends TroopGenerator {
     for (Command c : u.getCommands()) {
       if (c.command.equals("#mapmove")) {
         int mapmove = c.args.get(0).getInt();
-        if (mapmove < racialMapMove) u.commands.add(
-          Command.args("#mapmove", "+" + (racialMapMove - mapmove))
-        );
+        if (mapmove < racialMapMove) {
+          u.commands.add(
+            Command.args("#mapmove", "+" + (racialMapMove - mapmove))
+          );
+        }
       }
     }
 
@@ -876,7 +878,7 @@ public class CommanderGenerator extends TroopGenerator {
         ItemSet helmets = new ItemSet();
 
         for (Item it : getSuitableCommanderItems(u, slot).filterSlot(slot)) if (
-          it.id.equals(item.id)
+          it.getGameId().equals(item.getGameId())
         ) helmets.add(it);
 
         helmet = chandler.getRandom(helmets, u);
@@ -887,9 +889,7 @@ public class CommanderGenerator extends TroopGenerator {
 
     // Try to get an elite armor of some suitable sort
     if (u.getSlot(slot).isArmor() && helmet == null && !slot.equals("offhand")) {
-      int helmetprot = item.isArmor()
-        ? nationGen.armordb.GetInteger(item.id, "prot")
-        : 0;
+      int helmetprot = item.getIntegerFromDb("prot", 0);
 
       helmet = chandler.getRandom(
         getSuitableCommanderItems(u, slot).filterProt(

@@ -1071,7 +1071,7 @@ public class Unit {
     int res =
       this.slotmap.items()
         .filter(i -> i.isCustomIdResolved())
-        .mapToInt(i -> (i.isArmor() ? armordb : weapondb).GetInteger(i.id, "res"))
+        .mapToInt(i -> i.getIntegerFromDb("res", 0))
         .sum();
 
     if (useSize) {
@@ -1261,11 +1261,13 @@ public class Unit {
 
     int enc = 0;
     if (getSlot("armor") != null) enc +=
-    nationGen.armordb.GetInteger(getSlot("armor").id, "enc");
+      getSlot("armor").getIntegerFromDb("enc", 0);
+
     if (getSlot("offhand") != null && getSlot("offhand").isArmor()) enc +=
-    nationGen.armordb.GetInteger(getSlot("offhand").id, "enc");
+      getSlot("offhand").getIntegerFromDb("enc", 0);
+
     if (getSlot("helmet") != null) enc +=
-    nationGen.armordb.GetInteger(getSlot("helmet").id, "enc");
+      getSlot("helmet").getIntegerFromDb("enc", 0);
 
     if (enc <= treshold && tags.containsName("lowenccommand")) {
       Command fullCommand = tags.getCommand("lowenccommand").orElseThrow();
@@ -1610,7 +1612,7 @@ public class Unit {
       return 0;
     }
 
-    armorId = this.getSlot("armor").id;
+    armorId = this.getSlot("armor").getGameId();
     return nationGen.armordb.GetInteger(armorId, "prot");
   }
 
@@ -1629,14 +1631,16 @@ public class Unit {
       }
     }
 
-    Dom3DB armordb = nationGen.armordb;
+    for (Item armor : this.slotmap.getEquippedArmors().toList()) {
+      Integer prot = armor.getIntegerFromDb("prot", 0);
 
-    for (String slot : slotmap.getSlots()) {
-      if (getSlot(slot) != null && getSlot(slot).isArmor()) {
-        if (armordb.GetInteger(getSlot(slot).id, "type") == 5) {
-          armorprot += armordb.GetInteger(getSlot(slot).id, "prot", 0);
-        } else if (armordb.GetInteger(getSlot(slot).id, "type") == 6) {
-          helmetprot += armordb.GetInteger(getSlot(slot).id, "prot", 0);
+      if (armor != null && armor.isArmor()) {
+        if (armor.isHelmet()) {
+          helmetprot += prot;
+        }
+        
+        else if (armor.isBodyArmor()) {
+          armorprot += prot;
         }
       }
     }
@@ -1669,20 +1673,17 @@ public class Unit {
       }
     }
 
-    Dom3DB armordb = nationGen.armordb;
-
-    for (String slot : slotmap.getSlots()) {
+    for (Item armor : this.slotmap.getEquippedArmors().toList()) {
       if (
-        getSlot(slot) != null &&
-        getSlot(slot).isArmor() &&
-        getSlot(slot).hasDominionsId()
+        armor != null &&
+        armor.isArmor() &&
+        armor.hasDominionsId()
       ) {
-        eqenc += armordb.GetInteger(getSlot(slot).id, "enc", 0);
+        eqenc += armor.getIntegerFromDb("enc", 0);
       }
     }
 
     double prot = eqenc + natural;
-
     return (int) prot;
   }
 
@@ -1697,38 +1698,26 @@ public class Unit {
       if (c.command.equals("#mounted")) eqdef += 3;
     }
 
-    Dom3DB armordb = nationGen.armordb;
-    Dom3DB weapondb = nationGen.weapondb;
-
-    for (String slot : slotmap.getSlots()) {
-      if (getSlot(slot) != null && getSlot(slot).hasDominionsId()) {
-        if (getSlot(slot).isArmor()) {
-          eqdef += armordb.GetInteger(getSlot(slot).id, "def", 0);
-        }
-        else {
-          eqdef += weapondb.GetInteger(getSlot(slot).id, "def", 0);
-        }
+    for (Item item : this.slotmap.items().toList()) {
+      if (item.hasDominionsId()) {
+        eqdef += item.getIntegerFromDb("def", 0);
       }
     }
 
     double def = eqdef + natural;
-
     return (int) def;
   }
 
   public int getParry() {
     int parry = 0;
-    Dom3DB armordb = nationGen.armordb;
 
-    for (String slot : slotmap.getSlots()) {
-      if (getSlot(slot) != null && getSlot(slot).hasDominionsId()) {
-        if (getSlot(slot).isArmor()) {
-          Boolean isShield = armordb.GetInteger(getSlot(slot).id, "type", 0) == 4;
+    for (Item armor : this.slotmap.getEquippedArmors().toList()) {
+      if (armor.hasDominionsId() == false) {
+        continue;
+      }
 
-          if (isShield == true) {
-            parry += armordb.GetInteger(getSlot(slot).id, "def", 0);
-          }
-        }
+      if (armor.isShield() == true) {
+        parry += armor.getIntegerFromDb("def", 0);
       }
     }
 
@@ -1737,17 +1726,14 @@ public class Unit {
 
   public int getShieldProt() {
     int shieldProt = 0;
-    Dom3DB armordb = nationGen.armordb;
 
-    for (String slot : slotmap.getSlots()) {
-      if (getSlot(slot) != null && getSlot(slot).hasDominionsId()) {
-        if (getSlot(slot).isArmor()) {
-          Boolean isShield = armordb.GetInteger(getSlot(slot).id, "type", 0) == 4;
+    for (Item armor : this.slotmap.getEquippedArmors().toList()) {
+      if (armor.hasDominionsId() == false) {
+        continue;
+      }
 
-          if (isShield == true) {
-            shieldProt += armordb.GetInteger(getSlot(slot).id, "prot", 0);
-          }
-        }
+      if (armor.isShield() == true) {
+        shieldProt += armor.getIntegerFromDb("prot", 0);
       }
     }
 

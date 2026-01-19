@@ -2109,13 +2109,13 @@ public class MageGenerator extends TroopGenerator {
 
       if (troop) {
         if (
-          nationGen.weapondb.GetInteger(unit.getSlot("weapon").id, "lgt") >= 3
+          unit.getSlot("weapon").getIntegerFromDb("lgt", 0) >= 3
         ) {
           if (
             unit.getSlot("offhand") != null && !unit.getSlot("offhand").isArmor()
           ) unit.setSlot("offhand", null);
         } else if (
-          nationGen.weapondb.GetInteger(unit.getSlot("weapon").id, "2h") == 1
+          unit.getSlot("weapon").isTwoHandedWeapon()
         ) {
           unit.setSlot("offhand", null);
         }

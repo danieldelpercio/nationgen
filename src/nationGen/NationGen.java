@@ -467,10 +467,7 @@ public class NationGen {
   }
 
   private void writeDescriptions(List<Nation> nations, String modDirectory) {
-    NationAdvancedSummarizer nDesc = new NationAdvancedSummarizer(
-      armordb,
-      weapondb
-    );
+    NationAdvancedSummarizer nDesc = new NationAdvancedSummarizer();
     if (settings.get(SettingsType.advancedDescs) == 1.0) {
       nDesc.writeAdvancedDescriptionFile(nations, modDirectory);
     }

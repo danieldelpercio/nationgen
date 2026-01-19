@@ -76,7 +76,7 @@ public class CustomItemsHandler {
   public String getCustomItemId(String name) {
     for (CustomItem ci : chosenCustomItems) {
       if (ci.name.equals(name)) {
-        return ci.id;
+        return ci.getGameId();
       }
     }
 
@@ -96,9 +96,9 @@ public class CustomItemsHandler {
 
     if (idHandler != null) {
       if (customItem.isArmor()) {
-        customItem.id = idHandler.nextArmorId() + "";
+        customItem.setGameId(idHandler.nextArmorId() + "");
       } else {
-        customItem.id = idHandler.nextWeaponId() + "";
+        customItem.setGameId(idHandler.nextWeaponId() + "");
       }
     } else {
       throw new IllegalArgumentException("CustomItemsHandler error: idHandler was not initialized!");
@@ -114,12 +114,12 @@ public class CustomItemsHandler {
     //this.customitems.remove(customItem);
 
     if (!customItem.isArmor()) {
-      armordb.addToMap(customItem.id, customItem.getHashMap());
+      armordb.addToMap(customItem.getGameId(), customItem.getHashMap());
     } else {
-      weapondb.addToMap(customItem.id, customItem.getHashMap());
+      weapondb.addToMap(customItem.getGameId(), customItem.getHashMap());
     }
 
-    return customItem.id;
+    return customItem.getGameId();
   }
 
   private void resolveCustomEffectId(Command effect) {

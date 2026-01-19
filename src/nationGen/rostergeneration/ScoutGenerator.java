@@ -55,7 +55,7 @@ public class ScoutGenerator extends TroopGenerator {
     Unit template = unitGen.generateUnit(race, p);
 
     chandler.getRandom(
-      p.getItems("weapon").filterDom3DB("2h", "0", true, nationGen.weapondb),
+      p.getItems("weapon").filterDom3DB("2h", "0", false, nationGen.weapondb),
       template
     );
     // Select a mainhand weapon
@@ -63,7 +63,7 @@ public class ScoutGenerator extends TroopGenerator {
     if (
       tier != 3
     ) weapon = chandler.getRandom( //  Scout/spy gets whatever non-2h
-      p.getItems("weapon").filterDom3DB("2h", "0", true, nationGen.weapondb),
+      p.getItems("weapon").filterDom3DB("2h", "0", false, nationGen.weapondb),
       template
     );
     else { // Assassin gets max length 3 weapons
@@ -135,10 +135,7 @@ public class ScoutGenerator extends TroopGenerator {
 
     template.setSlot("armor", armor);
 
-    int prot = nationGen.armordb.GetInteger(
-      template.getSlot("armor").id,
-      "prot"
-    );
+    int prot = template.getSlot("armor").getIntegerFromDb("prot", 0);
 
     if (template.pose.getItems("helmet") != null) {
       ItemSet helms = template.pose.getItems("helmet");
@@ -185,16 +182,15 @@ public class ScoutGenerator extends TroopGenerator {
       p.getItems("offhand") != null &&
       r.nextDouble() < dwchance &&
       p.getItems("offhand").filterArmor(false).size() > 0 &&
-      nationGen.weapondb.GetInteger(template.getSlot("weapon").id, "lgt") < 3 &&
-      nationGen.weapondb.GetInteger(template.getSlot("weapon").id, "2h") == 0
+      template.getSlot("weapon").getIntegerFromDb("lgt", 0) < 3 &&
+      template.getSlot("weapon").isOneHandedWeapon()
     ) {
       if (
         r.nextDouble() > 0.25 &&
         p
           .getItems("offhand")
           .filterArmor(false)
-          .getItemWithID(weapon.id, "offhand") !=
-        null
+          .getItemWithID(weapon.getGameId(), "offhand") != null
       ) {
         template.setSlot(
           "offhand",
@@ -202,7 +198,7 @@ public class ScoutGenerator extends TroopGenerator {
             p
               .getItems("offhand")
               .filterArmor(false)
-              .getItemsWithID(weapon.id, "offhand"),
+              .getItemsWithID(weapon.getGameId(), "offhand"),
             template
           )
         );

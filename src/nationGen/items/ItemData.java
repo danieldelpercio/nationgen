@@ -24,7 +24,7 @@ public class ItemData {
       this.oldId = item.tags.getString("OLDID").get();
     }
 
-    this.id = item.id;
+    this.id = item.getGameId();
     this.name = item.name;
     this.nationGen = item.nationGen;
   }

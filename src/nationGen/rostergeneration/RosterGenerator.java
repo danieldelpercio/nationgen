@@ -355,7 +355,7 @@ public class RosterGenerator {
     int occurances = 0;
     for (TroopTemplate t2 : templates) {
       if (
-        t.armor.id.equals(t2.armor.id) &&
+        t.armor.getGameId().equals(t2.armor.getGameId()) &&
         Math.abs(t.template.getHP() - t2.template.getHP()) < 4 &&
         t.role.equals(t2.role) &&
         t.template.getSlot("mount") == t2.template.getSlot("mount")
@@ -427,7 +427,7 @@ public class RosterGenerator {
         if (t.template.pose.roles.contains(role)) {
           pointless.add(t.armor);
           for (Item i : t.template.pose.getItems("armor")) {
-             if (i.id.equals(t.armor.id) && i.hasDominionsId()) {
+             if (i.getGameId().equals(t.armor.getGameId()) && i.hasDominionsId()) {
               pointless.add(i);
             }
           }
@@ -485,7 +485,7 @@ public class RosterGenerator {
         u.getSlot("offhand") != null &&
         u.getSlot("offhand").isArmor()
       ) for (Item i : p2.getItems("offhand").filterArmor(true)) if (
-        i.id.equals(u.getSlot("offhand").id) &&
+        i.getGameId().equals(u.getSlot("offhand").getGameId()) &&
         (!i.sprite.equals(u.getSlot("offhand").sprite) &&
           !i.name.equals(u.getSlot("offhand").name))
       ) {
@@ -716,24 +716,24 @@ public class RosterGenerator {
     }
 
     while (templates.size() > 0) {
-      String lowestID = allArmor.get(0).id;
+      String lowestID = allArmor.get(0).getGameId();
       int lowestProt = nationGen.armordb.GetInteger("" + lowestID, "body");
       for (Item armor : allArmor) if (
-        nationGen.armordb.GetInteger(armor.id, "body") < lowestProt
+        armor.getIntegerFromDb("body", 0) < lowestProt
       ) {
-        lowestID = armor.id;
+        lowestID = armor.getGameId();
         lowestProt = nationGen.armordb.GetInteger("" + lowestID, "body");
       }
 
       List<Item> foobarArmor = new ArrayList<Item>();
       for (Item armor : allArmor) if (
-        armor.id.equals("" + lowestID)
+        armor.getGameId().equals("" + lowestID)
       ) foobarArmor.add(armor);
       allArmor.removeAll(foobarArmor);
 
       List<Unit> newlist = new ArrayList<Unit>();
       for (Unit u : templates) if (
-        u.getSlot("armor").id.equals(lowestID)
+        u.getSlot("armor").getGameId().equals(lowestID)
       ) newlist.add(u);
 
       templates.removeAll(newlist);

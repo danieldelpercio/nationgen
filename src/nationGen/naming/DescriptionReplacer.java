@@ -159,13 +159,12 @@ public class DescriptionReplacer {
 
     for (Item armor : armors) {
       int prot = 0;
-      String armorName = n.nationGen.armordb.GetValue(
-        armor.id,
+      String armorName = armor.getValueFromDb(
         "armorname",
         "NOT IN ARMORDB: " + armor.name + " in armor slot"
       );
 
-      prot = n.nationGen.armordb.GetInteger(armor.id, "prot", 0);
+      prot = armor.getIntegerFromDb("prot", 0);
 
       if (armorNames.contains(armorName) == false) {
         armorNames.add(armorName);

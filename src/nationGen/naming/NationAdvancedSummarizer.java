@@ -20,13 +20,7 @@ import nationGen.units.Unit;
 
 public class NationAdvancedSummarizer {
 
-  private Dom3DB weapondb;
-  private Dom3DB armordb;
-
-  public NationAdvancedSummarizer(Dom3DB armor, Dom3DB weapon) {
-    this.armordb = armor;
-    this.weapondb = weapon;
-  }
+  public NationAdvancedSummarizer() {}
 
   private List<String> printUnits(String role, String tag, Nation n) {
     List<String> lines = new ArrayList<>();
@@ -266,7 +260,7 @@ public class NationAdvancedSummarizer {
       .items()
       .filter(Item::isWeapon)
       .filter(Item::hasDominionsId)
-      .map(i -> weapondb.GetValue(i.id, "weapon_name"))
+      .map(i -> i.getValueFromDb("weapon_name"))
       .collect(Collectors.toList());
   }
 
@@ -275,7 +269,7 @@ public class NationAdvancedSummarizer {
       .items()
       .filter(Item::isArmor)
       .filter(Item::hasDominionsId)
-      .map(i -> armordb.GetValue(i.id, "armorname"))
+      .map(i -> i.getValueFromDb("armorname"))
       .collect(Collectors.toList());
   }
 
