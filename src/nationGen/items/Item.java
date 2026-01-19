@@ -109,7 +109,7 @@ public class Item extends Drawable {
   }
 
   public void addType(ItemType type) {
-    if (this.hasType(type) == false) {
+    if (this.hasType(type) == true) {
       return;
     }
 
@@ -342,10 +342,9 @@ public class Item extends Drawable {
       return;
     }
 
-    String range = this.getValueFromDb("rng", "0");
     this.addType(ItemType.WEAPON);
 
-    if (Integer.parseInt(range) > 0) {
+    if (ItemType.RANGED.check(this)) {
       this.addType(ItemType.RANGED);
     }
 
