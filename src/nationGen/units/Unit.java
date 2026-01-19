@@ -880,16 +880,6 @@ public class Unit {
     }
   }
 
-  public static List<Unit> polishChildrenMontagUnits(Unit parentMontagTemplate) {
-    // Find the parent montag id associated with these poses
-    String montagId = parentMontagTemplate.getStringCommandValue("#firstshape", "");
-
-    // Find all the sub poses which have been tied to this montag id
-    List<Unit> montagUnits = parentMontagTemplate.nation.getMontagUnits(montagId);
-    montagUnits.forEach(u -> u.polish());
-    return montagUnits;
-  }
-
   public static UnitCost calculateMeanCostOfUnits(List<Unit> units) {
     int goldSum = 0;
     int resourceSum = 0;
@@ -986,11 +976,12 @@ public class Unit {
 
     // TODO: if no other cost logic applies to montag template, should move this to an earlier step to break out early
     if (this.isMontagRecruitableTemplate()) {
-      // TODO: is there a way to decouple polishing of children montags from gold cost calc?
-      List<Unit> montagChildren = Unit.polishChildrenMontagUnits(this);
       Boolean shouldUseMontagMeanCost = !this.pose.tags.containsName("no_montag_mean_costs");
-
+      
       if (shouldUseMontagMeanCost) {
+        // Find the parent montag id associated with these poses
+        String montagId = this.getStringCommandValue("#firstshape", "");
+        List<Unit> montagChildren = this.nation.getMontagUnits(montagId);
         UnitCost meanMontagCosts = Unit.calculateMeanCostOfUnits(montagChildren);
         totalCost = meanMontagCosts.gold;
       }
