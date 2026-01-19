@@ -790,9 +790,11 @@ public class CommanderGenerator extends TroopGenerator {
     for (Command c : u.getCommands()) {
       if (c.command.equals("#mapmove")) {
         int mapmove = c.args.get(0).getInt();
-        if (mapmove < racialMapMove) u.commands.add(
-          Command.args("#mapmove", "+" + (racialMapMove - mapmove))
-        );
+        if (mapmove < racialMapMove) {
+          u.commands.add(
+            Command.args("#mapmove", "+" + (racialMapMove - mapmove))
+          );
+        }
       }
     }
 
