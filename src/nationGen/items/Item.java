@@ -116,6 +116,10 @@ public class Item extends Drawable {
     this.itemTypes.add(type);
   }
 
+  public void addType(List<ItemType> types) {
+    types.forEach(t -> this.addType(t));
+  }
+
   public Boolean hasType(ItemType type) {
     return this.itemTypes.contains(type);
   }
