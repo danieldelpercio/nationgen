@@ -62,7 +62,7 @@ public enum ItemType {
   private static Boolean isMelee(Item item) {
     // If its range is 0, it's melee
     Boolean hasZeroRange = item.getIntegerFromDb("rng", 0) == 0;
-    return hasZeroRange;
+    return item.isWeapon() && hasZeroRange;
   }
 
   private static Boolean isMount(Item item) {
@@ -75,7 +75,7 @@ public enum ItemType {
   private static Boolean isRanged(Item item) {
     // If it's got a range property, it should be ranged
     Boolean hasRange = item.getIntegerFromDb("rng", 0) != 0;
-    return hasRange;
+    return item.isWeapon() && hasRange;
   }
 
   private static Boolean isShield(Item item) {
