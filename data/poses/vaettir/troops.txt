@@ -145,6 +145,7 @@
 ------- Archer
 
 #newpose
+#id "vaetti archers"
 #role "ranged"
 #role "scout"
 
@@ -180,6 +181,7 @@
 ------- Stealthy Archer
 
 #newpose
+#id "vaetti stealthy archers"
 #role "ranged"
 #role "scout"
 
