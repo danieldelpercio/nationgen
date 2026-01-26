@@ -269,7 +269,7 @@
 #newitem
 #id "cave_spider"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider.png
 #armor
 #offsetx 47
 #offsety 20
@@ -286,7 +286,7 @@
 #newitem
 #id "cave_spider_leather_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider_armored_leather.png
 #armor
 #offsetx 47
 #offsety 20
@@ -306,7 +306,7 @@
 #newitem
 #id "cave_spider_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider_armored_light_scale.png
 #armor
 #offsetx 47
 #offsety 20
@@ -326,7 +326,7 @@
 #newitem
 #id "cave_spider_obsidian_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/spider1.png
+#sprite /graphics/mounts/standard/great_spider_armored_obsidian.png
 #armor
 #offsetx 47
 #offsety 20
