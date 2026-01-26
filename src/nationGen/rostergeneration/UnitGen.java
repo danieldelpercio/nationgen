@@ -522,20 +522,20 @@ public class UnitGen {
 
     // Same name and slot
     for (Item i : to.getItems(slot)) {
-      if (i != null) if (i.name.equals(ui.name) && i.getGameId().equals(ui.getGameId())) return i;
+      if (i != null) if (i.isSameAs(ui)) return i;
     }
 
     // Same image and id
     for (Item i : to.getItems(slot)) {
       if (i != null) if (
-        i.sprite.equals(ui.sprite) && i.getGameId().equals(ui.getGameId())
+        i.sprite.equals(ui.sprite) && i.hasDominionsId(ui.getDominionsId())
       ) return i;
     }
 
     // Same id and armor type
     for (Item i : to.getItems(slot)) {
       if (i != null) if (
-        i.getGameId().equals(ui.getGameId()) &&
+        i.hasDominionsId(ui.getDominionsId()) &&
         i.isArmor() == ui.isArmor() &&
         ((i.tags.containsName("elite") == ui.tags.containsName("elite")) ||
           i.tags.containsName("sacred") == ui.tags.containsName("sacred"))
@@ -544,7 +544,7 @@ public class UnitGen {
 
     // Same id and armor type
     for (Item i : to.getItems(slot)) {
-      if (i != null) if (i.getGameId().equals(ui.getGameId()) && i.isArmor() == ui.isArmor()) return i;
+      if (i != null) if (i.hasDominionsId(ui.getDominionsId()) && i.isArmor() == ui.isArmor()) return i;
     }
 
     return null;
@@ -696,7 +696,7 @@ public class UnitGen {
 
           boolean availableLance = false;
           for (Item i : u.pose.getItems("lanceslot")) if (
-            i.getGameId().equals("4") || i.tags.containsName("lance")
+            i.hasDominionsId("4") || i.tags.containsName("lance")
           ) availableLance = true;
 
           if (10 + random.nextInt(20) > ap && availableLance) canGetLance =
@@ -712,7 +712,7 @@ public class UnitGen {
             if (
               u.pose.getItems("lanceslot") != null
             ) for (Item i : u.pose.getItems("lanceslot")) if (
-              i.getGameId().equals("4") || i.tags.containsName("lance")
+              i.hasDominionsId("4") || i.tags.containsName("lance")
             ) lances.add(i);
 
             ItemSet onehand = included
@@ -727,7 +727,7 @@ public class UnitGen {
 
             ItemSet llances = new ItemSet();
             for (Item i : u.pose.getItems("weapon")) if (
-              i.getGameId().equals("357") || i.tags.containsName("lightlance")
+              i.hasDominionsId("357") || i.tags.containsName("lightlance")
             ) llances.add(i);
 
             onehand.removeAll(llances);
@@ -744,7 +744,7 @@ public class UnitGen {
           } else if (choice == 2) {
             ItemSet lances = new ItemSet();
             for (Item i : u.pose.getItems("weapon")) if (
-              i.getGameId().equals("357") || i.tags.containsName("lightlance")
+              i.hasDominionsId("357") || i.tags.containsName("lightlance")
             ) lances.add(i);
 
             if (lances.possibleItems() > 0) {

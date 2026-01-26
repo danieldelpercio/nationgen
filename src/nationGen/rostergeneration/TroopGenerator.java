@@ -177,7 +177,7 @@ public class TroopGenerator {
     ItemSet removethese = new ItemSet();
     tempweps.addAll(p.getItems("weapon"));
     for (Item i : tempweps) {
-      if (i.getGameId().equals("357") || i.tags.containsName("lightlance")) {
+      if (i.hasDominionsId("357") || i.tags.containsName("lightlance")) {
         removethese.add(i);
         stuff = 1;
       }
@@ -323,7 +323,7 @@ public class TroopGenerator {
     else {
       ItemSet tempweps = new ItemSet();
       for (TroopTemplate t2 : templates) if (
-        t.armor.getGameId().equals(t2.armor.getGameId()) &&
+        t.armor.hasDominionsId(t2.armor.getDominionsId()) &&
         Math.abs(t.template.getHP() - t2.template.getHP()) < 3 &&
         t.role.equals(t2.role)
       ) {
@@ -404,7 +404,7 @@ public class TroopGenerator {
     oldweps.addAll(t.weapons);
     ItemSet lances = new ItemSet();
     for (Item i : oldweps) {
-      if (i.getGameId().equals("357") || i.tags.containsName("lightlance")) {
+      if (i.hasDominionsId("357") || i.tags.containsName("lightlance")) {
         lances.add(i);
         hasllance = true;
       }
@@ -432,7 +432,7 @@ public class TroopGenerator {
         tempweps.removeAll(oldweps);
         for (Item i : t.pose.getItems("weapon")) {
           if (
-            i.getGameId().equals("357") || i.tags.containsName("lightlance")
+            i.hasDominionsId("357") || i.tags.containsName("lightlance")
           ) tempweps.remove(i);
         }
         done = true;
@@ -447,7 +447,7 @@ public class TroopGenerator {
         tempweps.removeAll(oldweps);
         for (Item i : t.pose.getItems("weapon")) {
           if (
-            i.getGameId().equals("357") || i.tags.containsName("lightlance")
+            i.hasDominionsId("357") || i.tags.containsName("lightlance")
           ) tempweps.remove(i);
         }
         done = true;
@@ -455,7 +455,7 @@ public class TroopGenerator {
         (r == 4 || r == 5) && !hasllance
       ) { // lightlance
         for (Item i : t.pose.getItems("weapon")) {
-          if (i.getGameId().equals("357") || i.tags.containsName("lightlance")) {
+          if (i.hasDominionsId("357") || i.tags.containsName("lightlance")) {
             tempweps.add(i);
           }
         }
@@ -484,7 +484,7 @@ public class TroopGenerator {
       if (getsLance && t.pose.getItems("lanceslot").size() > 0) {
         tempweps.clear();
         for (Item i : t.pose.getItems("lanceslot")) {
-          if (!i.getGameId().equals("4") && !i.tags.containsName("lance")) tempweps.add(
+          if (!i.hasDominionsId("4") && !i.tags.containsName("lance")) tempweps.add(
             i
           );
         }
@@ -648,7 +648,7 @@ public class TroopGenerator {
           u.pose
             .getItems("offhand")
             .filterArmor(false)
-            .getItemsWithID(u.getSlot("weapon").getGameId(), "offhand"),
+            .getItemsWithID(String.valueOf(u.getSlot("weapon").getDominionsId()), "offhand"),
           u
         );
         if (offhand != null) stuff.add(offhand);
@@ -706,9 +706,9 @@ public class TroopGenerator {
     if (bonusweapon.tags.containsName("tierunique")) {
       for (TroopTemplate t2 : templates) {
         if (
-          t2.bonusweapons.getItemWithID(bonusweapon.getGameId(), "bonusweapon") !=
+          t2.bonusweapons.getItemWithID(String.valueOf(bonusweapon.getDominionsId()), "bonusweapon") !=
             null &&
-          t2.armor.getGameId().equals(u.getSlot("armor").getGameId())
+          t2.armor.hasDominionsId(u.getSlot("armor").getDominionsId())
         ) {
           return;
         }
@@ -883,7 +883,7 @@ public class TroopGenerator {
   }
 
   public boolean foundInSet(Item item, ItemSet set) {
-    for (Item i : set) if (i.getGameId().equals(item.getGameId())) return true;
+    for (Item i : set) if (i.hasDominionsId(item.getDominionsId())) return true;
 
     return false;
   }

@@ -62,7 +62,7 @@ public class SlotMap {
 
   Stream<Item> getResolvedWeapons() {
     return this.items()
-      .filter(i -> i.isWeapon() == true && i.isCustomIdResolved());
+      .filter(i -> i.isWeapon() == true && i.isDominionsIdResolved());
   }
 
   void push(String slot, Item item) {
