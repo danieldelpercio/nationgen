@@ -697,7 +697,7 @@ public class Unit {
   public void setSlot(String slotname, Item newitem) {
     Item olditem = getSlot(slotname);
 
-    if (newitem != null && newitem.isCustomIdResolved() == false) {
+    if (newitem != null && newitem.isDominionsIdResolved() == false) {
       newitem = Item.resolveId(newitem);
     }
 
@@ -1061,7 +1061,7 @@ public class Unit {
 
     int res =
       this.slotmap.items()
-        .filter(i -> i.isCustomIdResolved())
+        .filter(i -> i.isDominionsIdResolved())
         .mapToInt(i -> i.getIntegerFromDb("res", 0))
         .sum();
 
@@ -2001,7 +2001,7 @@ public class Unit {
 
     // Get id and name of weapons and add to the list of #weapon lines
     weaponData.forEach(itemData -> {
-      if (itemData.isCustomIdResolved() == false) {
+      if (itemData.isDominionsIdResolved() == false) {
         throw new IllegalArgumentException(
           this.name +
           " unit (pose: " +
@@ -2031,7 +2031,7 @@ public class Unit {
     List<String> lines = new ArrayList<>();
 
     armors.forEach(itemData -> {
-      if (itemData.isCustomIdResolved() == false) {
+      if (itemData.isDominionsIdResolved() == false) {
         throw new IllegalArgumentException(
           this.name +
           " unit (pose: " +

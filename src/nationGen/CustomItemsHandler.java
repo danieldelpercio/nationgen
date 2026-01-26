@@ -1,12 +1,12 @@
 package nationGen;
 
 import com.elmokki.Dom3DB;
-import com.elmokki.Generic;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import nationGen.items.CustomItem;
+import nationGen.items.Item;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
 import nationGen.misc.ResourceStorage;
@@ -27,6 +27,12 @@ public class CustomItemsHandler {
   private IdHandler idHandler; // Local ref of id handler to generate new IDs when fresh custom item needs a new ID.
   private Dom3DB weapondb; // Local ref of weapondb to remove nationgen dependency.
   private Dom3DB armordb; // Local ref of armordb to remove nationgen dependency.
+
+  public static final Integer CUSTOM_WEAPON_DOMINIONS_ID_START = 1000;
+  public static final Integer CUSTOM_WEAPON_DOMINIONS_ID_END = 3999;
+
+  public static final Integer CUSTOM_ARMOR_DOMINIONS_ID_START = 300;
+  public static final Integer CUSTOM_ARMOR_DOMINIONS_ID_END = 999;
 
   public CustomItemsHandler(
     NationGen nationGen,
@@ -69,20 +75,17 @@ public class CustomItemsHandler {
       .findFirst();
   }
 
-  /**
-   *  The idea is that we first see if the name is already chosen, and return its chosen ID if so.
-   *  Else, if the item exists in the superset [customItems], we generate its ID & add it to chosen items.
-   */
-  public String getCustomItemId(String name) {
+  public Integer resolveDominionsId(String itemName) {
+    CustomItem customItem = null;
+
     for (CustomItem ci : chosenCustomItems) {
-      if (ci.name.equals(name)) {
-        return ci.getGameId();
+      if (ci.name.equals(itemName)) {
+        return ci.getDominionsId();
       }
     }
 
-    CustomItem customItem = null;
     for (CustomItem ci : customItems) {
-      if (ci.name.equals(name) && !chosenCustomItems.contains(ci)) {
+      if (ci.name.equals(itemName) && !chosenCustomItems.contains(ci)) {
         customItem = new CustomItem(ci);
         break;
       }
@@ -90,44 +93,53 @@ public class CustomItemsHandler {
 
     if (customItem == null) {
       throw new IllegalArgumentException(
-        "CustomItemsHandler error: No custom item named " + name + " was found!"
+        "CustomItemsHandler error: No custom item named " + itemName + " was found!"
       );
     }
 
-    if (idHandler != null) {
-      if (customItem.isArmor()) {
-        customItem.setGameId(idHandler.nextArmorId() + "");
-      } else {
-        customItem.setGameId(idHandler.nextWeaponId() + "");
-      }
-    } else {
-      throw new IllegalArgumentException("CustomItemsHandler error: idHandler was not initialized!");
+    Integer nextAvailableId = this.getNextAvailableDominionsId(customItem);
+    customItem.setDominionsId(nextAvailableId);
+    this.resolveSecondaryEffectIds(customItem);
+    this.registerCustomItem(customItem);
+    return customItem.getDominionsId();
+  }
+
+  public Integer getNextAvailableDominionsId(Item item) {
+    if (item.isWeapon()) {
+      return idHandler.nextWeaponId();
     }
 
+    return idHandler.nextArmorId();
+  }
+
+  public void resolveSecondaryEffectIds(CustomItem customItem) {
     customItem.getCustomCommand("#secondaryeffect")
       .ifPresent(c -> resolveCustomEffectId(c));
 
     customItem.getCustomCommand("#secondaryeffectalways")
       .ifPresent(c -> resolveCustomEffectId(c));
+  }
 
+  public void registerCustomItem(CustomItem customItem) {
+    String dominionsId = String.valueOf(customItem.getDominionsId());
     chosenCustomItems.add(customItem);
-    //this.customitems.remove(customItem);
 
-    if (!customItem.isArmor()) {
-      armordb.addToMap(customItem.getGameId(), customItem.getHashMap());
-    } else {
-      weapondb.addToMap(customItem.getGameId(), customItem.getHashMap());
+    if (customItem.isArmor()) {
+      armordb.addToMap(dominionsId, customItem.getHashMap());
     }
-
-    return customItem.getGameId();
+    
+    else {
+      weapondb.addToMap(dominionsId, customItem.getHashMap());
+    }
   }
 
   private void resolveCustomEffectId(Command effect) {
     Arg customEffectId = effect.args.get(0);
 
     if (!customEffectId.isNumeric()) {
-      String id = getCustomItemId(customEffectId.get());
-      effect.args.set(0, new Arg(id));
+      
+      Integer dominionsId = this.resolveDominionsId(customEffectId.get());
+      effect.args.set(0, new Arg(dominionsId));
     }
   }
 
@@ -160,7 +172,7 @@ public class CustomItemsHandler {
     return lines;
   }
 
-  static public Boolean isIdResolved(String itemId) {
-    return Generic.isNumeric(itemId);
+  static public Boolean isIdResolved(Integer dominionsId) {
+    return dominionsId > -1;
   }
 }

@@ -15,11 +15,12 @@ import nationGen.misc.Command;
 public class CustomItem extends Item {
 
   private List<Command> customItemCommands = new ArrayList<>();
-  public Item olditem = null;
+  public Item originalItem = null;
   public MagicItem magicItem = null;
 
   public CustomItem(NationGen nationGen) {
     super(nationGen);
+    this.pendingDominionsId = true;
     this.customItemCommands.add(new Command("#rcost", new Arg(0)));
     this.customItemCommands.add(new Command("#def", new Arg(0)));
   }
@@ -31,7 +32,7 @@ public class CustomItem extends Item {
       .map(c -> new Command(c))
       .collect(Collectors.toList());
 
-    this.olditem = (customItem.olditem != null) ? new Item(customItem.olditem) : null;
+    this.originalItem = (customItem.originalItem != null) ? new Item(customItem.originalItem) : null;
     this.magicItem = (customItem.magicItem != null) ? new MagicItem(customItem.magicItem) : null;
   }
 
@@ -150,21 +151,23 @@ public class CustomItem extends Item {
   }
 
   @Override
-  public void handleOwnCommand(Command str) {
+  public void handleOwnCommand(Command command) {
     try {
-      if (str.command.equals("#command")) {
-        if (str.args.size() != 1) {
+      if (command.command.equals("#command")) {
+        if (command.args.size() != 1) {
           throw new IllegalArgumentException(
             "#command must have a single arg. Surround the command with quotes if needed."
           );
         }
-        this.customItemCommands.add(str.args.get(0).getCommand());
-      } else {
-        super.handleOwnCommand(str);
+        this.customItemCommands.add(command.args.get(0).getCommand());
+      }
+      
+      else {
+        super.handleOwnCommand(command);
       }
     } catch (IndexOutOfBoundsException e) {
       throw new IllegalArgumentException(
-        "Wrong number of arguments for line: " + str,
+        "Wrong number of arguments for line: " + command,
         e
       );
     }
@@ -193,7 +196,9 @@ public class CustomItem extends Item {
 
   public LinkedHashMap<String, String> getHashMap() {
     LinkedHashMap<String, String> map = new LinkedHashMap<>();
-    map.put("id#", this.getGameId() + "");
+    String dominionsId = String.valueOf(this.getDominionsId());
+
+    map.put("id#", dominionsId);
     map.put("#att", "1");
     map.put("shots", "0");
     map.put("rng", "0");
@@ -288,11 +293,11 @@ public class CustomItem extends Item {
     List<String> lines = new ArrayList<>();
 
     if (this.isArmor()) {
-      lines.add("#newarmor " + this.getGameId());
+      lines.add("#newarmor " + this.getDominionsId());
     }
 
     else {
-      lines.add("#newweapon " + this.getGameId());
+      lines.add("#newweapon " + this.getDominionsId());
     }
 
     for (Command command : this.customItemCommands) {
@@ -326,7 +331,7 @@ public class CustomItem extends Item {
     customItem.basechance = item.basechance;
     customItem.renderslot = item.renderslot;
     customItem.renderprio = item.renderprio;
-    customItem.olditem = item;
+    customItem.originalItem = item;
     customItem.addType(item.getItemTypes());
     return customItem;
   }

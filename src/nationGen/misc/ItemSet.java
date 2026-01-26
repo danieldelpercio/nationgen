@@ -111,21 +111,32 @@ public class ItemSet extends ArrayList<Item> {
     return newlist;
   }
 
-  public Item getItemWithID(String string, String slot) {
+  public Item getItemWithID(String id, String slot) {
     ItemSet possibles = this; //this.filterTheme("elite", false).filterTheme("sacred", false);
+
     for (Item item : possibles) {
-      if (item.getGameId().equals(string) && item.slot.equals(slot)) return item;
+      Boolean idMatches = item.hasDominionsId(id) || item.name.equals(id);
+
+      if (idMatches && item.slot.equals(slot)) {
+        return item;
+      }
     }
     return null;
   }
 
-  public ItemSet getItemsWithID(String string, String slot) {
-    ItemSet newset = new ItemSet();
+  public ItemSet getItemsWithID(String id, String slot) {
+    ItemSet matchingItems = new ItemSet();
     ItemSet possibles = this; //this.filterTheme("elite", false).filterTheme("sacred", false);
+
     for (Item item : possibles) {
-      if (item.getGameId().equals(string) && item.slot.equals(slot)) newset.add(item);
+      Item matchingItem = this.getItemWithID(id, slot);
+
+      if (matchingItem != null) {
+        matchingItems.add(item);
+      }
     }
-    return newset;
+
+    return matchingItems;
   }
 
   public Item getItemWithName(String name, String slot) {
@@ -135,14 +146,17 @@ public class ItemSet extends ArrayList<Item> {
     return null;
   }
 
-  public boolean alreadyHas(Item i) {
-    if (i == null) return true;
-
-    for (Item item : this) {
-      if (item.hasDominionsId()) {
-        if (item.getGameId().equals(i.getGameId()) && i.isArmor() == item.isArmor()) return true;
-      } else if (item.getGameId().equals(i.getGameId()) && item.name.equals(i.name)) return true;
+  public boolean alreadyHas(Item item) {
+    if (item == null) {
+      return true;
     }
+
+    for (Item i : this) {
+      if (item.isSameAs(i)) {
+        return true;
+      }
+    }
+
     return false;
   }
 
@@ -211,24 +225,35 @@ public class ItemSet extends ArrayList<Item> {
   }
 
   public ItemSet filterForRole(String role, Race race) {
-    ItemSet newlist = new ItemSet();
-    for (Item i : this) {
-      for (Pose p : race.poses) {
-        if (!p.roles.contains(role)) continue;
+    ItemSet filtered = new ItemSet();
 
-        if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-          if (i2.getGameId().equals(i.getGameId()) && i.hasDominionsId() == false) newlist.add(i2);
-          else if (i2.getGameId().equals(i.getGameId()) && i.name.equals(i2.name)) newlist.add(
-            i2
-          );
-          else if (
-            i2.getGameId().equals(i.getGameId()) && i.sprite.equals(i2.sprite)
-          ) newlist.add(i2);
+    for (Item item : this) {
+      for (Pose pose : race.poses) {
+        if (!pose.roles.contains(role)) {
+          continue;
+        }
+
+        if (pose.getItems(item.slot) == null) {
+          continue;
+        }
+
+        for (Item poseItem : pose.getItems(item.slot)) {
+          if (poseItem.isSameAs(item) && item.hasDominionsId() == false) {
+            filtered.add(poseItem);
+          }
+
+          else if (poseItem.isSameAs(item)) {
+            filtered.add(poseItem);
+          }
+
+          else if (poseItem.isSameAs(item) && item.sprite.equals(poseItem.sprite)) {
+            filtered.add(poseItem);
+          }
         }
       }
     }
 
-    return newlist;
+    return filtered;
   }
 
   public ItemSet filterForPosesWith(String role, Race race, Item olditem) {
@@ -256,37 +281,44 @@ public class ItemSet extends ArrayList<Item> {
     return ch.handleChanceIncs(u, this).getRandom(random);
   }
 
-  public ItemSet filterForPose(Pose p) {
-    ItemSet newlist = new ItemSet();
-    for (Item i : this) {
-      if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-        if (
-          i.getGameId().equals(i2.getGameId()) &&
-          i.hasDominionsId() &&
-          (i.name.equals(i2.name) ||
-            i.sprite.equals(i2.name) ||
-            i2.tags.contains("replacement", i.name))
-        ) newlist.add(i2);
-        else if (
-          i.getGameId().equals(i2.getGameId()) &&
-          (i.name.equals(i2.name) || i.sprite.equals(i2.name))
-        ) newlist.add(i2);
-      }
-    }
+  public ItemSet filterForPose(Pose pose) {
+    ItemSet filtered = new ItemSet();
 
-    if (newlist.possibleItems() == 0) {
-      for (Item i : this) {
-        if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-          if (i.getGameId().equals(i2.getGameId()) && i.hasDominionsId()) newlist.add(i2);
-          else if (
-            i.getGameId().equals(i2.getGameId()) &&
-            (i.name.equals(i2.name) || i.sprite.equals(i2.sprite))
-          ) newlist.add(i2);
+    for (Item item : this) {
+      if (pose.getItems(item.slot) == null) {
+        continue;
+      }
+        
+      for (Item poseItem : pose.getItems(item.slot)) {
+        Boolean sharesName = item.name.equals(poseItem.name) || item.sprite.equals(poseItem.name);
+        Boolean isReplacement = poseItem.tags.contains("replacement", item.name);
+
+        if (item.isSameAs(poseItem) && (sharesName || isReplacement)) {
+          filtered.add(poseItem);
         }
       }
     }
 
-    return newlist;
+    if (filtered.possibleItems() == 0) {
+      for (Item item : this) {
+        if (pose.getItems(item.slot) == null) {
+          continue; 
+        }
+
+      for (Item poseItem : pose.getItems(item.slot)) {
+        if (item.isSameAs(poseItem) && item.hasDominionsId()) {
+          filtered.add(poseItem);
+        }
+        
+        else if (
+            item.getGameId().equals(poseItem.getGameId()) &&
+            (item.name.equals(poseItem.name) || item.sprite.equals(poseItem.sprite))
+          ) filtered.add(poseItem);
+        }
+      }
+    }
+
+    return filtered;
   }
 
   public ItemSet getCopy() {

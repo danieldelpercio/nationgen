@@ -612,37 +612,59 @@ public enum ChanceIncConditionType {
     }
   },
 
+  /**
+   * slot <slot> [not] [armor/weapon] <id>
+   * Apply chanceinc if a <slot> has a given [armor/weapon] equipped.
+   * Can drop the id to pass with any armor/weapon.
+   * Can drop armor/weapon to pass with any item at all.
+   * Can be negated.
+   */
   SLOT("slot") {
     @Override
     Condition<ChanceIncData> parseConditionArguments(ArgParser args) {
       String slot = args.nextString();
       boolean not = args.nextOptionalFlag("not");
-      boolean armor = args.nextOptionalFlag("armor");
-      boolean weapon = args.nextOptionalFlag("weapon");
+      boolean needsArmor = args.nextOptionalFlag("armor");
+      boolean needsWeapon = args.nextOptionalFlag("weapon");
       Optional<String> id = args.nextIf(a -> true).map(Arg::get);
 
       return d -> {
         if (d.u == null) {
           return false;
         }
-        Item i = d.u.getSlot(slot);
-        if (i != null) {
-          boolean contains = false;
-          if ((!armor || i.isArmor()) && (!weapon || i.isWeapon())) {
-            if (id.isEmpty() || i.getGameId().equals(id.get())) {
-              contains = true;
-            } else if (i instanceof CustomItem) {
-              CustomItem ci = (CustomItem) i;
-              contains = (ci.olditem != null &&
-                ci.olditem.getGameId() != null &&
-                ci.olditem.getGameId().equals(id.get())) ||
-              (Integer.parseInt(i.getGameId()) >= (i.isArmor() ? 250 : 800) &&
-                i.tags.getString("OLDID").stream().anyMatch(id.get()::equals));
-            }
-          }
-          return contains != not;
+
+        Item item = d.u.getSlot(slot);
+        Boolean hasExpectedItem = false;
+
+        if (item == null) {
+          return false;
         }
-        return false;
+
+        if (needsArmor && !item.isArmor()) {
+          return false;
+        }
+
+        else if (needsWeapon && !item.isWeapon()) {
+          return false;
+        }
+
+        else if (!needsArmor && !needsWeapon) {
+          return true;
+        }
+
+        else if (id.isEmpty()) {
+          return true;
+        }
+
+        else if (item.hasDominionsId(id.get())) {
+          return hasExpectedItem = true;
+        }
+
+        else if (item.name.equals(id.get())) {
+          return hasExpectedItem = true;
+        }
+
+        return hasExpectedItem != not;
       };
     }
   },

@@ -2,35 +2,23 @@ package nationGen.items;
 
 import java.util.Optional;
 
-import com.elmokki.Generic;
-
 import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
 
 public class ItemData {
-  private String id = "-1";
-  private String oldId = "";
   private String name = "";
+  private Integer dominionsId = -1;
   private NationGen nationGen;
 
-  public ItemData(String id, String name, NationGen nationGen) {
-    this.id = id;
+  public ItemData(String name, NationGen nationGen) {
     this.name = name;
     this.nationGen = nationGen;
   }
 
   public ItemData(Item item) {
-    if (item instanceof CustomItem) {
-      this.oldId = item.tags.getString("OLDID").get();
-    }
-
-    this.id = item.getGameId();
+    this.dominionsId = item.getDominionsId();
     this.name = item.name;
     this.nationGen = item.nationGen;
-  }
-
-  public String getId() {
-    return this.id;
   }
 
   public Boolean hasName() {
@@ -43,7 +31,7 @@ public class ItemData {
 
   public String getDisplayName(String dbColumn) {
     String dominionsName = nationGen.weapondb.GetValue(
-      id,
+      this.name,
       dbColumn,
       ""
     );
@@ -57,14 +45,14 @@ public class ItemData {
 
   public int getWeaponRange(int unitStrength) {
     CustomItemsHandler customItemsHandler = nationGen.GetCustomItemsHandler();
-    Optional<CustomItem> customItem = customItemsHandler.getCustomItem(this.oldId);
+    Optional<CustomItem> customItem = customItemsHandler.getCustomItem(this.name);
     Optional<Integer> possibleRange;
     int range;
     int strengthScaling;
 
     // If not a custom item, just use the Dominions database to determine range
     if (customItem.isPresent() == false) {
-      range = nationGen.weapondb.GetInteger(id, "rng", 0);
+      range = nationGen.weapondb.GetInteger(this.name, "rng", 0);
       return range;
     }
     
@@ -86,7 +74,7 @@ public class ItemData {
     return unitStrength / strengthScaling;
   }
 
-  public boolean isCustomIdResolved() {
-    return Generic.isNumeric(this.id);
+  public boolean isDominionsIdResolved() {
+    return this.dominionsId > 0;
   }
 }

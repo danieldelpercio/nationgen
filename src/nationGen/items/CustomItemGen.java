@@ -1,6 +1,5 @@
 package nationGen.items;
 
-import com.elmokki.Dom3DB;
 import com.elmokki.Generic;
 
 import java.util.ArrayList;
@@ -360,7 +359,6 @@ public class CustomItemGen {
 
     // Construct an underlying name id for later use (not a display name)
     String dname = "nation_" + n.nationid + "_customitem_" + (n.customitems.size() + 1);
-    customItem.setGameId(dname);
     customItem.name = dname;
   }
 
