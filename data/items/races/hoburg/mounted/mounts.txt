@@ -1509,7 +1509,7 @@
 #newitem
 #id "caveman_bronze_mail_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman_armored_mail_hauberk_bronze.png
+#sprite /graphics/hoburg/mounts/caveman_armored_chain_hauberk_bronze.png
 #armor
 #mountmnr "caveman_mount"
 #barding 172
@@ -1534,7 +1534,7 @@
 #newitem
 #id "caveman_iron_mail_armor"
 #gameid -1
-#sprite /graphics/hoburg/mounts/caveman_armored_mail_hauberk.png
+#sprite /graphics/hoburg/mounts/caveman_armored_chain_hauberk.png
 #armor
 #mountmnr "caveman_mount"
 #barding 172
