@@ -1,6 +1,7 @@
 package nationGen;
 
 import com.elmokki.Dom3DB;
+import com.elmokki.Generic;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -174,5 +175,13 @@ public class CustomItemsHandler {
 
   static public Boolean isIdResolved(Integer dominionsId) {
     return dominionsId > -1;
+  }
+
+  static public Boolean isIdResolved(String dominionsId) {
+    if (Generic.isNumeric(dominionsId) && Integer.parseInt(dominionsId) > -1) {
+      return true;
+    }
+
+    return false;
   }
 }

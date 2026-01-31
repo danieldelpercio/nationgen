@@ -82,7 +82,7 @@ public class CustomItemGen {
     // Add to custom item lists
     n.customitems.add(customItem);
     n.nationGen.GetCustomItemsHandler().AddCustomItem(customItem);
-    n.nationGen.weapondb.addToMap(customItem.getGameId(), customItem.getHashMap());
+    n.nationGen.weapondb.addToMap(String.valueOf(customItem.getDominionsId()), customItem.getHashMap());
   }
 
   private Boolean shouldBeMagic(
@@ -328,7 +328,7 @@ public class CustomItemGen {
       String natgenCustomId = args.get(1).get();
 
       // If there is one and it's the same as the original item id (same type of weapon)
-      if (args.size() > 1 && dominionsWeaponId.equals(originalItem.getGameId())) {
+      if (args.size() > 1 && originalItem.hasDominionsId(dominionsWeaponId)) {
         // Then try to find a special look within the pose item options
         Item specialLooksItem = unit.pose
           .getItems(originalItem.slot)
@@ -367,7 +367,7 @@ public class CustomItemGen {
       return Optional.empty();
     }
 
-    if (!Generic.isNumeric(item.getGameId())) {
+    if (!item.hasDominionsId()) {
       return Optional.empty();
     }
 

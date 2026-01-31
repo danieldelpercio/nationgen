@@ -112,15 +112,15 @@ public class Pose extends Filter {
 
         Set<String> spriteRenderSlots = new HashSet<>();
         for (Item i : set) {
-          if (!Generic.isNumeric(i.getGameId())) {
+          if (i.hasDominionsId()) {
             CustomItem citem = nationGen
               .GetCustomItemsHandler()
-              .getCustomItem(i.getGameId())
+              .getCustomItem(i.name)
               .orElseThrow(() ->
                 new IllegalArgumentException(
                   String.format(
-                    "Custom item named '%s' not found. Verify #gameid for item named '%s' in %s",
-                    i.getGameId(),
+                    "Custom item '%s' not found. Verify #needsDominionsId for item named '%s' in %s",
+                    i.name,
                     i.name,
                     file
                   )
@@ -128,9 +128,9 @@ public class Pose extends Filter {
               );
 
             if (citem.isArmor()) {
-              nationGen.armordb.addToMap(i.getGameId(), citem.getHashMap());
+              nationGen.armordb.addToMap(String.valueOf(i.getDominionsId()), citem.getHashMap());
             } else {
-              nationGen.weapondb.addToMap(i.getGameId(), citem.getHashMap());
+              nationGen.weapondb.addToMap(String.valueOf(i.getDominionsId()), citem.getHashMap());
             }
           }
           if (i.sprite.isBlank() == false) {

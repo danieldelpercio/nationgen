@@ -878,7 +878,7 @@ public class CommanderGenerator extends TroopGenerator {
         ItemSet helmets = new ItemSet();
 
         for (Item it : getSuitableCommanderItems(u, slot).filterSlot(slot)) if (
-          it.getGameId().equals(item.getGameId())
+          it.hasDominionsId(item.getDominionsId())
         ) helmets.add(it);
 
         helmet = chandler.getRandom(helmets, u);

@@ -770,7 +770,7 @@ public class NationGen {
             if (!weaponId.isNumeric()) {
               c.args.set(
                 0,
-                new Arg(customItemsHandler.getCustomItemId(weaponId.get()))
+                new Arg(customItemsHandler.resolveDominionsId(weaponId.get()))
               );
             }
           });
@@ -798,7 +798,7 @@ public class NationGen {
             if (!weaponId.isNumeric()) {
               c.args.set(
                 0,
-                new Arg(customItemsHandler.getCustomItemId(weaponId.get()))
+                new Arg(customItemsHandler.resolveDominionsId(weaponId.get()))
               );
             }
           });
@@ -817,7 +817,7 @@ public class NationGen {
             if (!armorId.isNumeric()) {
               c.args.set(
                 0,
-                new Arg(customItemsHandler.getCustomItemId(armorId.get()))
+                new Arg(customItemsHandler.resolveDominionsId(armorId.get()))
               );
             }
           });

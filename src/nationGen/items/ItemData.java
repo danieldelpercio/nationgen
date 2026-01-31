@@ -28,6 +28,9 @@ public class ItemData {
   public String getName() {
     return this.name;
   }
+  public Integer getDominionsId() {
+    return this.dominionsId;
+  }
 
   public String getDisplayName(String dbColumn) {
     String dominionsName = nationGen.weapondb.GetValue(

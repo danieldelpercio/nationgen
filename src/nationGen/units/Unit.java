@@ -1389,7 +1389,7 @@ public class Unit {
               new Arg(
                 nationGen
                   .GetCustomItemsHandler()
-                  .getCustomItemId(realarg.get()) +
+                  .resolveDominionsId(realarg.get()) +
                 ""
               )
             );
@@ -1603,7 +1603,7 @@ public class Unit {
       return 0;
     }
 
-    armorId = this.getSlot("armor").getGameId();
+    armorId = String.valueOf(this.getSlot("armor").getDominionsId());
     return nationGen.armordb.GetInteger(armorId, "prot");
   }
 
@@ -1906,7 +1906,7 @@ public class Unit {
       .filter(c -> c.command.equals("#weapon") && c.args.getInt(0) > 0)
       .forEach(c -> {
         String id = c.args.getString(0);
-        ItemData weaponData = new ItemData(id, "", this.nationGen);
+        ItemData weaponData = new ItemData(id, this.nationGen);
         weapons.add(weaponData);
       });
 
@@ -1931,7 +1931,7 @@ public class Unit {
       .filter(c -> c.command.equals("#armor") && c.args.getInt(0) > 0)
       .forEach(c -> {
         String id = c.args.getString(0);
-        ItemData armorData = new ItemData(id, "", this.nationGen);
+        ItemData armorData = new ItemData(id, this.nationGen);
         armors.add(armorData);
       });
 
@@ -2011,13 +2011,13 @@ public class Unit {
           ", nation: " +
           this.nation.name + " with seed " + this.nation.getSeed() +
           ") has a custom weapon whose id was not resolved: " +
-          itemData.getId()
+          itemData.getDominionsId()
         );
       };
       
       lines.add(
         "#weapon " +
-        itemData.getId() +
+        itemData.getDominionsId() +
         " --- " +
         itemData.getDisplayName("weapon_name") +
         ((itemData.hasName()) ? " / " + itemData.getName() : "")
@@ -2041,13 +2041,13 @@ public class Unit {
           ", nation: " +
           this.nation.name + " with seed " + this.nation.getSeed() +
           ") has a custom armor whose id was not resolved: " +
-          itemData.getId()
+          itemData.getDominionsId()
         );
       }
 
       lines.add(
         "#armor " +
-        itemData.getId() +
+        itemData.getDominionsId() +
         " --- " +
         itemData.getDisplayName("armorname") +
         ((itemData.hasName()) ? " / " + itemData.getName() : "")

@@ -88,8 +88,8 @@ public class SacredNamer {
       .selectCommanders("commander")
       .filter(com -> isSacred(u) && isSacred(com)) // holy
       .filter(com -> isElite(u) && isElite(com)) // elite
-      .filter(com -> com.getSlot("weapon").getGameId().equals(u.getSlot("weapon").getGameId()))
-      .filter(com -> com.getSlot("armor").getGameId().equals(u.getSlot("armor").getGameId()))
+      .filter(com -> com.getSlot("weapon").hasDominionsId(u.getSlot("weapon").getDominionsId()))
+      .filter(com -> com.getSlot("armor").hasDominionsId(u.getSlot("armor").getDominionsId()))
       .findFirst();
   }
 

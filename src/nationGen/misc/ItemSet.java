@@ -284,36 +284,40 @@ public class ItemSet extends ArrayList<Item> {
   public ItemSet filterForPose(Pose pose) {
     ItemSet filtered = new ItemSet();
 
+    // First pass - stricter filter
     for (Item item : this) {
       if (pose.getItems(item.slot) == null) {
         continue;
       }
         
       for (Item poseItem : pose.getItems(item.slot)) {
-        Boolean sharesName = item.name.equals(poseItem.name) || item.sprite.equals(poseItem.name);
-        Boolean isReplacement = poseItem.tags.contains("replacement", item.name);
-
-        if (item.isSameAs(poseItem) && (sharesName || isReplacement)) {
+        // Add item if its id and name matches the pose item
+        if (item.isSameAs(poseItem)) {
           filtered.add(poseItem);
         }
       }
     }
 
+    // If no results, make a less strict 2nd pass
     if (filtered.possibleItems() == 0) {
       for (Item item : this) {
         if (pose.getItems(item.slot) == null) {
           continue; 
         }
 
-      for (Item poseItem : pose.getItems(item.slot)) {
-        if (item.isSameAs(poseItem) && item.hasDominionsId()) {
-          filtered.add(poseItem);
-        }
-        
-        else if (
-            item.getGameId().equals(poseItem.getGameId()) &&
-            (item.name.equals(poseItem.name) || item.sprite.equals(poseItem.sprite))
-          ) filtered.add(poseItem);
+        for (Item poseItem : pose.getItems(item.slot)) {
+          // Only check if both items share a dominions id (i.e. they have the same in-game stats)
+          // Even if they are not necessarily the same NationGen item
+          if (item.hasDominionsId(poseItem.getDominionsId())) {
+            filtered.add(poseItem);
+          }
+          
+          // For non-dominions items, add them if they share a name or just share a sprite
+          else if (!item.hasDominionsId()) {
+            if (item.name.equals(poseItem.name) || item.sprite.equals(poseItem.sprite)) {
+              filtered.add(poseItem);
+            }
+          }
         }
       }
     }
@@ -382,29 +386,28 @@ public class ItemSet extends ArrayList<Item> {
   }
 
   public ItemSet filterImpossibleAdditions(List<Item> list) {
-    ItemSet newlist = new ItemSet();
-    newlist.addAll(this);
+    ItemSet filtered = new ItemSet();
+    filtered.addAll(this);
 
-    for (Item i : list) {
-      newlist.remove(i);
+    for (Item item : list) {
+      filtered.remove(item);
 
       // Remove stuff with the same ids or names or customid tag
-      List<Item> derps = new ArrayList<>();
+      List<Item> sameItems = new ArrayList<>();
 
-      for (Item i2 : newlist) {
+      for (Item otherItem : filtered) {
         if (
-          i2.isArmor() == i.isArmor() &&
-          i2.getGameId().equals(i.getGameId()) &&
-          i.slot.equals(i2.slot) &&
-          i.hasDominionsId()
-        ) derps.add(i2);
-        else if (i2.name.equals(i.name) && i.slot.equals(i2.slot)) derps.add(
-          i2
-        );
+          otherItem.isArmor() == item.isArmor() &&
+          otherItem.isSameAs(item) &&
+          otherItem.slot.equals(item.slot)
+        ) {
+          sameItems.add(otherItem);
+        }
       }
 
-      for (Item i2 : derps) newlist.remove(i2);
+      filtered.removeAll(sameItems);
     }
-    return newlist;
+
+    return filtered;
   }
 }

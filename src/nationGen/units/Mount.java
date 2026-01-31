@@ -2,7 +2,6 @@ package nationGen.units;
 
 import java.util.Optional;
 
-import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
 import nationGen.entities.Filter;
 import nationGen.misc.Command;
@@ -40,15 +39,5 @@ public class Mount extends Filter {
 
   public String getBardingId() {
     return this.barding;
-  }
-
-  public void setBarding(String id) {
-    if (CustomItemsHandler.isIdResolved(id)) {
-      this.barding = id;
-      return;
-    }
-
-    String resolvedId = nationGen.GetCustomItemsHandler().getCustomItemId(id);
-    this.barding = resolvedId;
   }
 }
