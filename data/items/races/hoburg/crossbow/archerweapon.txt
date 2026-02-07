@@ -1,27 +1,27 @@
 #newitem
 #id ninjato
-#gameid 381
+#dominionsId 381
 #theme "iron"
 #theme "oriental"
 #enditem
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #basechance 1.5
 #theme "occidental"
 #enditem
 
 #newitem
 #id scimitar_iron
-#gameid 746
+#dominionsId 746
 #theme "iron"
 #theme "civilized"
 #enditem
 
 #newitem
 #id scimitar_bronze
-#gameid 757
+#dominionsId 757
 #theme "bronze"
 #theme "civilized"
 #enditem

@@ -2,14 +2,14 @@
 
 #newitem
 #id hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/zotz/offhand/hideshield.png
 #armor
 #enditem
 
 #newitem
 #id metalshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/zotz/offhand/metalshield.png
 #armor
 #enditem

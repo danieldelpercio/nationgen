@@ -1,6 +1,6 @@
 #newitem
 #id "javelin"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #theme "occidental"
 #theme "boreal"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "bonus crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/weapon/standard/bonuscrossbow.png
 #offsety 1
 #basechance 0.5
@@ -26,7 +26,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "iron"
 #theme "primitive"
 #theme "austral"
@@ -46,7 +46,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #theme "wood"
 #theme "austral"
@@ -56,7 +56,7 @@
 
 #newitem
 #id "poison shortbow"
-#gameid 594
+#dominionsId 594
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #theme "wood"
 #theme "poison"
@@ -65,7 +65,7 @@
 
 #newitem
 #id "bonus sling"
-#gameid 22
+#dominionsId 22
 #theme "leather"
 #theme "boreal"
 #theme "imperial"
@@ -74,7 +74,7 @@
 
 #newitem
 #id "poison sling"
-#gameid 167
+#dominionsId 167
 #basechance 0.25
 #theme "leather"
 #theme "poison"
@@ -84,7 +84,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #basechance 0.25
 #theme "iron"
 #theme "austral"
@@ -97,7 +97,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #offsety 1
 #theme "austral"
@@ -107,7 +107,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #theme "poison"
 #theme "austral"
 #theme "lizard"
@@ -116,7 +116,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/scouts/extras/net.png
 #tag "noslot offhand"
 #renderprio 7
@@ -127,7 +127,7 @@
 
 #newitem
 #id "poison dart"
-#gameid 620
+#dominionsId 620
 #theme "austral"
 #theme "boreal"
 #theme "imperial"
@@ -137,14 +137,14 @@
 
 #newitem
 #id "shuriken"
-#gameid 382
+#dominionsId 382
 #theme "poison"
 #theme "oriental"
 #enditem
 
 #newitem
 #id "discus"
-#gameid 723
+#dominionsId 723
 #theme "bronze"
 #theme "imperial"
 #enditem

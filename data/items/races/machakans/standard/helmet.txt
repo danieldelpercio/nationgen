@@ -1,6 +1,6 @@
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/machakans/helmets/ironhelmet.png
 #tag "eliteversion ironcap-elite"
 #armor
@@ -8,7 +8,7 @@
 
 #newitem
 #id ironcap-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/machakans/helmets/elitehelmet_metal.png
 #elite
 #armor
@@ -25,7 +25,7 @@
 
 #newitem
 #id leathercap-elite
-#gameid 120
+#dominionsId 120
 #sprite /graphics/machakans/helmets/elitehelmet.png
 #recolormask /graphics/machakans/helmets/elitehelmet_recolormask.png
 #armor
@@ -36,7 +36,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/standard/leathercap.png
 #armor
 #tag "eliteversion leathercap-elite"
@@ -45,7 +45,7 @@
 
 #newitem
 #id jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/helmet/standard/jingasa2.png
 #recolormask /graphics/helmet/standard/jingasa2_recolormask.png
 #armor

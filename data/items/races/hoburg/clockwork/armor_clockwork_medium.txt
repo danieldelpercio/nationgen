@@ -3,7 +3,7 @@
 
 #newitem 
 #id "medium clockwork armor"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/hoburg/bodyarmor/clockwork_armor_medium.png
 #armor
 #theme "advanced"

@@ -2,7 +2,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/illithid/starchild/weapon/spear.png
 #tag "tier 1"
 #theme "iron"
@@ -11,7 +11,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/illithid/starchild/weapon/trident.png
 #eliteversion meteorite_trident-T3
 #tag "tier 1"
@@ -22,7 +22,7 @@
 
 #newitem
 #id glaive
-#gameid 308
+#dominionsId 308
 #sprite /graphics/illithid/starchild/weapon/glaive.png
 #tag "tier 1"
 #tag "tier 2"
@@ -32,7 +32,7 @@
 
 #newitem
 #id prod
-#gameid 49
+#dominionsId 49
 #sprite /graphics/illithid/starchild/weapon/ironprod.png
 #tag "tier 1"
 #tag "tier 2"
@@ -45,7 +45,7 @@
 
 #newitem
 #id bronze_spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/illithid/starchild/weapon/spear_bronze.png
 #tag "tier 1"
 #theme "bronze"
@@ -54,7 +54,7 @@
 
 #newitem
 #id bronze_trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/illithid/starchild/weapon/trident_bronze.png
 #eliteversion bronze_trident-T3
 #tag "tier 1"
@@ -65,7 +65,7 @@
 
 #newitem
 #id bronze_glaive
-#gameid 673
+#dominionsId 673
 #sprite /graphics/illithid/starchild/weapon/glaive_bronze.png
 #tag "tier 1"
 #tag "tier 2"
@@ -75,7 +75,7 @@
 
 #newitem
 #id coral_spear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/illithid/starchild/weapon/spear_coral.png
 #tag "tier 1"
 #theme "coral"
@@ -84,7 +84,7 @@
 
 #newitem
 #id coral_glaive
-#gameid 46
+#dominionsId 46
 #sprite /graphics/illithid/starchild/weapon/glaive_coral.png
 #tag "tier 1"
 #tag "tier 2"
@@ -94,7 +94,7 @@
 
 #newitem
 #id meteorite_trident
-#gameid 642
+#dominionsId 642
 #sprite /graphics/illithid/starchild/weapon/trident.png
 #eliteversion meteorite_trident-T3
 #tag "tier 1"
@@ -115,7 +115,7 @@
 
 #newitem
 #id bone_spear
-#gameid 373
+#dominionsId 373
 #sprite /graphics/illithid/starchild/weapon/spear_bone.png
 #tag "tier 1"
 #theme "bone"
@@ -124,7 +124,7 @@
 
 #newitem
 #id bone_trident
-#gameid 670
+#dominionsId 670
 #sprite /graphics/illithid/starchild/weapon/trident_bone.png
 #tag "tier 1"
 #theme "bone"
@@ -136,7 +136,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/standard/quarterstaff.png
 #offsetx 1
 #tag "tier 2"
@@ -148,7 +148,7 @@
 
 #newitem
 #id bronze_trident-T3
-#gameid 641
+#dominionsId 641
 #sprite /graphics/weapon/mage/trident_bronze.png
 #tag "tier 3"
 #theme "bronze"
@@ -157,7 +157,7 @@
 
 #newitem
 #id meteorite_trident-T3
-#gameid 642
+#dominionsId 642
 #sprite /graphics/weapon/mage/trident.png
 #tag "tier 3"
 #theme "iron"
@@ -166,7 +166,7 @@
 
 #newitem
 #id serpentstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/serpentstaff.png
 #offsetx 1
 #offsety 2
@@ -185,7 +185,7 @@
 
 #newitem
 #id orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/orbstaff.png
 #recolormask /graphics/weapon/mage/orbstaff_recolormask.png
 #offsety 6
@@ -194,7 +194,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #offsety 3
 #tag "tier 2"
@@ -204,7 +204,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #offsety 3
@@ -214,14 +214,14 @@
 
 #newitem
 #id pestle
-#gameid 499
+#dominionsId 499
 #sprite /graphics/illithid/starchild/weapon/caster/pestle-mortar.png
 #tag "tier 1"
 #enditem
 
 #newitem
 #id pitcher
-#gameid 496
+#dominionsId 496
 #sprite /graphics/offhand/mage/pitcher.png
 #offsetx -14
 #offsety -7
@@ -229,7 +229,7 @@
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/weapon/mage/sacrificialdagger.png
 #offsety 1
 #offsety 2
@@ -238,7 +238,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/skullstaff.png
 #offsetx 1
 #offsety 1
@@ -250,7 +250,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/metalstaff.png
 #tag "tier 2"
 #tag "tier 1"
@@ -259,14 +259,14 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/metalstaff_bauble.png
 #tag "tier 3"
 #enditem
 
 #newitem
 #id knobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/knobblystaff.png
 #offsetx 1
 #offsety 3
@@ -279,7 +279,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #tier 1
 #tier 2
 #tier 3
@@ -288,7 +288,7 @@
 
 #newitem
 #id strangle
-#gameid 116
+#dominionsId 116
 #tier 1
 #tier 2
 #tier 3
@@ -297,7 +297,7 @@
 
 #newitem
 #id lifedrain-T1
-#gameid 384
+#dominionsId 384
 #tier 1
 #notfortier 2
 #notfortier 3
@@ -306,7 +306,7 @@
 
 #newitem
 #id lifedrain
-#gameid 63
+#dominionsId 63
 #notfortier 1
 #tier 2
 #tier 3
@@ -315,7 +315,7 @@
 
 #newitem
 #id paralyze-T1
-#gameid 282
+#dominionsId 282
 #tier 1
 #notfortier 2
 #notfortier 3
@@ -324,7 +324,7 @@
 
 #newitem
 #id paralyze
-#gameid 283
+#dominionsId 283
 #notfortier 1
 #tier 2
 #tier 3
@@ -333,7 +333,7 @@
 
 #newitem
 #id sleeptouch
-#gameid 387
+#dominionsId 387
 #tier 1
 #tier 2
 #tier 3
@@ -342,7 +342,7 @@
 
 #newitem
 #id rage
-#gameid 622
+#dominionsId 622
 #basechance 0
 #chanceinc "personalmagic nature 1 0.5"
 #chanceinc "personalmagic blood 1 0.5"
@@ -356,7 +356,7 @@
 #id fire_bonds
 #basechance 0
 #chanceinc "personalmagic fire 2 0.25"
-#gameid 302
+#dominionsId 302
 #notfortier 1
 #notfortier 2
 #tier 3
@@ -367,7 +367,7 @@
 #id astral_fetters
 #basechance 0
 #chanceinc "personalmagic astral 2 0.25"
-#gameid 416
+#dominionsId 416
 #notfortier 1
 #notfortier 2
 #tier 3
@@ -378,7 +378,7 @@
 #id false_fetters
 #basechance 0
 #chanceinc "personalmagic air 2 0.25"
-#gameid 219
+#dominionsId 219
 #notfortier 1
 #notfortier 2
 #tier 3
@@ -387,7 +387,7 @@
 
 #newitem
 #id twig
-#gameid 498
+#dominionsId 498
 #basechance 0
 #chanceinc "personalmagic nature 1 1"
 #sprite /graphics/illithid/starchild/weapon/caster/twig.png
@@ -399,7 +399,7 @@
 
 #newitem
 #id branch
-#gameid 240
+#dominionsId 240
 #basechance 0
 #chanceinc "personalmagic nature 1 1"
 #sprite /graphics/illithid/starchild/weapon/caster/twig.png
@@ -410,7 +410,7 @@
 
 #newitem
 #id torch
-#gameid 666
+#dominionsId 666
 #basechance 0
 #chanceinc "personalmagic fire 1 1"
 #sprite /graphics/illithid/starchild/weapon/caster/torch.png
@@ -422,7 +422,7 @@
 
 #newitem
 #id sickle
-#gameid 57
+#dominionsId 57
 #basechance 0
 #chanceinc "personalmagic nature 1 earth 1 1"
 #sprite /graphics/illithid/starchild/weapon/caster/sickle.png
@@ -445,7 +445,7 @@
 
 #newitem
 #id astrolabe
-#gameid 637
+#dominionsId 637
 #basechance 0
 #chanceinc "personalmagic air 1 astral 1 1"
 #chanceinc "personalmagic air 1 water 1 1"
@@ -459,7 +459,7 @@
 
 #newitem
 #id censer
-#gameid 516
+#dominionsId 516
 #basechance 0
 #chanceinc "personalmagic holy 1 1"
 #sprite /graphics/illithid/starchild/weapon/caster/censer.png
@@ -484,7 +484,7 @@
 
 #newitem
 #id scales
-#gameid 637
+#dominionsId 637
 #basechance 0
 #chanceinc "personalmagic astral 1 1"
 #chanceinc "personalcommand #alch 5"
@@ -496,7 +496,7 @@
 
 #newitem
 #id square
-#gameid 638
+#dominionsId 638
 #basechance 0
 #chanceinc "personalmagic earth 1 1"
 #sprite /graphics/illithid/starchild/weapon/caster/square.png
@@ -507,7 +507,7 @@
 
 #newitem
 #id whip
-#gameid 40
+#dominionsId 40
 #sprite /graphics/illithid/starchild/weapon/caster/whip.png
 #command "#taskmaster +1"
 #tier 1
@@ -518,7 +518,7 @@
 
 #newitem
 #id whisk
-#gameid 502
+#dominionsId 502
 #sprite /graphics/illithid/starchild/weapon/caster/whisk.png
 #tier 1
 #tier 2
@@ -550,7 +550,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #basechance 0
 #chanceinc "personalmagic earth 1 1"
 #chanceinc "personalcommand #fixforgebonus 10"
@@ -596,7 +596,7 @@
 
 #newitem
 #id cod
-#gameid 591
+#dominionsId 591
 #chanceinc "personalcommand #insane 5"
 #sprite /graphics/illithid/starchild/weapon/caster/cod.png
 #tier 1

@@ -2,7 +2,7 @@
 
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/fomorian/giant/helmet/crown.png
 #theme "advanced"
 #armor

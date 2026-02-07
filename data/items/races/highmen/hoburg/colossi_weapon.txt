@@ -1,6 +1,6 @@
 #newitem
 #id claymore
-#gameid 258
+#dominionsId 258
 #sprite /graphics/weapon/2h/zweihander.png
 #offsetx 8
 #offsety 7
@@ -10,7 +10,7 @@
 
 #newitem
 #id greatsword
-#gameid 11
+#dominionsId 11
 #sprite /graphics/weapon/2h/zweihander.png
 #offsetx 8
 #offsety 7
@@ -21,7 +21,7 @@
 
 #newitem
 #id greatclub
-#gameid 165
+#dominionsId 165
 #sprite /graphics/highmen/weapons/offhand_club.png
 #offsetx 2
 #offsety 8

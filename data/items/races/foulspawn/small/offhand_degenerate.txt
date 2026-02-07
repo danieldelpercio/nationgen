@@ -2,14 +2,14 @@
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #needstype larm onehand
 #hand
 #enditem
 
 #newitem
 #id claw
-#gameid 29
+#dominionsId 29
 #needstype larm claw
 #claw
 #enditem
@@ -17,7 +17,7 @@
 #newitem
 #id claw_stun
 #basechance 0.25
-#gameid 250
+#dominionsId 250
 #needstype larm claw
 #claw
 #command "#gcost +1"
@@ -26,7 +26,7 @@
 #newitem
 #id claw_poison
 #basechance 0.25
-#gameid 248
+#dominionsId 248
 #needstype larm claw
 #claw
 #command "#gcost +1"
@@ -34,7 +34,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #tentacle
 #needstype larm tentacle
 #enditem
@@ -42,7 +42,7 @@
 #newitem
 #id tentacle_sleep
 #basechance 0.25
-#gameid 387
+#dominionsId 387
 #tentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -52,7 +52,7 @@
 #newitem
 #id tentacle_strangle
 #basechance 0.25
-#gameid 116
+#dominionsId 116
 #tentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -62,7 +62,7 @@
 #newitem
 #id pincer
 #basechance 0.25
-#gameid 273
+#dominionsId 273
 #pincer
 #command "#gcost +1"
 #needstype larm pincer
@@ -70,7 +70,7 @@
 
 #newitem
 #id snake_strangle
-#gameid 116
+#dominionsId 116
 #neck
 #command "#gcost +1"
 #needstype larm snake
@@ -80,7 +80,7 @@
 
 #newitem
 #id snake_bite
-#gameid 127
+#dominionsId 127
 #neck
 #command "#gcost +1"
 #needstype larm snake
@@ -89,7 +89,7 @@
 
 #newitem
 #id swan_peck
-#gameid 404
+#dominionsId 404
 #neck
 #needstype larm swan
 #type melee

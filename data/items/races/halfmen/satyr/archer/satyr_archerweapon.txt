@@ -1,6 +1,6 @@
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #eliteversion broadsword
 #theme "iron"
 #theme "austral"
@@ -11,7 +11,7 @@
 
 #newitem
 #id bronze_shortsword
-#gameid 645
+#dominionsId 645
 #eliteversion bronze_broadsword
 #theme "bronze"
 #theme "central"
@@ -21,7 +21,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme "primitive"
 #theme "iron"
 #theme "elite"
@@ -33,7 +33,7 @@
 
 #newitem
 #id bronze_axe
-#gameid 675
+#dominionsId 675
 #theme "primitive"
 #theme "bronze"
 #theme "elite"
@@ -43,7 +43,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #theme "elite"
 #theme "iron"
 #theme "austral"
@@ -60,7 +60,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #theme "elite"
 #theme "iron"
 #theme "austral"
@@ -70,7 +70,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #theme "elite"
 #theme "iron"
 #theme "austral"
@@ -81,7 +81,7 @@
 
 #newitem
 #id bronze_hammer
-#gameid 13
+#dominionsId 13
 #theme "elite"
 #theme "austral"
 #theme "boreal"
@@ -92,7 +92,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #theme "elite"
 #theme "iron"
 #theme "austral"

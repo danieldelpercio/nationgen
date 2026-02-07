@@ -1,6 +1,6 @@
 #newitem
 #id mindblast
-#gameid 311
+#dominionsId 311
 #mind
 #thought
 #soul

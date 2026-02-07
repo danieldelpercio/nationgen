@@ -1,7 +1,7 @@
 --- Ring
 #newitem
 #id 16
-#gameid 6
+#dominionsId 6
 #sprite /graphics/bodyarmor/bronze/ringcuirass.png
 #armor
 #basechance 2
@@ -11,7 +11,7 @@
 
 #newitem
 #id 17
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/bronze/ringhauberk_bow.png
 #armor
 #needstype legs bronze
@@ -21,7 +21,7 @@
 
 #newitem -- full ring
 #id 19
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/bronze/fullring_bow.png
 #armor
 #needstype legs bronze
@@ -33,7 +33,7 @@
 --- Scale
 #newitem
 #id 9
-#gameid 100
+#dominionsId 100
 #sprite /graphics/bodyarmor/bronze/scalecuirass.png
 #armor
 #theme "bronze"
@@ -41,7 +41,7 @@
 
 #newitem
 #id 10
-#gameid 101
+#dominionsId 101
 #sprite /graphics/bodyarmor/bronze/scalehauberk.png
 #armor
 #basechance 0.5
@@ -62,7 +62,7 @@
 --- Plate
 #newitem
 #id 13
-#gameid 142
+#dominionsId 142
 #sprite /graphics/bodyarmor/bronze/platecuirass.png
 #armor
 #basechance 0.5
@@ -71,7 +71,7 @@
 
 #newitem
 #id 14
-#gameid 136
+#dominionsId 136
 #sprite /graphics/bodyarmor/bronze/platehauberk_bow.png
 #armor
 #basechance 0.25

@@ -1,7 +1,7 @@
 #newitem
 #id vinewhip
 #basechance 0.05
-#gameid 136
+#dominionsId 136
 #sprite /graphics/hoburg/vine/vinewhip.png
 #offsetx 1
 #offsety -7
@@ -14,7 +14,7 @@
 #newitem
 #id thornspear
 #basechance 0.05
-#gameid 79
+#dominionsId 79
 #sprite /graphics/weapon/mage/staff_branch.png
 #offsety -7
 #command "#gcost +2"
@@ -25,7 +25,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/firbolg/weapon/club.png
 #offsetx -1
 #offsety -3
@@ -34,7 +34,7 @@
 
 #newitem
 #id club_spiked
-#gameid 265
+#dominionsId 265
 #sprite /graphics/firbolg/weapon/club_spiked.png
 #offsetx -1
 #offsety -3
@@ -44,7 +44,7 @@
 #newitem
 #id tentacle
 #theme "primitive"
-#gameid 85
+#dominionsId 85
 #needs offhand carrionvine
 #enditem
 
@@ -54,5 +54,5 @@
 #basechance 0.05
 #theme "elite"
 #needs offhand sleepvine
-#gameid 116
+#dominionsId 116
 #enditem

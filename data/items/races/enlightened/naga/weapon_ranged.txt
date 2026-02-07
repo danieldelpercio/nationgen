@@ -1,6 +1,6 @@
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/enlightened/naga/weapon/bow_long.png
 #needs quiver quiver
 #basechance 6
@@ -8,7 +8,7 @@
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/enlightened/naga/weapon/bow_composite.png
 #needs quiver quiver
 #basechance 6
@@ -34,7 +34,7 @@
 
 #newitem
 #id "throwingaxe_iron"
-#gameid 260
+#dominionsId 260
 #sprite /graphics/enlightened/naga/weapon/throwingaxe.png
 #theme iron
 #skirmisher

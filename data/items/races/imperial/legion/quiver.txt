@@ -3,7 +3,7 @@
 
 #newitem
 #id axes
-#gameid 260
+#dominionsId 260
 #enditem
 
 #newitem

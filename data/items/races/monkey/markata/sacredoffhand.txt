@@ -1,6 +1,6 @@
 #newitem
 #id oh-fist
-#gameid 92
+#dominionsId 92
 #sacred
 #basechance 0
 #elite

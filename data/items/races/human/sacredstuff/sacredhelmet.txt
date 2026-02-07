@@ -1,6 +1,6 @@
 #newitem -- Iron cap
 #id 10
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/bearskin.png
 #armor
 #theme "primitive"
@@ -11,7 +11,7 @@
 
 #newitem -- Iron cap
 #id 11
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/wolfskin.png
 #armor
 #theme "primitive"
@@ -22,7 +22,7 @@
 
 #newitem
 #id halfhelmet-sprite4-golden
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/special/goldenelitehalfhelmet1.png
 #recolormask /graphics/helmet/special/elitehalfhelmet1_recolormask.png
 #armor
@@ -31,7 +31,7 @@
 
 #newitem
 #id cap-sprite4-golden
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/goldenelitehalfhelmet1.png
 #recolormask /graphics/helmet/special/elitehalfhelmet1_recolormask.png
 #armor
@@ -40,7 +40,7 @@
 
 #newitem
 #id halfhelmet-golden
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/special/goldenhelmet1.png
 #armor
 #theme "sacred"
@@ -48,7 +48,7 @@
 
 #newitem
 #id cap-golden
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/goldenhelmet1.png
 #armor
 #theme "sacred"
@@ -56,7 +56,7 @@
 
 #newitem
 #id sunhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/caster/sunhelm.png
 #armor
 #theme "sacred"

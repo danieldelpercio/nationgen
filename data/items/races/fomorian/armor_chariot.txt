@@ -4,7 +4,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/fomorian/armor/leatherhauberk.png
 #armor
 #theme "leather"
@@ -14,7 +14,7 @@
 
 #newitem
 #id "bronze ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/fomorian/armor/ringhauberk_bronze.png
 #armor
 #theme "leather"
@@ -23,7 +23,7 @@
 
 #newitem
 #id "iron ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/fomorian/armor/ringhauberk_iron.png
 #armor
 #theme "leather"
@@ -35,7 +35,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/fomorian/armor/scalecuirass_bronze.png
 #armor
 #theme "bronze"
@@ -43,7 +43,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/fomorian/armor/scalehauberk_bronze.png
 #armor
 #theme "bronze"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/armor/scalecuirass_iron.png
 #armor
 #theme "iron"
@@ -59,7 +59,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/fomorian/armor/scalehauberk_iron.png
 #armor
 #theme "iron"
@@ -71,7 +71,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/fomorian/armor/scalecuirass_iron.png
 #armor
 #theme "iron"
@@ -79,7 +79,7 @@
 
 #newitem
 #id "chain hauberk short"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/fomorian/armor/scalehauberk_iron.png
 #armor
 #theme "iron"

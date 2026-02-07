@@ -1,6 +1,6 @@
 #newitem
 #id coraldagger
-#gameid 32
+#dominionsId 32
 #sprite /graphics/atlantian/weapon/coraldagger-a.png
 #enditem
 

@@ -1,7 +1,7 @@
 
 #newitem
 #id shortsword
-#gameid 645
+#dominionsId 645
 #sprite /graphics/agarthan/weapons/shortsword_bronze.png
 #basechance 0.2
 #tag "name infantry swordsman"

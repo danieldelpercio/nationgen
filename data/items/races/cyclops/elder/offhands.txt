@@ -1,7 +1,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/cyclops/elder/weapon/axe_bronze_oh.png
 #eliteversion axe_gold
 #theme "bronze"
@@ -9,7 +9,7 @@
 
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #sprite /graphics/cyclops/elder/weapon/axe_iron_oh.png
 #eliteversion axe_silver
 #theme "iron"
@@ -33,7 +33,7 @@
 
 #newitem
 #id sword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/cyclops/elder/weapon/sword_bronze_oh.png
 #eliteversion sword_gold
 #theme "bronze"
@@ -41,7 +41,7 @@
 
 #newitem
 #id sword_iron
-#gameid 6
+#dominionsId 6
 #sprite /graphics/cyclops/elder/weapon/sword_iron_oh.png
 #eliteversion sword_gold
 #theme "iron"
@@ -49,7 +49,7 @@
 
 #newitem
 #id sword_gold
-#gameid 474
+#dominionsId 474
 #sprite /graphics/cyclops/elder/weapon/sword_gold_oh.png
 #theme "elite"
 #enditem
@@ -64,7 +64,7 @@
 
 #newitem
 #id hammer_iron
-#gameid 8
+#dominionsId 8
 #sprite /graphics/cyclops/elder/weapon/hammer_iron_oh.png
 #eliteversion hammer_gold
 #theme "iron"
@@ -72,7 +72,7 @@
 
 #newitem
 #id hammer_gold
-#gameid 648
+#dominionsId 648
 #sprite /graphics/cyclops/elder/weapon/hammer_gold_oh.png
 #theme "elite"
 #enditem

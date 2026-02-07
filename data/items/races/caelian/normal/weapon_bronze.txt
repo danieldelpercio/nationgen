@@ -2,7 +2,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/weapon/bronze/hatchet.png
 #theme "primitive"
 #theme "bronze"
@@ -17,7 +17,7 @@
 
 #newitem
 #id flail_bronze
-#gameid 16
+#dominionsId 16
 #sprite /graphics/weapon/bronze/flail.png
 #theme "bronze"
 #enditem
@@ -57,7 +57,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/weapon/bronze/longspear.png
 #theme "bronze"
 #theme "formationfighter"
@@ -72,14 +72,14 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/weapon/bronze/shortsword.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id lance_bronze
-#gameid 651
+#dominionsId 651
 #sprite /graphics/weapon/bronze/spear.png
 #tag "name infantry spearman"
 #theme "bronze"
@@ -88,7 +88,7 @@
 
 #newitem
 #id short_trident_bronze
-#gameid 680
+#dominionsId 680
 #sprite /graphics/weapon/bronze/trident.png
 #theme "bronze"
 #tag "prefix trident"
@@ -98,7 +98,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/weapon/bronze/trident.png
 #theme "bronze"
 #tag "prefix trident"
@@ -114,7 +114,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/weapon/bronze/kopesh.png
 #theme "bronze"
 #enditem

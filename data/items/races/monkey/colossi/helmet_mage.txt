@@ -58,7 +58,7 @@
 
 #newitem
 #id headdress_white
-#gameid 120
+#dominionsId 120
 #basechance 0.25
 #sprite /graphics/monkey/giant/headdress_tall4.png
 #armor
@@ -71,7 +71,7 @@
 
 #newitem
 #id headdress_offwhite
-#gameid 120
+#dominionsId 120
 #basechance 0.25
 #sprite /graphics/monkey/giant/headdress_tall3.png
 #armor
@@ -84,7 +84,7 @@
 
 #newitem
 #id headdress_grey
-#gameid 120
+#dominionsId 120
 #basechance 0.25
 #sprite /graphics/monkey/giant/headdress_tall2.png
 #armor
@@ -97,7 +97,7 @@
 
 #newitem
 #id headdress_black
-#gameid 120
+#dominionsId 120
 #basechance 0.25
 #sprite /graphics/monkey/giant/headdress_tall1.png
 #armor
@@ -110,7 +110,7 @@
 
 #newitem
 #id headdress_light
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall4.png
 #recolormask self
 #armor
@@ -122,7 +122,7 @@
 
 #newitem
 #id headdress_dim
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall3.png
 #recolormask self
 #armor
@@ -134,7 +134,7 @@
 
 #newitem
 #id headdress_dull
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall2.png
 #recolormask self
 #armor
@@ -146,7 +146,7 @@
 
 #newitem
 #id headdress_dark
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall1.png
 #recolormask self
 #armor
@@ -161,7 +161,7 @@
 -- Metal caps
 #newitem
 #id bronze_cone
-#gameid 135
+#dominionsId 135
 #sprite /graphics/monkey/giant/goldcone.png
 #tag "eliteversion crown"
 #tag "eliteversion bronze_cone_tall"
@@ -174,7 +174,7 @@
 
 #newitem
 #id bronze_cone_tall
-#gameid 135
+#dominionsId 135
 #sprite /graphics/monkey/giant/goldcone_tall.png
 #tag "eliteversion crown"
 #armor
@@ -186,7 +186,7 @@
 
 #newitem
 #id giltcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/giant/cap_gold.png
 #tag "eliteversion headdress_gold"
 #armor
@@ -198,7 +198,7 @@
 
 #newitem
 #id headdress_silver
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/giant/headdress_silver.png
 #recolormask /graphics/monkey/giant/headdress_recolormask.png
 #armor
@@ -211,7 +211,7 @@
 
 #newitem
 #id headdress_gold
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/giant/headdress_gold.png
 #recolormask /graphics/monkey/giant/headdress_recolormask.png
 #armor
@@ -226,7 +226,7 @@
 -- Crowns
 #newitem
 #id crown_silver
-#gameid 148
+#dominionsId 148
 #sprite /graphics/monkey/giant/crown_silver.png
 #armor
 #tag "eliteversion crown_gold"
@@ -237,7 +237,7 @@
 
 #newitem
 #id crown_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/monkey/giant/crown_gold.png
 #armor
 #tag "eliteversion crown_annunaki"
@@ -250,7 +250,7 @@
 
 #newitem
 #id crown_ahura
-#gameid 148
+#dominionsId 148
 #sprite /graphics/monkey/giant/crown_ahura.png
 #armor
 #tag "eliteversion crown_annunaki"
@@ -262,7 +262,7 @@
 
 #newitem
 #id crown_annunaki
-#gameid 148
+#dominionsId 148
 #sprite /graphics/monkey/giant/crown_annunaki.png
 #armor
 #tag "eliteversion crown_annunaki"
@@ -274,7 +274,7 @@
 
 #newitem
 #id nemes_blue
-#gameid 148
+#dominionsId 148
 #basechance 0.1
 #chanceinc slottag armor blue 1.9
 #sprite /graphics/monkey/giant/nemes.png
@@ -289,7 +289,7 @@
 
 #newitem
 #id nemes
-#gameid 148
+#dominionsId 148
 #basechance 0.9
 #chanceinc slottag armor blue -0.8
 #sprite /graphics/monkey/giant/nemes.png
@@ -305,7 +305,7 @@
 
 #newitem
 #id nemes_fancy_blue
-#gameid 148
+#dominionsId 148
 #basechance 0.1
 #chanceinc slottag armor blue 1.9
 #sprite /graphics/monkey/giant/nemes_fancy.png
@@ -319,7 +319,7 @@
 
 #newitem
 #id nemes_fancy
-#gameid 148
+#dominionsId 148
 #basechance 0.9
 #chanceinc slottag armor blue -0.8
 #sprite /graphics/monkey/giant/nemes_fancy.png
@@ -334,7 +334,7 @@
 
 #newitem
 #id nemes_ornate_blue
-#gameid 148
+#dominionsId 148
 #basechance 0.1
 #chanceinc slottag armor blue 1.9
 #sprite /graphics/monkey/giant/nemes_ornate.png
@@ -349,7 +349,7 @@
 
 #newitem
 #id nemes_ornate
-#gameid 148
+#dominionsId 148
 #basechance 0.9
 #chanceinc slottag armor blue -0.8
 #sprite /graphics/monkey/giant/nemes_ornate.png
@@ -364,7 +364,7 @@
 
 #newitem
 #id khepresh_blue
-#gameid 148
+#dominionsId 148
 #basechance 0.1
 #chanceinc slottag armor blue 1.9
 #sprite /graphics/monkey/giant/khepresh.png
@@ -381,7 +381,7 @@
 
 #newitem
 #id khepresh
-#gameid 148
+#dominionsId 148
 #basechance 0.9
 #chanceinc slottag armor blue -0.8
 #sprite /graphics/monkey/giant/khepresh.png
@@ -397,7 +397,7 @@
 
 #newitem
 #id khepresh_fancy_blue
-#gameid 148
+#dominionsId 148
 #basechance 0.1
 #chanceinc slottag armor blue 1.9
 #sprite /graphics/monkey/giant/khepresh_fancy.png
@@ -413,7 +413,7 @@
 
 #newitem
 #id khepresh_fancy
-#gameid 148
+#dominionsId 148
 #basechance 0.9
 #chanceinc slottag armor blue -0.8
 #sprite /graphics/monkey/giant/khepresh_fancy.png
@@ -429,7 +429,7 @@
 
 #newitem
 #id hedjet_white
-#gameid 148
+#dominionsId 148
 #basechance 0.25
 #sprite /graphics/monkey/giant/hedjet_white.png
 #armor
@@ -444,7 +444,7 @@
 
 #newitem
 #id hedjet_pale
-#gameid 148
+#dominionsId 148
 #basechance 0.25
 #sprite /graphics/monkey/giant/hedjet.png
 #recolormask /graphics/monkey/giant/hedjet_recolormask1.png
@@ -459,7 +459,7 @@
 
 #newitem
 #id hedjet_dull
-#gameid 148
+#dominionsId 148
 #basechance 0.25
 #sprite /graphics/monkey/giant/hedjet.png
 #recolormask /graphics/monkey/giant/hedjet_recolormask2.png
@@ -474,7 +474,7 @@
 
 #newitem
 #id hedjet_fancy_white
-#gameid 148
+#dominionsId 148
 #basechance 0.25
 #sprite /graphics/monkey/giant/hedjet_fancy_white.png
 #armor
@@ -488,7 +488,7 @@
 
 #newitem
 #id hedjet_fancy_pale
-#gameid 148
+#dominionsId 148
 #basechance 0.25
 #sprite /graphics/monkey/giant/hedjet_fancy.png
 #recolormask /graphics/monkey/giant/hedjet_fancy_recolormask1.png
@@ -503,7 +503,7 @@
 
 #newitem
 #id hedjet_fancy_dull
-#gameid 148
+#dominionsId 148
 #basechance 0.25
 #sprite /graphics/monkey/giant/hedjet_fancy.png
 #recolormask /graphics/monkey/giant/hedjet_fancy_recolormask2.png
@@ -534,7 +534,7 @@
 
 #newitem
 #id skullface
-#gameid 125
+#dominionsId 125
 #basechance 0.1
 #chanceinc personalmagic death 1 1.9
 #sprite /graphics/monkey/giant/skullface.png

@@ -1,6 +1,6 @@
 #newitem
 #id kryss
-#gameid 256
+#dominionsId 256
 #sprite /graphics/enlightened/dantih/weapon/oh_kryss.png
 #offsetx -36
 #offsety -24
@@ -9,7 +9,7 @@
 
 #newitem
 #id dagger_bronze
-#gameid 674
+#dominionsId 674
 #sprite /graphics/enlightened/dantih/weapon/oh_kryss_bronze.png
 #offsetx -36
 #offsety -24
@@ -18,7 +18,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/enlightened/dantih/weapon/caster/hammer.png
 #eliteversion maul
 #tier 2
@@ -27,7 +27,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/enlightened/dantih/weapon/mace.png
 #eliteversion mace_gilt
 #tier 1
@@ -35,14 +35,14 @@
 
 #newitem
 #id mace_gilt
-#gameid 12
+#dominionsId 12
 #sprite /graphics/enlightened/dantih/weapon/mace_gilt.png
 #tier 2
 #enditem
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/enlightened/dantih/weapon/falchion.png
 #tier 1
 #tier 2
@@ -51,7 +51,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/enlightened/dantih/weapon/falchion_bronze.png
 #tier 1
 #tier 2
@@ -60,7 +60,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/enlightened/dantih/weapon/caster/maul.png
 #tier 2
 #tier 3
@@ -68,7 +68,7 @@
 
 #newitem
 #id greatclub
-#gameid 165
+#dominionsId 165
 #sprite /graphics/enlightened/dantih/weapon/greatclub.png
 #tier 2
 #tier 1
@@ -88,7 +88,7 @@
 
 #newitem
 #id quarterstaff1
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_wood_light.png
 #eliteversion metalstaff
 #eliteversion skullstaff
@@ -98,7 +98,7 @@
 
 #newitem
 #id quarterstaff2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_wood_dark.png
 #eliteversion metalstaff
 #eliteversion skullstaff
@@ -108,7 +108,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_metal.png
 #eliteversion dynasticstaff_silver
 #eliteversion dynasticstaff_gold
@@ -118,7 +118,7 @@
 
 #newitem
 #id knobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_knobbly.png
 #eliteversion orbstaff
 #eliteversion gnarledstaff
@@ -128,7 +128,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_skull.png
 #eliteversion skullstaff_gold
 #tier 2
@@ -137,7 +137,7 @@
 
 #newitem
 #id dynasticstaff_silver
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_dynastic1.png
 #eliteversion dynasticstaff_gold
 #tier 2
@@ -146,14 +146,14 @@
 
 #newitem
 #id dynasticstaff_gold
-#gameid 238
+#dominionsId 238
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_dynastic2.png
 #tier 3
 #enditem
 
 #newitem
 #id skullstaff_gold
-#gameid 238
+#dominionsId 238
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_skull_gold.png
 #tier 3
 #theme death
@@ -161,7 +161,7 @@
 
 #newitem
 #id orbstaff
-#gameid 238
+#dominionsId 238
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_knobbly_orb.png
 #recolormask /graphics/enlightened/dantih/weapon/caster/sceptre_knobbly_orb_recolormask.png
 #tier 3
@@ -169,7 +169,7 @@
 
 #newitem
 #id gnarledstaff
-#gameid 238
+#dominionsId 238
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_gnarled.png
 #tier 3
 #theme nature
@@ -181,7 +181,7 @@
 
 #newitem
 #id baton
-#gameid 720
+#dominionsId 720
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_baton.png
 #tier 1
 #tier 2
@@ -189,14 +189,14 @@
 
 #newitem
 #id bamboo
-#gameid 501
+#dominionsId 501
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_baton.png
 #tier 1
 #enditem
 
 #newitem
 #id woodsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_wood.png
 #eliteversion woodsceptre_orb
 #eliteversion knobblysceptre
@@ -206,7 +206,7 @@
 
 #newitem
 #id woodsceptre_orb
-#gameid 172
+#dominionsId 172
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_wood.png
 #recolormask /graphics/enlightened/dantih/weapon/caster/sceptre_orb_recolormask.png
 #eliteversion goldsceptre_orb
@@ -217,7 +217,7 @@
 
 #newitem
 #id goldsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_gold.png
 #eliteversion goldsceptre_orb
 #eliteversion dynasticstaff_silver
@@ -227,7 +227,7 @@
 
 #newitem
 #id goldsceptre_orb
-#gameid 172
+#dominionsId 172
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_gold.png
 #recolormask /graphics/enlightened/dantih/weapon/caster/sceptre_orb_recolormask.png
 #eliteversion knobblysceptre_orb
@@ -239,7 +239,7 @@
 
 #newitem
 #id knobblysceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_knobbly.png
 #eliteversion knobblysceptre_orb
 #eliteversion knobblystaff
@@ -251,7 +251,7 @@
 
 #newitem
 #id knobblysceptre_orb
-#gameid 172
+#dominionsId 172
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_knobbly_orb.png
 #recolormask /graphics/enlightened/dantih/weapon/caster/sceptre_knobbly_orb_recolormask.png
 #eliteversion knobblysceptre_orb
@@ -263,7 +263,7 @@
 
 #newitem
 #id branch
-#gameid 240
+#dominionsId 240
 #sprite /graphics/enlightened/dantih/weapon/caster/sceptre_branch.png
 #eliteversion gnarledstaff
 #eliteversion log
@@ -276,7 +276,7 @@
 
 #newitem
 #id twig
-#gameid 498
+#dominionsId 498
 #sprite /graphics/enlightened/dantih/weapon/caster/wand_twig.png
 #theme nature
 #tier 1
@@ -285,7 +285,7 @@
 
 #newitem
 #id woodwand
-#gameid 151
+#dominionsId 151
 #sprite /graphics/enlightened/dantih/weapon/caster/wand_wood.png
 #tier 1
 #eliteversion woodsceptre
@@ -296,7 +296,7 @@
 
 #newitem
 #id woodwand_orb
-#gameid 151
+#dominionsId 151
 #sprite /graphics/enlightened/dantih/weapon/caster/wand_wood_orb.png
 #recolormask /graphics/enlightened/dantih/weapon/caster/wand_orb_recolormask.png
 #tier 2
@@ -307,7 +307,7 @@
 
 #newitem
 #id goldwand
-#gameid 151
+#dominionsId 151
 #sprite /graphics/enlightened/dantih/weapon/caster/wand_gold.png
 #tier 1
 #tier 2
@@ -318,7 +318,7 @@
 
 #newitem
 #id goldwand_orb
-#gameid 151
+#dominionsId 151
 #sprite /graphics/enlightened/dantih/weapon/caster/wand_gold_orb.png
 #recolormask /graphics/enlightened/dantih/weapon/caster/wand_orb_recolormask.png
 #tier 2

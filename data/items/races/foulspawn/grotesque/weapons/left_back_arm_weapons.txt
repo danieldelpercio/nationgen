@@ -28,7 +28,7 @@
 
 #newitem
 #id typhon_heads
-#gameid 491
+#dominionsId 491
 #type coldblooded
 #needs left_back_arm typhon
 #enditem

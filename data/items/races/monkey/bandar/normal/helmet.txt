@@ -65,7 +65,7 @@
 
 #newitem
 #id leathercap_plain
-#gameid 120
+#dominionsId 120
 #basechance 2
 #sprite /graphics/monkey/helmet/bandar/leathercap.png
 #armor
@@ -81,7 +81,7 @@
 
 #newitem
 #id ironcap_plain
-#gameid 20
+#dominionsId 20
 #basechance 4
 #sprite /graphics/monkey/helmet/bandar/ironcap.png
 #armor
@@ -113,7 +113,7 @@
 
 #newitem
 #id headdress_white
-#gameid 120
+#dominionsId 120
 #basechance 2
 #sprite /graphics/monkey/helmet/bandar/headdress_light.png
 #armor
@@ -128,7 +128,7 @@
 
 #newitem
 #id headdress_black
-#gameid 120
+#dominionsId 120
 #basechance 2
 #sprite /graphics/monkey/helmet/bandar/headdress_dark.png
 #armor
@@ -143,7 +143,7 @@
 
 #newitem
 #id headdress_light
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/helmet/bandar/headdress_light.png
 #recolormask self
 #armor
@@ -156,7 +156,7 @@
 
 #newitem
 #id headdress_dark
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/helmet/bandar/headdress_dark.png
 #recolormask self
 #armor
@@ -169,7 +169,7 @@
 
 #newitem
 #id ironcap_white
-#gameid 20
+#dominionsId 20
 #basechance 2
 #sprite /graphics/monkey/helmet/bandar/headdress_light.png
 #armor
@@ -183,7 +183,7 @@
 
 #newitem
 #id ironcap_black
-#gameid 20
+#dominionsId 20
 #basechance 2
 #sprite /graphics/monkey/helmet/bandar/headdress_dark.png
 #armor
@@ -197,7 +197,7 @@
 
 #newitem
 #id ironcap_light
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/bandar/headdress_light.png
 #recolormask self
 #armor
@@ -210,7 +210,7 @@
 
 #newitem
 #id ironcap_dark
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/bandar/headdress_dark.png
 #recolormask self
 #armor
@@ -227,7 +227,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/monkey/helmet/bandar/bronzecap.png
 #eliteversion bronzecap_elite
 #armor
@@ -237,7 +237,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/bandar/ironcap.png
 #eliteversion ironcap_elite
 #armor
@@ -247,7 +247,7 @@
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/monkey/helmet/bandar/halfhelmet.png
 #eliteversion halfhelmet_elite
 #armor
@@ -257,7 +257,7 @@
 
 #newitem
 #id bronzecap_elite
-#gameid 135
+#dominionsId 135
 #sprite /graphics/monkey/helmet/bandar_mage/bronze_cone.png
 #armor
 #theme "enlightened"
@@ -267,7 +267,7 @@
 
 #newitem
 #id ironcap_elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/bandar_mage/bronze_cone.png
 #armor
 #elite
@@ -278,7 +278,7 @@
 
 #newitem
 #id halfhelmet_elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/monkey/helmet/bandar_mage/bronze_cone.png
 #armor
 #theme "enlightened"
@@ -288,7 +288,7 @@
 
 #newitem
 #id fullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/monkey/helmet/bandar/fullhelm.png
 #armor
 #theme "enlightened"
@@ -299,7 +299,7 @@
 
 #newitem
 #id hoplitehelmet
-#gameid 123
+#dominionsId 123
 #sprite /graphics/monkey/helmet/bandar/hoplitehelm.png
 #armor
 #theme "enlightened"
@@ -312,7 +312,7 @@
 --- Imperial helms
 #newitem
 #id leathercap_imperial
-#gameid 119
+#dominionsId 119
 #sprite /graphics/monkey/helmet/bandar/leathercap.png
 #armor
 #theme "imperial"
@@ -322,7 +322,7 @@
 
 #newitem
 #id ironcap_imperial
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/bandar/ironcap.png
 #armor
 #theme "imperial"
@@ -332,7 +332,7 @@
 
 #newitem
 #id halfhelmet_imperial
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/bandar/halfhelmet.png
 #armor
 #theme "imperial"
@@ -342,7 +342,7 @@
 
 #newitem
 #id legionaryhelmet
-#gameid 126
+#dominionsId 126
 #sprite /graphics/monkey/helmet/bandar/legionaryhelm.png
 #eliteversion legionaryhelmet_elite
 #armor
@@ -353,7 +353,7 @@
 
 #newitem
 #id legionaryhelmet_elite
-#gameid 126
+#dominionsId 126
 #sprite /graphics/monkey/helmet/bandar/legionaryhelm_crested.png
 #recolormask /graphics/monkey/helmet/bandar/legionaryhelm_crested_recolormask.png
 #armor
@@ -380,7 +380,7 @@
 --- Oriental helms
 #newitem
 #id jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/monkey/helmet/bandar/jingasa.png
 #recolormask /graphics/monkey/helmet/bandar/jingasa_recolormask.png
 #armor
@@ -392,7 +392,7 @@
 
 #newitem
 #id kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/monkey/helmet/bandar/kabuto.png
 #eliteversion kabuto_elite
 #armor
@@ -403,7 +403,7 @@
 
 #newitem
 #id kabuto_elite
-#gameid 132
+#dominionsId 132
 #sprite /graphics/monkey/helmet/bandar/kabuto_elite.png
 #eliteversion kabuto_elite
 #armor

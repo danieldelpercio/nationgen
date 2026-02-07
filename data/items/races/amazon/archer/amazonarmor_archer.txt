@@ -4,7 +4,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/amazon/armor/standard/leathercuirass.png
 #armor
 #theme "leather"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "leather cuirass long"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/amazon/armor/standard/leathercuirass2.png
 #armor
 #theme "leather"
@@ -20,7 +20,7 @@
 
 #newitem --
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/amazon/armor/archer/leatherhauberk.png
 #armor
 #theme "leather"
@@ -28,7 +28,7 @@
 
 #newitem --
 #id "leather hauberk long"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/amazon/armor/archer/leatherhauberk2.png
 #armor
 #theme "leather"
@@ -37,7 +37,7 @@
 
 #newitem -- full leather
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/amazon/armor/archer/leatherhauberk.png
 #needs legs leatherpants
 #armor
@@ -50,7 +50,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/amazon/armor/standard/chaincuirass.png
 #armor
 #theme "iron"
@@ -59,7 +59,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/amazon/armor/standard/chainhauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #basechance 0.25
@@ -70,7 +70,7 @@
 
 #newitem
 #id "chain hauberk sleeveless"
-#gameid 13
+#dominionsId 13
 #basechance 0.25
 #sprite /graphics/amazon/armor/standard/chainhauberk2.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
@@ -81,7 +81,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/amazon/armor/standard/chainhauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -97,7 +97,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/amazon/armor/standard/scalecuirass.png
 #armor
 #theme "iron"
@@ -106,7 +106,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/amazon/armor/standard/scalehauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -116,7 +116,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/amazon/armor/standard/scalehauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -131,7 +131,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/amazon/armor/standard/scalecuirass_bronze.png
 #armor
 #basechance 0.5
@@ -140,7 +140,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/amazon/armor/standard/scalehauberk_bronze.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -164,7 +164,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/amazon/armor/standard/platecuirass.png
 #armor
 #basechance 0.5
@@ -174,7 +174,7 @@
 
 #newitem
 #id "plate hauberk" --
-#gameid 14
+#dominionsId 14
 #sprite /graphics/amazon/armor/standard/platehauberk.png
 #armor
 #basechance 0.25
@@ -185,7 +185,7 @@
 
 #newitem -- full plate --
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/amazon/armor/archer/fullplate.png
 #armor
 #basechance 0.125
@@ -198,7 +198,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/amazon/armor/standard/platecuirass_bronze.png
 #armor
 #basechance 0.5
@@ -207,7 +207,7 @@
 
 #newitem
 #id "bronze plate hauberk" 
-#gameid 101
+#dominionsId 101
 #sprite /graphics/amazon/armor/standard/platehauberk_bronze.png
 #armor
 #basechance 0.25
@@ -231,7 +231,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/amazon/armor/standard/ringcuirass.png
 #armor
 #basechance 2
@@ -241,7 +241,7 @@
 
 #newitem
 #id "ring hauberk short"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/amazon/armor/archer/ringhauberk.png
 #armor
 #theme "leather"
@@ -250,7 +250,7 @@
 
 #newitem
 #id "ring hauberk long"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/amazon/armor/archer/ringhauberk2.png
 #armor
 #theme "leather"
@@ -259,7 +259,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/amazon/armor/archer/ringhauberk.png
 #armor
 #theme "leather"
@@ -269,7 +269,7 @@
 
 #newitem
 #id "bronze ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/amazon/armor/standard/ringcuirass_bronze.png
 #armor
 #basechance 2
@@ -279,7 +279,7 @@
 
 #newitem
 #id "bronze ring hauberk short"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/amazon/armor/archer/ringhauberk_bronze.png
 #armor
 #theme "leather"
@@ -288,7 +288,7 @@
 
 #newitem
 #id "bronze ring hauberk long"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/amazon/armor/archer/ringhauberk2_bronze.png
 #armor
 #theme "leather"
@@ -297,7 +297,7 @@
 
 #newitem -- full ring
 #id "bronze full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/amazon/armor/archer/ringhauberk_bronze.png
 #armor
 #theme "leather"

@@ -12,7 +12,7 @@
 #newitem
 #basechance 1
 #id ogres_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/foulspawn/medium/helmet/leathercap.png
 #armor
 #maxprot 12
@@ -24,7 +24,7 @@
 #newitem
 #basechance 1
 #id ogres_leathercap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/foulspawn/medium/helmet/reinforcedcap.png
 #command "#rcost +1"
 #armor
@@ -37,7 +37,7 @@
 #newitem
 #basechance 1
 #id ogres_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/foulspawn/medium/helmet/ironcap.png
 #command "#rcost +2"
 #armor
@@ -49,7 +49,7 @@
 #newitem
 #basechance 0.5
 #id ogres_halfhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/foulspawn/medium/helmet/halfhelm.png
 #command "#rcost +3"
 #armor
@@ -62,7 +62,7 @@
 #newitem
 #basechance 0.5
 #id ogres_fullhelm
-#gameid 21
+#dominionsId 21
 #sprite /graphics/foulspawn/medium/helmet/fullhelm.png
 #command "#rcost +5"
 #armor
@@ -76,7 +76,7 @@
 #newitem
 #basechance 0.5
 #id ogres_jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/foulspawn/medium/helmet/jingasa.png
 #recolormask /graphics/foulspawn/medium/helmet/jingasa_recolormask.png
 #command "#rcost +2"
@@ -92,7 +92,7 @@
 #newitem
 #basechance 0.5
 #id ogres_kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/foulspawn/medium/helmet/kabuto.png
 #command "#rcost +4"
 #armor

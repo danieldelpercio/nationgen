@@ -10,7 +10,7 @@
 
 #newitem
 #id blowpipe
-#gameid 34
+#dominionsId 34
 #sprite /graphics/atlantian/weapon/blowpipe.png
 #tag "name ranger"
 #define "#prec +2"
@@ -20,7 +20,7 @@
 
 #newitem
 #id poison_sling
-#gameid 167
+#dominionsId 167
 #sprite /graphics/weapon/bowman/sling.png
 #tag "name ranger"
 #define "#prec +2"

@@ -1,6 +1,6 @@
 #newitem
 #id "coralcuirass"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/atlantian/armor/coralcuirass.png
 #armor
 #define "#poisonarmor"
@@ -8,14 +8,14 @@
 
 #newitem
 #id "sharkskinarmor"
-#gameid 151
+#dominionsId 151
 #sprite /graphics/atlantian/armor/sharkskinarmor.png
 #armor
 #enditem
 
 #newitem
 #id "shellarmor"
-#gameid 140
+#dominionsId 140
 #sprite /graphics/atlantian/armor/shellarmor.png
 #armor
 #enditem

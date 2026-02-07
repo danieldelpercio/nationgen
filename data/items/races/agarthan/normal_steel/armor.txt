@@ -2,21 +2,21 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/armor/steelarmor_light.png
 #armor
 #enditem
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/agarthan/armor/steelarmor_heavy.png
 #armor
 #enditem
 
 #newitem
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/agarthan/armor/steelarmor_heavy.png
 #needs legs steelpants
 #armor
@@ -27,7 +27,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/agarthan/armor/steelarmor_light.png
 #basechance 0.25
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/agarthan/armor/steelarmor_heavy.png
 #basechance 0.15
 #armor
@@ -43,7 +43,7 @@
 
 #newitem
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/agarthan/armor/steelarmor_heavy.png
 #needs legs steelpants
 #basechance 0.1

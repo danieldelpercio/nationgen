@@ -1,6 +1,6 @@
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "wood"
 #maxprot 9
@@ -9,7 +9,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "primitive"
 #maxprot 15
 #type slave
@@ -17,7 +17,7 @@
 
 #newitem
 #id hatchet_bronze
-#gameid 646
+#dominionsId 646
 #theme "primitive"
 #theme "bronze"
 #type slave
@@ -25,7 +25,7 @@
 
 #newitem
 #id dagger
-#gameid 674
+#dominionsId 674
 #theme "bronze"
 #theme "primitive"
 #type slave
@@ -34,20 +34,20 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #theme "bronze"
 #enditem
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #theme "bronze"
 #theme "elite"
 #enditem
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme "iron"
 #theme "primitive"
 #type slave
@@ -55,7 +55,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #theme "iron"
 #theme "primitive"
 #type slave
@@ -64,7 +64,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #theme "iron"
 #enditem
 
@@ -77,7 +77,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #theme "iron"
 #theme "advanced"
 #theme "elite"

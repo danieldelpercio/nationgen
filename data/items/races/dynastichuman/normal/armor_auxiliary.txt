@@ -19,7 +19,7 @@
 
 #newitem
 #id "linen cuirass"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_thick.png
 #basechance 5
 #tag "eliteversion 'elite linen cuirass'"
@@ -28,7 +28,7 @@
 
 #newitem
 #id "elite linen cuirass"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_imperial_elite.png
 #tag "eliteversion 'elite lorica segmentata'"
 #theme "elite"
@@ -39,7 +39,7 @@
 #newitem
 #id "lorica hamata"
 #basechance 2
-#gameid 116
+#dominionsId 116
 #sprite /graphics/dynastichuman/armor/lorica_hamata.png
 #tag "eliteversion 'elite lorica segmentata'"
 #armor
@@ -48,7 +48,7 @@
 
 #newitem
 #id "elite lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/dynastichuman/armor/lorica_segmentata_elite.png
 #theme "elite"
 #armor

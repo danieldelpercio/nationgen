@@ -3,20 +3,20 @@
 
 #newitem
 #id leather_cuirass
-#gameid 5
+#dominionsId 5
 #armor
 #enditem
 
 #newitem
 #id leather_hauberk
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/armor/mounted/leather_hauberk.png
 #armor
 #enditem
 
 #newitem -- full leather
 #id full_leather
-#gameid 15
+#dominionsId 15
 #sprite /graphics/advancedhuman/armor/mounted/leather_full.png
 #armor
 #enditem
@@ -26,7 +26,7 @@
 
 #newitem
 #id ring_cuirass
-#gameid 6
+#dominionsId 6
 #sprite /graphics/advancedhuman/armor/mounted/ring_cuirass.png
 #armor
 #enditem
@@ -34,14 +34,14 @@
 #newitem
 #basechance 2
 #id ring_hauberk
-#gameid 11
+#dominionsId 11
 #sprite /graphics/advancedhuman/armor/mounted/ring_hauberk.png
 #armor
 #enditem
 
 #newitem -- full ring
 #id full_ring
-#gameid 16
+#dominionsId 16
 #sprite /graphics/advancedhuman/armor/mounted/ring_full.png
 #armor
 #enditem
@@ -51,7 +51,7 @@
 
 #newitem
 #id scale_cuirass
-#gameid 7
+#dominionsId 7
 #sprite /graphics/advancedhuman/armor/mounted/mail_cuirass.png
 #armor
 #enditem
@@ -59,14 +59,14 @@
 #newitem
 #basechance 2
 #id scale_hauberk
-#gameid 12
+#dominionsId 12
 #sprite /graphics/advancedhuman/armor/mounted/mail_hauberk.png
 #armor
 #enditem
 
 #newitem -- full scale
 #id full_scale
-#gameid 17
+#dominionsId 17
 #sprite /graphics/advancedhuman/armor/mounted/mail_full.png
 #armor
 #enditem
@@ -76,7 +76,7 @@
 
 #newitem
 #id chain_cuirass
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/armor/mounted/mail_cuirass.png
 #armor
 #enditem
@@ -84,14 +84,14 @@
 #newitem
 #basechance 2
 #id chain_hauberk
-#gameid 13
+#dominionsId 13
 #sprite /graphics/advancedhuman/armor/mounted/mail_hauberk.png
 #armor
 #enditem
 
 #newitem -- full chain
 #id full_chain
-#gameid 18
+#dominionsId 18
 #sprite /graphics/advancedhuman/armor/mounted/mail_full.png
 #armor
 #enditem
@@ -102,7 +102,7 @@
 
 #newitem
 #id plate_cuirass
-#gameid 9
+#dominionsId 9
 #sprite /graphics/advancedhuman/armor/mounted/plate_cuirass.png
 #armor
 #enditem
@@ -110,14 +110,14 @@
 #newitem
 #basechance 2
 #id plate_hauberk
-#gameid 14
+#dominionsId 14
 #sprite /graphics/advancedhuman/armor/mounted/plate_hauberk.png
 #armor
 #enditem
 
 #newitem -- full plate
 #id full_plate
-#gameid 19
+#dominionsId 19
 #sprite /graphics/advancedhuman/armor/mounted/plate_full.png
 #armor
 #enditem

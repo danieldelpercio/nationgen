@@ -72,7 +72,7 @@
 
 #newitem
 #id goldcap
-#gameid 122
+#dominionsId 122
 #sprite /graphics/machakans/helmets/pygmy/goldcap.png
 #armor
 #tag "tier 3"
@@ -81,7 +81,7 @@
 
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/machakans/helmets/pygmy/crown.png
 #armor
 #tag "tier 3"
@@ -90,7 +90,7 @@
 
 #newitem
 #id crown_khepresh
-#gameid 148
+#dominionsId 148
 #sprite /graphics/machakans/helmets/pygmy/crown_khepresh.png
 #recolormask /graphics/machakans/helmets/pygmy/crown_khepresh_recolormask.png
 #armor
@@ -100,7 +100,7 @@
 
 #newitem
 #id crown_nemes
-#gameid 148
+#dominionsId 148
 #sprite /graphics/machakans/helmets/pygmy/crown_nemes.png
 #recolormask /graphics/machakans/helmets/pygmy/crown_nemes_recolormask.png
 #armor

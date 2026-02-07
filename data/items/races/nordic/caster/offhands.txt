@@ -23,11 +23,11 @@
 
 #newitem
 #id pitcher
-#gameid 496
+#dominionsId 496
 #sprite /graphics/offhand/mage/pitcher.png
 #enditem
 
 #newitem
 #id sutra
-#gameid 459
+#dominionsId 459
 #enditem

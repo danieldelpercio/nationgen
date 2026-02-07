@@ -1,6 +1,6 @@
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #enditem
 
 #newitem

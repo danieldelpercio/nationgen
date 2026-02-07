@@ -9,7 +9,7 @@
 
 #newitem
 #id cap_leather
-#gameid 120
+#dominionsId 120
 #sprite /graphics/jotun/gygr/helmet/cap_leather.png
 #tier 1
 #tier 2
@@ -19,7 +19,7 @@
 
 #newitem
 #id cap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/jotun/gygr/helmet/cap_reinforced.png
 #armor
 #tier 1
@@ -29,7 +29,7 @@
 
 #newitem
 #id cap_iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/jotun/gygr/helmet/cap_iron.png
 #armor
 #tier 1
@@ -39,7 +39,7 @@
 
 #newitem
 #id cap_ice
-#gameid 29
+#dominionsId 29
 #basechance 0.1
 #sprite /graphics/jotun/gygr/helmet/cap_ice.png
 #armor

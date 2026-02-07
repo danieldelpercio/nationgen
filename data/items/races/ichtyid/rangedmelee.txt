@@ -1,6 +1,6 @@
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/ichtyid/weapon/bronze_shortsword_oh.png
 #basechance 0.5
 #theme "bronze"
@@ -17,7 +17,7 @@
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/ichtyid/weapon/clubsword_oh.png
 #basechance 0.5
 #theme "inland"
@@ -26,7 +26,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #offsetx 5
 #offsety 7
@@ -35,7 +35,7 @@
 
 #newitem
 #id dagger_coral
-#gameid 32
+#dominionsId 32
 #sprite /graphics/atlantian/weapon/coralkniferight.png
 #offsetx -6
 #offsety -1
@@ -45,7 +45,7 @@
 
 #newitem
 #id club_coral
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ichtyid/weapon/coral_club_oh.png
 #theme "coral"
 #theme "marine"

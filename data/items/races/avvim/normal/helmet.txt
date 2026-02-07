@@ -8,7 +8,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/avvim/helmet/leather_cap.png
 #armor
 #theme "primitive"
@@ -16,14 +16,14 @@
 
 #newitem
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/avvim/helmet/reinforced_cap.png
 #armor
 #enditem
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/avvim/helmet/bronze_cap.png
 #armor
 #tag "eliteversion crestedhelm1"
@@ -32,7 +32,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/avvim/helmet/iron_cap.png
 #armor
 #tag "eliteversion crestedhelm2"
@@ -40,7 +40,7 @@
 
 #newitem
 #id hoplitehelm
-#gameid 123
+#dominionsId 123
 #sprite /graphics/avvim/helmet/hoplite_helm.png
 #armor
 #tag "eliteversion hoplitehelm_elite"
@@ -50,7 +50,7 @@
 
 #newitem
 #id crestedhelm1
-#gameid 162
+#dominionsId 162
 #sprite /graphics/avvim/helmet/crested_helm.png
 #recolormask /graphics/avvim/helmet/crest_recolormask1.png
 #armor
@@ -59,7 +59,7 @@
 
 #newitem
 #id crestedhelm2
-#gameid 162
+#dominionsId 162
 #sprite /graphics/avvim/helmet/crested_helm.png
 #recolormask /graphics/avvim/helmet/crest_recolormask2.png
 #armor
@@ -68,7 +68,7 @@
 
 #newitem
 #id hoplitehelm_elite
-#gameid 123
+#dominionsId 123
 #sprite /graphics/avvim/helmet/hoplite_helm_crested.png
 #recolormask /graphics/avvim/helmet/crest_recolormask2.png
 #armor

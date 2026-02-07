@@ -1,7 +1,7 @@
 #newitem
 #id thornstaff
 #basechance 0.05
-#gameid 81
+#dominionsId 81
 #sprite /graphics/weapon/mage/staff_vinebone.png
 #offsetx 1
 #offsety -2
@@ -14,7 +14,7 @@
 #newitem
 #id greatclub
 #basechance 2
-#gameid 165
+#dominionsId 165
 #sprite /graphics/weapon/2h/greatclub.png
 #offsetx 4
 #offsety -4
@@ -34,7 +34,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/firbolg/weapon/quarterstaff.png
 #theme "wood"
 #offsetx -3
@@ -42,7 +42,7 @@
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #needs offhand fist
 #command "#gcost -7"
 #theme "primitive"

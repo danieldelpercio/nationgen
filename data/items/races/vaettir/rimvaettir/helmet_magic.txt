@@ -1,6 +1,6 @@
 #newitem
 #id "icecap"
-#gameid 29
+#dominionsId 29
 #sprite /graphics/vaettir/helmet/rimvaettir/ice_cap.png
 #armor
 #type ice
@@ -9,7 +9,7 @@
 
 #newitem
 #id "icehelm"
-#gameid 124
+#dominionsId 124
 #sprite /graphics/vaettir/helmet/rimvaettir/ice_helmet.png
 #armor
 #type ice

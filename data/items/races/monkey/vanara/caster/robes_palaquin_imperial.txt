@@ -1,7 +1,7 @@
 --- Imperial robes (monochrome)
 #newitem
 #id imperialrobe_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright_old.png
 #recolormask self
 #armor
@@ -11,7 +11,7 @@
 
 #newitem
 #id imperialrobe_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium_old.png
 #recolormask self
 #armor
@@ -21,7 +21,7 @@
 
 #newitem
 #id imperialrobe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark_old.png
 #recolormask self
 #armor
@@ -33,7 +33,7 @@
 --- Imperial robes (twotone)
 #newitem
 #id imperialrobe_whitetop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright_old.png
 #armor
 #tag "tier 3"
@@ -42,7 +42,7 @@
 
 #newitem
 #id imperialrobe_greytop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium_old.png
 #armor
 #tag "tier 3"
@@ -51,7 +51,7 @@
 
 #newitem
 #id imperialrobe_blacktop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark_old.png
 #armor
 #tag "tier 3"
@@ -60,7 +60,7 @@
 
 #newitem
 #id imperialrobe_whitetop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright_old.png
 #armor
 #tag "tier 3"
@@ -69,7 +69,7 @@
 
 #newitem
 #id imperialrobe_greytop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium_old.png
 #armor
 #tag "tier 3"
@@ -78,7 +78,7 @@
 
 #newitem
 #id imperialrobe_blacktop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark_old.png
 #armor
 #tag "tier 3"
@@ -87,7 +87,7 @@
 
 #newitem
 #id imperialrobe_darktop-bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark_old.png
 #recolormask self
 #armor
@@ -97,7 +97,7 @@
 
 #newitem
 #id imperialrobe_brighttop-dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright_old.png
 #armor
 #tag "tier 3"
@@ -106,7 +106,7 @@
 
 #newitem
 #id imperialrobe_dulltop-faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark_old.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_old_recolormask.png
 #armor
@@ -116,7 +116,7 @@
 
 #newitem
 #id imperialrobe_fainttop-dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright_old.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_old_recolormask.png
 #armor
@@ -126,7 +126,7 @@
 
 #newitem
 #id imperialrobe_middling
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium_old.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_old_recolormask.png
 #armor

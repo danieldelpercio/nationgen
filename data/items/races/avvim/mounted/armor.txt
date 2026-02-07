@@ -4,7 +4,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/armor/leather_cuirass.png
 #armor
 #theme "primitive"
@@ -13,7 +13,7 @@
 
 #newitem -- full leather
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/avvim/armor/leather_cuirass.png
 #armor
 #theme "primitive"
@@ -25,7 +25,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/avvim/armor/ring_cuirass.png
 #armor
 #needs legs leather_greaves
@@ -33,7 +33,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/avvim/armor/ring_cuirass.png
 #armor
 #needs legs ring_skirt
@@ -44,7 +44,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/armor/scale_cuirass.png
 #tag "eliteversion 'scale cuirass elite'"
 #armor
@@ -53,7 +53,7 @@
 
 #newitem
 #id "scale cuirass elite"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/armor/scale_cuirass_elite.png
 #armor
 #theme "elite"
@@ -62,7 +62,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/armor/scale_cuirass.png
 #tag "eliteversion 'scale hauberk elite'"
 #armor
@@ -71,7 +71,7 @@
 
 #newitem
 #id "scale hauberk elite"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/armor/scale_cuirass_elite.png
 #armor
 #theme "elite"
@@ -80,7 +80,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/armor/scale_cuirass.png
 #tag "eliteversion 'full scale elite'"
 #armor
@@ -90,7 +90,7 @@
 
 #newitem -- full scale
 #id "full scale elite"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/armor/scale_cuirass_elite.png
 #armor
 #theme "elite"
@@ -103,7 +103,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/armor/chain_cuirass.png
 #tag "eliteversion 'chain cuirass elite'"
 #armor
@@ -112,7 +112,7 @@
 
 #newitem
 #id "chain cuirass elite"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/armor/chain_cuirass_elite.png
 #armor
 #theme "elite"
@@ -121,7 +121,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/avvim/armor/chain_cuirass.png
 #tag "eliteversion 'chain hauberk elite'"
 #armor
@@ -130,7 +130,7 @@
 
 #newitem
 #id "chain hauberk elite"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/avvim/armor/chain_cuirass_elite.png
 #armor
 #theme "elite"
@@ -139,7 +139,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/avvim/armor/chain_cuirass.png
 #tag "eliteversion 'full chain elite'"
 #armor
@@ -150,7 +150,7 @@
 
 #newitem -- full chain
 #id "full chain elite"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/avvim/armor/chain_cuirass_elite.png
 #armor
 #theme "advanced"
@@ -164,7 +164,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/avvim/armor/plate_cuirass.png
 #tag "eliteversion 'plate cuirass elite'"
 #armor
@@ -174,7 +174,7 @@
 
 #newitem
 #id "plate cuirass elite"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/avvim/armor/plate_cuirass_elite.png
 #armor
 #theme "advanced"
@@ -184,7 +184,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/avvim/armor/plate_cuirass.png
 #tag "eliteversion 'plate hauberk elite'"
 #armor
@@ -195,7 +195,7 @@
 
 #newitem
 #id "plate hauberk elite"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/avvim/armor/plate_cuirass_elite.png
 #armor
 #theme "advanced"
@@ -206,7 +206,7 @@
 
 #newitem -- full plate
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/avvim/armor/plate_cuirass.png
 #tag "eliteversion 'full plate elite'"
 #armor
@@ -218,7 +218,7 @@
 
 #newitem -- full plate
 #id "full plate elite"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/avvim/armor/plate_cuirass_elite.png
 #armor
 #theme "advanced"

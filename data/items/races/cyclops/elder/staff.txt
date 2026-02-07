@@ -1,6 +1,6 @@
 #newitem
 #id trident_bronze
-#gameid 680
+#dominionsId 680
 #sprite /graphics/cyclops/elder/weapon/caster/trident_gold.png
 #theme "bronze"
 #tier 1
@@ -10,7 +10,7 @@
 
 #newitem
 #id trident_iron
-#gameid 679
+#dominionsId 679
 #sprite /graphics/cyclops/elder/weapon/caster/trident_iron.png
 #theme "iron"
 #tier 1
@@ -20,7 +20,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #basechance 2
 #sprite /graphics/cyclops/elder/weapon/maul.png
 #troopweapon
@@ -59,7 +59,7 @@
 
 #newitem
 #id snake_T2
-#gameid 318
+#dominionsId 318
 #sprite /graphics/cyclops/elder/weapon/caster/serpent.png
 #eliteversion snake_T3
 #troopweapon
@@ -72,7 +72,7 @@
 
 #newitem
 #id snake_T3
-#gameid 89
+#dominionsId 89
 #sprite /graphics/cyclops/elder/weapon/caster/serpent.png
 #troopweapon
 #theme "nature"
@@ -84,7 +84,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/elder/weapon/caster/staff.png
 #eliteversion staff_crook
 #eliteversion staff_gnarled
@@ -97,7 +97,7 @@
 
 #newitem
 #id staff_crook
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/elder/weapon/caster/staff_crook.png
 #eliteversion staff_gnarled
 #eliteversion staff_moon
@@ -112,7 +112,7 @@
 
 #newitem
 #id staff_gnarled
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/elder/weapon/caster/staff_gnarled.png
 #eliteversion staff_moon
 #eliteversion staff_gnarled
@@ -127,7 +127,7 @@
 
 #newitem
 #id staff_moon
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/elder/weapon/caster/staff_moon.png
 #theme "astral"
 #troopweapon
@@ -138,7 +138,7 @@
 
 #newitem
 #id staff_neter_plain
-#gameid 238
+#dominionsId 238
 #sprite /graphics/cyclops/elder/weapon/caster/staff_neter_plain.png
 #eliteversion staff_neter_simple
 #troopweapon
@@ -149,7 +149,7 @@
 
 #newitem
 #id staff_neter_simple
-#gameid 238
+#dominionsId 238
 #sprite /graphics/cyclops/elder/weapon/caster/staff_neter_simple.png
 #eliteversion staff_neter_fancy
 #troopweapon
@@ -160,7 +160,7 @@
 
 #newitem
 #id staff_neter_fancy
-#gameid 238
+#dominionsId 238
 #sprite /graphics/cyclops/elder/weapon/caster/staff_neter_fancy.png
 #troopweapon
 #notfortier 1

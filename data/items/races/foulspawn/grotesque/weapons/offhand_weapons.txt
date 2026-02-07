@@ -35,7 +35,7 @@
 
 #newitem
 #id left_arm_sleep_vines
-#gameid 71
+#dominionsId 71
 #type left_arm
 #type undead
 #needs left_arm carrion
@@ -43,7 +43,7 @@
 
 #newitem
 #id left_arm_typhon_heads
-#gameid 491
+#dominionsId 491
 #type left_arm
 #type coldblooded
 #needs left_arm typhon
@@ -67,7 +67,7 @@
 
 #newitem
 #id left_arm_scorpion_pincer
-#gameid 273
+#dominionsId 273
 #type left_arm
 #type animal
 #needs left_arm scorpion
@@ -84,7 +84,7 @@
 
 #newitem
 #id left_arm_tentacle
-#gameid 85
+#dominionsId 85
 #type left_arm
 #type tentacle
 #type degenerate
@@ -93,7 +93,7 @@
 
 #newitem
 #id left_arm_tentacle_strangle
-#gameid 116
+#dominionsId 116
 #type left_arm
 #type tentacle
 #needstype left_arm prehensile_tentacle
@@ -101,7 +101,7 @@
 
 #newitem
 #id left_arm_tentacle_sleep
-#gameid 387
+#dominionsId 387
 #type left_arm
 #type tentacle
 #needstype left_arm prehensile_tentacle
@@ -109,7 +109,7 @@
 
 #newitem
 #id left_arm_tentacle_disease
-#gameid 142
+#dominionsId 142
 #type left_arm
 #type tentacle
 #needstype left_arm tentacle
@@ -117,7 +117,7 @@
 
 #newitem
 #id left_arm_tentacle_weakness
-#gameid 550
+#dominionsId 550
 #type left_arm
 #type tentacle
 #needstype left_arm tentacle
@@ -125,7 +125,7 @@
 
 #newitem
 #id left_arm_tentacle_life_drain
-#gameid 271
+#dominionsId 271
 #type left_arm
 #type tentacle
 #needstype left_arm tentacle

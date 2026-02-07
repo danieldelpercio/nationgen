@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/scouts/offhand/axe_iron2.png
 #theme "iron"
 #theme "austral"
@@ -12,7 +12,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/scouts/offhand/axe_bronze2.png
 #theme "bronze"
 #theme "boreal"
@@ -21,7 +21,7 @@
 
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #sprite /graphics/scouts/offhand/axe_iron2.png
 #theme "iron"
 #theme "primitive"
@@ -35,7 +35,7 @@
 
 #newitem
 #id hatchet_bronze
-#gameid 646
+#dominionsId 646
 #sprite /graphics/scouts/offhand/axe_bronze2.png
 #theme "bronze"
 #theme "primitive"
@@ -45,7 +45,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #basechance 0.5
 #sprite /graphics/scouts/offhand/hammer_iron2.png
 #theme "iron"
@@ -70,7 +70,7 @@
 
 #newitem
 #id mace
-#gameid 8
+#dominionsId 8
 #sprite /graphics/scouts/offhand/mace2.png
 #theme "iron"
 #theme "austral"
@@ -82,7 +82,7 @@
 
 #newitem
 #id mace_ice
-#gameid 44
+#dominionsId 44
 #basechance 0.01
 #chanceinc magic water *5
 #chanceinc command #iceforging *10
@@ -96,7 +96,7 @@
 
 #newitem
 #id sickle_iron
-#gameid 57
+#dominionsId 57
 #basechance 0.0125
 #chanceinc magic death *2
 #chanceinc magic nature *2
@@ -114,7 +114,7 @@
 
 #newitem
 #id sword_iron
-#gameid 8
+#dominionsId 8
 #sprite /graphics/scouts/offhand/sword_iron2.png
 #theme "iron"
 #theme "austral"
@@ -147,7 +147,7 @@
 
 #newitem
 #id sword_pearl
-#gameid 665
+#dominionsId 665
 #basechance 0.1
 #chanceinc magic water astral *10
 #sprite /graphics/scouts/offhand/sword_pearl2.png
@@ -158,7 +158,7 @@
 
 #newitem
 #id sword_bane
-#gameid 42
+#dominionsId 42
 #basechance 0.005
 #chanceinc magic death *10
 #sprite /graphics/scouts/offhand/sword_bane2.png
@@ -172,7 +172,7 @@
 
 #newitem
 #id sword_ice
-#gameid 37
+#dominionsId 37
 #basechance 0.01
 #chanceinc magic water *5
 #chanceinc command #iceforging *10
@@ -187,7 +187,7 @@
 
 #newitem
 #id sword_short_iron
-#gameid 6
+#dominionsId 6
 #sprite /graphics/scouts/offhand/sword_short_iron2.png
 #theme "iron"
 #theme "austral"
@@ -199,7 +199,7 @@
 
 #newitem
 #id sword_short_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/scouts/offhand/sword_short_bronze2.png
 #theme "bronze"
 #theme "boreal"
@@ -220,7 +220,7 @@
 
 #newitem
 #id wakizashi
-#gameid 379
+#dominionsId 379
 #sprite /graphics/scouts/offhand/wakizashi2.png
 #theme "iron"
 #theme "oriental"
@@ -228,7 +228,7 @@
 
 #newitem
 #id ninjato
-#gameid 378
+#dominionsId 378
 #sprite /graphics/scouts/offhand/ninjato2.png
 #theme "iron"
 #theme "oriental"
@@ -236,7 +236,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/scouts/offhand/falchion2.png
 #theme "iron"
 #theme "austral"
@@ -249,7 +249,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/scouts/offhand/kopesh2.png
 #theme "bronze"
 #theme "boreal"
@@ -259,7 +259,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/scouts/offhand/dagger_iron2.png
 #theme "iron"
 #theme "austral"
@@ -272,7 +272,7 @@
 
 #newitem
 #id dagger_bronze
-#gameid 674
+#dominionsId 674
 #sprite /graphics/scouts/offhand/dagger_bronze2.png
 #theme "bronze"
 #theme "boreal"
@@ -282,7 +282,7 @@
 
 #newitem
 #id dagger_bloody
-#gameid 671
+#dominionsId 671
 #basechance 0.01
 #chanceinc magic blood *10
 #sprite /graphics/scouts/offhand/dagger_blood2.png
@@ -301,7 +301,7 @@
 
 #newitem
 #id dagger_poison
-#gameid 126
+#dominionsId 126
 #basechance 0.1
 #sprite /graphics/scouts/offhand/dagger_poison2.png
 #theme "assassin"
@@ -316,7 +316,7 @@
 
 #newitem
 #id dagger_coral
-#gameid 32
+#dominionsId 32
 #basechance 0.1
 #chanceinc magic water nature *10
 #sprite /graphics/scouts/offhand/dagger_coral2.png
@@ -327,7 +327,7 @@
 
 #newitem
 #id dagger_ice
-#gameid 35
+#dominionsId 35
 #basechance 0.01
 #chanceinc magic water *5
 #chanceinc command #iceforging *10
@@ -343,7 +343,7 @@
 
 #newitem
 #id dagger_bane
-#gameid 312
+#dominionsId 312
 #basechance 0.005
 #chanceinc magic death *10
 #sprite /graphics/scouts/offhand/dagger_bane2.png

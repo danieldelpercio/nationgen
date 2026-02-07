@@ -2,7 +2,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -13,7 +13,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #basehance 0.05
 #sprite /graphics/weapon/standard/broadsword.png
 #tag "name infantry swordsman"
@@ -23,7 +23,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/weapon/standard/flail.png
 #basechance 0.25
 #enditem
@@ -56,14 +56,14 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/weapon/standard/morningstar.png
 #basehance 0.1
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #tag "name commander captain"
 #basehance 0.2
@@ -71,7 +71,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #basechance 3
 #sprite /graphics/weapon/standard/spear.png
 #tag "name infantry spearman"
@@ -81,7 +81,7 @@
 
 #newitem
 #id elitespear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/machakans/weapon/spear_elite.png
 #recolormask /graphics/machakans/weapon/spear_elite_recolormask.png
 #tag "name infantry spearman"
@@ -100,7 +100,7 @@
 
 #newitem
 #id machakanspear
-#gameid 315
+#dominionsId 315
 #sprite /graphics/machakans/weapon/machakanspear.png
 #tag "name infantry spearman"
 #tag "name commander captain"
@@ -113,7 +113,7 @@
 #newitem
 #basechance 6
 #id elitemachakanspear
-#gameid 315
+#dominionsId 315
 #sprite /graphics/machakans/weapon/machakanspear_elite.png
 #recolormask /graphics/machakans/weapon/machakanspear_elite_recolormask.png
 #tag "name infantry spearman"

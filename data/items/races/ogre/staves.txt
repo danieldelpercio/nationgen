@@ -1,6 +1,6 @@
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/quarterstaff.png
 #offsetx -1
 #tag "tier 2"
@@ -15,7 +15,7 @@
 
 #newitem
 #id orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/orbstaff.png
 #recolormask /graphics/avvim/weapon/caster/orbstaff_recolormask.png
 #offsetx -1
@@ -27,7 +27,7 @@
 
 #newitem
 #id skullstaff1
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/skullstaff1.png
 #offsetx -1
 #theme "primitive"
@@ -41,7 +41,7 @@
 
 #newitem
 #id skullstaff2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/skullstaff2.png
 #offsetx -1
 #theme "primitive"
@@ -55,7 +55,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_metal.png
 #offsetx -1
 #tag "tier 2"
@@ -67,7 +67,7 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_metal_bauble.png
 #offsetx -1
 #tag "tier 3"
@@ -78,7 +78,7 @@
 
 #newitem
 #id gnarledstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_gnarled.png
 #offsety 2
 #tag "tier 3"
@@ -89,7 +89,7 @@
 
 #newitem
 #id simple_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #offsetx 1
 #tag "eliteversion glowing_orbstaff"
@@ -102,7 +102,7 @@
 
 #newitem
 #id glowing_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #recolormask /graphics/avvim/weapon/caster/staff_orb_plain_recolormask.png
 #offsetx 1
@@ -114,7 +114,7 @@
 
 #newitem
 #id crook
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_crook.png
 #offsetx 2
 #offsety 1

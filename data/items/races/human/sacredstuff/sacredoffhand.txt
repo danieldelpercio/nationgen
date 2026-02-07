@@ -1,6 +1,6 @@
 #newitem
 #id goldenbuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #armor
 #theme "sacred"
@@ -8,7 +8,7 @@
 
 #newitem
 #id goldenkite1
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/sacred/goldenkite1.png
 #armor
 #theme "advanced"
@@ -18,7 +18,7 @@
 
 #newitem
 #id goldenshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/sacred/goldenshield.png
 #theme "sacred"
 #armor
@@ -26,7 +26,7 @@
 
 #newitem
 #id goldenshield3
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/sacred/goldenshield3.png
 #theme "sacred"
 #armor
@@ -34,7 +34,7 @@
 
 #newitem
 #id goldenshield5
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/sacred/goldenshield5.png
 #theme "sacred"
 #armor
@@ -43,7 +43,7 @@
 
 #newitem
 #id goldenshield6
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/sacred/goldenshield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #theme "sacred"
@@ -52,7 +52,7 @@
 
 #newitem
 #id fist_oh
-#gameid 92
+#dominionsId 92
 #theme "sacred"
 #basechance 0.05
 #tag "guaranteedmagic"
@@ -60,7 +60,7 @@
 
 #newitem
 #id kite_fire
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic fire 0.25"
 #chanceinc "personalcommand #summerpower 0.0625"
@@ -77,7 +77,7 @@
 
 #newitem
 #id kite_air
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic air 0.25"
 #chanceinc "personalcommand #springpower 0.0625"
@@ -94,7 +94,7 @@
 
 #newitem
 #id kite_water
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic water 0.25"
 #chanceinc "personalcommand #winterpower 0.0625"
@@ -111,7 +111,7 @@
 
 #newitem
 #id kite_earth
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic earth 0.25"
 #chanceinc "personalcommand #fallpower 0.0625"
@@ -128,7 +128,7 @@
 
 #newitem
 #id kite_astral
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic astral 0.25"
 #chanceinc "personalcommand #ethereal 0.0625"
@@ -144,7 +144,7 @@
 
 #newitem
 #id kite_death
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic death 0.25"
 #chanceinc "personalcommand #undead 0.0625"
@@ -161,7 +161,7 @@
 
 #newitem
 #id kite_nature
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic nature 0.25"
 #chanceinc "personalcommand #regeneration 0.0625"
@@ -178,7 +178,7 @@
 
 #newitem
 #id kite_blood
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic blood 0.25"
 #chanceinc "personalcommand #demon 0.0625"

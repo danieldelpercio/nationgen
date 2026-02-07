@@ -2,7 +2,7 @@
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/offhand/standard/axe.png
 #theme "iron"
 #theme "primitive"
@@ -14,7 +14,7 @@
 
 #newitem
 #id offhandbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/offhand/standard/broadsword.png
 #theme "iron"
 #theme "austral"
@@ -23,7 +23,7 @@
 
 #newitem
 #id offhandhammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/offhand/standard/hammer.png
 #theme "iron"
 #theme "austral"
@@ -33,7 +33,7 @@
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/offhand/standard/mace.png
 #theme "iron"
 #theme "primitive"
@@ -45,7 +45,7 @@
 
 #newitem
 #id offhandmorningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/offhand/standard/morningstar.png
 #theme "iron"
 #theme "austral"
@@ -55,7 +55,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/offhand/standard/shortsword.png
 #theme "iron"
 #theme "austral"
@@ -66,7 +66,7 @@
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/offhand/standard/falchion.png
 #theme "iron"
 #theme "austral"
@@ -84,7 +84,7 @@
 
 #newitem
 #id offhanddagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/offhand/standard/dagger.png
 #theme "iron"
 #theme "austral"

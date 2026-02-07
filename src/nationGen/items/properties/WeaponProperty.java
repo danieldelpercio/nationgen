@@ -1,6 +1,9 @@
-package nationGen.items;
+package nationGen.items.properties;
 
-public enum ItemProperty {
+import java.util.stream.Stream;
+import nationGen.misc.Command;
+
+public enum WeaponProperty {
   AN("an", "#armornegating", true),
   ANIM_LENGTH("animlength", ""),
   AOE("aoe", "#aoe"),
@@ -63,26 +66,39 @@ public enum ItemProperty {
   private String modCommand;
   private Boolean isBooleanProperty = false;
 
-  ItemProperty(String dbColumn, String modCommand) {
+  WeaponProperty(String dbColumn, String modCommand) {
     this.dbColumn = dbColumn;
     this.modCommand = modCommand;
   }
 
-  ItemProperty(String dbColumn, String modCommand, Boolean isBoolean) {
+  WeaponProperty(String dbColumn, String modCommand, Boolean isBoolean) {
     this.dbColumn = dbColumn;
     this.modCommand = modCommand;
     this.isBooleanProperty = isBoolean;
   }
 
-  public String getModCommand() {
+  public String toModCommand() {
     return this.modCommand;
   }
 
-  public String getDBColumn() {
+  public String toDBColumn() {
     return this.dbColumn;
   }
 
   public Boolean isBoolean() {
     return this.isBooleanProperty;
+  }
+
+  public static WeaponProperty fromCommand(String command) {
+    return Stream.of(WeaponProperty.values())
+      .filter(prop -> {
+        return prop.toModCommand().equals(command);
+      })
+      .findFirst()
+      .orElse(null);
+  }
+
+  public static WeaponProperty fromCommand(Command command) {
+    return fromCommand(command.command);
   }
 }

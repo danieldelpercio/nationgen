@@ -1,6 +1,6 @@
 #newitem
 #id "poison short bow"
-#gameid 594
+#dominionsId 594
 #sprite /graphics/dynastichuman/weapons/bow.png
 #needs quiver quiver
 #notepic
@@ -8,7 +8,7 @@
 
 #newitem
 #id "flaming short bow"
-#gameid 211
+#dominionsId 211
 #sprite /graphics/dynastichuman/weapons/bow.png
 #needs quiver quiver
 #define "#rcost +4"
@@ -17,7 +17,7 @@
 
 #newitem
 #id "banefire short bow"
-#gameid 199
+#dominionsId 199
 #sprite /graphics/dynastichuman/weapons/bow.png
 #needs quiver quiver
 #define "#rcost +5"
@@ -26,7 +26,7 @@
 
 #newitem
 #id "poison composite bow"
-#gameid 372
+#dominionsId 372
 #sprite /graphics/dynastichuman/weapons/compositebow.png
 #needs quiver quiver
 #notepic
@@ -34,7 +34,7 @@
 
 #newitem
 #id "flaming composite bow"
-#gameid 356
+#dominionsId 356
 #sprite /graphics/dynastichuman/weapons/compositebow.png
 #needs quiver quiver
 #define "#rcost +5"
@@ -43,7 +43,7 @@
 
 #newitem
 #id "poison sling"
-#gameid 167
+#dominionsId 167
 #sprite /graphics/dynastichuman/weapons/sling.png
 #maxprot 9
 #notepic
@@ -51,7 +51,7 @@
 
 #newitem
 #id "flaming sling"
-#gameid 210
+#dominionsId 210
 #sprite /graphics/dynastichuman/weapons/sling.png
 #define "#rcost +2"
 #maxprot 9

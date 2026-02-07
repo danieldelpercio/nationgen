@@ -11,7 +11,7 @@
 -- Bucklers
 #newitem
 #id woodbuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/firbolg/offhand/buckler_wood.png
 #recolormask /graphics/firbolg/offhand/buckler_wood_recolormask.png
 #armor
@@ -23,7 +23,7 @@
 
 #newitem
 #id bronzebuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/firbolg/offhand/buckler_bronze.png
 #recolormask /graphics/firbolg/offhand/buckler_recolormask.png
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id ironbuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/firbolg/offhand/buckler_iron.png
 #recolormask /graphics/firbolg/offhand/buckler_recolormask.png
 #armor
@@ -49,7 +49,7 @@
 --- Shields
 #newitem
 #id wood_shield
-#gameid 2
+#dominionsId 2
 #sprite /graphics/firbolg/offhand/shield1_wood.png
 #recolormask /graphics/firbolg/offhand/shield1_wood_recolormask.png
 #theme "primitive"
@@ -62,7 +62,7 @@
 
 #newitem
 #id wood_shield_bronze
-#gameid 2
+#dominionsId 2
 #sprite /graphics/firbolg/offhand/shield1_bronze.png
 #recolormask /graphics/firbolg/offhand/shield1_recolormask.png
 #eliteversion bronze_shield
@@ -75,7 +75,7 @@
 
 #newitem
 #id wood_shield_iron
-#gameid 2
+#dominionsId 2
 #sprite /graphics/firbolg/offhand/shield1_iron.png
 #recolormask /graphics/firbolg/offhand/shield1_recolormask.png
 #eliteversion iron_shield
@@ -88,7 +88,7 @@
 
 #newitem
 #id bronze_shield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/firbolg/offhand/shield2_bronze.png
 #theme "bronze"
 #armor
@@ -99,7 +99,7 @@
 
 #newitem
 #id iron_shield
-#gameid 208
+#dominionsId 208
 #sprite /graphics/firbolg/offhand/shield2_iron.png
 #theme "iron"
 #armor
@@ -110,7 +110,7 @@
 
 #newitem
 #id wood_shield2
-#gameid 2
+#dominionsId 2
 #sprite /graphics/firbolg/offhand/shield3_wood.png
 #recolormask /graphics/firbolg/offhand/shield3_wood_recolormask.png
 #theme "primitive"
@@ -123,7 +123,7 @@
 
 #newitem
 #id bronze_shield2
-#gameid 209
+#dominionsId 209
 #sprite /graphics/firbolg/offhand/shield4_bronze.png
 #theme "bronze"
 #armor
@@ -134,7 +134,7 @@
 
 #newitem
 #id iron_shield2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/firbolg/offhand/shield4_iron.png
 #theme "iron"
 #armor
@@ -145,7 +145,7 @@
 
 #newitem
 #id goldenshield1
-#gameid 155
+#dominionsId 155
 #sprite /graphics/firbolg/offhand/shield2_gold.png
 #theme "elite"
 #armor
@@ -155,7 +155,7 @@
 
 #newitem
 #id goldenshield2
-#gameid 155
+#dominionsId 155
 #sprite /graphics/firbolg/offhand/shield4_gold.png
 #theme "elite"
 #armor

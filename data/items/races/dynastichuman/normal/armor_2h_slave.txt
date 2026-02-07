@@ -29,7 +29,7 @@
 #id "thick linen cuirass"
 #basechance 4
 #chanceinc "personalcommand #undead *0"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_thick.png
 #eliteversion "elite thick linen cuirass 1"
 #eliteversion "elite thick linen cuirass 2"
@@ -45,7 +45,7 @@
 #id "worn linen cuirass"
 #basechance 0
 #chanceinc "personalcommand #undead 8"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_worn.png
 #eliteversion "elite worn linen cuirass 1"
 #eliteversion "elite worn linen cuirass 2"
@@ -60,7 +60,7 @@
 #id "elite thick linen cuirass 1"
 #basechance 2
 #chanceinc "personalcommand #undead *0"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_elite.png
 #recolormask /graphics/dynastichuman/armor/linencuirass_elite_recolormask_bright.png
 #armor
@@ -76,7 +76,7 @@
 #id "elite thick linen cuirass 2"
 #basechance 2
 #chanceinc "personalcommand #undead *0"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_thick_elite.png
 #recolormask /graphics/dynastichuman/armor/linencuirass_elite_recolormask_dark.png
 #armor
@@ -92,7 +92,7 @@
 #id "elite worn linen cuirass 1"
 #basechance 0
 #chanceinc "personalcommand #undead 2"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_worn_elite.png
 #recolormask /graphics/dynastichuman/armor/linencuirass_elite_recolormask_bright.png
 #armor
@@ -107,7 +107,7 @@
 #id "elite worn linen cuirass 2"
 #basechance 0
 #chanceinc "personalcommand #undead 2"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_worn_elite.png
 #recolormask /graphics/dynastichuman/armor/linencuirass_elite_recolormask_dark.png
 #needstype legs dark
@@ -124,7 +124,7 @@
 
 #newitem
 #id "thick bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #chanceinc "personalcommand #undead *0"
 #sprite /graphics/dynastichuman/armor/bronzescalecuirass_thick.png
@@ -140,7 +140,7 @@
 
 #newitem
 #id "thick scale cuirass"
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #chanceinc "personalcommand #undead *0"
 #sprite /graphics/dynastichuman/armor/scalecuirass_thick.png
@@ -158,7 +158,7 @@
 #id "rusty scale cuirass"
 #basechance 0
 #chanceinc "personalcommand #undead 4.5"
-#gameid 93
+#dominionsId 93
 #sprite /graphics/dynastichuman/armor/rustyscalecuirass.png
 #tag "eliteversion 'longdead bronze scale cuirass'"
 #tag "eliteversion 'longdead scale cuirass'"
@@ -170,7 +170,7 @@
 #id "rusty scale hauberk"
 #basechance 0
 #chanceinc "personalcommand #undead 1.5"
-#gameid 31
+#dominionsId 31
 #sprite /graphics/dynastichuman/armor/rustyscalehauberk_2h.png
 #tag "eliteversion 'longdead bronze scale hauberk'"
 #tag "eliteversion 'longdead scale hauberk'"
@@ -183,7 +183,7 @@
 #id "longdead bronze scale cuirass"
 #basechance 0
 #chanceinc "personalcommand #undead 0.5"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/dynastichuman/armor/bronzescalecuirass.png
 #armor
 #type longdead
@@ -195,7 +195,7 @@
 #id "longdead bronze scale hauberk"
 #basechance 0
 #chanceinc "personalcommand #undead 0.25"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/dynastichuman/armor/bronzescalehauberk_2h.png
 #armor
 #type longdead
@@ -208,7 +208,7 @@
 #id "longdead scale cuirass"
 #basechance 0
 #chanceinc "personalcommand #undead 0.5"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/dynastichuman/armor/scalecuirass.png
 #armor
 #type longdead
@@ -220,7 +220,7 @@
 #id "longdead scale hauberk"
 #basechance 0
 #chanceinc "personalcommand #undead 0.25"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/dynastichuman/armor/scalehauberk_2h.png
 #armor
 #type longdead

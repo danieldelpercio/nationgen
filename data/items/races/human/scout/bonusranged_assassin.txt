@@ -43,7 +43,7 @@
 
 #newitem
 #id "hypnosis"
-#gameid 595
+#dominionsId 595
 #define "#gcost +10"
 #basechance 0.05
 #theme "serpent"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "throw flames"
-#gameid 383
+#dominionsId 383
 #basechance 0
 #chanceinc race Abysian AND racetheme primal 0.25
 #chanceinc race Abysian AND racetheme tainted 0.01
@@ -63,7 +63,7 @@
 
 #newitem
 #id "cave fire"
-#gameid 601
+#dominionsId 601
 #define "#gcost +10"
 #basechance 0.01
 #theme "acid"
@@ -73,7 +73,7 @@
 
 #newitem
 #id "koppo"
-#gameid 420
+#dominionsId 420
 #define "#gcost +10"
 #basechance 0.01
 #theme "oriental"
@@ -81,7 +81,7 @@
 
 #newitem
 #id "chi kick"
-#gameid 175
+#dominionsId 175
 #define "#gcost +10"
 #basechance 0.01
 #theme "oriental"
@@ -89,21 +89,21 @@
 
 #newitem
 #id "tail slap"
-#gameid 589
+#dominionsId 589
 #basechance 0.01
 #theme "lizard"
 #enditem
 
 #newitem
 #id "bite"
-#gameid 576
+#dominionsId 576
 #basechance 0.01
 #theme "lizard"
 #enditem
 
 #newitem
 #id "kick"
-#gameid 397
+#dominionsId 397
 #basechance 0.03
 #theme "boreal"
 #theme "austral"
@@ -117,7 +117,7 @@
 
 #newitem
 #id "head butt"
-#gameid 300
+#dominionsId 300
 #basechance 0.01
 #theme "boreal"
 #theme "austral"
@@ -131,7 +131,7 @@
 
 #newitem
 #id "poison darts"
-#gameid 500
+#dominionsId 500
 #basechance 0.05
 #theme "boreal"
 #theme "austral"
@@ -144,7 +144,7 @@
 
 #newitem
 #id "strangulation"
-#gameid 116
+#dominionsId 116
 #basechance 0.05
 #theme "boreal"
 #theme "austral"

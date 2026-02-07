@@ -10,7 +10,7 @@
 
 #new
 #id furs
-#gameid 44
+#dominionsId 44
 #basechance 2
 #sprite /graphics/cyclops/armor/furs.png
 #armor
@@ -21,7 +21,7 @@
 --- Leather
 #newitem
 #id "simple leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/cyclops/armor/cuirass_leather_simple.png
 #armor
 #theme leather
@@ -29,7 +29,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/cyclops/armor/cuirass_leather.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -39,7 +39,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/cyclops/armor/hauberk_leather.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -51,7 +51,7 @@
 --- Scale
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/cyclops/armor/scale_cuirass_bronze.png
 #armor
 #theme bronze
@@ -60,7 +60,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/cyclops/armor/scale_hauberk_bronze.png
 #armor
 #theme bronze
@@ -81,7 +81,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/armor/scale_cuirass_iron.png
 #armor
 #theme iron
@@ -90,7 +90,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/cyclops/armor/scale_hauberk_iron.png
 #armor
 #theme iron
@@ -99,7 +99,7 @@
 
 #newitem -- full scale
 #id "iron full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/cyclops/armor/scale_full_iron.png
 #armor
 #basechance 0.5
@@ -111,7 +111,7 @@
 
 #newitem
 #id "gold scale cuirass bronze"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/cyclops/armor/scale_cuirass_gold.png
 #armor
 #theme bronze
@@ -119,7 +119,7 @@
 
 #newitem
 #id "gold scale hauberk bronze"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/cyclops/armor/scale_hauberk_gold.png
 #armor
 #theme bronze
@@ -138,7 +138,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/armor/scale_cuirass_gold.png
 #armor
 #theme iron
@@ -146,7 +146,7 @@
 
 #newitem
 #id "gold scale hauberk iron"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/cyclops/armor/scale_hauberk_gold.png
 #armor
 #theme iron
@@ -154,7 +154,7 @@
 
 #newitem -- full scale
 #id "gold full scale iron"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/cyclops/armor/scale_full_gold.png
 #armor
 #basechance 0.5
@@ -165,7 +165,7 @@
 
 #newitem -- full scale
 #id goldscalemail
-#gameid 196
+#dominionsId 196
 #sprite /graphics/cyclops/armor/scale_full_gold.png
 #armor
 #basechance 0.5
@@ -177,7 +177,7 @@
 -- Plate
 #newitem
 #id "simple bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/cyclops/armor/cuirass_simple_bronze.png
 #armor
 #theme bronze
@@ -185,7 +185,7 @@
 
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/cyclops/armor/plate_cuirass_bronze.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -196,7 +196,7 @@
 
 #newitem
 #id "bronze hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/cyclops/armor/plate_hauberk_bronze.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -207,7 +207,7 @@
 
 #newitem
 #id "simple iron cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/armor/cuirass_simple_iron.png
 #armor
 #theme iron
@@ -215,7 +215,7 @@
 
 #newitem
 #id "iron cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/armor/plate_cuirass_iron.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -226,7 +226,7 @@
 
 #newitem
 #id "iron hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/cyclops/armor/plate_hauberk_iron.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -237,7 +237,7 @@
 
 #newitem
 #id "gold cuirass bronze"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/cyclops/armor/plate_cuirass_gold.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -249,7 +249,7 @@
 
 #newitem
 #id "gold hauberk bronze"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/cyclops/armor/plate_hauberk_gold.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -261,7 +261,7 @@
 
 #newitem
 #id "gold cuirass iron"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/armor/plate_cuirass_gold.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -273,7 +273,7 @@
 
 #newitem
 #id "gold hauberk iron"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/cyclops/armor/plate_hauberk_gold.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -285,7 +285,7 @@
 
 #newitem
 #id cyclopecuirass
-#gameid 245
+#dominionsId 245
 #sprite /graphics/cyclops/armor/plate_cuirass_iron.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -297,7 +297,7 @@
 
 #newitem
 #id cyclopehauberk
-#gameid 246
+#dominionsId 246
 #sprite /graphics/cyclops/armor/plate_hauberk_iron.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -308,7 +308,7 @@
 
 #newitem
 #id gleamingcuirass
-#gameid 236
+#dominionsId 236
 #sprite /graphics/cyclops/armor/plate_cuirass_gold.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor
@@ -320,7 +320,7 @@
 
 #newitem
 #id gleaminghauberk
-#gameid 237
+#dominionsId 237
 #sprite /graphics/cyclops/armor/plate_hauberk_gold.png
 #recolormask /graphics/cyclops/armor/plate_recolormask.png
 #armor

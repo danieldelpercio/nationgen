@@ -1,7 +1,7 @@
 -- Fancy robes
 #newitem
 #id fancyrobe_silver1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_silver.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask.png
 #armor
@@ -13,7 +13,7 @@
 
 #newitem
 #id fancyrobe_gold1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask.png
 #armor
@@ -24,7 +24,7 @@
 
 #newitem
 #id fancyrobe_silver2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_silver.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask3.png
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id fancyrobe_gold2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask3.png
 #armor
@@ -45,7 +45,7 @@
 
 #newitem
 #id fancyrobe_silver3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_silver.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask2.png
 #armor
@@ -57,7 +57,7 @@
 
 #newitem
 #id fancyrobe_gold3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask2.png
 #armor
@@ -68,7 +68,7 @@
 
 #newitem
 #id fancyrobe_silver4
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_silver.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask4.png
 #armor
@@ -79,7 +79,7 @@
 
 #newitem
 #id fancyrobe_gold4
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe.png
 #recolormask /graphics/fomorian/robes/fancyrobe_recolormask4.png
 #armor
@@ -91,7 +91,7 @@
 -- Inverted fancy robes
 #newitem
 #id fancyrobe_invert_gold1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask.png
 #armor
@@ -101,7 +101,7 @@
 
 #newitem
 #id fancyrobe_invert_gold2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask4.png
 #armor
@@ -111,7 +111,7 @@
 
 #newitem
 #id fancyrobe_invert_silver1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted_silver.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask4.png
 #armor
@@ -120,7 +120,7 @@
 
 #newitem
 #id fancyrobe_invert_gold3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted2.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask2.png
 #armor
@@ -130,7 +130,7 @@
 
 #newitem
 #id fancyrobe_invert_gold4
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted2.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask5.png
 #armor
@@ -140,7 +140,7 @@
 
 #newitem
 #id fancyrobe_invert_silver2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted_silver2.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask5.png
 #armor
@@ -149,7 +149,7 @@
 
 #newitem
 #id fancyrobe_invert_gold5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted3.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask3.png
 #armor
@@ -159,7 +159,7 @@
 
 #newitem
 #id fancyrobe_invert_gold6
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted3.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask6.png
 #armor
@@ -169,7 +169,7 @@
 
 #newitem
 #id fancyrobe_invert_silver3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/fancyrobe_inverted_silver3.png
 #recolormask /graphics/fomorian/robes/fancyrobe_inverted_recolormask6.png
 #armor
@@ -181,7 +181,7 @@
 #newitem
 #id greenrobe_silver1
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask6.png
 #armor
@@ -195,7 +195,7 @@
 #newitem
 #id greenrobe_gold1
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask6.png
 #armor
@@ -208,7 +208,7 @@
 #newitem
 #id bluerobe_silver1
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe2_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask6.png
 #armor
@@ -222,7 +222,7 @@
 #newitem
 #id bluerobe_gold1
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe2.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask6.png
 #armor
@@ -235,7 +235,7 @@
 #newitem
 #id longrobe_silver1
 #basechance 0.5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask3.png
 #armor
@@ -248,7 +248,7 @@
 #newitem
 #id longrobe_gold1
 #basechance 0.5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask3.png
 #armor
@@ -258,7 +258,7 @@
 #newitem
 #id greenrobe_silver2
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask4.png
 #armor
@@ -272,7 +272,7 @@
 #newitem
 #id greenrobe_gold2
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask4.png
 #armor
@@ -285,7 +285,7 @@
 #newitem
 #id bluerobe_silver2
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe2_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask4.png
 #armor
@@ -299,7 +299,7 @@
 #newitem
 #id bluerobe_gold2
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe2.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask4.png
 #armor
@@ -312,7 +312,7 @@
 #newitem
 #id longrobe_silver2
 #basechance 0.5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask.png
 #armor
@@ -325,7 +325,7 @@
 #newitem
 #id longrobe_gold2
 #basechance 0.5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask.png
 #armor
@@ -335,7 +335,7 @@
 #newitem
 #id greenrobe_silver3
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask5.png
 #armor
@@ -349,7 +349,7 @@
 #newitem
 #id greenrobe_gold3
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask5.png
 #armor
@@ -362,7 +362,7 @@
 #newitem
 #id bluerobe_silver3
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe2_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask5.png
 #armor
@@ -376,7 +376,7 @@
 #newitem
 #id bluerobe_gold3
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe2.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask5.png
 #armor
@@ -389,7 +389,7 @@
 #newitem
 #id longrobe_silver3
 #basechance 0.25
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe_silver.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask2.png
 #armor
@@ -402,7 +402,7 @@
 #newitem
 #id longrobe_gold3
 #basechance 0.5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/fomorian/robes/longrobe.png
 #recolormask /graphics/fomorian/robes/longrobe_recolormask2.png
 #armor

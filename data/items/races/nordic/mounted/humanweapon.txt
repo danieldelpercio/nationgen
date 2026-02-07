@@ -1,13 +1,13 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "primitive"
 #enditem
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/standard/broadsword.png
 #enditem
 
@@ -26,7 +26,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #enditem
 

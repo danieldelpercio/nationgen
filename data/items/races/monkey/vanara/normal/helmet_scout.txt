@@ -11,7 +11,7 @@
 
 #newitem
 #id hood
-#gameid 121
+#dominionsId 121
 #basechance 4
 #sprite /graphics/monkey/helmet/vanara/cowl_scout.png
 #recolormask self
@@ -25,7 +25,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/vanara/ironcap.png
 #armor
 #theme "enlightened"
@@ -34,7 +34,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/monkey/helmet/vanara/bronzecap.png
 #armor
 #theme "enlightened"
@@ -46,7 +46,7 @@
 --- Imperial helms
 #newitem
 #id leathercap_imperial
-#gameid 119
+#dominionsId 119
 #sprite /graphics/monkey/helmet/vanara/reinforcedhelm.png
 #armor
 #theme "imperial"
@@ -56,7 +56,7 @@
 
 #newitem
 #id ironcap_imperial
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/vanara/ironcap.png
 #armor
 #theme "imperial"
@@ -66,7 +66,7 @@
 
 #newitem
 #id legionaryhelmet
-#gameid 126
+#dominionsId 126
 #sprite /graphics/monkey/helmet/vanara/legionaryhelm.png
 #armor
 #theme "imperial"
@@ -78,7 +78,7 @@
 
 #newitem
 #id jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/helmet/standard/jingasa2.png
 #recolormask /graphics/helmet/standard/jingasa2_recolormask.png
 #theme "oriental"
@@ -91,7 +91,7 @@
 
 #newitem
 #id leathercap_oriental
-#gameid 120
+#dominionsId 120
 #sprite /graphics/tengu/helmet/reinforcedcap.png
 #theme "oriental"
 #theme "leather"
@@ -101,7 +101,7 @@
 
 #newitem
 #id reinforcedcap_oriental
-#gameid 119
+#dominionsId 119
 #sprite /graphics/tengu/helmet/reinforcedcap.png
 #theme "oriental"
 #theme "leather"
@@ -111,7 +111,7 @@
 
 #newitem
 #id ironcap_oriental
-#gameid 20
+#dominionsId 20
 #sprite /graphics/tengu/helmet/tienchihelmet.png
 #theme "oriental"
 #theme "iron"
@@ -136,7 +136,7 @@
 
 #newitem
 #id leatherhood
-#gameid 121
+#dominionsId 121
 #basechance 0.05
 #chanceinc slottag not armor ninja *0
 #armor
@@ -148,7 +148,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #basechance 0.05
 #chanceinc slottag not armor ninja *0
 #armor
@@ -160,7 +160,7 @@
 
 #newitem
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #basechance 0.025
 #chanceinc slottag not armor ninja *0
 #armor
@@ -172,7 +172,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #basechance 0.025
 #chanceinc slottag not armor ninja *0
 #armor

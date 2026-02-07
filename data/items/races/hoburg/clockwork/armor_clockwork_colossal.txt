@@ -3,7 +3,7 @@
 
 #newitem 
 #id "giant clockwork armor"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/hoburg/giant/clockwork/colossus_iron.png
 #armor
 #theme "advanced"

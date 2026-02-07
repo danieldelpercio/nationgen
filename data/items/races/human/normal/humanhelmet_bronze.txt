@@ -1,6 +1,6 @@
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/helmet/standard/bronzecap.png
 #tag "eliteversion bronzecap_elite"
 #theme "bronze"
@@ -9,7 +9,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/helmet/standard/bronzecap_elite.png
 #recolormask /graphics/helmet/standard/bronzecap_elite_recolormask.png
 #armor
@@ -19,7 +19,7 @@
 
 #newitem
 #id bronzecap2
-#gameid 135
+#dominionsId 135
 #sprite /graphics/helmet/standard/bronzecap2.png
 #theme "bronze"
 #armor
@@ -27,7 +27,7 @@
 
 #newitem
 #id sasanidcap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/helmet/standard/bronzesasanidhalfhelm.png
 #tag "eliteversion sasanidcap_elite"
 #theme "bronze"
@@ -36,7 +36,7 @@
 
 #newitem
 #id sasanidcap_elite
-#gameid 135
+#dominionsId 135
 #sprite /graphics/helmet/standard/bronzesasanidhalfhelm.png
 #recolormask /graphics/helmet/standard/bronzesasanidhalfhelm_recolormask.png
 #armor
@@ -140,7 +140,7 @@
 
 #newitem
 #id hoplitehelm
-#gameid 123
+#dominionsId 123
 #sprite /graphics/helmet/standard/hoplitehelm.png
 #tag "eliteversion hoplitehelm_elite"
 #theme "bronze"
@@ -150,7 +150,7 @@
 
 #newitem
 #id hoplitehelm_elite
-#gameid 123
+#dominionsId 123
 #sprite /graphics/helmet/standard/hoplitehelm_elite.png
 #recolormask /graphics/helmet/standard/hoplitehelm_elite_recolormask.png
 #armor
@@ -162,7 +162,7 @@
 
 #newitem
 #id hoplitehelm2
-#gameid 123
+#dominionsId 123
 #sprite /graphics/helmet/standard/hoplitehelm2.png
 #tag "eliteversion hoplitehelm2_elite"
 #theme "bronze"
@@ -172,7 +172,7 @@
 
 #newitem
 #id hoplitehelm2_elite
-#gameid 123
+#dominionsId 123
 #sprite /graphics/helmet/standard/hoplitehelm2.png
 #recolormask /graphics/helmet/standard/hoplitehelm2_recolormask.png
 #armor
@@ -183,7 +183,7 @@
 
 #newitem
 #id hoplitehelm3
-#gameid 123
+#dominionsId 123
 #sprite /graphics/helmet/standard/hoplitehelm3.png
 #tag "eliteversion hoplitehelm3_elite"
 #theme "bronze"
@@ -193,7 +193,7 @@
 
 #newitem
 #id hoplitehelm3_elite
-#gameid 123
+#dominionsId 123
 #sprite /graphics/helmet/standard/hoplitehelm3_elite.png
 #recolormask /graphics/helmet/standard/hoplitehelm3_elite_recolormask.png
 #armor

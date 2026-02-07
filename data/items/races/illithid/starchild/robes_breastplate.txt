@@ -2,7 +2,7 @@
 
 #newitem
 #id "robes"
-#gameid 158
+#dominionsId 158
 #basechance 27
 #armor
 #tier 1
@@ -16,7 +16,7 @@
 
 #newitem
 #id "sharkskin_cuirass"
-#gameid 188
+#dominionsId 188
 #sprite /graphics/illithid/starchild/armor/sharkskin_cuirass.png
 #armor
 #theme "primitive"
@@ -33,7 +33,7 @@
 
 #newitem
 #id "shell_armor"
-#gameid 140
+#dominionsId 140
 #sprite /graphics/illithid/starchild/armor/shell_cuirass.png
 #armor
 #theme "primitive"
@@ -50,7 +50,7 @@
 
 #newitem
 #id "coral_cuirass"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/illithid/starchild/armor/coral_cuirass.png
 #armor
 #define "#poisonarmor 5"
@@ -67,7 +67,7 @@
 
 #newitem
 #id "leather_cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/illithid/starchild/armor/leather_cuirass.png
 #armor
 #theme "primitive"
@@ -84,7 +84,7 @@
 
 #newitem
 #id "bronze_scale_cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/illithid/starchild/armor/scale_bronze_cuirass.png
 #armor
 #theme "bronze"
@@ -100,7 +100,7 @@
 
 #newitem
 #id "bronze_plate_cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/illithid/starchild/armor/plate_bronze_cuirass.png
 #tag "eliteversion bronze_cuirass_elite"
 #armor
@@ -117,7 +117,7 @@
 
 #newitem
 #id "scale_cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/illithid/starchild/armor/scale_cuirass.png
 #armor
 #theme "iron"
@@ -133,7 +133,7 @@
 
 #newitem
 #id "plate_cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/illithid/starchild/armor/plate_cuirass.png
 #armor
 #theme "iron"
@@ -149,7 +149,7 @@
 
 #newitem
 #id "meteorite_cuirass"
-#gameid 210
+#dominionsId 210
 #sprite /graphics/illithid/starchild/armor/plate_cuirass.png
 #armor
 #theme "iron"

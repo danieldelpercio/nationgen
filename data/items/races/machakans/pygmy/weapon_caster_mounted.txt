@@ -1,6 +1,6 @@
 #newitem
 #id hatchet
-#gameid 646
+#dominionsId 646
 #sprite /graphics/zotz/weapon/hatchet.png
 #offsetx 12
 #offsety 32
@@ -9,7 +9,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/zotz/weapon/mace.png
 #offsetx 12
 #offsety 32
@@ -18,7 +18,7 @@
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/zotz/weapon/dagger.png
 #offsetx 12
 #offsety 32
@@ -37,7 +37,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #offsetx 6
 #offsety 13
@@ -48,7 +48,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #offsetx 6
@@ -59,7 +59,7 @@
 
 #newitem
 #id stick
-#gameid 153
+#dominionsId 153
 #sprite /graphics/hoburg/weapon/stick.png
 #theme "primitive"
 #offsetx -1
@@ -69,7 +69,7 @@
 
 #newitem
 #id blowpipe
-#gameid 34
+#dominionsId 34
 #sprite /graphics/hoburg/weapon/stick.png
 #theme "primitive"
 #offsetx -1
@@ -79,7 +79,7 @@
 
 #newitem
 #id lance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/hoburg/weapon/spear.png
 #offsetx -1
 #tier 1
@@ -89,7 +89,7 @@
 
 #newitem
 #id branch
-#gameid 153
+#dominionsId 153
 #sprite /graphics/hoburg/weapon/caster/branch.png
 #theme "primitive"
 #theme "nature"
@@ -99,7 +99,7 @@
 
 #newitem
 #id twig
-#gameid 498
+#dominionsId 498
 #sprite /graphics/vaettir/weapon/caster/twig.png
 #offsety 1
 #theme "primitive"
@@ -110,7 +110,7 @@
 
 #newitem
 #id torch
-#gameid 252
+#dominionsId 252
 #sprite /graphics/vaettir/weapon/caster/torch.png
 #offsety 1
 #theme "fire"
@@ -120,7 +120,7 @@
 
 #newitem
 #id "poison darts"
-#gameid 620
+#dominionsId 620
 #sprite /graphics/zotz/weapon/dagger.png
 #offsetx 12
 #offsety 32
@@ -131,7 +131,7 @@
 
 #newitem
 #id "poison darts"
-#gameid 500
+#dominionsId 500
 #sprite /graphics/zotz/weapon/dagger.png
 #offsetx 12
 #offsety 32

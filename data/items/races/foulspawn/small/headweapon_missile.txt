@@ -8,7 +8,7 @@
 
 #newitem
 #id bite_weak
-#gameid 576
+#dominionsId 576
 #type "bite"
 #type "maw"
 #type "poison"
@@ -16,6 +16,6 @@
 
 #newitem
 #id bite
-#gameid 20
+#dominionsId 20
 #type "bite"
 #enditem

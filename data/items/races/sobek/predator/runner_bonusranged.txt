@@ -1,7 +1,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/sobek/weapon/predator_net.png
 #offsety 3
 #tag "maxprot 10"
@@ -13,7 +13,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #tag "name infantry 'Chakram Thrower'"
 #tag "tierunique"
 #basechance 0.25

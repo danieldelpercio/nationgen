@@ -2,7 +2,7 @@
 
 #newitem
 #id pincer1
-#gameid 235
+#dominionsId 235
 #sprite /graphics/atlantian/weapon/pincer-s.png
 #basechance 0.75
 #define "#weapon 235"
@@ -22,7 +22,7 @@
 
 #newitem
 #id pincer4
-#gameid 235
+#dominionsId 235
 #sprite /graphics/atlantian/weapon/pincer-s.png
 #basechance 0.75
 #define "#weapon 235"

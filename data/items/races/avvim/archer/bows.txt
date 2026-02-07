@@ -1,6 +1,6 @@
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/avvim/weapon/longbow.png
 #needs quiver quiver
 #tag "name Longbowman"
@@ -9,7 +9,7 @@
 
 #newitem
 #id "great bow"
-#gameid 266
+#dominionsId 266
 #sprite /graphics/avvim/weapon/greatbow.png
 #needs quiver quiver
 #tag "name Greatbowman"

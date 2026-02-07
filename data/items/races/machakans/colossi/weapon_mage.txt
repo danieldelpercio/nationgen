@@ -2,7 +2,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/highmen/weapons/quarterstaff.png
 #needs hands hands_2h
 #troopweapon

@@ -1,6 +1,6 @@
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/imperial/legion/helmet/cap_leather.png
 #armor
 #theme "leather"
@@ -8,7 +8,7 @@
 
 #newitem
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/imperial/legion/helmet/cap_leather.png
 #armor
 #theme "leather"
@@ -16,7 +16,7 @@
 
 #newitem
 #id crestedhelm
-#gameid 162
+#dominionsId 162
 #sprite /graphics/imperial/legion/helmet/helm_legionary_leather.png
 #recolormask /graphics/imperial/legion/helmet/helm_legionary_recolormask.png
 #armor
@@ -25,7 +25,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/imperial/legion/helmet/cap_legionary_iron.png
 #armor
 #theme "iron"
@@ -33,7 +33,7 @@
 
 #newitem
 #id ironhelm
-#gameid 162
+#dominionsId 162
 #sprite /graphics/imperial/legion/helmet/helm_legionary_iron.png
 #recolormask /graphics/imperial/legion/helmet/helm_legionary_recolormask.png
 #armor

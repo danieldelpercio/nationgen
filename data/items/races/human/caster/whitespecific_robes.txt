@@ -11,7 +11,7 @@
 
 #newitem
 #id cultistrobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/cultistrobe.png
 #recolormask /graphics/bodyarmor/robes/cultistrobe_recolormask.png
 #armor
@@ -23,7 +23,7 @@
 
 #newitem
 #id cultistrobe2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/cultistrobe_human2.png
 #recolormask graphics/bodyarmor/robes/cultistrobe_human2_recolormask.png
 #armor
@@ -37,7 +37,7 @@
 
 #newitem
 #id lizardkingrobe1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/lizardkingrobe1.png
 #recolormask graphics/bodyarmor/robes/lizardkingrobe1_recolormask.png
 #armor
@@ -46,7 +46,7 @@
 
 #newitem
 #id lizardkingrobe2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/lizardkingrobe1.png
 #recolormask graphics/bodyarmor/robes/lizardkingrobe1_recolormask2.png
 #armor
@@ -93,7 +93,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_white.png
 #tag "eliteversion shorttoga_light"
 #tag "eliteversion shorttoga_trim_light"
@@ -104,7 +104,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_black.png
 #tag "eliteversion shorttoga_dark"
 #tag "eliteversion shorttoga_trim_dark"
@@ -115,7 +115,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_grey.png
 #tag "eliteversion shorttoga_medium"
 #tag "eliteversion shorttoga_trim_medium"
@@ -126,7 +126,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_white.png
 #recolormask /graphics/bodyarmor/robes/toga2_light_recolormask.png
 #tag "eliteversion shorttoga_trim_white"
@@ -138,7 +138,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_black.png
 #recolormask /graphics/bodyarmor/robes/toga2_dark_recolormask.png
 #tag "eliteversion shorttoga_trim_black"
@@ -150,7 +150,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_grey.png
 #recolormask /graphics/bodyarmor/robes/toga2_middling_recolormask.png
 #tag "eliteversion shorttoga_trim_grey"
@@ -162,7 +162,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_trim_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_white.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim1_recolormask.png
 #tag "eliteversion shorttoga_fancy_light"
@@ -173,7 +173,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_trim_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_black.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim1_recolormask.png
 #tag "eliteversion shorttoga_fancy_dark"
@@ -184,7 +184,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_trim_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_grey.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim1_recolormask.png
 #tag "eliteversion shorttoga_fancy_medium"
@@ -195,7 +195,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_trim_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_white.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim2_recolormask.png
 #tag "eliteversion shorttoga_fancy_light"
@@ -207,7 +207,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_trim_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_black.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim2_recolormask.png
 #tag "eliteversion shorttoga_fancy_dark"
@@ -219,7 +219,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_trim_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_grey.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim2_recolormask.png
 #tag "eliteversion shorttoga_fancy_medium"
@@ -231,7 +231,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_fancy_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_white.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim3_recolormask.png
 #armor
@@ -241,7 +241,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_fancy_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_black.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim3_recolormask.png
 #armor
@@ -251,7 +251,7 @@
 #newitem
 #basechance 0.33
 #id shorttoga_fancy_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/toga2_grey.png
 #recolormask /graphics/bodyarmor/robes/toga2_trim3_recolormask.png
 #armor

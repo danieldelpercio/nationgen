@@ -3,7 +3,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/abysian/armor/leather_cuirass.png
 #armor
 #basechance 0.5
@@ -12,7 +12,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/abysian/armor/leather_hauberk.png
 #armor
 #basechance 0.5
@@ -21,7 +21,7 @@
 
 #newitem -- full leather
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/abysian/armor/leather_hauberk.png
 #needs legs leatherpants
 #armor
@@ -34,7 +34,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/abysian/armor/ring_cuirass.png
 #armor
 #theme "leather"
@@ -42,7 +42,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/abysian/armor/ring_hauberk.png
 #armor
 #theme "leather"
@@ -50,7 +50,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/abysian/armor/ring_hauberk.png
 #armor
 #needs legs leatherpants

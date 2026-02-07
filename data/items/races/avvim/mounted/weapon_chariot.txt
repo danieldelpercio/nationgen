@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/weapon/axe.png
 #theme "primitive"
 #offsetx -1
@@ -9,7 +9,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/weapon/mace.png
 #theme "primitive"
 #offsetx -1
@@ -19,7 +19,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/avvim/weapon/morningstar.png
 #offsetx -3
 #offsety -11
@@ -27,7 +27,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/avvim/weapon/kopesh.png
 #offsetx -1
 #offsety -10
@@ -35,7 +35,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/weapon/broadsword.png
 #offsetx -1
 #offsety -10
@@ -43,7 +43,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/weapon/falchion.png
 #offsetx -1
 #offsety -10
@@ -51,7 +51,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/weapon/spear.png
 #offsetx -1
 #offsety -10
@@ -59,7 +59,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/avvim/weapon/longspear.png
 #offsetx -1
 #offsety -10

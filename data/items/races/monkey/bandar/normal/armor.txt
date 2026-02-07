@@ -1,7 +1,7 @@
 --- Bronze Scale
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/monkey/armor/bandar/scalecuirass_bronze.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #eliteversion "gilt bronze scale cuirass"
@@ -13,7 +13,7 @@
 #newitem
 #basechance 0.5
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/monkey/armor/bandar/scalehauberk_bronze.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #eliteversion "gilt bronze scale hauberk"
@@ -36,7 +36,7 @@
 
 #newitem
 #id "gilt bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/monkey/armor/bandar/scalecuirass_gilt.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #armor
@@ -48,7 +48,7 @@
 #newitem
 #basechance 0.5
 #id "gilt bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/monkey/armor/bandar/scalehauberk_gilt.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #armor
@@ -73,7 +73,7 @@
 --- Scale
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/bandar/scalecuirass.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #eliteversion "gilt scale cuirass"
@@ -85,7 +85,7 @@
 #newitem
 #basechance 0.5
 #id "scale hauberk short"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/armor/bandar/scalehauberk.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #eliteversion "gilt scale hauberk"
@@ -97,7 +97,7 @@
 #newitem
 #basechance 0.25
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/bandar/fullscale.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #eliteversion "gilt full scale"
@@ -108,7 +108,7 @@
 
 #newitem
 #id "gilt scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/bandar/scalecuirass_gilt.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #armor
@@ -120,7 +120,7 @@
 #newitem
 #basechance 0.5
 #id "gilt scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/armor/bandar/scalehauberk_gilt.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #armor
@@ -132,7 +132,7 @@
 #newitem
 #basechance 0.25
 #id "gilt full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/bandar/fullscale_gilt.png
 #recolormask /graphics/monkey/armor/bandar/scale_recolormask.png
 #armor
@@ -147,7 +147,7 @@
 #newitem
 #basechance 0.5
 #id "lorica hamata"
-#gameid 116
+#dominionsId 116
 #sprite /graphics/monkey/armor/bandar/lorica_hamata.png
 #recolormask /graphics/monkey/armor/bandar/lorica_hamata_recolormask.png
 #eliteversion "lorica squamata"
@@ -158,7 +158,7 @@
 
 #newitem
 #id "lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/monkey/armor/bandar/lorica_squamata.png
 #recolormask /graphics/monkey/armor/bandar/lorica_squamata_recolormask.png
 #eliteversion "lorica segmentata"
@@ -169,7 +169,7 @@
 
 #newitem
 #id "lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/monkey/armor/bandar/lorica_segmentata.png
 #recolormask /graphics/monkey/armor/bandar/lorica_segmentata_recolormask.png
 #eliteversion "imperial plate"
@@ -181,7 +181,7 @@
 
 #newitem
 #id "imperial plate"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/monkey/armor/bandar/platehauberk_imperial.png
 #recolormask /graphics/monkey/armor/bandar/lorica_segmentata_recolormask.png
 #armor
@@ -197,7 +197,7 @@
 #newitem
 #chanceinc "personalcommand holy *0.1"
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/bandar/scalecuirass_oriental.png
 #recolormask /graphics/monkey/armor/bandar/scale_oriental_recolormask.png
 #armor
@@ -208,7 +208,7 @@
 #newitem
 #chanceinc "personalcommand holy *0.1"
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/armor/bandar/scalehauberk_oriental.png
 #recolormask /graphics/monkey/armor/bandar/scale_oriental_recolormask.png
 #armor
@@ -219,7 +219,7 @@
 #newitem
 #chanceinc "personalcommand holy *0.1"
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/bandar/fullscale_oriental.png
 #recolormask /graphics/monkey/armor/bandar/scale_oriental_recolormask.png
 #eliteversion "gilt full scale"
@@ -230,7 +230,7 @@
 
 #newitem
 #id "samurai armor"
-#gameid 129
+#dominionsId 129
 #sprite /graphics/monkey/armor/bandar/samuraiarmor.png
 #recolormask /graphics/monkey/armor/bandar/samuraiarmor_recolormask.png
 #eliteversion "heavy samurai armor"
@@ -242,7 +242,7 @@
 
 #newitem
 #id "samurai armor elite"
-#gameid 129
+#dominionsId 129
 #sprite /graphics/monkey/armor/bandar/samuraiarmor_elite.png
 #recolormask /graphics/monkey/armor/bandar/samuraiarmor_elite_recolormask.png
 #eliteversion "heavy samurai armor elite"
@@ -255,7 +255,7 @@
 
 #newitem
 #id "heavy samurai armor"
-#gameid 130
+#dominionsId 130
 #sprite /graphics/monkey/armor/bandar/heavysamuraiarmor.png
 #recolormask /graphics/monkey/armor/bandar/samuraiarmor_recolormask.png
 #eliteversion "heavy samurai armor elite"
@@ -267,7 +267,7 @@
 
 #newitem
 #id "heavy samurai armor elite"
-#gameid 130
+#dominionsId 130
 #sprite /graphics/monkey/armor/bandar/heavysamuraiarmor_elite.png
 #recolormask /graphics/monkey/armor/bandar/samuraiarmor_elite_recolormask.png
 #eliteversion "gilt samurai armor elite"
@@ -279,7 +279,7 @@
 
 #newitem
 #id "gilt samurai armor"
-#gameid 130
+#dominionsId 130
 #basechance 0.1
 #chanceinc "personalcommand holy *10"
 #sprite /graphics/monkey/armor/bandar/heavysamuraiarmor.png
@@ -294,7 +294,7 @@
 
 #newitem
 #id "gilt samurai armor elite"
-#gameid 130
+#dominionsId 130
 #basechance 0.1
 #chanceinc "personalcommand holy *10"
 #sprite /graphics/monkey/armor/bandar/heavysamuraiarmor_elite.png
@@ -310,7 +310,7 @@
 -- Austral armor
 #newitem
 #id "austral scale cuirass"
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #sprite /graphics/monkey/armor/bandar/scalecuirass_austral.png
 #armor
@@ -320,7 +320,7 @@
 
 #newitem
 #id "austral scale hauberk"
-#gameid 12
+#dominionsId 12
 #basechance 0.5
 #sprite /graphics/monkey/armor/bandar/scalehauberk_austral.png
 #armor
@@ -330,7 +330,7 @@
 
 #newitem
 #id "austral full scale"
-#gameid 17
+#dominionsId 17
 #basechance 0.5
 #sprite /graphics/monkey/armor/bandar/fullscale_austral.png
 #armor
@@ -340,7 +340,7 @@
 
 #newitem
 #id "austral plate cuirass"
-#gameid 9
+#dominionsId 9
 #basechance 1.5
 #sprite /graphics/monkey/armor/bandar/platecuirass_austral.png
 #armor
@@ -351,7 +351,7 @@
 
 #newitem
 #id "plate hauberk short"
-#gameid 14
+#dominionsId 14
 #basechance 1.5
 #sprite /graphics/monkey/armor/bandar/platehauberk_austral.png
 #armor
@@ -362,7 +362,7 @@
 
 #newitem
 #id "austral full plate"
-#gameid 19
+#dominionsId 19
 #basechance 1.5
 #sprite /graphics/monkey/armor/bandar/fullplate_austral.png
 #armor

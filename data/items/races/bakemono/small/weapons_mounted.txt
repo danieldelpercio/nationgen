@@ -1,6 +1,6 @@
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/vaettir/weapon/lance.png
 #renderprio 7
 #renderslot "offhandw"
@@ -11,7 +11,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/vaettir/weapon/spear.png
 #renderprio 7
 #renderslot "offhandw"
@@ -21,26 +21,26 @@
 
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #sprite /graphics/vaettir/weapon/hatchet.png
 #enditem
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/weapon/morningstar.png
 #theme "advanced"
 #enditem
 
 #newitem
 #id wakizashi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/bakemono/small/weapon/wakizashi.png
 #enditem
 
 #newitem
 #id axe
-#gameid 66
+#dominionsId 66
 #sprite /graphics/vaettir/weapon/greataxe.png
 #tag "eliteversion greataxe"
 #needs offhand no_offhand

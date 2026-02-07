@@ -173,7 +173,7 @@
 
 #newitem
 #id turban_white
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/turban_white_plain.png
 #armor
 #tag "tier 2"
@@ -195,7 +195,7 @@
 
 #newitem
 #id turban_white_fancy
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/turban_white_fancy.png
 #recolormask /graphics/avvim/helmet/caster/turban_fancy_recolormask.png
 #armor
@@ -224,7 +224,7 @@
 
 #newitem
 #id turban_black
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/turban_black_plain.png
 #armor
 #tag "tier 2"
@@ -246,7 +246,7 @@
 
 #newitem
 #id turban_black_fancy
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/turban_black_fancy.png
 #recolormask /graphics/avvim/helmet/caster/turban_fancy_recolormask.png
 #armor
@@ -278,7 +278,7 @@
 
 #newitem
 #id crown_bronze
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/crown_bronze.png
 #armor
 #tag "tier 2"
@@ -289,7 +289,7 @@
 
 #newitem
 #id crown_bronze_bejeweled
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/crown_bronze_bejeweled.png
 #recolormask /graphics/avvim/helmet/caster/crown_bejeweled_recolormask.png
 #armor
@@ -299,7 +299,7 @@
 
 #newitem
 #id crown_silver
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/crown_silver.png
 #armor
 #tag "tier 2"
@@ -309,7 +309,7 @@
 
 #newitem
 #id crown_silver_bejeweled
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/crown_silver_bejeweled.png
 #recolormask /graphics/avvim/helmet/caster/crown_bejeweled_recolormask.png
 #armor
@@ -319,7 +319,7 @@
 
 #newitem
 #id crown_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/crown_gold.png
 #armor
 #tag "tier 2"
@@ -329,7 +329,7 @@
 
 #newitem
 #id crown_gold_bejeweled
-#gameid 148
+#dominionsId 148
 #sprite /graphics/avvim/helmet/caster/crown_gold_bejeweled.png
 #recolormask /graphics/avvim/helmet/caster/crown_bejeweled_recolormask.png
 #armor

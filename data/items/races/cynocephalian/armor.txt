@@ -3,7 +3,7 @@
 
 #newitem
 #id "furs_male"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/furs_male.png
 #recolormask /graphics/cynocephalian/armor/furs_male_colormask.png
 #armor
@@ -12,7 +12,7 @@
 
 #newitem
 #id "furs_female_light"
-#gameid 44
+#dominionsId 44
 #basechance 0.5
 #sprite /graphics/cynocephalian/armor/furs_female_light.png
 #recolormask /graphics/cynocephalian/armor/furs_female_colormask.png
@@ -23,7 +23,7 @@
 
 #newitem
 #id "furs_female_dark"
-#gameid 44
+#dominionsId 44
 #basechance 0.5
 #sprite /graphics/cynocephalian/armor/furs_female_dark.png
 #recolormask /graphics/cynocephalian/armor/furs_female_colormask.png
@@ -34,7 +34,7 @@
 
 #newitem
 #id "cuirass_linen_primitive_male"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/cynocephalian/armor/cuirass_linen_primitive_male.png
 #recolormask /graphics/cynocephalian/armor/cuirass_linen_primitive_male_colormask.png
 #armor
@@ -43,7 +43,7 @@
 
 #newitem
 #id "cuirass_linen_primitive_female"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/cynocephalian/armor/cuirass_linen_primitive_female.png
 #recolormask /graphics/cynocephalian/armor/cuirass_linen_primitive_female_colormask.png
 #armor
@@ -53,7 +53,7 @@
 
 #newitem
 #id "cuirass_linen_yellow"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/cynocephalian/armor/cuirass_linen_yellow.png
 #recolormask /graphics/cynocephalian/armor/cuirass_linen_yellow_colormask.png
 #armor
@@ -64,7 +64,7 @@
 
 #newitem
 #id "cuirass_bronze_monkey"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/cynocephalian/armor/cuirass_bronze_monkey.png
 #recolormask /graphics/cynocephalian/armor/cuirass_bronze_monkey_colormask.png
 #armor
@@ -75,7 +75,7 @@
 
 #newitem
 #id "leather_armor_full"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/cynocephalian/armor/leather_armor_full.png
 #recolormask /graphics/cynocephalian/armor/leather_armor_full_colormask.png
 #armor
@@ -83,7 +83,7 @@
 
 #newitem
 #id "cuirass_ringmail"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/cynocephalian/armor/cuirass_ringmail.png
 #recolormask /graphics/cynocephalian/armor/cuirass_ringmail_colormask.png
 #armor
@@ -94,7 +94,7 @@
 
 #newitem
 #id "cuirass_scale_tribal"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cynocephalian/armor/cuirass_scale_tribal.png
 #recolormask /graphics/cynocephalian/armor/cuirass_scale_tribal_colormask.png
 #armor
@@ -105,7 +105,7 @@
 
 #newitem
 #id "cuirass_scale_tribal_elite"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cynocephalian/armor/cuirass_scale_tribal_elite.png
 #recolormask /graphics/cynocephalian/armor/cuirass_scale_tribal_elite_colormask.png
 #armor
@@ -117,7 +117,7 @@
 
 #newitem
 #id "cuirass_scale_tribal_elite_cloak"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cynocephalian/armor/cuirass_scale_tribal_elite_cloak.png
 #recolormask /graphics/cynocephalian/armor/cuirass_elite_cloak_colormask.png
 #armor
@@ -131,7 +131,7 @@
 
 #newitem
 #id "cuirass_plate"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/cynocephalian/armor/cuirass_plate.png
 #recolormask /graphics/cynocephalian/armor/cuirass_plate_colormask.png
 #armor
@@ -142,7 +142,7 @@
 
 #newitem
 #id "cuirass_plate_fancy"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/cynocephalian/armor/cuirass_plate_fancy.png
 #recolormask /graphics/cynocephalian/armor/cuirass_plate_colormask.png
 #armor
@@ -153,7 +153,7 @@
 
 #newitem
 #id "cuirass_plate_fancy_cloak"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/cynocephalian/armor/cuirass_plate_fancy_cloak.png
 #recolormask /graphics/cynocephalian/armor/cuirass_elite_cloak_colormask.png
 #armor
@@ -165,7 +165,7 @@
 
 #newitem
 #id "cuirass_plate_elite"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/cynocephalian/armor/cuirass_plate_elite.png
 #recolormask /graphics/cynocephalian/armor/cuirass_plate_elite_colormask.png
 #armor
@@ -177,7 +177,7 @@
 
 #newitem
 #id "cuirass_plate_elite_cloak"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/cynocephalian/armor/cuirass_plate_elite_cloak.png
 #recolormask /graphics/cynocephalian/armor/cuirass_elite_cloak_colormask.png
 #armor

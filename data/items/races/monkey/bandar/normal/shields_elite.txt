@@ -1,6 +1,6 @@
 #newitem
 #id woodshield
-#gameid 2
+#dominionsId 2
 #sprite /graphics/monkey/offhand/bandar/woodshield.png
 #armor
 #theme "enlightened"
@@ -10,7 +10,7 @@
 
 #newitem
 #id bronzeshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/monkey/offhand/bandar/bronzeshield.png
 #armor
 #theme "enlightened"
@@ -19,7 +19,7 @@
 
 #newitem
 #id ironshield
-#gameid 208
+#dominionsId 208
 #sprite /graphics/monkey/offhand/bandar/ironshield.png
 #armor
 #theme "enlightened"
@@ -28,7 +28,7 @@
 
 #newitem
 #id towershield1
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower2.png
 #recolormask /graphics/highmen/shields/tower2_recolormask1.png
 #offsetx 3
@@ -40,7 +40,7 @@
 
 #newitem
 #id towershield2
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower2.png
 #recolormask /graphics/highmen/shields/tower2_recolormask2.png
 #offsetx 3
@@ -52,7 +52,7 @@
 
 #newitem
 #id towershield3
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower3.png
 #recolormask /graphics/highmen/shields/tower3_recolormask1.png
 #offsetx 3
@@ -65,7 +65,7 @@
 #newitem
 #basechance 3
 #id hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/monkey/offhand/bandar/hideshield.png
 #recolormask /graphics/monkey/offhand/bandar/hideshield_recolormask.png
 #armor
@@ -76,7 +76,7 @@
 #newitem
 #basechance 6
 #id greathideshield
-#gameid 112
+#dominionsId 112
 #sprite /graphics/monkey/offhand/bandar/greathideshield.png
 #recolormask /graphics/monkey/offhand/bandar/greathideshield_recolormask.png
 #armor
@@ -87,7 +87,7 @@
 #newitem
 #basechance 3
 #id greatironshield
-#gameid 3
+#dominionsId 3
 #sprite /graphics/monkey/offhand/bandar/greathideshield_iron.png
 #recolormask /graphics/monkey/offhand/bandar/greathideshield_iron_recolormask.png
 #armor

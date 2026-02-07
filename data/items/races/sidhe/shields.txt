@@ -2,7 +2,7 @@
 
 #newitem
 #id bronzebuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #armor
 #theme "bronze"
@@ -10,14 +10,14 @@
 
 #newitem
 #id shield6
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield3.png
 #armor
 #enditem
 
 #newitem
 #id goldenshield1
-#gameid 155
+#dominionsId 155
 #sprite /graphics/offhand/sacred/goldenshield.png
 #theme "elite"
 #armor
@@ -25,7 +25,7 @@
 
 #newitem
 #id goldenshield2
-#gameid 155
+#dominionsId 155
 #sprite /graphics/offhand/sacred/goldenshield5.png
 #theme "elite"
 #armor
@@ -33,7 +33,7 @@
 
 #newitem
 #id goldenkite
-#gameid 155
+#dominionsId 155
 #sprite /graphics/offhand/sacred/goldenkite2.png
 #theme "elite"
 #theme "advanced"
@@ -43,7 +43,7 @@
 #newitem
 #id kite1
 #basechance 0.025
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/kite1.png
 #armor
 #theme "advanced"
@@ -53,7 +53,7 @@
 #newitem
 #id kite2
 #basechance 0.025
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/kite2.png
 #armor
 #theme "advanced"
@@ -63,7 +63,7 @@
 #newitem
 #id kite3
 #basechance 0.025
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/kite8_bronze.png
 #armor
 #theme "advanced"
@@ -72,7 +72,7 @@
 #newitem
 #id kite4
 #basechance 0.025
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/kite8_bronze.png
 #armor
 #theme "advanced"

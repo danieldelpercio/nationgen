@@ -5,7 +5,7 @@
 
 #newitem
 #id chainhauberk
-#gameid 13
+#dominionsId 13
 #sprite /graphics/vanir/armor/chainhauberk.png
 #armor
 #tag "tier 2"
@@ -14,7 +14,7 @@
 
 #newitem
 #id coloredhauberk
-#gameid 10
+#dominionsId 10
 #sprite /graphics/vanir/armor/special/coloredhauberk.png
 #recolormask self
 #armor
@@ -25,7 +25,7 @@
 
 #newitem
 #id goldencuirass
-#gameid 8
+#dominionsId 8
 #sprite /graphics/vanir/armor/special/goldencuirass.png
 #armor
 #tag "tier 2"
@@ -34,7 +34,7 @@
 
 #newitem
 #id goldenhauberk
-#gameid 13
+#dominionsId 13
 #sprite /graphics/vanir/armor/special/goldenhauberk.png
 #armor
 #tag "tier 3"

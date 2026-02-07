@@ -1,7 +1,7 @@
 --- Ring
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/bodyarmor/bronze/ringcuirass_2h.png
 #armor
 #basechance 0.25
@@ -11,7 +11,7 @@
 
 #newitem
 #id "ring hauberk short"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/bronze/ringhauberk_2h.png
 #armor
 #basechance 0.5
@@ -21,7 +21,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/bronze/fullring_2h.png
 #armor
 #needs legs ringpants
@@ -34,7 +34,7 @@
 --- Scale
 #newitem
 #id "scale cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/bodyarmor/bronze/scalecuirass_2h.png
 #armor
 #basechance 0.25
@@ -43,7 +43,7 @@
 
 #newitem
 #id "scale hauberk long"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/bodyarmor/bronze/scalehauberk_2h.png
 #armor
 #basechance 0.5
@@ -65,7 +65,7 @@
 --- Plate
 #newitem
 #id "plate cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/bodyarmor/bronze/platecuirass_2h.png
 #armor
 #theme "advanced"
@@ -75,7 +75,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/bodyarmor/bronze/platehauberk_2h.png
 #armor
 #theme "advanced"

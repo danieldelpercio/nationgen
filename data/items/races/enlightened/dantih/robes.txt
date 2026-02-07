@@ -97,7 +97,7 @@
 
 #newitem
 #id furs
-#gameid 44
+#dominionsId 44
 #armor
 #sprite /graphics/enlightened/dantih/armor/furs.png
 #tier 1
@@ -232,7 +232,7 @@
 
 #newitem
 #id robe_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/robe_dark.png
 #eliteversion robe_dark
 #armor
@@ -243,7 +243,7 @@
 
 #newitem
 #id robe_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/robe_medium.png
 #eliteversion robe_medium
 #armor
@@ -254,7 +254,7 @@
 
 #newitem
 #id robe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/robe_light.png
 #eliteversion robe_light
 #armor
@@ -265,7 +265,7 @@
 
 #newitem
 #id robe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/robe_dark.png
 #recolormask self
 #armor
@@ -276,7 +276,7 @@
 
 #newitem
 #id robe_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/robe_medium.png
 #recolormask self
 #armor
@@ -287,7 +287,7 @@
 
 #newitem
 #id robe_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/robe_light.png
 #recolormask self
 #armor
@@ -368,7 +368,7 @@
 
 #newitem
 #id kimono_skirt3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/kimono_skirt.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_skirt_recolormask3.png
 #eliteversion kimono1
@@ -383,7 +383,7 @@
 
 #newitem
 #id kimono_skirt4
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/kimono_skirt.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_skirt_recolormask4.png
 #eliteversion kimono1
@@ -398,7 +398,7 @@
 
 #newitem
 #id kimono_skirt5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/kimono_skirt.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_skirt_recolormask5.png
 #eliteversion kimono1
@@ -413,7 +413,7 @@
 
 #newitem
 #id kimono1
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono1.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask1.png
 #eliteversion kimono2
@@ -429,7 +429,7 @@
 
 #newitem
 #id kimono2
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono2.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask2.png
 #eliteversion kimono1
@@ -445,7 +445,7 @@
 
 #newitem
 #id kimono_dark3
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono1.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask3.png
 #eliteversion kimono1
@@ -458,7 +458,7 @@
 
 #newitem
 #id kimono_light3
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono2.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask3.png
 #eliteversion kimono2
@@ -471,7 +471,7 @@
 
 #newitem
 #id kimono_dark4
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono1.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask4.png
 #eliteversion kimono1
@@ -484,7 +484,7 @@
 
 #newitem
 #id kimono_light4
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono2.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask4.png
 #eliteversion kimono2
@@ -497,7 +497,7 @@
 
 #newitem
 #id kimono_dark5
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono1.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask5.png
 #eliteversion kimono1
@@ -510,7 +510,7 @@
 
 #newitem
 #id kimono_light5
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono2.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask5.png
 #eliteversion kimono2
@@ -523,7 +523,7 @@
 
 #newitem
 #id kimono_dark6
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono1.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask6.png
 #eliteversion kimono1
@@ -536,7 +536,7 @@
 
 #newitem
 #id kimono_light6
-#gameid 159
+#dominionsId 159
 #sprite /graphics/enlightened/dantih/armor/robes/kimono2.png
 #recolormask /graphics/enlightened/dantih/armor/robes/kimono_recolormask6.png
 #eliteversion kimono2
@@ -549,7 +549,7 @@
 
 #newitem
 #id ermorrobe_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_black.png
 #eliteversion ermorrobe_grey
 #eliteversion ermorrobe_white
@@ -563,7 +563,7 @@
 
 #newitem
 #id ermorrobe_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_medium.png
 #eliteversion ermorrobe_black
 #eliteversion ermorrobe_white
@@ -577,7 +577,7 @@
 
 #newitem
 #id ermorrobe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_white.png
 #eliteversion ermorrobe_grey
 #eliteversion ermorrobe_black
@@ -591,7 +591,7 @@
 
 #newitem
 #id ermorrobe_dark_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_dark.png
 #recolormask /graphics/enlightened/dantih/armor/robes/ermor_dull_recolormask.png
 #eliteversion ermorrobe_light_dull
@@ -605,7 +605,7 @@
 
 #newitem
 #id ermorrobe_dark_muted
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_dark.png
 #recolormask /graphics/enlightened/dantih/armor/robes/ermor_muted_recolormask.png
 #eliteversion ermorrobe_light_muted
@@ -619,7 +619,7 @@
 
 #newitem
 #id ermorrobe_medium_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_medium.png
 #recolormask /graphics/enlightened/dantih/armor/robes/ermor_dull_recolormask.png
 #eliteversion ermorrobe_light_dull
@@ -633,7 +633,7 @@
 
 #newitem
 #id ermorrobe_medium_muted
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_medium.png
 #recolormask /graphics/enlightened/dantih/armor/robes/ermor_muted_recolormask.png
 #eliteversion ermorrobe_light_muted
@@ -647,7 +647,7 @@
 
 #newitem
 #id ermorrobe_light_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_light.png
 #recolormask /graphics/enlightened/dantih/armor/robes/ermor_dull_recolormask.png
 #eliteversion ermorrobe_medium_dull
@@ -661,7 +661,7 @@
 
 #newitem
 #id ermorrobe_light_muted
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_light.png
 #recolormask /graphics/enlightened/dantih/armor/robes/ermor_muted_recolormask.png
 #eliteversion ermorrobe_medium_muted
@@ -675,7 +675,7 @@
 
 #newitem
 #id ermorrobe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_dark.png
 #recolormask self
 #eliteversion ermorrobe_light
@@ -688,7 +688,7 @@
 
 #newitem
 #id ermorrobe_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_medium.png
 #recolormask self
 #eliteversion ermorrobe_light
@@ -701,7 +701,7 @@
 
 #newitem
 #id ermorrobe_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/enlightened/dantih/armor/robes/ermor_light.png
 #recolormask self
 #eliteversion ermorrobe_medium

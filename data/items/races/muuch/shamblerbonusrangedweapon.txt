@@ -1,14 +1,14 @@
 #newitem
 #id "obsidian darts"
 #basechance 3
-#gameid 619
+#dominionsId 619
 #theme "primitive"
 #theme "obsidian"
 #enditem
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/atlantian/weapon/offhandnet-s.png
 #offsetx -2
 #offsety -2
@@ -20,7 +20,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/atlantian/weapon/offhandnet-s2.png
 #offsetx -2
 #offsety -2
@@ -33,7 +33,7 @@
 #newitem
 #basechance 0.25
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #tag "tierunique"
 #theme "bronze"
 #enditem

@@ -1,6 +1,6 @@
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/sobek/weapon/predator_sling.png
 #needs quiver slingbullets
 #tag "name Slinger"

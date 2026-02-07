@@ -1,12 +1,12 @@
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #theme "iron"
 #enditem
 
 #newitem
 #id "sticks and stones"
-#gameid 360
+#dominionsId 360
 #theme "primitive"
 #tag "maxprot 8"
 #enditem

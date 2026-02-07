@@ -12,7 +12,7 @@
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/tengu/weapons/oversized/wakizasi_oh.png
 #enditem
 

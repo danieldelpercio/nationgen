@@ -2,14 +2,14 @@
 
 #newitem
 #id epicgoldenstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/big/weapons/epicgoldenstaff.png
 #tag "tier 3"
 #enditem
 
 #newitem
 #id epicbaubledstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/big/weapons/epicbaubledstaff.png
 #tag "tier 3"
 #enditem
@@ -17,7 +17,7 @@
 
 #newitem
 #id obsidianglaive
-#gameid 426
+#dominionsId 426
 #sprite /graphics/agarthan/big/weapons/obsidianglaive.png
 #renderprio 6
 #renderslot "offhandw"
@@ -25,13 +25,13 @@
 
 #newitem
 #id woodenorbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/big/weapons/woodenorbstaff.png
 #enditem
 
 #newitem
 #id glaive
-#gameid 673
+#dominionsId 673
 #sprite /graphics/agarthan/big/weapons/glaive_bronze.png
 #renderprio 6
 #renderslot "offhandw"
@@ -49,7 +49,7 @@
 
 #newitem
 #id othersceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/agarthan/big/weapons/othersceptre.png
 #enditem
 

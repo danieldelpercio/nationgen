@@ -8,87 +8,87 @@
 
 #newitem
 #id bite_weak
-#gameid 576
+#dominionsId 576
 #type "bite"
 #type "maw"
 #enditem
 
 #newitem
 #id bite
-#gameid 20
+#dominionsId 20
 #type "bite"
 #enditem
 
 #newitem
 #id beak
-#gameid 404
+#dominionsId 404
 #type "beak"
 #enditem
 
 #newitem
 #id bite_poison_weak
-#gameid 323
+#dominionsId 323
 #type "poison"
 #command "#gcost +1"
 #enditem
 
 #newitem
 #id bite_poison_strong
-#gameid 239
+#dominionsId 239
 #type "poison"
 #command "#gcost +2"
 #enditem
 
 #newitem
 #id bite_poison_stun
-#gameid 251
+#dominionsId 251
 #type "poison"
 #command "#gcost +1"
 #enditem
 
 #newitem
 #id spit_poison_fixed
-#gameid 141
+#dominionsId 141
 #type "poison"
 #command "#gcost +1"
 #enditem
 
 #newitem
 #id spit_poison_magic
-#gameid 224
+#dominionsId 224
 #type "poison"
 #command "#gcost +2"
 #enditem
 
 #newitem
 #id bite_corrosive
-#gameid 603
+#dominionsId 603
 #type "maw"
 #command "#gcost +2"
 #enditem
 
 #newitem
 #id spit_corrosive
-#gameid 599
+#dominionsId 599
 #type "maw"
 #command "#gcost +2"
 #enditem
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #type "maw"
 #enditem
 
 #newitem
 #id tentacle_tiny
-#gameid 672
+#dominionsId 672
 #type "maw"
 #enditem
 
 #newitem
 #id tongue_sleep
-#gameid 387
+#dominionsId 387
 #type "maw"
 #itemslot hand +1
 #command "#gcost +1"
@@ -96,7 +96,7 @@
 
 #newitem
 #id tongue_disease
-#gameid 142
+#dominionsId 142
 #type "maw"
 #command "#gcost +2"
 #enditem

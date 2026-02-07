@@ -2,7 +2,7 @@
 
 #newitem
 #id "reinforced leather cap"
-#gameid 119
+#dominionsId 119
 #sprite /graphics/halfmen/satyr/helmet/leather_helmet.png
 #eliteversion "crested helmet"
 #armor
@@ -13,7 +13,7 @@
 
 #newitem
 #id "crested helmet"
-#gameid 162
+#dominionsId 162
 #sprite /graphics/halfmen/satyr/helmet/leather_helmet_crest.png
 #recolormask /graphics/halfmen/satyr/helmet/crest_recolormask.png
 #armor
@@ -27,7 +27,7 @@
 
 #newitem
 #id "bronze cap"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/halfmen/satyr/helmet/bronze_half_helmet.png
 #eliteversion "crested bronze helmet"
 #eliteversion "bronze hoplite helmet"
@@ -66,7 +66,7 @@
 
 #newitem
 #id "bronze hoplite helmet"
-#gameid 123
+#dominionsId 123
 #sprite /graphics/halfmen/satyr/helmet/bronze_hoplite_helmet.png
 #eliteversion "crested bronze hoplite helmet"
 #eliteversion "ram bronze hoplite helmet"
@@ -78,7 +78,7 @@
 
 #newitem
 #id "crested bronze hoplite helmet"
-#gameid 123
+#dominionsId 123
 #sprite /graphics/halfmen/satyr/helmet/bronze_hoplite_helmet_crest.png
 #recolormask /graphics/halfmen/satyr/helmet/crest_recolormask.png
 #eliteversion "crested bronze hoplite helmet"
@@ -92,7 +92,7 @@
 
 #newitem
 #id "ram bronze hoplite helmet"
-#gameid 123
+#dominionsId 123
 #sprite /graphics/halfmen/satyr/helmet/bronze_hoplite_helmet_ram.png
 #eliteversion "ram bronze hoplite helmet"
 #armor
@@ -110,7 +110,7 @@
 
 #newitem
 #id "iron cap"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/halfmen/satyr/helmet/iron_half_helmet.png
 #eliteversion "crested iron helmet"
 #eliteversion "iron hoplite helmet"
@@ -122,7 +122,7 @@
 
 #newitem
 #id "iron helmet"
-#gameid 118
+#dominionsId 118
 #sprite /graphics/halfmen/satyr/helmet/iron_half_helmet.png
 #eliteversion "crested iron helmet"
 #eliteversion "iron hoplite helmet"
@@ -134,7 +134,7 @@
 
 #newitem
 #id "crested iron helmet"
-#gameid 118
+#dominionsId 118
 #sprite /graphics/halfmen/satyr/helmet/iron_half_helmet_crest.png
 #recolormask /graphics/halfmen/satyr/helmet/crest_recolormask.png
 #eliteversion "crested iron helmet"
@@ -149,7 +149,7 @@
 
 #newitem
 #id "iron hoplite helmet"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/halfmen/satyr/helmet/iron_hoplite_helmet.png
 #eliteversion "crested iron hoplite helmet"
 #eliteversion "ram iron hoplite helmet"
@@ -161,7 +161,7 @@
 
 #newitem
 #id "crested iron hoplite helmet"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/halfmen/satyr/helmet/iron_hoplite_helmet_crest.png
 #recolormask /graphics/halfmen/satyr/helmet/crest_recolormask.png
 #eliteversion "crested iron hoplite helmet"
@@ -175,7 +175,7 @@
 
 #newitem
 #id "ram iron hoplite helmet"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/halfmen/satyr/helmet/iron_hoplite_helmet_ram.png
 #eliteversion "ram iron hoplite helmet"
 #armor

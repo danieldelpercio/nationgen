@@ -10,7 +10,7 @@
 
 #newitem
 #id apron
-#gameid 5
+#dominionsId 5
 #sprite /graphics/cyclops/elder/armor/robes/apron_forgelord.png
 #armor
 #tier 1

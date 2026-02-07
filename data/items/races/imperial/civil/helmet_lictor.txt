@@ -8,7 +8,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #basechance 0.25
 #sprite /graphics/imperial/legion/helmet/cap_leather.png
 #offsetx 2
@@ -18,7 +18,7 @@
 
 #newitem
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #basechance 0.25
 #sprite /graphics/imperial/legion/helmet/cap_leather.png
 #offsetx 2
@@ -28,7 +28,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #basechance 0.25
 #sprite /graphics/imperial/legion/helmet/cap_legionary_iron.png
 #offsetx 2
@@ -38,7 +38,7 @@
 
 #newitem
 #id wolf_leather
-#gameid 119
+#dominionsId 119
 #basechance 0.25
 #sprite /graphics/imperial/legion/helmet/furs_light_wolf.png
 #offsetx 2
@@ -50,7 +50,7 @@
 
 #newitem
 #id wolf_iron
-#gameid 20
+#dominionsId 20
 #basechance 0.25
 #sprite /graphics/imperial/legion/helmet/furs_light_wolf.png
 #offsetx 2

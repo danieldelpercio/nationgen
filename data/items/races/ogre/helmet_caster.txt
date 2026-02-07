@@ -29,7 +29,7 @@
 #newitem
 #basechance 4
 #id hood
-#gameid 121
+#dominionsId 121
 #sprite /graphics/ogre/helmet/scouthood.png
 #recolormask self
 #armor
@@ -43,7 +43,7 @@
 #newitem
 #basechance 1
 #id ogre_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ogre/helmet/leathercap.png
 #armor
 #maxprot 12
@@ -56,7 +56,7 @@
 #newitem
 #basechance 1
 #id ogre_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ogre/helmet/ironcap.png
 #armor
 #theme "iron"
@@ -68,7 +68,7 @@
 #newitem
 #basechance 1
 #id ogre_bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ogre/helmet/bronzecap.png
 #armor
 #theme "bronze"
@@ -79,7 +79,7 @@
 
 #newitem
 #id jingasa_bakemono
-#gameid 131
+#dominionsId 131
 #sprite /graphics/ogre/helmet/jingasa.png
 #recolormask /graphics/ogre/helmet/jingasa_recolormask.png
 #tag "eliteversion jingasa_bakemono"
@@ -95,7 +95,7 @@
 
 #newitem
 #id kabuto_bakemono
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto.png
 #tag "eliteversion kabuto_bakemono"
 #tag "eliteversion kabuto_bakemono_elite"
@@ -110,7 +110,7 @@
 
 #newitem
 #id kabuto_bakemono_elite
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto_elite.png
 #tag "eliteversion kabuto_bakemono_elite"
 #armor

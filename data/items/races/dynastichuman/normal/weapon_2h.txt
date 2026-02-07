@@ -1,6 +1,6 @@
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/dynastichuman/weapons/greataxe_bronze.png
 #theme "primitive"
 #theme "bronze"
@@ -17,7 +17,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/bronze/spear.png
 #offsetx 2
 #theme "bronze"
@@ -27,7 +27,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/weapon/bronze/longspear.png
 #offsetx 2
 #theme "bronze"
@@ -37,7 +37,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/dynastichuman/weapons/greataxe.png
 #theme "iron"
 #theme "primitive"
@@ -46,7 +46,7 @@
 
 #newitem
 #id bardiche
-#gameid 257
+#dominionsId 257
 #sprite /graphics/dynastichuman/weapons/bardiche.png
 #theme "iron"
 #theme "advanced"
@@ -54,7 +54,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/standard/spear.png
 #offsetx 2
 #theme "iron"
@@ -64,7 +64,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/weapon/standard/longspear.png
 #offsetx 2
 #theme "iron"

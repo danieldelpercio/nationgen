@@ -1,6 +1,6 @@
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/avvim/offhand/dagger.png
 #offsetx -9
 #offsety 2
@@ -9,7 +9,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/avvim/weapon/shortsword.png
 #offsetx 0
 #offsety 1
@@ -21,7 +21,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/avvim/weapon/kopesh.png
 #offsetx 0
 #offsety 1
@@ -33,7 +33,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/weapon/broadsword.png
 #offsetx 0
 #offsety 1
@@ -43,7 +43,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/weapon/falchion.png
 #offsetx 0
 #offsety 1
@@ -53,7 +53,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/quarterstaff.png
 #tag "tier 2"
 #tag "eliteversion orbstaff"
@@ -65,7 +65,7 @@
 
 #newitem
 #id serpentstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/serpentstaff.png
 #offsetx 1
 #theme "lizard"
@@ -84,7 +84,7 @@
 
 #newitem
 #id orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/orbstaff.png
 #recolormask /graphics/avvim/weapon/caster/orbstaff_recolormask.png
 #tag "tier 3"
@@ -92,7 +92,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #offsety 3
 #tag "tier 2"
@@ -102,7 +102,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #offsety 3
@@ -112,7 +112,7 @@
 
 #newitem
 #id skullstaff1
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/skullstaff1.png
 #theme "primitive"
 #theme "death"
@@ -122,7 +122,7 @@
 
 #newitem
 #id skullstaff2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/skullstaff2.png
 #theme "primitive"
 #theme "death"
@@ -132,7 +132,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_metal.png
 #tag "tier 2"
 #tag "tier 1"
@@ -141,14 +141,14 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_metal_bauble.png
 #tag "tier 3"
 #enditem
 
 #newitem
 #id gnarledstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_gnarled.png
 #offsety 2
 #tag "tier 3"
@@ -156,7 +156,7 @@
 
 #newitem
 #id knobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/knobblystaff.png
 #offsety 3
 #tag "tier 2"
@@ -167,7 +167,7 @@
 #id censer
 #basechance 0.25
 #chanceinc "personalmagic holy 1 1.75"
-#gameid 516
+#dominionsId 516
 #sprite /graphics/avvim/weapon/caster/censer.png
 #tag "tier 2"
 #tag "tier 3"
@@ -175,7 +175,7 @@
 
 #newitem
 #id simple_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #tag "eliteversion glowing_orbstaff"
 #tag "tier 2"
@@ -187,7 +187,7 @@
 
 #newitem
 #id glowing_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #recolormask /graphics/avvim/weapon/caster/staff_orb_plain_recolormask.png
 #tag "tier 3"
@@ -197,7 +197,7 @@
 
 #newitem
 #id crook
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_crook.png
 #tag "tier 1"
 #tag "tier 2"

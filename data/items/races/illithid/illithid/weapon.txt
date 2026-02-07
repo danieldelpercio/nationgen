@@ -1,6 +1,6 @@
 #newitem
 #id bronze_spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/illithid/illithid/weapons/spear_bronze.png
 #theme "bronze"
 #theme "amphibious"
@@ -8,7 +8,7 @@
 
 #newitem
 #id bronze_trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/illithid/illithid/weapons/trident_bronze.png
 #theme "bronze"
 #theme "amphibious"
@@ -16,7 +16,7 @@
 
 #newitem
 #id bronze_glaive
-#gameid 673
+#dominionsId 673
 #sprite /graphics/illithid/illithid/weapons/glaive_bronze.png
 #theme "bronze"
 #theme "amphibious"
@@ -24,7 +24,7 @@
 
 #newitem
 #id coral_spear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/illithid/illithid/weapons/spear_coral.png
 #theme "coral"
 #theme "amphibious"
@@ -32,7 +32,7 @@
 
 #newitem
 #id coral_glaive
-#gameid 46
+#dominionsId 46
 #sprite /graphics/illithid/illithid/weapons/glaive_coral.png
 #theme "coral"
 #theme "amphibious"
@@ -40,7 +40,7 @@
 
 #newitem
 #id meteorite_trident
-#gameid 642
+#dominionsId 642
 #sprite /graphics/illithid/illithid/weapons/trident_iron.png
 #theme "iron"
 #theme "amphibious"
@@ -56,7 +56,7 @@
 
 #newitem
 #id bone_spear
-#gameid 373
+#dominionsId 373
 #sprite /graphics/illithid/illithid/weapons/spear_bone.png
 #theme "bone"
 #theme "primitive"
@@ -64,7 +64,7 @@
 
 #newitem
 #id bone_trident
-#gameid 670
+#dominionsId 670
 #sprite /graphics/illithid/illithid/weapons/trident_bone.png
 #theme "bone"
 #theme "primitive"

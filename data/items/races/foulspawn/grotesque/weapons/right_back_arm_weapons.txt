@@ -1,7 +1,7 @@
 
 #newitem
 #id pincer
-#gameid 273
+#dominionsId 273
 #type pincer
 #needs right_back_arm pincer
 #enditem
@@ -36,14 +36,14 @@
 
 #newitem
 #id hydra
-#gameid 490
+#dominionsId 490
 #needs right_back_arm hydra
 #type "coldblooded"
 #enditem
 
 #newitem
 #id typhon_heads
-#gameid 491
+#dominionsId 491
 #type coldblooded
 #needs right_back_arm typhon
 #enditem
@@ -57,7 +57,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #type tentacle
 #type degenerate
 #needstype right_back_arm tentacle
@@ -65,35 +65,35 @@
 
 #newitem
 #id tentacle_strangle
-#gameid 116
+#dominionsId 116
 #type tentacle
 #needstype right_back_arm prehensile_tentacle
 #enditem
 
 #newitem
 #id tentacle_sleep
-#gameid 387
+#dominionsId 387
 #type tentacle
 #needstype right_back_arm prehensile_tentacle
 #enditem
 
 #newitem
 #id tentacle_disease
-#gameid 142
+#dominionsId 142
 #type tentacle
 #needstype right_back_arm tentacle
 #enditem
 
 #newitem
 #id tentacle_weakness
-#gameid 550
+#dominionsId 550
 #type tentacle
 #needstype right_back_arm tentacle
 #enditem
 
 #newitem
 #id tentacle_life_drain
-#gameid 271
+#dominionsId 271
 #type tentacle
 #needstype right_back_arm tentacle
 #enditem

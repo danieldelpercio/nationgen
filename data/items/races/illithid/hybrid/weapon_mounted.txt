@@ -3,7 +3,7 @@
 
 #newitem
 #id lance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/illithid/hybrid/weapon/spear_iron.png
 #offsetx -5
 #theme "iron"
@@ -15,7 +15,7 @@
 
 #newitem
 #id bronze_lance
-#gameid 651
+#dominionsId 651
 #sprite /graphics/illithid/hybrid/weapon/spear_bronze.png
 #offsetx -5
 #theme "bronze"
@@ -27,7 +27,7 @@
 
 #newitem
 #id coral_lance
-#gameid 577
+#dominionsId 577
 #sprite /graphics/illithid/hybrid/weapon/spear_coral.png
 #offsetx -5
 #theme "coral"
@@ -39,7 +39,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/illithid/hybrid/weapon/spear_iron.png
 #theme "iron"
 #theme "terrestrial"
@@ -61,7 +61,7 @@
 
 #newitem
 #id bronze_spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/illithid/hybrid/weapon/spear_bronze.png
 #theme "bronze"
 #theme "amphibious"
@@ -83,7 +83,7 @@
 
 #newitem
 #id coral_spear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/illithid/hybrid/weapon/spear_coral.png
 #theme "coral"
 #theme "amphibious"
@@ -94,7 +94,7 @@
 
 #newitem
 #id bone_spear
-#gameid 373
+#dominionsId 373
 #sprite /graphics/illithid/hybrid/weapon/spear_bone.png
 #theme "bone"
 #theme "primitive"
@@ -119,7 +119,7 @@
 
 #newitem
 #id coralclub
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ichtyid/weapon/coral_club.png
 #offsetx 2
 #offsety 10
@@ -131,7 +131,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/dynastichuman/weapons/club1.png
 #offsetx -3
 #offsety 4
@@ -144,7 +144,7 @@
 
 #newitem
 #id spiked_club
-#gameid 265
+#dominionsId 265
 #sprite /graphics/dynastichuman/weapons/club1.png
 #offsetx -3
 #offsety 4
@@ -157,7 +157,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/advancedhuman/weapons/shortsword.png
 #offsetx -4
 #offsety 3
@@ -169,7 +169,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/ichtyid/weapon/bronze_shortsword.png
 #offsetx 3
 #offsety 12
@@ -191,7 +191,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/weapons/broadsword.png
 #offsetx -4
 #offsety 3
@@ -203,7 +203,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/weapons/falchion.png
 #offsetx -4
 #offsety 3
@@ -215,7 +215,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/vaettir/weapon/hatchet.png
 #offsetx -4
 #offsety 0
@@ -227,7 +227,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 676
+#dominionsId 676
 #sprite /graphics/ichtyid/weapon/bronze_axe.png
 #offsetx 3
 #offsety 10
@@ -238,7 +238,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/advancedhuman/weapons/mace.png
 #offsetx -6
 #offsety 2

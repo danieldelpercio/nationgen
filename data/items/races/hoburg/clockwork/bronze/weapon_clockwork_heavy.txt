@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/highmen/weapons/axe_bronze.png
 #offsety -12
 #theme "primitive"
@@ -10,7 +10,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/muuch/weapons/mace.png
 #offsetx 1
 #offsety -16
@@ -30,7 +30,7 @@
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/muuch/weapons/clubsword_1h.png
 #offsetx 1
 #offsety -16
@@ -40,7 +40,7 @@
 #newitem
 #id obsidian_blade
 #basechance 0.5
-#gameid 625
+#dominionsId 625
 #sprite /graphics/muuch/weapons/obsidian_blade.png
 #offsetx 1
 #offsety -17
@@ -83,7 +83,7 @@
 
 #newitem
 #id spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/highmen/weapons/spear_bronze.png
 #offsety -13
 #theme "occidental"

@@ -2,7 +2,7 @@
 
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #basechance 4
 #sprite /graphics/halfmen/centaur/weapon/shortbow.png
 #needs quiver quiver
@@ -14,7 +14,7 @@
 
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #basechance 4
 #sprite /graphics/halfmen/centaur/weapon/longbow.png
 #needs quiver quiver
@@ -26,7 +26,7 @@
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #basechance 2
 #sprite /graphics/halfmen/centaur/weapon/shortbow.png
 #needs quiver quiver
@@ -38,7 +38,7 @@
 
 #newitem
 #id "enchanted bow"
-#gameid 613
+#dominionsId 613
 #sprite /graphics/halfmen/centaur/weapon/frostbow.png
 #needs quiver quiver
 #needs offhand none
@@ -49,7 +49,7 @@
 
 #newitem
 #id "vine bow"
-#gameid 303
+#dominionsId 303
 #basechance 0
 #chanceinc "personalmagic nature 1"
 #sprite /graphics/halfmen/centaur/weapon/vinebow.png
@@ -63,7 +63,7 @@
 
 #newitem
 #id "howling bow"
-#gameid 439
+#dominionsId 439
 #basechance 0
 #chanceinc "personalmagic death 1 nature 1 1"
 #sprite /graphics/halfmen/centaur/weapon/bonebow.png
@@ -78,7 +78,7 @@
 
 #newitem
 #id "banefire bow"
-#gameid 199
+#dominionsId 199
 #basechance 0
 #chanceinc "personalmagic fire 1 death 1 1"
 #sprite /graphics/halfmen/centaur/weapon/darkbow.png
@@ -93,7 +93,7 @@
 
 #newitem
 #id "frost bow"
-#gameid 606
+#dominionsId 606
 #basechance 0
 #chanceinc "personalmagic water 1 1"
 #sprite /graphics/halfmen/centaur/weapon/frostbow.png
@@ -110,7 +110,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #basechance 3
 #sprite /graphics/sobek/weapon/quarterstaff.png
 #offsety -9
@@ -124,7 +124,7 @@
 
 #newitem
 #id serpentstaff1
-#gameid 318
+#dominionsId 318
 #sprite /graphics/weapon/mage/serpentstaff.png
 #offsetx -2
 #offsety -12
@@ -134,7 +134,7 @@
 
 #newitem
 #id serpentstaff2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/serpentstaff.png
 #offsety -9
 #theme "lizard"
@@ -153,7 +153,7 @@
 
 #newitem
 #id orbstaff1
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/orbstaff.png
 #recolormask /graphics/weapon/mage/orbstaff_recolormask.png
 #offsetx -3
@@ -163,7 +163,7 @@
 
 #newitem
 #id orbstaff2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/orbstaff.png
 #recolormask /graphics/sobek/weapon/orbstaff_recolormask.png
 #offsetx -4
@@ -173,7 +173,7 @@
 
 #newitem
 #id gemstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/gemstaff.png
 #recolormask /graphics/sobek/weapon/gemstaff_recolormask.png
 #offsetx -2
@@ -183,7 +183,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #offsetx -3
 #offsety -9
@@ -195,7 +195,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #offsetx -3
@@ -207,7 +207,7 @@
 
 #newitem
 #id pestle
-#gameid 499
+#dominionsId 499
 #needs offhand mortar
 #sprite /graphics/weapon/mage/pestle.png
 #offsetx -4
@@ -217,7 +217,7 @@
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/weapon/mage/dagger.png
 #offsetx -3
 #offsety -7
@@ -228,7 +228,7 @@
 
 #newitem
 #id knobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/knobblystaff.png
 #offsety -9
 #theme "primitive"
@@ -238,7 +238,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/skullstaff.png
 #offsety -9
 #theme "primitive"
@@ -249,7 +249,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/metalstaff.png
 #offsety -9
 #tag "tier 2"
@@ -260,7 +260,7 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/metalstaff_bauble.png
 #offsety -9
 #tag "tier 3"
@@ -270,7 +270,7 @@
 
 #newitem
 #id vinebonestaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/staff_vinebone.png
 #offsetx -3
 #offsety -7
@@ -282,7 +282,7 @@
 
 #newitem
 #id twig1
-#gameid 498
+#dominionsId 498
 #sprite /graphics/weapon/mage/twig1.png
 #offsetx -3
 #offsety -7
@@ -294,7 +294,7 @@
 
 #newitem
 #id twig2
-#gameid 498
+#dominionsId 498
 #sprite /graphics/weapon/mage/twig2.png
 #offsetx -3
 #offsety -7
@@ -306,7 +306,7 @@
 
 #newitem
 #id branch
-#gameid 240
+#dominionsId 240
 #sprite /graphics/weapon/mage/branch.png
 #offsetx -7
 #offsety -17
@@ -318,7 +318,7 @@
 
 #newitem
 #id branchstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/staff_branch.png
 #offsetx -3
 #offsety -7

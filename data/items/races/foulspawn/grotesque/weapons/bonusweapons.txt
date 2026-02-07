@@ -4,27 +4,27 @@
 #newitem
 #id drake_fire
 #basechance 0
-#gameid 567
+#dominionsId 567
 #nogen
 #enditem
 
 #newitem
 #id drake_frost
 #basechance 0
-#gameid 568
+#dominionsId 568
 #nogen
 #enditem
 
 #newitem
 #id drake_gas
 #basechance 0
-#gameid 569
+#dominionsId 569
 #nogen
 #enditem
 
 #newitem
 #id venomous_fangs
 #basechance 0
-#gameid 239
+#dominionsId 239
 #type "poison"
 #enditem

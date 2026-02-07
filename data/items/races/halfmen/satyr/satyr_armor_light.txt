@@ -11,7 +11,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #basechance 2
 #sprite /graphics/halfmen/satyr/armor/furs.png
 #armor
@@ -22,7 +22,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/halfmen/satyr/armor/leather_cuirass.png
 #armor
 #theme "leather"
@@ -30,7 +30,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/halfmen/satyr/armor/leather_hauberk.png
 #armor
 #theme "leather"
@@ -40,7 +40,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/halfmen/satyr/armor/ring_cuirass.png
 #armor
 #theme "leather"
@@ -49,7 +49,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/halfmen/satyr/armor/ring_hauberk.png
 #armor
 #theme "leather"
@@ -58,7 +58,7 @@
 
 #newitem
 #id "bronze ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/halfmen/satyr/armor/bronze_ring_cuirass.png
 #armor
 #theme "leather"
@@ -67,7 +67,7 @@
 
 #newitem
 #id "bronze ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/halfmen/satyr/armor/bronze_ring_hauberk.png
 #armor
 #theme "leather"

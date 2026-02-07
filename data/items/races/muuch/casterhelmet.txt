@@ -255,7 +255,7 @@
 
 #newitem
 #id crown_lizard
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/caster/crown_lizard.png
 #recolormask /graphics/muuch/helmet/caster/crown_lizard_recolormask.png
 #tag "#eliteversion crown_nemes"
@@ -266,7 +266,7 @@
 
 #newitem
 #id crown_nemes
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/caster/crown_nemes.png
 #recolormask /graphics/muuch/helmet/caster/crown_nemes_recolormask.png
 #tag "tier 3"
@@ -275,7 +275,7 @@
 
 #newitem
 #id crown_feathery_bright
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/caster/crown_feathery.png
 #recolormask /graphics/muuch/helmet/caster/crown_feathery_recolormask1.png
 #tag "tier 3"
@@ -284,7 +284,7 @@
 
 #newitem
 #id crown_feathery_dark
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/caster/crown_feathery.png
 #recolormask /graphics/muuch/helmet/caster/crown_feathery_recolormask2.png
 #tag "tier 3"
@@ -295,7 +295,7 @@
 
 #newitem
 #id mask_parrot
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_parrot.png
 #tag "#eliteversion mask_parrot_tinted"
 #tag "tier 2"
@@ -305,7 +305,7 @@
 
 #newitem
 #id mask_parrot_tinted
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_parrot.png
 #recolormask /graphics/muuch/helmet/caster/mask_parrot_recolormask.png
 #tag "#eliteversion mask_parrot_plumed"
@@ -317,7 +317,7 @@
 
 #newitem
 #id mask_parrot_plumed
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_parrot2.png
 #recolormask /graphics/muuch/helmet/caster/mask_parrot2_recolormask.png
 #tag "tier 3"
@@ -327,7 +327,7 @@
 
 #newitem
 #id mask_toad
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_toad.png
 #tag "#eliteversion mask_toad_tinted"
 #tag "tier 2"
@@ -337,7 +337,7 @@
 
 #newitem
 #id mask_toad_tinted
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_toad.png
 #recolormask /graphics/muuch/helmet/caster/mask_toad_recolormask.png
 #tag "#eliteversion mask_toad_plumed"
@@ -349,7 +349,7 @@
 
 #newitem
 #id mask_toad_plumed
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_toad2.png
 #recolormask /graphics/muuch/helmet/caster/mask_toad2_recolormask.png
 #tag "tier 3"
@@ -359,7 +359,7 @@
 
 #newitem
 #id mask_serpent
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_serpent.png
 #tag "#eliteversion mask_serpent_tinted"
 #tag "tier 2"
@@ -370,7 +370,7 @@
 
 #newitem
 #id mask_serpent_tinted
-#gameid 145
+#dominionsId 145
 #sprite /graphics/muuch/helmet/caster/mask_serpent.png
 #recolormask /graphics/muuch/helmet/caster/mask_serpent_recolormask.png
 #tag "tier 3"

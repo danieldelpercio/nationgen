@@ -2,7 +2,7 @@
 
 #newitem
 #id robe_lighter
-#gameid 158
+#dominionsId 158
 #sprite /graphics/ichtyid/armor/robes/robes_full_grey.png
 #needs helmet cowl_lighter
 #armor
@@ -10,7 +10,7 @@
 
 #newitem
 #id robe_darker
-#gameid 158
+#dominionsId 158
 #sprite /graphics/ichtyid/armor/robes/robes_full_dark.png
 #needs helmet cowl_darker
 #armor
@@ -20,7 +20,7 @@
 
 #newitem
 #id "leather_cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/ichtyid/armor/leather_cuirass.png
 #armor
 #theme "primitive"
@@ -30,7 +30,7 @@
 
 #newitem
 #id "leather_hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/ichtyid/armor/leather_hauberk.png
 #armor
 #theme "primitive"
@@ -41,7 +41,7 @@
 
 #newitem
 #id "sharkskin_cuirass"
-#gameid 188
+#dominionsId 188
 #sprite /graphics/ichtyid/armor/sharkskin_cuirass.png
 #armor
 #theme "primitive"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "sharkskin_armor"
-#gameid 151
+#dominionsId 151
 #sprite /graphics/ichtyid/armor/sharkskin_armor.png
 #armor
 #theme "primitive"
@@ -76,7 +76,7 @@
 
 #newitem
 #id "shell_hauberk"
-#gameid 114
+#dominionsId 114
 #sprite /graphics/ichtyid/armor/shell_hauberk.png
 #armor
 #theme "primitive"
@@ -86,7 +86,7 @@
 
 #newitem
 #id "shell_armor"
-#gameid 140
+#dominionsId 140
 #sprite /graphics/ichtyid/armor/shell_armor.png
 #armor
 #theme "primitive"
@@ -98,7 +98,7 @@
 
 #newitem
 #id "bone_cuirass"
-#gameid 149
+#dominionsId 149
 #sprite /graphics/ichtyid/armor/bone_cuirass.png
 #armor
 #theme "primitive"
@@ -134,7 +134,7 @@
 
 #newitem
 #id "coral_cuirass"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/ichtyid/armor/coral_cuirass.png
 #armor
 #theme "coral"
@@ -145,7 +145,7 @@
 
 #newitem
 #id "coral_hauberk"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/ichtyid/armor/coral_hauberk.png
 #armor
 #theme "coral"
@@ -159,7 +159,7 @@
 
 #newitem
 #id "octopus_assassin"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/ichtyid/armor/robes/robes_full_dark.png
 #needs helmet octopus_hood
 #armor
@@ -169,7 +169,7 @@
 
 #newitem
 #id "shark_assassin"
-#gameid 151
+#dominionsId 151
 #sprite /graphics/ichtyid/armor/sharkskin_armor.png
 #needs helmet shark_hood
 #armor

@@ -6,7 +6,7 @@
 #newitem
 #id sleepvine
 #basechance 0
-#gameid 71
+#dominionsId 71
 #command "#gcost +1"
 #command "#rcost +5"
 #enditem
@@ -14,7 +14,7 @@
 #newitem
 #id carrionvine
 #basechance 0
-#gameid 873
+#dominionsId 873
 #command "#gcost +1"
 #command "#rcost +5"
 #enditem

@@ -6,7 +6,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/hoburg/weapon/club_oh.png
 #theme "primitive"
 #theme "wood"
@@ -15,7 +15,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/hoburg/weapon/mace_oh.png
 #theme "primitive"
 #type "offensive"
@@ -23,7 +23,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/hoburg/weapon/dagger_oh.png
 #theme "iron"
 #type "offensive"
@@ -31,7 +31,7 @@
 
 #newitem
 #id net
-#gameid 263
+#dominionsId 263
 #basechance 2
 #sprite /graphics/hoburg/weapon/net_oh.png
 #type "defensive"
@@ -40,7 +40,7 @@
 
 #newitem
 #id shield1
-#gameid 2
+#dominionsId 2
 #sprite /graphics/hoburg/shields/woodenshield.png
 #armor
 #theme "primitive"
@@ -50,7 +50,7 @@
 
 #newitem
 #id shield2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/hoburg/shields/metalshield.png
 #armor
 #theme "iron"
@@ -59,7 +59,7 @@
 
 #newitem
 #id tower2
-#gameid 4
+#dominionsId 4
 #basechance 0.5
 #sprite /graphics/hoburg/shields/coe-kite.png
 #armor
@@ -70,7 +70,7 @@
 
 #newitem
 #id hideshield_occidental
-#gameid 105
+#dominionsId 105
 #sprite /graphics/hoburg/shields/hideshield1.png
 #armor
 #theme "primitive"
@@ -80,7 +80,7 @@
 
 #newitem
 #id bronze_hoplon
-#gameid 1
+#dominionsId 1
 #sprite /graphics/hoburg/shields/bronze_hoplon.png
 #theme "bronze"
 #armor
@@ -89,7 +89,7 @@
 
 #newitem
 #id iron_hoplon
-#gameid 1
+#dominionsId 1
 #sprite /graphics/hoburg/shields/iron_hoplon.png
 #theme "iron"
 #armor

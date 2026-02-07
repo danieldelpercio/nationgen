@@ -1,6 +1,6 @@
 #newitem
 #id icelance
-#gameid 36
+#dominionsId 36
 #sprite /graphics/vaettir/weapon/rimvaettir/ice_lance.png
 #basechance 0.5
 #type ice
@@ -9,7 +9,7 @@
 
 #newitem
 #id iceblade
-#gameid 37
+#dominionsId 37
 #sprite /graphics/vaettir/weapon/rimvaettir/ice_sword.png
 #basechance 1
 #type ice
@@ -18,7 +18,7 @@
 
 #newitem
 #id iceglaive
-#gameid 454
+#dominionsId 454
 #sprite /graphics/vaettir/weapon/rimvaettir/ice_glaive.png
 #basechance 0.5
 #type ice
@@ -28,7 +28,7 @@
 #newitem
 #id ice_mace
 #basechance 1
-#gameid 44
+#dominionsId 44
 #sprite /graphics/vaettir/weapon/rimvaettir/ice_mace.png
 #theme ice
 #type ice
@@ -36,7 +36,7 @@
 
 #newitem
 #id duskdagger
-#gameid 129
+#dominionsId 129
 #sprite /graphics/vaettir/weapon/rimvaettir/duskdagger.png
 #basechance 0.05
 #theme wolf

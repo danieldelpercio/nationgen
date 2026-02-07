@@ -30,7 +30,7 @@
 
 #newitem
 #id "plain furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/highmen/armor/furs.png
 #needs shirt noshirt
 #armor
@@ -40,7 +40,7 @@
 
 #newitem
 #id "bear furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/highmen/armor/furs_bear.png
 #needs shirt noshirt
 #needs cloakb nocloak
@@ -53,7 +53,7 @@
 
 #newitem
 #id "lion furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/highmen/armor/furs_lion.png
 #needs shirt noshirt
 #needs cloakb nocloak
@@ -66,7 +66,7 @@
 
 #newitem
 #id "wolf furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/highmen/armor/furs_wolf.png
 #needs shirt noshirt
 #needs cloakb nocloak
@@ -79,7 +79,7 @@
 
 #newitem
 #id "boar furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/highmen/armor/furs_boar.png
 #needs shirt noshirt
 #needs cloakb nocloak
@@ -92,7 +92,7 @@
 
 #newitem
 #id "firedrake pelt"
-#gameid 44
+#dominionsId 44
 #define "#fireres +2"
 #sprite /graphics/highmen/armor/furs_firedrake.png
 #needs shirt noshirt
@@ -107,7 +107,7 @@
 
 #newitem
 #id "icedrake pelt"
-#gameid 44
+#dominionsId 44
 #define "#coldres +2"
 #sprite /graphics/highmen/armor/furs_icedrake.png
 #needs shirt noshirt
@@ -122,7 +122,7 @@
 
 #newitem
 #id "swampdrake pelt"
-#gameid 44
+#dominionsId 44
 #define "#poisonres +2"
 #sprite /graphics/highmen/armor/furs_swampdrake.png
 #needs shirt noshirt
@@ -137,7 +137,7 @@
 
 #newitem
 #id "cavedrake pelt"
-#gameid 44
+#dominionsId 44
 #define "#prot +2"
 #sprite /graphics/highmen/armor/furs_cavedrake.png
 #needs shirt noshirt
@@ -154,7 +154,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/highmen/armor/leather2_cuirass.png
 #tag "eliteversion 'leather cuirass with greaves'"
 #armor
@@ -163,7 +163,7 @@
 
 #newitem
 #id "leather cuirass with greaves"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/highmen/armor/leather2_cuirass2.png
 #armor
 #basechance 0.2
@@ -171,7 +171,7 @@
 
 #newitem
 #id "leather hauberk sleeved"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/armor/leather2_hauberk1.png
 #armor
 #basechance 0.33
@@ -179,7 +179,7 @@
 
 #newitem
 #id "leather hauberk greaved"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/armor/leather2_hauberk2.png
 #armor
 #basechance 0.33
@@ -187,7 +187,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/armor/leather2_hauberk3.png
 #armor
 #basechance 0.33
@@ -195,7 +195,7 @@
 
 #newitem
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/highmen/armor/leather2_full.png
 #armor
 #needs shirt tunic_short
@@ -207,7 +207,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/highmen/armor/ring2_cuirass.png
 #tag "eliteversion 'ring cuirass with greaves'"
 #armor
@@ -216,7 +216,7 @@
 
 #newitem
 #id "ring cuirass with greaves"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/highmen/armor/ring2_cuirass2.png
 #armor
 #basechance 0.2
@@ -224,7 +224,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/highmen/armor/ring2_hauberk.png
 #armor
 #basechance 1
@@ -232,7 +232,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/highmen/armor/ring2_full.png
 #armor
 #enditem
@@ -242,7 +242,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/highmen/armor/scale_cuirass1_bronze.png
 #tag "eliteversion 'bronze scale cuirass with greaves'"
 #armor
@@ -252,7 +252,7 @@
 
 #newitem
 #id "bronze scale cuirass with greaves"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/highmen/armor/scale_cuirass2_bronze.png
 #armor
 #basechance 0.3
@@ -261,7 +261,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/highmen/armor/scale_hauberk_bronze.png
 #armor
 #basechance 1.5
@@ -282,7 +282,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/highmen/armor/plate_cuirass1_bronze.png
 #tag "eliteversion 'bronze plate cuirass with greaves'"
 #armor
@@ -292,7 +292,7 @@
 
 #newitem
 #id "bronze plate cuirass with greaves"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/highmen/armor/plate_cuirass2_bronze.png
 #armor
 #basechance 0.3
@@ -301,7 +301,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/highmen/armor/plate_hauberk_bronze.png
 #armor
 #basechance 1.5

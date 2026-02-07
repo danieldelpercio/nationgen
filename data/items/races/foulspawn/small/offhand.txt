@@ -9,7 +9,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #tentacle
 #needstype larm tentacle
 #type melee
@@ -17,7 +17,7 @@
 
 #newitem
 #id tentacle_sleep
-#gameid 387
+#dominionsId 387
 #tentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -27,7 +27,7 @@
 
 #newitem
 #id tentacle_strangle
-#gameid 116
+#dominionsId 116
 #tentacle
 #needstype larm tentacle
 #itemslot hand +1
@@ -36,7 +36,7 @@
 
 #newitem
 #id pincer
-#gameid 273
+#dominionsId 273
 #pincer
 #needstype larm pincer
 #type melee
@@ -44,7 +44,7 @@
 
 #newitem
 #id snake_strangle
-#gameid 116
+#dominionsId 116
 #neck
 #needstype larm snake
 #itemslot hand +1
@@ -53,7 +53,7 @@
 
 #newitem
 #id snake_bite
-#gameid 127
+#dominionsId 127
 #neck
 #needstype larm snake
 #type melee
@@ -61,7 +61,7 @@
 
 #newitem
 #id swan_peck
-#gameid 404
+#dominionsId 404
 #neck
 #needstype larm swan
 #type melee
@@ -71,7 +71,7 @@
 -- 1h weapons
 #newitem
 #id oh_dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/advancedhuman/weapons/oh_dagger.png
 #offsetx 2
 #offsety 6
@@ -82,7 +82,7 @@
 
 #newitem
 #id oh_shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/advancedhuman/weapons/oh_shortsword.png
 #offsetx 2
 #offsety 6
@@ -93,7 +93,7 @@
 
 #newitem
 #id oh_broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/weapons/oh_broadsword.png
 #offsetx 2
 #offsety 6
@@ -104,7 +104,7 @@
 
 #newitem
 #id oh_falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/weapons/oh_falchion.png
 #offsetx 2
 #offsety 6
@@ -115,7 +115,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/vaettir/offhand/hatchet.png
 #offsetx 2
 #offsety 1
@@ -129,7 +129,7 @@
 
 #newitem
 #id oh_mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/advancedhuman/weapons/oh_mace.png
 #offsetx 2
 #offsety 6
@@ -142,7 +142,7 @@
 
 #newitem
 #id oh_hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/advancedhuman/weapons/oh_hammer.png
 #offsetx 2
 #offsety 6
@@ -153,7 +153,7 @@
 
 #newitem
 #id oh_morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/advancedhuman/weapons/oh_morningstar.png
 #offsetx 2
 #offsety 6

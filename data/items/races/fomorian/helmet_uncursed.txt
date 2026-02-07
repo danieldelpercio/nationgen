@@ -2,7 +2,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/fomorian/helmet/bronzecap_uncursed.png
 #theme "bronze"
 #armor
@@ -10,7 +10,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/fomorian/helmet/ironcap_uncursed.png
 #theme "iron"
 #armor
@@ -18,7 +18,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/fomorian/helmet/leathercap_uncursed.png
 #armor
 #enditem

@@ -4,7 +4,7 @@
 
 #newitem 
 #id "toga_white"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_toga_white.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_toga_white_colormask.png
 #tier 1
@@ -17,7 +17,7 @@
 
 #newitem 
 #id "toga_yellow"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_toga_yellow.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_toga_yellow_colormask.png
 #tier 1
@@ -30,7 +30,7 @@
 
 #newitem 
 #id "toga_purple"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_toga_purple.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_toga_purple_colormask.png
 #tier 1
@@ -45,7 +45,7 @@
 
 #newitem
 #id "robes_mage_brown"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_mage_brown.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_mage_colormask.png
 #basechance 2
@@ -59,7 +59,7 @@
 
 #newitem
 #id "robes_mage_blue"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_mage_blue.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_mage_colormask.png
 #basechance 0
@@ -77,7 +77,7 @@
 
 #newitem
 #id "robes_mage_red"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_mage_red.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_mage_colormask.png
 #basechance 0
@@ -95,7 +95,7 @@
 
 #newitem
 #id "robes_magepriest_brown"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_magepriest_brown.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_magepriest_colormask.png
 #basechance 2
@@ -109,7 +109,7 @@
 
 #newitem
 #id "robes_mage_blue"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_magepriest_blue.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_magepriest_colormask.png
 #basechance 0
@@ -127,7 +127,7 @@
 
 #newitem
 #id "robes_mage_red"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_magepriest_red.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_magepriest_colormask.png
 #basechance 0
@@ -147,7 +147,7 @@
 
 #newitem
 #id "robes_female_fancy"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -161,7 +161,7 @@
 
 #newitem
 #id "robes_female_fancy_gray"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_gray.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -176,7 +176,7 @@
 
 #newitem
 #id "robes_female_fancy_brown"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_brown.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -191,7 +191,7 @@
 
 #newitem
 #id "robes_female_fancy_red"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_red.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -210,7 +210,7 @@
 
 #newitem
 #id "robes_female_fancy_blue"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_blue.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -229,7 +229,7 @@
 
 #newitem
 #id "robes_female_fancy_elite_gray"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_elite_gray.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -244,7 +244,7 @@
 
 #newitem
 #id "robes_female_fancy_elite_brown"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_elite_brown.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -259,7 +259,7 @@
 
 #newitem
 #id "robes_female_fancy_elite_red"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_elite_red.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -278,7 +278,7 @@
 
 #newitem
 #id "robes_female_fancy_elite_blue"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/cynocephalian/armor/caster/robes_female_fancy_elite_blue.png
 #recolormask /graphics/cynocephalian/armor/caster/robes_female_fancy_colormask.png
 #armor
@@ -300,7 +300,7 @@
 
 #newitem
 #id "furs_male"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_male.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_male_colormask.png
 #armor
@@ -313,7 +313,7 @@
 
 #newitem
 #id "furs_female_light"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_light.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_colormask.png
 #armor
@@ -326,7 +326,7 @@
 
 #newitem
 #id "furs_female_dark"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_dark.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_colormask.png
 #armor
@@ -339,7 +339,7 @@
 
 #newitem
 #id "furs_female_fancy"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_fancy.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_fancy_colormask.png
 #armor
@@ -353,7 +353,7 @@
 
 #newitem
 #id "furs_female_fancy_belt"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_fancy_belt.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_fancy_colormask.png
 #armor
@@ -367,7 +367,7 @@
 
 #newitem
 #id "furs_female_fancy_gray"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_fancy_gray.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_fancy_colormask.png
 #armor
@@ -382,7 +382,7 @@
 
 #newitem
 #id "furs_female_fancy_brown"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_fancy_brown.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_fancy_colormask.png
 #armor
@@ -397,7 +397,7 @@
 
 #newitem
 #id "furs_female_fancy_blue"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_fancy_blue.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_fancy_colormask.png
 #armor
@@ -416,7 +416,7 @@
 
 #newitem
 #id "furs_female_fancy_red"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/cynocephalian/armor/caster/furs_female_fancy_red.png
 #recolormask /graphics/cynocephalian/armor/caster/furs_female_fancy_colormask.png
 #armor
@@ -438,7 +438,7 @@
 
 #newitem
 #id "leather_armor_full"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/cynocephalian/armor/caster/leather_armor_full.png
 #recolormask /graphics/cynocephalian/armor/caster/leather_armor_full_colormask.png
 #armor
@@ -452,7 +452,7 @@
 
 #newitem
 #id "cuirass_linen_primitive_male"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/cynocephalian/armor/caster/cuirass_linen_primitive_male.png
 #recolormask /graphics/cynocephalian/armor/caster/cuirass_linen_male_colormask.png
 #armor
@@ -465,7 +465,7 @@
 
 #newitem
 #id "cuirass_linen_primitive_female"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/cynocephalian/armor/caster/cuirass_linen_primitive_female.png
 #recolormask /graphics/cynocephalian/armor/caster/cuirass_linen_female_colormask.png
 #armor
@@ -481,7 +481,7 @@
 
 #newitem
 #id "cuirass_scale_tribal_fancy_cloak"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cynocephalian/armor/caster/cuirass_scale_tribal_fancy_cloak.png
 #recolormask /graphics/cynocephalian/armor/caster/cloak_commander_colormask.png
 #armor
@@ -497,7 +497,7 @@
 
 #newitem
 #id "cuirass_plate_elite_cloak"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/cynocephalian/armor/caster/cuirass_plate_elite_cloak.png
 #recolormask /graphics/cynocephalian/armor/caster/cuirass_plate_fancy_colormask.png
 #recolormask /graphics/cynocephalian/armor/caster/cloak_commander_colormask.png

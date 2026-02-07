@@ -2,7 +2,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/caster/leathercap.png
 #tag "eliteversion coif_leather"
 #tag "eliteversion hood_bear"
@@ -15,7 +15,7 @@
 
 #newitem
 #id coif_leather
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/caster/coif_leather.png
 #tag "eliteversion coif_antlers"
 #tag "eliteversion hood_bear"
@@ -29,7 +29,7 @@
 
 #newitem
 #id coif_antlers
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/caster/coif_antlers1.png
 #tag "eliteversion coif_antlers_big"
 #armor
@@ -42,7 +42,7 @@
 
 #newitem
 #id coif_antlers_big
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/caster/coif_antlers2.png
 #tag "eliteversion coif_antlers_big"
 #armor
@@ -54,7 +54,7 @@
 
 #newitem
 #id hood_bear
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/caster/hood_bear.png
 #tag "eliteversion mask_bear"
 #armor
@@ -67,7 +67,7 @@
 
 #newitem
 #id mask_bear
-#gameid 145
+#dominionsId 145
 #sprite /graphics/vaettir/helmet/caster/mask_bear.png
 #armor
 #theme "primitive"
@@ -78,7 +78,7 @@
 
 #newitem
 #id hood_deer
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/caster/hood_deer.png
 #tag "eliteversion mask_deer"
 #armor
@@ -91,7 +91,7 @@
 
 #newitem
 #id mask_deer
-#gameid 145
+#dominionsId 145
 #sprite /graphics/vaettir/helmet/caster/mask_deer.png
 #armor
 #theme "primitive"
@@ -102,7 +102,7 @@
 
 #newitem
 #id hood_wolf
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/caster/hood_wolf.png
 #tag "eliteversion mask_wolf"
 #armor
@@ -115,7 +115,7 @@
 
 #newitem
 #id mask_wolf
-#gameid 145
+#dominionsId 145
 #sprite /graphics/vaettir/helmet/caster/mask_wolf.png
 #armor
 #theme "primitive"
@@ -126,7 +126,7 @@
 
 #newitem
 #id cowl_witch_brown
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/caster/cowl_witch.png
 #tag "eliteversion cowl_witch_dyed"
 #armor
@@ -137,7 +137,7 @@
 
 #newitem
 #id cowl_witch_dyed
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/caster/cowl_witch.png
 #recolormask /graphics/vaettir/helmet/caster/cowl_witch_recolormask1.png
 #tag "eliteversion cowl_witch_vivid"
@@ -149,7 +149,7 @@
 
 #newitem
 #id cowl_witch_vivid
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/caster/cowl_witch.png
 #recolormask /graphics/vaettir/helmet/caster/cowl_witch_recolormask2.png
 #armor
@@ -173,7 +173,7 @@
 
 #newitem
 #id hat_hedgemage_plain
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/caster/hat_hedgemage.png
 #tag "eliteversion hat_hedgemage_dyed"
 #armor
@@ -182,7 +182,7 @@
 
 #newitem
 #id hat_hedgemage_dyed
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/caster/hat_hedgemage.png
 #recolormask /graphics/vaettir/helmet/caster/hat_hedgemage_recolormask.png
 #armor
@@ -192,7 +192,7 @@
 
 #newitem
 #id hat_conical
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/caster/hat_conical.png
 #tag "eliteversion hat_conical_dyed"
 #armor
@@ -202,7 +202,7 @@
 
 #newitem
 #id hat_conical_dyed
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/caster/hat_conical.png
 #recolormask /graphics/vaettir/helmet/caster/hat_conical_recolormask.png
 #armor
@@ -313,7 +313,7 @@
 
 #newitem
 #id fancyhat
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat.png
 #recolormask /graphics/helmet/special/fancyhat_recolormask.png
 #offsetx 1
@@ -326,7 +326,7 @@
 
 #newitem
 #id fancyhat2
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat2.png
 #recolormask /graphics/helmet/special/fancyhat2_recolormask.png
 #offsetx 2
@@ -339,7 +339,7 @@
 
 #newitem
 #id fancyhat3a
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask1.png
 #offsetx 2
@@ -352,7 +352,7 @@
 
 #newitem
 #id fancyhat3b
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask2.png
 #offsetx 2
@@ -448,7 +448,7 @@
 
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/crown.png
 #armor
 #offsetx 1
@@ -459,7 +459,7 @@
 
 #newitem
 #id antleredcap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/antlercap.png
 #armor
 #offsetx 1
@@ -472,7 +472,7 @@
 
 #newitem
 #id feathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/feathercap.png
 #recolormask /graphics/helmet/caster/feathercap_recolormask.png
 #armor
@@ -581,7 +581,7 @@
 
 #newitem
 #id lizardcrown1
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/lizardcrown.png
 #offsetx 1
 #offsety 9
@@ -591,7 +591,7 @@
 
 #newitem
 #id lizardcrown2
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/lizardcrown.png
 #recolormask /graphics/helmet/caster/lizardcrown_recolormask.png
 #offsetx 1

@@ -1,6 +1,6 @@
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/weapon/bronze/hatchet.png
 #theme "primitive"
 #theme "austral"
@@ -57,7 +57,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/weapon/bronze/shortsword.png
 #theme "austral"
 #theme "boreal"
@@ -82,7 +82,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/weapon/bronze/kopesh.png
 #theme "austral"
 #theme "central"

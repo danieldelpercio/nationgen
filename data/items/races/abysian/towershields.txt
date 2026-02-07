@@ -1,6 +1,6 @@
 #newitem
 #id tower3
-#gameid 4
+#dominionsId 4
 #sprite /graphics/offhand/standard/tower3.png
 #recolormask /graphics/offhand/standard/tower3_recolormask.png
 #theme "advanced"
@@ -11,7 +11,7 @@
 
 #newitem
 #id tower2
-#gameid 4
+#dominionsId 4
 #sprite /graphics/offhand/standard/tower2.png
 #recolormask self
 #theme "advanced"
@@ -23,7 +23,7 @@
 
 #newitem
 #id tower1
-#gameid 4
+#dominionsId 4
 #sprite /graphics/offhand/standard/tower1.png
 #recolormask /graphics/offhand/standard/tower1_recolormask.png
 #theme "advanced"
@@ -36,7 +36,7 @@
 #newitem
 #id abysian_tower1a
 #basechance 0.3
-#gameid 4
+#dominionsId 4
 #sprite /graphics/abysian/demonbred/offhand_towershield.png
 #offsetx -31
 #offsety -62
@@ -48,7 +48,7 @@
 #newitem
 #id abysian_tower1b
 #basechance 1.7
-#gameid 4
+#dominionsId 4
 #sprite /graphics/abysian/demonbred/offhand_towershield.png
 #recolormask /graphics/abysian/demonbred/offhand_towershield_recolormask.png
 #offsetx -31
@@ -62,7 +62,7 @@
 #newitem
 #id abysian_tower2a
 #basechance 0.3
-#gameid 4
+#dominionsId 4
 #sprite /graphics/abysian/offhands/towershield.png
 #armor
 #theme "abysian"
@@ -72,7 +72,7 @@
 #newitem
 #id abysian_tower2b
 #basechance 0.85
-#gameid 4
+#dominionsId 4
 #sprite /graphics/abysian/offhands/towershield.png
 #recolormask /graphics/abysian/offhands/towershield_recolormask1.png
 #armor
@@ -83,7 +83,7 @@
 #newitem
 #id abysian_tower2c
 #basechance 0.85
-#gameid 4
+#dominionsId 4
 #sprite /graphics/abysian/offhands/towershield.png
 #recolormask /graphics/abysian/offhands/towershield_recolormask2.png
 #armor

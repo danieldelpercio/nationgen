@@ -1,7 +1,7 @@
 -- Gold-ish shields
 #newitem
 #id goldenbuckler
-#gameid 1
+#dominionsId 1
 #basechance 0.02
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #offsetx 0
@@ -13,7 +13,7 @@
 
 #newitem
 #id goldenkite1
-#gameid 3
+#dominionsId 3
 #basechance 0.005
 #sprite /graphics/offhand/sacred/goldenkite1.png
 #recolormask /graphics/offhand/standard/kite1_recolormask.png
@@ -28,7 +28,7 @@
 
 #newitem
 #id goldenshield
-#gameid 155
+#dominionsId 155
 #basechance 0.005
 #sprite /graphics/offhand/sacred/goldenshield.png
 #offsetx 0
@@ -40,7 +40,7 @@
 
 #newitem
 #id goldenshield3
-#gameid 155
+#dominionsId 155
 #basechance 0.005
 #sprite /graphics/offhand/sacred/goldenshield3.png
 #offsetx 0
@@ -52,7 +52,7 @@
 
 #newitem
 #id goldenshield6
-#gameid 209
+#dominionsId 209
 #basechance 0.005
 #sprite /graphics/offhand/sacred/goldenshield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
@@ -65,7 +65,7 @@
 
 #newitem
 #id hoplon1
-#gameid 209
+#dominionsId 209
 #basechance 0.005
 #sprite /graphics/offhand/standard/hoplon1.png
 #offsetx 0
@@ -77,7 +77,7 @@
 
 #newitem
 #id hoplon2
-#gameid 209
+#dominionsId 209
 #basechance 0.005
 #sprite /graphics/offhand/standard/hoplon2.png
 #offsetx 0
@@ -89,7 +89,7 @@
 
 #newitem
 #id hoplon3
-#gameid 209
+#dominionsId 209
 #basechance 0.005
 #sprite /graphics/offhand/standard/hoplon3.png
 #offsetx 0
@@ -103,7 +103,7 @@
 -- Pathed kites
 #newitem
 #id kite_fire
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic fire 0.25"
 #chanceinc "personalcommand #summerpower 0.0625"
@@ -122,7 +122,7 @@
 
 #newitem
 #id kite_air
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic air 0.25"
 #chanceinc "personalcommand #springpower 0.0625"
@@ -141,7 +141,7 @@
 
 #newitem
 #id kite_water
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic water 0.25"
 #chanceinc "personalcommand #winterpower 0.0625"
@@ -160,7 +160,7 @@
 
 #newitem
 #id kite_earth
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic earth 0.25"
 #chanceinc "personalcommand #fallpower 0.0625"
@@ -179,7 +179,7 @@
 
 #newitem
 #id kite_astral
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic astral 0.25"
 #chanceinc "personalcommand #ethereal 0.0625"
@@ -197,7 +197,7 @@
 
 #newitem
 #id kite_death
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic death 0.25"
 #chanceinc "personalcommand #undead 0.0625"
@@ -216,7 +216,7 @@
 
 #newitem
 #id kite_nature
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic nature 0.25"
 #chanceinc "personalcommand #regeneration 0.0625"
@@ -235,7 +235,7 @@
 
 #newitem
 #id kite_blood
-#gameid 3
+#dominionsId 3
 #basechance 0
 #chanceinc "magic blood 0.25"
 #chanceinc "personalcommand #demon 0.0625"
@@ -256,7 +256,7 @@
 -- Caelian-specific magic shields
 #newitem
 #id iceshield
-#gameid 28
+#dominionsId 28
 #basechance 0.005
 #sprite /graphics/caelian/shield/iceshield1.png
 #theme "yazata_elite"
@@ -266,7 +266,7 @@
 
 #newitem
 #id pearlshield
-#gameid 189
+#dominionsId 189
 #basechance 0.005
 #sprite /graphics/caelian/shield/pearlshield.png
 #theme "yazata_elite"
@@ -276,7 +276,7 @@
 
 #newitem
 #id obsidianshield
-#gameid 143
+#dominionsId 143
 #basechance 0.005
 #sprite /graphics/caelian/shield/obsidianshield.png
 #theme "daeva_elite"
@@ -287,7 +287,7 @@
 
 #newitem
 #id crimsonshield
-#gameid 157
+#dominionsId 157
 #basechance 0.005
 #sprite /graphics/caelian/shield/crimsonshield.png
 #theme "daeva_elite"
@@ -297,7 +297,7 @@
 
 #newitem
 #id spectralshield
-#gameid 156
+#dominionsId 156
 #basechance 0
 #chanceinc "magic death 0.0025"
 #chanceinc "magic air 0.0025"

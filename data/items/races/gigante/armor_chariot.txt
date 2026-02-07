@@ -2,7 +2,7 @@
 --- Scale
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/gigante/armor/scale_cuirass_bronze.png
 #armor
 #theme bronze
@@ -10,7 +10,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/gigante/armor/scale_hauberk_bronze.png
 #armor
 #theme bronze
@@ -18,7 +18,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/gigante/armor/scale_cuirass_iron.png
 #armor
 #theme iron
@@ -26,7 +26,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/gigante/armor/scale_hauberk_iron.png
 #armor
 #theme iron
@@ -36,7 +36,7 @@
 -- Plate
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/gigante/armor/plate_cuirass_bronze.png
 #armor
 #theme bronze
@@ -44,7 +44,7 @@
 
 #newitem
 #id "bronze hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/gigante/armor/plate_hauberk_bronze.png
 #armor
 #theme bronze
@@ -52,7 +52,7 @@
 
 #newitem
 #id "iron cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/gigante/armor/plate_cuirass_iron.png
 #armor
 #theme iron
@@ -60,7 +60,7 @@
 
 #newitem
 #id "iron hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/gigante/armor/plate_hauberk_iron.png
 #armor
 #theme iron

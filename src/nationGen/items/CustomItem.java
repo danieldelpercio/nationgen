@@ -15,7 +15,7 @@ import nationGen.misc.Command;
 public class CustomItem extends Item {
 
   private List<Command> customItemCommands = new ArrayList<>();
-  public Item originalItem = null;
+  private Integer dominionsId = -1;
   public MagicItem magicItem = null;
 
   public CustomItem(NationGen nationGen) {
@@ -159,6 +159,7 @@ public class CustomItem extends Item {
             "#command must have a single arg. Surround the command with quotes if needed."
           );
         }
+
         this.customItemCommands.add(command.args.get(0).getCommand());
       }
       
@@ -196,9 +197,7 @@ public class CustomItem extends Item {
 
   public LinkedHashMap<String, String> getHashMap() {
     LinkedHashMap<String, String> map = new LinkedHashMap<>();
-    String dominionsId = String.valueOf(this.getDominionsId());
 
-    map.put("id#", dominionsId);
     map.put("#att", "1");
     map.put("shots", "0");
     map.put("rng", "0");

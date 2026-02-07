@@ -1,6 +1,6 @@
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/vanir/armor/leathercuirass_flying.png
 #recolormask /graphics/vanir/armor/recolormask_flying.png
 #eliteversion "leather cuirass"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/vanir/armor/leathercuirass_flying.png
 #recolormask /graphics/vanir/armor/recolormask_flying.png
 #eliteversion "ring cuirass"
@@ -23,7 +23,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/vanir/armor/chaincuirass_flying.png
 #recolormask /graphics/vanir/armor/recolormask_flying.png
 #eliteversion "scale cuirass"
@@ -35,7 +35,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/vanir/armor/chaincuirass_flying.png
 #recolormask /graphics/vanir/armor/recolormask_flying.png
 #eliteversion "chain cuirass"
@@ -46,7 +46,7 @@
 
 #newitem
 #id "colored cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/vanir/armor/special/coloredhauberk.png
 #recolormask self
 #eliteversion "golden cuirass"
@@ -57,7 +57,7 @@
 
 #newitem
 #id "golden cuirass"
-#gameid 49
+#dominionsId 49
 #sprite /graphics/vanir/armor/special/goldencuirass_flying.png
 #recolormask /graphics/vanir/armor/recolormask_flying.png
 #eliteversion "golden cuirass"

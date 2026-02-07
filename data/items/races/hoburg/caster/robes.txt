@@ -56,7 +56,7 @@
 
 #newitem
 #id simplerobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/simplerobe.png
 #recolormask self
 #tag "eliteversion simplerobe2"
@@ -72,7 +72,7 @@
 
 #newitem
 #id simplerobe2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/simplerobe2.png
 #recolormask self
 #tag "tier 3"
@@ -87,7 +87,7 @@
 
 #newitem
 #id toga
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/toga.png
 #recolormask self
 #armor
@@ -101,7 +101,7 @@
 
 #newitem
 #id necromantrobe_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/necromantrobe.png
 #tag "tier 1"
 #theme "boreal"
@@ -114,7 +114,7 @@
 
 #newitem
 #id necromantrobe_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/necromantrobe.png
 #recolormask /graphics/hoburg/bodyarmor/robes/necromantrobe_dull_recolormask.png
 #tag "tier 2"
@@ -128,7 +128,7 @@
 
 #newitem
 #id necromantrobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/necromantrobe.png
 #recolormask self
 #tag "tier 3"
@@ -141,7 +141,7 @@
 
 #newitem
 #id wightrobe_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/wightrobe.png
 #recolormask /graphics/hoburg/bodyarmor/robes/wightrobe_dull_recolormask.png
 #armor
@@ -155,7 +155,7 @@
 
 #newitem
 #id wightrobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/wightrobe.png
 #recolormask self
 #armor
@@ -169,7 +169,7 @@
 
 #newitem
 #id wightrobe_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/wightrobe_fancy.png
 #recolormask /graphics/hoburg/bodyarmor/robes/wightrobe_fancy_recolormask.png
 #armor
@@ -182,7 +182,7 @@
 
 #newitem
 #id evilrobe1a
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/evilrobe1.png
 #recolormask /graphics/hoburg/bodyarmor/robes/evilrobe1_recolormask1.png
 #armor
@@ -196,7 +196,7 @@
 
 #newitem
 #id evilrobe1b
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/evilrobe1.png
 #recolormask /graphics/hoburg/bodyarmor/robes/evilrobe1_recolormask2.png
 #armor
@@ -210,7 +210,7 @@
 
 #newitem
 #id evilrobe2a
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/evilrobe1_recolormask1.png
 #recolormask self
 #armor
@@ -225,7 +225,7 @@
 
 #newitem
 #id evilrobe2b
-#gameid 158
+#dominionsId 158
 #sprite /graphics/hoburg/bodyarmor/robes/evilrobe1_recolormask1.png
 #armor
 #tag "tier 2"
@@ -239,7 +239,7 @@
 
 #newitem
 #id imperialrobe1
-#gameid 159
+#dominionsId 159
 #sprite /graphics/hoburg/bodyarmor/robes/imperialrobe-mid.png
 #recolormask /graphics/hoburg/bodyarmor/robes/imperialrobe-mid_recolormask.png
 #armor
@@ -252,7 +252,7 @@
 
 #newitem
 #id imperialrobe2
-#gameid 159
+#dominionsId 159
 #sprite /graphics/hoburg/bodyarmor/robes/imperialrobe-low.png
 #recolormask /graphics/hoburg/bodyarmor/robes/imperialrobe-low_recolormask.png
 #armor
@@ -266,7 +266,7 @@
 
 #newitem
 #id imperialrobe3
-#gameid 159
+#dominionsId 159
 #sprite /graphics/hoburg/bodyarmor/robes/imperialrobe-high.png
 #recolormask /graphics/hoburg/bodyarmor/robes/imperialrobe-high_recolormask.png
 #armor
@@ -277,7 +277,7 @@
 
 #newitem
 #id vampire_breeches
-#gameid 5
+#dominionsId 5
 #sprite /graphics/hoburg/bodyarmor/robes/vampirebreeches.png
 #recolormask /graphics/hoburg/bodyarmor/robes/vampirebreeches_recolormask.png
 #armor
@@ -460,7 +460,7 @@
 
 #newitem
 #id nazcarobe_brown
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe1a.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe1_recolormask.png
@@ -478,7 +478,7 @@
 
 #newitem
 #id nazcarobe_white
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe1b.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe1_recolormask.png
@@ -495,7 +495,7 @@
 
 #newitem
 #id nazcarobe_black
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe1c.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe1_recolormask.png
@@ -512,7 +512,7 @@
 
 #newitem
 #id nazcarobe_colored
-#gameid 158
+#dominionsId 158
 #basechance 0.1
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe3.png
 #recolormask self
@@ -536,7 +536,7 @@
 
 #newitem
 #id nazcarobe_silver1
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe2a.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe2_recolormask1.png
@@ -549,7 +549,7 @@
 
 #newitem
 #id nazcarobe_silver2
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe2a.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe2_recolormask2.png
@@ -562,7 +562,7 @@
 
 #newitem
 #id nazcarobe_silver3
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe2a.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe2_recolormask3.png
@@ -575,7 +575,7 @@
 
 #newitem
 #id nazcarobe_gold1
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe2b.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe2_recolormask1.png
@@ -588,7 +588,7 @@
 
 #newitem
 #id nazcarobe_gold2
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe2b.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe2_recolormask2.png
@@ -601,7 +601,7 @@
 
 #newitem
 #id nazcarobe_gold3
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe2b.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe2_recolormask3.png
@@ -614,7 +614,7 @@
 
 #newitem
 #id nazcarobe_twotonebrown1
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe4a.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe4_recolormask1.png
@@ -629,7 +629,7 @@
 
 #newitem
 #id nazcarobe_twotonebrown2
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe4a.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe4_recolormask2.png
@@ -644,7 +644,7 @@
 
 #newitem
 #id nazcarobe_twotoneblack
-#gameid 158
+#dominionsId 158
 #basechance 0.1
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe4b.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe4_recolormask1.png
@@ -659,7 +659,7 @@
 
 #newitem
 #id nazcarobe_twotonewhite
-#gameid 158
+#dominionsId 158
 #basechance 0.1
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe4c.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe4_recolormask2.png
@@ -674,7 +674,7 @@
 
 #newitem
 #id nazcarobe_twotonedark
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe4b.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe4_recolormask3.png
@@ -686,7 +686,7 @@
 
 #newitem
 #id nazcarobe_twotonelight
-#gameid 158
+#dominionsId 158
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/robes/nazcarobe4c.png
 #recolormask /graphics/hoburg/bodyarmor/robes/nazcarobe4_recolormask4.png

@@ -1,13 +1,13 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/weapon/axe.png
 #theme "primitive"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/weapon/mace.png
 #theme "primitive"
 #maxprot 15
@@ -15,30 +15,30 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/avvim/weapon/morningstar.png
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/avvim/weapon/shortsword.png
 #enditem
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/avvim/weapon/kopesh.png
 #enditem
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/weapon/broadsword.png
 #enditem
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/weapon/falchion.png
 #enditem

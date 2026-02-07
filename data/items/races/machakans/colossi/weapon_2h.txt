@@ -2,7 +2,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/highmen/weapons/flail.png
 #needs hands hands_2h
 #troopweapon
@@ -10,7 +10,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/highmen/weapons/battleaxe.png
 #needs hands hands_2h
 #theme "primitive"
@@ -19,7 +19,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/highmen/weapons/maul.png
 #needs hands hands_2h
 #troopweapon
@@ -27,7 +27,7 @@
 
 #newitem
 #id claymore
-#gameid 258
+#dominionsId 258
 #sprite /graphics/highmen/weapons/greatsword.png
 #needs hands hands_2h
 #troopweapon
@@ -35,7 +35,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/highmen/weapons/quarterstaff.png
 #needs hands hands_2h
 #theme "primitive"

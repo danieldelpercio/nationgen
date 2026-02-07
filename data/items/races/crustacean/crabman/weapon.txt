@@ -1,6 +1,6 @@
 #newitem
 #id yari
-#gameid 669
+#dominionsId 669
 #sprite /graphics/weapon/standard/spear.png
 #offsety 3
 #theme "advanced"
@@ -16,7 +16,7 @@
 
 #newitem
 #id glaive
-#gameid 668
+#dominionsId 668
 #sprite /graphics/weapon/standard/glaive.png
 #offsety 3
 #theme "advanced"
@@ -33,7 +33,7 @@
 
 #newitem
 #id bronze_spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/bronze/spear.png
 #offsety 3
 #theme "bronze"
@@ -41,7 +41,7 @@
 
 #newitem
 #id bronze_trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/weapon/bronze/trident.png
 #offsety 3
 #theme "bronze"
@@ -49,7 +49,7 @@
 
 #newitem
 #id bronze_glaive
-#gameid 673
+#dominionsId 673
 #sprite /graphics/weapon/bronze/glaive.png
 #offsety 3
 #theme "bronze"
@@ -57,7 +57,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/standard/quarterstaff2.png
 #offsety 3
 #theme "primitive"

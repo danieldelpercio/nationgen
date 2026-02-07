@@ -7,7 +7,7 @@
 
 #newitem
 #id leatherhood
-#gameid 121
+#dominionsId 121
 #basechance 0
 #armor
 #enditem

@@ -30,7 +30,7 @@ public class DataIntegrityTest {
     NationGen ng = new NationGen();
     NationGenAssets assets = ng.getAssets();
 
-    Dom3DB spells = new Dom3DB("/db/spells.csv");
+    Dom3DB spells = new Dom3DB("/db/nationgen/spells.csv");
 
     Set<String> names = new HashSet<>(spells.getColumn("name"));
     names.addAll(

@@ -40,7 +40,7 @@
 #newitem
 #basechance 5
 #id "ronin pants"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar/ronin_pants.png
 #armor
 #theme "oriental"
@@ -50,7 +50,7 @@
 #newitem
 #basechance 3
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/armor/bandar/furs.png
 #armor
 #theme "imperial"
@@ -62,7 +62,7 @@
 #newitem
 #basechance 3
 #id "austral furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/armor/bandar/furs_austral.png
 #armor
 #theme "austral"
@@ -73,7 +73,7 @@
 #newitem
 #id "imperial leather"
 #basechance 6
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/armor/bandar/leatherhauberk_imperial.png
 #recolormask /graphics/monkey/armor/bandar/lorica_segmentata_recolormask.png
 #armor
@@ -84,7 +84,7 @@
 #newitem
 #id "TC leather cuirass"
 #basechance 5
-#gameid 5
+#dominionsId 5
 #sprite /graphics/monkey/armor/bandar/leathercuirass_oriental.png
 #armor
 #theme "oriental"
@@ -94,7 +94,7 @@
 #newitem
 #id "TC leather hauberk"
 #basechance 5
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/armor/bandar/leatherhauberk_oriental.png
 #recolormask /graphics/monkey/armor/bandar/scale_oriental_recolormask.png
 #armor
@@ -105,7 +105,7 @@
 #newitem
 #id "TC full leather"
 #basechance 5
-#gameid 15
+#dominionsId 15
 #sprite /graphics/monkey/armor/bandar/fullleather_oriental.png
 #recolormask /graphics/monkey/armor/bandar/scale_oriental_recolormask.png
 #armor
@@ -115,7 +115,7 @@
 
 #newitem
 #id "austral leather cuirass"
-#gameid 5
+#dominionsId 5
 #basechance 2
 #sprite /graphics/monkey/armor/bandar/leathercuirass_austral.png
 #armor
@@ -127,7 +127,7 @@
 
 #newitem
 #id "austral leather hauberk"
-#gameid 10
+#dominionsId 10
 #basechance 2
 #sprite /graphics/monkey/armor/bandar/leatherhauberk_austral.png
 #armor
@@ -139,7 +139,7 @@
 
 #newitem
 #id "austral full leather"
-#gameid 15
+#dominionsId 15
 #needstype shirt austral_shirt
 #basechance 2
 #sprite /graphics/monkey/armor/bandar/fullleather_austral.png
@@ -152,7 +152,7 @@
 #newitem
 #id "imperial ring"
 #basechance 4
-#gameid 11
+#dominionsId 11
 #sprite /graphics/monkey/armor/bandar/ringhauberk_imperial.png
 #recolormask /graphics/monkey/armor/bandar/lorica_segmentata_recolormask.png
 #armor
@@ -164,7 +164,7 @@
 #newitem
 #id "lorica hamata"
 #basechance 2
-#gameid 116
+#dominionsId 116
 #sprite /graphics/monkey/armor/bandar/lorica_hamata.png
 #recolormask /graphics/monkey/armor/bandar/lorica_hamata_recolormask.png
 #armor
@@ -175,7 +175,7 @@
 
 #newitem
 #id "austral scale cuirass"
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #sprite /graphics/monkey/armor/bandar/scalecuirass_austral.png
 #armor

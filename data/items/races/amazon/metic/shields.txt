@@ -4,7 +4,7 @@
 
 #newitem
 #id bronzebuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #armor
 #theme "bronze"
@@ -12,7 +12,7 @@
 
 #newitem
 #id buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/buckler.png
 #armor
 #enditem
@@ -20,21 +20,21 @@
 
 #newitem
 #id shield1
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield1.png
 #armor
 #enditem
 
 #newitem
 #id shield2
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield2.png
 #armor
 #enditem
 
 #newitem
 #id shield3
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield3.png
 #armor
 #enditem
@@ -42,7 +42,7 @@
 #newitem
 #id shield4
 #basechance 0.25
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield4.png
 #armor
 #tag "minprot 10"
@@ -51,7 +51,7 @@
 #newitem
 #id shield5
 #basechance 0.25
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield5.png
 #armor
 #tag "minprot 10"
@@ -60,7 +60,7 @@
 #newitem
 #id shield6
 #basechance 0.25
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/coe-metalshield.png
 #armor
 #tag "minprot 10"
@@ -70,7 +70,7 @@
 
 #newitem
 #id amazon_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/amazon_bronze.png
 #armor
 #theme "bronze"
@@ -80,7 +80,7 @@
 
 #newitem
 #id targe_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/amazon/shields/targe_painted.png
 #armor
 #recolormask /graphics/amazon/shields/targe_painted_recolormask.png
@@ -88,7 +88,7 @@
 
 #newitem
 #id targe_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/targe_bronze.png
 #armor
 #theme "bronze"
@@ -97,7 +97,7 @@
 #newitem
 #id hoplon2_bronze
 #basechance 0.25
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon2_bronze.png
 #armor
 #tag "minprot 10"

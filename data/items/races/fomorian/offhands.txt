@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/fomorian/weapon/axe.png
 #theme "primitive"
 #theme "iron"
@@ -8,7 +8,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/fomorian/weapon/hatchet.png
 #theme "primitive"
 #theme "bronze"
@@ -16,7 +16,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/fomorian/weapon/sword.png
 #theme "iron"
 #enditem

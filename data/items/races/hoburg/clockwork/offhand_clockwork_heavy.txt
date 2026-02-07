@@ -8,7 +8,7 @@
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/offhand/axe.png
 #offsetx 7
 #offsety -8
@@ -17,7 +17,7 @@
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/offhand/mace.png
 #offsetx 7
 #offsety -8
@@ -26,7 +26,7 @@
 
 #newitem
 #id offhandmorningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/avvim/offhand/morningstar.png
 #offsetx 7
 #offsety -8
@@ -34,7 +34,7 @@
 
 #newitem
 #id offhandbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/offhand/broadsword.png
 #offsetx 7
 #offsety -8
@@ -42,7 +42,7 @@
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/offhand/falchion.png
 #offsetx 7
 #offsety -8

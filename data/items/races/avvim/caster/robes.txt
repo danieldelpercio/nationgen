@@ -3,7 +3,7 @@
 #newitem
 #basechance 0.2
 #id half-furs
-#gameid 44
+#dominionsId 44
 #sprite /graphics/avvim/armor/robes/furs1.png
 #armor
 #tag "tier 1"
@@ -13,7 +13,7 @@
 #newitem
 #basechance 0.2
 #id full_furs
-#gameid 44
+#dominionsId 44
 #sprite /graphics/avvim/armor/robes/furs2.png
 #armor
 #tag "tier 1"
@@ -24,7 +24,7 @@
 
 #newitem
 #id brown_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/brown_plainbelt.png
 #recolormask /graphics/avvim/armor/robes/darkbelt_recolormask.png
 #tag "eliteversion brown_fancy"
@@ -36,7 +36,7 @@
 
 #newitem
 #id brown_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/brown_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/lightbelt_recolormask.png
 #tag "eliteversion brown_ornate"
@@ -48,7 +48,7 @@
 
 #newitem
 #id brown_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/brown_ornate.png
 #recolormask /graphics/avvim/armor/robes/lightbelt_recolormask.png
 #tag "eliteversion medium_ornate"
@@ -63,7 +63,7 @@
 
 #newitem
 #id white_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_plainbelt.png
 #recolormask /graphics/avvim/armor/robes/lightbelt_recolormask.png
 #tag "eliteversion white_fancy"
@@ -75,7 +75,7 @@
 
 #newitem
 #id white_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/darkbelt_recolormask.png
 #tag "eliteversion white_ornate"
@@ -87,7 +87,7 @@
 
 #newitem
 #id white_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_ornate.png
 #recolormask /graphics/avvim/armor/robes/darkbelt_recolormask.png
 #tag "eliteversion light_ornate"
@@ -101,7 +101,7 @@
 
 #newitem
 #id gray_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_plainbelt.png
 #recolormask /graphics/avvim/armor/robes/lightbelt_recolormask.png
 #tag "eliteversion gray_fancy"
@@ -113,7 +113,7 @@
 
 #newitem
 #id gray_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/darkbelt_recolormask.png
 #tag "eliteversion gray_ornate"
@@ -125,7 +125,7 @@
 
 #newitem
 #id gray_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_ornate.png
 #recolormask /graphics/avvim/armor/robes/darkbelt_recolormask.png
 #tag "eliteversion medium_ornate"
@@ -139,7 +139,7 @@
 
 #newitem
 #id black_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_plainbelt.png
 #recolormask /graphics/avvim/armor/robes/darkbelt_recolormask.png
 #tag "eliteversion black_fancy"
@@ -151,7 +151,7 @@
 
 #newitem
 #id black_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/lightbelt_recolormask.png
 #tag "eliteversion black_ornate"
@@ -163,7 +163,7 @@
 
 #newitem
 #id black_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_ornate.png
 #recolormask /graphics/avvim/armor/robes/lightbelt_recolormask.png
 #tag "eliteversion light_ornate"
@@ -177,7 +177,7 @@
 
 #newitem
 #id light_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_plainbelt.png
 #recolormask /graphics/avvim/armor/robes/monochrome_recolormask1.png
 #tag "eliteversion light_fancy"
@@ -189,7 +189,7 @@
 
 #newitem
 #id light_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/monochrome_recolormask1.png
 #tag "eliteversion light_ornate"
@@ -202,7 +202,7 @@
 
 #newitem
 #id light_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_ornate.png
 #recolormask /graphics/avvim/armor/robes/monochrome_ornate_recolormask1.png
 #armor
@@ -214,7 +214,7 @@
 
 #newitem
 #id medium_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_plainbelt.png
 #recolormask /graphics/avvim/armor/robes/monochrome_recolormask2.png
 #tag "eliteversion medium_fancy"
@@ -226,7 +226,7 @@
 
 #newitem
 #id medium_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/monochrome_recolormask2.png
 #tag "eliteversion dark_ornate"
@@ -239,7 +239,7 @@
 
 #newitem
 #id medium_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_ornate.png
 #recolormask /graphics/avvim/armor/robes/monochrome_ornate_recolormask2.png
 #armor
@@ -251,7 +251,7 @@
 
 #newitem
 #id dark_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_plainbelt.png
 #recolormask /graphics/avvim/armor/robes/monochrome_recolormask3.png
 #tag "eliteversion dark_fancy"
@@ -263,7 +263,7 @@
 
 #newitem
 #id dark_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/monochrome_recolormask3.png
 #tag "eliteversion light_ornate"
@@ -276,7 +276,7 @@
 
 #newitem
 #id dark_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_ornate.png
 #recolormask /graphics/avvim/armor/robes/monochrome_ornate_recolormask3.png
 #armor
@@ -287,7 +287,7 @@
 
 #newitem
 #id twotone_light_whitesleeve
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_white.png
 #recolormask /graphics/avvim/armor/robes/twotone_light_recolormask1.png
 #tag "eliteversion twotone_light_redbelt"
@@ -299,7 +299,7 @@
 
 #newitem
 #id twotone_light_redbelt
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_white.png
 #recolormask /graphics/avvim/armor/robes/twotone_light_recolormask2.png
 #tag "eliteversion twotone_light_full"
@@ -311,7 +311,7 @@
 
 #newitem
 #id twotone_light_full
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_white.png
 #recolormask /graphics/avvim/armor/robes/twotone_light_recolormask3.png
 #armor
@@ -322,7 +322,7 @@
 
 #newitem
 #id twotone_medium_graysleeve
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_gray.png
 #recolormask /graphics/avvim/armor/robes/twotone_medium_recolormask1.png
 #tag "eliteversion twotone_medium_redbelt"
@@ -334,7 +334,7 @@
 
 #newitem
 #id twotone_medium_redbelt
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_gray.png
 #recolormask /graphics/avvim/armor/robes/twotone_medium_recolormask2.png
 #tag "eliteversion twotone_medium_full"
@@ -346,7 +346,7 @@
 
 #newitem
 #id twotone_medium_full
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_gray.png
 #recolormask /graphics/avvim/armor/robes/twotone_medium_recolormask3.png
 #armor
@@ -357,7 +357,7 @@
 
 #newitem
 #id twotone_dark_blacksleeve
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_black.png
 #recolormask /graphics/avvim/armor/robes/twotone_dark_recolormask1.png
 #tag "eliteversion twotone_dark_redbelt"
@@ -369,7 +369,7 @@
 
 #newitem
 #id twotone_dark_redbelt
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_black.png
 #recolormask /graphics/avvim/armor/robes/twotone_dark_recolormask2.png
 #tag "eliteversion twotone_dark_full"
@@ -381,7 +381,7 @@
 
 #newitem
 #id twotone_dark_full
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/twotone_black.png
 #recolormask /graphics/avvim/armor/robes/twotone_dark_recolormask3.png
 #armor
@@ -392,7 +392,7 @@
 
 #newitem
 #id twotone_brown
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/brown_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/sleeves_medium_recolormask.png
 #tag "eliteversion twotone_brown_ornate"
@@ -403,7 +403,7 @@
 
 #newitem
 #id twotone_brown_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/brown_ornate.png
 #recolormask /graphics/avvim/armor/robes/sleeves_medium_recolormask.png
 #armor
@@ -412,7 +412,7 @@
 
 #newitem
 #id twotone_lightsleeve_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/sleeves_light_recolormask.png
 #tag "eliteversion twotone_lightsleeve_ornate"
@@ -423,7 +423,7 @@
 
 #newitem
 #id twotone_lightsleeve_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/white_ornate.png
 #recolormask /graphics/avvim/armor/robes/sleeves_light_recolormask.png
 #armor
@@ -432,7 +432,7 @@
 
 #newitem
 #id twotone_mediumsleeve_gray
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/sleeves_medium_recolormask.png
 #tag "eliteversion twotone_mediumsleeve_ornate"
@@ -443,7 +443,7 @@
 
 #newitem
 #id twotone_mediumsleeve_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/gray_ornate.png
 #recolormask /graphics/avvim/armor/robes/sleeves_medium_recolormask.png
 #armor
@@ -452,7 +452,7 @@
 
 #newitem
 #id twotone_darksleeve_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_fancybelt.png
 #recolormask /graphics/avvim/armor/robes/sleeves_dark_recolormask.png
 #tag "eliteversion twotone_darksleeve_ornate"
@@ -463,7 +463,7 @@
 
 #newitem
 #id twotone_darksleeve_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/avvim/armor/robes/black_ornate.png
 #recolormask /graphics/avvim/armor/robes/sleeves_dark_recolormask.png
 #armor
@@ -475,7 +475,7 @@
 
 #newitem
 #id imperial_simple
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial1.png
 #tag "eliteversion imperial_simple_greybottom"
 #tag "eliteversion imperial_simple_greytop"
@@ -486,7 +486,7 @@
 
 #newitem
 #id imperial_simple_greybottom
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial1.png
 #recolormask /graphics/avvim/armor/robes/imperial1_recolormask1.png
 #tag "eliteversion imperial_simple_bright"
@@ -498,7 +498,7 @@
 
 #newitem
 #id imperial_simple_greytop
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial1.png
 #recolormask /graphics/avvim/armor/robes/imperial1_recolormask2.png
 #tag "eliteversion imperial_simple_bright"
@@ -510,7 +510,7 @@
 
 #newitem
 #id imperial_simple_bright
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial1.png
 #recolormask self
 #tag "eliteversion imperial_bright_twotone"
@@ -521,7 +521,7 @@
 
 #newitem
 #id imperial_simple_dull
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial1.png
 #recolormask /graphics/avvim/armor/robes/imperial1_recolormask3.png
 #tag "eliteversion imperial_dull_twotone"
@@ -532,7 +532,7 @@
 
 #newitem
 #id imperial_grey
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial2.png
 #tag "eliteversion imperial_bright_greybottom"
 #tag "eliteversion imperial_bright_greytop"
@@ -545,7 +545,7 @@
 
 #newitem
 #id imperial_bright_greybottom
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial2.png
 #recolormask /graphics/avvim/armor/robes/imperial2_recolormask1.png
 #tag "eliteversion imperial_bright_twotone"
@@ -556,7 +556,7 @@
 
 #newitem
 #id imperial_bright_greytop
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial2.png
 #recolormask /graphics/avvim/armor/robes/imperial2_recolormask2.png
 #tag "eliteversion imperial_bright_twotone"
@@ -567,7 +567,7 @@
 
 #newitem
 #id imperial_dull_greybottom
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial2.png
 #recolormask /graphics/avvim/armor/robes/imperial2_recolormask4.png
 #tag "eliteversion imperial_bright_twotone"
@@ -578,7 +578,7 @@
 
 #newitem
 #id imperial_dull_greytop
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial2.png
 #recolormask /graphics/avvim/armor/robes/imperial2_recolormask5.png
 #tag "eliteversion imperial_bright_twotone"
@@ -589,7 +589,7 @@
 
 #newitem
 #id imperial_bright_twotone
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial2.png
 #recolormask /graphics/avvim/armor/robes/imperial2_recolormask3.png
 #armor
@@ -598,7 +598,7 @@
 
 #newitem
 #id imperial_dull_twotone
-#gameid 159
+#dominionsId 159
 #sprite /graphics/avvim/armor/robes/imperial2.png
 #recolormask /graphics/avvim/armor/robes/imperial2_recolormask6.png
 #armor

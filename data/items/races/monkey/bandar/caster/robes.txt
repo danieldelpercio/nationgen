@@ -1,7 +1,7 @@
 --- Robes
 #newitem
 #id great_toga
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/great_toga.png
 #recolormask /graphics/monkey/armor/bandar_mage/great_toga_recolormask.png
 #armor
@@ -12,7 +12,7 @@
 
 #newitem
 #id toga
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/toga.png
 #recolormask /graphics/monkey/armor/bandar_mage/toga_recolormask.png
 #armor
@@ -25,7 +25,7 @@
 
 #newitem
 #id lesser_toga
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/lessertoga.png
 #recolormask self
 #armor
@@ -223,7 +223,7 @@
 --- Oriental robes
 #newitem
 #id orientalrobe_simple_white
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_simple_white.png
 #eliteversion "orientalrobe_simple_bright"
 #eliteversion "orientalrobe_fancy_white"
@@ -234,7 +234,7 @@
 
 #newitem
 #id orientalrobe_simple_bright
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_simple_white.png
 #recolormask /graphics/monkey/armor/bandar_mage/imperialrobe_simple_recolormask.png
 #eliteversion "orientalrobe_simple_medium"
@@ -247,7 +247,7 @@
 
 #newitem
 #id orientalrobe_simple_grey
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_simple_grey.png
 #eliteversion "orientalrobe_simple_medium"
 #eliteversion "orientalrobe_fancy_grey"
@@ -258,7 +258,7 @@
 
 #newitem
 #id orientalrobe_simple_medium
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_simple_grey.png
 #recolormask /graphics/monkey/armor/bandar_mage/imperialrobe_simple_recolormask.png
 #eliteversion "orientalrobe_fancy_medium"
@@ -270,7 +270,7 @@
 
 #newitem
 #id orientalrobe_simple_black
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_simple_black.png
 #eliteversion "orientalrobe_simple_dark"
 #eliteversion "orientalrobe_fancy_black"
@@ -281,7 +281,7 @@
 
 #newitem
 #id orientalrobe_simple_dark
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_simple_black.png
 #recolormask /graphics/monkey/armor/bandar_mage/imperialrobe_simple_recolormask.png
 #eliteversion "orientalrobe_simple_medium"
@@ -294,7 +294,7 @@
 
 #newitem
 #id orientalrobe_fancy_white
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_white.png
 #eliteversion "orientalrobe_fancy_bright"
 #armor
@@ -305,7 +305,7 @@
 
 #newitem
 #id orientalrobe_fancy_bright
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_white.png
 #recolormask /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_bright_recolormask.png
 #armor
@@ -315,7 +315,7 @@
 
 #newitem
 #id orientalrobe_fancy_grey
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_grey.png
 #eliteversion "orientalrobe_fancy_medium"
 #armor
@@ -326,7 +326,7 @@
 
 #newitem
 #id orientalrobe_fancy_medium
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_grey.png
 #recolormask /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_medium_recolormask.png
 #armor
@@ -336,7 +336,7 @@
 
 #newitem
 #id orientalrobe_fancy_black
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_black.png
 #eliteversion "orientalrobe_fancy_dark"
 #armor
@@ -347,7 +347,7 @@
 
 #newitem
 #id orientalrobe_fancy_dark
-#gameid 159
+#dominionsId 159
 #sprite /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_black.png
 #recolormask /graphics/monkey/armor/bandar_mage/imperialrobe_fancy_dark_recolormask.png
 #armor
@@ -360,7 +360,7 @@
 --- Imperial robes (monochrome)
 #newitem
 #id imperialrobe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #eliteversion "imperialrobe_faint"
 #eliteversion "imperialrobe_brighttop_white"
@@ -372,7 +372,7 @@
 
 #newitem
 #id imperialrobe_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_faint_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -385,7 +385,7 @@
 
 #newitem
 #id imperialrobe_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #recolormask self
 #eliteversion "imperialrobe_medium"
@@ -399,7 +399,7 @@
 
 #newitem
 #id imperialrobe_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_medium.png
 #eliteversion "imperialrobe_middling"
 #eliteversion "imperialrobe_brighttop_grey"
@@ -413,7 +413,7 @@
 
 #newitem
 #id imperialrobe_middling
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_faint_recolormask.png
 #eliteversion "imperialrobe_medium"
@@ -427,7 +427,7 @@
 
 #newitem
 #id imperialrobe_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_medium.png
 #recolormask self
 #eliteversion "imperialrobe_bright"
@@ -440,7 +440,7 @@
 
 #newitem
 #id imperialrobe_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark.png
 #eliteversion "imperialrobe_dull"
 #eliteversion "imperialrobe_brighttop_black"
@@ -452,7 +452,7 @@
 
 #newitem
 #id imperialrobe_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_faint_recolormask.png
 #eliteversion "imperialrobe_middling"
@@ -464,7 +464,7 @@
 
 #newitem
 #id imperialrobe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark.png
 #recolormask self
 #eliteversion "imperialrobe_medium"
@@ -479,7 +479,7 @@
 --- Imperial robes (twotone)
 #newitem
 #id imperialrobe_brighttop_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -493,7 +493,7 @@
 
 #newitem
 #id imperialrobe_brighttop_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -508,7 +508,7 @@
 
 #newitem
 #id imperialrobe_brighttop_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -522,7 +522,7 @@
 
 #newitem
 #id imperialrobe_darktop_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -536,7 +536,7 @@
 
 #newitem
 #id imperialrobe_darktop_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -551,7 +551,7 @@
 
 #newitem
 #id imperialrobe_darktop_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -565,7 +565,7 @@
 
 #newitem
 #id imperialrobe_whitetop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_brightbottom_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -578,7 +578,7 @@
 
 #newitem
 #id imperialrobe_greytop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_brightbottom_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -591,7 +591,7 @@
 
 #newitem
 #id imperialrobe_blacktop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_brightbottom_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -604,7 +604,7 @@
 
 #newitem
 #id imperialrobe_whitetop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_darkbottom_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -617,7 +617,7 @@
 
 #newitem
 #id imperialrobe_greytop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_darkbottom_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -630,7 +630,7 @@
 
 #newitem
 #id imperialrobe_blacktop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_darkbottom_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -643,7 +643,7 @@
 
 #newitem
 #id imperialrobe_blacktop-white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark-bright.png
 #eliteversion "imperialrobe_whitetop-black"
 #eliteversion "imperialrobe_darktop_bright"
@@ -655,7 +655,7 @@
 
 #newitem
 #id imperialrobe_whitetop-black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright-dark.png
 #eliteversion "imperialrobe_blacktop-white"
 #eliteversion "imperialrobe_brighttop_dark"
@@ -667,7 +667,7 @@
 
 #newitem
 #id imperialrobe_darktop-bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark-bright.png
 #recolormask self
 #armor
@@ -678,7 +678,7 @@
 
 #newitem
 #id imperialrobe_brighttop-dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright-dark.png
 #recolormask self
 #armor
@@ -689,7 +689,7 @@
 
 #newitem
 #id imperialrobe_dulltop-faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_dark-bright.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_faint_recolormask.png
 #armor
@@ -700,7 +700,7 @@
 
 #newitem
 #id imperialrobe_fainttop-dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/bandar_mage/ermorrobe_bright-dark.png
 #recolormask /graphics/monkey/armor/bandar_mage/ermorrobe_faint_recolormask.png
 #armor

@@ -1,6 +1,6 @@
 #newitem
 #id sticks
-#gameid 360
+#dominionsId 360
 #tag "notepic"
 #enditem
 

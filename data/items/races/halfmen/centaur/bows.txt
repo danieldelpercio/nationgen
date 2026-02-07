@@ -1,6 +1,6 @@
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/halfmen/centaur/weapon/shortbow.png
 #needs quiver quiver
 #theme "light"
@@ -9,14 +9,14 @@
 
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/halfmen/centaur/weapon/longbow.png
 #needs quiver quiver
 #enditem
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/halfmen/centaur/weapon/shortbow.png
 #needs quiver quiver
 #enditem

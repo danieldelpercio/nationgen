@@ -14,7 +14,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #basechance 0.25
 #sprite /graphics/hoburg/bodyarmor/furs.png
 #armor
@@ -28,7 +28,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/hoburg/bodyarmor/leathercuirass.png
 #armor
 #theme "leather"
@@ -38,7 +38,7 @@
 
 #newitem
 #id "imperial leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/hoburg/bodyarmor/leatherhauberk_imperial.png
 #armor
 #theme "leather"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/hoburg/bodyarmor/ringcuirass.png
 #armor
 #theme "leather"
@@ -61,7 +61,7 @@
 
 #newitem
 #id "imperial ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/hoburg/bodyarmor/ringhauberk_imperial.png
 #armor
 #theme "leather"
@@ -73,7 +73,7 @@
 
 #newitem
 #id "bronze imperial scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial_bronze.png
 #armor
 #theme "bronze"
@@ -83,7 +83,7 @@
 
 #newitem
 #id "bronze imperial scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/hoburg/bodyarmor/mailhauberk_imperial_bronze.png
 #armor
 #theme "bronze"
@@ -95,7 +95,7 @@
 
 #newitem
 #id "imperial scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial.png
 #armor
 #theme "iron"
@@ -105,7 +105,7 @@
 
 #newitem
 #id "imperial scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/hoburg/bodyarmor/mailhauberk_imperial.png
 #armor
 #theme "iron"
@@ -117,7 +117,7 @@
 
 #newitem
 #id "imperial chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/hoburg/bodyarmor/mailcuirass_imperial.png
 #armor
 #theme "iron"
@@ -127,7 +127,7 @@
 
 #newitem
 #id "imperial chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/hoburg/bodyarmor/mailhauberk_imperial.png
 #armor
 #theme "iron"
@@ -139,7 +139,7 @@
 
 #newitem
 #id "imperial bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #basechance 0.25
 #sprite /graphics/hoburg/bodyarmor/platecuirass_imperial_bronze.png
 #armor
@@ -151,7 +151,7 @@
 
 #newitem
 #id "imperial bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/platehauberk_imperial_bronze.png
 #armor
@@ -165,7 +165,7 @@
 
 #newitem
 #id "imperial plate cuirass"
-#gameid 9
+#dominionsId 9
 #basechance 0.25
 #sprite /graphics/hoburg/bodyarmor/platecuirass_imperial.png
 #armor
@@ -177,7 +177,7 @@
 
 #newitem
 #id "imperial plate hauberk"
-#gameid 14
+#dominionsId 14
 #basechance 0.125
 #sprite /graphics/hoburg/bodyarmor/platehauberk_imperial.png
 #armor

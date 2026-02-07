@@ -2,7 +2,7 @@
 
 #newitem
 #id offhandclubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/ichtyid/weapon/clubsword_oh.png
 #theme "inland"
 #basechance 0.5
@@ -11,7 +11,7 @@
 
 #newitem
 #id offhandshortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/ichtyid/weapon/bronze_shortsword_oh.png
 #theme "advanced"
 #theme "bronze"
@@ -29,7 +29,7 @@
 
 #newitem
 #id offhanddagger
-#gameid 674
+#dominionsId 674
 #sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #offsetx 5
 #offsety 7
@@ -38,7 +38,7 @@
 
 #newitem
 #id offhanddagger_coral
-#gameid 32
+#dominionsId 32
 #sprite /graphics/atlantian/weapon/coralkniferight.png
 #offsetx -6
 #offsety -2
@@ -48,7 +48,7 @@
 
 #newitem
 #id offhandclub_coral
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ichtyid/weapon/coral_club_oh.png
 #theme "coral"
 #theme "marine"

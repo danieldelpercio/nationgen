@@ -370,10 +370,10 @@ public class NationGen {
    * Loads data from Dom3DB
    */
   private void loadDom3DB() {
-    units = new Dom3DB("/db/units.csv");
-    armordb = new Dom3DB("/db/armor.csv");
-    weapondb = new Dom3DB("/db/weapon.csv");
-    sites = new Dom3DB("/db/sites.csv");
+    units = new Dom3DB("/db/nationgen/units.csv");
+    armordb = new Dom3DB("/db/nationgen/armors.csv");
+    weapondb = new Dom3DB("/db/nationgen/weapons.csv");
+    sites = new Dom3DB("/db/nationgen/sites.csv");
   }
 
   public int getNextUnitId() {

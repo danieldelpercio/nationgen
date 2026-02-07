@@ -9,7 +9,7 @@
 
 #newitem
 #id "leather cap"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/merrow/helmet/cap_leather.png
 #armor
 #theme leather
@@ -18,7 +18,7 @@
 
 #newitem
 #id "sharkskin cap"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/merrow/helmet/cap_sharkskin.png
 #armor
 #theme sharkskin
@@ -27,7 +27,7 @@
 
 #newitem
 #id "shell cap"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/merrow/helmet/cap_shell.png
 #armor
 #theme shell
@@ -36,7 +36,7 @@
 
 #newitem
 #id "coral cap"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/merrow/helmet/cap_coral.png
 #armor
 #eliteversion coralcap_elite
@@ -46,7 +46,7 @@
 
 #newitem
 #id coralcap_elite
-#gameid 24
+#dominionsId 24
 #sprite /graphics/merrow/helmet/cap_coral_elite.png
 #armor
 #theme coral
@@ -56,7 +56,7 @@
 
 #newitem
 #id "bronze cap"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/merrow/helmet/cap_bronze.png
 #armor
 #eliteversion bronzecap_elite
@@ -66,7 +66,7 @@
 
 #newitem
 #id bronzecap_elite
-#gameid 135
+#dominionsId 135
 #sprite /graphics/merrow/helmet/cap_bronze_elite.png
 #armor
 #theme bronze

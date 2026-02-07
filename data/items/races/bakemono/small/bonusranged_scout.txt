@@ -1,53 +1,53 @@
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #basechance 0.25
 #enditem
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #basechance 0.5
 #enditem
 
 #newitem
 #id "bonus sling"
-#gameid 22
+#dominionsId 22
 #basechance 0.5
 #enditem
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #enditem
 
 #newitem
 #id "poison dart"
-#gameid 620
+#dominionsId 620
 #enditem
 
 #newitem
 #id "shuriken"
-#gameid 382
+#dominionsId 382
 #enditem
 
 
 -- Fancier stuff
 #newitem
 #id "poison darts"
-#gameid 500
+#dominionsId 500
 #basechance 0.05
 #enditem
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #basechance 0.05
 #enditem
 
 #newitem
 #id "koppo"
-#gameid 420
+#dominionsId 420
 #define "#gcost +10"
 #basechance 0.01
 #theme medium-sho
@@ -55,27 +55,27 @@
 
 #newitem
 #id "chi kick"
-#gameid 175
+#dominionsId 175
 #define "#gcost +10"
 #basechance 0.01
 #enditem
 
 #newitem
 #id "kick"
-#gameid 397
+#dominionsId 397
 #basechance 0.05
 #enditem
 
 #newitem
 #id "head butt"
-#gameid 300
+#dominionsId 300
 #basechance 0.01
 #theme medium-sho
 #enditem
 
 #newitem
 #id "strangulation"
-#gameid 116
+#dominionsId 116
 #basechance 0.05
 #theme medium-sho
 #enditem

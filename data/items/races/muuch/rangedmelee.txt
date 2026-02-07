@@ -1,15 +1,15 @@
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #enditem
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #enditem
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #theme "obsidian"
 #enditem

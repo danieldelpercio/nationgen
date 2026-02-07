@@ -1,6 +1,6 @@
 #newitem
 #id "leather cap"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/sidhe/bean/helmet/leathercap.png
 #armor
 #tier 1
@@ -10,7 +10,7 @@
 
 #newitem
 #id "bronzecap"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/sidhe/bean/helmet/bronzecap.png
 #eliteversion bronzecap_elite
 #armor
@@ -21,7 +21,7 @@
 
 #newitem
 #id "bronzecap_elite"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/sidhe/bean/helmet/bronzecap_elite.png
 #eliteversion goldcap_elite
 #eliteversion tiara
@@ -34,7 +34,7 @@
 
 #newitem
 #id "goldcap_elite"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/sidhe/bean/helmet/goldenhelmet.png
 #eliteversion tiara
 #eliteversion crown
@@ -46,7 +46,7 @@
 
 #newitem
 #id "tiara"
-#gameid 148
+#dominionsId 148
 #sprite /graphics/sidhe/bean/helmet/tiara.png
 #recolormask /graphics/sidhe/bean/helmet/tiara_recolormask.png
 #eliteversion crown
@@ -59,7 +59,7 @@
 
 #newitem
 #id "crown"
-#gameid 148
+#dominionsId 148
 #sprite /graphics/sidhe/bean/helmet/crown.png
 #eliteversion crown
 #armor

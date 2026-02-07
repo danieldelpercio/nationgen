@@ -1,6 +1,6 @@
 #newitem
 #id lance
-#gameid 4
+#dominionsId 4
 #sprite /graphics/avvim/weapon/lance.png
 #renderprio 7
 #renderslot "weapon"

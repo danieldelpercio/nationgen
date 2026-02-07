@@ -2,7 +2,7 @@
 
 #newitem
 #id "monk robe light"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/crustacean/crabman/armor/robes/monkrobe_light.png
 #recolormask self
 #armor
@@ -13,7 +13,7 @@
 
 #newitem
 #id "monk robe medium"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/crustacean/crabman/armor/robes/monkrobe_medium.png
 #recolormask self
 #armor
@@ -24,7 +24,7 @@
 
 #newitem
 #id "monk robe dark"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/crustacean/crabman/armor/robes/monkrobe_dark.png
 #recolormask self
 #armor

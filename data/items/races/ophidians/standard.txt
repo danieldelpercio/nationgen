@@ -1,6 +1,6 @@
 #newitem
 #id standard
-#gameid 100
+#dominionsId 100
 #sprite /graphics/ophidians/weapon/standard.png
 #recolormask /graphics/ophidians/weapon/standard_recolormask.png
 #define "#standard 1"

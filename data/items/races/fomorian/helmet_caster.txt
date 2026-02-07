@@ -1,6 +1,6 @@
 #newitem
 #id leathercap_horned
-#gameid 120
+#dominionsId 120
 #sprite /graphics/fomorian/helmet/leathercap_horned.png
 #armor
 #theme "primitive"
@@ -8,14 +8,14 @@
 
 #newitem
 #id crown_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/fomorian/helmet/crown.png
 #armor
 #enditem
 
 #newitem
 #id crown_silver
-#gameid 148
+#dominionsId 148
 #sprite /graphics/fomorian/helmet/crown_silver.png
 #armor
 #enditem

@@ -15,7 +15,7 @@
 
 #newitem
 #id druid_leather
-#gameid 5
+#dominionsId 5
 #armor
 #sprite /graphics/firbolg/armor/robes/druid.png
 #eliteversion "druid_cloth_pale"
@@ -29,7 +29,7 @@
 #newitem
 #id druid_bronze
 #basechance 0.5
-#gameid 6
+#dominionsId 6
 #armor
 #sprite /graphics/firbolg/armor/robes/druid_ring_bronze.png
 #eliteversion "druid_cloth_bright"
@@ -41,7 +41,7 @@
 #newitem
 #id druid_iron
 #basechance 0.5
-#gameid 6
+#dominionsId 6
 #armor
 #sprite /graphics/firbolg/armor/robes/druid_ring_iron.png
 #eliteversion "druid_cloth_bright"
@@ -52,7 +52,7 @@
 
 #newitem
 #id druid_cloth_pale
-#gameid 158
+#dominionsId 158
 #armor
 #sprite /graphics/firbolg/armor/robes/druid.png
 #recolormask /graphics/firbolg/armor/robes/druid_recolormask1.png
@@ -63,7 +63,7 @@
 
 #newitem
 #id druid_cloth_bright
-#gameid 158
+#dominionsId 158
 #armor
 #sprite /graphics/firbolg/armor/robes/druid.png
 #recolormask /graphics/firbolg/armor/robes/druid_recolormask2.png
@@ -79,7 +79,7 @@
 #sprite /graphics/firbolg/armor/robes/monk.png
 #recolormask /graphics/firbolg/armor/robes/monk_recolormask1.png
 #eliteversion "robes_monk_dull"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 1"
 #enditem
@@ -90,7 +90,7 @@
 #recolormask /graphics/firbolg/armor/robes/monk_recolormask2.png
 #eliteversion "robes_monk_dim"
 #eliteversion "robes_magister_dull"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 1"
 #tag "tier 2"
@@ -101,7 +101,7 @@
 #sprite /graphics/firbolg/armor/robes/monk.png
 #recolormask /graphics/firbolg/armor/robes/monk_recolormask3.png
 #eliteversion "robes_magister_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #tag "tier 3"
@@ -111,7 +111,7 @@
 #id robes_magister_brown
 #sprite /graphics/firbolg/armor/robes/magister.png
 #eliteversion "robes_magister_dull"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 1"
 #enditem
@@ -121,7 +121,7 @@
 #sprite /graphics/firbolg/armor/robes/magister.png
 #recolormask /graphics/firbolg/armor/robes/magister_recolormask1.png
 #eliteversion "robes_magister_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #tag "tier 3"
@@ -134,7 +134,7 @@
 #eliteversion "robes_nemidian_monochrome"
 #eliteversion "robes_nemidian_dull"
 #eliteversion "robes_nemidian_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #tag "tier 3"
@@ -146,7 +146,7 @@
 #recolormask /graphics/firbolg/armor/robes/nemidian_recolormask1.png
 #eliteversion "robes_nemidian_dull"
 #eliteversion "robes_nemidian_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #tag "tier 3"
@@ -157,7 +157,7 @@
 #sprite /graphics/firbolg/armor/robes/nemidian.png
 #recolormask /graphics/firbolg/armor/robes/nemidian_recolormask2.png
 #eliteversion "robes_nemidian_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 3"
 #enditem
@@ -166,7 +166,7 @@
 #id robes_nemidian_dark
 #sprite /graphics/firbolg/armor/robes/nemidian.png
 #recolormask /graphics/firbolg/armor/robes/nemidian_recolormask3.png
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 3"
 #enditem
@@ -177,7 +177,7 @@
 #recolormask /graphics/firbolg/armor/robes/fomorian_long_recolormask1.png
 #eliteversion "robes_fomorian_gold_dark"
 #eliteversion "robes_fomorian_fancy_silver_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 1"
 #tag "tier 2"
@@ -189,7 +189,7 @@
 #recolormask /graphics/firbolg/armor/robes/fomorian_long_recolormask2.png
 #eliteversion "robes_fomorian_gold_light"
 #eliteversion "robes_fomorian_fancy_silver_light"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 1"
 #tag "tier 2"
@@ -200,7 +200,7 @@
 #sprite /graphics/firbolg/armor/robes/fomorian_long_gold.png
 #recolormask /graphics/firbolg/armor/robes/fomorian_long_recolormask1.png
 #eliteversion "robes_fomorian_fancy_gold_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #enditem
@@ -210,7 +210,7 @@
 #sprite /graphics/firbolg/armor/robes/fomorian_long_gold.png
 #recolormask /graphics/firbolg/armor/robes/fomorian_long_recolormask2.png
 #eliteversion "robes_fomorian_fancy_gold_light"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #enditem
@@ -221,7 +221,7 @@
 #recolormask /graphics/firbolg/armor/robes/fomorian_fancy_recolormask1.png
 #eliteversion "robes_fomorian_fancy_gold_dark"
 #eliteversion "robes_fomorian_fancy_gold_light"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #tag "tier 3"
@@ -233,7 +233,7 @@
 #recolormask /graphics/firbolg/armor/robes/fomorian_fancy_recolormask2.png
 #eliteversion "robes_fomorian_fancy_gold_dark"
 #eliteversion "robes_fomorian_fancy_gold_light"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #tag "tier 3"
@@ -244,7 +244,7 @@
 #sprite /graphics/firbolg/armor/robes/fomorian_fancy_gold.png
 #recolormask /graphics/firbolg/armor/robes/fomorian_fancy_recolormask1.png
 #eliteversion "robes_fomorian_fancy_gold_light"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 3"
 #enditem
@@ -254,7 +254,7 @@
 #sprite /graphics/firbolg/armor/robes/fomorian_fancy_gold.png
 #recolormask /graphics/firbolg/armor/robes/fomorian_fancy_recolormask2.png
 #eliteversion "robes_fomorian_fancy_gold_dark"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 3"
 #enditem
@@ -275,7 +275,7 @@
 
 #newitem
 #id robes_ermor_brown
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_brown.png
 #eliteversion "robes_ermor_pale"
 #eliteversion "robes_ermor_middling"
@@ -288,7 +288,7 @@
 
 #newitem
 #id robes_ermor_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_white.png
 #eliteversion "robes_ermor_pale"
 #eliteversion "robes_ermor_middling"
@@ -299,7 +299,7 @@
 
 #newitem
 #id robes_ermor_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_grey.png
 #eliteversion "robes_ermor_pale"
 #eliteversion "robes_ermor_middling"
@@ -311,7 +311,7 @@
 
 #newitem
 #id robes_ermor_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_black.png
 #eliteversion "robes_ermor_middling"
 #eliteversion "robes_ermor_dull"
@@ -322,7 +322,7 @@
 
 #newitem
 #id robes_ermor_muddled
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_brown.png
 #recolormask /graphics/firbolg/armor/robes/ermor_middling_recolormask.png
 #eliteversion "robes_ermor_dark"
@@ -333,7 +333,7 @@
 
 #newitem
 #id robes_ermor_pale
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_white.png
 #recolormask /graphics/firbolg/armor/robes/ermor_pale_recolormask.png
 #eliteversion "robes_ermor_light"
@@ -344,7 +344,7 @@
 
 #newitem
 #id robes_ermor_middling
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_grey.png
 #recolormask /graphics/firbolg/armor/robes/ermor_middling_recolormask.png
 #eliteversion "robes_ermor_light"
@@ -357,7 +357,7 @@
 
 #newitem
 #id robes_ermor_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_black.png
 #recolormask /graphics/firbolg/armor/robes/ermor_dull_recolormask.png
 #eliteversion "robes_ermor_dark"
@@ -368,7 +368,7 @@
 
 #newitem
 #id robes_ermor_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_white.png
 #recolormask /graphics/firbolg/armor/robes/ermor_light_recolormask.png
 #armor
@@ -378,7 +378,7 @@
 
 #newitem
 #id robes_ermor_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_grey.png
 #recolormask /graphics/firbolg/armor/robes/ermor_medium_recolormask.png
 #armor
@@ -388,7 +388,7 @@
 
 #newitem
 #id robes_ermor_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/firbolg/armor/robes/ermor_black.png
 #recolormask /graphics/firbolg/armor/robes/ermor_dark_recolormask.png
 #armor

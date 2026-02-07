@@ -22,7 +22,7 @@
 
 #newitem
 #id leatherhood
-#gameid 121
+#dominionsId 121
 #basechance 4
 #armor
 #theme "leather"
@@ -35,7 +35,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #basechance 2
 #armor
 #theme "leather"
@@ -49,7 +49,7 @@
 
 #newitem
 #id "reinforcedcap"
-#gameid 119
+#dominionsId 119
 #armor
 #theme "leather"
 #theme "austral"
@@ -62,7 +62,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #themeinc thisitemslottheme not armor bronze *0
 #armor
 #theme "bronze"
@@ -73,7 +73,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #themeinc thisitemslottheme not armor iron *0
 #armor
 #theme "iron"
@@ -87,7 +87,7 @@
 
 #newitem
 #id "icecap"
-#gameid 29
+#dominionsId 29
 #themeinc thisitemslottheme not armor ice *0
 #chanceinc nationcommand #idealcold below 1 *0
 #chanceinc "personalcommand below #coldres 5 *0"
@@ -101,7 +101,7 @@
 
 #newitem
 #id "shellcap"
-#gameid 224
+#dominionsId 224
 #themeinc thisitemslottheme not armor shell *0
 #armor
 #theme "shell"
@@ -111,7 +111,7 @@
 
 #newitem
 #id "coralcap"
-#gameid 24
+#dominionsId 24
 #themeinc thisitemslottheme not armor coral *0
 #armor
 #theme "coral"
@@ -121,7 +121,7 @@
 
 #newitem
 #id "sharkskincap"
-#gameid 152
+#dominionsId 152
 #armor
 #theme "leather"
 #theme "merrow"
@@ -130,7 +130,7 @@
 
 #newitem
 #id skullface
-#gameid 125
+#dominionsId 125
 #basechance 0.005
 #chanceinc magic death *4
 #themeinc thisitemslottheme weapon death *4
@@ -148,7 +148,7 @@
 
 #newitem
 #id shadows
-#gameid 145
+#dominionsId 145
 #basechance 0.05
 #sprite /graphics/scouts/extras/mask_shadow.png
 #armor

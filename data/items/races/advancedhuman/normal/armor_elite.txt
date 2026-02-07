@@ -7,7 +7,7 @@
 
 #newitem
 #id "scale cuirass elite"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/advancedhuman/armor/scale_cuirass_elite.png
 #armor
 #theme "elite"
@@ -15,7 +15,7 @@
 
 #newitem
 #id "scale hauberk elite"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/advancedhuman/armor/scale_hauberk_elite.png
 #armor
 #needs shirt mailsleeves_pants
@@ -24,7 +24,7 @@
 
 #newitem -- full scale
 #id "full scale elite"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/advancedhuman/armor/scale_full_elite.png
 #armor
 #needs shirt mailsleeves_pants
@@ -36,7 +36,7 @@
 
 #newitem
 #id "chain cuirass elite"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/armor/chain_cuirass_elite.png
 #armor
 #theme "elite"
@@ -44,7 +44,7 @@
 
 #newitem
 #id "chain hauberk elite"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/advancedhuman/armor/chain_hauberk_elite.png
 #armor
 #needs shirt mailsleeves_pants
@@ -53,7 +53,7 @@
 
 #newitem -- full chain
 #id "full chain elite"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/advancedhuman/armor/chain_full_elite.png
 #armor
 #tag "name mounted knight"
@@ -66,7 +66,7 @@
 
 #newitem
 #id "plate cuirass elite"
-#gameid 9
+#dominionsId 9
 #basechance 0.75
 #sprite /graphics/advancedhuman/armor/plate_cuirass_elite.png
 #armor
@@ -75,7 +75,7 @@
 
 #newitem
 #id "plate cuirass gilt"
-#gameid 9
+#dominionsId 9
 #basechance 0.25
 #sprite /graphics/advancedhuman/armor/plate_cuirass_elite2.png
 #armor
@@ -84,7 +84,7 @@
 
 #newitem
 #id "plate hauberk gilt1"
-#gameid 14
+#dominionsId 14
 #basechance 0.25
 #sprite /graphics/advancedhuman/armor/plate_hauberk_elite.png
 #armor
@@ -94,7 +94,7 @@
 
 #newitem
 #id "plate hauberk gilt2"
-#gameid 14
+#dominionsId 14
 #basechance 0.25
 #sprite /graphics/advancedhuman/armor/plate_hauberk_elite2.png
 #armor
@@ -104,7 +104,7 @@
 
 #newitem -- gilt full plate
 #id "full plate gilt"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/advancedhuman/armor/plate_full_elite.png
 #armor
 #theme "elite"

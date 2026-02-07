@@ -10,7 +10,7 @@
 
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/abysian/demonbred/crown.png
 #armor
 #sacred

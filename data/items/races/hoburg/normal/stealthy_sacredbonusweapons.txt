@@ -25,7 +25,7 @@
 
 #newitem
 #id "hypnosis"
-#gameid 595
+#dominionsId 595
 #basechance 0.01
 #theme "sacred"
 #theme "fae"
@@ -168,7 +168,7 @@
 
 #newitem
 #id "elf shot"
-#gameid 228
+#dominionsId 228
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #offsetx 0
 #offsety 14
@@ -187,7 +187,7 @@
 
 #newitem
 #id "vine bow"
-#gameid 303
+#dominionsId 303
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #offsetx 0
 #offsety 14

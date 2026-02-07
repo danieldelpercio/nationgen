@@ -3,7 +3,7 @@
 --- Ring
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/bronze/fullring.png
 #armor
 #needstype legs bronze
@@ -15,7 +15,7 @@
 --- Scale
 #newitem
 #id "scale hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/bodyarmor/bronze/scalehauberk.png
 #armor
 #theme "bronze"
@@ -35,7 +35,7 @@
 --- Plate
 #newitem
 #id "plate cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/bodyarmor/bronze/platecuirass.png
 #armor
 #theme "advanced"
@@ -44,7 +44,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/bodyarmor/bronze/platehauberk.png
 #armor
 #theme "advanced"

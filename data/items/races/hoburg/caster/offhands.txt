@@ -24,13 +24,13 @@
 
 #newitem
 #id pitcher
-#gameid 496
+#dominionsId 496
 #sprite /graphics/offhand/mage/pitcher.png
 #enditem
 
 #newitem
 #id sutra
-#gameid 459
+#dominionsId 459
 #enditem
 
 #newitem
@@ -38,5 +38,5 @@
 #basechance 0
 #chanceinc "magic nature 0.75"
 #chanceinc "magic blood 0.25"
-#gameid 543
+#dominionsId 543
 #enditem

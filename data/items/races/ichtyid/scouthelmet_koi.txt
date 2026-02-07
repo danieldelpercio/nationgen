@@ -1,6 +1,6 @@
 #newitem
 #id "leathercap"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ichtyid/helmet/leather_cap.png
 #armor
 #theme "leather"
@@ -9,7 +9,7 @@
 
 #newitem
 #id "shellcap"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet.png
 #armor
 #theme "shell"

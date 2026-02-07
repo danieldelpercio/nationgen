@@ -1,53 +1,53 @@
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/muuch/offhands/mace.png
 #enditem
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/muuch/offhands/dagger.png
 #enditem
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/muuch/offhands/clubsword_1h.png
 #theme "obsidian"
 #enditem
 
 #newitem
 #id obsidian_blade
-#gameid 625
+#dominionsId 625
 #sprite /graphics/muuch/offhands/obsidian_blade.png
 #theme "obsidian"
 #enditem
 
 #newitem
 #id obsidian_blade_poisoned
-#gameid 623
+#dominionsId 623
 #sprite /graphics/muuch/offhands/obsidian_blade.png
 #theme "obsidian"
 #enditem
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/atlantian/weapon/offhandnet.png
 #tag "notepic"
 #enditem
 
 #newitem
 #id obsidian_darts
-#gameid 619
+#dominionsId 619
 #sprite /graphics/muuch/offhands/darts.png
 #theme "obsidian"
 #enditem
 
 #newitem
 #id poison_darts
-#gameid 620
+#dominionsId 620
 #sprite /graphics/muuch/offhands/darts.png
 #theme "obsidian"
 #enditem

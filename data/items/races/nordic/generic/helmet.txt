@@ -1,7 +1,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vanir/helmet/leathercap.png
 #armor
 #basechance 0.3
@@ -9,7 +9,7 @@
 
 #newitem
 #id reinfleathercap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/vanir/helmet/leathercap.png
 #armor
 #basechance 0.3
@@ -17,14 +17,14 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/vanir/helmet/ironcap.png
 #armor
 #enditem
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/vanir/helmet/halfhelmet.png
 #armor
 #basechance 0.7

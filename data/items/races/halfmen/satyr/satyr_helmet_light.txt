@@ -28,7 +28,7 @@
 
 #newitem
 #id "leather cap"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/halfmen/satyr/helmet/leather_helmet.png
 #eliteversion "crested helmet"
 #armor
@@ -39,7 +39,7 @@
 
 #newitem
 #id "reinforced leather cap"
-#gameid 119
+#dominionsId 119
 #basechance 0.5
 #sprite /graphics/halfmen/satyr/helmet/leather_helmet.png
 #eliteversion "crested helmet"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "crested helmet"
-#gameid 162
+#dominionsId 162
 #basechance 0.5
 #sprite /graphics/halfmen/satyr/helmet/leather_helmet_crest.png
 #recolormask /graphics/halfmen/satyr/helmet/crest_recolormask.png
@@ -68,7 +68,7 @@
 
 #newitem
 #id "bronze cap"
-#gameid 135
+#dominionsId 135
 #basechance 0.5
 #sprite /graphics/halfmen/satyr/helmet/bronze_half_helmet.png
 #armor
@@ -82,7 +82,7 @@
 
 #newitem
 #id "iron cap"
-#gameid 135
+#dominionsId 135
 #basechance 0.5
 #sprite /graphics/halfmen/satyr/helmet/iron_half_helmet.png
 #armor

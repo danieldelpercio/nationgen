@@ -21,7 +21,7 @@
 #newitem -- Iron cap
 #id "cap"
 #basechance 0.5
-#gameid 20
+#dominionsId 20
 #sprite /graphics/sobek/helmet/predator_cap.png
 #tag "eliteversion elite_cap"
 #armor
@@ -54,7 +54,7 @@
 #newitem -- Fancy headdress
 #id feathercap
 #basechance 0
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/feathercap.png
 #recolormask /graphics/helmet/caster/feathercap_recolormask.png
 #offsetx -8
@@ -66,7 +66,7 @@
 #newitem -- Fancy iron cap
 #id "elite_cap"
 #basechance 0
-#gameid 20
+#dominionsId 20
 #sprite /graphics/sobek/helmet/predator_cap_elite.png
 #recolormask /graphics/sobek/helmet/predator_cap_elite_recolormask.png
 #armor

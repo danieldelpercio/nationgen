@@ -3,7 +3,7 @@
 
 #newitem
 #id monkrobes
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/monkrobes1.png
 #recolormask self
 #tag "eliteversion monkrobes2"
@@ -13,7 +13,7 @@
 
 #newitem
 #id monkrobes2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/monkrobes2.png
 #recolormask self
 #tag "eliteversion monkrobes3"
@@ -23,7 +23,7 @@
 
 #newitem
 #id monkrobes3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/monkrobes1.png
 #recolormask self
 #needs helmet cowl
@@ -34,7 +34,7 @@
 
 #newitem
 #id gathrobes1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/gathrobe.png
 #recolormask /graphics/advancedhuman/armor/robes/gathrobe_recolormask1.png
 #tag "eliteversion gathrobes2"
@@ -44,7 +44,7 @@
 
 #newitem
 #id gathrobes2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/gathrobe.png
 #recolormask /graphics/advancedhuman/armor/robes/gathrobe_recolormask2.png
 #armor
@@ -54,7 +54,7 @@
 
 #newitem
 #id cultistrobes1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/cultistrobe1.png
 #recolormask /graphics/advancedhuman/armor/robes/cultistrobe1_recolormask1.png
 #tag "eliteversion cultistrobes2"
@@ -64,7 +64,7 @@
 
 #newitem
 #id cultistrobes2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/cultistrobe1.png
 #recolormask /graphics/advancedhuman/armor/robes/cultistrobe1_recolormask2.png
 #tag "eliteversion cultistrobes3"
@@ -75,7 +75,7 @@
 
 #newitem
 #id cultistrobes3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/advancedhuman/armor/robes/cultistrobe2.png
 #recolormask /graphics/advancedhuman/armor/robes/cultistrobe2_recolormask.png
 #armor
@@ -84,7 +84,7 @@
 
 #newitem
 #id plaguedoctorrobes_white
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_white.png
 #eliteversion plaguedoctorrobes_faint
@@ -95,7 +95,7 @@
 
 #newitem
 #id plaguedoctorrobes_grey
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_grey.png
 #eliteversion plaguedoctorrobes_middling
@@ -106,7 +106,7 @@
 
 #newitem
 #id plaguedoctorrobes_black
-#gameid 158
+#dominionsId 158
 #basechance 1.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_black.png
 #eliteversion plaguedoctorrobes_dim
@@ -117,7 +117,7 @@
 
 #newitem
 #id plaguedoctorrobes_faint
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_white.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_recolormask2.png
@@ -129,7 +129,7 @@
 
 #newitem
 #id plaguedoctorrobes_pale
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_white.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_recolormask1.png
@@ -141,7 +141,7 @@
 
 #newitem
 #id plaguedoctorrobes_subdued
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_grey.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_recolormask2.png
@@ -153,7 +153,7 @@
 
 #newitem
 #id plaguedoctorrobes_middling
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_grey.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_recolormask1.png
@@ -165,7 +165,7 @@
 
 #newitem
 #id plaguedoctorrobes_dull
-#gameid 158
+#dominionsId 158
 #basechance 1.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_black.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_recolormask2.png
@@ -177,7 +177,7 @@
 
 #newitem
 #id plaguedoctorrobes_dim
-#gameid 158
+#dominionsId 158
 #basechance 1.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_black.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_recolormask1.png
@@ -189,7 +189,7 @@
 
 #newitem
 #id plaguedoctorrobes_light
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_white.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_white_recolormask.png
@@ -199,7 +199,7 @@
 
 #newitem
 #id plaguedoctorrobes_medium
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_grey.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_grey_recolormask.png
@@ -209,7 +209,7 @@
 
 #newitem
 #id plaguedoctorrobes_dark
-#gameid 158
+#dominionsId 158
 #basechance 1.25
 #sprite /graphics/advancedhuman/armor/robes/plaguedoctor_black.png
 #recolormask /graphics/advancedhuman/armor/robes/plaguedoctor_black_recolormask.png
@@ -223,7 +223,7 @@
 
 #newitem
 #id greydoublet_whitejerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_lightjerkin_fringed.png
 #tag "eliteversion greydoublet_lightjerkin"
 #tag "eliteversion whitejerkin_dyedfringe"
@@ -233,7 +233,7 @@
 
 #newitem
 #id greydoublet_lightjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_lightjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/lightjerkin_fringed_recolormask1.png
 #tag "eliteversion whitejerkin_dyedfringe"
@@ -245,7 +245,7 @@
 
 #newitem
 #id whitejerkin_dyedfringe
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_lightjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/fringe_recolormask.png
 #tag "eliteversion lightjerkin_dyedfringe"
@@ -256,7 +256,7 @@
 
 #newitem
 #id lightjerkin_dyedfringe
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_lightjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/lightjerkin_fringed_recolormask2.png
 #armor
@@ -265,7 +265,7 @@
 
 #newitem
 #id greydoublet_greyjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_fringed.png
 #tag "eliteversion greydoublet_mediumjerkin"
 #tag "eliteversion greyjerkin_dyedfringe"
@@ -275,7 +275,7 @@
 
 #newitem
 #id greydoublet_mediumjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/greyjerkin_fringed_recolormask1.png
 #tag "eliteversion greyjerkin_dyedfringe"
@@ -287,7 +287,7 @@
 
 #newitem
 #id greyjerkin_dyedfringe
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/fringe_recolormask.png
 #tag "eliteversion mediumjerkin_dyedfringe"
@@ -298,7 +298,7 @@
 
 #newitem
 #id mediumjerkin_dyedfringe
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/greyjerkin_fringed_recolormask2.png
 #armor
@@ -307,7 +307,7 @@
 
 #newitem
 #id greydoublet_blackjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_darkjerkin_fringed.png
 #tag "eliteversion greydoublet_darkjerkin"
 #tag "eliteversion blackjerkin_dyedfringe"
@@ -317,7 +317,7 @@
 
 #newitem
 #id greydoublet_darkjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_darkjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/darkjerkin_fringed_recolormask1.png
 #tag "eliteversion blackjerkin_dyedfringe"
@@ -329,7 +329,7 @@
 
 #newitem
 #id blackjerkin_dyedfringe
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_darkjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/fringe_recolormask.png
 #tag "eliteversion darkjerkin_dyedfringe"
@@ -340,7 +340,7 @@
 
 #newitem
 #id darkjerkin_dyedfringe
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_darkjerkin_fringed.png
 #recolormask /graphics/advancedhuman/armor/robes/darkjerkin_fringed_recolormask2.png
 #armor
@@ -350,7 +350,7 @@
 
 #newitem
 #id whitedoublet_whitejerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/lightdoublet_whitejerkin_plain.png
 #tag "eliteversion lightdoublet_whitejerkin"
 #armor
@@ -359,7 +359,7 @@
 
 #newitem
 #id lightdoublet_whitejerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/lightdoublet_whitejerkin_plain.png
 #recolormask /graphics/advancedhuman/armor/robes/lightdoublet_recolormask.png
 #tag "eliteversion lightdoublet_lightjerkin"
@@ -369,7 +369,7 @@
 
 #newitem
 #id lightdoublet_lightjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/lightdoublet_whitejerkin_plain.png
 #recolormask /graphics/advancedhuman/armor/robes/lightdoublet_whitejerkin_recolormask.png
 #armor
@@ -378,7 +378,7 @@
 
 #newitem
 #id greydoublet_greyjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_plain.png
 #tag "eliteversion mediumdoublet_greyjerkin"
 #armor
@@ -387,7 +387,7 @@
 
 #newitem
 #id mediumdoublet_greyjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_plain.png
 #recolormask /graphics/advancedhuman/armor/robes/greydoublet_recolormask.png
 #tag "eliteversion mediumdoublet_mediumjerkin"
@@ -397,7 +397,7 @@
 
 #newitem
 #id mediumdoublet_mediumjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_plain.png
 #recolormask /graphics/advancedhuman/armor/robes/greydoublet_greyjerkin_recolormask.png
 #armor
@@ -406,7 +406,7 @@
 
 #newitem
 #id blackdoublet_blackjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/darkdoublet_blackjerkin_plain.png
 #tag "eliteversion darkdoublet_blackjerkin"
 #armor
@@ -415,7 +415,7 @@
 
 #newitem
 #id darkdoublet_blackjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/darkdoublet_blackjerkin_plain.png
 #recolormask /graphics/advancedhuman/armor/robes/darkdoublet_recolormask.png
 #tag "eliteversion darkdoublet_darkjerkin"
@@ -425,7 +425,7 @@
 
 #newitem
 #id darkdoublet_darkjerkin
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/armor/robes/darkdoublet_blackjerkin_plain.png
 #recolormask /graphics/advancedhuman/armor/robes/darkdoublet_blackjerkin_recolormask.png
 #armor

@@ -21,7 +21,7 @@
 #newitem
 #basechance 0.1
 #id "ninja-leathercuirass"
-#gameid 5
+#dominionsId 5
 #armor
 #sprite /graphics/hoburg/bodyarmor/ninjacuirass.png
 #theme "leather"
@@ -36,7 +36,7 @@
 #newitem
 #basechance 0.05
 #id "ninja-leatherhauberk"
-#gameid 10
+#dominionsId 10
 #armor
 #sprite /graphics/hoburg/bodyarmor/ninjacuirass.png
 #theme "leather"
@@ -54,7 +54,7 @@
 #newitem
 #basechance 0.1
 #id "ninja-ringcuirass"
-#gameid 6
+#dominionsId 6
 #armor
 #sprite /graphics/hoburg/bodyarmor/ninjacuirass.png
 #theme "leather"
@@ -69,7 +69,7 @@
 #newitem
 #basechance 0.05
 #id "ninja-ringhauberk"
-#gameid 11
+#dominionsId 11
 #armor
 #sprite /graphics/hoburg/bodyarmor/ninjacuirass.png
 #theme "leather"
@@ -86,7 +86,7 @@
 #newitem
 #basechance 0.1
 #id "ninja-scalecuirass"
-#gameid 7
+#dominionsId 7
 #armor
 #sprite /graphics/hoburg/bodyarmor/ninjacuirass.png
 #theme "iron"
@@ -101,7 +101,7 @@
 #newitem
 #basechance 0.1
 #id "ninja-chaincuirass"
-#gameid 8
+#dominionsId 8
 #armor
 #sprite /graphics/hoburg/bodyarmor/ninjacuirass.png
 #theme "iron"

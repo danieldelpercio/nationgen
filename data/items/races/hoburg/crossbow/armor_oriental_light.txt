@@ -18,7 +18,7 @@
 #newitem
 #basechance 1
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/hoburg/bodyarmor/crossbow/roninarmor.png
 #recolormask /graphics/hoburg/bodyarmor/crossbow/roninarmor_recolormask.png
 #needs legs roninpants
@@ -31,7 +31,7 @@
 #newitem
 #basechance 1
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/hoburg/bodyarmor/crossbow/roninarmor.png
 #recolormask /graphics/hoburg/bodyarmor/crossbow/roninarmor_recolormask.png
 #needs legs roninpants
@@ -47,7 +47,7 @@
 #newitem
 #basechance 2
 #id "ashigaru armor"
-#gameid 128
+#dominionsId 128
 #sprite /graphics/hoburg/bodyarmor/crossbow/ashigaruarmor.png
 #recolormask /graphics/hoburg/bodyarmor/crossbow/ashigaruarmor_recolormask.png
 #needs legs ashigarupants

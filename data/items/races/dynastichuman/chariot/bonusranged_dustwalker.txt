@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 209
+#dominionsId 209
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx 1
 #offsety -2
@@ -10,7 +10,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 209
+#dominionsId 209
 #sprite /graphics/weapon/standard/javelin2.png
 #offsetx 1
 #offsety -3
@@ -20,7 +20,7 @@
 
 #newitem
 #id "poison short bow"
-#gameid 594
+#dominionsId 594
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.66
 #notepic
@@ -28,7 +28,7 @@
 
 #newitem
 #id "flaming short bow"
-#gameid 211
+#dominionsId 211
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #define "#rcost +4"
 #basechance 0.66
@@ -37,7 +37,7 @@
 
 #newitem
 #id "banefire short bow"
-#gameid 199
+#dominionsId 199
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #define "#rcost +5"
 #basechance 0.66
@@ -46,7 +46,7 @@
 
 #newitem
 #id "poison composite bow"
-#gameid 372
+#dominionsId 372
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 1
 #notepic
@@ -54,7 +54,7 @@
 
 #newitem
 #id "flaming composite bow"
-#gameid 356
+#dominionsId 356
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #define "#rcost +5"
 #basechance 1
@@ -63,7 +63,7 @@
 
 #newitem
 #id "poison sling"
-#gameid 167
+#dominionsId 167
 #maxprot 9
 #basechance 0.5
 #notepic
@@ -71,7 +71,7 @@
 
 #newitem
 #id "flaming sling"
-#gameid 210
+#dominionsId 210
 #define "#rcost +2"
 #maxprot 9
 #basechance 0.5

@@ -2,7 +2,7 @@
 -- 1h weapons
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/ogre/weapon/club.png
 #theme "primitive"
 #theme "wood"
@@ -10,7 +10,7 @@
 
 #newitem
 #id spiked_club
-#gameid 593
+#dominionsId 593
 #sprite /graphics/ogre/weapon/spikedclub.png
 #theme "primitive"
 #theme "wood"
@@ -18,20 +18,20 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/ogre/weapon/hammer.png
 #theme "iron"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/ogre/weapon/mace.png
 #enditem
 
 #newitem
 #id wakizashi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/monkey/weapon/bandar/wakizashi.png
 #offsetx -1
 #offsety -8
@@ -40,7 +40,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/weapons/falchion.png
 #offsetx 1
 #offsety -1
@@ -51,7 +51,7 @@
 -- 2h weapons
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/highmen/weapons/spear.png
 #offsetx 1
 #offsety 0
@@ -60,7 +60,7 @@
 
 #newitem
 #id longspear
-#gameid 315
+#dominionsId 315
 #sprite /graphics/highmen/weapons/spear_long.png
 #offsetx 1
 #offsety 0
@@ -69,7 +69,7 @@
 
 #newitem
 #id yari
-#gameid 376
+#dominionsId 376
 #sprite /graphics/monkey/weapon/bandar/longspear.png
 #offsetx 3
 #offsety -8
@@ -78,7 +78,7 @@
 
 #newitem
 #id naginata
-#gameid 380
+#dominionsId 380
 #sprite /graphics/monkey/weapon/bandar/naginata.png
 #offsetx 1
 #offsety -9
@@ -87,7 +87,7 @@
 
 #newitem
 #id great_club
-#gameid 165
+#dominionsId 165
 #sprite /graphics/highmen/weapons/greatclub.png
 #offsetx 1
 #offsety 0
@@ -98,7 +98,7 @@
 
 #newitem
 #id cudgel
-#gameid 363
+#dominionsId 363
 #sprite /graphics/highmen/weapons/ironcudgel.png
 #offsetx 2
 #offsety 0
@@ -109,7 +109,7 @@
 
 #newitem
 #id katana
-#gameid 378
+#dominionsId 378
 #sprite /graphics/tengu/weapons/oversized/katana_oh.png
 #offsetx 3
 #offsety 13
@@ -120,7 +120,7 @@
 
 #newitem
 #id nodachi
-#gameid 379
+#dominionsId 379
 #sprite /graphics/tengu/weapons/oversized/nodachi_oh.png
 #offsetx 3
 #offsety 13
@@ -132,7 +132,7 @@
 #newitem
 #id quarterstaff
 #basechance 0.125
-#gameid 7
+#dominionsId 7
 #sprite /graphics/highmen/weapons/quarterstaff.png
 #offsetx 1
 #offsety 0

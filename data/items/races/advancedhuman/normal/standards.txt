@@ -1,7 +1,7 @@
 #newitem
 #id standard
 #basechance 0.1
-#gameid 100
+#dominionsId 100
 #sprite /graphics/weapon/standard/standard1.png
 #recolormask /graphics/weapon/standard/standard1_recolormask.png
 #define "#standard 1"

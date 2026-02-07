@@ -1,6 +1,6 @@
 #newitem
 #id goldenfalchion
-#gameid 474
+#dominionsId 474
 #sprite /graphics/weapon/sacred/goldenfalchion.png
 #offsetx 4
 #offsety 8
@@ -9,7 +9,7 @@
 
 #newitem
 #id goldenkopesh
-#gameid 474
+#dominionsId 474
 #sprite /graphics/weapon/sacred/goldenkopesh.png
 #offsetx 4
 #offsety 8
@@ -18,7 +18,7 @@
 
 #newitem
 #id goldenspear
-#gameid 473
+#dominionsId 473
 #sprite /graphics/weapon/sacred/goldenspear.png
 #offsetx 0
 #offsety 5
@@ -27,7 +27,7 @@
 
 #newitem
 #id banekopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/weapon/sacred/banekopesh.png
 #offsetx 4
 #offsety 8
@@ -37,7 +37,7 @@
 
 #newitem
 #id fierykopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/weapon/sacred/fierykopesh.png
 #offsetx 4
 #offsety 8
@@ -47,7 +47,7 @@
 
 #newitem
 #id fieryfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/sacred/fieryfalchion.png
 #offsetx 4
 #offsety 8
@@ -57,7 +57,7 @@
 
 #newitem
 #id fieryspear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/sacred/fieryspear.png
 #offsetx 0
 #offsety 5
@@ -67,7 +67,7 @@
 
 #newitem
 #id fierybronzespear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/sacred/fieryspear.png
 #offsetx 0
 #offsety 5

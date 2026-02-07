@@ -12,7 +12,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/halfmen/minotaur/armor/standard/furs.png
 #armor
 #theme "primitive"
@@ -21,7 +21,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/halfmen/minotaur/armor/standard/leather_hauberk.png
 #armor
 #theme "leather"
@@ -29,7 +29,7 @@
 
 #newitem
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/halfmen/minotaur/armor/standard/leather_full.png
 #armor
 #theme "leather"
@@ -40,7 +40,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/halfmen/minotaur/armor/standard/bronzescale_cuirass.png
 #armor
 #theme "bronze"
@@ -48,7 +48,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/halfmen/minotaur/armor/standard/bronzescale_hauberk.png
 #armor
 #theme "bronze"
@@ -69,7 +69,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/halfmen/minotaur/armor/standard/bronze_cuirass.png
 #armor
 #theme "bronze"
@@ -77,7 +77,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/halfmen/minotaur/armor/standard/bronze_hauberk.png
 #armor
 #theme "bronze"
@@ -98,7 +98,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/halfmen/minotaur/armor/standard/scale_cuirass.png
 #armor
 #theme "iron"
@@ -107,7 +107,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/halfmen/minotaur/armor/standard/scale_hauberk.png
 #armor
 #theme "iron"
@@ -116,7 +116,7 @@
 
 #newitem
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/halfmen/minotaur/armor/standard/scale_full.png
 #armor
 #basechance 0.5
@@ -129,7 +129,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/halfmen/minotaur/armor/standard/plate_cuirass.png
 #armor
 #theme "iron"
@@ -138,7 +138,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/halfmen/minotaur/armor/standard/plate_hauberk.png
 #armor
 #theme "iron"
@@ -147,7 +147,7 @@
 
 #newitem
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/halfmen/minotaur/armor/standard/plate_full.png
 #armor
 #basechance 0.25

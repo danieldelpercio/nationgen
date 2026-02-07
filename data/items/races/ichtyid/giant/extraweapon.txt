@@ -1,6 +1,6 @@
 #newitem
 #id grab_and_swallow
-#gameid 609
+#dominionsId 609
 #theme "primitive"
 #define "#mor +1"
 #enditem

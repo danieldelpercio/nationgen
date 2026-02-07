@@ -47,7 +47,7 @@
 
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body civilized 8"
 #chanceinc "poseitemtheme body austral 8"
@@ -60,7 +60,7 @@
 
 #newitem
 #id hedjet_black
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body dynastic 3"
 #chanceinc "poseitemtheme body austral 3"
@@ -77,7 +77,7 @@
 
 #newitem
 #id hedjet_grey
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body dynastic 3"
 #chanceinc "poseitemtheme body austral 3"
@@ -94,7 +94,7 @@
 
 #newitem
 #id hedjet_white
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body dynastic 3"
 #chanceinc "poseitemtheme body austral 3"
@@ -111,7 +111,7 @@
 
 #newitem
 #id hedjet_dark
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body dynastic 9"
 #chanceinc "poseitemtheme body austral 9"
@@ -127,7 +127,7 @@
 
 #newitem
 #id hedjet_medium
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body dynastic 9"
 #chanceinc "poseitemtheme body austral 9"
@@ -143,7 +143,7 @@
 
 #newitem
 #id hedjet_light
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body dynastic 9"
 #chanceinc "poseitemtheme body austral 9"
@@ -159,7 +159,7 @@
 
 #newitem
 #id nemes
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body dynastic 9"
 #chanceinc "poseitemtheme body austral 9"
@@ -174,7 +174,7 @@
 
 #newitem
 #id headdress1
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body occidental 9"
 #chanceinc "poseitemtheme body austral 9"
@@ -190,7 +190,7 @@
 
 #newitem
 #id headdress2
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body occidental 9"
 #chanceinc "poseitemtheme body austral 9"
@@ -206,7 +206,7 @@
 
 #newitem
 #id headdress3
-#gameid 148
+#dominionsId 148
 #basechance 0
 #chanceinc "poseitemtheme body occidental 9"
 #chanceinc "poseitemtheme body austral 9"

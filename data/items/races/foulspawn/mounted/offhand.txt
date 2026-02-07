@@ -9,14 +9,14 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #tentacle
 #needstype larm tentacle
 #enditem
 
 #newitem
 #id tentacle_sleep
-#gameid 387
+#dominionsId 387
 #tentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -25,7 +25,7 @@
 
 #newitem
 #id tentacle_strangle
-#gameid 116
+#dominionsId 116
 #tentacle
 #itemslot hand +1
 #needstype larm tentacle
@@ -33,7 +33,7 @@
 
 #newitem
 #id pincer
-#gameid 273
+#dominionsId 273
 #pincer
 #needstype larm pincer
 #enditem
@@ -42,7 +42,7 @@
 -- 1h weapons
 #newitem
 #id oh_broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/weapons/oh_broadsword.png
 #offsetx 2
 #offsety 6
@@ -52,7 +52,7 @@
 
 #newitem
 #id oh_falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/weapons/oh_falchion.png
 #offsetx 2
 #offsety 6
@@ -62,7 +62,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/vaettir/offhand/hatchet.png
 #offsetx 2
 #offsety 1
@@ -75,7 +75,7 @@
 
 #newitem
 #id oh_morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/advancedhuman/weapons/oh_morningstar.png
 #offsetx 2
 #offsety 6

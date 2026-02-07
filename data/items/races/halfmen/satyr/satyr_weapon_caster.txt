@@ -1,6 +1,6 @@
 #newitem
 #id hoof
-#gameid 55
+#dominionsId 55
 #basechance 10
 #tag "tier 3"
 #tag "tier 2"
@@ -9,7 +9,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/weapon/mage/trident.png
 #tag "tier 3"
 #tag "tier 2"
@@ -19,7 +19,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/weapon/mage/trident_bronze.png
 #tag "tier 3"
 #tag "tier 2"
@@ -29,7 +29,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/standard/quarterstaff.png
 #tag "tier 2"
 #tag "eliteversion orbstaff"
@@ -40,7 +40,7 @@
 
 #newitem
 #id serpentstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/serpentstaff.png
 #theme "lizard"
 #tag "tier 3"
@@ -48,7 +48,7 @@
 
 #newitem
 #id orb
-#gameid 55 --- Still uses hoof
+#dominionsId 55 --- Still uses hoof
 #sprite /graphics/weapon/mage/orb.png
 #recolormask self
 #tag "tier 3"
@@ -56,7 +56,7 @@
 
 #newitem
 #id orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/orbstaff.png
 #recolormask /graphics/weapon/mage/orbstaff_recolormask.png
 #tag "tier 3"
@@ -64,7 +64,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #tag "tier 2"
 #tag "tier 3"
@@ -73,7 +73,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #theme "superior"
@@ -82,14 +82,14 @@
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/weapon/mage/dagger.png
 #tag "tier 1"
 #enditem
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/skullstaff.png
 #theme "primitive"
 #theme "death"
@@ -99,7 +99,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/metalstaff.png
 #tag "tier 2"
 #tag "tier 1"
@@ -108,21 +108,21 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/metalstaff_bauble.png
 #tag "tier 3"
 #enditem
 
 #newitem
 #id knobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/knobblystaff.png
 #tag "tier 3"
 #enditem
 
 #newitem
 #id vinebonestaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/staff_vinebone.png
 #theme "primitive"
 #theme "death"
@@ -132,7 +132,7 @@
 
 #newitem
 #id twig1
-#gameid 498
+#dominionsId 498
 #sprite /graphics/weapon/mage/twig1.png
 #theme "primitive"
 #theme "nature"
@@ -142,7 +142,7 @@
 
 #newitem
 #id twig2
-#gameid 498
+#dominionsId 498
 #sprite /graphics/weapon/mage/twig2.png
 #theme "primitive"
 #theme "nature"
@@ -152,7 +152,7 @@
 
 #newitem
 #id branch
-#gameid 240
+#dominionsId 240
 #sprite /graphics/weapon/mage/branch.png
 #offsetx -4
 #offsety -11
@@ -164,7 +164,7 @@
 
 #newitem
 #id branchstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/staff_branch.png
 #theme "primitive"
 #theme "nature"

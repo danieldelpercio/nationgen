@@ -3,7 +3,7 @@
 
 #newitem
 #id bone_spear
-#gameid 373
+#dominionsId 373
 #sprite /graphics/ichtyid/giant/weapon/spear_bone.png
 #theme "wood"
 #needs extraweapon grab_and_swallow
@@ -11,7 +11,7 @@
 
 #newitem
 #id bronze_spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/ichtyid/giant/weapon/spear_bronze.png
 #theme "bronze"
 #needs extraweapon grab_and_swallow
@@ -19,7 +19,7 @@
 
 #newitem
 #id coral_spear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/ichtyid/giant/weapon/spear_coral.png
 #theme "coral"
 #needs extraweapon grab_and_swallow
@@ -27,7 +27,7 @@
 
 #newitem
 #id coral_club
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ichtyid/giant/weapon/club_coral.png
 #theme "primitive"
 #theme "coral"
@@ -39,21 +39,21 @@
 
 #newitem
 #id bone_trident
-#gameid 670
+#dominionsId 670
 #sprite /graphics/ichtyid/giant/weapon/trident_bone.png
 #theme "wood"
 #enditem
 
 #newitem
 #id bronze_trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/ichtyid/giant/weapon/trident_bronze.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id great_club
-#gameid 165
+#dominionsId 165
 #sprite /graphics/ichtyid/giant/weapon/club.png
 #theme "terrestrial"
 #theme "wood"

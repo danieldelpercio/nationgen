@@ -1,7 +1,7 @@
 #newitem
 #id "long bow"
 #basechance 0.75
-#gameid 24
+#dominionsId 24
 #sprite /graphics/weapon/bowman/longbow.png
 #offsetx 3
 #offsety -1

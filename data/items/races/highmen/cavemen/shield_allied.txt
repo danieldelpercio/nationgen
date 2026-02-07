@@ -4,7 +4,7 @@
 
 #newitem
 #id hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/machakans/shields/hideshield.png
 #offsetx 1
 #offsety -4
@@ -15,7 +15,7 @@
 
 #newitem
 #id colored_hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/machakans/shields/greathideshield.png
 #recolormask /graphics/machakans/shields/greathideshield_recolormask.png
 #offsetx 1
@@ -26,7 +26,7 @@
 
 #newitem
 #id greathideshield
-#gameid 112
+#dominionsId 112
 #sprite /graphics/highmen/shields/greathideshield.png
 #recolormask /graphics/highmen/shields/greathideshield_recolormask.png
 #armor
@@ -38,7 +38,7 @@
 
 #newitem
 #id buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield1.png
 #offsetx 2
 #offsety -1
@@ -48,7 +48,7 @@
 
 #newitem
 #id bronze_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/amazon/shields/targe_burnished.png
 #offsetx 2
 #offsety -2
@@ -58,7 +58,7 @@
 
 #newitem
 #id iron_buckler
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield2.png
 #offsetx 2
 #offsety -1
@@ -71,7 +71,7 @@
 
 #newitem
 #id hoplon
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon_burnished.png
 #offsetx 2
 #offsety -2
@@ -81,7 +81,7 @@
 
 #newitem
 #id hoplon_painted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon_bronze.png
 #recolormask /graphics/amazon/shields/hoplon_painted_recolormask.png
 #offsetx 2
@@ -92,7 +92,7 @@
 #newitem
 #id iron_shield
 #basechance 1
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #offsetx 2
@@ -106,7 +106,7 @@
 
 #newitem
 #id thrown_rocks
-#gameid 605
+#dominionsId 605
 #sprite /graphics/highmen/weapons/offhand_rock.png
 #offsetx 0
 #offsety -1
@@ -116,14 +116,14 @@
 
 #newitem
 #id sticks_and_stones
-#gameid 360
+#dominionsId 360
 #theme "primitive"
 #tag "notepic"
 #enditem
 
 #newitem
 #id net
-#gameid 263
+#dominionsId 263
 #sprite /graphics/highmen/weapons/offhand_net.png
 #basechance 0.25
 #tag "tierunique"

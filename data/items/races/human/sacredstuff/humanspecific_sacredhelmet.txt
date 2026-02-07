@@ -1,6 +1,6 @@
 #newitem
 #id hood4
-#gameid 121
+#dominionsId 121
 #sprite /graphics/helmet/caster/hood4.png
 #recolormask self
 #armor
@@ -9,7 +9,7 @@
 
 #newitem
 #id hood3
-#gameid 121
+#dominionsId 121
 #sprite /graphics/helmet/caster/hood3.png
 #recolormask /graphics/helmet/caster/hood3_recolormask.png
 #theme "sacred"

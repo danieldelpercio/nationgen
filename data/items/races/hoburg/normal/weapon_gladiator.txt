@@ -1,7 +1,7 @@
 
 #newitem
 #id hatchet_bronze
-#gameid 646
+#dominionsId 646
 #sprite /graphics/hoburg/weapon/hatchet_bronze.png
 #theme "primitive"
 #theme "bronze"
@@ -10,7 +10,7 @@
 
 #newitem
 #id hatchet_iron
-#gameid 253
+#dominionsId 253
 #sprite /graphics/hoburg/weapon/hatchet_iron.png
 #theme "primitive"
 #theme "iron"
@@ -19,7 +19,7 @@
 
 #newitem
 #id stick
-#gameid 153
+#dominionsId 153
 #sprite /graphics/hoburg/weapon/stick.png
 #theme "primitive"
 #theme "wood"
@@ -29,7 +29,7 @@
 
 #newitem
 #id morningstar_bronze
-#gameid 15
+#dominionsId 15
 #sprite /graphics/hoburg/weapon/morningstar_bronze.png
 #needs offhand nooffhand
 #theme "advanced"
@@ -38,7 +38,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/hoburg/weapon/morningstar.png
 #needs offhand nooffhand
 #theme "advanced"
@@ -47,7 +47,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/hoburg/weapon/greataxe_bronze.png
 #needs offhand nooffhand
 #theme "primitive"
@@ -56,7 +56,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/hoburg/weapon/greataxe.png
 #needs offhand nooffhand
 #theme "primitive"
@@ -65,7 +65,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/hoburg/weapon/mace.png
 #theme "primitive"
 #needstype offhand offensive
@@ -73,7 +73,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #offsetx 3
 #offsety 12
@@ -83,7 +83,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/highmen/weapons/shortsword_bronze.png
 #offsetx 7
 #offsety 13
@@ -93,7 +93,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/hoburg/weapon/spear.png
 #theme "iron"
 #needstype offhand defensive
@@ -101,7 +101,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/hoburg/weapon/spear_bronze.png
 #theme "bronze"
 #needstype offhand defensive
@@ -109,7 +109,7 @@
 
 #newitem
 #id trident
-#gameid 590
+#dominionsId 590
 #sprite /graphics/hoburg/weapon/trident.png
 #theme "iron"
 #theme "advanced"
@@ -118,7 +118,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/hoburg/weapon/trident_bronze.png
 #theme "bronze"
 #theme "advanced"

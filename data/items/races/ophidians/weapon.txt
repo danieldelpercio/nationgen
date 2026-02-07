@@ -1,6 +1,6 @@
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/ophidians/weapon/mace.png
 #theme occidental
 #theme oriental
@@ -12,7 +12,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/ophidians/weapon/shortsword.png
 #theme austral
 #theme central
@@ -22,7 +22,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/ophidians/weapon/broadsword.png
 #theme austral
 #theme central
@@ -33,7 +33,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/ophidians/weapon/shortsword_bronze.png
 #theme occidental
 #theme austral
@@ -56,7 +56,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/ophidians/weapon/falchion.png
 #theme austral
 #theme central
@@ -67,7 +67,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/ophidians/weapon/kopesh.png
 #theme austral
 #theme central
@@ -78,7 +78,7 @@
 
 #newitem
 #id wakizashi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/ophidians/weapon/wakizashi.png
 #theme oriental
 #theme terrestrial
@@ -87,7 +87,7 @@
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #basechance 2
 #sprite /graphics/ophidians/weapon/clubsword.png
 #theme occidental
@@ -96,7 +96,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/ophidians/weapon/spear.png
 #theme occidental
 #theme oriental
@@ -109,7 +109,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/ophidians/weapon/spear_bronze.png
 #theme occidental
 #theme austral
@@ -122,7 +122,7 @@
 
 #newitem
 #id spear_stone
-#gameid 373
+#dominionsId 373
 #sprite /graphics/ophidians/weapon/spear.png
 #theme occidental
 #theme oriental
@@ -136,7 +136,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/ophidians/weapon/longspear.png
 #eliteversion longspear_elite
 #theme austral
@@ -148,7 +148,7 @@
 
 #newitem
 #id longspear_elite
-#gameid 28
+#dominionsId 28
 #sprite /graphics/ophidians/weapon/longspear_elite.png
 #recolormask /graphics/ophidians/weapon/longspear_elite_recolormask.png
 #theme elite
@@ -161,7 +161,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/ophidians/weapon/longspear_bronze.png
 #theme austral
 #theme central
@@ -173,7 +173,7 @@
 
 #newitem
 #id yari
-#gameid 376
+#dominionsId 376
 #sprite /graphics/ophidians/weapon/longspear.png
 #theme oriental
 #theme terrestrial
@@ -183,7 +183,7 @@
 
 #newitem
 #id pike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/ophidians/weapon/longspear.png
 #theme austral
 #theme central
@@ -195,7 +195,7 @@
 
 #newitem
 #id glaive
-#gameid 308
+#dominionsId 308
 #sprite /graphics/ophidians/weapon/glaive.png
 #eliteversion glaive_elite
 #theme austral
@@ -206,7 +206,7 @@
 
 #newitem
 #id glaive_elite
-#gameid 308
+#dominionsId 308
 #sprite /graphics/ophidians/weapon/glaive_elite.png
 #recolormask /graphics/ophidians/weapon/glaive_elite_recolormask.png
 #theme elite
@@ -218,7 +218,7 @@
 
 #newitem
 #id glaive_bronze
-#gameid 673
+#dominionsId 673
 #sprite /graphics/ophidians/weapon/glaive_bronze.png
 #theme occidental
 #theme austral
@@ -230,7 +230,7 @@
 
 #newitem
 #id glaive_TC
-#gameid 308
+#dominionsId 308
 #sprite /graphics/ophidians/weapon/naginata.png
 #theme oriental
 #theme terrestrial
@@ -239,7 +239,7 @@
 
 #newitem
 #id naginata
-#gameid 380
+#dominionsId 380
 #sprite /graphics/ophidians/weapon/naginata.png
 #theme oriental
 #theme terrestrial
@@ -248,7 +248,7 @@
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #sprite /graphics/ophidians/weapon/trident.png
 #theme austral
 #theme central
@@ -258,7 +258,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/ophidians/weapon/trident.png
 #theme austral
 #theme central
@@ -268,7 +268,7 @@
 
 #newitem
 #id short_trident_bronze
-#gameid 680
+#dominionsId 680
 #sprite /graphics/ophidians/weapon/trident_bronze.png
 #theme austral
 #theme central
@@ -279,7 +279,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/ophidians/weapon/trident_bronze.png
 #theme austral
 #theme central
@@ -301,7 +301,7 @@
 
 #newitem
 #id trident_bone
-#gameid 670
+#dominionsId 670
 #sprite /graphics/ophidians/weapon/trident_bone.png
 #theme austral
 #theme central
@@ -314,7 +314,7 @@
 -- Coral weapons
 #newitem
 #id coralmace
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ophidians/weapon/coralmace.png
 #theme occidental
 #theme oriental
@@ -339,7 +339,7 @@
 
 #newitem
 #id coralspear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/ophidians/weapon/coralspear.png
 #theme occidental
 #theme oriental
@@ -352,7 +352,7 @@
 
 #newitem
 #id corallongspear
-#gameid 580
+#dominionsId 580
 #sprite /graphics/ophidians/weapon/corallongspear.png
 #theme oriental
 #theme austral
@@ -364,7 +364,7 @@
 
 #newitem
 #id coralglaive
-#gameid 46
+#dominionsId 46
 #sprite /graphics/ophidians/weapon/coralglaive.png
 #theme austral
 #theme central
@@ -375,7 +375,7 @@
 
 #newitem
 #id coralnaginata
-#gameid 46
+#dominionsId 46
 #sprite /graphics/ophidians/weapon/coralnaginata.png
 #theme occidental
 #theme oriental
@@ -388,7 +388,7 @@
 -- Ice weapons
 #newitem
 #id icemace
-#gameid 44
+#dominionsId 44
 #sprite /graphics/ophidians/weapon/icemace.png
 #theme occidental
 #theme oriental
@@ -404,7 +404,7 @@
 
 #newitem
 #id icespear
-#gameid 611
+#dominionsId 611
 #sprite /graphics/ophidians/weapon/icespear.png
 #theme occidental
 #theme oriental
@@ -421,7 +421,7 @@
 
 #newitem
 #id icesword
-#gameid 612
+#dominionsId 612
 #sprite /graphics/ophidians/weapon/icesword.png
 #theme occidental
 #theme austral
@@ -435,7 +435,7 @@
 
 #newitem
 #id icewakizashi
-#gameid 35
+#dominionsId 35
 #sprite /graphics/ophidians/weapon/icewakizashi.png
 #theme oriental
 #theme terrestrial
@@ -447,7 +447,7 @@
 
 #newitem
 #id icefalchion
-#gameid 37
+#dominionsId 37
 #sprite /graphics/ophidians/weapon/icefalchion.png
 #theme oriental
 #theme austral
@@ -461,7 +461,7 @@
 
 #newitem
 #id iceglaive
-#gameid 454
+#dominionsId 454
 #sprite /graphics/ophidians/weapon/iceglaive.png
 #theme austral
 #theme central
@@ -475,7 +475,7 @@
 
 #newitem
 #id icenaginata
-#gameid 454
+#dominionsId 454
 #sprite /graphics/ophidians/weapon/icenaginata.png
 #theme occidental
 #theme oriental

@@ -2,7 +2,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "primitive"
 #tag "name infantry axewoman"
@@ -14,7 +14,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/standard/broadsword.png
 #tag "name infantry swordswoman"
 #tag "name infantry swordmaiden"
@@ -24,13 +24,13 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/weapon/standard/flail.png
 #enditem
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/weapon/standard/greataxe.png
 #theme "primitive"
 #tag "name infantry axewoman"
@@ -42,7 +42,7 @@
 
 #newitem
 #id halberd
-#gameid 5
+#dominionsId 5
 #sprite /graphics/weapon/standard/halberd.png
 #tag "name infantry halberdier"
 #tag "name commander captain"
@@ -52,7 +52,7 @@
 
 #newitem
 #id bardiche
-#gameid 257
+#dominionsId 257
 #sprite /graphics/weapon/standard/bardiche.png
 #tag "name commander warchief"
 #tag "name commander warmistress"
@@ -60,14 +60,14 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/weapon/standard/hammer.png
 #chanceinc unittag irregular 8
 #enditem
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/weapon/standard/longspear.png
 #tag "name infantry spearmaiden"
 #tag "name infantry spearwoman"
@@ -77,7 +77,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/weapon/standard/mace.png
 #tag "name infantry macewoman"
 #theme "primitive"
@@ -87,7 +87,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/weapon/standard/maul.png
 #tag "name commander warchief"
 #tag "name commander warmistress"
@@ -95,13 +95,13 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/weapon/standard/morningstar.png
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #tag "name infantry guard"
 #tag "name commander captain"
@@ -109,7 +109,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/standard/spear.png
 #tag "name infantry spearmaiden"
 #tag "name infantry spearwoman"
@@ -118,7 +118,7 @@
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #sprite /graphics/weapon/standard/trident.png
 #tag "prefix trident"
 #basechance 0.25
@@ -127,7 +127,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/weapon/standard/trident.png
 #tag "prefix trident"
 #basechance 0.25
@@ -142,7 +142,7 @@
 
 #newitem
 #id pike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/weapon/standard/pike.png
 #tag "name infantry pikeneer"
 #tag "name commander captain"
@@ -152,7 +152,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/standard/falchion.png
 #tag "name infantry falchioneer"
 #tag "name commander swordsmistress"
@@ -160,7 +160,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/standard/quarterstaff.png
 #basechance 0.125
 #maxprot 10

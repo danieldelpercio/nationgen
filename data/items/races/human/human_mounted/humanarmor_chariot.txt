@@ -3,7 +3,7 @@
 --- Ring
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/standard/ringhauberk.png
 #armor
 #needs legs chainpants
@@ -15,7 +15,7 @@
 --- Scale
 #newitem
 #id "scale hauberk short"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #armor
 #basechance 0.5
@@ -24,7 +24,7 @@
 
 #newitem
 #id "scale hauberk long"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/bodyarmor/standard/mailhauberk2.png
 #armor
 #basechance 0.5
@@ -33,7 +33,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #armor
 #theme "advanced"
@@ -45,7 +45,7 @@
 --- Chain Mail
 #newitem
 #id "chain hauberk short"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #basechance 0.5
 #armor
@@ -54,7 +54,7 @@
 
 #newitem
 #id "chain hauberk long"
-#gameid 13
+#dominionsId 13
 #basechance 0.5
 #sprite /graphics/bodyarmor/standard/mailhauberk2.png
 #armor
@@ -63,7 +63,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #armor
 #needs legs chainpants
@@ -76,7 +76,7 @@
 --- Plate
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/bodyarmor/standard/platecuirass.png
 #armor
 #theme "advanced"
@@ -85,7 +85,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/bodyarmor/standard/platehauberk.png
 #armor
 #theme "advanced"
@@ -95,7 +95,7 @@
 
 #newitem -- full plate
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/bodyarmor/standard/platehauberk.png
 #armor
 #needs legs chainpants

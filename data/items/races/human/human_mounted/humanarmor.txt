@@ -1,7 +1,7 @@
 --- Leather
 #newitem
 #id 1
-#gameid 5
+#dominionsId 5
 #sprite /graphics/bodyarmor/standard/leathercuirass.png
 #armor
 #theme "leather"
@@ -10,7 +10,7 @@
 
 #newitem
 #id 2
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/standard/leatherhauberk.png
 #armor
 #theme "leather"
@@ -19,7 +19,7 @@
 
 #newitem
 #id 3
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/standard/leatherhauberk2.png
 #armor
 #theme "leather"
@@ -28,7 +28,7 @@
 
 #newitem -- full leather
 #id 4
-#gameid 15
+#dominionsId 15
 #sprite /graphics/bodyarmor/standard/leatherhauberk.png
 #needs legs leatherpants
 #armor
@@ -40,7 +40,7 @@
 --- Ring
 #newitem
 #id 16
-#gameid 6
+#dominionsId 6
 #sprite /graphics/bodyarmor/standard/ringcuirass.png
 #armor
 #theme "iron"
@@ -49,7 +49,7 @@
 
 #newitem
 #id 17
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/standard/ringhauberk.png
 #armor
 #theme "iron"
@@ -58,7 +58,7 @@
 
 #newitem
 #id 18
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/standard/ringhauberk2.png
 #armor
 #theme "iron"
@@ -67,7 +67,7 @@
 
 #newitem -- full ring
 #id 19
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/standard/ringhauberk.png
 #armor
 #needs legs ringpants
@@ -79,7 +79,7 @@
 --- Scale
 #newitem
 #id 9
-#gameid 7
+#dominionsId 7
 #sprite /graphics/bodyarmor/standard/mailcuirass.png
 #armor
 #theme "iron"
@@ -87,7 +87,7 @@
 
 #newitem
 #id 10
-#gameid 12
+#dominionsId 12
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #armor
 #theme "iron"
@@ -95,7 +95,7 @@
 
 #newitem
 #id 11
-#gameid 12
+#dominionsId 12
 #sprite /graphics/bodyarmor/standard/mailhauberk2.png
 #armor
 #theme "iron"
@@ -103,7 +103,7 @@
 
 #newitem -- full scale
 #id 12
-#gameid 17
+#dominionsId 17
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #armor
 #needs legs chainpants
@@ -114,7 +114,7 @@
 --- Chain Mail
 #newitem
 #id 5
-#gameid 8
+#dominionsId 8
 #sprite /graphics/bodyarmor/standard/mailcuirass.png
 #armor
 #theme "iron"
@@ -122,7 +122,7 @@
 
 #newitem
 #id 6
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #armor
 #theme "iron"
@@ -130,7 +130,7 @@
 
 #newitem
 #id 7
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/standard/mailhauberk2.png
 #armor
 #theme "iron"
@@ -138,7 +138,7 @@
 
 #newitem -- full chain
 #id 8
-#gameid 18
+#dominionsId 18
 #sprite /graphics/bodyarmor/standard/mailhauberk1.png
 #armor
 #needs legs chainpants
@@ -149,7 +149,7 @@
 --- Plate
 #newitem
 #id 13
-#gameid 9
+#dominionsId 9
 #sprite /graphics/bodyarmor/standard/platecuirass.png
 #armor
 #theme "iron"
@@ -157,7 +157,7 @@
 
 #newitem
 #id 14
-#gameid 14
+#dominionsId 14
 #sprite /graphics/bodyarmor/standard/platehauberk.png
 #armor
 #theme "iron"
@@ -165,7 +165,7 @@
 
 #newitem -- full plate
 #id 15
-#gameid 19
+#dominionsId 19
 #sprite /graphics/bodyarmor/standard/platehauberk.png
 #armor
 #needs legs platepants

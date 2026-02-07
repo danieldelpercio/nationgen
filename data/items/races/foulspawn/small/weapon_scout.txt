@@ -4,7 +4,7 @@
 #newitem
 #id tentacle
 #basechance 0.5
-#gameid 85
+#dominionsId 85
 #type "tentacle"
 #tentacle
 #needstype rarm tentacle
@@ -13,7 +13,7 @@
 #newitem
 #id tentacle_sleep
 #basechance 0.5
-#gameid 387
+#dominionsId 387
 #tentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -23,7 +23,7 @@
 #newitem
 #id tentacle_strangle
 #basechance 0.5
-#gameid 116
+#dominionsId 116
 #tentacle
 #itemslot hand +1
 #needstype rarm tentacle
@@ -32,7 +32,7 @@
 #newitem
 #id tentacle_sleep
 #basechance 0.2
-#gameid 387
+#dominionsId 387
 #smalltentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -42,7 +42,7 @@
 #newitem
 #id tentacle_strangle
 #basechance 0.2
-#gameid 116
+#dominionsId 116
 #smalltentacle
 #itemslot hand +1
 #needstype rarm smalltentacle
@@ -50,7 +50,7 @@
 
 #newitem
 #id tentacle_tiny
-#gameid 672
+#dominionsId 672
 #smalltentacle
 #needstype rarm smalltentacle
 #needstype extraweapon tentacle_tiny
@@ -59,7 +59,7 @@
 #newitem
 #id tentacle_disease
 #basechance 0.2
-#gameid 142
+#dominionsId 142
 #smalltentacle
 #command "#gcost +2"
 #needstype rarm smalltentacle
@@ -68,7 +68,7 @@
 #newitem
 #id tentacle_lifedrain
 #basechance 0.2
-#gameid 63
+#dominionsId 63
 #smalltentacle
 #command "#gcost +2"
 #itemslot hand +1
@@ -78,7 +78,7 @@
 #newitem
 #id tentacle_paralyze
 #basechance 0.2
-#gameid 282
+#dominionsId 282
 #smalltentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -88,7 +88,7 @@
 #newitem
 #id tentacle_poison
 #basechance 0.2
-#gameid 355
+#dominionsId 355
 #smalltentacle
 #command "#gcost +1"
 #needstype rarm smalltentacle
@@ -97,7 +97,7 @@
 #newitem
 #id pincer
 #basechance 0.1
-#gameid 273
+#dominionsId 273
 #pincer
 #needstype rarm pincer
 #enditem
@@ -108,7 +108,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/dynastichuman/weapons/club1.png
 #offsetx -3
 #offsety 4
@@ -120,7 +120,7 @@
 
 #newitem
 #id spiked_club
-#gameid 265
+#dominionsId 265
 #sprite /graphics/dynastichuman/weapons/club1.png
 #offsetx -3
 #offsety 4
@@ -132,7 +132,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/advancedhuman/weapons/oh_dagger_elite.png
 #offsetx -13
 #offsety 5
@@ -143,7 +143,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/advancedhuman/weapons/shortsword.png
 #offsetx -4
 #offsety 3
@@ -154,7 +154,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/weapons/broadsword.png
 #offsetx -4
 #offsety 3
@@ -165,7 +165,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/weapons/falchion.png
 #offsetx -4
 #offsety 3
@@ -176,7 +176,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/vaettir/weapon/hatchet.png
 #offsetx -4
 #offsety 0
@@ -189,7 +189,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/advancedhuman/weapons/mace.png
 #offsetx -6
 #offsety 2
@@ -202,7 +202,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/advancedhuman/weapons/hammer.png
 #offsetx -5
 #offsety 3
@@ -213,7 +213,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/advancedhuman/weapons/morningstar.png
 #offsetx -6
 #offsety 2

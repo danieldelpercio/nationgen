@@ -8,7 +8,7 @@
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #needs specialweapon no_special
 #sprite /graphics/tengu/weapons/oversized/wakizasi.png
 #enditem
@@ -34,7 +34,7 @@
 #newitem
 #id spear
 #type polearm
-#gameid 28
+#dominionsId 28
 #sprite /graphics/tengu/weapons/oversized/spear.png
 #needs offhand nooffhand
 #enditem
@@ -42,7 +42,7 @@
 #newitem
 #id yari
 #type polearm
-#gameid 376
+#dominionsId 376
 #sprite /graphics/tengu/weapons/oversized/yari.png
 #needs offhand nooffhand
 #enditem
@@ -50,7 +50,7 @@
 #newitem
 #id naginata
 #type polearm
-#gameid 380
+#dominionsId 380
 #sprite /graphics/tengu/weapons/oversized/naginata.png
 #needs offhand nooffhand
 #enditem

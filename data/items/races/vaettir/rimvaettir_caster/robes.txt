@@ -38,7 +38,7 @@
 
 #newitem
 #id furs_crude
-#gameid 44
+#dominionsId 44
 #sprite /graphics/vaettir/armor/robes/rimvaettir/furs_crude.png
 #tag "eliteversion furs_rough"
 #tag "eliteversion leather_bulky"
@@ -51,7 +51,7 @@
 
 #newitem
 #id furs_bear
-#gameid 44
+#dominionsId 44
 #sprite /graphics/vaettir/armor/robes/rimvaettir/furs_bear.png
 #armor
 #tag "tier 2"
@@ -64,7 +64,7 @@
 
 #newitem
 #id furs_deer1
-#gameid 44
+#dominionsId 44
 #sprite /graphics/vaettir/armor/robes/rimvaettir/furs_deer1.png
 #tag "eliteversion furs_deer2"
 #armor
@@ -78,7 +78,7 @@
 
 #newitem
 #id furs_deer2
-#gameid 44
+#dominionsId 44
 #sprite /graphics/vaettir/armor/robes/rimvaettir/furs_deer2.png
 #armor
 #tag "tier 2"
@@ -91,7 +91,7 @@
 
 #newitem
 #id furs_wolf
-#gameid 44
+#dominionsId 44
 #sprite /graphics/vaettir/armor/robes/rimvaettir/furs_wolf.png
 #armor
 #tag "tier 2"
@@ -107,7 +107,7 @@
 
 #newitem
 #id leather_sleek
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/armor/robes/rimvaettir/fullleather1.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/fullleather1_recolormask1.png
 #tag "eliteversion leather_sleek_dyed"
@@ -119,7 +119,7 @@
 
 #newitem
 #id leather_sleek_dyed
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/armor/robes/rimvaettir/fullleather1.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/fullleather1_recolormask2.png
 #tag "eliteversion leather_sleek_trimmed"
@@ -132,7 +132,7 @@
 
 #newitem
 #id leather_sleek_trimmed
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/armor/robes/rimvaettir/fullleather1.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/fullleather1_recolormask3.png
 #tag "eliteversion leather_bulky_trimmed"
@@ -144,7 +144,7 @@
 
 #newitem
 #id leather_bulky
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/armor/robes/rimvaettir/fullleather2.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/fullleather2_recolormask1.png
 #tag "eliteversion leather_bulky_dyed"
@@ -156,7 +156,7 @@
 
 #newitem
 #id leather_bulky_dyed
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/armor/robes/rimvaettir/fullleather2.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/fullleather2_recolormask2.png
 #tag "eliteversion leather_bulky_trimmed"
@@ -168,7 +168,7 @@
 
 #newitem
 #id leather_bulky_trimmed
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/armor/robes/rimvaettir/fullleather2.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/fullleather2_recolormask3.png
 #armor
@@ -182,7 +182,7 @@
 
 #newitem
 #id robe_druid_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/druidrobe_light.png
 #tag "eliteversion robe_druid_light1"
 #armor
@@ -201,7 +201,7 @@
 
 #newitem
 #id robe_druid_light1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/druidrobe_light.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/druidrobe_recolormask2.png
 #tag "eliteversion robe_druid_light2"
@@ -213,7 +213,7 @@
 
 #newitem
 #id robe_druid_dark1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/druidrobe_dark.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/druidrobe_recolormask2.png
 #tag "eliteversion robe_druid_dark2"
@@ -224,7 +224,7 @@
 
 #newitem
 #id robe_druid_light2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/druidrobe_light.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/druidrobe_recolormask1.png
 #tag "eliteversion robe_toga_light"
@@ -236,7 +236,7 @@
 
 #newitem
 #id robe_druid_dark2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/druidrobe_dark.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/druidrobe_recolormask3.png
 #tag "eliteversion robe_toga_dark"
@@ -248,7 +248,7 @@
 
 #newitem
 #id robe_druid_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/druidrobe_light.png
 #recolormask self
 #armor
@@ -269,7 +269,7 @@
 
 #newitem
 #id robe_toga_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/toga.png
 #tag "eliteversion robe_toga_light"
 #armor
@@ -280,7 +280,7 @@
 
 #newitem
 #id robe_toga_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/toga.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/toga_recolormask1.png
 #tag "eliteversion robe_druid_light2"
@@ -293,7 +293,7 @@
 
 #newitem
 #id robe_toga_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/toga.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/toga_recolormask2.png
 #tag "eliteversion robe_druid_dark2"
@@ -306,7 +306,7 @@
 
 #newitem
 #id robe_ur_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_ur.png
 #tag "eliteversion robe_ur_ornate"
 #armor
@@ -316,7 +316,7 @@
 
 #newitem
 #id robe_ur_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_ur.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/robe_ur_recolormask1.png
 #tag "eliteversion robe_ur_dyed"
@@ -327,7 +327,7 @@
 
 #newitem
 #id robe_ur_dyed
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_ur.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/robe_ur_recolormask2.png
 #armor
@@ -336,7 +336,7 @@
 
 #newitem
 #id robe_spenta_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_light.png
 #tag "eliteversion robe_spenta_light1"
 #armor
@@ -355,7 +355,7 @@
 
 #newitem
 #id robe_spenta_light1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_light.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_recolormask2.png
 #tag "eliteversion robe_spenta_light2"
@@ -367,7 +367,7 @@
 
 #newitem
 #id robe_spenta_dark1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_dark.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_recolormask2.png
 #tag "eliteversion robe_spenta_dark2"
@@ -378,7 +378,7 @@
 
 #newitem
 #id robe_spenta_light2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_light.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_recolormask1.png
 #tag "eliteversion robe_spenta_bright"
@@ -390,7 +390,7 @@
 
 #newitem
 #id robe_spenta_dark2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_dark.png
 #recolormask /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_recolormask3.png
 #tag "eliteversion robe_spenta_dull"
@@ -402,7 +402,7 @@
 
 #newitem
 #id robe_spenta_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/vaettir/armor/robes/rimvaettir/robe_spenta_light.png
 #recolormask self
 #armor

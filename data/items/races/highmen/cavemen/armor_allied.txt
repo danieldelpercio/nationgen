@@ -25,7 +25,7 @@
 
 #newitem
 #id "tight furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/highmen/armor/furs.png
 #needs shirt noshirt
 #armor
@@ -38,7 +38,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/highmen/armor/leather2_cuirass.png
 #needs shirt loincloth
 #armor
@@ -48,7 +48,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/armor/leather2_hauberk3.png
 #needs shirt noshirt
 #armor
@@ -61,7 +61,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/highmen/armor/ring2_cuirass.png
 #needs shirt loincloth
 #armor
@@ -71,7 +71,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/highmen/armor/ring2_hauberk.png
 #needs shirt noshirt
 #armor
@@ -83,7 +83,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/highmen/armor/scale_cuirass1_bronze.png
 #needs shirt leather
 #armor
@@ -93,7 +93,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/highmen/armor/scale_hauberk_bronze.png
 #needs shirt leather
 #armor
@@ -106,7 +106,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/highmen/armor/plate_cuirass1_bronze.png
 #needs shirt leather
 #armor
@@ -117,7 +117,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/highmen/armor/plate_hauberk_bronze.png
 #needs shirt leather
 #armor
@@ -131,7 +131,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/highmen/armor/scale_cuirass1.png
 #needs shirt leather
 #armor
@@ -141,7 +141,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/highmen/armor/scale_hauberk.png
 #needs shirt leather
 #armor
@@ -154,7 +154,7 @@
 
 #newitem
 #id "iron plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/highmen/armor/plate_cuirass1.png
 #needs shirt leather
 #armor
@@ -165,7 +165,7 @@
 
 #newitem
 #id "iron plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/highmen/armor/plate_hauberk.png
 #needs shirt leather
 #armor

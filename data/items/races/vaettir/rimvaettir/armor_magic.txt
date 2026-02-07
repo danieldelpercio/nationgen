@@ -1,6 +1,6 @@
 #newitem
 #id "ice cuirass"
-#gameid 26
+#dominionsId 26
 #basechance 0.25
 #sprite /graphics/vaettir/armor/rimvaettir/ice_cuirass.png
 #armor
@@ -12,7 +12,7 @@
 
 #newitem
 #id "ice hauberk"
-#gameid 27
+#dominionsId 27
 #basechance 0.125
 #sprite /graphics/vaettir/armor/rimvaettir/ice_hauberk.png
 #armor

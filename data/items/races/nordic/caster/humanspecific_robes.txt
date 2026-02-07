@@ -1,7 +1,7 @@
 
 #newitem
 #id bogarusrobe2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/bogarusrobe2.png
 #recolormask /graphics/bodyarmor/robes/bogarusrobe2_recolormask.png
 #armor
@@ -13,7 +13,7 @@
 
 #newitem
 #id imperialrobe3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/imperialrobe3.png
 #recolormask /graphics/bodyarmor/robes/imperialrobe3_recolormask.png
 #armor
@@ -23,7 +23,7 @@
 
 #newitem
 #id soothsayerarmor2a
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/soothsayerarmor2.png
 #recolormask /graphics/bodyarmor/robes/soothsayerarmor1_recolormask1.png
 #armor
@@ -34,7 +34,7 @@
 
 #newitem
 #id soothsayerarmor2b
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/robes/soothsayerarmor2.png
 #recolormask /graphics/bodyarmor/robes/soothsayerarmor2_recolormask2.png
 #armor
@@ -45,7 +45,7 @@
 
 #newitem
 #id gode_furs_grey
-#gameid 44
+#dominionsId 44
 #sprite /graphics/bodyarmor/robes/gode_furs_grey.png
 #armor
 #tag "tier 1"
@@ -58,7 +58,7 @@
 
 #newitem
 #id gode_furs_black
-#gameid 44
+#dominionsId 44
 #sprite /graphics/bodyarmor/robes/gode_furs_black.png
 #armor
 #tag "tier 1"
@@ -71,7 +71,7 @@
 
 #newitem
 #id gode_full_leather
-#gameid 15
+#dominionsId 15
 #sprite /graphics/bodyarmor/robes/gode_furs_brown.png
 #armor
 #tag "tier 1"
@@ -84,7 +84,7 @@
 
 #newitem
 #id gode_cloth_light
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/robes/gode_furs_brown.png
 #recolormask /graphics/bodyarmor/robes/gode_furs_recolormask1.png
 #armor
@@ -99,7 +99,7 @@
 
 #newitem
 #id gode_cloth_dark
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/robes/gode_furs_brown.png
 #recolormask /graphics/bodyarmor/robes/gode_furs_recolormask2.png
 #armor
@@ -114,7 +114,7 @@
 
 #newitem
 #id gode_cuirass_iron_light
-#gameid 8
+#dominionsId 8
 #sprite /graphics/bodyarmor/robes/gode_cuirass_iron.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask1.png
 #armor
@@ -125,7 +125,7 @@
 
 #newitem
 #id gode_cuirass_iron_dark
-#gameid 8
+#dominionsId 8
 #sprite /graphics/bodyarmor/robes/gode_cuirass_iron.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask2.png
 #armor
@@ -136,7 +136,7 @@
 
 #newitem
 #id gode_hauberk_iron_light
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/robes/gode_hauberk_iron.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask1.png
 #armor
@@ -147,7 +147,7 @@
 
 #newitem
 #id gode_hauberk_iron_dark
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/robes/gode_hauberk_iron.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask2.png
 #armor
@@ -158,7 +158,7 @@
 
 #newitem
 #id gode_cuirass_gold_light
-#gameid 8
+#dominionsId 8
 #sprite /graphics/bodyarmor/robes/gode_cuirass_bronze.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask1.png
 #armor
@@ -168,7 +168,7 @@
 
 #newitem
 #id gode_cuirass_gold_dark
-#gameid 8
+#dominionsId 8
 #sprite /graphics/bodyarmor/robes/gode_cuirass_bronze.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask2.png
 #armor
@@ -178,7 +178,7 @@
 
 #newitem
 #id gode_hauberk_gold_light
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/robes/gode_hauberk_bronze.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask1.png
 #armor
@@ -188,7 +188,7 @@
 
 #newitem
 #id gode_hauberk_gold_dark
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/robes/gode_hauberk_bronze.png
 #recolormask /graphics/bodyarmor/robes/gode_armor_recolormask2.png
 #armor

@@ -7,7 +7,7 @@
 
 #newitem
 #id bite
-#gameid 20
+#dominionsId 20
 #type "bite"
 #type "mightbite"
 #command "#gcost +3"
@@ -15,7 +15,7 @@
 
 #newitem
 #id bite_poison_weak
-#gameid 323
+#dominionsId 323
 #type "poison"
 #type "bite"
 #command "#gcost +4"
@@ -23,42 +23,42 @@
 
 #newitem
 #id bite_poison_strong
-#gameid 239
+#dominionsId 239
 #type "poison"
 #command "#gcost +5"
 #enditem
 
 #newitem
 #id bite_poison_stun
-#gameid 251
+#dominionsId 251
 #type "poison"
 #command "#gcost +4"
 #enditem
 
 #newitem
 #id spit_poison_fixed
-#gameid 141
+#dominionsId 141
 #type "poison"
 #command "#gcost +4"
 #enditem
 
 #newitem
 #id spit_poison_magic
-#gameid 224
+#dominionsId 224
 #type "poison"
 #command "#gcost +5"
 #enditem
 
 #newitem
 #id bites_poison
-#gameid 359
+#dominionsId 359
 #nogen
 #command "#gcost +7"
 #enditem
 
 #newitem
 #id bite_corrosive
-#gameid 603
+#dominionsId 603
 #type "maw"
 #type "corrosivebite"
 #command "#gcost +5"
@@ -66,7 +66,7 @@
 
 #newitem
 #id spit_corrosive
-#gameid 599
+#dominionsId 599
 #type "maw"
 #type "corrosivebite"
 #command "#gcost +5"
@@ -74,7 +74,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #type "maw"
 #type "tentacle"
 #type "tentacle_large"
@@ -83,7 +83,7 @@
 
 #newitem
 #id tentacle_tiny
-#gameid 672
+#dominionsId 672
 #type "maw"
 #type "tentacle"
 #command "#gcost +1"
@@ -91,7 +91,7 @@
 
 #newitem
 #id tongue_sleep
-#gameid 387
+#dominionsId 387
 #type "maw"
 #type "tentacle"
 #type "tentacle_large"
@@ -101,7 +101,7 @@
 
 #newitem
 #id tongue_disease
-#gameid 142
+#dominionsId 142
 #type "maw"
 #type "tentacle"
 #type "tentacle_large"
@@ -110,14 +110,14 @@
 
 #newitem
 #id tusk
-#gameid 614
+#dominionsId 614
 #type "tusk"
 #command "#gcost +2"
 #enditem
 
 #newitem
 #id butt
-#gameid 300
+#dominionsId 300
 #type "butt"
 #command "#gcost +2"
 #enditem

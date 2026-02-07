@@ -1,7 +1,7 @@
 
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #basechance 2
 #sprite /graphics/asmegir/aesir/weapon/axe_iron.png
 #eliteversion axe_iron
@@ -21,7 +21,7 @@
 
 #newitem
 #id greataxe_iron
-#gameid 18
+#dominionsId 18
 #basechance 2
 #sprite /graphics/asmegir/aesir/weapon/axe_battle.png
 #theme "iron"
@@ -31,7 +31,7 @@
 
 #newitem
 #id broadsword_iron
-#gameid 8
+#dominionsId 8
 #basechance 2
 #sprite /graphics/asmegir/aesir/weapon/sword_iron.png
 #eliteversion broadsword_iron
@@ -43,7 +43,7 @@
 #newitem
 #id broadsword_gold
 #basechance 0.5
-#gameid 474
+#dominionsId 474
 #sprite /graphics/asmegir/aesir/weapon/sword_gold.png
 #eliteversion broadsword_gold
 #theme "gold"
@@ -51,7 +51,7 @@
 
 #newitem
 #id spear_iron
-#gameid 1
+#dominionsId 1
 #basechance 2
 #sprite /graphics/asmegir/aesir/weapon/spear_iron.png
 #eliteversion spear_iron
@@ -64,7 +64,7 @@
 
 #newitem
 #id spear_gold
-#gameid 473
+#dominionsId 473
 #basechance 0.5
 #sprite /graphics/asmegir/aesir/weapon/spear_gold.png
 #eliteversion spear_gold
@@ -75,7 +75,7 @@
 
 #newitem
 #id spear_long
-#gameid 28
+#dominionsId 28
 #basechance 2
 #sprite /graphics/asmegir/aesir/weapon/spear_long.png
 #eliteversion spear_long
@@ -88,7 +88,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/asmegir/aesir/weapon/trident.png
 #theme "iron"
 #troopweapon
@@ -97,7 +97,7 @@
 
 #newitem
 #id trident_short
-#gameid 679
+#dominionsId 679
 #sprite /graphics/asmegir/aesir/weapon/trident.png
 #theme "iron"
 #theme "formationfighter"
@@ -106,7 +106,7 @@
 
 #newitem
 #id spetum
-#gameid 639
+#dominionsId 639
 #sprite /graphics/asmegir/aesir/weapon/spetum.png
 #theme "iron"
 #theme "formationfighter"
@@ -115,7 +115,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #basechance 0.5
 #sprite /graphics/asmegir/aesir/weapon/maul.png
 #theme "iron"
@@ -125,7 +125,7 @@
 
 #newitem
 #id staff
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #sprite /graphics/asmegir/aesir/weapon/staff.png
 #eliteversion staff_magic
@@ -137,7 +137,7 @@
 
 #newitem
 #id staff_magic
-#gameid 238
+#dominionsId 238
 #basechance 0.125
 #sprite /graphics/asmegir/aesir/weapon/staff.png
 #theme "wood"

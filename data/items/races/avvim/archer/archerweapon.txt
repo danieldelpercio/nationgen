@@ -1,40 +1,40 @@
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "primitive"
 #eliteversion axe
 #enditem
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #eliteversion shortsword
 #enditem
 
 #newitem
 #id kryss
-#gameid 256
+#dominionsId 256
 #eliteversion kopesh
 #theme "iron"
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #eliteversion broadsword
 #theme "iron"
 #enditem
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #eliteversion falchion
 #theme "bronze"
 #enditem
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "wood"
 #eliteversion spikedclub
@@ -43,7 +43,7 @@
 
 #newitem
 #id spikedclub
-#gameid 265
+#dominionsId 265
 #theme "primitive"
 #theme "wood"
 #eliteversion mace
@@ -52,7 +52,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "primitive"
 #eliteversion hammer
 #eliteversion morningstar
@@ -62,7 +62,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme "primitive"
 #theme "iron"
 #theme "elite"
@@ -70,28 +70,28 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #theme "elite"
 #theme "iron"
 #enditem
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #theme "elite"
 #theme "iron"
 #enditem
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #theme "elite"
 #theme "iron"
 #enditem
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #theme "elite"
 #theme "iron"
 #enditem

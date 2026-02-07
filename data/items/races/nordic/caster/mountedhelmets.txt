@@ -1,6 +1,6 @@
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/crown.png
 #armor
 #tag "superior"
@@ -20,7 +20,7 @@
 
 #newitem
 #id antleredcap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/antlercap.png
 #armor
 #tag "primitive"
@@ -40,7 +40,7 @@
 
 #newitem
 #id lizardcrown1
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/lizardcrown.png
 #armor
 #tag "tier 3"
@@ -48,7 +48,7 @@
 
 #newitem
 #id lizardcrown2
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/lizardcrown.png
 #recolormask /graphics/helmet/caster/lizardcrown_recolormask.png
 #armor
@@ -67,7 +67,7 @@
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/vanir/helmet/halfhelmet.png
 #armor
 #basechance 2
@@ -80,7 +80,7 @@
 
 #newitem
 #id goldenhelmet
-#gameid 20
+#dominionsId 20
 #sprite /graphics/vanir/helmet/special/goldenhelmet.png
 #armor
 #basechance 4

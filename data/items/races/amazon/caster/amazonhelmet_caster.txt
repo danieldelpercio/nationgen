@@ -1,7 +1,7 @@
 
 #newitem -- Iron cap
 #id halfhelmet-ironcap
-#gameid 20
+#dominionsId 20
 #offsety 1
 #sprite /graphics/helmet/standard/halfhelmet.png
 #armor
@@ -10,7 +10,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #offsety 1
 #sprite /graphics/helmet/standard/leathercap.png
 #armor
@@ -20,7 +20,7 @@
 
 #newitem -- Iron cap
 #id halfhelmet2-ironcap
-#gameid 20
+#dominionsId 20
 #offsety 1
 #sprite /graphics/helmet/standard/halfhelmet2.png
 #armor
@@ -29,7 +29,7 @@
 
 #newitem
 #id ironcap-sprite4
-#gameid 20
+#dominionsId 20
 #offsety 1
 #sprite /graphics/helmet/standard/halfhelmet4.png
 #theme "advanced"
@@ -40,7 +40,7 @@
 
 #newitem
 #id ironcap-sprite4-elite
-#gameid 20
+#dominionsId 20
 #offsety 1
 #sprite /graphics/helmet/special/elitehalfhelmet1.png
 #recolormask /graphics/helmet/special/elitehalfhelmet1_recolormask.png
@@ -51,7 +51,7 @@
 
 #newitem -- std amazon helm
 #id amazoncap-iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/amazon/helmet/amazoncap_iron.png
 #armor
 #theme "iron"
@@ -59,7 +59,7 @@
 
 #newitem -- bronze amazon helm
 #id amazoncap-bronze
-#gameid 135
+#dominionsId 135
 #sprite /graphics/amazon/helmet/amazoncap_bronze.png
 #armor
 #theme "bronze"
@@ -67,7 +67,7 @@
 
 #newitem -- leather amazon cap
 #id amazoncap-leather
-#gameid 120
+#dominionsId 120
 #sprite /graphics/amazon/helmet/amazoncap_leather.png
 #armor
 #recolormask self
@@ -76,7 +76,7 @@
 
 #newitem
 #id longcap-bronze
-#gameid 135
+#dominionsId 135
 #sprite /graphics/amazon/helmet/dryadcap_bronze.png
 #tag "eliteversion longcap-bronze-elite"
 #armor
@@ -85,7 +85,7 @@
 
 #newitem
 #id longcap-bronze-elite
-#gameid 135
+#dominionsId 135
 #sprite /graphics/amazon/helmet/dryadcap_bronze_elite.png
 #recolormask /graphics/amazon/helmet/dryadcap_elite_recolormask.png
 #armor
@@ -95,7 +95,7 @@
 
 #newitem
 #id longcap-iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/amazon/helmet/dryadcap_iron.png
 #tag "eliteversion longcap-iron-elite"
 #armor
@@ -104,7 +104,7 @@
 
 #newitem
 #id longcap-iron-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/amazon/helmet/dryadcap_iron_elite.png
 #recolormask /graphics/amazon/helmet/dryadcap_elite_recolormask.png
 #armor
@@ -115,7 +115,7 @@
 #newitem -- hoplite helms
 #id hoplitehelm-bronze
 #basechance 0.25
-#gameid 123
+#dominionsId 123
 #sprite /graphics/amazon/helmet/hoplitehelm_bronze.png
 #tag "eliteversion hoplitehelm-elite1"
 #armor
@@ -125,7 +125,7 @@
 #newitem -- hoplite helms
 #id hoplitehelm-iron
 #basechance 0.25
-#gameid 21
+#dominionsId 21
 #sprite /graphics/amazon/helmet/hoplitehelm_iron.png
 #tag "eliteversion hoplitehelm-elite3"
 #theme "iron"
@@ -135,7 +135,7 @@
 #newitem -- hoplite helms
 #id hoplitehelm-elite1
 #basechance 0.25
-#gameid 123
+#dominionsId 123
 #sprite /graphics/amazon/helmet/hoplitehelm_elite1.png
 #armor
 #theme "elite"
@@ -145,7 +145,7 @@
 #newitem -- hoplite helms
 #id hoplitehelm-elite2
 #basechance 0.25
-#gameid 123
+#dominionsId 123
 #sprite /graphics/amazon/helmet/hoplitehelm_elite2.png
 #armor
 #theme "elite"
@@ -155,7 +155,7 @@
 #newitem -- hoplite helms
 #id hoplitehelm-elite3
 #basechance 0.25
-#gameid 21
+#dominionsId 21
 #sprite /graphics/amazon/helmet/hoplitehelm_elite3.png
 #armor
 #theme "elite"
@@ -165,7 +165,7 @@
 #newitem -- hoplite helms
 #id hoplitehelm-elite4
 #basechance 0.25
-#gameid 21
+#dominionsId 21
 #sprite /graphics/amazon/helmet/hoplitehelm_elite4.png
 #armor
 #theme "elite"

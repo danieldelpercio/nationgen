@@ -1,6 +1,6 @@
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #tag "name Ranger"
 #theme "wood"
@@ -8,7 +8,7 @@
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #tag "name Ranger"
 #theme "wood"

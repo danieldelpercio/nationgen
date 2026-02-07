@@ -17,7 +17,7 @@
 
 #newitem
 #id "crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/hoburg/weapon/crossbow/crossbow.png
 #theme "advanced"
 #theme "iron"
@@ -65,7 +65,7 @@
 
 #newitem
 #id "shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/hoburg/weapon/crossbow/shortbow.png
 #theme "austral"
 #theme "boreal"
@@ -78,7 +78,7 @@
 
 #newitem
 #id "shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/hoburg/weapon/crossbow/shortbow.png
 #theme "advanced"
 #theme "wood"
@@ -88,7 +88,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #sprite /graphics/hoburg/weapon/crossbow/blowpipe.png
 #theme "wood"
 #theme "primitive"
@@ -103,7 +103,7 @@
 
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/hoburg/weapon/crossbow/sling.png
 #theme "leather"
 #theme "primitive"
@@ -117,7 +117,7 @@
 
 #newitem
 #id "poison sling"
-#gameid 167
+#dominionsId 167
 #basechance 0.25
 #sprite /graphics/hoburg/weapon/crossbow/sling.png
 #command "#gcost +5"

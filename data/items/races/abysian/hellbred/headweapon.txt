@@ -6,34 +6,34 @@
 
 #newitem
 #id bite
-#gameid 20
+#dominionsId 20
 #type "bite"
 #enditem
 
 #newitem
 #id bite_poison_strong
-#gameid 239
+#dominionsId 239
 #type "poison"
 #command "#gcost +2"
 #enditem
 
 #newitem
 #id salamander_fire_flare
-#gameid 48
+#dominionsId 48
 #type "fire"
 #command "#gcost +4"
 #enditem
 
 #newitem
 #id snake_fire_flare
-#gameid 350
+#dominionsId 350
 #type "fire"
 #command "#gcost +3"
 #enditem
 
 #newitem
 #id scaling_fire_flare
-#gameid 856
+#dominionsId 856
 #type "fire"
 #command "#gcost +5"
 #enditem

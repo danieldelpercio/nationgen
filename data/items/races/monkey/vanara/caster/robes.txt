@@ -41,7 +41,7 @@
 --- Multicultural robes
 #newitem
 #id toga_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_bright.png
 #eliteversion "toga_faint"
 #armor
@@ -52,7 +52,7 @@
 
 #newitem
 #id toga_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/toga_recolormask2.png
 #eliteversion "toga_bright"
@@ -66,7 +66,7 @@
 
 #newitem
 #id toga_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/toga_recolormask1.png
 #eliteversion "toga_medium"
@@ -79,7 +79,7 @@
 
 #newitem
 #id toga_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_medium.png
 #eliteversion "toga_middling"
 #armor
@@ -90,7 +90,7 @@
 
 #newitem
 #id toga_middling
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_medium.png
 #recolormask /graphics/monkey/armor/vanara_mage/toga_recolormask1.png
 #eliteversion "toga_medium"
@@ -105,7 +105,7 @@
 
 #newitem
 #id toga_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_medium.png
 #recolormask self
 #eliteversion "toga_bright"
@@ -119,7 +119,7 @@
 
 #newitem
 #id toga_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_dark.png
 #eliteversion "toga_dull"
 #armor
@@ -130,7 +130,7 @@
 
 #newitem
 #id toga_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_dark.png
 #recolormask /graphics/monkey/armor/vanara_mage/toga_recolormask1.png
 #eliteversion "toga_dark"
@@ -144,7 +144,7 @@
 
 #newitem
 #id toga_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/toga_dark.png
 #recolormask self
 #eliteversion "toga_medium"
@@ -157,7 +157,7 @@
 
 #newitem
 #id robe_lizard_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/robe_lizard.png
 #recolormask /graphics/monkey/armor/vanara_mage/robe_lizard_recolormask1.png
 #eliteversion "robe_lizard_dark"
@@ -169,7 +169,7 @@
 
 #newitem
 #id robe_lizard_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/robe_lizard.png
 #recolormask /graphics/monkey/armor/vanara_mage/robe_lizard_recolormask2.png
 #eliteversion "robe_lizard_light"
@@ -184,7 +184,7 @@
 
 #newitem
 #id apron_apocathary_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/apron_apocathary_bright.png
 #recolormask self
 #eliteversion "apron_apocathary_dark"
@@ -196,7 +196,7 @@
 
 #newitem
 #id apron_apocathary_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/apron_apocathary_dark.png
 #recolormask self
 #eliteversion "apron_apocathary_bright"
@@ -211,7 +211,7 @@
 --- Imperial robes (monochrome)
 #newitem
 #id imperialrobe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright.png
 #eliteversion "imperialrobe_faint"
 #eliteversion "imperialrobe_brighttop_white"
@@ -223,7 +223,7 @@
 
 #newitem
 #id imperialrobe_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -236,7 +236,7 @@
 
 #newitem
 #id imperialrobe_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright.png
 #recolormask self
 #eliteversion "imperialrobe_medium"
@@ -250,7 +250,7 @@
 
 #newitem
 #id imperialrobe_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium.png
 #eliteversion "imperialrobe_middling"
 #eliteversion "imperialrobe_brighttop_grey"
@@ -264,7 +264,7 @@
 
 #newitem
 #id imperialrobe_middling
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_recolormask.png
 #eliteversion "imperialrobe_medium"
@@ -278,7 +278,7 @@
 
 #newitem
 #id imperialrobe_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium.png
 #recolormask self
 #eliteversion "imperialrobe_bright"
@@ -291,7 +291,7 @@
 
 #newitem
 #id imperialrobe_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark.png
 #eliteversion "imperialrobe_dull"
 #eliteversion "imperialrobe_brighttop_black"
@@ -303,7 +303,7 @@
 
 #newitem
 #id imperialrobe_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_recolormask.png
 #eliteversion "imperialrobe_middling"
@@ -316,7 +316,7 @@
 
 #newitem
 #id imperialrobe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark.png
 #recolormask self
 #eliteversion "imperialrobe_medium"
@@ -331,7 +331,7 @@
 --- Imperial robes (twotone)
 #newitem
 #id imperialrobe_brighttop_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -345,7 +345,7 @@
 
 #newitem
 #id imperialrobe_brighttop_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -360,7 +360,7 @@
 
 #newitem
 #id imperialrobe_brighttop_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -374,7 +374,7 @@
 
 #newitem
 #id imperialrobe_darktop_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -388,7 +388,7 @@
 
 #newitem
 #id imperialrobe_darktop_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -403,7 +403,7 @@
 
 #newitem
 #id imperialrobe_darktop_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -417,7 +417,7 @@
 
 #newitem
 #id imperialrobe_whitetop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_brightbottom_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -430,7 +430,7 @@
 
 #newitem
 #id imperialrobe_greytop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_brightbottom_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -443,7 +443,7 @@
 
 #newitem
 #id imperialrobe_blacktop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_brightbottom_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -456,7 +456,7 @@
 
 #newitem
 #id imperialrobe_whitetop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_darkbottom_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -469,7 +469,7 @@
 
 #newitem
 #id imperialrobe_greytop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_medium.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_darkbottom_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -482,7 +482,7 @@
 
 #newitem
 #id imperialrobe_blacktop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_darkbottom_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -495,7 +495,7 @@
 
 #newitem
 #id imperialrobe_blacktop-white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark-bright.png
 #eliteversion "imperialrobe_whitetop-black"
 #eliteversion "imperialrobe_darktop_bright"
@@ -507,7 +507,7 @@
 
 #newitem
 #id imperialrobe_whitetop-black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright-dark.png
 #eliteversion "imperialrobe_blacktop-white"
 #eliteversion "imperialrobe_brighttop_dark"
@@ -519,7 +519,7 @@
 
 #newitem
 #id imperialrobe_darktop-bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark-bright.png
 #recolormask self
 #armor
@@ -530,7 +530,7 @@
 
 #newitem
 #id imperialrobe_brighttop-dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright-dark.png
 #recolormask self
 #armor
@@ -541,7 +541,7 @@
 
 #newitem
 #id imperialrobe_dulltop-faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_dark-bright.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_recolormask.png
 #armor
@@ -552,7 +552,7 @@
 
 #newitem
 #id imperialrobe_fainttop-dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara_mage/ermorrobe_bright-dark.png
 #recolormask /graphics/monkey/armor/vanara_mage/ermorrobe_faint_recolormask.png
 #armor

@@ -1,39 +1,39 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/agarthan/weapons/flail.png
 #enditem
 
 #newitem
 #id glaive
-#gameid 308
+#dominionsId 308
 #sprite /graphics/agarthan/weapons/glaive.png
 #enditem
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/agarthan/weapons/hammer.png
 #enditem
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/agarthan/weapons/spear.png
 #theme formationfighter
 #enditem
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #sprite /graphics/agarthan/weapons/trident.png
 #theme formationfighter
 #enditem
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/agarthan/weapons/trident.png
 #theme formationfighter
 #enditem

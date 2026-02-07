@@ -1,30 +1,30 @@
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #enditem
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "wood"
 #enditem
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #theme "iron"
 #enditem
 
 #newitem
 #id ninjato
-#gameid 381
+#dominionsId 381
 #theme "iron"
 #enditem
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #theme "elite"
 #theme "iron"
 #enditem

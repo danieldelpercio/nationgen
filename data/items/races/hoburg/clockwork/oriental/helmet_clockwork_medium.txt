@@ -1,6 +1,6 @@
 #newitem
 #id "clockwork fullhelm"
-#gameid 21
+#dominionsId 21
 #basechance 0
 #sprite /graphics/hoburg/helmet/clockwork_fullhelm_samurai.png
 #armor

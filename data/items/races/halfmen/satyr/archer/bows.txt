@@ -1,20 +1,20 @@
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/halfmen/satyr/weapon/sling.png
 #theme primitive
 #enditem
 
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/halfmen/satyr/weapon/shortbow.png
 #needs quiver quiver
 #enditem
 
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/halfmen/satyr/weapon/longbow.png
 #needs quiver quiver
 #basechance 0.5
@@ -22,7 +22,7 @@
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/halfmen/satyr/weapon/compositebow.png
 #needs quiver quiver
 #enditem

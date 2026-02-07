@@ -1,6 +1,6 @@
 #newitem
 #id pike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/weapon/standard/pike.png
 #troopweapon
 #theme formationfighter
@@ -8,7 +8,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/weapon/standard/longspear.png
 #troopweapon
 #theme formationfighter
@@ -16,7 +16,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/standard/spear.png
 #troopweapon
 #theme formationfighter
@@ -24,14 +24,14 @@
 
 #newitem
 #id glaive
-#gameid 308
+#dominionsId 308
 #sprite /graphics/tengu/weapons/glaive.png
 #troopweapon
 #enditem
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/standard/falchion.png
 #enditem
 
@@ -40,7 +40,7 @@
 
 #newitem
 #id yari
-#gameid 376
+#dominionsId 376
 #sprite /graphics/weapon/standard/spear.png
 #troopweapon
 #theme formationfighter
@@ -48,7 +48,7 @@
 
 #newitem
 #id naginata
-#gameid 380
+#dominionsId 380
 #sprite /graphics/tengu/weapons/naginata.png
 #troopweapon
 #enditem
@@ -56,13 +56,13 @@
 #newitem
 #id ji
 #basechance 0.5
-#gameid 5
+#dominionsId 5
 #sprite /graphics/tengu/weapons/ji.png
 #troopweapon
 #enditem
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/tengu/weapons/wakizasi.png
 #enditem

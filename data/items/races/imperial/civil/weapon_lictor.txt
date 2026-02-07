@@ -2,7 +2,7 @@
 
 #newitem
 #id spear_stone
-#gameid 373
+#dominionsId 373
 #sprite /graphics/imperial/sacred/weapon/spear.png
 #theme "stone"
 #theme "primitive"
@@ -20,7 +20,7 @@
 
 #newitem
 #id trident_bone
-#gameid 670
+#dominionsId 670
 #sprite /graphics/imperial/sacred/weapon/trident.png
 #theme "bone"
 #theme "primitive"
@@ -28,7 +28,7 @@
 
 #newitem
 #id greatclub
-#gameid 165
+#dominionsId 165
 #sprite /graphics/weapon/2h/greatclub.png
 #offsetx 4
 #theme "wood"
@@ -37,7 +37,7 @@
 
 #newitem
 #id ironcudgel
-#gameid 363
+#dominionsId 363
 #sprite /graphics/imperial/sacred/weapon/cudgel.png
 #theme "iron"
 #theme "primitive"
@@ -48,7 +48,7 @@
 
 #newitem
 #id spear
-#gameid 2hspear
+#dominionsId 2hspear
 #sprite /graphics/imperial/sacred/weapon/spear.png
 #theme "iron"
 #basechance 0.5
@@ -56,7 +56,7 @@
 
 #newitem
 #id longspear
-#gameid 2hlongspear
+#dominionsId 2hlongspear
 #sprite /graphics/imperial/sacred/weapon/longspear.png
 #theme "iron"
 #basechance 0.5
@@ -64,7 +64,7 @@
 
 #newitem
 #id pike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/imperial/sacred/weapon/pike.png
 #theme "iron"
 #theme "advanced"
@@ -73,21 +73,21 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/imperial/sacred/weapon/trident.png
 #theme "iron"
 #enditem
 
 #newitem
 #id spetum
-#gameid 639
+#dominionsId 639
 #sprite /graphics/imperial/sacred/weapon/spetum.png
 #theme "iron"
 #enditem
 
 #newitem
 #id greatsword
-#gameid 11
+#dominionsId 11
 #sprite /graphics/weapon/2h/zweihander.png
 #offsetx 4
 #theme "iron"
@@ -97,7 +97,7 @@
 
 #newitem
 #id claymore
-#gameid 258
+#dominionsId 258
 #sprite /graphics/weapon/2h/zweihander.png
 #offsetx 4
 #theme "iron"
@@ -106,7 +106,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/imperial/sacred/weapon/battleaxe.png
 #theme "iron"
 #basechance 2
@@ -114,21 +114,21 @@
 
 #newitem
 #id bardiche
-#gameid 257
+#dominionsId 257
 #sprite /graphics/imperial/sacred/weapon/bardiche.png
 #theme "iron"
 #enditem
 
 #newitem
 #id glaive
-#gameid 308
+#dominionsId 308
 #sprite /graphics/imperial/sacred/weapon/glaive.png
 #theme "iron"
 #enditem
 
 #newitem
 #id halberd
-#gameid 5
+#dominionsId 5
 #sprite /graphics/imperial/sacred/weapon/halberd.png
 #theme "iron"
 #theme "advanced"
@@ -144,13 +144,13 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/imperial/sacred/weapon/maul.png
 #enditem
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/imperial/sacred/weapon/flail.png
 #theme "iron"
 #theme "advanced"
@@ -158,7 +158,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/imperial/sacred/weapon/quarterstaff.png
 #theme "wood"
 #basechance 0.25
@@ -166,7 +166,7 @@
 
 #newitem
 #id scythe
-#gameid 493
+#dominionsId 493
 #sprite /graphics/imperial/sacred/weapon/scythe.png
 #theme "death"
 #theme "iron"

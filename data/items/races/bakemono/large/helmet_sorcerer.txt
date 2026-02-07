@@ -28,7 +28,7 @@
 
 #newitem
 #id kabuto_bakemono
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto.png
 #tag "eliteversion kabuto_bakemono"
 #tag "eliteversion kabuto_bakemono_elite"
@@ -43,7 +43,7 @@
 
 #newitem
 #id kabuto_bakemono_elite
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto_elite.png
 #tag "eliteversion kabuto_bakemono_elite"
 #armor

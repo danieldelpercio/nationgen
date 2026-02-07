@@ -1,13 +1,13 @@
 #newitem
 #id "meteoritearmor2"
-#gameid 53
+#dominionsId 53
 #sprite /graphics/atlantian/armor/meteoritearmor.png
 #armor
 #enditem
 
 #newitem
 #id "sharkskinarmor"
-#gameid 151
+#dominionsId 151
 #sprite /graphics/atlantian/armor/sharkskinarmor.png
 #basechance 0.25
 #armor
@@ -15,7 +15,7 @@
 
 #newitem
 #id "shellarmor"
-#gameid 140
+#dominionsId 140
 #sprite /graphics/atlantian/armor/shellarmor.png
 #basechance 0.25
 #armor

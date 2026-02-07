@@ -11,7 +11,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/zotz/armor/leathercuirass_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -20,7 +20,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/zotz/armor/leatherhauberk_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -31,7 +31,7 @@
 #newitem -- full leather
 #basechance 0.25
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/zotz/armor/fullleather_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor

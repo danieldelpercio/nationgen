@@ -2,6 +2,6 @@
 
 #newitem
 #id "robes_ornate"
-#gameid 158
+#dominionsId 158
 #armor
 #enditem

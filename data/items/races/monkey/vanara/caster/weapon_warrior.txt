@@ -1,6 +1,6 @@
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/monkey/weapon/vanara/battleaxe.png
 #theme "imperial"
 #theme "iron"
@@ -8,7 +8,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/monkey/weapon/vanara/battleaxe_bronze.png
 #theme "imperial"
 #theme "bronze"
@@ -16,7 +16,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/weapon/vanara/mace.png
 #theme "primitive"
 #theme "imperial"
@@ -24,7 +24,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/monkey/weapon/vanara/flail.png
 #theme "imperial"
 #theme "iron"
@@ -32,7 +32,7 @@
 
 #newitem
 #id flail_bronze
-#gameid 16
+#dominionsId 16
 #sprite /graphics/monkey/weapon/vanara/flail_bronze.png
 #theme "imperial"
 #theme "bronze"
@@ -40,7 +40,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/monkey/weapon/bandar/shortsword.png
 #offsety 6
 #theme "iron"
@@ -49,7 +49,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/monkey/weapon/bandar/shortsword_bronze.png
 #offsety 6
 #theme "bronze"
@@ -58,7 +58,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/monkey/weapon/bandar/broadsword.png
 #offsety 6
 #theme "advanced"
@@ -68,7 +68,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/weapon/vanara/falchion.png
 #theme "oriental"
 #theme "iron"
@@ -76,7 +76,7 @@
 
 #newitem
 #id yari
-#gameid 376
+#dominionsId 376
 #sprite /graphics/monkey/weapon/vanara/spear.png
 #theme "oriental"
 #theme "iron"
@@ -85,7 +85,7 @@
 
 #newitem
 #id naginata
-#gameid 380
+#dominionsId 380
 #sprite /graphics/monkey/weapon/vanara/naginata.png
 #theme "oriental"
 #theme "iron"
@@ -94,7 +94,7 @@
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/tengu/weapons/wakizasi.png
 #offsetx 0
 #offsety 13
@@ -104,7 +104,7 @@
 
 #newitem
 #id ninjato
-#gameid 377
+#dominionsId 377
 #sprite /graphics/tengu/weapons/ninjato.png
 #offsetx 0
 #offsety 13
@@ -114,7 +114,7 @@
 
 #newitem
 #id katana
-#gameid 378
+#dominionsId 378
 #sprite /graphics/tengu/weapons/katana/katana.png
 #offsetx -3
 #offsety 7
@@ -125,7 +125,7 @@
 
 #newitem
 #id nodachi
-#gameid 379
+#dominionsId 379
 #sprite /graphics/tengu/weapons/katana/nodachi.png
 #offsetx -3
 #offsety 7

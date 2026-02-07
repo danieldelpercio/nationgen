@@ -15,7 +15,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/naga/armor/scalecuirass_iron.png
 #armor
 #theme "iron"
@@ -24,7 +24,7 @@
 
 #newitem
 #id "elite scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/naga/armor/scalecuirass_gilt.png
 #armor
 #theme "iron"
@@ -33,7 +33,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/enlightened/naga/armor/scalehauberk_iron.png
 #armor
 #theme "iron"
@@ -42,7 +42,7 @@
 
 #newitem
 #id "elite scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/enlightened/naga/armor/scalehauberk_gilt.png
 #armor
 #theme "iron"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/enlightened/naga/armor/scalecuirass_bronze.png
 #armor
 #theme "bronze"
@@ -60,7 +60,7 @@
 
 #newitem
 #id "elite bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/enlightened/naga/armor/scalecuirass_gilt.png
 #armor
 #theme "bronze"
@@ -69,7 +69,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/enlightened/naga/armor/scalehauberk_bronze.png
 #armor
 #theme "bronze"
@@ -78,7 +78,7 @@
 
 #newitem
 #id "elite bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/enlightened/naga/armor/scalehauberk_gilt.png
 #armor
 #theme "bronze"
@@ -90,7 +90,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/enlightened/naga/armor/platecuirass_iron.png
 #armor
 #theme "iron"
@@ -99,7 +99,7 @@
 
 #newitem
 #id "elite plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/enlightened/naga/armor/platecuirass_gilt.png
 #armor
 #theme "iron"
@@ -108,7 +108,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/enlightened/naga/armor/platehauberk_iron.png
 #armor
 #theme "iron"
@@ -117,7 +117,7 @@
 
 #newitem
 #id "elite plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/enlightened/naga/armor/platehauberk_gilt.png
 #armor
 #theme "iron"
@@ -126,7 +126,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/enlightened/naga/armor/platecuirass_bronze.png
 #armor
 #theme "bronze"
@@ -135,7 +135,7 @@
 
 #newitem
 #id "elite bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/enlightened/naga/armor/platecuirass_gilt.png
 #armor
 #theme "bronze"
@@ -144,7 +144,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/enlightened/naga/armor/platehauberk_bronze.png
 #armor
 #theme "bronze"
@@ -153,7 +153,7 @@
 
 #newitem
 #id "elite bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/enlightened/naga/armor/platehauberk_gilt.png
 #armor
 #theme "bronze"

@@ -1,6 +1,6 @@
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/offhand/standard/axe.png
 #offsetx 0
 #offsety 4
@@ -8,7 +8,7 @@
 
 #newitem
 #id offhandhammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/offhand/standard/hammer.png
 #offsetx -2
 #offsety 2
@@ -17,7 +17,7 @@
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/offhand/standard/mace.png
 #offsetx 0
 #offsety 4
@@ -26,7 +26,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/offhand/standard/shortsword.png
 #offsetx -2
 #offsety 2
@@ -35,7 +35,7 @@
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/offhand/standard/falchion.png
 #offsetx -2
 #offsety 2
@@ -44,13 +44,13 @@
 #newitem
 #id offhandbladehand
 #basechance 0
-#gameid 343
+#dominionsId 343
 #enditem
 
 
 #newitem
 #id offhandhammerhand
 #basechance 0
-#gameid 13
+#dominionsId 13
 #enditem
 

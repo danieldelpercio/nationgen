@@ -4,7 +4,7 @@
 #chanceinc itemtheme armor ice  *100
 #chanceinc itemtheme weapon ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 2
+#dominionsId 2
 #sprite /graphics/caelian/shield/woodshield_ice.png
 #armor
 #theme "ice"
@@ -19,7 +19,7 @@
 #chanceinc itemtheme armor ice  *100
 #chanceinc itemtheme weapon ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 28
+#dominionsId 28
 #sprite /graphics/caelian/shield/iceshield2.png
 #armor
 #theme "ice"
@@ -32,7 +32,7 @@
 #chanceinc itemtheme armor ice  *100
 #chanceinc itemtheme weapon ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 28
+#dominionsId 28
 #sprite /graphics/caelian/shield/iceshield1.png
 #armor
 #theme "ice"
@@ -46,7 +46,7 @@
 #chanceinc itemtheme armor ice  *100
 #chanceinc itemtheme weapon ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 28
+#dominionsId 28
 #sprite /graphics/caelian/shield/kiteshield_ice.png
 #armor
 #minprot 14

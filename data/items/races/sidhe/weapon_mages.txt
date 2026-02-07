@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/weapon/bronze/hatchet.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -23,7 +23,7 @@
 
 #newitem
 #id greataxe
-#gameid 698
+#dominionsId 698
 #sprite /graphics/weapon/bronze/greataxe.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -35,7 +35,7 @@
 
 #newitem
 #id longspear
-#gameid 644
+#dominionsId 644
 #sprite /graphics/weapon/bronze/longspear.png
 #tag "name infantry longspearman"
 #tag "tier 1"
@@ -46,7 +46,7 @@
 
 #newitem
 #id shortsword
-#gameid 645
+#dominionsId 645
 #sprite /graphics/weapon/bronze/shortsword.png
 #tag "tier 1"
 #tag "tier 2"
@@ -55,7 +55,7 @@
 
 #newitem
 #id spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/bronze/spear.png
 #tag "name infantry spearman"
 #tag "tier 1"
@@ -66,7 +66,7 @@
 
 #newitem
 #id short_trident
-#gameid 680
+#dominionsId 680
 #sprite /graphics/weapon/bronze/trident.png
 #tag "prefix trident"
 #basechance 0.25
@@ -78,7 +78,7 @@
 
 #newitem
 #id trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/weapon/bronze/trident.png
 #tag "prefix trident"
 #basechance 0.25
@@ -91,7 +91,7 @@
 
 #newitem
 #id goldenlance
-#gameid 475
+#dominionsId 475
 #sprite /graphics/weapon/sacred/goldenspear.png
 #theme "elite"
 #tag "tier 1"
@@ -102,7 +102,7 @@
 
 #newitem
 #id goldenspear
-#gameid 473
+#dominionsId 473
 #sprite /graphics/weapon/sacred/goldenspear.png
 #theme "elite"
 #tag "tier 1"
@@ -113,7 +113,7 @@
 
 #newitem
 #id goldensword
-#gameid 474
+#dominionsId 474
 #sprite /graphics/weapon/sacred/goldenshortsword.png
 #theme "elite"
 #tag "tier 1"

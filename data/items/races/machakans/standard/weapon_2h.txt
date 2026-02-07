@@ -1,13 +1,13 @@
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/weapon/standard/flail.png
 #basechance 0.25
 #enditem
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/weapon/standard/greataxe.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -17,13 +17,13 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/weapon/standard/maul.png
 #enditem
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/weapon/standard/trident.png
 #tag "prefix trident"
 #basechance 0.0125
@@ -32,7 +32,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/standard/quarterstaff.png
 #basechance 0.05
 #maxprot 10

@@ -62,7 +62,7 @@
 
 #newitem
 #id mageantler1
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ophidians/head/mageprim1.png
 #armor
 #tag "primitive"
@@ -71,7 +71,7 @@
 
 #newitem
 #id mageantler2
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ophidians/head/mageprim2.png
 #armor
 #tag "primitive"

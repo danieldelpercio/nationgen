@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/fomorian/weapon/axe.png
 #theme "primitive"
 #theme "iron"
@@ -8,7 +8,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/fomorian/weapon/hatchet.png
 #theme "primitive"
 #theme "bronze"
@@ -16,7 +16,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/fomorian/weapon/battleaxe.png
 #eliteversion elitegreataxe
 #theme "primitive"
@@ -25,7 +25,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/fomorian/weapon/battleaxe_bronze.png
 #eliteversion elitegreataxe_bronze
 #theme "primitive"
@@ -34,7 +34,7 @@
 
 #newitem
 #id elitegreataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/fomorian/weapon/battleaxe_elite.png
 #theme "primitive"
 #theme "iron"
@@ -43,7 +43,7 @@
 
 #newitem
 #id elitegreataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/fomorian/weapon/battleaxe_bronze_elite.png
 #theme "primitive"
 #theme "bronze"
@@ -52,7 +52,7 @@
 
 #newitem
 #id elitespear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/fomorian/weapon/spear_elite.png
 #theme "iron"
 #theme "elite"
@@ -60,7 +60,7 @@
 
 #newitem
 #id elitespear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/fomorian/weapon/spear_bronze_elite.png
 #theme "bronze"
 #theme "elite"
@@ -68,7 +68,7 @@
 
 #newitem
 #id elitelongspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/fomorian/weapon/longspear_elite.png
 #theme "iron"
 #theme "elite"
@@ -76,7 +76,7 @@
 
 #newitem
 #id elitelongspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/fomorian/weapon/longspear_bronze_elite.png
 #theme "bronze"
 #theme "elite"
@@ -84,7 +84,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/fomorian/weapon/sword.png
 #theme "iron"
 #enditem
@@ -98,7 +98,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/fomorian/weapon/spear.png
 #eliteversion elitespear
 #theme "iron"
@@ -106,7 +106,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/fomorian/weapon/spear_bronze.png
 #eliteversion elitespear_bronze
 #theme "bronze"
@@ -114,7 +114,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/fomorian/weapon/longspear.png
 #eliteversion elitelongspear
 #theme "iron"
@@ -122,7 +122,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/fomorian/weapon/longspear_bronze.png
 #eliteversion elitelongspear_bronze
 #theme "bronze"
@@ -130,7 +130,7 @@
 
 #newitem
 #id claymore
-#gameid 258
+#dominionsId 258
 #sprite /graphics/fomorian/weapon/claymore.png
 #theme "iron"
 #enditem

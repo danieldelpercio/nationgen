@@ -3,7 +3,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/caelian/armor/leathercuirass.png
 #armor
 #theme "leather"
@@ -11,7 +11,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/caelian/armor/leatherhauberk.png
 #armor
 #theme "leather"
@@ -19,7 +19,7 @@
 
 #newitem -- full leather
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/caelian/armor/leatherhauberk.png
 #needs legs leatherpants
 #armor
@@ -31,7 +31,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/caelian/armor/ringcuirass.png
 #armor
 #theme "iron"
@@ -40,7 +40,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/caelian/armor/ringhauberk.png
 #armor
 #theme "iron"
@@ -49,7 +49,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/caelian/armor/ringhauberk.png
 #armor
 #theme "iron"
@@ -59,7 +59,7 @@
 
 #newitem
 #id "bronze ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/caelian/armor/ringcuirass_bronze.png
 #armor
 #theme "bronze"
@@ -68,7 +68,7 @@
 
 #newitem
 #id "bronze ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/caelian/armor/ringhauberk_bronze.png
 #armor
 #theme "bronze"
@@ -77,7 +77,7 @@
 
 #newitem -- full ring
 #id "bronze full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/caelian/armor/ringhauberk_bronze.png
 #armor
 #theme "bronze"
@@ -89,7 +89,7 @@
 --- Scale
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/caelian/armor/mailcuirass.png
 #armor
 #theme "iron"
@@ -97,7 +97,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/caelian/armor/mailhauberk.png
 #armor
 #theme "iron"
@@ -105,7 +105,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/caelian/armor/mailfull.png
 #armor
 #theme "advanced"
@@ -114,7 +114,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/caelian/armor/mailcuirass_bronze.png
 #armor
 #theme "bronze"
@@ -122,7 +122,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/caelian/armor/mailhauberk_bronze.png
 #armor
 #theme "bronze"
@@ -141,7 +141,7 @@
 --- Chain Mail
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/caelian/armor/mailcuirass.png
 #armor
 #theme "iron"
@@ -149,7 +149,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/caelian/armor/mailhauberk.png
 #armor
 #theme "iron"
@@ -157,7 +157,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/caelian/armor/mailfull.png
 #armor
 #theme "advanced"
@@ -170,7 +170,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/caelian/armor/platecuirass.png
 #armor
 #theme "advanced"
@@ -179,7 +179,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/caelian/armor/platehauberk.png
 #armor
 #theme "advanced"
@@ -188,7 +188,7 @@
 
 #newitem -- full plate
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/caelian/armor/platefull.png
 #armor
 #theme "advanced"
@@ -199,7 +199,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/caelian/armor/platecuirass_bronze.png
 #armor
 #theme "advanced"
@@ -208,7 +208,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/caelian/armor/platehauberk_bronze.png
 #armor
 #theme "advanced"
@@ -245,7 +245,7 @@
 
 #newitem
 #id "icestudded armor"
-#gameid 52
+#dominionsId 52
 #sprite /graphics/caelian/armor/icestuddedhauberk.png
 #needs legs icepants
 #armor
@@ -271,7 +271,7 @@
 
 #newitem
 #id "icicle mail"
-#gameid 133
+#dominionsId 133
 #sprite /graphics/caelian/armor/iciclehauberk.png
 #armor
 #theme "ice"
@@ -283,7 +283,7 @@
 
 #newitem
 #id "ice cuirass"
-#gameid 26
+#dominionsId 26
 #sprite /graphics/caelian/armor/icecuirass.png
 #armor
 #theme "ice"
@@ -295,7 +295,7 @@
 
 #newitem
 #id "ice hauberk"
-#gameid 27
+#dominionsId 27
 #sprite /graphics/caelian/armor/icehauberk.png
 #armor
 #theme "ice"

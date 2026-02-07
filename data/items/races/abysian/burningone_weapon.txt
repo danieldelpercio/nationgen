@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/highmen/weapons/axe.png
 #theme "primitive"
 #theme "iron"
@@ -8,21 +8,21 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/highmen/weapons/morningstar_bronze.png
 #theme "iron"
 #enditem
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/highmen/weapons/hammer.png
 #theme "iron"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/highmen/weapons/mace.png
 #theme "primitive"
 #theme "iron"
@@ -30,7 +30,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/highmen/weapons/shortsword.png
 #basechance 0.25
 #theme "iron"
@@ -38,7 +38,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/highmen/weapons/broadsword.png
 #basechance 0.25
 #theme "iron"
@@ -48,7 +48,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/highmen/weapons/flail_bronze.png
 #needs hands hands_2h
 #theme "iron"
@@ -57,7 +57,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/highmen/weapons/battleaxe.png
 #needs hands hands_2h
 #theme "primitive"
@@ -67,7 +67,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/highmen/weapons/maul.png
 #theme "primitive"
 #theme "iron"
@@ -77,7 +77,7 @@
 
 #newitem
 #id cudgel
-#gameid 363
+#dominionsId 363
 #sprite /graphics/highmen/weapons/ironcudgel.png
 #theme "primitive"
 #theme "iron"
@@ -87,7 +87,7 @@
 
 #newitem
 #id claymore
-#gameid 258
+#dominionsId 258
 #sprite /graphics/highmen/weapons/greatsword.png
 #basechance 0.25
 #needs hands hands_2h

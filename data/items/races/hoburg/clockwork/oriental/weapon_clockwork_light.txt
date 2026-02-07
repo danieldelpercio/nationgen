@@ -1,6 +1,6 @@
 #newitem
 #id light_lance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/hoburg/weapon/spear.png
 #offsetx -2
 #offsety -6
@@ -9,7 +9,7 @@
 
 #newitem
 #id naginata
-#gameid 380
+#dominionsId 380
 #sprite  /graphics/hoburg/weapon/naginata.png
 #offsetx -2
 #offsety -6
@@ -18,7 +18,7 @@
 
 #newitem
 #id yari
-#gameid 376
+#dominionsId 376
 #sprite /graphics/hoburg/weapon/longspear.png
 #offsetx -2
 #offsety -6
@@ -27,7 +27,7 @@
 
 #newitem
 #id pike
-#gameid 590
+#dominionsId 590
 #sprite /graphics/hoburg/weapon/pike.png
 #offsetx -2
 #offsety -6
@@ -37,7 +37,7 @@
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/hoburg/weapon/wakizasi.png
 #offsetx -2
 #offsety -6
@@ -46,7 +46,7 @@
 
 #newitem
 #id "ninjato"
-#gameid 381
+#dominionsId 381
 #sprite /graphics/hoburg/weapon/ninjato.png
 #offsetx -2
 #offsety -6
@@ -55,7 +55,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/standard/falchion.png
 #tag "name infantry falchioneer"
 #offsetx 1
@@ -65,7 +65,7 @@
 
 #newitem
 #id katana
-#gameid 378
+#dominionsId 378
 #sprite /graphics/hoburg/weapon/katana.png
 #offsetx -2
 #offsety -6
@@ -75,7 +75,7 @@
 
 #newitem
 #id bladehand
-#gameid 343
+#dominionsId 343
 #tag "name infantry reaper"
 #needs offhand offhandbladehand
 #needs hands bladehands

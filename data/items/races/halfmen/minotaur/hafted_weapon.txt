@@ -1,6 +1,6 @@
 #newitem
 #id battleaxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe1.png
 #tag "name infantry axeman"
 #basechance 2
@@ -10,7 +10,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe2.png
 #tag "name infantry axeman"
 #basechance 2
@@ -20,7 +20,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/halfmen/minotaur/weapon/flail.png
 #theme "advanced"
 #tier 1
@@ -29,7 +29,7 @@
 
 #newitem
 #id glaive
-#gameid 308
+#dominionsId 308
 #sprite /graphics/halfmen/minotaur/weapon/glaive.png
 #tier 1
 #theme "iron"
@@ -37,7 +37,7 @@
 
 #newitem
 #id bardiche
-#gameid 257
+#dominionsId 257
 #sprite /graphics/halfmen/minotaur/weapon/bardiche.png
 #theme "advanced"
 #theme "iron"
@@ -46,7 +46,7 @@
 
 #newitem
 #id halberd
-#gameid 5
+#dominionsId 5
 #sprite /graphics/halfmen/minotaur/weapon/halberd.png
 #theme "advanced"
 #theme "iron"
@@ -55,7 +55,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/halfmen/minotaur/weapon/spear.png
 #tag "name infantry spearman"
 #basechance 2
@@ -66,7 +66,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/halfmen/minotaur/weapon/longspear.png
 #tag "name infantry spearman"
 #basechance 2
@@ -77,7 +77,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/halfmen/minotaur/weapon/trident.png
 #theme "advanced"
 #tier 1
@@ -87,7 +87,7 @@
 
 #newitem
 #id battleaxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe1_bronze.png
 #tag "name infantry axeman"
 #basechance 2
@@ -97,7 +97,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe2_bronze.png
 #tag "name infantry axeman"
 #basechance 2
@@ -107,7 +107,7 @@
 
 #newitem
 #id flail_bronze
-#gameid 16
+#dominionsId 16
 #sprite /graphics/halfmen/minotaur/weapon/flail_bronze.png
 #theme "advanced"
 #tier 1
@@ -116,7 +116,7 @@
 
 #newitem
 #id glaive_bronze
-#gameid 673
+#dominionsId 673
 #sprite /graphics/halfmen/minotaur/weapon/glaive_bronze.png
 #tier 1
 #theme "bronze"
@@ -142,7 +142,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/halfmen/minotaur/weapon/spear_bronze.png
 #tag "name infantry spearman"
 #basechance 2
@@ -153,7 +153,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/halfmen/minotaur/weapon/longspear_bronze.png
 #tag "name infantry spearman"
 #basechance 2
@@ -164,7 +164,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/halfmen/minotaur/weapon/trident_bronze.png
 #theme "advanced"
 #tier 1
@@ -174,7 +174,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/halfmen/minotaur/weapon/maul.png
 #theme "primitive"
 #basechance 2
@@ -183,7 +183,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/halfmen/minotaur/weapon/quarterstaff.png
 #maxprot 9
 #theme "primitive"

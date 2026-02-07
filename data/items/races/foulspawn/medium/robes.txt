@@ -28,7 +28,7 @@
 #sprite /graphics/ogre/armor/furs.png
 #eliteversion furs_bones
 #eliteversion furs_beads
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -41,7 +41,7 @@
 #newitem
 #id furs_bones
 #sprite /graphics/ogre/armor/robes/furs_bones.png
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -56,7 +56,7 @@
 #id furs_beads
 #sprite /graphics/ogre/armor/robes/furs_beads.png
 #recolormask /graphics/ogre/armor/robes/furs_beads_recolormask.png
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -76,7 +76,7 @@
 #eliteversion skirt_fur_light_fancy
 #eliteversion skirt_fur_mixed
 #eliteversion robe_fur_light
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -91,7 +91,7 @@
 #eliteversion skirt_fur_light_ornate
 #eliteversion skirt_fur_mixed_fancy
 #eliteversion robe_fur_light_fancy
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -106,7 +106,7 @@
 #sprite /graphics/ogre/armor/robes/skirt_fur_light_ornate.png
 #eliteversion skirt_fur_mixed_ornate
 #eliteversion robe_fur_light_ornate
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -122,7 +122,7 @@
 #eliteversion skirt_fur_dark_fancy
 #eliteversion skirt_fur_mixed
 #eliteversion robe_fur_dark
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -137,7 +137,7 @@
 #eliteversion skirt_fur_dark_ornate
 #eliteversion skirt_fur_mixed_fancy
 #eliteversion robe_fur_dark_fancy
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -152,7 +152,7 @@
 #sprite /graphics/ogre/armor/robes/skirt_fur_dark_ornate.png
 #eliteversion skirt_fur_mixed_ornate
 #eliteversion robe_fur_dark_ornate
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -168,7 +168,7 @@
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
 #eliteversion skirt_fur_mixed_fancy
 #eliteversion robe_fur_mixed_plain
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -183,7 +183,7 @@
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
 #eliteversion skirt_fur_mixed_ornate
 #eliteversion robe_fur_mixed_fancy
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -198,7 +198,7 @@
 #sprite /graphics/ogre/armor/robes/skirt_fur_mixed_ornate.png
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
 #eliteversion robe_fur_mixed_ornate
-#gameid 158
+#dominionsId 158
 #armor
 #theme "leather"
 #theme "primitive"
@@ -217,7 +217,7 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_light_plain.png
 #eliteversion robe_fur_light_fancy
 #eliteversion robe_fur_mixed
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -231,7 +231,7 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_light_fancy.png
 #eliteversion robe_fur_light_ornate
 #eliteversion robe_fur_mixed_fancy
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -245,7 +245,7 @@
 #id robe_fur_light_ornate
 #sprite /graphics/ogre/armor/robes/robe_fur_light_ornate.png
 #eliteversion robe_fur_mixed_ornate
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -260,7 +260,7 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_dark_plain.png
 #eliteversion robe_fur_dark_fancy
 #eliteversion robe_fur_mixed
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -274,7 +274,7 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_dark_fancy.png
 #eliteversion robe_fur_dark_ornate
 #eliteversion robe_fur_mixed_fancy
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -288,7 +288,7 @@
 #id robe_fur_dark_ornate
 #sprite /graphics/ogre/armor/robes/robe_fur_dark_ornate.png
 #eliteversion robe_fur_mixed_ornate
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -303,7 +303,7 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_mixed_plain.png
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
 #eliteversion robe_fur_mixed_fancy
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -317,7 +317,7 @@
 #sprite /graphics/ogre/armor/robes/robe_fur_mixed_fancy.png
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
 #eliteversion robe_fur_mixed_ornate
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -331,7 +331,7 @@
 #id robe_fur_mixed_ornate
 #sprite /graphics/ogre/armor/robes/robe_fur_mixed_ornate.png
 #recolormask /graphics/ogre/armor/robes/robe_fur_mixed_recolormask.png
-#gameid 44
+#dominionsId 44
 #armor
 #theme "leather"
 #theme "primitive"
@@ -440,7 +440,7 @@
 #id toga_white
 #sprite /graphics/ogre/armor/robes/toga_light.png
 #eliteversion toga_faint
-#gameid 158
+#dominionsId 158
 #armor
 #theme "advanced"
 #tier 1
@@ -453,7 +453,7 @@
 #id toga_black
 #sprite /graphics/ogre/armor/robes/toga_dark.png
 #eliteversion toga_dull
-#gameid 158
+#dominionsId 158
 #armor
 #theme "advanced"
 #tier 1
@@ -467,7 +467,7 @@
 #sprite /graphics/ogre/armor/robes/toga_light.png
 #recolormask /graphics/ogre/armor/robes/toga_faint_recolormask.png
 #eliteversion toga_light
-#gameid 158
+#dominionsId 158
 #armor
 #theme "advanced"
 #notfortier 1
@@ -481,7 +481,7 @@
 #sprite /graphics/ogre/armor/robes/toga_dark.png
 #recolormask /graphics/ogre/armor/robes/toga_dull_recolormask.png
 #eliteversion toga_dark
-#gameid 158
+#dominionsId 158
 #armor
 #theme "advanced"
 #notfortier 1
@@ -495,7 +495,7 @@
 #sprite /graphics/ogre/armor/robes/toga_light.png
 #recolormask self
 #eliteversion toga_light
-#gameid 158
+#dominionsId 158
 #armor
 #theme "advanced"
 #notfortier 1
@@ -509,7 +509,7 @@
 #sprite /graphics/ogre/armor/robes/toga_dark.png
 #recolormask self
 #eliteversion toga_dark
-#gameid 158
+#dominionsId 158
 #armor
 #theme "advanced"
 #notfortier 1

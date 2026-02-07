@@ -2,7 +2,7 @@
 
 #newitem
 #id spear_stone
-#gameid 373
+#dominionsId 373
 #chanceinc posetag legion_rank1 *10
 #sprite /graphics/imperial/legion/weapon/spear.png
 #theme "stone"
@@ -22,7 +22,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #chanceinc posetag legion_rank2 *10
 #sprite /graphics/imperial/legion/weapon/club.png
 #theme "wood"
@@ -31,7 +31,7 @@
 
 #newitem
 #id spikedclub
-#gameid 265
+#dominionsId 265
 #chanceinc posetag legion_rank2 *10
 #chanceinc posetag legion_rank3 *4
 #sprite /graphics/imperial/legion/weapon/spikedclub.png
@@ -41,7 +41,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #chanceinc posetag legion_rank2 *10
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/mace.png
@@ -54,7 +54,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #chanceinc posetag legion_rank1 *20
 #chanceinc posetag legion_rank3 *0.5
 #sprite /graphics/imperial/legion/weapon/spear.png
@@ -63,7 +63,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #chanceinc posetag legion_rank1 *5
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/longspear.png
@@ -72,7 +72,7 @@
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #chanceinc posetag legion_rank1 *20
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/trident.png
@@ -82,7 +82,7 @@
 
 #newitem
 #id spetum
-#gameid 639
+#dominionsId 639
 #chanceinc posetag legion_rank1 *20
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/spetum.png
@@ -92,7 +92,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #chanceinc posetag legion_rank2 *20
 #chanceinc posetag legion_rank3 *0.5
 #sprite /graphics/imperial/legion/weapon/shortsword.png
@@ -101,7 +101,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #chanceinc posetag legion_rank2 *20
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/broadsword.png
@@ -111,7 +111,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #chanceinc posetag legion_rank2 *20
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/falchion.png
@@ -121,7 +121,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #chanceinc posetag legion_rank2 *20
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/axe.png
@@ -131,7 +131,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #chanceinc posetag legion_rank2 *20
 #chanceinc posetag legion_rank3 *4
 #sprite /graphics/imperial/legion/weapon/mace.png
@@ -141,7 +141,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #chanceinc posetag legion_rank2 *20
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/hammer.png
@@ -152,7 +152,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #chanceinc posetag legion_rank2 *20
 #chanceinc posetag legion_rank3 *8
 #sprite /graphics/imperial/legion/weapon/morningstar.png

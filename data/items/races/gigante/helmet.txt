@@ -3,7 +3,7 @@
 
 #newitem
 #id bronzefullhelm
-#gameid 123
+#dominionsId 123
 #sprite /graphics/gigante/helmet/helmet_hoplite_bronze.png
 #theme bronze
 #armor
@@ -11,7 +11,7 @@
 
 #newitem
 #id bronzefullhelm_light
-#gameid 123
+#dominionsId 123
 #sprite /graphics/gigante/helmet/helmet_hoplite_bronze_elite.png
 #recolormask /graphics/gigante/helmet/helmet_hoplite_recolormask_light.png
 #theme bronze
@@ -21,7 +21,7 @@
 
 #newitem
 #id bronzefullhelm_medium
-#gameid 123
+#dominionsId 123
 #sprite /graphics/gigante/helmet/helmet_hoplite_bronze_elite.png
 #recolormask /graphics/gigante/helmet/helmet_hoplite_recolormask_medium.png
 #theme bronze
@@ -31,7 +31,7 @@
 
 #newitem
 #id bronzefullhelm_dark
-#gameid 123
+#dominionsId 123
 #sprite /graphics/gigante/helmet/helmet_hoplite_bronze_elite.png
 #recolormask /graphics/gigante/helmet/helmet_hoplite_recolormask_dark.png
 #theme bronze
@@ -43,7 +43,7 @@
 
 #newitem
 #id ironfullhelm
-#gameid 21
+#dominionsId 21
 #sprite /graphics/gigante/helmet/helmet_hoplite_iron.png
 #theme iron
 #armor
@@ -51,7 +51,7 @@
 
 #newitem
 #id ironfullhelm_light
-#gameid 21
+#dominionsId 21
 #sprite /graphics/gigante/helmet/helmet_hoplite_iron_elite.png
 #recolormask /graphics/gigante/helmet/helmet_hoplite_recolormask_light.png
 #theme iron
@@ -61,7 +61,7 @@
 
 #newitem
 #id ironfullhelm_medium
-#gameid 21
+#dominionsId 21
 #sprite /graphics/gigante/helmet/helmet_hoplite_iron_elite.png
 #recolormask /graphics/gigante/helmet/helmet_hoplite_recolormask_medium.png
 #theme iron
@@ -71,7 +71,7 @@
 
 #newitem
 #id ironfullhelm_dark
-#gameid 21
+#dominionsId 21
 #sprite /graphics/gigante/helmet/helmet_hoplite_iron_elite.png
 #recolormask /graphics/gigante/helmet/helmet_hoplite_recolormask_dark.png
 #theme iron

@@ -27,7 +27,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/bakemono/small/armor/furs_2h.png
 #theme naked
 #theme primitive
@@ -40,7 +40,7 @@
 
 #newitem
 #id "ashigaru armor"
-#gameid 128
+#dominionsId 128
 #sprite /graphics/bakemono/small/armor/ashigaru_2h.png
 #theme advanced
 #armor
@@ -52,7 +52,7 @@
 
 #newitem
 #id "samurai armor"
-#gameid 129
+#dominionsId 129
 #sprite /graphics/bakemono/small/armor/samurai_2h.png
 #eliteversion "heavy samurai armor elite"
 #theme advanced
@@ -63,7 +63,7 @@
 
 #newitem
 #id "heavy samurai armor"
-#gameid 130
+#dominionsId 130
 #sprite /graphics/bakemono/small/armor/heavysamurai_2h.png
 #eliteversion "heavy samurai armor elite"
 #theme advanced
@@ -75,7 +75,7 @@
 
 #newitem
 #id "heavy samurai armor elite"
-#gameid 130
+#dominionsId 130
 #sprite /graphics/bakemono/small/armor/heavysamurai_2h.png
 #recolormask /graphics/bakemono/small/armor/heavysamurai_2h_recolormask.png
 #theme advanced

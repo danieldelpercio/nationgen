@@ -16,32 +16,32 @@ public class DatabaseConverter {
 
   public static void main(String[] args) {
     // Weapons
-    Dom3DB previousWeapons = new Dom3DB("/db/weapon.csv");
-    Dom3DB weapons = new Dom3DB("/db_conversion/weapons.csv");
+    Dom3DB previousWeapons = new Dom3DB("/db/nationgen/weapons.csv");
+    Dom3DB inspectorWeapons = new Dom3DB("/db/inspector/weapons.csv");
 
-    addAttributes(weapons, "/db_conversion/attributes_by_weapon.csv");
-    addEffects(weapons);
-    weapons.removeColumn("end");
-    weapons.removeColumn("weapon");
-    weapons.setColumn("flyspr", previousWeapons.getColumnAsMap("flyspr"));
-    weapons.setColumn(
+    addAttributes(inspectorWeapons, "/db/inspector/attributes_by_weapon.csv");
+    addEffects(inspectorWeapons);
+    inspectorWeapons.removeColumn("end");
+    inspectorWeapons.removeColumn("weapon");
+    inspectorWeapons.setColumn("flyspr", previousWeapons.getColumnAsMap("flyspr"));
+    inspectorWeapons.setColumn(
       "animlength",
       previousWeapons.getColumnAsMap("animlength")
     );
-    weapons.setDefinition(previousWeapons.getDefinition());
+    inspectorWeapons.setDefinition(previousWeapons.getDefinition());
 
-    weapons.saveToFile("/db/weapon.csv");
+    inspectorWeapons.saveToFile("/db/nationgen/weapons.csv");
 
     // Armor
-    Dom3DB previousArmor = new Dom3DB("/db/armor.csv");
-    Dom3DB armor = new Dom3DB("/db_conversion/armors.csv");
+    Dom3DB previousArmor = new Dom3DB("/db/nationgen/armors.csv");
+    Dom3DB armor = new Dom3DB("/db/inspector/armors.csv");
 
-    addAttributes(armor, "/db_conversion/attributes_by_armor.csv");
+    addAttributes(armor, "/db/inspector/attributes_by_armor.csv");
     addArmorProt(armor);
     armor.removeColumn("end");
     armor.setDefinition(previousArmor.getDefinition());
 
-    armor.saveToFile("/db/armor.csv");
+    armor.saveToFile("/db/nationgen/armors.csv");
   }
 
   /**
@@ -54,7 +54,7 @@ public class DatabaseConverter {
    */
   private static void addArmorProt(Dom3DB db) {
     List<String> fileLines = FileUtil.readLines(
-      "/db_conversion/protections_by_armor.csv"
+      "/db/inspector/protections_by_armor.csv"
     );
 
     fileLines.remove(0);
@@ -149,7 +149,7 @@ public class DatabaseConverter {
    * @param db
    */
   private static void addEffects(Dom3DB db) {
-    Dom3DB attr = new Dom3DB("/db_conversion/effects_weapons.csv");
+    Dom3DB attr = new Dom3DB("/db/inspector/effects_weapons.csv");
 
     for (String key : db.entryMap.keySet()) {
       String attr_id = db.GetValue(key, "effect_record_id");

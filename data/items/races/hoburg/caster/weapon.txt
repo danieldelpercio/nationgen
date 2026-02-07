@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "primitive"
 #theme "iron"
@@ -14,7 +14,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #offsetx 3
 #offsety 12
@@ -28,7 +28,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/weapon/bronze/shortsword.png
 #offsetx 3
 #offsety 12
@@ -40,7 +40,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/standard/falchion.png
 #tag "name infantry falchioneer"
 #offsetx 3
@@ -54,7 +54,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/weapon/bronze/kopesh.png
 #offsetx 4
 #offsety 11
@@ -83,7 +83,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #tag "tier 2"
 #tag "tier 3"
@@ -101,7 +101,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #theme "superior"
@@ -119,7 +119,7 @@
 
 #newitem
 #id pestle
-#gameid 499
+#dominionsId 499
 #needs offhand mortar
 #sprite /graphics/weapon/mage/pestle.png
 #tag "tier 1"
@@ -136,7 +136,7 @@
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/weapon/mage/dagger.png
 #tag "tier 1"
 #offsetx 5
@@ -152,7 +152,7 @@
 
 #newitem
 #id stick
-#gameid 153
+#dominionsId 153
 #sprite /graphics/hoburg/weapon/stick.png
 #eliteverson stickstaff
 #tag "tier 1"
@@ -168,7 +168,7 @@
 
 #newitem
 #id bamboo_rod
-#gameid 501
+#dominionsId 501
 #sprite /graphics/hoburg/weapon/stick.png
 #eliteverson stickstaff
 #tag "tier 1"
@@ -180,7 +180,7 @@
 
 #newitem
 #id stickstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/hoburg/weapon/stick.png
 #tag "tier 2"
 #tag "tier 3"
@@ -210,7 +210,7 @@
 
 #newitem
 #id twig
-#gameid 498
+#dominionsId 498
 #sprite /graphics/hoburg/weapon/caster/twig.png
 #tag "tier 1"
 #tag "tier 2"
@@ -226,7 +226,7 @@
 
 #newitem
 #id branch
-#gameid 240
+#dominionsId 240
 #sprite /graphics/hoburg/weapon/caster/branch.png
 #tag "tier 2"
 #tag "tier 3"
@@ -256,7 +256,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/hoburg/weapon/caster/skullstaff.png
 #tag "tier 3"
 #theme "death"

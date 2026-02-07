@@ -1,7 +1,7 @@
 -- Bucklers
 #newitem
 #id bronze_buckler
-#gameid 1
+#dominionsId 1
 #basechance 4
 #sprite /graphics/caelian/shield/buckler_bronze.png
 #theme "bronze"
@@ -11,7 +11,7 @@
 
 #newitem
 #id iron_buckler
-#gameid 1
+#dominionsId 1
 #basechance 4
 #sprite /graphics/caelian/shield/buckler_iron.png
 #theme "iron"
@@ -23,7 +23,7 @@
 -- Wooden Shields
 #newitem
 #id woodshield_bronze
-#gameid 2
+#dominionsId 2
 #basechance 4
 #sprite /graphics/caelian/shield/woodshield_bronze.png
 #theme "bronze"
@@ -32,7 +32,7 @@
 
 #newitem
 #id woodshield_iron
-#gameid 2
+#dominionsId 2
 #basechance 4
 #sprite /graphics/caelian/shield/woodshield_iron.png
 #theme "iron"
@@ -43,7 +43,7 @@
 -- Metal Shields
 #newitem
 #id metalshield_bronze
-#gameid 209
+#dominionsId 209
 #basechance 0.67
 #sprite /graphics/caelian/shield/kiteshield_bronze.png
 #theme "bronze"
@@ -53,7 +53,7 @@
 
 #newitem
 #id paintedshield_bronze
-#gameid 209
+#dominionsId 209
 #basechance 1.33
 #sprite /graphics/caelian/shield/kiteshield_bronze.png
 #recolormask /graphics/caelian/shield/kiteshield_recolormask.png
@@ -64,7 +64,7 @@
 
 #newitem
 #id metalshield_iron
-#gameid 208
+#dominionsId 208
 #basechance 0.67
 #sprite /graphics/caelian/shield/kiteshield_iron.png
 #theme "iron"
@@ -74,7 +74,7 @@
 
 #newitem
 #id paintedshield_iron
-#gameid 208
+#dominionsId 208
 #basechance 1.33
 #sprite /graphics/caelian/shield/kiteshield_iron.png
 #recolormask /graphics/caelian/shield/kiteshield_recolormask.png

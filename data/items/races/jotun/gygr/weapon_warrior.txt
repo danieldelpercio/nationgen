@@ -1,7 +1,7 @@
 
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #basechance 4
 #sprite /graphics/jotun/warrior/weapon/axe_iron.png
 #eliteversion axe_iron
@@ -13,7 +13,7 @@
 
 #newitem
 #id axe_battle
-#gameid 18
+#dominionsId 18
 #sprite /graphics/jotun/warrior/weapon/axe_battle.png
 #theme "iron"
 #troopweapon
@@ -21,7 +21,7 @@
 
 #newitem
 #id sword_iron
-#gameid 8
+#dominionsId 8
 #sprite /graphics/jotun/warrior/weapon/sword_iron.png
 #eliteversion sword_iron
 #eliteversion sword_ice
@@ -31,7 +31,7 @@
 
 #newitem
 #id spear_iron
-#gameid 1
+#dominionsId 1
 #sprite /graphics/jotun/warrior/weapon/spear_iron.png
 #eliteversion spear_iron
 #eliteversion spear_ice
@@ -43,7 +43,7 @@
 
 #newitem
 #id longspear_iron
-#gameid 28
+#dominionsId 28
 #sprite /graphics/jotun/warrior/weapon/longspear_iron.png
 #eliteversion longspear_iron
 #eliteversion longspear_heavy
@@ -53,7 +53,7 @@
 
 #newitem
 #id spear_heavy
-#gameid 2hspear
+#dominionsId 2hspear
 #sprite /graphics/jotun/warrior/weapon/spear_heavy.png
 #eliteversion spear_heavy
 #eliteversion glaive_iron
@@ -66,7 +66,7 @@
 
 #newitem
 #id longspear_heavy
-#gameid 2hlongspear
+#dominionsId 2hlongspear
 #sprite /graphics/jotun/warrior/weapon/longspear_heavy.png
 #eliteversion longspear_heavy
 #eliteversion glaive_iron
@@ -79,7 +79,7 @@
 
 #newitem
 #id glaive_iron
-#gameid 308
+#dominionsId 308
 #basechance 0.5
 #sprite /graphics/jotun/warrior/weapon/glaive_iron.png
 #eliteversion glaive_iron
@@ -92,7 +92,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #basechance 0.25
 #sprite /graphics/jotun/warrior/weapon/staff_quarter.png
 #theme "militia"
@@ -118,7 +118,7 @@
 
 #newitem
 #id sword_gold
-#gameid 474
+#dominionsId 474
 #basechance 0.1
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
@@ -130,7 +130,7 @@
 
 #newitem
 #id spear_gold
-#gameid 473
+#dominionsId 473
 #basechance 0.1
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
@@ -143,7 +143,7 @@
 
 #newitem
 #id sword_ice
-#gameid 37
+#dominionsId 37
 #basechance 0.1
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
@@ -155,7 +155,7 @@
 
 #newitem
 #id spear_ice
-#gameid 611
+#dominionsId 611
 #basechance 0.1
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
@@ -168,7 +168,7 @@
 
 #newitem
 #id glaive_ice
-#gameid 454
+#dominionsId 454
 #basechance 0.1
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"

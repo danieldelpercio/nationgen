@@ -2,7 +2,7 @@
 --- Bronze Scale
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/monkey/armor/vanara/scalecuirass_bronze.png
 #eliteversion "gilt bronze scale cuirass"
 #armor
@@ -13,7 +13,7 @@
 #newitem
 #basechance 0.5
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/monkey/armor/vanara/scalehauberk_bronze.png
 #eliteversion "gilt bronze scale hauberk"
 #armor
@@ -34,7 +34,7 @@
 
 #newitem
 #id "gilt bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/monkey/armor/vanara/scalecuirass_gilt.png
 #armor
 #theme "enlightened"
@@ -45,7 +45,7 @@
 #newitem
 #basechance 0.5
 #id "gilt bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/monkey/armor/vanara/scalehauberk_gilt.png
 #armor
 #theme "enlightened"
@@ -68,7 +68,7 @@
 --- Scale
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/vanara/scalecuirass.png
 #eliteversion "gilt scale cuirass"
 #armor
@@ -79,7 +79,7 @@
 #newitem
 #basechance 0.5
 #id "scale hauberk short"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/armor/vanara/scalehauberk.png
 #eliteversion "gilt scale hauberk"
 #armor
@@ -90,7 +90,7 @@
 #newitem
 #basechance 0.25
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/vanara/fullscale.png
 #eliteversion "gilt full scale"
 #armor
@@ -100,7 +100,7 @@
 
 #newitem
 #id "gilt scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/vanara/scalecuirass_gilt.png
 #armor
 #theme "enlightened"
@@ -111,7 +111,7 @@
 #newitem
 #basechance 0.5
 #id "gilt scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/armor/vanara/scalehauberk_gilt.png
 #armor
 #theme "enlightened"
@@ -122,7 +122,7 @@
 #newitem
 #basechance 0.25
 #id "gilt full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/vanara/fullscale_gilt.png
 #armor
 #theme "enlightened"
@@ -136,7 +136,7 @@
 #newitem
 #basechance 0.5
 #id "lorica hamata"
-#gameid 116
+#dominionsId 116
 #sprite /graphics/monkey/armor/vanara/lorica_hamata.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "lorica squamata"
@@ -147,7 +147,7 @@
 
 #newitem
 #id "lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/monkey/armor/vanara/lorica_squamata.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "lorica segmentata"
@@ -158,7 +158,7 @@
 
 #newitem
 #id "lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/monkey/armor/vanara/lorica_segmentata.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "imperial plate"
@@ -170,7 +170,7 @@
 
 #newitem
 #id "imperial plate"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/monkey/armor/vanara/platehauberk_imperial.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #armor
@@ -185,7 +185,7 @@
 #newitem
 #id "oriental leather hauberk"
 #basechance 2
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/armor/vanara/leatherhauberk_oriental.png
 #recolormask /graphics/monkey/armor/vanara/hauberk_oriental_recolormask.png
 #armor
@@ -196,7 +196,7 @@
 #newitem
 #id "oriental scale cuirass"
 #basechance 4
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/vanara/scalecuirass_oriental.png
 #recolormask /graphics/monkey/armor/vanara/hauberk_oriental_recolormask.png
 #armor
@@ -207,7 +207,7 @@
 #newitem
 #id "oriental scale hauberk"
 #basechance 4
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/armor/vanara/scalehauberk_oriental.png
 #recolormask /graphics/monkey/armor/vanara/hauberk_oriental_recolormask.png
 #armor
@@ -218,7 +218,7 @@
 #newitem
 #id "oriental full scale"
 #basechance 2
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/vanara/fullscale_oriental.png
 #recolormask /graphics/monkey/armor/vanara/hauberk_oriental_recolormask.png
 #armor

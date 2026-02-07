@@ -12,7 +12,7 @@
 #newitem
 #basechance 1
 #id ogre_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ogre/helmet/leathercap.png
 #armor
 #tag "eliteversion ogre_leathercap_crested"
@@ -24,7 +24,7 @@
 #newitem
 #basechance 1
 #id ogre_leathercap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ogre/helmet/reinforcedcap.png
 #armor
 #tag "eliteversion ogre_leathercap_crested"
@@ -35,7 +35,7 @@
 #newitem
 #basechance 1
 #id ogre_leathercap_crested
-#gameid 162
+#dominionsId 162
 #sprite /graphics/ogre/helmet/leathercap_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -47,7 +47,7 @@
 #newitem
 #basechance 1
 #id ogre_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ogre/helmet/ironcap.png
 #armor
 #tag "eliteversion ogre_ironcap_crested"
@@ -57,7 +57,7 @@
 #newitem
 #basechance 1
 #id ogre_ironcap_crested
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ogre/helmet/ironcap_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -68,7 +68,7 @@
 #newitem
 #basechance 1
 #id ogre_bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ogre/helmet/bronzecap.png
 #armor
 #tag "eliteversion ogre_bronzecap_crested"
@@ -78,7 +78,7 @@
 #newitem
 #basechance 1
 #id ogre_bronzecap_crested
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ogre/helmet/bronzecap_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -89,7 +89,7 @@
 #newitem
 #basechance 1
 #id ogre_halfhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/ogre/helmet/halfhelm.png
 #armor
 #tag "eliteversion ogre_halfhelm_crested"
@@ -100,7 +100,7 @@
 #newitem
 #basechance 1
 #id ogre_halfhelm_crested
-#gameid 118
+#dominionsId 118
 #sprite /graphics/ogre/helmet/halfhelm_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -135,7 +135,7 @@
 #newitem
 #basechance 1
 #id ogre_fullhelm
-#gameid 21
+#dominionsId 21
 #sprite /graphics/ogre/helmet/fullhelm.png
 #armor
 #tag "eliteversion ogre_fullhelm_crested"
@@ -147,7 +147,7 @@
 #newitem
 #basechance 1
 #id ogre_fullhelm_crested
-#gameid 21
+#dominionsId 21
 #sprite /graphics/ogre/helmet/fullhelm_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -160,7 +160,7 @@
 #newitem
 #basechance 1
 #id ogre_fullhelm_bronze
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ogre/helmet/fullhelm_bronze.png
 #armor
 #tag "eliteversion ogre_fullhelm_bronze_crested"
@@ -171,7 +171,7 @@
 #newitem
 #basechance 1
 #id ogre_fullhelm_bronze_crested
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ogre/helmet/fullhelm_bronze_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor

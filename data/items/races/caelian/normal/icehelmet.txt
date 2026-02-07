@@ -3,7 +3,7 @@
 #chanceinc itemtheme not armor ice *0.001
 #chanceinc itemtheme armor ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 29
+#dominionsId 29
 #sprite /graphics/caelian/helmet/icecap.png
 #eliteversion icehelm_elite
 #armor
@@ -16,7 +16,7 @@
 #chanceinc itemtheme not armor ice *0.001
 #chanceinc itemtheme armor ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 124
+#dominionsId 124
 #sprite /graphics/caelian/helmet/icehelmet.png
 #eliteversion icehelm_elite
 #armor
@@ -30,7 +30,7 @@
 #chanceinc itemtheme not armor ice *0.001
 #chanceinc itemtheme armor ice  *100
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 124
+#dominionsId 124
 #sprite /graphics/caelian/helmet/icehelmet.png
 #theme "ice"
 #theme "elite"

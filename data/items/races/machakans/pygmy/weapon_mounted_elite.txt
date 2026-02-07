@@ -1,7 +1,7 @@
 
 #newitem
 #id hardwood_club
-#gameid 692
+#dominionsId 692
 #sprite /graphics/monkey/weapon/markata/club.png
 #theme "primitive"
 #theme "wood"
@@ -10,7 +10,7 @@
 
 #newitem
 #id lance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/hoburg/weapon/spear.png
 #offsety 1
 #theme "wood"
@@ -20,7 +20,7 @@
 
 #newitem
 #id poisonspear
-#gameid 519
+#dominionsId 519
 #sprite /graphics/hoburg/weapon/spear.png
 #offsety 1
 #theme "wood"
@@ -30,7 +30,7 @@
 
 #newitem
 #id hatchet
-#gameid 646
+#dominionsId 646
 #sprite /graphics/zotz/weapon/hatchet.png
 #offsetx 12
 #offsety 32
@@ -39,7 +39,7 @@
 
 #newitem
 #id "smallbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/machakans/weapon/pygmybow.png
 #needs basesprite "pygmy archer"
 #needs hands "hands_bow"

@@ -102,7 +102,7 @@
 --- Togas, tunics, and furs
 #newitem
 #id furs
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/giant/furs.png
 #recolormask /graphics/monkey/giant/tunic_recolormask1.png
 #armor
@@ -111,7 +111,7 @@
 
 #newitem
 #id toga
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/giant/toga.png
 #recolormask /graphics/monkey/giant/toga_recolormask3.png
 #armor
@@ -120,7 +120,7 @@
 
 #newitem
 #id great_toga
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/giant/toga.png
 #recolormask self
 #armor
@@ -128,7 +128,7 @@
 
 #newitem
 #id tunic_bright
-#gameid 158
+#dominionsId 158
 #basechance 0.33
 #sprite /graphics/monkey/giant/tunic.png
 #recolormask self
@@ -137,7 +137,7 @@
 
 #newitem
 #id tunic_dim
-#gameid 158
+#dominionsId 158
 #basechance 0.33
 #sprite /graphics/monkey/giant/tunic.png
 #recolormask /graphics/monkey/giant/tunic_recolormask2.png
@@ -146,7 +146,7 @@
 
 #newitem
 #id tunic_dull
-#gameid 158
+#dominionsId 158
 #basechance 0.33
 #sprite /graphics/monkey/giant/tunic.png
 #recolormask /graphics/monkey/giant/tunic_recolormask1.png
@@ -155,7 +155,7 @@
 
 #newitem
 #id fancy_toga_white
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/monkey/giant/fancytoga_light.png
 #recolormask self
@@ -165,7 +165,7 @@
 
 #newitem
 #id fancy_toga_black
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/monkey/giant/fancytoga_dark.png
 #recolormask self
@@ -175,7 +175,7 @@
 
 #newitem
 #id fancy_toga_light
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/monkey/giant/fancytoga_light.png
 #recolormask self
@@ -185,7 +185,7 @@
 
 #newitem
 #id fancy_toga_dark
-#gameid 158
+#dominionsId 158
 #basechance 0.25
 #sprite /graphics/monkey/giant/fancytoga_dark.png
 #recolormask self

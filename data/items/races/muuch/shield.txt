@@ -1,6 +1,6 @@
 #newitem
 #id hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/muuch/offhands/hideshield.png
 #tag "eliteversion hideshield_tinted"
 #armor
@@ -10,7 +10,7 @@
 
 #newitem
 #id greathideshield
-#gameid 112
+#dominionsId 112
 #sprite /graphics/muuch/offhands/greathideshield.png
 #tag "eliteversion greathideshield_tinted"
 #armor
@@ -20,7 +20,7 @@
 
 #newitem
 #id metalshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzeshield.png
 #tag "eliteversion metalshield_tinted"
 #armor
@@ -30,7 +30,7 @@
 
 #newitem
 #id bigmetalshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzetower.png
 #tag "eliteversion bigmetalshield_tinted"
 #armor
@@ -41,7 +41,7 @@
 
 #newitem
 #id hideshield_tinted
-#gameid 105
+#dominionsId 105
 #sprite /graphics/muuch/offhands/hideshield.png
 #recolormask /graphics/muuch/offhands/shield_recolormask.png
 #armor
@@ -52,7 +52,7 @@
 
 #newitem
 #id greathideshield_tinted
-#gameid 112
+#dominionsId 112
 #sprite /graphics/muuch/offhands/greathideshield.png
 #recolormask /graphics/muuch/offhands/bigshield_recolormask.png
 #armor
@@ -63,7 +63,7 @@
 
 #newitem
 #id metalshield_tinted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzeshield.png
 #recolormask /graphics/muuch/offhands/shield_recolormask.png
 #armor
@@ -74,7 +74,7 @@
 
 #newitem
 #id bigmetalshield_tinted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzetower.png
 #recolormask /graphics/muuch/offhands/bigshield_recolormask.png
 #armor

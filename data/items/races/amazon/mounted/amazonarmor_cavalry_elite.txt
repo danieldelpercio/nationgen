@@ -4,7 +4,7 @@
 
 #newitem
 #id "gold chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/amazon/armor/standard/chaincuirass_elite.png
 #armor
 #basechance 0.25
@@ -14,7 +14,7 @@
 
 #newitem
 #id "gold chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/amazon/armor/standard/chainhauberk_elite.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #basechance 0.25
@@ -25,7 +25,7 @@
 
 #newitem -- gilt full chain
 #id "gold full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/amazon/armor/standard/chainhauberk_elite.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -41,7 +41,7 @@
 
 #newitem
 #id "gold plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/amazon/armor/standard/platecuirass_elite.png
 #armor
 #basechance 0.25
@@ -52,7 +52,7 @@
 
 #newitem
 #id "gold plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/amazon/armor/mounted/platehauberk_elite.png
 #armor
 #basechance 0.25
@@ -63,7 +63,7 @@
 
 #newitem -- gilt full plate
 #id "gold full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/amazon/armor/mounted/fullplate_elite.png
 #armor
 #basechance 0.25
@@ -74,7 +74,7 @@
 
 #newitem
 #id "silver plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/amazon/armor/standard/platecuirass_elite2.png
 #armor
 #basechance 0.25
@@ -85,7 +85,7 @@
 
 #newitem
 #id "silver plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/amazon/armor/mounted/platehauberk_elite2.png
 #armor
 #basechance 0.25
@@ -96,7 +96,7 @@
 
 #newitem -- silver-plated full plate
 #id "silver full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/amazon/armor/mounted/fullplate_elite2.png
 #armor
 #basechance 0.25

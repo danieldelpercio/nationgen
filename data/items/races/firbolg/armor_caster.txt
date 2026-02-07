@@ -1,6 +1,6 @@
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/firbolg/armor/bronzescale_cuirass1.png
 #armor
 #theme "bronze"
@@ -11,7 +11,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/firbolg/armor/bronzescale_hauberk1.png
 #armor
 #theme "bronze"
@@ -22,7 +22,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/firbolg/armor/ironscale_cuirass1.png
 #armor
 #theme "iron"
@@ -33,7 +33,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/firbolg/armor/ironscale_hauberk1.png
 #armor
 #theme "iron"
@@ -44,7 +44,7 @@
 
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/firbolg/armor/bronze_cuirass1.png
 #armor
 #theme "bronze"
@@ -56,7 +56,7 @@
 
 #newitem
 #id "bronze hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/firbolg/armor/bronze_hauberk1.png
 #armor
 #theme "bronze"
@@ -68,7 +68,7 @@
 
 #newitem
 #id "iron cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/firbolg/armor/iron_cuirass1.png
 #armor
 #theme "iron"
@@ -80,7 +80,7 @@
 
 #newitem
 #id "iron hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/firbolg/armor/iron_hauberk1.png
 #armor
 #theme "iron"
@@ -92,7 +92,7 @@
 
 #newitem
 #id "gold scale T2"
-#gameid 196
+#dominionsId 196
 #basechance 0.1
 #sprite /graphics/firbolg/armor/scale_gold.png
 #eliteversion "gold scale T3"
@@ -126,7 +126,7 @@
 
 #newitem
 #id "gold scale T3"
-#gameid 196
+#dominionsId 196
 #basechance 0.2
 #sprite /graphics/firbolg/armor/scale_gold.png
 #armor

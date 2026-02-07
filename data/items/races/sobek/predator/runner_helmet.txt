@@ -57,7 +57,7 @@
 #newitem -- Large fancy headdress (dark) - only for "feathered warrior" types
 #id feathercap_dark
 #basechance 0
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/feathercap.png
 #recolormask /graphics/helmet/caster/feathercap_recolormask.png
 #offsetx -12
@@ -70,7 +70,7 @@
 #newitem -- Large fancy headdress (bright) - only for "feathered warrior" types
 #id feathercap_bright
 #basechance 0
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/feathercap.png
 #recolormask /graphics/sobek/helmet/feathercap_recolormask2.png
 #offsetx -12

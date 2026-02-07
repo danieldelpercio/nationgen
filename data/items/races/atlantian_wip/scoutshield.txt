@@ -7,7 +7,7 @@
 
 #newitem
 #id "turtle shell shield"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/atlantian/shield/turtleshellshield.png
 #armor
 #enditem

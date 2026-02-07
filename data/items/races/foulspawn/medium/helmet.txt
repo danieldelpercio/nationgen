@@ -24,7 +24,7 @@
 #newitem
 #basechance 0.2
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/halfmen/minotaur/helmet/cap_leather.png
 #offsetx -5
 #offsety 5
@@ -37,7 +37,7 @@
 #newitem
 #basechance 0.2
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/halfmen/minotaur/helmet/cap_reinforced.png
 #offsetx -5
 #offsety 5
@@ -50,7 +50,7 @@
 #newitem
 #basechance 0.2
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/halfmen/minotaur/helmet/cap_iron.png
 #offsetx -5
 #offsety 5
@@ -62,7 +62,7 @@
 #newitem
 #basechance 0.2
 #id ironhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/halfmen/minotaur/helmet/halfhelm_iron.png
 #offsetx -5
 #offsety 5
@@ -87,7 +87,7 @@
 #newitem
 #basechance 0.1
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/foulspawn/medium/helmet/horse_iron.png
 #theme "iron"
 #armor
@@ -97,7 +97,7 @@
 #newitem
 #basechance 0.1
 #id ironhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/foulspawn/medium/helmet/horse_iron.png
 #theme "iron"
 #armor
@@ -108,7 +108,7 @@
 #newitem
 #basechance 0.05
 #id ironhelm_full
-#gameid 21
+#dominionsId 21
 #sprite /graphics/foulspawn/medium/helmet/horse_iron_full.png
 #recolormask /graphics/foulspawn/medium/helmet/horse_full_recolormask.png
 #theme "iron"
@@ -133,7 +133,7 @@
 #newitem
 #basechance 0.2
 #id leathercap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/monkey/helmet/bandar/leathercap.png
 #offsetx 1
 #offsety -7
@@ -146,7 +146,7 @@
 #newitem
 #basechance 0.2
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/bandar/ironcap.png
 #offsetx 1
 #offsety -7
@@ -158,7 +158,7 @@
 #newitem
 #basechance 0.2
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/monkey/helmet/bandar/halfhelmet.png
 #offsetx 1
 #offsety -7
@@ -170,7 +170,7 @@
 #newitem
 #basechance 0.2
 #id fullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/monkey/helmet/bandar/fullhelm.png
 #offsetx 1
 #offsety -7
@@ -183,7 +183,7 @@
 #newitem
 #basechance 0.1
 #id jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/monkey/helmet/bandar/jingasa.png
 #recolormask /graphics/monkey/helmet/bandar/jingasa_recolormask.png
 #offsetx 1
@@ -199,7 +199,7 @@
 #newitem
 #basechance 0.1
 #id kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/monkey/helmet/bandar/kabuto.png
 #offsetx 1
 #offsety -7
@@ -226,7 +226,7 @@
 #newitem
 #basechance 0.25
 #id "ironcap"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/atlantian/head/ironcap.png
 #offsetx 1
 #offsety -13
@@ -238,7 +238,7 @@
 #newitem
 #basechance 0.25
 #id "ironcap-elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/atlantian/head/ironcap2.png
 #recolormask /graphics/atlantian/head/ironcap2_recolormask.png
 #offsetx 1
@@ -251,7 +251,7 @@
 #newitem
 #basechance 0.25
 #id "halfhelm"
-#gameid 118
+#dominionsId 118
 #sprite /graphics/atlantian/head/ironcap2.png
 #recolormask /graphics/atlantian/head/ironcap2_recolormask.png
 #offsetx 1
@@ -278,7 +278,7 @@
 #newitem
 #basechance 0.2
 #id highman_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/highmen/helmet/cap_leather_hoburg.png
 #armor
 #tag "eliteversion highman_leathercap_crested"
@@ -293,7 +293,7 @@
 #newitem
 #basechance 0.2
 #id highman_leathercap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/highmen/helmet/cap_leather_reinforced_hoburg.png
 #armor
 #tag "eliteversion highman_leathercap_crested"
@@ -307,7 +307,7 @@
 #newitem
 #basechance 0.2
 #id highman_leathercap_crested
-#gameid 162
+#dominionsId 162
 #sprite /graphics/highmen/helmet/cap_leather_crested.png
 #recolormask /graphics/highmen/helmet/crest_recolormask.png
 #armor
@@ -322,7 +322,7 @@
 #newitem
 #basechance 0.2
 #id highman_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/highmen/helmet/cap_iron_hoburg.png
 #armor
 #tag "eliteversion highman_ironcap_crested"
@@ -335,7 +335,7 @@
 #newitem
 #basechance 0.2
 #id highman_ironcap_crested
-#gameid 20
+#dominionsId 20
 #sprite /graphics/highmen/helmet/cap_iron_crested.png
 #recolormask /graphics/highmen/helmet/crest_recolormask.png
 #armor
@@ -349,7 +349,7 @@
 #newitem
 #basechance 0.2
 #id highman_bascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/bascinet.png
 #tag "eliteversion highman_bascinet_crested"
 #armor
@@ -363,7 +363,7 @@
 #newitem
 #basechance 0.2
 #id highman_bascinet_crested
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/bascinet_crested.png
 #recolormask /graphics/highmen/helmet/bascinet_crested_recolormask.png
 #armor
@@ -378,7 +378,7 @@
 #newitem
 #basechance 0.2
 #id highman_halfhelm_iron
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/halfhelm_iron_hoburg.png
 #armor
 #tag "eliteversion highman_halfhelm_iron_horned"
@@ -392,7 +392,7 @@
 #newitem
 #basechance 0.2
 #id highman_halfhelm_iron_horned
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/halfhelm_iron_horned_hoburg.png
 #armor
 #offsetx 2
@@ -406,7 +406,7 @@
 #newitem
 #basechance 0.2
 #id highman_fullhelm_iron
-#gameid 21
+#dominionsId 21
 #sprite /graphics/highmen/helmet/fullhelm_iron_hoburg.png
 #armor
 #tag "eliteversion highman_fullhelm_iron_horned"
@@ -421,7 +421,7 @@
 #newitem
 #basechance 0.2
 #id highman_fullhelm_iron_horned
-#gameid 21
+#dominionsId 21
 #sprite /graphics/highmen/helmet/fullhelm_iron_horned_hoburg.png
 #armor
 #offsetx 2
@@ -448,7 +448,7 @@
 #newitem
 #basechance 0.05
 #id canids_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/highmen/helmet/cap_leather_hoburg.png
 #armor
 #tag "eliteversion canids_leathercap_crested"
@@ -462,7 +462,7 @@
 #newitem
 #basechance 0.05
 #id canids_leathercap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/highmen/helmet/cap_leather_reinforced_hoburg.png
 #armor
 #tag "eliteversion canids_leathercap_crested"
@@ -475,7 +475,7 @@
 #newitem
 #basechance 0.05
 #id canids_leathercap_crested
-#gameid 162
+#dominionsId 162
 #sprite /graphics/highmen/helmet/cap_leather_crested.png
 #recolormask /graphics/highmen/helmet/crest_recolormask.png
 #armor
@@ -489,7 +489,7 @@
 #newitem
 #basechance 0.05
 #id canids_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/highmen/helmet/cap_iron_hoburg.png
 #armor
 #tag "eliteversion canids_ironcap_crested"
@@ -501,7 +501,7 @@
 #newitem
 #basechance 0.05
 #id canids_ironcap_crested
-#gameid 20
+#dominionsId 20
 #sprite /graphics/highmen/helmet/cap_iron_crested.png
 #recolormask /graphics/highmen/helmet/crest_recolormask.png
 #armor
@@ -514,7 +514,7 @@
 #newitem
 #basechance 0.05
 #id canids_bascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/bascinet.png
 #tag "eliteversion highman_bascinet_crested"
 #armor
@@ -527,7 +527,7 @@
 #newitem
 #basechance 0.05
 #id canids_bascinet_crested
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/bascinet_crested.png
 #recolormask /graphics/highmen/helmet/bascinet_crested_recolormask.png
 #armor
@@ -541,7 +541,7 @@
 #newitem
 #basechance 0.05
 #id canids_halfhelm_iron
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/halfhelm_iron_hoburg.png
 #armor
 #tag "eliteversion canids_halfhelm_iron_horned"
@@ -554,7 +554,7 @@
 #newitem
 #basechance 0.05
 #id canids_halfhelm_iron_horned
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/halfhelm_iron_horned_hoburg.png
 #armor
 #offsety -16
@@ -567,7 +567,7 @@
 #newitem
 #basechance 0.05
 #id canids_fullhelm_iron
-#gameid 21
+#dominionsId 21
 #sprite /graphics/highmen/helmet/fullhelm_iron_hoburg.png
 #armor
 #tag "eliteversion canids_fullhelm_iron_horned"
@@ -581,7 +581,7 @@
 #newitem
 #basechance 0.05
 #id canids_fullhelm_iron_horned
-#gameid 21
+#dominionsId 21
 #sprite /graphics/highmen/helmet/fullhelm_iron_horned_hoburg.png
 #armor
 #offsety -16
@@ -620,7 +620,7 @@
 #newitem
 #basechance 0.2
 #id ogre_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ogre/helmet/leathercap.png
 #armor
 #tag "eliteversion ogre_leathercap_crested"
@@ -633,7 +633,7 @@
 #newitem
 #basechance 0.2
 #id ogre_leathercap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ogre/helmet/reinforcedcap.png
 #armor
 #tag "eliteversion ogre_leathercap_crested"
@@ -645,7 +645,7 @@
 #newitem
 #basechance 0.2
 #id ogre_leathercap_crested
-#gameid 162
+#dominionsId 162
 #sprite /graphics/ogre/helmet/leathercap_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -658,7 +658,7 @@
 #newitem
 #basechance 0.2
 #id ogre_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ogre/helmet/ironcap.png
 #armor
 #tag "eliteversion ogre_ironcap_crested"
@@ -669,7 +669,7 @@
 #newitem
 #basechance 0.2
 #id ogre_ironcap_crested
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ogre/helmet/ironcap_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -681,7 +681,7 @@
 #newitem
 #basechance 0.2
 #id ogre_halfhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/ogre/helmet/halfhelm.png
 #armor
 #tag "eliteversion ogre_halfhelm_crested"
@@ -693,7 +693,7 @@
 #newitem
 #basechance 0.2
 #id ogre_halfhelm_crested
-#gameid 118
+#dominionsId 118
 #sprite /graphics/ogre/helmet/halfhelm_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -706,7 +706,7 @@
 #newitem
 #basechance 0.2
 #id ogre_fullhelm
-#gameid 21
+#dominionsId 21
 #sprite /graphics/ogre/helmet/fullhelm.png
 #armor
 #tag "eliteversion ogre_fullhelm_crested"
@@ -719,7 +719,7 @@
 #newitem
 #basechance 0.2
 #id ogre_fullhelm_crested
-#gameid 21
+#dominionsId 21
 #sprite /graphics/ogre/helmet/fullhelm_crested.png
 #recolormask /graphics/ogre/helmet/crest_recolormask.png
 #armor
@@ -733,7 +733,7 @@
 #newitem
 #basechance 0.1
 #id ogre_jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/ogre/helmet/jingasa.png
 #recolormask /graphics/ogre/helmet/jingasa_recolormask.png
 #armor
@@ -746,7 +746,7 @@
 #newitem
 #basechance 0.1
 #id ogre_kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto.png
 #eliteversion ogre_kabuto_elite
 #armor
@@ -759,7 +759,7 @@
 #newitem
 #basechance 0.1
 #id ogre_kabuto_elite
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto_elite.png
 #eliteversion ogre_kabuto_elite
 #armor
@@ -786,7 +786,7 @@
 #newitem
 #basechance 0.2
 #id ogres_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/foulspawn/medium/helmet/leathercap.png
 #armor
 #maxprot 12
@@ -797,7 +797,7 @@
 #newitem
 #basechance 0.2
 #id ogres_leathercap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/foulspawn/medium/helmet/reinforcedcap.png
 #armor
 #maxprot 12
@@ -808,7 +808,7 @@
 #newitem
 #basechance 0.2
 #id ogres_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/foulspawn/medium/helmet/ironcap.png
 #armor
 #theme "iron"
@@ -818,7 +818,7 @@
 #newitem
 #basechance 0.1
 #id ogres_halfhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/foulspawn/medium/helmet/halfhelm.png
 #armor
 #minprot 12
@@ -829,7 +829,7 @@
 #newitem
 #basechance 0.1
 #id ogres_fullhelm
-#gameid 21
+#dominionsId 21
 #sprite /graphics/foulspawn/medium/helmet/fullhelm.png
 #armor
 #minprot 14
@@ -841,7 +841,7 @@
 #newitem
 #basechance 0.1
 #id ogres_jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/foulspawn/medium/helmet/jingasa.png
 #recolormask /graphics/foulspawn/medium/helmet/jingasa_recolormask.png
 #armor
@@ -854,7 +854,7 @@
 #newitem
 #basechance 0.1
 #id ogres_kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/foulspawn/medium/helmet/kabuto.png
 #eliteversion orges_kabuto_elite
 #armor

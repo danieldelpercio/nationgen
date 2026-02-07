@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "iron"
 #theme "primitive"
@@ -10,7 +10,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/standard/broadsword.png
 #theme "iron"
 #offsetx 17
@@ -19,7 +19,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/weapon/standard/hammer.png
 #theme "iron"
 #offsetx 17
@@ -28,7 +28,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/weapon/standard/mace.png
 #theme "primitive"
 #maxprot 15
@@ -39,7 +39,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #theme "iron"
 #offsetx 17
@@ -48,7 +48,7 @@
 
 #newitem
 #id lance
-#gameid 357
+#dominionsId 357
 #basechance 7
 #sprite /graphics/vanir/weapon/spear_flying.png
 #theme "iron"
@@ -56,14 +56,14 @@
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #sprite /graphics/vanir/weapon/trident_flying.png
 #theme "iron"
 #enditem
 
 #newitem
 #id spetum
-#gameid 639
+#dominionsId 639
 #sprite /graphics/vanir/weapon/spetum_flying.png
 #theme "iron"
 #theme "primitive"

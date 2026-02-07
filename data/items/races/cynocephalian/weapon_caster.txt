@@ -26,7 +26,7 @@
 
 #newitem
 #id "dagger"
-#gameid 9
+#dominionsId 9
 #basechance 0.5
 #sprite /graphics/cynocephalian/weapon/dagger_iron.png
 #chanceinc "racetheme tribal 0.5"
@@ -41,7 +41,7 @@
 
 #newitem --basic qstaff
 #id "staff_quarter"
-#gameid 7
+#dominionsId 7
 #chanceinc "prot not below 10 *0"
 #sprite /graphics/cynocephalian/weapon/staff_quarter.png
 #tier 1
@@ -51,7 +51,7 @@
 
 #newitem --staff crook
 #id "staff_mage_crook"
-#gameid 7
+#dominionsId 7
 #chanceinc "prot not below 10 *0"
 #sprite /graphics/cynocephalian/weapon/staff_mage_crook.png
 #tier 2
@@ -61,7 +61,7 @@
 
 #newitem --staff baton
 #id "staff_mage_baton"
-#gameid 7
+#dominionsId 7
 #chanceinc "prot not below 10 *0"
 #sprite /graphics/cynocephalian/weapon/staff_mage_baton.png
 #tier 2
@@ -71,7 +71,7 @@
 
 #newitem --staff mage crystal
 #id "staff_mage_crystals"
-#gameid 7
+#dominionsId 7
 #basechance 2
 #chanceinc "prot not below 10 *0"
 #sprite /graphics/cynocephalian/weapon/staff_mage_crystals.png
@@ -82,7 +82,7 @@
 
 #newitem --staff mage branch
 #id "staff_mage_branch"
-#gameid 7
+#dominionsId 7
 #basechance 0
 #chanceinc "personalmagic astral 1 1"
 #chanceinc "personalmagic death 1 1"
@@ -97,7 +97,7 @@
 
 #newitem --staff mage fire
 #id "staff_mage_cool"
-#gameid 7
+#dominionsId 7
 #basechance 0
 #chanceinc "personalmagic fire 1 2"
 #chanceinc "personalmagic earth 1 1"
@@ -114,7 +114,7 @@
 
 #newitem
 #id "broadsword"
-#gameid 8
+#dominionsId 8
 #basechance 10
 #chanceinc "prot below 10 *0"
 #sprite /graphics/cynocephalian/weapon/broadsword.png
@@ -123,7 +123,7 @@
 
 #newitem
 #id "falchion"
-#gameid 10
+#dominionsId 10
 #basechance 10
 #chanceinc "prot below 10 *0"
 #sprite /graphics/cynocephalian/weapon/falchion.png
@@ -133,7 +133,7 @@
 
 #newitem
 #id "greatsword"
-#gameid 11
+#dominionsId 11
 #basechance 10
 #chanceinc "prot below 10 *0"
 #sprite /graphics/cynocephalian/weapon/greatsword.png
@@ -143,7 +143,7 @@
 
 #newitem
 #id "glaive"
-#gameid 308
+#dominionsId 308
 #basechance 10
 #chanceinc "prot below 10 *0"
 #sprite /graphics/cynocephalian/weapon/glaive.png

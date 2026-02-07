@@ -2,7 +2,7 @@
 --- Imperial armor
 #newitem
 #id "lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/monkey/armor/vanara/lorica_squamata_gilt.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold lorica squamata"
@@ -15,7 +15,7 @@
 
 #newitem
 #id "lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/monkey/armor/vanara/lorica_segmentata_gilt.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold lorica segmentata"
@@ -28,7 +28,7 @@
 
 #newitem
 #id "imperial plate"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/monkey/armor/vanara/platehauberk_imperial_gilt.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold imperial plate"
@@ -41,7 +41,7 @@
 
 #newitem
 #id "gold lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/monkey/armor/vanara/lorica_squamata_gold.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold lorica segmentata"
@@ -54,7 +54,7 @@
 
 #newitem
 #id "gold lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/monkey/armor/vanara/lorica_segmentata_gold.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold imperial plate"
@@ -67,7 +67,7 @@
 
 #newitem
 #id "gold imperial plate"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/monkey/armor/vanara/platehauberk_imperial_gold.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #armor
@@ -81,7 +81,7 @@
 -- Oriental armor
 #newitem
 #id "ronin armor"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara/ronin.png
 #armor
 #needs shirt noshirt
@@ -94,7 +94,7 @@
 
 #newitem
 #id "samurai armor"
-#gameid 129
+#dominionsId 129
 #sprite /graphics/monkey/armor/vanara/samuraiarmor.png
 #eliteversion "samurai armor elite"
 #armor
@@ -106,7 +106,7 @@
 
 #newitem
 #id "samurai armor elite"
-#gameid 129
+#dominionsId 129
 #sprite /graphics/monkey/armor/vanara/samuraiarmor_elite.png
 #recolormask /graphics/monkey/armor/vanara/samuraiarmor_elite_recolormask.png
 #armor
@@ -118,7 +118,7 @@
 
 #newitem
 #id "ancestor cuirass"
-#gameid 154
+#dominionsId 154
 #basechance 0
 #chanceinc "personalmagic death 1"
 #sprite /graphics/monkey/armor/vanara_mage/ancestor_cuirass.png
@@ -139,7 +139,7 @@
 
 #newitem
 #id "ancestor armor"
-#gameid 146
+#dominionsId 146
 #basechance 0
 #chanceinc "personalmagic death 1"
 #sprite /graphics/monkey/armor/vanara_mage/ancestor_armor.png

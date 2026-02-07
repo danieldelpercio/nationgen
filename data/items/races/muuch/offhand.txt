@@ -1,6 +1,6 @@
 #newitem
 #id hatchet
-#gameid 646
+#dominionsId 646
 #sprite /graphics/muuch/offhands/hatchet.png
 #tag "eliteversion axe"
 #theme "bronze"
@@ -8,7 +8,7 @@
 
 #newitem
 #id axe
-#gameid 646
+#dominionsId 646
 #sprite /graphics/ichtyid/weapon/bronze_axe_oh.png
 #offsetx 4
 #theme "advanced"
@@ -19,19 +19,19 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/muuch/offhands/mace.png
 #enditem
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/muuch/offhands/dagger.png
 #enditem
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/muuch/offhands/clubsword_1h.png
 #theme "obsidian"
 #enditem
@@ -39,7 +39,7 @@
 #newitem
 #id obsidian_blade
 #basechance 0.25
-#gameid 625
+#dominionsId 625
 #sprite /graphics/muuch/offhands/obsidian_blade.png
 #tag "eliteversion obsidian_blade_poisoned"
 #theme "elite"
@@ -49,7 +49,7 @@
 #newitem
 #id obsidian_blade_poisoned
 #basechance 0.125
-#gameid 623
+#dominionsId 623
 #sprite /graphics/muuch/offhands/obsidian_blade.png
 #theme "elite"
 #theme "obsidian"

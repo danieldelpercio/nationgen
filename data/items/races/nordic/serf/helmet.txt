@@ -8,7 +8,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vanir/helmet/leathercap.png
 #offsety 3
 #armor
@@ -16,7 +16,7 @@
 
 #newitem
 #id reinfleathercap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/vanir/helmet/leathercap.png
 #offsety 3
 #armor
@@ -26,7 +26,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/vanir/helmet/ironcap.png
 #offsety 3
 #armor

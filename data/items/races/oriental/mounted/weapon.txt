@@ -1,7 +1,7 @@
 
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/weapon/standard/spear.png
 #tag "name infantry spearman"
 #offsetx -2
@@ -10,7 +10,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/standard/spear.png
 #tag "name infantry spearman"
 #offsetx -2
@@ -19,7 +19,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/standard/falchion.png
 #tag "name infantry falchioneer"
 #offsetx -2
@@ -53,6 +53,6 @@
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/tengu/weapons/wakizasi.png
 #enditem

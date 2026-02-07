@@ -178,7 +178,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/enlightened/dantih/helmet/cap_bronze.png
 #eliteversion bronzecap_gilt
 #eliteversion cone_bronze
@@ -191,7 +191,7 @@
 
 #newitem
 #id bronzecap_gilt
-#gameid 135
+#dominionsId 135
 #sprite /graphics/enlightened/dantih/helmet/cap_gilt.png
 #eliteversion cone_gold
 #armor
@@ -203,7 +203,7 @@
 
 #newitem
 #id cone_bronze
-#gameid 135
+#dominionsId 135
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_copper.png
 #eliteversion cone_gold
 #armor
@@ -215,7 +215,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/enlightened/dantih/helmet/cap_iron.png
 #eliteversion ironcap_gilt
 #eliteversion cone_iron
@@ -228,7 +228,7 @@
 
 #newitem
 #id ironcap_gilt
-#gameid 20
+#dominionsId 20
 #sprite /graphics/enlightened/dantih/helmet/cap_gilt.png
 #eliteversion cone_gold
 #armor
@@ -240,7 +240,7 @@
 
 #newitem
 #id cone_iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_iron.png
 #eliteversion cone_gold
 #armor
@@ -252,7 +252,7 @@
 
 #newitem
 #id cap_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_gold_small.png
 #eliteversion cone_gold
 #armor
@@ -265,7 +265,7 @@
 
 #newitem
 #id cone_gold_small
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_gold_small.png
 #eliteversion cone_gold
 #armor
@@ -276,7 +276,7 @@
 
 #newitem
 #id cone_silver
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_silver.png
 #eliteversion cone_gold
 #armor
@@ -287,7 +287,7 @@
 
 #newitem
 #id cone_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_gold.png
 #armor
 #notfortier 1
@@ -297,7 +297,7 @@
 
 #newitem
 #id hedjet_plain
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_hedjet.png
 #eliteversion hedjet_colored
 #eliteversion hedjet_fancy_plain
@@ -309,7 +309,7 @@
 
 #newitem
 #id hedjet_colored
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_hedjet.png
 #recolormask /graphics/enlightened/dantih/helmet/caster/crown_hedjet_recolormask.png
 #eliteversion hedjet_fancy_colored
@@ -323,7 +323,7 @@
 
 #newitem
 #id hedjet_fancy_plain
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_hedjet_fancy.png
 #eliteversion hedjet_fancy_colored
 #eliteversion cone_gold
@@ -337,7 +337,7 @@
 
 #newitem
 #id hedjet_fancy_colored
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_hedjet_fancy.png
 #recolormask /graphics/enlightened/dantih/helmet/caster/crown_hedjet_fancy_recolormask.png
 #eliteversion cone_gold
@@ -351,7 +351,7 @@
 
 #newitem
 #id khepresh
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_khepresh.png
 #recolormask self
 #armor
@@ -362,7 +362,7 @@
 
 #newitem
 #id crown_isis
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_isis.png
 #armor
 #notfortier 1

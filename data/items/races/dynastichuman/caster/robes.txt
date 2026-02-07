@@ -116,7 +116,7 @@
 #recolormask /graphics/dynastichuman/armor/robes/shendyt_long_usekh_recolormask.png
 #needs overlay shendyt_usekh
 #eliteversion "shendyt_usekh_bright"
-#gameid 161
+#dominionsId 161
 #armor
 #tag "tier 2"
 #enditem
@@ -127,7 +127,7 @@
 #recolormask /graphics/dynastichuman/armor/robes/shendyt_long_usekh_recolormask.png
 #needs overlay shendyt_usekh
 #eliteversion "shendyt_usekh_dark"
-#gameid 161
+#dominionsId 161
 #armor
 #tag "tier 2"
 #enditem
@@ -137,7 +137,7 @@
 #sprite /graphics/dynastichuman/armor/robes/shendyt_long_usekh1.png
 #recolormask /graphics/dynastichuman/armor/robes/shendyt_long_usekh1_recolormask.png
 #needs overlay shendyt_usekh
-#gameid 161
+#dominionsId 161
 #armor
 #tag "tier 3"
 #enditem
@@ -147,7 +147,7 @@
 #sprite /graphics/dynastichuman/armor/robes/shendyt_long_usekh2.png
 #recolormask /graphics/dynastichuman/armor/robes/shendyt_long_usekh2_recolormask.png
 #needs overlay shendyt_usekh
-#gameid 161
+#dominionsId 161
 #armor
 #tag "tier 3"
 #enditem
@@ -269,7 +269,7 @@
 #sprite /graphics/dynastichuman/armor/robes/robes_cultist_plain.png
 #recolormask self
 #eliteversion "robes_cultist_fancy"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 1"
 #enditem
@@ -279,7 +279,7 @@
 #sprite /graphics/dynastichuman/armor/robes/robes_cultist_fancy.png
 #recolormask self
 #eliteversion "robes_cultist_ornate"
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 2"
 #enditem
@@ -289,14 +289,14 @@
 #sprite /graphics/dynastichuman/armor/robes/robes_cultist_ornate.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_cultist_ornate_recolormask.png
 #needs overlay cultist_necklace
-#gameid 158
+#dominionsId 158
 #armor
 #tag "tier 3"
 #enditem
 
 #newitem
 #id heirodulerobe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_heirodule.png
 #tag "eliteversion heirodulerobe_faint"
 #tag "eliteversion heirodulerobe_trimmed"
@@ -306,7 +306,7 @@
 
 #newitem
 #id heirodulerobe_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_heirodule.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_heirodule_recolormask2.png
 #tag "eliteversion heirodulerobe_bright"
@@ -317,7 +317,7 @@
 
 #newitem
 #id heirodulerobe_trimmed
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_heirodule.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_heirodule_recolormask3.png
 #tag "eliteversion heirodulerobe_bright"
@@ -328,7 +328,7 @@
 
 #newitem
 #id heirodulerobe_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_heirodule.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_heirodule_recolormask1.png
 #tag "eliteversion heirodulerobe_twotone"
@@ -338,7 +338,7 @@
 
 #newitem
 #id heirodulerobe_twotone
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_heirodule.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_heirodule_recolormask4.png
 #tag "eliteversion heirodulerobe_bright"
@@ -348,7 +348,7 @@
 
 #newitem
 #id graveconsortrobe_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_graveconsort.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_graveconsort_recolormask2.png
 #needs overlay graveconsort_usekh2
@@ -359,7 +359,7 @@
 
 #newitem
 #id graveconsortrobe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_graveconsort.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_graveconsort_recolormask1.png
 #needs overlay graveconsort_usekh1-3
@@ -370,7 +370,7 @@
 
 #newitem
 #id graveconsortrobe_twotone
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/robes_graveconsort.png
 #recolormask /graphics/dynastichuman/armor/robes/robes_graveconsort_recolormask4.png
 #needs overlay graveconsort_usekh4
@@ -383,7 +383,7 @@
 --- Imperial robes (monochrome)
 #newitem
 #id toga_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/toga_bright.png
 #eliteversion "toga_bright"
 #armor
@@ -395,7 +395,7 @@
 
 #newitem
 #id toga_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/toga_bright.png
 #recolormask self
 #armor
@@ -407,7 +407,7 @@
 
 #newitem
 #id toga_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/toga_dark.png
 #eliteversion "toga_dark"
 #armor
@@ -419,7 +419,7 @@
 
 #newitem
 #id toga_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/toga_dark.png
 #recolormask self
 #armor
@@ -431,7 +431,7 @@
 
 #newitem
 #id ermorrobe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_bright.png
 #eliteversion "ermorrobe_faint"
 #armor
@@ -443,7 +443,7 @@
 
 #newitem
 #id ermorrobe_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe1_bright.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe1_faint_recolormask.png
 #eliteversion "ermorrobe_bright"
@@ -456,7 +456,7 @@
 
 #newitem
 #id ermorrobe_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe1_bright.png
 #recolormask self
 #armor
@@ -468,7 +468,7 @@
 
 #newitem
 #id ermorrobe_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_dark.png
 #eliteversion "ermorrobe_dull"
 #armor
@@ -480,7 +480,7 @@
 
 #newitem
 #id ermorrobe_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe1_dark.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe1_dull_recolormask.png
 #eliteversion "ermorrobe_dark"
@@ -493,7 +493,7 @@
 
 #newitem
 #id ermorrobe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe1_dark.png
 #recolormask self
 #armor
@@ -505,7 +505,7 @@
 
 #newitem
 #id imperialrobe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_bright.png
 #eliteversion "imperialrobe_faint"
 #eliteversion "imperialrobe_brighttop_white"
@@ -521,7 +521,7 @@
 
 #newitem
 #id imperialrobe_faint
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_bright.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_faint_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -536,7 +536,7 @@
 
 #newitem
 #id imperialrobe_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_bright.png
 #recolormask self
 #eliteversion "imperialrobe_medium"
@@ -554,7 +554,7 @@
 
 #newitem
 #id imperialrobe_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_medium.png
 #eliteversion "imperialrobe_middling"
 #eliteversion "imperialrobe_brighttop_grey"
@@ -570,7 +570,7 @@
 
 #newitem
 #id imperialrobe_middling
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_medium.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_faint_recolormask.png
 #eliteversion "imperialrobe_medium"
@@ -586,7 +586,7 @@
 
 #newitem
 #id imperialrobe_medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_medium.png
 #recolormask self
 #eliteversion "imperialrobe_bright"
@@ -601,7 +601,7 @@
 
 #newitem
 #id imperialrobe_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_dark.png
 #eliteversion "imperialrobe_dull"
 #eliteversion "imperialrobe_brighttop_black"
@@ -617,7 +617,7 @@
 
 #newitem
 #id imperialrobe_dull
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_dark.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_faint_recolormask.png
 #eliteversion "imperialrobe_middling"
@@ -632,7 +632,7 @@
 
 #newitem
 #id imperialrobe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_dark.png
 #recolormask self
 #eliteversion "imperialrobe_medium"
@@ -651,7 +651,7 @@
 --- Imperial robes (twotone)
 #newitem
 #id imperialrobe_brighttop_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_bright.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -667,7 +667,7 @@
 
 #newitem
 #id imperialrobe_brighttop_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_medium.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -684,7 +684,7 @@
 
 #newitem
 #id imperialrobe_brighttop_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_dark.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_brighttop_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -700,7 +700,7 @@
 
 #newitem
 #id imperialrobe_darktop_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_bright.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -716,7 +716,7 @@
 
 #newitem
 #id imperialrobe_darktop_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_medium.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -733,7 +733,7 @@
 
 #newitem
 #id imperialrobe_darktop_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_dark.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_darktop_recolormask.png
 #eliteversion "imperialrobe_dark"
@@ -749,7 +749,7 @@
 
 #newitem
 #id imperialrobe_whitetop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_bright.png
 #recolormask /graphics/dynastichuman/armor/robes/ermor_robe2_brightbottom_recolormask.png
 #eliteversion "imperialrobe_bright"
@@ -764,7 +764,7 @@
 
 #newitem
 #id imperialrobe_whitetop_black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_brightdark.png
 #eliteversion "imperialrobe_brighttop_dark"
 #eliteversion "imperialrobe_brighttop_black"
@@ -777,7 +777,7 @@
 
 #newitem
 #id imperialrobe_brighttop_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_brightdark.png
 #recolormask self
 #armor
@@ -789,7 +789,7 @@
 
 #newitem
 #id imperialrobe_blacktop_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_darkbright.png
 #eliteversion "imperialrobe_brighttop_dark"
 #eliteversion "imperialrobe_darktop_white"
@@ -802,7 +802,7 @@
 
 #newitem
 #id imperialrobe_darktop_bright
-#gameid 158
+#dominionsId 158
 #sprite /graphics/dynastichuman/armor/robes/ermor_robe2_darkbright.png
 #recolormask self
 #armor

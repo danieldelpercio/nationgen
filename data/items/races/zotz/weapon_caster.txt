@@ -10,7 +10,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #tag "tier 2"
 #tag "tier 3"
@@ -19,7 +19,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #theme "superior"
@@ -28,14 +28,14 @@
 
 #newitem
 #id pestle
-#gameid 499
+#dominionsId 499
 #sprite /graphics/weapon/mage/pestle.png
 #tag "tier 1"
 #enditem
 
 #newitem
 #id dagger
-#gameid 671
+#dominionsId 671
 #sprite /graphics/weapon/mage/dagger.png
 #tag "tier 1"
 #tier 2
@@ -43,7 +43,7 @@
 
 #newitem
 #id stick
-#gameid 153
+#dominionsId 153
 #sprite /graphics/hoburg/weapon/stick.png
 #theme "primitive"
 #offsetx -9
@@ -54,7 +54,7 @@
 
 #newitem
 #id stickstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/hoburg/weapon/stick.png
 #offsetx -9
 #offsety -14

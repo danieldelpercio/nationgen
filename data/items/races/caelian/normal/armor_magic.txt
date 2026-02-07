@@ -2,7 +2,7 @@
 #newitem
 #id "light scale"
 #basechance 0.01
-#gameid 49
+#dominionsId 49
 #sprite /graphics/caelian/armor/lightscale.png
 #armor
 #theme "yazata_elite"
@@ -12,7 +12,7 @@
 #newitem
 #basechance 0.01
 #id "golden scale"
-#gameid 196
+#dominionsId 196
 #sprite /graphics/caelian/armor/goldscale.png
 #armor
 #theme "yazata_elite"
@@ -22,7 +22,7 @@
 #newitem
 #basechance 0.005
 #id "mirror armor"
-#gameid 177
+#dominionsId 177
 #sprite /graphics/caelian/armor/mirrorplate.png
 #armor
 #theme "yazata_elite"
@@ -33,7 +33,7 @@
 #newitem
 #basechance 0.005
 #id "fire plate"
-#gameid 75
+#dominionsId 75
 #sprite /graphics/caelian/armor/fireplate.png
 #armor
 #theme "yazata_elite"
@@ -43,7 +43,7 @@
 #newitem
 #basechance 0.005
 #id "sun cuirass"
-#gameid 205
+#dominionsId 205
 #sprite /graphics/caelian/armor/suncuirass.png
 #armor
 #theme "yazata_elite"
@@ -52,7 +52,7 @@
 #newitem
 #basechance 0.0025
 #id "sun armor"
-#gameid 204
+#dominionsId 204
 #sprite /graphics/caelian/armor/sunarmor.png
 #armor
 #theme "yazata_elite"
@@ -61,7 +61,7 @@
 #newitem
 #basechance 0.005
 #id "obsidian cuirass"
-#gameid 206
+#dominionsId 206
 #sprite /graphics/caelian/armor/obsidiancuirass.png
 #armor
 #theme "daeva_elite"
@@ -95,7 +95,7 @@
 
 #newitem
 #id "icicle mail"
-#gameid 133
+#dominionsId 133
 #basechance 0.0025
 #sprite /graphics/caelian/armor/iciclehauberk.png
 #armor
@@ -109,7 +109,7 @@
 
 #newitem
 #id "ice cuirass"
-#gameid 26
+#dominionsId 26
 #basechance 0.0025
 #sprite /graphics/caelian/armor/icecuirass.png
 #armor
@@ -123,7 +123,7 @@
 
 #newitem
 #id "ice hauberk"
-#gameid 27
+#dominionsId 27
 #basechance 0.00125
 #sprite /graphics/caelian/armor/icehauberk.png
 #armor

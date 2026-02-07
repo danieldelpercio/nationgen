@@ -49,7 +49,7 @@
 -- Standard shields
 #newitem
 #id shield1
-#gameid 2
+#dominionsId 2
 #sprite /graphics/ophidians/shield/shield1.png
 #armor
 #theme "wood"
@@ -60,7 +60,7 @@
 
 #newitem
 #id shield2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/ophidians/shield/shield2.png
 #armor
 #theme "iron"
@@ -71,7 +71,7 @@
 
 #newitem
 #id shield3
-#gameid 2
+#dominionsId 2
 #sprite /graphics/ophidians/shield/shield3.png
 #armor
 #theme "wood"
@@ -83,7 +83,7 @@
 
 #newitem
 #id shield4_iron
-#gameid 208
+#dominionsId 208
 #basechance 2
 #sprite /graphics/ophidians/shield/shield4.png
 #armor
@@ -96,7 +96,7 @@
 
 #newitem
 #id shield4_bronze
-#gameid 209
+#dominionsId 209
 #basechance 2
 #sprite /graphics/ophidians/shield/bronzeshield4.png
 #armor
@@ -109,7 +109,7 @@
 
 #newitem
 #id shield5
-#gameid 2
+#dominionsId 2
 #sprite /graphics/ophidians/shield/shield5.png
 #armor
 #theme "wood"
@@ -120,7 +120,7 @@
 
 #newitem
 #id shield6_iron1
-#gameid 208
+#dominionsId 208
 #sprite /graphics/ophidians/shield/shield6.png
 #armor
 #theme "iron"
@@ -133,7 +133,7 @@
 
 #newitem
 #id shield6_iron2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/ophidians/shield/shield6.png
 #recolormask /graphics/ophidians/shield/shield6_recolormask.png
 #armor
@@ -147,7 +147,7 @@
 
 #newitem
 #id shield6_bronze1
-#gameid 209
+#dominionsId 209
 #sprite /graphics/ophidians/shield/bronzeshield6.png
 #armor
 #theme "bronze"
@@ -160,7 +160,7 @@
 
 #newitem
 #id shield6_bronze2
-#gameid 209
+#dominionsId 209
 #sprite /graphics/ophidians/shield/bronzeshield6.png
 #recolormask /graphics/ophidians/shield/shield6_recolormask.png
 #armor
@@ -174,7 +174,7 @@
 
 #newitem
 #id hoplon_iron
-#gameid 208
+#dominionsId 208
 #sprite /graphics/ophidians/shield/hoplon_iron.png
 #armor
 #theme "iron"
@@ -184,7 +184,7 @@
 
 #newitem
 #id hoplon_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/ophidians/shield/hoplon_bronze.png
 #armor
 #theme "bronze"
@@ -195,7 +195,7 @@
 
 #newitem
 #id towershield
-#gameid 4
+#dominionsId 4
 #sprite /graphics/ophidians/shield/towershield.png
 #recolormask self
 #armor
@@ -207,7 +207,7 @@
 
 #newitem
 #id hideshield_austral
-#gameid 105
+#dominionsId 105
 #basechance 4
 #sprite /graphics/ophidians/shield/hideshield_austral.png
 #recolormask /graphics/ophidians/shield/hideshield_austral_recolormask.png
@@ -219,7 +219,7 @@
 
 #newitem
 #id hideshield_occidental
-#gameid 105
+#dominionsId 105
 #basechance 4
 #sprite /graphics/ophidians/shield/hideshield_occidental.png
 #armor
@@ -230,7 +230,7 @@
 
 #newitem
 #id iceshield1
-#gameid 28
+#dominionsId 28
 #basechance 0.01
 #sprite /graphics/ophidians/shield/iceshield1.png
 #armor
@@ -249,7 +249,7 @@
 
 #newitem
 #id iceshield2
-#gameid 28
+#dominionsId 28
 #basechance 0.01
 #sprite /graphics/ophidians/shield/iceshield2.png
 #armor
@@ -268,7 +268,7 @@
 
 #newitem
 #id iceshield3
-#gameid 28
+#dominionsId 28
 #basechance 0.01
 #sprite /graphics/ophidians/shield/iceshield3.png
 #armor
@@ -287,7 +287,7 @@
 
 #newitem
 #id iceshield_austral
-#gameid 28
+#dominionsId 28
 #basechance 0.03
 #sprite /graphics/ophidians/shield/iceshield_austral.png
 #armor
@@ -303,7 +303,7 @@
 
 #newitem
 #id iceshield_central
-#gameid 28
+#dominionsId 28
 #basechance 0.03
 #sprite /graphics/ophidians/shield/icehoplon.png
 #armor
@@ -319,7 +319,7 @@
 
 #newitem
 #id iceshield_occidental
-#gameid 28
+#dominionsId 28
 #basechance 0.03
 #sprite /graphics/ophidians/shield/iceshield_occidental.png
 #armor
@@ -335,7 +335,7 @@
 
 #newitem
 #id iceshield_oriental
-#gameid 28
+#dominionsId 28
 #basechance 0.03
 #sprite /graphics/ophidians/shield/icetowershield.png
 #armor
@@ -368,7 +368,7 @@
 
 #new
 #id "big shell shield"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/atlantian/shield/turtleshellshield.png
 #armor
 #offsetx -5
@@ -382,7 +382,7 @@
 
 #new
 #id "small shell shield"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/atlantian/shield/aspturtleshellshield.png
 #armor
 #offsetx -5

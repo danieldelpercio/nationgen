@@ -1,6 +1,6 @@
 #newitem
 #id coralspear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/atlantian/weapon/coralspear.png
 #tag "name infantry spearman"
 #tag "eliteversion coralspear-elite"
@@ -9,7 +9,7 @@
 
 #newitem
 #id coralspear-elite
-#gameid 31
+#dominionsId 31
 #sprite /graphics/atlantian/weapon/coralspear-elite.png
 #recolormask /graphics/atlantian/weapon/coralspear-elite_recolormask.png
 #tag "name infantry spearman"

@@ -4,7 +4,7 @@
 
 #newitem
 #id amazon_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/amazon_bronze.png
 #tag "eliteversion amazon_burnished"
 #armor
@@ -14,7 +14,7 @@
 #newitem
 #id amazon_burnished
 #basechance 0
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/amazon_burnished.png
 #armor
 #theme "bronze"
@@ -22,7 +22,7 @@
 
 #newitem
 #id bronze_kite
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/kite8_bronze.png
 #offsetx -1
 #armor
@@ -32,7 +32,7 @@
 
 #newitem
 #id bronze_kite_painted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/kite8_bronze.png
 #recolormask self
 #offsetx -1
@@ -46,7 +46,7 @@
 
 #newitem
 #id hoplon_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/amazon/shields/hoplon_painted.png
 #tag "eliteversion hoplon_burnished"
 #armor
@@ -55,7 +55,7 @@
 
 #newitem
 #id hoplon_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon_bronze.png
 #tag "eliteversion hoplon_burnished"
 #armor
@@ -64,7 +64,7 @@
 
 #newitem
 #id hoplon_iron
-#gameid 208
+#dominionsId 208
 #sprite /graphics/amazon/shields/hoplon_iron.png
 #tag "eliteversion hoplon_burnished"
 #armor
@@ -74,7 +74,7 @@
 #newitem
 #id hoplon_burnished
 #basechance 0
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon_burnished.png
 #armor
 #enditem
@@ -83,7 +83,7 @@
 
 #newitem
 #id targe_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/amazon/shields/targe_painted.png
 #tag "eliteversion targe_burnished"
 #armor
@@ -92,7 +92,7 @@
 
 #newitem
 #id targe_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/targe_bronze.png
 #tag "eliteversion targe_burnished"
 #armor
@@ -101,7 +101,7 @@
 
 #newitem
 #id targe_iron
-#gameid 208
+#dominionsId 208
 #sprite /graphics/amazon/shields/targe_iron.png
 #tag "eliteversion targe_burnished"
 #armor
@@ -111,7 +111,7 @@
 #newitem
 #id targe_burnished
 #basechance 0
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/targe_burnished.png
 #armor
 #enditem
@@ -120,7 +120,7 @@
 
 #newitem
 #id myrmidon
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/myrmidon.png
 #armor
 #recolormask /graphics/amazon/shields/myrmidon_recolormask.png
@@ -128,7 +128,7 @@
 
 #newitem
 #id hoplon2_bronze
-#gameid 209
+#dominionsId 209
 #chanceinc "personalcommand #mounted *0"
 #sprite /graphics/amazon/shields/hoplon2_bronze.png
 #tag "eliteversion hoplon2_burnished"
@@ -139,7 +139,7 @@
 #newitem
 #id hoplon2_burnished
 #basechance 0
-#gameid 209
+#dominionsId 209
 #chanceinc "personalcommand #mounted *0"
 #sprite /graphics/amazon/shields/hoplon2_burnished.png
 #armor

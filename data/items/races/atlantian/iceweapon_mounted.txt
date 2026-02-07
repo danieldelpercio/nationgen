@@ -1,6 +1,6 @@
 #newitem
 #id icelance
-#gameid 36
+#dominionsId 36
 #sprite /graphics/atlantian/weapon/icelance.png
 #tag "name cavalry lancer"
 #basechance 0.7
@@ -8,7 +8,7 @@
 
 #newitem
 #id iceblade
-#gameid 37
+#dominionsId 37
 #sprite /graphics/atlantian/weapon/iceblade.png
 #tag "name cavalry swordsman"
 #basechance 0.7

@@ -2,7 +2,7 @@
 
 #newitem
 #id plainshendyt1
-#gameid 161
+#dominionsId 161
 #sprite /graphics/sobek/armor/robes/sobek_shendyt.png
 #tag "eliteversion coloredshendyt1"
 #armor
@@ -11,7 +11,7 @@
 
 #newitem
 #id plainshendyt2
-#gameid 161
+#dominionsId 161
 #sprite /graphics/sobek/armor/robes/sobek_shendyt.png
 #recolormask /graphics/sobek/armor/robes/sobek_shendyt_recolormask2.png
 #tag "eliteversion coloredshendyt2"
@@ -21,7 +21,7 @@
 
 #newitem
 #id coloredshendyt1
-#gameid 161
+#dominionsId 161
 #sprite /graphics/sobek/armor/robes/sobek_shendyt.png
 #recolormask /graphics/sobek/armor/robes/sobek_shendyt_recolormask1.png
 #armor
@@ -30,7 +30,7 @@
 
 #newitem
 #id coloredshendyt2
-#gameid 161
+#dominionsId 161
 #sprite /graphics/sobek/armor/robes/sobek_shendyt.png
 #recolormask /graphics/sobek/armor/robes/sobek_shendyt_recolormask3.png
 #armor
@@ -42,7 +42,7 @@
 
 #newitem
 #id whiterobe1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_whiterobes.png
 #tag "eliteversion ornate_whiterobe"
 #armor
@@ -51,7 +51,7 @@
 
 #newitem
 #id whiterobe2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_whiterobes.png
 #tag "eliteversion brightrobe"
 #armor
@@ -60,7 +60,7 @@
 
 #newitem
 #id ornate_whiterobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_whiterobes.png
 #recolormask /graphics/sobek/armor/robes/sobek_whiterobes_recolormask1.png
 #armor
@@ -69,7 +69,7 @@
 
 #newitem
 #id brightrobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_whiterobes.png
 #recolormask /graphics/sobek/armor/robes/sobek_whiterobes_recolormask2.png
 #armor
@@ -80,7 +80,7 @@
 
 #newitem
 #id blackrobe1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_blackrobes.png
 #tag "eliteversion ornate_blackrobe"
 #armor
@@ -89,7 +89,7 @@
 
 #newitem
 #id blackrobe2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_blackrobes.png
 #tag "eliteversion darkrobe"
 #armor
@@ -98,7 +98,7 @@
 
 #newitem
 #id ornate_blackrobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_blackrobes.png
 #recolormask /graphics/sobek/armor/robes/sobek_blackrobes_recolormask1.png
 #armor
@@ -107,7 +107,7 @@
 
 #newitem
 #id darkrobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/sobek/armor/robes/sobek_blackrobes.png
 #recolormask /graphics/sobek/armor/robes/sobek_blackrobes_recolormask2.png
 #armor

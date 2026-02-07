@@ -1,7 +1,7 @@
 
 #newitem
 #id javelin
-#gameid 21
+#dominionsId 21
 #basechance 4
 #sprite /graphics/jotun/warrior/weapon/javelin.png
 #enditem
@@ -9,17 +9,17 @@
 #newitem
 #id axes
 #basechance 2
-#gameid 260
+#dominionsId 260
 #enditem
 
 #newitem
 #id harpoon
-#gameid 21
+#dominionsId 21
 #sprite /graphics/jotun/warrior/weapon/harpoon.png
 #enditem
 
 #newitem
 #id rocks
-#gameid 605
+#dominionsId 605
 #theme primitive
 #enditem

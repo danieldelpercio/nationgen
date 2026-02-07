@@ -1,6 +1,6 @@
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/dynastichuman/weapons/club1.png
 #theme "primitive"
 #theme "wood"
@@ -11,7 +11,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/dynastichuman/weapons/mace1.png
 #theme "primitive"
 #maxprot 15
@@ -21,7 +21,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/dynastichuman/weapons/hatchet1.png
 #theme "primitive"
 #theme "bronze"
@@ -30,7 +30,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/dynastichuman/weapons/shortsword1_bronze.png
 #theme "bronze"
 #type slave
@@ -38,7 +38,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/dynastichuman/weapons/kopesh1.png
 #theme "bronze"
 #type slave
@@ -46,7 +46,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/dynastichuman/weapons/axe1.png
 #theme "iron"
 #theme "primitive"
@@ -55,7 +55,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/dynastichuman/weapons/shortsword1.png
 #theme "iron"
 #type slave
@@ -63,7 +63,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/dynastichuman/weapons/falchion1.png
 #theme "iron"
 #theme "advanced"

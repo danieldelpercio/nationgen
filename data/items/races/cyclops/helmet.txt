@@ -11,7 +11,7 @@
 -- Caps
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/cyclops/helmet/cap_leather.png
 #theme leather
 #armor
@@ -20,7 +20,7 @@
 
 #newitem
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/cyclops/helmet/cap_reinforced.png
 #theme leather
 #eliteversion crestedhelm
@@ -30,7 +30,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/cyclops/helmet/cap_bronze.png
 #theme bronze
 #armor
@@ -39,7 +39,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/cyclops/helmet/cap_iron.png
 #theme iron
 #armor
@@ -48,7 +48,7 @@
 
 #newitem
 #id crestedhelm
-#gameid 162
+#dominionsId 162
 #sprite /graphics/cyclops/helmet/helm_leather_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme leather
@@ -114,7 +114,7 @@
 
 #newitem
 #id bronzefullhelm
-#gameid 123
+#dominionsId 123
 #sprite /graphics/cyclops/helmet/fullhelm_bronze.png
 #theme bronze
 #eliteversion bronzefullhelm_elite
@@ -127,7 +127,7 @@
 
 #newitem
 #id bronzefullhelm_elite
-#gameid 123
+#dominionsId 123
 #sprite /graphics/cyclops/helmet/fullhelm_bronze_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme bronze
@@ -141,7 +141,7 @@
 
 #newitem
 #id goldfullhelm_bronze
-#gameid 123
+#dominionsId 123
 #sprite /graphics/cyclops/helmet/fullhelm_gold.png
 #theme bronze
 #theme elite
@@ -154,7 +154,7 @@
 
 #newitem
 #id goldfullhelm_bronze_elite
-#gameid 123
+#dominionsId 123
 #sprite /graphics/cyclops/helmet/fullhelm_gold_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme bronze
@@ -168,7 +168,7 @@
 -- Iron helms
 #newitem
 #id ironhalfhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/cyclops/helmet/halfhelm_iron.png
 #theme iron
 #eliteversion ironhalfhelm_elite
@@ -181,7 +181,7 @@
 
 #newitem
 #id ironhalfhelm_elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/cyclops/helmet/halfhelm_iron_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme iron
@@ -195,7 +195,7 @@
 
 #newitem
 #id goldhalfhelm_iron
-#gameid 118
+#dominionsId 118
 #sprite /graphics/cyclops/helmet/halfhelm_gold.png
 #theme iron
 #theme elite
@@ -208,7 +208,7 @@
 
 #newitem
 #id goldhalfhelm_iron_elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/cyclops/helmet/halfhelm_gold_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme iron
@@ -221,7 +221,7 @@
 
 #newitem
 #id ironfullhelm
-#gameid 21
+#dominionsId 21
 #sprite /graphics/cyclops/helmet/fullhelm_iron.png
 #theme iron
 #eliteversion ironfullhelm_elite
@@ -234,7 +234,7 @@
 
 #newitem
 #id ironfullhelm_elite
-#gameid 21
+#dominionsId 21
 #sprite /graphics/cyclops/helmet/fullhelm_iron_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme iron
@@ -248,7 +248,7 @@
 
 #newitem
 #id goldfullhelm_iron
-#gameid 21
+#dominionsId 21
 #sprite /graphics/cyclops/helmet/fullhelm_gold.png
 #theme iron
 #theme elite
@@ -261,7 +261,7 @@
 
 #newitem
 #id goldfullhelm_iron_elite
-#gameid 21
+#dominionsId 21
 #sprite /graphics/cyclops/helmet/fullhelm_gold_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme iron
@@ -275,7 +275,7 @@
 -- Advanced helms
 #newitem
 #id cyclopefullhelm
-#gameid 248
+#dominionsId 248
 #sprite /graphics/cyclops/helmet/fullhelm_iron.png
 #theme advanced
 #theme sacred
@@ -287,7 +287,7 @@
 
 #newitem
 #id cyclopefullhelm_elite
-#gameid 248
+#dominionsId 248
 #sprite /graphics/cyclops/helmet/fullhelm_iron_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme advanced
@@ -300,7 +300,7 @@
 
 #newitem
 #id gleamingfullhelm
-#gameid 239
+#dominionsId 239
 #sprite /graphics/cyclops/helmet/fullhelm_gold.png
 #theme advanced
 #theme sacred
@@ -312,7 +312,7 @@
 
 #newitem
 #id gleamingfullhelm_elite
-#gameid 239
+#dominionsId 239
 #sprite /graphics/cyclops/helmet/fullhelm_gold_elite.png
 #recolormask /graphics/cyclops/helmet/helm_elite_recolormask.png
 #theme advanced

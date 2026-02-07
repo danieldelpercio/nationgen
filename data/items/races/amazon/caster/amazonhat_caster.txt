@@ -224,7 +224,7 @@
 
 #newitem -- leather amazon cap
 #id amazoncap-leather
-#gameid 120
+#dominionsId 120
 #sprite /graphics/amazon/helmet/amazoncap_leather.png
 #armor
 #tag "tier 1"
@@ -309,7 +309,7 @@
 
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #offsety 1
 #sprite /graphics/helmet/caster/crown.png
 #armor
@@ -319,7 +319,7 @@
 
 #newitem
 #id antleredcap
-#gameid 120
+#dominionsId 120
 #offsety 1
 #sprite /graphics/helmet/caster/antlercap.png
 #armor
@@ -329,7 +329,7 @@
 
 #newitem
 #id feathercap
-#gameid 120
+#dominionsId 120
 #offsety 1
 #sprite /graphics/helmet/caster/feathercap.png
 #recolormask /graphics/helmet/caster/feathercap_recolormask.png
@@ -450,7 +450,7 @@
 
 #newitem
 #id lizardcrown1
-#gameid 148
+#dominionsId 148
 #offsety 1
 #sprite /graphics/helmet/caster/lizardcrown.png
 #armor
@@ -459,7 +459,7 @@
 
 #newitem
 #id lizardcrown2
-#gameid 148
+#dominionsId 148
 #offsety 1
 #sprite /graphics/helmet/caster/lizardcrown.png
 #recolormask /graphics/helmet/caster/lizardcrown_recolormask.png

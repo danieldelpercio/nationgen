@@ -1,7 +1,7 @@
 
 #newitem
 #id steelbuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/agarthan/big/offhand/buckler_iron.png
 #armor
 #enditem

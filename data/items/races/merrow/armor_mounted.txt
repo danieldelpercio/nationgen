@@ -1,7 +1,7 @@
 --- just land
 #newitem
 #id leather_cuirass
-#gameid 5
+#dominionsId 5
 #sprite /graphics/merrow/armor/leather_cuirass.png
 #armor
 #theme leather
@@ -11,7 +11,7 @@
 
 #newitem
 #id leather_hauberk
-#gameid 10
+#dominionsId 10
 #sprite /graphics/merrow/armor/leather_hauberk_mounted.png
 #armor
 #theme leather
@@ -20,7 +20,7 @@
 
 #newitem
 #id leather_full
-#gameid 15
+#dominionsId 15
 #sprite /graphics/merrow/armor/leather_full_mounted.png
 #armor
 #theme leather
@@ -29,7 +29,7 @@
 
 #newitem
 #id ring_cuirass
-#gameid 6
+#dominionsId 6
 #sprite /graphics/merrow/armor/ring_cuirass.png
 #armor
 #theme leather
@@ -39,7 +39,7 @@
 
 #newitem
 #id ring_hauberk
-#gameid 11
+#dominionsId 11
 #sprite /graphics/merrow/armor/ring_hauberk_mounted.png
 #armor
 #theme leather
@@ -48,7 +48,7 @@
 
 #newitem
 #id ring_full
-#gameid 16
+#dominionsId 16
 #sprite /graphics/merrow/armor/ring_full_mounted.png
 #armor
 #theme leather
@@ -59,7 +59,7 @@
 --- just sea
 #newitem
 #id sharkskin_cuirass
-#gameid 188
+#dominionsId 188
 #sprite /graphics/merrow/armor/sharkskin_cuirass.png
 #armor
 #theme sharkskin
@@ -69,7 +69,7 @@
 
 #newitem
 #id sharkskin_hauberk
-#gameid 151
+#dominionsId 151
 #sprite /graphics/merrow/armor/sharkskin_armor_mounted.png
 #armor
 #theme sharkskin
@@ -78,7 +78,7 @@
 
 #newitem
 #id sharkring_cuirass
-#gameid 6
+#dominionsId 6
 #sprite /graphics/merrow/armor/sharkring_cuirass.png
 #armor
 #theme sharkskin
@@ -88,7 +88,7 @@
 
 #newitem
 #id sharkring_hauberk
-#gameid 11
+#dominionsId 11
 #sprite /graphics/merrow/armor/sharkring_hauberk_mounted.png
 #armor
 #theme sharkskin
@@ -97,7 +97,7 @@
 
 #newitem
 #id coral_cuirass
-#gameid 22
+#dominionsId 22
 #sprite /graphics/merrow/armor/coral_cuirass.png
 #armor
 #theme coral
@@ -107,7 +107,7 @@
 
 #newitem
 #id coral_hauberk
-#gameid 23
+#dominionsId 23
 #sprite /graphics/merrow/armor/coral_hauberk_mounted.png
 #armor
 #theme coral
@@ -117,7 +117,7 @@
 
 #newitem
 #id shell_hauberk
-#gameid 114
+#dominionsId 114
 #sprite /graphics/merrow/armor/shell_hauberk_mounted.png
 #armor
 #theme shell
@@ -128,7 +128,7 @@
 --- both land and sea
 #newitem
 #id scale_cuirass
-#gameid 142
+#dominionsId 142
 #sprite /graphics/merrow/armor/bronzescale_cuirass.png
 #armor
 #theme bronze
@@ -137,7 +137,7 @@
 
 #newitem
 #id scale_hauberk
-#gameid 136
+#dominionsId 136
 #sprite /graphics/merrow/armor/bronzescale_hauberk_mounted.png
 #armor
 #theme bronze
@@ -155,7 +155,7 @@
 
 #newitem
 #id plate_cuirass
-#gameid 100
+#dominionsId 100
 #sprite /graphics/merrow/armor/bronze_cuirass.png
 #armor
 #theme bronze
@@ -164,7 +164,7 @@
 
 #newitem
 #id plate_hauberk
-#gameid 101
+#dominionsId 101
 #sprite /graphics/merrow/armor/bronze_hauberk_mounted.png
 #armor
 #theme bronze

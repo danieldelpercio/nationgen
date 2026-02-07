@@ -9,66 +9,66 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme wood
 #theme primitive
 #enditem
 
 #newitem
 #id club_spiked
-#gameid 265
+#dominionsId 265
 #theme wood
 #theme primitive
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme primitive
 #theme stone
 #enditem
 
 #newitem
 #id hatchet_iron
-#gameid 253
+#dominionsId 253
 #theme primitive
 #theme iron
 #enditem
 
 #newitem
 #id hatchet_bronze
-#gameid 646
+#dominionsId 646
 #theme primitive
 #theme bronze
 #enditem
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme iron
 #enditem
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #theme bronze
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #theme iron
 #enditem
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #theme bronze
 #enditem
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #theme iron
 #theme elite
 #enditem
@@ -82,7 +82,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #theme iron
 #theme advanced
 #theme elite

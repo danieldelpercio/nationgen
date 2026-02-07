@@ -16,7 +16,7 @@
 --- Bronze Scale
 #newitem
 #id "gilt bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/monkey/armor/vanara/scalecuirass_gilt.png
 #armor
 #theme "enlightened"
@@ -25,7 +25,7 @@
 
 #newitem
 #id "gilt bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/monkey/armor/vanara/scalehauberk_gilt.png
 #armor
 #theme "enlightened"
@@ -45,7 +45,7 @@
 --- Scale
 #newitem
 #id "gilt scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/vanara/scalecuirass_gilt.png
 #armor
 #theme "enlightened"
@@ -54,7 +54,7 @@
 
 #newitem
 #id "gilt scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/armor/vanara/scalehauberk_gilt.png
 #armor
 #theme "enlightened"
@@ -63,7 +63,7 @@
 
 #newitem
 #id "gilt full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/vanara/fullscale_gilt.png
 #armor
 #theme "enlightened"
@@ -75,7 +75,7 @@
 --- Imperial armor
 #newitem
 #id "lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/monkey/armor/vanara/lorica_squamata_gilt.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "lorica segmentata"
@@ -87,7 +87,7 @@
 
 #newitem
 #id "lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/monkey/armor/vanara/lorica_segmentata_gilt.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "imperial plate"
@@ -99,7 +99,7 @@
 
 #newitem
 #id "imperial plate"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/monkey/armor/vanara/platehauberk_imperial_gilt.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold imperial plate"
@@ -111,7 +111,7 @@
 
 #newitem
 #id "gold lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/monkey/armor/vanara/lorica_squamata_gold.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold lorica segmentata"
@@ -123,7 +123,7 @@
 
 #newitem
 #id "gold lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/monkey/armor/vanara/lorica_segmentata_gold.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #eliteversion "gold imperial plate"
@@ -135,7 +135,7 @@
 
 #newitem
 #id "gold imperial plate"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/monkey/armor/vanara/platehauberk_imperial_gold.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #armor
@@ -150,7 +150,7 @@
 #id "oriental full scale"
 #basechance 3
 #chanceinc "personalcommand holy -2"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/armor/vanara/fullscale_oriental.png
 #recolormask /graphics/monkey/armor/vanara/hauberk_oriental_recolormask.png
 #armor
@@ -162,7 +162,7 @@
 #id "ashigaru armor"
 #basechance 6
 #chanceinc "personalcommand holy -5"
-#gameid 128
+#dominionsId 128
 #sprite /graphics/monkey/armor/vanara/ashigaruarmor.png
 #recolormask /graphics/monkey/armor/vanara/ashigaruarmor_recolormask.png
 #eliteversion "samurai armor"
@@ -176,7 +176,7 @@
 #basechance 3
 #chanceinc "personalcommand holy 3"
 #chanceinc hastheme not oriental *0
-#gameid 129
+#dominionsId 129
 #sprite /graphics/monkey/armor/vanara/samuraiarmor.png
 #eliteversion "samurai armor elite"
 #armor
@@ -189,7 +189,7 @@
 #basechance 0
 #chanceinc "personalcommand holy 6"
 #chanceinc hastheme not oriental *0
-#gameid 129
+#dominionsId 129
 #sprite /graphics/monkey/armor/vanara/samuraiarmor_elite.png
 #recolormask /graphics/monkey/armor/vanara/samuraiarmor_elite_recolormask.png
 #armor

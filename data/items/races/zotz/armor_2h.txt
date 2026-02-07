@@ -11,7 +11,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/zotz/armor/leathercuirass_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -20,7 +20,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/zotz/armor/leatherhauberk_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -31,7 +31,7 @@
 #newitem -- full leather
 #basechance 0.125
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/zotz/armor/fullleather_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -53,7 +53,7 @@
 #newitem
 #basechance 0.5
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/zotz/armor/scalecuirass.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -62,7 +62,7 @@
 #newitem
 #basechance 0.5
 #id "scale cuirass with clothes"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/zotz/armor/scalecuirass2_2h.png
 #recolormask /graphics/zotz/armor/scalecuirass2_recolormask.png
 #armor
@@ -72,7 +72,7 @@
 #newitem
 #basechance 0.125
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/zotz/armor/scalehauberk_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -81,7 +81,7 @@
 #newitem
 #basechance 0.125
 #id "scale hauberk with clothes"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/zotz/armor/scalehauberk2_2h.png
 #recolormask /graphics/zotz/armor/scalehauberk2_2h_recolormask.png
 #armor
@@ -92,7 +92,7 @@
 #newitem -- full scale
 #basechance 0.030625
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/zotz/armor/fullscale_2h.png
 #recolormask /graphics/zotz/armor/armor_recolormask.png
 #armor
@@ -101,7 +101,7 @@
 #newitem -- full scale
 #basechance 0.030625
 #id "full scale with clothes"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/zotz/armor/fullscale2_2h.png
 #recolormask /graphics/zotz/armor/fullscale2_2h_recolormask.png
 #armor
@@ -132,7 +132,7 @@
 #newitem
 #basechance 0.030625
 #id "obsidian cuirass"
-#gameid 206
+#dominionsId 206
 #sprite /graphics/zotz/armor/obsidiancuirass_2h.png
 #tag "tierunique"
 #chanceinc "personalcommand #sacred *5"

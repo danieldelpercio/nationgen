@@ -1,13 +1,13 @@
 #newitem
 #id "ironcap"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/atlantian/head/ironcap.png
 #armor
 #enditem
 
 #newitem
 #id "ironcap-elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/atlantian/head/ironcap2.png
 #recolormask /graphics/atlantian/head/ironcap2_recolormask.png
 #armor
@@ -16,7 +16,7 @@
 
 #newitem
 #id "coralcap"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/atlantian/head/coralcap.png
 #armor
 #tag "eliteversion coralcap-elite"
@@ -25,7 +25,7 @@
 
 #newitem
 #id "coralcap-elite"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/atlantian/head/coralcap2.png
 #recolormask /graphics/atlantian/head/coralcap2_recolormask.png
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id "coralcap-elite2"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/atlantian/head/coralcap3.png
 #recolormask /graphics/atlantian/head/coralcap3_recolormask.png
 #armor

@@ -12,7 +12,7 @@
 
 #newitem
 #id crown_coral
-#gameid 148
+#dominionsId 148
 #sprite /graphics/illithid/illithid/helmet/crown_coral.png
 #eliteversion crown_gold
 #theme coral
@@ -24,7 +24,7 @@
 
 #newitem
 #id crown_silver
-#gameid 148
+#dominionsId 148
 #sprite /graphics/illithid/illithid/helmet/crown_iron.png
 #eliteversion crown_gold
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id crown_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/illithid/illithid/helmet/crown_gold.png
 #eliteversion squid
 #eliteversion nautilus
@@ -60,7 +60,7 @@
 
 #newitem
 #id nautilus
-#gameid 122
+#dominionsId 122
 #chanceinc moduleid herogen *5
 #sprite /graphics/illithid/illithid/helmet/head_nautilus.png
 #eliteversion evilsquid

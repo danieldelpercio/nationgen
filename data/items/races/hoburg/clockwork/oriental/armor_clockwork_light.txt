@@ -3,7 +3,7 @@
 
 #newitem -- light clockwork armor
 #id "light clockwork armor"
-#gameid 129
+#dominionsId 129
 #sprite /graphics/hoburg/bodyarmor/clockwork_armor_light_samurai.png
 #armor
 #theme "advanced"
@@ -35,7 +35,7 @@
 
 #newitem -- light clockwork armor
 #id "elite light clockwork armor"
-#gameid 129
+#dominionsId 129
 #sprite /graphics/hoburg/bodyarmor/clockwork_armor_light_samurai_elite.png
 #recolormask /graphics/hoburg/bodyarmor/clockwork_armor_light_samurai_elite_recolormask.png
 #armor

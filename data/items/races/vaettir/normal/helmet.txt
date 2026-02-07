@@ -2,7 +2,7 @@
 
 #newitem
 #id sealhunter_hood
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/fur_hood.png
 #tag "eliteversion sealhunter_hood_elite"
 #armor
@@ -16,7 +16,7 @@
 
 #newitem
 #id vaetti_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/leather_cap.png
 #tag "eliteversion vaetti_leathercap_elite1"
 #tag "eliteversion vaetti_leathercap_elite2"
@@ -28,7 +28,7 @@
 
 #newitem
 #id vaetti_reinforcedcap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/vaettir/helmet/reinforced_cap.png
 #tag "eliteversion vaetti_reinforcedcap_elite"
 #armor
@@ -38,7 +38,7 @@
 
 #newitem
 #id vaetti_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/vaettir/helmet/iron_cap.png
 #tag "eliteversion vaetti_ironcap_elite"
 #armor
@@ -48,7 +48,7 @@
 
 #newitem
 #id sealhunter_hood_elite
-#gameid 121
+#dominionsId 121
 #sprite /graphics/vaettir/helmet/fur_hood.png
 #recolormask /graphics/vaettir/helmet/fur_hood_recolormask.png
 #armor
@@ -59,7 +59,7 @@
 
 #newitem
 #id vaetti_leathercap_elite1
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/leather_cap.png
 #recolormask /graphics/vaettir/helmet/cap_trim_recolormask.png
 #armor
@@ -70,7 +70,7 @@
 
 #newitem
 #id vaetti_leathercap_elite2
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vaettir/helmet/leather_cap.png
 #recolormask /graphics/vaettir/helmet/cap_body_recolormask.png
 #armor
@@ -81,7 +81,7 @@
 
 #newitem
 #id vaetti_reinforcedcap_elite
-#gameid 119
+#dominionsId 119
 #sprite /graphics/vaettir/helmet/reinforced_cap.png
 #recolormask /graphics/vaettir/helmet/cap_body_recolormask.png
 #armor
@@ -92,7 +92,7 @@
 
 #newitem
 #id vaetti_ironcap_elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/vaettir/helmet/iron_cap.png
 #recolormask /graphics/vaettir/helmet/cap_trim_recolormask.png
 #armor
@@ -106,7 +106,7 @@
 
 #newitem
 #id fullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/hoburg/helmet/fullhelmet.png
 #offsetx -1
 #offsety -6
@@ -120,7 +120,7 @@
 
 #newitem
 #id hoburg_halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/hoburg/helmet/halfhelmet.png
 #offsetx -1
 #offsety -6
@@ -134,7 +134,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/hoburg/helmet/ironcap.png
 #offsetx -1
 #offsety -6
@@ -146,7 +146,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/hoburg/helmet/ironcap2.png
 #offsetx -1
 #offsety -6
@@ -158,7 +158,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/leathercap.png
 #offsetx -1
 #offsety -6
@@ -170,7 +170,7 @@
 
 #newitem
 #id leatherhat
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/coe-leatherhat.png
 #offsetx -1
 #offsety -6
@@ -184,7 +184,7 @@
 
 #newitem
 #id fullhelmet-elite
-#gameid 21
+#dominionsId 21
 #sprite /graphics/hoburg/helmet/fullhelmet.png
 #recolormask /graphics/hoburg/helmet/featherrecolor.png
 #offsetx -1
@@ -199,7 +199,7 @@
 
 #newitem
 #id hoburg_halfhelmet-elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/hoburg/helmet/halfhelmet.png
 #recolormask /graphics/hoburg/helmet/featherrecolor.png
 #offsetx -1
@@ -214,7 +214,7 @@
 
 #newitem
 #id ironcap-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/hoburg/helmet/ironcap.png
 #recolormask /graphics/hoburg/helmet/featherrecolor.png
 #offsetx -1
@@ -228,7 +228,7 @@
 
 #newitem
 #id leathercap-elite
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/leathercap.png
 #recolormask /graphics/hoburg/helmet/featherrecolor.png
 #offsetx -1
@@ -240,7 +240,7 @@
 
 #newitem
 #id leatherhat-elite
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/coe-leatherhat.png
 #recolormask /graphics/hoburg/helmet/featherrecolor.png
 #offsetx -1
@@ -255,7 +255,7 @@
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet.png
 #offsetx 1
 #offsety 9
@@ -268,7 +268,7 @@
 
 #newitem -- Iron cap
 #id halfhelmet-ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet.png
 #offsetx 1
 #offsety 9
@@ -278,7 +278,7 @@
 
 #newitem
 #id savaran_halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet5.png
 #tag "eliteversion savaran_halfhelmet_elite"
 #offsetx 1
@@ -292,7 +292,7 @@
 
 #newitem
 #id savaran_halfhelmet_elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet5.png
 #recolormask /graphics/helmet/standard/halfhelmet5_elite_recolormask.png
 #offsetx 1
@@ -307,7 +307,7 @@
 
 #newitem
 #id savaran_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet5.png
 #offsetx 1
 #offsety 8
@@ -317,7 +317,7 @@
 
 #newitem
 #id cavalry_halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet7.png
 #offsetx 1
 #offsety 8
@@ -330,7 +330,7 @@
 
 #newitem
 #id cavalry_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet7.png
 #offsetx 1
 #offsety 8
@@ -340,7 +340,7 @@
 
 #newitem
 #id reinforcedcap2
-#gameid 119
+#dominionsId 119
 #sprite /graphics/helmet/standard/reinforcedcap2.png
 #offsetx 1
 #offsety 8
@@ -351,7 +351,7 @@
 #newitem
 #id reinforcedcap3a
 #basechance 0.5
-#gameid 119
+#dominionsId 119
 #sprite /graphics/helmet/standard/reinforcedcap3.png
 #recolormask /graphics/helmet/standard/reinforcedcap3_recolormask1.png
 #offsetx 1
@@ -364,7 +364,7 @@
 #newitem
 #id reinforcedcap3b
 #basechance 0.5
-#gameid 119
+#dominionsId 119
 #sprite /graphics/helmet/standard/reinforcedcap3.png
 #recolormask /graphics/helmet/standard/reinforcedcap3_recolormask2.png
 #offsetx 1
@@ -376,7 +376,7 @@
 
 #newitem
 #id crestedhelm1a
-#gameid 162
+#dominionsId 162
 #sprite /graphics/helmet/special/crestedhelmet.png
 #recolormask /graphics/helmet/special/crestedhelmet_recolormask1.png
 #offsetx 1
@@ -388,7 +388,7 @@
 
 #newitem
 #id crestedhelm1b
-#gameid 162
+#dominionsId 162
 #sprite /graphics/helmet/special/crestedhelmet.png
 #recolormask /graphics/helmet/special/crestedhelmet_recolormask2.png
 #offsetx 1
@@ -400,7 +400,7 @@
 
 #newitem -- Iron cap
 #id bearskin-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/bearskin.png
 #offsetx 1
 #offsety 9
@@ -415,7 +415,7 @@
 
 #newitem -- Iron cap
 #id wolfskin-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/wolfskin.png
 #offsetx 1
 #offsety 9

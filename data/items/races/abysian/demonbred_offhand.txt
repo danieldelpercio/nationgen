@@ -2,7 +2,7 @@
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/abysian/demonbred/offhand_axe.png
 #tag "name berserker"
 #theme "iron"
@@ -11,14 +11,14 @@
 
 #newitem
 #id offhandflail
-#gameid 15
+#dominionsId 15
 #sprite /graphics/abysian/demonbred/offhand_flail.png
 #theme "iron"
 #enditem
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/abysian/demonbred/offhand_sword.png
 #basechance 0.5
 #theme "iron"

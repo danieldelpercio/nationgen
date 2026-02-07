@@ -13,7 +13,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #basechance 2
 #sprite /graphics/halfmen/satyr/armor/furs.png
 #armor
@@ -25,7 +25,7 @@
 --- Leather
 #newitem
 #id leathercuirass
-#gameid 5
+#dominionsId 5
 #sprite /graphics/halfmen/satyr/armor/leather_cuirass.png
 #armor
 #theme "leather"
@@ -35,7 +35,7 @@
 
 #newitem
 #id leatherhauberk
-#gameid 10
+#dominionsId 10
 #sprite /graphics/halfmen/satyr/armor/leather_hauberk.png
 #armor
 #theme "leather"
@@ -47,7 +47,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/halfmen/satyr/armor/ring_cuirass.png
 #armor
 #theme "leather"
@@ -58,7 +58,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/halfmen/satyr/armor/ring_hauberk.png
 #armor
 #theme "leather"
@@ -69,7 +69,7 @@
 
 #newitem
 #id "bronze ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/halfmen/satyr/armor/bronze_ring_cuirass.png
 #armor
 #theme "leather"
@@ -80,7 +80,7 @@
 
 #newitem
 #id "bronze ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/halfmen/satyr/armor/bronze_ring_hauberk.png
 #armor
 #theme "leather"
@@ -93,7 +93,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/halfmen/satyr/armor/scale_cuirass.png
 #armor
 #basechance 0.5
@@ -102,7 +102,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/halfmen/satyr/armor/archer/scale_hauberk.png
 #armor
 #basechance 0.25
@@ -111,7 +111,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/halfmen/satyr/armor/bronze_scale_cuirass.png
 #armor
 #basechance 0.5
@@ -120,7 +120,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/halfmen/satyr/armor/archer/bronze_scale_hauberk.png
 #armor
 #basechance 0.25
@@ -131,7 +131,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/halfmen/satyr/armor/archer/chain_cuirass.png
 #armor
 #basechance 0.5
@@ -141,7 +141,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/halfmen/satyr/armor/archer/chain_hauberk.png
 #armor
 #basechance 0.25
@@ -153,7 +153,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/halfmen/satyr/armor/plate_cuirass.png
 #armor
 #basechance 0.25
@@ -163,7 +163,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/halfmen/satyr/armor/archer/plate_hauberk.png
 #armor
 #basechance 0.125
@@ -174,7 +174,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/halfmen/satyr/armor/bronze_plate_cuirass.png
 #armor
 #basechance 0.25
@@ -184,7 +184,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/halfmen/satyr/armor/archer/bronze_plate_hauberk.png
 #armor
 #basechance 0.125

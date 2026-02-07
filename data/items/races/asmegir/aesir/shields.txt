@@ -1,6 +1,6 @@
 #newitem
 #id kiteshield_iron1
-#gameid 3
+#dominionsId 3
 #basechance 0.5
 #sprite /graphics/asmegir/aesir/offhand/shield_fomorian_iron.png
 #recolormask /graphics/asmegir/aesir/offhand/shield_fomorian_recolormask1.png
@@ -13,7 +13,7 @@
 
 #newitem
 #id kiteshield_iron2
-#gameid 3
+#dominionsId 3
 #basechance 0.5
 #sprite /graphics/asmegir/aesir/offhand/shield_fomorian_iron.png
 #recolormask /graphics/asmegir/aesir/offhand/shield_fomorian_recolormask2.png
@@ -26,7 +26,7 @@
 
 #newitem
 #id kiteshield_gold1
-#gameid 155
+#dominionsId 155
 #basechance 0.125
 #sprite /graphics/asmegir/aesir/offhand/shield_fomorian_gold.png
 #recolormask /graphics/asmegir/aesir/offhand/shield_fomorian_recolormask1.png
@@ -37,7 +37,7 @@
 
 #newitem
 #id kiteshield_gold2
-#gameid 155
+#dominionsId 155
 #basechance 0.125
 #sprite /graphics/asmegir/aesir/offhand/shield_fomorian_gold.png
 #recolormask /graphics/asmegir/aesir/offhand/shield_fomorian_recolormask2.png
@@ -48,7 +48,7 @@
 
 #newitem
 #id shield_iron
-#gameid 208
+#dominionsId 208
 #basechance 2
 #sprite /graphics/asmegir/aesir/offhand/shield_iron.png
 #eliteversion shield_iron2
@@ -60,7 +60,7 @@
 
 #newitem
 #id shield_gold
-#gameid 155
+#dominionsId 155
 #basechance 0.5
 #sprite /graphics/asmegir/aesir/offhand/shield_gold.png
 #eliteversion shield_gold2

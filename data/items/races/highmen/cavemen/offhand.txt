@@ -1,7 +1,7 @@
 --- Melee weapons
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/highmen/weapons/offhand_club.png
 #theme "primitive"
 #basechance 1
@@ -10,7 +10,7 @@
 
 #newitem
 #id spiked_club
-#gameid 593
+#dominionsId 593
 #sprite /graphics/highmen/weapons/offhand_spikedclub.png
 #theme "primitive"
 #basechance 1
@@ -19,7 +19,7 @@
 
 #newitem
 #id stone_hatchet
-#gameid 253
+#dominionsId 253
 #sprite /graphics/highmen/weapons/offhand_axe.png
 #theme "primitive"
 #basechance 1
@@ -28,7 +28,7 @@
 
 #newitem
 #id axe
-#gameid 646
+#dominionsId 646
 #sprite /graphics/highmen/weapons/offhand_axe_bronze.png
 #theme "advanced"
 #theme "bronze"
@@ -38,7 +38,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/highmen/weapons/offhand_hammer_bronze.png
 #theme "advanced"
 #theme "bronze"
@@ -48,7 +48,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/highmen/weapons/offhand_mace_bronze.png
 #theme "advanced"
 #theme "bronze"
@@ -60,7 +60,7 @@
 
 #newitem
 #id thrown_rocks
-#gameid 605
+#dominionsId 605
 #sprite /graphics/highmen/weapons/offhand_rock.png
 #offsetx 0
 #offsety -1
@@ -73,7 +73,7 @@
 
 #newitem
 #id sticks_and_stones
-#gameid 360
+#dominionsId 360
 #theme "primitive"
 #basechance 1
 #maxprot 10
@@ -82,7 +82,7 @@
 
 #newitem
 #id net
-#gameid 263
+#dominionsId 263
 #sprite /graphics/highmen/weapons/offhand_net.png
 #basechance 0.3
 #maxprot 10
@@ -93,7 +93,7 @@
 
 #newitem
 #id javelin
-#gameid 263
+#dominionsId 263
 #sprite /graphics/highmen/weapons/offhand_javelins.png
 #basechance 0.2
 #theme "advanced"

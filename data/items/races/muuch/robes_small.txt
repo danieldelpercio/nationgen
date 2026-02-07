@@ -142,7 +142,7 @@
 
 #newitem
 #id cowl
-#gameid 158
+#dominionsId 158
 #sprite /graphics/muuch/armor/small/caster/robe_cowled.png
 #recolormask /graphics/muuch/armor/small/caster/robe_cowled_recolormask.png
 #tag "noslot helmet"
@@ -152,7 +152,7 @@
 
 #newitem
 #id toga_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/muuch/armor/small/caster/toga.png
 #tag "#eliteversion 'toga_dyed'"
 #armor
@@ -161,7 +161,7 @@
 
 #newitem
 #id toga_dyed
-#gameid 158
+#dominionsId 158
 #sprite /graphics/muuch/armor/small/caster/toga.png
 #recolormask self
 #armor

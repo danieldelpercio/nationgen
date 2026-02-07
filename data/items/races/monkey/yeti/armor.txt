@@ -11,7 +11,7 @@
 #id furs
 #basechance 4
 #chanceinc racetheme advanced *0.1
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/giant/furs.png
 #theme "leather"
 #armor
@@ -22,7 +22,7 @@
 #id ice_studded_fur
 #basechance 2
 #chanceinc racetheme advanced *0.1
-#gameid 52
+#dominionsId 52
 #sprite /graphics/monkey/giant/icestudded_furs.png
 #armor
 #theme "ice"
@@ -33,7 +33,7 @@
 #id ice_studded
 #basechance 0
 #chanceinc racetheme advanced 3
-#gameid 52
+#dominionsId 52
 #sprite /graphics/monkey/giant/icestudded.png
 #armor
 #theme "ice"
@@ -56,7 +56,7 @@
 #id icicle_mail
 #basechance 0.5
 #chanceinc racetheme primitive *0
-#gameid 133
+#dominionsId 133
 #sprite /graphics/monkey/giant/iciclemail.png
 #armor
 #theme "ice"
@@ -68,7 +68,7 @@
 #id ice_cuirass
 #basechance 0
 #chanceinc racetheme advanced 1
-#gameid 26
+#dominionsId 26
 #sprite /graphics/monkey/giant/icecuirass.png
 #armor
 #theme "ice"
@@ -79,7 +79,7 @@
 #id ice_hauberk
 #basechance 0
 #chanceinc racetheme advanced 0.5
-#gameid 27
+#dominionsId 27
 #sprite /graphics/monkey/giant/icehauberk.png
 #armor
 #theme "ice"

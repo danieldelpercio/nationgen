@@ -1,6 +1,6 @@
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/dynastichuman/weapons/bow.png
 #needs quiver quiver
 #type slave
@@ -8,7 +8,7 @@
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/dynastichuman/weapons/compositebow.png
 #needs quiver quiver
 #type slave
@@ -16,7 +16,7 @@
 
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/dynastichuman/weapons/sling.png
 #maxprot 9
 #type slave

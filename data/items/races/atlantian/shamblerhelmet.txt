@@ -7,7 +7,7 @@
 
 #newitem
 #id "coralcap-s"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/atlantian/head/coralcap-s.png
 #armor
 #enditem
@@ -15,7 +15,7 @@
 
 #newitem
 #id "atl_meteoritecap-s"
-#gameid 211
+#dominionsId 211
 #sprite /graphics/atlantian/head/meteoritecap-s.png
 #armor
 #enditem

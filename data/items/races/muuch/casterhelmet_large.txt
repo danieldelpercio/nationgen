@@ -38,21 +38,21 @@
 
 #newitem
 #id crown_feathery_black
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/large/headdress_chaac_black.png
 #armor
 #enditem
 
 #newitem
 #id crown_feathery_white
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/large/headdress_chaac_white.png
 #armor
 #enditem
 
 #newitem
 #id crown_feathery_light
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/large/headdress_chaac_black.png
 #recolormask /graphics/muuch/helmet/large/headdress_chaac_recolormask_light.png
 #armor
@@ -60,7 +60,7 @@
 
 #newitem
 #id crown_feathery_medium
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/large/headdress_chaac_black.png
 #recolormask /graphics/muuch/helmet/large/headdress_chaac_recolormask_medium.png
 #armor
@@ -68,7 +68,7 @@
 
 #newitem
 #id crown_feathery_dark
-#gameid 148
+#dominionsId 148
 #sprite /graphics/muuch/helmet/large/headdress_chaac_black.png
 #recolormask /graphics/muuch/helmet/large/headdress_chaac_recolormask_dark.png
 #armor

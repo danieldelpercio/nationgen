@@ -26,7 +26,7 @@
 #newitem
 #id "linen cuirass"
 #basechance 4
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass.png
 #eliteversion "elite linen cuirass 1"
 #eliteversion "elite linen cuirass 2"
@@ -40,7 +40,7 @@
 #newitem
 #id "thick linen cuirass"
 #basechance 4
-#gameid 183
+#dominionsId 183
 #sprite /graphics/dynastichuman/armor/linencuirass_thick.png
 #eliteversion "elite thick linen cuirass 1"
 #eliteversion "elite thick linen cuirass 2"
@@ -56,7 +56,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/bronzescalecuirass.png
 #tag "eliteversion 'elite bronze scale cuirass'"
@@ -67,7 +67,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #basechance 0.25
 #sprite /graphics/dynastichuman/armor/bronzescalehauberk.png
 #tag "eliteversion 'elite bronze scale hauberk'"
@@ -79,7 +79,7 @@
 
 #newitem
 #id "thick bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/bronzescalecuirass_thick.png
 #tag "eliteversion 'elite thick bronze scale cuirass'"
@@ -90,7 +90,7 @@
 
 #newitem
 #id "thick bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/bronzescalehauberk_thick.png
 #tag "eliteversion 'elite thick bronze scale hauberk'"
@@ -102,7 +102,7 @@
 
 #newitem
 #id "elite bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalecuirass_elite.png
 #armor
@@ -113,7 +113,7 @@
 
 #newitem
 #id "elite bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #basechance 0.25
 #sprite /graphics/dynastichuman/armor/scalehauberk_elite.png
 #armor
@@ -125,7 +125,7 @@
 
 #newitem
 #id "elite thick bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalecuirass_thick_elite.png
 #armor
@@ -136,7 +136,7 @@
 
 #newitem
 #id "elite thick bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalehauberk_thick_elite.png
 #armor
@@ -151,7 +151,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalecuirass.png
 #tag "eliteversion 'elite scale cuirass'"
@@ -162,7 +162,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #basechance 0.25
 #sprite /graphics/dynastichuman/armor/scalehauberk.png
 #tag "eliteversion 'elite scale hauberk'"
@@ -174,7 +174,7 @@
 
 #newitem
 #id "thick scale cuirass"
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalecuirass_thick.png
 #tag "eliteversion 'elite thick scale cuirass'"
@@ -185,7 +185,7 @@
 
 #newitem
 #id "thick scale hauberk"
-#gameid 12
+#dominionsId 12
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalehauberk_thick.png
 #tag "eliteversion 'elite thick scale hauberk'"
@@ -197,7 +197,7 @@
 
 #newitem
 #id "elite scale cuirass"
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalecuirass_elite.png
 #armor
@@ -208,7 +208,7 @@
 
 #newitem
 #id "elite scale hauberk"
-#gameid 12
+#dominionsId 12
 #basechance 0.25
 #sprite /graphics/dynastichuman/armor/scalehauberk_elite.png
 #armor
@@ -220,7 +220,7 @@
 
 #newitem
 #id "elite thick bronze scale cuirass"
-#gameid 7
+#dominionsId 7
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalecuirass_thick_elite.png
 #armor
@@ -231,7 +231,7 @@
 
 #newitem
 #id "elite thick bronze scale hauberk"
-#gameid 12
+#dominionsId 12
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/scalehauberk_thick_elite.png
 #armor

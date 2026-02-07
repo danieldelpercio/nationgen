@@ -4,7 +4,7 @@
 
 #newitem
 #id shield
-#gameid 208
+#dominionsId 208
 #sprite /graphics/abysian/demonbred/offhand_shield.png
 #armor
 #basechance 3
@@ -12,7 +12,7 @@
 
 #newitem
 #id shield2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/abysian/demonbred/offhand_shield.png
 #recolormask /graphics/abysian/demonbred/offhand_shield_recolormask.png
 #armor
@@ -21,7 +21,7 @@
 
 #newitem
 #id tower
-#gameid 4
+#dominionsId 4
 #sprite /graphics/abysian/demonbred/offhand_towershield.png
 #armor
 #enditem
@@ -29,7 +29,7 @@
 #newitem
 #id tower2
 #basechance 4
-#gameid 4
+#dominionsId 4
 #sprite /graphics/abysian/demonbred/offhand_towershield.png
 #recolormask /graphics/abysian/demonbred/offhand_towershield_recolormask.png
 #armor

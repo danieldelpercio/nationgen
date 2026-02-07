@@ -20,7 +20,7 @@
 
 #newitem
 #id jewelledrobe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/ctis_robes/predatorlizard_robes.png
 #recolormask /graphics/bodyarmor/ctis_robes/predatorlizard_robes_recolormask.png
 #armor
@@ -30,7 +30,7 @@
 
 #newitem
 #id simplerobes
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bodyarmor/ctis_robes/predatorlizard_robes.png
 #recolormask /graphics/bodyarmor/ctis_robes/predatorlizard_simplerobes_recolormask.png
 #armor

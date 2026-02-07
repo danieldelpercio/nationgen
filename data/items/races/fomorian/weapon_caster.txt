@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/fomorian/weapon/axe.png
 #theme "primitive"
 #tier 1
@@ -10,7 +10,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/fomorian/weapon/hatchet.png
 #theme "primitive"
 #tier 1
@@ -21,7 +21,7 @@
 #newitem
 #basechance 3
 #id elitelongspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/fomorian/weapon/longspear_elite.png
 #tier 2
 #tier 3
@@ -34,7 +34,7 @@
 #newitem
 #basechance 3
 #id elitelongspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/fomorian/weapon/longspear_bronze_elite.png
 #tier 2
 #tier 3
@@ -47,7 +47,7 @@
 #newitem
 #basechance 3
 #id elitespear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/fomorian/weapon/spear_elite.png
 #eliteversion goldenstaff
 #eliteversion woodenstaff
@@ -61,7 +61,7 @@
 #newitem
 #basechance 3
 #id elitespear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/fomorian/weapon/spear_bronze_elite.png
 #eliteversion goldenstaff
 #eliteversion woodenstaff
@@ -74,7 +74,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/fomorian/weapon/sword.png
 #tier 1
 #tier 2
@@ -92,7 +92,7 @@
 
 #newitem
 #id trident_iron
-#gameid 3
+#dominionsId 3
 #sprite /graphics/fomorian/weapon/caster/trident_iron.png
 #tier 1
 #tier 2
@@ -101,7 +101,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/fomorian/weapon/caster/trident_bronze.png
 #tier 1
 #tier 2
@@ -110,7 +110,7 @@
 
 #newitem
 #id epicgoldenstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/weapons/mage/epicgoldenstaff.png
 #tag "tier 3"
 #offsetx 35
@@ -119,7 +119,7 @@
 
 #newitem
 #id goldenstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/weapons/mage/goldenstaff.png
 #tag "tier 2"
 #tag "tier 1"
@@ -133,7 +133,7 @@
 
 #newitem
 #id woodenstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/weapons/mage/woodenstaff.png
 #tag "tier 2"
 #tag "tier 1"
@@ -148,7 +148,7 @@
 
 #newitem
 #id woodenstaff_bauble
-#gameid 7
+#dominionsId 7
 #tag "tier 2"
 #tag "tier 3"
 #sprite /graphics/agarthan/weapons/mage/woodenstaff_bauble.png
@@ -159,7 +159,7 @@
 
 #newitem
 #id light_crook
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/weapon/caster/crook.png
 #tag "tier 2"
 #tag "tier 1"
@@ -170,7 +170,7 @@
 
 #newitem
 #id heavy_crook
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/weapon/caster/crook2.png
 #tag "tier 2"
 #tag "tier 3"
@@ -180,7 +180,7 @@
 
 #newitem
 #id sicklestaff_iron
-#gameid 493
+#dominionsId 493
 #sprite /graphics/fomorian/weapon/caster/sicklestaff_iron.png
 #tag "tier 3"
 #theme iron
@@ -188,7 +188,7 @@
 
 #newitem
 #id sicklestaff_bronze
-#gameid 493
+#dominionsId 493
 #sprite /graphics/fomorian/weapon/caster/sicklestaff_bronze.png
 #tag "tier 3"
 #theme bronze
@@ -196,7 +196,7 @@
 
 #newitem
 #id branch
-#gameid 240
+#dominionsId 240
 #sprite /graphics/fomorian/weapon/caster/branch.png
 #tag "tier 1"
 #tag "tier 2"
@@ -207,7 +207,7 @@
 
 #newitem
 #id gnobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/weapon/caster/gnobbly.png
 #tag "tier 2"
 #eliteversion gnarledstaff
@@ -216,7 +216,7 @@
 
 #newitem
 #id gnarledstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/weapon/caster/gnarled.png
 #tag "tier 3"
 #theme nature
@@ -224,7 +224,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/weapon/caster/skullstaff.png
 #tag "tier 3"
 #theme "primitive"
@@ -232,7 +232,7 @@
 
 #newitem
 #id hornedstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/weapon/caster/skullstaff_horned.png
 #tag "tier 3"
 #theme "primitive"

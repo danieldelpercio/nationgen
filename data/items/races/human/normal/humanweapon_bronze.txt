@@ -2,7 +2,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/weapon/bronze/hatchet.png
 #theme "primitive"
 #theme "austral"
@@ -24,7 +24,7 @@
 
 #newitem
 #id flail_bronze
-#gameid 16
+#dominionsId 16
 #sprite /graphics/weapon/bronze/flail.png
 #theme "austral"
 #theme "boreal"
@@ -35,7 +35,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/weapon/bronze/greataxe.png
 #theme "primitive"
 #theme "austral"
@@ -95,7 +95,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/weapon/bronze/longspear.png
 #theme "austral"
 #theme "boreal"
@@ -118,7 +118,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/weapon/bronze/shortsword.png
 #theme "austral"
 #theme "boreal"
@@ -129,7 +129,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/bronze/spear.png
 #tag "name infantry spearman"
 #theme "austral"
@@ -142,7 +142,7 @@
 
 #newitem
 #id short_trident_bronze
-#gameid 680
+#dominionsId 680
 #sprite /graphics/weapon/bronze/trident.png
 #theme "austral"
 #theme "boreal"
@@ -156,7 +156,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/weapon/bronze/trident.png
 #theme "austral"
 #theme "boreal"
@@ -176,7 +176,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/weapon/bronze/kopesh.png
 #theme "austral"
 #theme "central"

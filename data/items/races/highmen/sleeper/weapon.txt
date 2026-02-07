@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/highmen/weapons/axe_bronze.png
 #theme "primitive"
 #enditem
@@ -19,14 +19,14 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/highmen/weapons/mace_bronze.png
 #theme "primitive"
 #enditem
 
 #newitem
 #id shortsword
-#gameid 645
+#dominionsId 645
 #sprite /graphics/highmen/weapons/shortsword_bronze.png
 #enditem
 
@@ -38,7 +38,7 @@
 
 #newitem
 #id spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/highmen/weapons/spear_bronze.png
 #needs hands hands_2h
 #enditem
@@ -46,7 +46,7 @@
 -- 2h weapons
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/highmen/weapons/flail_bronze.png
 #needs hands hands_2h
 #troopweapon
@@ -54,7 +54,7 @@
 
 #newitem
 #id greataxe
-#gameid 698
+#dominionsId 698
 #sprite /graphics/highmen/weapons/battleaxe_bronze.png
 #needs hands hands_2h
 #theme "primitive"
@@ -63,7 +63,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/highmen/weapons/maul.png
 #theme "primitive"
 #needs hands hands_2h
@@ -80,7 +80,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/highmen/weapons/quarterstaff.png
 #needs hands hands_2h
 #troopweapon
@@ -88,7 +88,7 @@
 
 #newitem
 #id greatclub
-#gameid 165
+#dominionsId 165
 #sprite /graphics/highmen/weapons/greatclub.png
 #theme "primitive"
 #needs hands hands_2h

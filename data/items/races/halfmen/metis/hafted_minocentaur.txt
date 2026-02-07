@@ -1,6 +1,6 @@
 #newitem
 #id battleaxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe1.png
 #offsetx -6
 #offsety -2
@@ -11,7 +11,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe2.png
 #offsetx -6
 #offsety -2
@@ -22,7 +22,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/halfmen/minotaur/weapon/flail.png
 #offsetx -6
 #offsety -2
@@ -33,7 +33,7 @@
 
 #newitem
 #id halberd
-#gameid 5
+#dominionsId 5
 #sprite /graphics/halfmen/minotaur/weapon/halberd.png
 #offsetx -6
 #offsety -2
@@ -44,7 +44,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/halfmen/minotaur/weapon/spear.png
 #offsetx -6
 #offsety -2
@@ -55,7 +55,7 @@
 
 #newitem
 #id lance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/halfmen/minotaur/weapon/spear.png
 #offsetx -6
 #offsety -2
@@ -66,7 +66,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/halfmen/minotaur/weapon/trident.png
 #offsetx -5
 #offsety -2
@@ -77,7 +77,7 @@
 
 #newitem
 #id battleaxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe1_bronze.png
 #offsetx -6
 #offsety -2
@@ -88,7 +88,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/halfmen/minotaur/weapon/battleaxe2_bronze.png
 #offsetx -6
 #offsety -2
@@ -99,7 +99,7 @@
 
 #newitem
 #id flail_bronze
-#gameid 16
+#dominionsId 16
 #sprite /graphics/halfmen/minotaur/weapon/flail_bronze.png
 #offsetx -6
 #offsety -2
@@ -121,7 +121,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/halfmen/minotaur/weapon/spear_bronze.png
 #offsetx -6
 #offsety -2
@@ -132,7 +132,7 @@
 
 #newitem
 #id lance_bronze
-#gameid 651
+#dominionsId 651
 #sprite /graphics/halfmen/minotaur/weapon/spear_bronze.png
 #offsetx -6
 #offsety -2
@@ -143,7 +143,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/halfmen/minotaur/weapon/trident_bronze.png
 #offsetx -5
 #offsety -2
@@ -154,7 +154,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/halfmen/minotaur/weapon/maul.png
 #offsetx -6
 #offsety -2
@@ -165,7 +165,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/halfmen/minotaur/weapon/quarterstaff.png
 #offsetx -6
 #offsety -2

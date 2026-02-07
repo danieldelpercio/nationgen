@@ -2,7 +2,7 @@
 
 #newitem
 #id offhandclaw
-#gameid 204
+#dominionsId 204
 #theme "primitive"
 #theme "abysian"
 #basechance 5
@@ -12,7 +12,7 @@
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/abysian/offhands/axe.png
 #tag "name berserker"
 #theme "primitive"
@@ -23,7 +23,7 @@
 
 #newitem
 #id offhandbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/offhand/standard/broadsword.png
 #theme "iron"
 #needstype basesprite hands
@@ -31,7 +31,7 @@
 
 #newitem
 #id offhandhammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/abysian/offhands/hammer.png
 #theme "iron"
 #theme "abysian"
@@ -40,7 +40,7 @@
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/abysian/offhands/mace.png
 #tag "name berserker"
 #theme "primitive"
@@ -51,7 +51,7 @@
 
 #newitem
 #id offhandmorningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/abysian/offhands/morningstar.png
 #theme "iron"
 #theme "abysian"
@@ -60,7 +60,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/offhand/standard/shortsword.png
 #theme "iron"
 #needstype basesprite hands
@@ -69,7 +69,7 @@
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/offhand/standard/falchion.png
 #theme "iron"
 #needstype basesprite hands
@@ -77,7 +77,7 @@
 
 #newitem
 #id offhanddagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/offhand/standard/dagger.png
 #theme "iron"
 #needstype basesprite hands

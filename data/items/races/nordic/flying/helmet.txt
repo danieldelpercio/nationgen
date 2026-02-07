@@ -1,7 +1,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/vanir/helmet/leathercap.png
 #eliteversion reinfleathercap
 #eliteversion ironcap
@@ -17,7 +17,7 @@
 
 #newitem
 #id reinfleathercap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/vanir/helmet/leathercap.png
 #eliteversion reinfleathercap
 #eliteversion ironcap
@@ -32,7 +32,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/vanir/helmet/ironcap.png
 #eliteversion ironcap
 #eliteversion halfhelmet
@@ -44,7 +44,7 @@
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/vanir/helmet/halfhelmet.png
 #eliteversion halfhelmet
 #eliteversion goldenhelmet
@@ -56,7 +56,7 @@
 
 #newitem
 #id goldenhelmet
-#gameid 20
+#dominionsId 20
 #sprite /graphics/vanir/helmet/special/goldenhelmet.png
 #eliteversion goldenhelmet
 #armor

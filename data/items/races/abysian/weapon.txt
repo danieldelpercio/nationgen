@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/abysian/weapons/axe.png
 #theme "primitive"
 #theme "iron"
@@ -10,7 +10,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/standard/broadsword.png
 #theme "iron"
 #tag "name infantry swordsman"
@@ -19,7 +19,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/abysian/weapons/flail.png
 #theme "iron"
 #theme "abysian"
@@ -27,7 +27,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/abysian/weapons/greataxe.png
 #theme "primitive"
 #theme "iron"
@@ -37,7 +37,7 @@
 
 #newitem
 #id halberd
-#gameid 5
+#dominionsId 5
 #sprite /graphics/abysian/weapons/halberd.png
 #tag "name infantry halberdier"
 #theme "iron"
@@ -48,7 +48,7 @@
 #newitem
 #id hammer
 #basechance 0.5
-#gameid 13
+#dominionsId 13
 #sprite /graphics/abysian/weapons/hammer.png
 #theme "iron"
 #theme "abysian"
@@ -66,7 +66,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/abysian/weapons/longspear.png
 #tag "name infantry spearman"
 #basechance 0.5
@@ -76,7 +76,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/abysian/weapons/mace.png
 #theme "primitive"
 #theme "abysian"
@@ -86,14 +86,14 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/abysian/weapons/maul.png
 #theme "abysian"
 #enditem
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/abysian/weapons/morningstar.png
 #theme "iron"
 #theme "abysian"
@@ -101,7 +101,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #basechance 0.5
 #theme "iron"
@@ -109,7 +109,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/abysian/weapons/spear.png
 #tag "name infantry spearman"
 #basechance 0.5
@@ -125,7 +125,7 @@
 
 #newitem
 #id pike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/abysian/weapons//pike.png
 #tag "name infantry pikeman"
 #basechance 0.5
@@ -136,7 +136,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/standard/falchion.png
 #tag "name infantry falchioneer"
 #basechance 0.5

@@ -1,6 +1,6 @@
 #newitem
 #id standard1
-#gameid 100
+#dominionsId 100
 #sprite /graphics/imperial/legion/weapon/standard.png
 #recolormask /graphics/imperial/legion/weapon/standard_recolormask1.png
 #notepic
@@ -13,7 +13,7 @@
 
 #newitem
 #id standard2
-#gameid 100
+#dominionsId 100
 #sprite /graphics/imperial/legion/weapon/standard.png
 #recolormask /graphics/imperial/legion/weapon/standard_recolormask2.png
 #notepic
@@ -26,7 +26,7 @@
 
 #newitem
 #id standard3
-#gameid 100
+#dominionsId 100
 #sprite /graphics/imperial/legion/weapon/standard.png
 #recolormask /graphics/imperial/legion/weapon/standard_recolormask3.png
 #notepic

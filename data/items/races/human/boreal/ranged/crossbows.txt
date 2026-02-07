@@ -10,7 +10,7 @@
 
 #newitem
 #id "crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/boreal/ranged/weapon/crossbow.png
 #theme "advanced"
 #needs quiver quiver
@@ -27,7 +27,7 @@
 
 #newitem
 #id "arbalest"
-#gameid 26
+#dominionsId 26
 #sprite /graphics/boreal/ranged/weapon/arbalest.png
 #theme "advanced"
 #basechance 0.75

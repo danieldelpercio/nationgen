@@ -10,7 +10,7 @@
 -- Bucklers
 #newitem
 #id woodbuckler
-#gameid 1
+#dominionsId 1
 #basechance 0.5
 #sprite /graphics/firbolg/offhand/buckler_wood.png
 #armor
@@ -19,7 +19,7 @@
 
 #newitem
 #id bronzebuckler
-#gameid 1
+#dominionsId 1
 #basechance 0.25
 #sprite /graphics/firbolg/offhand/buckler_bronze.png
 #recolormask /graphics/firbolg/offhand/buckler_recolormask.png
@@ -29,7 +29,7 @@
 
 #newitem
 #id ironbuckler
-#gameid 1
+#dominionsId 1
 #basechance 0.25
 #sprite /graphics/firbolg/offhand/buckler_iron.png
 #recolormask /graphics/firbolg/offhand/buckler_recolormask.png
@@ -42,7 +42,7 @@
 
 #newitem
 #id wood_shield
-#gameid 2
+#dominionsId 2
 #basechance 2
 #sprite /graphics/firbolg/offhand/shield1_wood.png
 #theme "primitive"
@@ -52,7 +52,7 @@
 
 #newitem
 #id wood_shield_bronze
-#gameid 2
+#dominionsId 2
 #basechance 1
 #sprite /graphics/firbolg/offhand/shield1_bronze.png
 #eliteversion bronze_shield
@@ -62,7 +62,7 @@
 
 #newitem
 #id wood_shield_iron
-#gameid 2
+#dominionsId 2
 #basechance 1
 #sprite /graphics/firbolg/offhand/shield1_iron.png
 #eliteversion iron_shield
@@ -72,7 +72,7 @@
 
 #newitem
 #id bronze_shield
-#gameid 209
+#dominionsId 209
 #basechance 0.5
 #sprite /graphics/firbolg/offhand/shield2_bronze.png
 #theme "bronze"
@@ -81,7 +81,7 @@
 
 #newitem
 #id iron_shield
-#gameid 208
+#dominionsId 208
 #basechance 0.5
 #sprite /graphics/firbolg/offhand/shield2_iron.png
 #theme "iron"
@@ -90,7 +90,7 @@
 
 #newitem
 #id wood_shield2
-#gameid 2
+#dominionsId 2
 #basechance 2
 #sprite /graphics/firbolg/offhand/shield3_wood.png
 #theme "primitive"
@@ -100,7 +100,7 @@
 
 #newitem
 #id wood_shield2_bronze
-#gameid 2
+#dominionsId 2
 #basechance 1
 #sprite /graphics/firbolg/offhand/shield3_bronze.png
 #eliteversion bronze_shield2
@@ -110,7 +110,7 @@
 
 #newitem
 #id wood_shield2_iron
-#gameid 2
+#dominionsId 2
 #basechance 1
 #sprite /graphics/firbolg/offhand/shield3_iron.png
 #eliteversion iron_shield2
@@ -120,7 +120,7 @@
 
 #newitem
 #id bronze_shield2
-#gameid 209
+#dominionsId 209
 #basechance 0.5
 #sprite /graphics/firbolg/offhand/shield4_bronze.png
 #theme "bronze"
@@ -129,7 +129,7 @@
 
 #newitem
 #id iron_shield2
-#gameid 208
+#dominionsId 208
 #basechance 0.5
 #sprite /graphics/firbolg/offhand/shield4_iron.png
 #theme "iron"

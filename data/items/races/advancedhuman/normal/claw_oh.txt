@@ -1,6 +1,6 @@
 #newitem
 #id claw
-#gameid 29
+#dominionsId 29
 #theme "primitive"
 #theme "naked"
 #theme "militia"
@@ -11,7 +11,7 @@
 
 #newitem
 #id poisoned_claw
-#gameid 43
+#dominionsId 43
 #theme "primitive"
 #theme "naked"
 #theme "militia"
@@ -22,7 +22,7 @@
 
 #newitem
 #id venomous_claw
-#gameid 248
+#dominionsId 248
 #theme "primitive"
 #theme "naked"
 #theme "militia"

@@ -2,14 +2,14 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #armor
 #theme "bronze"
 #enditem
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/fomorian/giant/armor/hauberk.png
 #armor
 #theme "bronze"
@@ -26,7 +26,7 @@
 
 #newitem -- fancy scale
 #id "golden scale"
-#gameid 196
+#dominionsId 196
 #sprite /graphics/fomorian/giant/armor/full_gold.png
 #armor
 #basechance 0.25
@@ -35,7 +35,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/fomorian/giant/armor/cuirass_iron.png
 #armor
 #basechance 0.25
@@ -44,7 +44,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/fomorian/giant/armor/hauberk_iron.png
 #armor
 #basechance 0.25
@@ -53,7 +53,7 @@
 
 #newitem -- full scale
 #id "iron full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/fomorian/giant/armor/full_iron.png
 #armor
 #basechance 0.125
@@ -64,7 +64,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/fomorian/giant/armor/cuirass_iron.png
 #armor
 #theme "iron"
@@ -72,7 +72,7 @@
 
 #newitem
 #id "chain hauberk short"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/fomorian/giant/armor/hauberk_iron.png
 #armor
 #theme "iron"
@@ -80,7 +80,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/fomorian/giant/armor/full_iron.png
 #armor
 #basechance 0.5

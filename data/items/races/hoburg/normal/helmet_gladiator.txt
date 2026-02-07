@@ -1,6 +1,6 @@
 #newitem
 #id leathercap-elite2
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/leathercap.png
 #recolormask /graphics/hoburg/helmet/eliterecolor.png
 #armor
@@ -9,7 +9,7 @@
 
 #newitem
 #id crestedcap
-#gameid 162
+#dominionsId 162
 #sprite /graphics/hoburg/helmet/crested_cap.png
 #recolormask /graphics/hoburg/helmet/crested_cap_recolormask.png
 #armor
@@ -18,7 +18,7 @@
 
 #newitem
 #id ironcap-elite2
-#gameid 20
+#dominionsId 20
 #sprite /graphics/hoburg/helmet/ironcap.png
 #recolormask /graphics/hoburg/helmet/eliterecolor.png
 #theme "advanced"
@@ -28,7 +28,7 @@
 
 #newitem
 #id bronzecap_elite
-#gameid 135
+#dominionsId 135
 #sprite /graphics/hoburg/helmet/bronzecap_elite.png
 #armor
 #theme "bronze"
@@ -53,7 +53,7 @@
 
 #newitem
 #id legionairehelm
-#gameid 126
+#dominionsId 126
 #basechance 0.5
 #sprite /graphics/hoburg/helmet/legionairehelm.png
 #recolormask /graphics/hoburg/helmet/legionairehelm_recolormask.png
@@ -63,7 +63,7 @@
 
 #newitem
 #id bronze_legionairehelm
-#gameid 127
+#dominionsId 127
 #basechance 0.5
 #sprite /graphics/hoburg/helmet/legionairehelm_bronze.png
 #recolormask /graphics/hoburg/helmet/legionairehelm_recolormask.png
@@ -73,7 +73,7 @@
 
 #newitem
 #id hoplitehelm
-#gameid 123
+#dominionsId 123
 #basechance 0.5
 #sprite /graphics/hoburg/helmet/hoplitehelm.png
 #armor
@@ -82,7 +82,7 @@
 
 #newitem
 #id hoplitehelm_elite
-#gameid 123
+#dominionsId 123
 #basechance 0.5
 #sprite /graphics/hoburg/helmet/hoplitehelm_elite.png
 #recolormask /graphics/hoburg/helmet/hoplitehelm_elite_recolormask.png

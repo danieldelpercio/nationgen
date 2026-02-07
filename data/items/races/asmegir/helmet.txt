@@ -9,7 +9,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/asmegir/helmet/cap_leather.png
 #armor
 #theme leather
@@ -18,7 +18,7 @@
 
 #newitem
 #id reinfleathercap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/asmegir/helmet/cap_reinforced.png
 #armor
 #theme leather
@@ -27,7 +27,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/asmegir/helmet/cap_iron.png
 #eliteversion goldcap
 #eliteversion ironhalfhelmet
@@ -38,7 +38,7 @@
 
 #newitem
 #id ironhalfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/asmegir/helmet/halfhelm_iron.png
 #eliteversion goldhalfhelmet
 #armor

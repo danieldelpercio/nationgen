@@ -1,7 +1,7 @@
 
 #newitem
 #id goldenlongspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/weapon/sacred/goldenlongspear.png
 #tag "name infantry spearman"
 #theme "sacred"
@@ -10,7 +10,7 @@
 
 #newitem
 #id goldenpike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/weapon/sacred/goldenpike.png
 #tag "name infantry pikeman"
 #theme "sacred"
@@ -19,7 +19,7 @@
 
 #newitem
 #id fierypike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/weapon/sacred/fierypike.png
 #theme "sacred"
 #basechance 0
@@ -28,7 +28,7 @@
 
 #newitem
 #id fierylongspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/weapon/sacred/fierylongspear.png
 #theme "sacred"
 #basechance 0
@@ -36,7 +36,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #theme "sacred"
 #sprite /graphics/weapon/mage/metalstaff.png
 #basechance 0.2
@@ -46,7 +46,7 @@
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #theme "sacred"
 #basechance 0.2
 #tag "guaranteedmagic"

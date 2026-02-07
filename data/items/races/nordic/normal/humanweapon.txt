@@ -2,7 +2,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -10,7 +10,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/standard/broadsword.png
 #tag "name infantry swordsman"
 #enditem
@@ -18,7 +18,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/weapon/standard/greataxe.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -26,20 +26,20 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/weapon/standard/hammer.png
 #enditem
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/weapon/standard/longspear.png
 #tag "name infantry spearman"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/weapon/standard/mace.png
 #theme "primitive"
 #tag "name infantry maceman"
@@ -47,26 +47,26 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/weapon/standard/maul.png
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #enditem
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/standard/spear.png
 #tag "name infantry spearman"
 #enditem
 
 #newitem
 #id spetum
-#gameid 639
+#dominionsId 639
 #sprite /graphics/weapon/standard/spetum.png
 #theme "iron"
 #theme "primitive"
@@ -74,7 +74,7 @@
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #sprite /graphics/weapon/standard/trident.png
 #tag "prefix trident"
 #basechance 0.25
@@ -82,7 +82,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/weapon/standard/trident.png
 #tag "prefix trident"
 #basechance 0.25

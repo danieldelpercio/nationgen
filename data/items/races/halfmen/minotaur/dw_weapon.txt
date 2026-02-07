@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/weapon/axe.png
 #offsetx 4
 #offsety -5
@@ -10,7 +10,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/weapon/mace.png
 #offsetx 4
 #offsety -5
@@ -21,7 +21,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/avvim/weapon/morningstar.png
 #offsetx 3
 #offsety -7
@@ -31,7 +31,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/weapon/broadsword.png
 #offsetx 3
 #offsety -7
@@ -41,7 +41,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/weapon/falchion.png
 #offsetx 3
 #offsety -7
@@ -51,7 +51,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/highmen/weapons/axe_bronze.png
 #offsetx 6
 #offsety -3
@@ -71,7 +71,7 @@
 
 #newitem
 #id sword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/highmen/weapons/shortsword_bronze.png
 #offsetx 6
 #offsety -4

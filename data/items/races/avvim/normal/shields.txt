@@ -4,21 +4,21 @@
 
 #newitem
 #id iron_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler2.png
 #armor
 #enditem
 
 #newitem
 #id wood_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler1.png
 #armor
 #enditem
 
 #newitem
 #id painted_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler1.png
 #recolormask /graphics/avvim/offhand/buckler1_recolormask.png
 #armor
@@ -29,14 +29,14 @@
 
 #newitem
 #id shield_tan
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #armor
 #enditem
 
 #newitem
 #id shield_light
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #recolormask /graphics/avvim/offhand/shield1_recolormask.png
 #armor
@@ -44,7 +44,7 @@
 
 #newitem
 #id shield_dark_iron
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield2.png
 #tag "eliteversion shield_dark_ornate"
 #armor
@@ -52,7 +52,7 @@
 
 #newitem
 #id shield_dark_iron_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield2.png
 #recolormask /graphics/avvim/offhand/shield2_recolormask.png
 #tag "eliteversion shield_dark_ornate_painted"
@@ -61,7 +61,7 @@
 
 #newitem
 #id shield_dark_ornate
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield2_elite.png
 #tag "eliteversion shield_bejeweled"
 #theme "elite"
@@ -70,7 +70,7 @@
 
 #newitem
 #id shield_dark_ornate_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield2_elite.png
 #recolormask /graphics/avvim/offhand/shield2_elite_recolormask.png
 #tag "eliteversion shield_bejeweled_painted"
@@ -80,7 +80,7 @@
 
 #newitem
 #id shield_dark_gold
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield3.png
 #tag "eliteversion shield_bejeweled"
 #armor
@@ -88,7 +88,7 @@
 
 #newitem
 #id shield_dark_gold_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield3.png
 #recolormask /graphics/avvim/offhand/shield3_recolormask.png
 #tag "eliteversion shield_bejeweled_painted"
@@ -97,7 +97,7 @@
 
 #newitem
 #id shield_bejeweled
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield3_elite.png
 #tag "eliteversion shield_bejeweled_painted"
 #theme "elite"
@@ -106,7 +106,7 @@
 
 #newitem
 #id shield_bejeweled_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield3_elite.png
 #recolormask /graphics/avvim/offhand/shield3_elite_recolormask2.png
 #tag "eliteversion shield_bejeweled_painted"

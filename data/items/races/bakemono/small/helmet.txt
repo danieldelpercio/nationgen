@@ -10,7 +10,7 @@
 
 #newitem
 #id jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/bakemono/small/helmet/jingasa.png
 #recolormask /graphics/bakemono/small/helmet/jingasa_recolormask.png
 #theme advanced
@@ -22,7 +22,7 @@
 
 #newitem
 #id kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/bakemono/small/helmet/kabuto.png
 #eliteversion kabuto
 #eliteversion kabuto_elite
@@ -34,7 +34,7 @@
 
 #newitem
 #id kabuto_elite
-#gameid 132
+#dominionsId 132
 #sprite /graphics/bakemono/small/helmet/kabuto_elite1.png
 #eliteversion kabuto_elite
 #eliteversion kabuto_elitest
@@ -47,7 +47,7 @@
 
 #newitem
 #id kabuto_elitest
-#gameid 132
+#dominionsId 132
 #sprite /graphics/bakemono/small/helmet/kabuto_elite2.png
 #eliteversion kabuto_elitest
 #theme advanced

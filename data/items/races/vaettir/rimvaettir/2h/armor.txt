@@ -2,7 +2,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/vaettir/armor/2h/rimvaettir/furs.png
 #armor
 #basechance 0.7
@@ -18,7 +18,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/vaettir/armor/2h/rimvaettir/leather_cuirass.png
 #armor
 #basechance 0.25
@@ -27,7 +27,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/vaettir/armor/2h/rimvaettir/leather_hauberk.png
 #armor
 #basechance 0.75
@@ -37,7 +37,7 @@
 
 #newitem -- full leather
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #basechance 1
 #sprite /graphics/vaettir/armor/2h/rimvaettir/leather_hauberk.png
 #needs legs leather_full
@@ -50,7 +50,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/vaettir/armor/2h/rimvaettir/ring_cuirass.png
 #armor
 #basechance 0.25
@@ -59,7 +59,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/vaettir/armor/2h/rimvaettir/ring_hauberk.png
 #armor
 #basechance 0.75
@@ -68,7 +68,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/vaettir/armor/2h/rimvaettir/ring_full.png
 #armor
 #needs legs leather_full
@@ -81,7 +81,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/vaettir/armor/2h/rimvaettir/scale_cuirass.png
 #armor
 #basechance 0.25
@@ -91,7 +91,7 @@
 
 #newitem
 #id "scale hauberk long"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/vaettir/armor/2h/rimvaettir/scale_hauberk.png
 #armor
 #basechance 0.25
@@ -101,7 +101,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/vaettir/armor/2h/rimvaettir/scale_full.png
 #armor
 #basechance 0.25
@@ -118,7 +118,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/vaettir/armor/2h/rimvaettir/chain_cuirass.png
 #armor
 #needs legs leather_full
@@ -130,7 +130,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #basechance 0.125
 #sprite /graphics/vaettir/armor/2h/rimvaettir/chain_hauberk.png
 #armor
@@ -143,7 +143,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/vaettir/armor/2h/rimvaettir/chain_full.png
 #armor
 #basechance 0.125

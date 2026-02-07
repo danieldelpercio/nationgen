@@ -2,7 +2,7 @@
 
 #newitem
 #id shield1
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield1.png
 #offsetx 7
 #offsety -3
@@ -13,7 +13,7 @@
 
 #newitem
 #id shield2
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield2.png
 #offsetx 7
 #offsety -3
@@ -24,7 +24,7 @@
 
 #newitem
 #id shield3
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield3.png
 #offsetx 7
 #offsety -3
@@ -35,7 +35,7 @@
 
 #newitem
 #id shield4
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield4.png
 #offsetx 7
 #offsety -3
@@ -46,7 +46,7 @@
 
 #newitem
 #id shield6
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #offsetx 7
@@ -58,7 +58,7 @@
 
 #newitem
 #id iron_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler2.png
 #offsetx 7
 #offsety 5
@@ -69,7 +69,7 @@
 
 #newitem
 #id wood_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler1.png
 #offsetx 7
 #offsety 5
@@ -79,7 +79,7 @@
 
 #newitem
 #id painted_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler1.png
 #recolormask /graphics/avvim/offhand/buckler1_recolormask.png
 #offsetx 7
@@ -93,7 +93,7 @@
 
 #newitem
 #id shield_tan
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #offsetx 7
 #offsety 5
@@ -103,7 +103,7 @@
 
 #newitem
 #id shield_light
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #recolormask /graphics/avvim/offhand/shield1_recolormask.png
 #offsetx 7
@@ -114,7 +114,7 @@
 
 #newitem
 #id shield_dark_iron
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield2.png
 #offsetx 7
 #offsety 5
@@ -124,7 +124,7 @@
 
 #newitem
 #id shield_dark_iron_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield2.png
 #recolormask /graphics/avvim/offhand/shield2_recolormask.png
 #offsetx 7
@@ -135,7 +135,7 @@
 
 #newitem
 #id tower3
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/tower3.png
 #recolormask /graphics/offhand/standard/tower3_recolormask.png
 #offsetx 7
@@ -148,7 +148,7 @@
 
 #newitem
 #id tower2
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/tower2.png
 #offsetx 7
 #offsety -3

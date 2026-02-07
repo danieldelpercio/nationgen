@@ -1,6 +1,6 @@
 #newitem
 #id blowpipe
-#gameid 34
+#dominionsId 34
 #sprite /graphics/ophidians/weapon/blowpipe.png
 #tag "name ranger"
 #define "#gcost +5"

@@ -1,32 +1,32 @@
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #needs basesprite "starchild mindflayer basesprite"
 #enditem
 
 #newitem
 #id strangle
-#gameid 116
+#dominionsId 116
 #needs basesprite "starchild mindflayer basesprite"
 #enditem
 
 #newitem
 #id lifedrain
-#gameid 384
+#dominionsId 384
 #needs basesprite "starchild mindflayer basesprite"
 #notepic
 #enditem
 
 #newitem
 #id paralyze
-#gameid 282
+#dominionsId 282
 #needs basesprite "starchild mindflayer basesprite"
 #notepic
 #enditem
 
 #newitem
 #id sleeptouch
-#gameid 387
+#dominionsId 387
 #needs basesprite "starchild mindflayer basesprite"
 #notepic
 #enditem

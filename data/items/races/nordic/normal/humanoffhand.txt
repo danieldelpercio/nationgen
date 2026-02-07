@@ -2,7 +2,7 @@
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/offhand/standard/axe.png
 #tag "name berserker"
 #theme "primitive"
@@ -10,19 +10,19 @@
 
 #newitem
 #id offhandbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/offhand/standard/broadsword.png
 #enditem
 
 #newitem
 #id offhandhammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/offhand/standard/hammer.png
 #enditem
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/offhand/standard/mace.png
 #tag "name berserker"
 #theme "primitive"
@@ -31,7 +31,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/offhand/standard/shortsword.png
 #enditem
 
@@ -39,7 +39,7 @@
 
 #newitem
 #id offhanddagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/offhand/standard/dagger.png
 #enditem
 

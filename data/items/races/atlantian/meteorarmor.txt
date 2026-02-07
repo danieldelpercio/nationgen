@@ -1,6 +1,6 @@
 #newitem
 #id "meteoritearmor1"
-#gameid 53
+#dominionsId 53
 #sprite /graphics/atlantian/armor/meteoritearmor.png
 #basechance 10
 #armor

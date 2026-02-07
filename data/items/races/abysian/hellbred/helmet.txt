@@ -9,7 +9,7 @@
 
 #newitem
 #id abysian_bascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/abysian/helmet/bascinet_warlord.png
 #tag "eliteversion abysian_bascinet_elite1"
 #tag "eliteversion abysian_bascinet_elite2"
@@ -21,7 +21,7 @@
 
 #newitem
 #id abysian_bascinet_elite1
-#gameid 118
+#dominionsId 118
 #sprite /graphics/abysian/helmet/bascinet_warlord_elite.png
 #armor
 #theme "elite"
@@ -32,7 +32,7 @@
 
 #newitem
 #id abysian_bascinet_elite2
-#gameid 118
+#dominionsId 118
 #sprite /graphics/abysian/helmet/bascinet_warlord_elite.png
 #recolormask /graphics/abysian/helmet/bascinet_elite_recolormask.png
 #armor
@@ -44,7 +44,7 @@
 
 #newitem
 #id lavaborn_bascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/abysian/helmet/bascinet.png
 #tag "eliteversion lavaborn_bascinet_elite1"
 #tag "eliteversion lavaborn_bascinet_elite2"
@@ -56,7 +56,7 @@
 
 #newitem
 #id lavaborn_bascinet_elite1
-#gameid 118
+#dominionsId 118
 #sprite /graphics/abysian/helmet/bascinet_elite.png
 #armor
 #theme "iron"
@@ -67,7 +67,7 @@
 
 #newitem
 #id lavaborn_bascinet_elite2
-#gameid 118
+#dominionsId 118
 #sprite /graphics/abysian/helmet/bascinet_elite.png
 #recolormask /graphics/abysian/helmet/bascinet_elite_recolormask.png
 #armor
@@ -79,7 +79,7 @@
 
 #newitem
 #id legionary_helmet
-#gameid 126
+#dominionsId 126
 #sprite /graphics/abysian/helmet/legionary.png
 #recolormask /graphics/abysian/helmet/legionary_recolormask.png
 #tag "eliteversion legionary_helmet_elite"
@@ -91,7 +91,7 @@
 
 #newitem
 #id legionary_helmet_elite
-#gameid 126
+#dominionsId 126
 #sprite /graphics/abysian/helmet/legionary_elite.png
 #recolormask /graphics/abysian/helmet/legionary_elite_recolormask.png
 #armor

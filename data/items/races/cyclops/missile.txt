@@ -14,7 +14,7 @@
 
 #newitem
 #id boulder
-#gameid 27
+#dominionsId 27
 #sprite /graphics/cyclops/weapon/boulder.png
 #theme primitive
 #theme stone
@@ -22,7 +22,7 @@
 
 #newitem
 #id discus
-#gameid 723
+#dominionsId 723
 #sprite /graphics/cyclops/weapon/discus.png
 #theme bronze
 #theme advanced

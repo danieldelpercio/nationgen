@@ -29,7 +29,7 @@
 
 #newitem
 #id "tail_scorpion"
-#gameid 355
+#dominionsId 355
 #sprite /graphics/foulspawn/medium/extras/scorpion.png
 #tail
 #command "#gcost +4"
@@ -38,7 +38,7 @@
 
 #newitem
 #id "tail_wyvern"
-#gameid 203
+#dominionsId 203
 #sprite /graphics/foulspawn/medium/extras/wyvern.png
 #tail
 #command "#gcost +6"
@@ -46,7 +46,7 @@
 
 #newitem
 #id "tail_draconian"
-#gameid 589
+#dominionsId 589
 #sprite /graphics/foulspawn/medium/extras/draconian.png
 #tail
 #command "#gcost +2"
@@ -58,7 +58,7 @@
 #newitem
 #id bite
 #basechance 0
-#gameid 20
+#dominionsId 20
 #command "#gcost +2"
 #nogen
 #enditem
@@ -68,7 +68,7 @@
 #newitem
 #id firedrake
 #basechance 0
-#gameid 567
+#dominionsId 567
 #command "#gcost +5"
 #nogen
 #enditem
@@ -76,7 +76,7 @@
 #newitem
 #id frostdrake
 #basechance 0
-#gameid 568
+#dominionsId 568
 #command "#gcost +5"
 #nogen
 #enditem
@@ -84,7 +84,7 @@
 #newitem
 #id swampdrake
 #basechance 0
-#gameid 569
+#dominionsId 569
 #command "#gcost +5"
 #nogen
 #enditem

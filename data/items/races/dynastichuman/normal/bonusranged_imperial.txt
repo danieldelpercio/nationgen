@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx 1
 #offsety -2
@@ -10,7 +10,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #offsetx 1
 #offsety -3

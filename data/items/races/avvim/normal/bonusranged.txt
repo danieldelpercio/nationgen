@@ -1,6 +1,6 @@
 #newitem
 #id "javelin"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/avvim/weapon/javelin.png
 #tag "name infantry 'Javelineer'"
 #basechance 2
@@ -8,7 +8,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #tag "name infantry 'Axe Thrower'"
 #basechance 2
@@ -17,7 +17,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #tag "name infantry 'Chakram Thrower'"
 #tag "tierunique"
 #basechance 0.25
@@ -25,7 +25,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.25
 #theme "primitive"
 #tag "maxprot 12"
@@ -35,7 +35,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/avvim/offhand/net.png
 #tag "maxprot 12"
 #tag "tierunique"

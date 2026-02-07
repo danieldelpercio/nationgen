@@ -1,29 +1,29 @@
 #newitem
 #id fist
-#gameid 93
+#dominionsId 93
 #enditem
 
 #newitem
 #id kick
-#gameid 397
+#dominionsId 397
 #enditem
 
 #newitem
 #id strangle
-#gameid 116
+#dominionsId 116
 #enditem
 
 #newitem
 #id crush
-#gameid 90
+#dominionsId 90
 #enditem
 
 #newitem
 #id headbutt
-#gameid 300
+#dominionsId 300
 #enditem
 
 #newitem
 #id bite
-#gameid 20
+#dominionsId 20
 #enditem

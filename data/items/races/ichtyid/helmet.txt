@@ -1,6 +1,6 @@
 #newitem
 #id "leathercap"
-#gameid 120
+#dominionsId 120
 #basechance 4
 #sprite /graphics/ichtyid/helmet/leather_cap.png
 #armor
@@ -11,7 +11,7 @@
 
 #newitem
 #id "sharkskincap"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/ichtyid/helmet/sharkskin_cap.png
 #tag "eliteversion sharkskincap_fin"
 #tag "eliteversion sharkskincap_spiny"
@@ -25,7 +25,7 @@
 
 #newitem
 #id "sharkskincap_fin"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/ichtyid/helmet/sharkskin_cap_crested.png
 #recolormask /graphics/ichtyid/helmet/fin_crest_recolormask.png
 #armor
@@ -38,7 +38,7 @@
 
 #newitem
 #id "sharkskincap_spiny"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/ichtyid/helmet/sharkskin_cap_spiny.png
 #recolormask /graphics/ichtyid/helmet/spiny_crest_recolormask.png
 #armor
@@ -51,7 +51,7 @@
 
 #newitem
 #id "sharkskincap_boney"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/ichtyid/helmet/sharkskin_cap_boney.png
 #recolormask /graphics/ichtyid/helmet/boney_crest_recolormask.png
 #armor
@@ -64,7 +64,7 @@
 
 #newitem
 #id "bonecap"
-#gameid 150
+#dominionsId 150
 #sprite /graphics/ichtyid/helmet/shell_helmet.png
 #armor
 #theme "bone"
@@ -74,7 +74,7 @@
 
 #newitem
 #id "shellcap"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet.png
 #tag "eliteversion sharkskincap_fin"
 #tag "eliteversion sharkskincap_spiny"
@@ -86,7 +86,7 @@
 
 #newitem
 #id "shellcap_fin"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet_crested.png
 #recolormask /graphics/ichtyid/helmet/fin_crest_recolormask.png
 #armor
@@ -97,7 +97,7 @@
 
 #newitem
 #id "shellcap_spiny"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet_spiny.png
 #recolormask /graphics/ichtyid/helmet/spiny_crest_recolormask.png
 #armor
@@ -108,7 +108,7 @@
 
 #newitem
 #id "shellcap_boney"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet_boney.png
 #recolormask /graphics/ichtyid/helmet/boney_crest_recolormask.png
 #armor
@@ -119,7 +119,7 @@
 
 #newitem
 #id "shellcap_feathers"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet_feathers.png
 #recolormask /graphics/ichtyid/helmet/feathers_recolormask.png
 #armor
@@ -132,7 +132,7 @@
 
 #newitem
 #id "coralcap"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ichtyid/helmet/coral_cap.png
 #tag "eliteversion coralcap_fin"
 #tag "eliteversion coralcap_spiny"
@@ -146,7 +146,7 @@
 
 #newitem
 #id "coralcap_fin"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ichtyid/helmet/coral_cap_crested.png
 #recolormask /graphics/ichtyid/helmet/fin_crest_recolormask.png
 #armor
@@ -159,7 +159,7 @@
 
 #newitem
 #id "coralcap_spiny"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ichtyid/helmet/coral_cap_spiny.png
 #recolormask /graphics/ichtyid/helmet/spiny_crest_recolormask.png
 #armor
@@ -172,7 +172,7 @@
 
 #newitem
 #id "coralcap_boney"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ichtyid/helmet/coral_cap_boney.png
 #recolormask /graphics/ichtyid/helmet/boney_crest_recolormask.png
 #armor
@@ -185,7 +185,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ichtyid/helmet/bronze_cap.png
 #tag "eliteversion bronzecap_fin"
 #tag "eliteversion bronzecap_spiny"
@@ -196,7 +196,7 @@
 
 #newitem
 #id bronzecap_fin
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ichtyid/helmet/bronze_cap_crested.png
 #recolormask /graphics/ichtyid/helmet/fin_crest_recolormask.png
 #armor
@@ -207,7 +207,7 @@
 
 #newitem
 #id bronzecap_spiny
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ichtyid/helmet/bronze_cap_spiny.png
 #recolormask /graphics/ichtyid/helmet/spiny_crest_recolormask.png
 #armor
@@ -218,7 +218,7 @@
 
 #newitem
 #id bronzecap_feathers
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ichtyid/helmet/bronze_cap_feathers.png
 #recolormask /graphics/ichtyid/helmet/feathers_recolormask.png
 #armor
@@ -279,7 +279,7 @@
 
 #newitem
 #id fullhelm
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ichtyid/helmet/bronze_fullhelm.png
 #tag "eliteversion fullhelm_fin"
 #tag "eliteversion fullhelm_crest"
@@ -293,7 +293,7 @@
 
 #newitem
 #id fullhelm_fin
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ichtyid/helmet/bronze_fullhelm_crested.png
 #recolormask /graphics/ichtyid/helmet/fin_crest_recolormask.png
 #armor
@@ -306,7 +306,7 @@
 
 #newitem
 #id fullhelm_crest
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ichtyid/helmet/bronze_fullhelm_crested.png
 #armor
 #tag "minprot 12"
@@ -318,7 +318,7 @@
 
 #newitem
 #id fullhelm_spiny
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ichtyid/helmet/bronze_fullhelm_spiny.png
 #recolormask /graphics/ichtyid/helmet/spiny_crest_recolormask.png
 #armor

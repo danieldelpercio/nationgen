@@ -1,6 +1,6 @@
 #newitem
 #id "javelin_bronze"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/firbolg/weapon/javelin_bronze.png
 #basechance 2
 #theme "bronze"
@@ -8,7 +8,7 @@
 
 #newitem
 #id "javelin_iron"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/firbolg/weapon/javelin_iron.png
 #basechance 2
 #theme "iron"
@@ -24,7 +24,7 @@
 
 #newitem 
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #basechance 2
 #chanceinc unittag irregular 4
 #theme "iron"
@@ -32,7 +32,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.25
 #theme "primitive"
 #tag "maxprot 9"
@@ -42,7 +42,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/firbolg/weapon/javelin_iron.png
 #tag "maxprot 9"
 #tag "tierunique"

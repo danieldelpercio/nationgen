@@ -1,6 +1,6 @@
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "primitive"
 #theme "iron"
 #eliteversion axe
@@ -14,7 +14,7 @@
 
 #newitem
 #id bronze_hatchet
-#gameid 646
+#dominionsId 646
 #theme "primitive"
 #theme "bronze"
 #eliteversion bronze_axe
@@ -25,7 +25,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #eliteversion shortsword
 #theme "iron"
 #theme "austral"
@@ -37,7 +37,7 @@
 
 #newitem
 #id bronze_dagger
-#gameid 674
+#dominionsId 674
 #eliteversion bronze_shortsword
 #theme "bronze"
 #theme "central"
@@ -46,7 +46,7 @@
 
 #newitem
 #id kryss
-#gameid 256
+#dominionsId 256
 #eliteversion kopesh
 #theme "iron"
 #theme "austral"
@@ -56,7 +56,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #eliteversion broadsword
 #theme "iron"
 #theme "austral"
@@ -68,7 +68,7 @@
 
 #newitem
 #id bronze_shortsword
-#gameid 645
+#dominionsId 645
 #eliteversion bronze_broadsword
 #theme "bronze"
 #theme "central"
@@ -77,7 +77,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #eliteversion falchion
 #theme "bronze"
 #theme "central"
@@ -94,7 +94,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "wood"
 #theme "austral"
@@ -108,7 +108,7 @@
 
 #newitem
 #id spikedclub
-#gameid 265
+#dominionsId 265
 #theme "primitive"
 #theme "wood"
 #theme "austral"
@@ -123,7 +123,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "primitive"
 #theme "austral"
 #theme "boreal"
@@ -141,7 +141,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme "primitive"
 #theme "iron"
 #theme "elite"
@@ -154,7 +154,7 @@
 
 #newitem
 #id bronze_axe
-#gameid 675
+#dominionsId 675
 #theme "primitive"
 #theme "bronze"
 #theme "elite"
@@ -165,7 +165,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #theme "elite"
 #theme "iron"
 #theme "austral"
@@ -182,7 +182,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #theme "elite"
 #theme "iron"
 #theme "austral"
@@ -192,7 +192,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #theme "elite"
 #theme "iron"
 #theme "austral"
@@ -204,7 +204,7 @@
 
 #newitem
 #id bronze_hammer
-#gameid 13
+#dominionsId 13
 #theme "elite"
 #theme "austral"
 #theme "boreal"
@@ -216,7 +216,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #theme "elite"
 #theme "iron"
 #theme "austral"

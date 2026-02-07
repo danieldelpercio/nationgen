@@ -2,24 +2,24 @@
 
 #newitem
 #id claw
-#gameid 29
+#dominionsId 29
 #chanceinc slottag not basesprite has_claws *0
 #enditem
 
 #newitem
 #id claw_poisoned
-#gameid 250
+#dominionsId 250
 #chanceinc slottag not basesprite has_poison_claws *0
 #enditem
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #chanceinc slottag not basesprite has_fists *0
 #enditem
 
 #newitem
 #id bite
-#gameid 20
+#dominionsId 20
 #chanceinc slottag not basesprite bitey *0
 #enditem

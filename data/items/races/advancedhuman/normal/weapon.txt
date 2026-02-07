@@ -2,55 +2,55 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/advancedhuman/weapons/shortsword.png
 #tag "eliteversion shortsword_elite"
 #enditem
 
 #newitem
 #id shortsword_elite
-#gameid 6
+#dominionsId 6
 #sprite /graphics/advancedhuman/weapons/shortsword_elite.png
 #theme "elite"
 #enditem
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/weapons/broadsword.png
 #tag "eliteversion broadsword_elite"
 #enditem
 
 #newitem
 #id broadsword_elite
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/weapons/broadsword_elite.png
 #theme "elite"
 #enditem
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/weapons/falchion.png
 #tag "eliteversion falchion_elite"
 #enditem
 
 #newitem
 #id falchion_elite
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/weapons/falchion_elite.png
 #theme "elite"
 #enditem
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/advancedhuman/weapons/morningstar.png
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/advancedhuman/weapons/mace.png
 #theme "primitive"
 #maxprot 15
@@ -59,7 +59,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/advancedhuman/weapons/hammer.png
 #chanceinc unittag irregular 8
 #enditem
@@ -68,14 +68,14 @@
 
 #newitem
 #id greatsword
-#gameid 11
+#dominionsId 11
 #sprite /graphics/advancedhuman/weapons/greatsword.png
 #needs hands hands_2h
 #enditem
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/advancedhuman/weapons/maul.png
 #theme "primitive"
 #needs hands hands_2h
@@ -83,14 +83,14 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/advancedhuman/weapons/flail.png
 #needs hands hands_2h
 #enditem
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/advancedhuman/weapons/greataxe.png
 #theme "primitive"
 #chanceinc unittag irregular 8
@@ -101,7 +101,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/advancedhuman/weapons/spear.png
 #renderprio 6
 #renderslot "extra1"
@@ -110,7 +110,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/advancedhuman/weapons/longspear.png
 #renderprio 6
 #renderslot "extra1"
@@ -119,7 +119,7 @@
 
 #newitem
 #id pike
-#gameid 2
+#dominionsId 2
 #sprite /graphics/advancedhuman/weapons/pike.png
 #renderprio 6
 #renderslot "extra1"
@@ -128,7 +128,7 @@
 
 #newitem
 #id halberd
-#gameid 5
+#dominionsId 5
 #sprite /graphics/advancedhuman/weapons/halberd.png
 #renderprio 6
 #renderslot "extra1"
@@ -164,7 +164,7 @@
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #sprite /graphics/advancedhuman/weapons/trident.png
 #renderprio 6
 #renderslot "extra1"
@@ -174,7 +174,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/advancedhuman/weapons/trident.png
 #renderprio 6
 #renderslot "extra1"

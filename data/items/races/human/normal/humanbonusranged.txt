@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #basechance 2
 #theme "occidental"
@@ -13,7 +13,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #basechance 2
 #sprite /graphics/weapon/standard/javelin2.png
 #theme "occidental"
@@ -26,7 +26,7 @@
 
 #newitem
 #id "bonus crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/weapon/standard/bonuscrossbow.png
 #basechance 0.5
 #theme "advanced"
@@ -39,7 +39,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #basechance 2
 #chanceinc unittag irregular 4
 #theme "primitive"
@@ -64,7 +64,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #theme "wood"
@@ -79,7 +79,7 @@
 
 #newitem
 #id "poison shortbow"
-#gameid 594
+#dominionsId 594
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #theme "wood"
@@ -93,7 +93,7 @@
 
 #newitem
 #id "bonus sling"
-#gameid 22
+#dominionsId 22
 #basechance 0.5
 #theme "leather"
 #theme "occidental"
@@ -104,7 +104,7 @@
 
 #newitem
 #id "poison sling"
-#gameid 167
+#dominionsId 167
 #basechance 0.5
 #theme "leather"
 #theme "poison"
@@ -115,7 +115,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #renderprio 7
 #renderslot "weapon"
@@ -129,7 +129,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.25
 #tag "notepic"
 #tag "maxprot 14"
@@ -141,7 +141,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "maxprot 14"
 #tag "tierunique"
@@ -154,7 +154,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "maxprot 12"
 #tag "tierunique"
 #basechance 0.5
@@ -168,7 +168,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/weapon/standard/net.png
 #tag "maxprot 12"
 #tag "tierunique"
@@ -186,7 +186,7 @@
 
 #newitem
 #id "discus"
-#gameid 723
+#dominionsId 723
 #tag "maxprot 9"
 #basechance 0.25
 #theme "bronze"

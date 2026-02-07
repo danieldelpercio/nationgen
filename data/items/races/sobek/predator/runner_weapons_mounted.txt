@@ -1,6 +1,6 @@
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/sobek/weapon/predator_spear.png
 #offsetx 25
 #offsety 4
@@ -10,7 +10,7 @@
 
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/sobek/weapon/predator_spear.png
 #offsetx 25
 #offsety 4

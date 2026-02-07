@@ -13,7 +13,7 @@
 #newitem
 #id "leather cuirass dyed"
 #basechance 2
-#gameid 5
+#dominionsId 5
 #sprite /graphics/muuch/armor/small/leather_cuirass.png
 #recolormask self
 #armor
@@ -23,7 +23,7 @@
 #newitem
 #id "leather hauberk dyed"
 #basechance 2
-#gameid 10
+#dominionsId 10
 #sprite /graphics/muuch/armor/small/leather_hauberk.png
 #recolormask self
 #armor
@@ -42,7 +42,7 @@
 #newitem
 #basechance 0.25
 #id "obsidian cuirass"
-#gameid 206
+#dominionsId 206
 #sprite /graphics/muuch/armor/small/obsidian_cuirass.png
 #armor
 #theme "obsidian"

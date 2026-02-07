@@ -19,6 +19,8 @@ public class Item extends Drawable {
   private Integer dominionsId = -1;
   protected Boolean pendingDominionsId = false;
 
+  private CustomItem equippedItem;
+
   public Filter filter = null;
   private List<ItemType> itemTypes = new ArrayList<>();
   private String bardingId;
@@ -212,6 +214,10 @@ public class Item extends Drawable {
     return this.itemTypes;
   }
 
+  public Boolean isPendingDominionsIdAssignemnt() {
+    return this.pendingDominionsId;
+  }
+
   /**
    * A "Dominions id" is an id above 0 to be written into an #armor or #weapon
    * modding command. For example, A "basesprite" item does not have a
@@ -229,7 +235,7 @@ public class Item extends Drawable {
   }
 
   public Boolean hasDominionsId(String id) {
-    if (Generic.isNumeric(id)) {
+    if (!Generic.isNumeric(id)) {
       throw new IllegalArgumentException("Expected id to be a numeric String! Instead got '" + id + "\"");
     }
 
@@ -261,10 +267,6 @@ public class Item extends Drawable {
       throw new IllegalArgumentException("Items " + this.name + " and " + item.name + " share the same name, but their dominionsId is different!");
     }
 
-    if (hasSameDominionsId == true) {
-      throw new IllegalArgumentException("Potential collision of Dominions ids! Items " + this.name + " and " + item.name + " have different names, but share the same dominionsId!");
-    }
-
     return false;
   }
 
@@ -279,7 +281,7 @@ public class Item extends Drawable {
    * @param item - an Item instance
    * @return a copy of the item with a dominions id, or the same item if it already had one
    */
-  static public Item resolveId(Item item) {
+  static public Item assignDominionsId(Item item) {
     if (item.isDominionsIdResolved()) {
       return item;
     }
@@ -288,6 +290,7 @@ public class Item extends Drawable {
     CustomItemsHandler customItemsHandler = item.nationGen.GetCustomItemsHandler();
     Integer dominionsId = customItemsHandler.resolveDominionsId(item.getName());
     copy.dominionsId = dominionsId;
+    copy.pendingDominionsId = false;
     return copy;
   }
 

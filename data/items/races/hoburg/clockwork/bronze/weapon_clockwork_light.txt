@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 646
+#dominionsId 646
 #sprite /graphics/weapon/bronze/hatchet.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -10,7 +10,7 @@
 
 #newitem
 #id greataxe
-#gameid 698
+#dominionsId 698
 #sprite /graphics/hoburg/weapon/greataxe_bronze.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -28,7 +28,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/weapon/standard/mace.png
 #theme "primitive"
 #tag "name infantry maceman"
@@ -38,7 +38,7 @@
 
 #newitem
 #id shortsword
-#gameid 645
+#dominionsId 645
 #sprite /graphics/weapon/bronze/shortsword.png
 #offsetx 1
 #offsety 6
@@ -46,7 +46,7 @@
 
 #newitem
 #id spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/hoburg/weapon/spear_bronze.png
 #tag "name infantry spearman"
 #offsetx 0
@@ -55,7 +55,7 @@
 
 #newitem
 #id pike
-#gameid 644
+#dominionsId 644
 #sprite /graphics/hoburg/weapon/longspear_bronze.png
 #tag "name infantry pikeman"
 #offsetx 0
@@ -64,7 +64,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/weapon/bronze/kopesh.png
 #tag "name infantry falchioneer"
 #offsetx 1
@@ -73,7 +73,7 @@
 
 #newitem
 #id bladehand
-#gameid 343
+#dominionsId 343
 #tag "name infantry reaper"
 #needs offhand offhandbladehand
 #needs hands bladehands
@@ -83,7 +83,7 @@
 
 #newitem
 #id hammerhand
-#gameid 13
+#dominionsId 13
 #tag "name infantry crusher"
 #needs offhand offhandhammerhand
 #needs hands hammerhands

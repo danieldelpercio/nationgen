@@ -9,7 +9,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/halfmen/minotaur/helmet/cap_leather.png
 #theme "leather"
 #maxprot 14
@@ -18,7 +18,7 @@
 
 #newitem
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #sprite /graphics/halfmen/minotaur/helmet/cap_reinforced.png
 #theme "leather"
 #maxprot 14
@@ -27,7 +27,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/halfmen/minotaur/helmet/cap_bronze.png
 #theme "bronze"
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/halfmen/minotaur/helmet/cap_iron.png
 #theme "advanced"
 #theme "iron"
@@ -56,7 +56,7 @@
 
 #newitem
 #id ironhelm
-#gameid 118
+#dominionsId 118
 #sprite /graphics/halfmen/minotaur/helmet/halfhelm_iron.png
 #theme "advanced"
 #theme "iron"

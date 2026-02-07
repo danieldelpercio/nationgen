@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #theme "occidental"
 #theme "boreal"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #theme "occidental"
 #theme "boreal"
@@ -24,7 +24,7 @@
 
 #newitem
 #id "bonus crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/weapon/standard/bonuscrossbow.png
 #basechance 0.25
 #theme "advanced"
@@ -37,7 +37,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #theme "iron"
 #theme "boreal"
@@ -58,7 +58,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #theme "wood"
@@ -73,7 +73,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "maxprot 14"
 #tag "tierunique"
@@ -85,7 +85,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "maxprot 12"
 #tag "tierunique"
 #basechance 0.5
@@ -98,7 +98,7 @@
 
 #newitem
 #id "discus"
-#gameid 723
+#dominionsId 723
 #tag "maxprot 9"
 #basechance 0.5
 #theme "bronze"

@@ -2,7 +2,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/sobek/weapon/broadsword.png
 #tag "tier 3"
 #tag "tier 2"
@@ -13,7 +13,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/sobek/weapon/falchion.png
 #tag "tier 3"
 #tag "tier 2"
@@ -24,7 +24,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/sobek/weapon/mace.png
 #theme "primitive"
 #tag "tier 2"
@@ -34,7 +34,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/weapon/axe.png
 #offsetx 4
 #offsety -5
@@ -44,7 +44,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/highmen/weapons/axe_bronze.png
 #offsetx 6
 #offsety -3
@@ -54,7 +54,7 @@
 
 #newitem
 #id sword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/highmen/weapons/shortsword_bronze.png
 #offsetx 6
 #offsety -4
@@ -76,7 +76,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/quarterstaff.png
 #tag "tier 2"
 #tag "eliteversion orbstaff1"
@@ -89,7 +89,7 @@
 
 #newitem
 #id serpentstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/serpentstaff.png
 #theme "lizard"
 #theme "nature"
@@ -100,7 +100,7 @@
 
 #newitem
 #id orbstaff1
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/orbstaff.png
 #recolormask /graphics/sobek/weapon/orbstaff_recolormask.png
 #tag "tier 3"
@@ -110,7 +110,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #offsetx 3
 #offsety -6
@@ -121,7 +121,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #offsetx 3
@@ -132,7 +132,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/skullstaff.png
 #theme "primitive"
 #theme "death"
@@ -144,7 +144,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/metalstaff.png
 #tag "tier 2"
 #tag "eliteversion metalstaff_bauble"
@@ -156,7 +156,7 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/metalstaff_bauble.png
 #tag "tier 3"
 #offsetx 4
@@ -167,7 +167,7 @@
 
 #newitem
 #id knobblystaff
-#gameid 252
+#dominionsId 252
 #sprite /graphics/sobek/weapon/knobblystaff.png
 #tag "tier 3"
 #offsetx 4
@@ -179,7 +179,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/quarterstaff.png
 #tag "tier 2"
 #tag "eliteversion orbstaff2"
@@ -192,7 +192,7 @@
 
 #newitem
 #id orbstaff2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/orbstaff.png
 #recolormask /graphics/avvim/weapon/caster/orbstaff_recolormask.png
 #tag "tier 3"
@@ -201,7 +201,7 @@
 
 #newitem
 #id skullstaff1
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/skullstaff1.png
 #theme "primitive"
 #theme "death"
@@ -212,7 +212,7 @@
 
 #newitem
 #id skullstaff2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/skullstaff2.png
 #theme "primitive"
 #theme "death"
@@ -223,7 +223,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_metal.png
 #theme "advanced"
 #theme "earth"
@@ -235,7 +235,7 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_metal_bauble.png
 #theme "advanced"
 #theme "earth"
@@ -245,7 +245,7 @@
 
 #newitem
 #id gnarledstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_gnarled.png
 #offsety 2
 #tag "tier 3"
@@ -255,7 +255,7 @@
 
 #newitem
 #id simple_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #tag "eliteversion glowing_orbstaff"
 #tag "tier 2"
@@ -267,7 +267,7 @@
 
 #newitem
 #id glowing_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #recolormask /graphics/avvim/weapon/caster/staff_orb_plain_recolormask.png
 #tag "tier 3"
@@ -277,7 +277,7 @@
 
 #newitem
 #id crook
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_crook.png
 #tag "tier 1"
 #tag "tier 2"

@@ -3,26 +3,26 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/weapon/standard/predator_flail.png
 #enditem
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/standard/predator_spear.png
 #enditem
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/weapon/standard/predator_spetum.png
 #basechance 0.25
 #enditem
 
 #newitem
 #id spetum
-#gameid 639
+#dominionsId 639
 #sprite /graphics/weapon/standard/predator_trident.png
 #basechance 0.25
 #enditem

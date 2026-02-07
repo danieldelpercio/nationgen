@@ -1,6 +1,6 @@
 #newitem
 #id "leathercap"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ichtyid/helmet/leather_cap.png
 #armor
 #theme "leather"
@@ -9,7 +9,7 @@
 
 #newitem
 #id "sharkskincap"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/ichtyid/helmet/sharkskin_cap.png
 #armor
 #theme "leather"
@@ -18,7 +18,7 @@
 
 #newitem
 #id "bonecap"
-#gameid 150
+#dominionsId 150
 #sprite /graphics/ichtyid/helmet/shell_helmet.png
 #armor
 #theme "bone"
@@ -28,7 +28,7 @@
 
 #newitem
 #id "shellcap"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet.png
 #armor
 #theme "shell"
@@ -36,7 +36,7 @@
 
 #newitem
 #id "coralcap"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ichtyid/helmet/coral_cap.png
 #armor
 #tag "minprot 9"
@@ -62,7 +62,7 @@
 
 #newitem
 #id "shark_hood"
-#gameid 145
+#dominionsId 145
 #basechance 0
 #sprite /graphics/ichtyid/helmet/mask_shark.png
 #armor
@@ -71,7 +71,7 @@
 
 #newitem
 #id "octopus_hood"
-#gameid 145
+#dominionsId 145
 #basechance 0
 #sprite /graphics/ichtyid/helmet/mask_octopus.png
 #theme "enclosed_helm"

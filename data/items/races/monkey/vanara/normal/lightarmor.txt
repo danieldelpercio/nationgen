@@ -26,7 +26,7 @@
 
 #newitem
 #id "ronin armor"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/armor/vanara/ronin.png
 #armor
 #theme "oriental"
@@ -37,7 +37,7 @@
 #newitem
 #basechance 3
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/armor/vanara/furs.png
 #armor
 #theme "austral"
@@ -51,7 +51,7 @@
 #newitem
 #id "imperial leather"
 #basechance 6
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/armor/vanara/leatherhauberk_imperial.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #armor
@@ -62,7 +62,7 @@
 #newitem
 #id "imperial ring"
 #basechance 4
-#gameid 11
+#dominionsId 11
 #sprite /graphics/monkey/armor/vanara/ringhauberk_imperial.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #armor
@@ -74,7 +74,7 @@
 #newitem
 #id "lorica hamata"
 #basechance 2
-#gameid 116
+#dominionsId 116
 #sprite /graphics/monkey/armor/vanara/lorica_hamata.png
 #recolormask /graphics/monkey/armor/vanara/imperial_recolormask.png
 #armor
@@ -88,7 +88,7 @@
 #newitem
 #id "oriental leather cuirass"
 #basechance 6
-#gameid 5
+#dominionsId 5
 #sprite /graphics/monkey/armor/vanara/leathercuirass_oriental.png
 #armor
 #theme "oriental"
@@ -98,7 +98,7 @@
 #newitem
 #id "oriental leather hauberk"
 #basechance 4
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/armor/vanara/leatherhauberk_oriental.png
 #recolormask /graphics/monkey/armor/vanara/hauberk_oriental_recolormask.png
 #armor
@@ -109,7 +109,7 @@
 #newitem
 #id "oriental scale cuirass"
 #basechance 2
-#gameid 7
+#dominionsId 7
 #sprite /graphics/monkey/armor/vanara/leathercuirass_oriental.png
 #recolormask /graphics/monkey/armor/vanara/hauberk_oriental_recolormask.png
 #armor

@@ -1,6 +1,6 @@
 #newitem
 #id "net-s1"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/atlantian/weapon/offhandnet-s.png
 #tag "maxprot 11"
 #basechance 0.35
@@ -10,7 +10,7 @@
 
 #newitem
 #id "net-s1"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/atlantian/weapon/offhandnet-s2.png
 #tag "maxprot 11"
 #basechance 0.35

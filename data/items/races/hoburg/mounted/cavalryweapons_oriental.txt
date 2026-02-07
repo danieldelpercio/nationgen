@@ -1,7 +1,7 @@
 
 #newitem
 #id stone_lance
-#gameid 708
+#dominionsId 708
 #sprite /graphics/hoburg/weapon/spear.png
 #tag "name lancer"
 #offsetx -3
@@ -13,7 +13,7 @@
 
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/hoburg/weapon/spear.png
 #tag "name lancer"
 #offsetx -3
@@ -25,7 +25,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/hoburg/weapon/spear.png
 #theme "wood"
 #lightlance
@@ -41,7 +41,7 @@
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/hoburg/weapon/wakizasi.png
 #theme "iron"
 #light
@@ -57,7 +57,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/standard/falchion.png
 #offsetx 3
 #offsety 12

@@ -14,7 +14,7 @@
 
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/firbolg/weapon/sling.png
 #basechance 2
 #theme "leather"
@@ -23,7 +23,7 @@
 
 #newitem
 #id "bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/firbolg/weapon/bow.png
 #basechance 0.5
 #theme "wood"
@@ -33,7 +33,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #sprite /graphics/firbolg/weapon/blowpipe.png
 #basechance 0.5
 #tag "tierunique"

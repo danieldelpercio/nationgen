@@ -12,7 +12,7 @@
 
 #new
 #id "turtle shell shield"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/atlantian/shield/turtleshellshield.png
 #offsetx -6
 #armor
@@ -21,7 +21,7 @@
 
 #new
 #id "turtle shell shield2"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/ichtyid/shield/shell_shield.png
 #armor
 #theme "shell"
@@ -29,7 +29,7 @@
 
 #new
 #id "turtle shell shield3"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/ichtyid/shield/shell_shield2.png
 #armor
 #theme "shell"
@@ -37,7 +37,7 @@
 
 #new
 #id "turtle shell shield4"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/ichtyid/shield/shell_shield3.png
 #armor
 #theme "shell"
@@ -45,7 +45,7 @@
 
 #new
 #id "turtle shell shield5"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/ichtyid/shield/shell_shield4.png
 #armor
 #theme "shell"
@@ -65,7 +65,7 @@
 
 #newitem
 #id bronze_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #offsetx -7
 #offsety -2
@@ -78,7 +78,7 @@
 
 #newitem
 #id bronze_shellshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/ichtyid/shield/bronze_shell_shield.png
 #armor
 #basechance 0.75
@@ -89,7 +89,7 @@
 
 #newitem
 #id bronze_hoplon
-#gameid 209
+#dominionsId 209
 #sprite /graphics/ichtyid/shield/bronze_hoplon.png
 #armor
 #basechance 0.5
@@ -100,7 +100,7 @@
 
 #newitem
 #id bronze_colored_shield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/shield7.png
 #recolormask /graphics/offhand/standard/shield7_recolormask.png
 #offsetx -7

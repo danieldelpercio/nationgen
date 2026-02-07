@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Javelineer'"
 #theme "austral"
@@ -14,7 +14,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #tag "name infantry 'Javelineer'"
 #theme "wood"
@@ -45,7 +45,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #theme "iron"
 #tag "name infantry 'Axe Thrower'"
@@ -57,7 +57,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #theme "wood"
@@ -71,7 +71,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #renderprio 7
 #renderslot "weapon"
@@ -89,7 +89,7 @@
 
 #newitem
 #id "obsidian dart"
-#gameid 619
+#dominionsId 619
 #tag "maxprot 10"
 #tag "tierunique"
 #basechance 0.5
@@ -99,7 +99,7 @@
 
 #newitem
 #id "poison dart"
-#gameid 620
+#dominionsId 620
 #tag "maxprot 10"
 #tag "tierunique"
 #basechance 0.005
@@ -112,7 +112,7 @@
 
 #newitem
 #id "shuriken"
-#gameid 382
+#dominionsId 382
 #tag "maxprot 10"
 #tag "tierunique"
 #basechance 0.005
@@ -125,7 +125,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.5
 #theme "primitive"
 #theme "wood"
@@ -143,7 +143,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Harponeer'"
 #tag "maxprot 12"
@@ -158,7 +158,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "name infantry 'Poisoner'"
 #tag "maxprot 10"
 #tag "tierunique"
@@ -174,7 +174,7 @@
 
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #theme "leather"
 #theme "primitive"
 #theme "boreal"
@@ -186,7 +186,7 @@
 
 #newitem
 #id "discus"
-#gameid 723
+#dominionsId 723
 #theme "bronze"
 #theme "central"
 #theme "civilized"

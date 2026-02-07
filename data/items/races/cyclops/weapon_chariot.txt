@@ -1,7 +1,7 @@
 ---- Primitive stuff
 #newitem
 #id spear_stone
-#gameid 373
+#dominionsId 373
 #sprite /graphics/cyclops/weapon/spear_iron.png
 #theme stone
 #theme wood
@@ -30,7 +30,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/cyclops/weapon/spear_iron.png
 #theme iron
 #theme wood
@@ -39,7 +39,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/cyclops/weapon/spear_bronze.png
 #theme bronze
 #theme wood
@@ -48,7 +48,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/cyclops/weapon/spear_long_iron.png
 #theme iron
 #theme wood
@@ -57,7 +57,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/cyclops/weapon/spear_long_bronze.png
 #theme bronze
 #theme wood
@@ -68,7 +68,7 @@
 
 #newitem
 #id spear_cyclope
-#gameid 733
+#dominionsId 733
 #sprite /graphics/cyclops/weapon/spear_iron.png
 #theme iron
 #theme advanced
@@ -79,7 +79,7 @@
 
 #newitem
 #id spear_gleaming
-#gameid 473
+#dominionsId 473
 #sprite /graphics/cyclops/weapon/spear_bronze.png
 #theme bronze
 #theme advanced

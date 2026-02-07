@@ -2,7 +2,7 @@
 
 #newitem
 #id "gold scale cuirass"
-#gameid 49
+#dominionsId 49
 #sprite /graphics/asmegir/aesir/aes/armor/scale_cuirass_gold.png
 #eliteversion "gold scale cuirass"
 #eliteversion "gold scale hauberk"
@@ -22,7 +22,7 @@
 
 #newitem 
 #id "gold full scale"
-#gameid 196
+#dominionsId 196
 #sprite /graphics/asmegir/aesir/aes/armor/scale_full_gold.png
 #eliteversion "gold full scale"
 #armor

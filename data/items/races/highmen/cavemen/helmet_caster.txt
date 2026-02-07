@@ -101,7 +101,7 @@
 
 #newitem
 #id antleredcap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/antlercap.png
 #offsety -12
 #armor
@@ -111,7 +111,7 @@
 
 #newitem
 #id feathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/feathercap.png
 #recolormask /graphics/helmet/caster/feathercap_recolormask.png
 #offsetx -1

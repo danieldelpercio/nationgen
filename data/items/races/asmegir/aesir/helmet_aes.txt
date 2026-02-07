@@ -2,7 +2,7 @@
 
 #newitem
 #id cap_iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/asmegir/aesir/aes/helmet/cap_iron.png
 #eliteversion cap_iron
 #eliteversion helm_iron
@@ -25,7 +25,7 @@
 
 #newitem
 #id helm_iron
-#gameid 118
+#dominionsId 118
 #sprite /graphics/asmegir/aesir/aes/helmet/helmet_iron.png
 #eliteversion helm_iron
 #eliteversion helm_gold

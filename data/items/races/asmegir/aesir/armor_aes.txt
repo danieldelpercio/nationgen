@@ -2,7 +2,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/asmegir/aesir/aes/armor/scale_cuirass_iron.png
 #eliteversion "gold scale cuirass"
 #eliteversion "iron scale cuirass"
@@ -13,7 +13,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/asmegir/aesir/aes/armor/scale_hauberk_iron.png
 #eliteversion "gold scale hauberk"
 #eliteversion "iron scale hauberk"
@@ -24,7 +24,7 @@
 
 #newitem 
 #id "iron full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/asmegir/aesir/aes/armor/scale_full_iron.png
 #eliteversion "gold full scale"
 #eliteversion "iron full scale"
@@ -37,7 +37,7 @@
 
 #newitem
 #id "iron chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/asmegir/aesir/aes/armor/chain_cuirass_iron.png
 #eliteversion "gold chain cuirass"
 #eliteversion "iron chain cuirass"
@@ -48,7 +48,7 @@
 
 #newitem
 #id "iron chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/asmegir/aesir/aes/armor/chain_hauberk_iron.png
 #eliteversion "gold chain hauberk"
 #eliteversion "iron chain hauberk"
@@ -59,7 +59,7 @@
 
 #newitem 
 #id "iron full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/asmegir/aesir/aes/armor/chain_full_iron.png
 #eliteversion "gold full chain"
 #eliteversion "iron full chain"
@@ -72,7 +72,7 @@
 
 #newitem
 #id "gold scale cuirass"
-#gameid 49
+#dominionsId 49
 #sprite /graphics/asmegir/aesir/aes/armor/scale_cuirass_gold.png
 #eliteversion "gold scale cuirass"
 #eliteversion "gold scale hauberk"
@@ -96,7 +96,7 @@
 
 #newitem 
 #id "gold full scale"
-#gameid 196
+#dominionsId 196
 #sprite /graphics/asmegir/aesir/aes/armor/scale_full_gold.png
 #eliteversion "gold full scale"
 #armor

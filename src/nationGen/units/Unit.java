@@ -697,8 +697,8 @@ public class Unit {
   public void setSlot(String slotname, Item newitem) {
     Item olditem = getSlot(slotname);
 
-    if (newitem != null && newitem.isDominionsIdResolved() == false) {
-      newitem = Item.resolveId(newitem);
+    if (newitem != null && newitem.isPendingDominionsIdAssignemnt()) {
+      newitem = Item.assignDominionsId(newitem);
     }
 
     // HIC SUNT DRACONIS

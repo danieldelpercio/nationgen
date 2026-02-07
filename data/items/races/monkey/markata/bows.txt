@@ -1,6 +1,6 @@
 #newitem
 #id smallbow
-#gameid 23
+#dominionsId 23
 #sprite /graphics/monkey/weapon/markata/smallbow.png
 #theme "primitive"
 #tag "name Archer"
@@ -8,7 +8,7 @@
 
 #newitem
 #id sling
-#gameid 22
+#dominionsId 22
 #sprite /graphics/monkey/weapon/markata/sling.png
 #tag "name Slinger"
 #enditem

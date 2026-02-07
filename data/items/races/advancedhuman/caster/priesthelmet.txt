@@ -3,7 +3,7 @@
 
 #newitem
 #id fancyhat
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat.png
 #recolormask /graphics/helmet/special/fancyhat_recolormask.png
 #tag "eliteversion fancyhat3a"
@@ -13,7 +13,7 @@
 
 #newitem
 #id fancyhat2
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat2.png
 #recolormask /graphics/helmet/special/fancyhat2_recolormask.png
 #tag "eliteversion fancyhat"
@@ -26,7 +26,7 @@
 
 #newitem
 #id fancyhat3a
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask1.png
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id fancyhat3b
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask2.png
 #tag "eliteversion fancyhat3a"
@@ -46,7 +46,7 @@
 
 #newitem
 #id cowl
-#gameid 121
+#dominionsId 121
 #sprite /graphics/advancedhuman/helmets/cowl.png
 #recolormask self
 #offsetx -3
@@ -58,7 +58,7 @@
 
 #newitem
 #id plaguedoctor_maskT1
-#gameid 145
+#dominionsId 145
 #chanceinc "personalcommand autodishealer *5"
 #sprite /graphics/advancedhuman/helmets/caster/plaguedoctor_mask.png
 #offsetx -3
@@ -70,7 +70,7 @@
 
 #newitem
 #id plaguedoctor_maskT2
-#gameid 145
+#dominionsId 145
 #chanceinc "personalcommand autodishealer *5"
 #sprite /graphics/advancedhuman/helmets/caster/plaguedoctor_mask.png
 #recolormask /graphics/advancedhuman/helmets/caster/plaguedoctor_mask_recolormask.png

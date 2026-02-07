@@ -1,6 +1,6 @@
 #newitem
 #id offhandclub
-#gameid 252
+#dominionsId 252
 #sprite /graphics/dynastichuman/weapons/club_oh.png
 #theme "primitive"
 #theme "wood"
@@ -11,7 +11,7 @@
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/dynastichuman/weapons/mace_oh.png
 #theme "primitive"
 #type slave
@@ -21,7 +21,7 @@
 
 #newitem
 #id hatchet_bronze
-#gameid 646
+#dominionsId 646
 #sprite /graphics/dynastichuman/weapons/hatchet2_oh.png
 #theme "primitive"
 #theme "bronze"
@@ -30,7 +30,7 @@
 
 #newitem
 #id dagger
-#gameid 674
+#dominionsId 674
 #sprite /graphics/dynastichuman/weapons/dagger_bronze_oh.png
 #theme "bronze"
 #theme "primitive"
@@ -40,7 +40,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/dynastichuman/weapons/shortsword_bronze_oh.png
 #theme "austral"
 #type slave
@@ -48,14 +48,14 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/dynastichuman/weapons/kopesh_oh.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/dynastichuman/weapons/axe2_oh.png
 #theme "iron"
 #theme "primitive"
@@ -64,7 +64,7 @@
 
 #newitem
 #id offhanddagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/dynastichuman/weapons/dagger_oh.png
 #theme "iron"
 #theme "primitive"
@@ -74,7 +74,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/dynastichuman/weapons/shortsword_oh.png
 #theme "iron"
 #type slave
@@ -82,7 +82,7 @@
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/dynastichuman/weapons/falchion_oh.png
 #theme "iron"
 #theme "advanced"

@@ -1,20 +1,20 @@
 #newitem
 #id "steel cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/agarthan/big/armor/ironarmor_light.png
 #armor
 #enditem
 
 #newitem
 #id "steel scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/agarthan/big/armor/ironarmor.png
 #armor
 #enditem
 
 #newitem
 #id "steel hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/agarthan/big/armor/ironarmor.png
 #needs legs ironpants
 #armor
@@ -22,7 +22,7 @@
 
 #newitem
 #id "steel scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/agarthan/big/armor/ironarmor_full.png
 #needs legs ironpants
 #armor
@@ -30,7 +30,7 @@
 
 #newitem
 #id "steel full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/agarthan/big/armor/ironarmor_fullest.png
 #needs legs ironpants
 #armor

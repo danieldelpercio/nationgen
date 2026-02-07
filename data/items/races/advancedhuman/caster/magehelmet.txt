@@ -3,7 +3,7 @@
 
 #newitem
 #id azuremage_cap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/advancedhuman/helmets/caster/azuremage_cap.png
 #recolormask /graphics/advancedhuman/helmets/caster/azuremage_cap_recolormask.png
 #armor
@@ -103,7 +103,7 @@
 
 #newitem
 #id hat_missionary
-#gameid 120
+#dominionsId 120
 #sprite /graphics/advancedhuman/helmets/caster/missionary_hat.png
 #offsetx -1
 #offsety -1
@@ -114,7 +114,7 @@
 
 #newitem
 #id hat_troubadour
-#gameid 120
+#dominionsId 120
 #sprite /graphics/advancedhuman/helmets/caster/troubadour_hat.png
 #recolormask /graphics/advancedhuman/helmets/caster/troubadour_hat_recolormask.png
 #offsety -1

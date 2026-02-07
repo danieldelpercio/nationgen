@@ -1,6 +1,6 @@
 #newitem
 #id lance_bronze
-#gameid 651
+#dominionsId 651
 #sprite /graphics/weapon/bronze/lance.png
 #theme "austral"
 #theme "boreal"
@@ -12,7 +12,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/bronze/lance.png
 #theme "austral"
 #theme "boreal"

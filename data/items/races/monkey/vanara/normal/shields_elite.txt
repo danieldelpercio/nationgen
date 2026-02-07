@@ -1,7 +1,7 @@
 #newitem
 #basechance 10
 #id bronzeshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/monkey/offhand/vanara/bronzeshield.png
 #eliteversion "bronzeshield_gilt"
 #armor
@@ -12,7 +12,7 @@
 #newitem
 #basechance 10
 #id bronzebuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/monkey/offhand/vanara/bronzebuckler.png
 #eliteversion "bronzebuckler_gilt"
 #armor
@@ -23,7 +23,7 @@
 #newitem
 #basechance 10
 #id bronzeshield_gilt
-#gameid 209
+#dominionsId 209
 #sprite /graphics/monkey/offhand/vanara/giltshield.png
 #armor
 #theme "enlightened"
@@ -34,7 +34,7 @@
 #newitem
 #basechance 10
 #id bronzebuckler_gilt
-#gameid 1
+#dominionsId 1
 #sprite /graphics/monkey/offhand/vanara/giltbuckler.png
 #armor
 #theme "enlightened"
@@ -45,7 +45,7 @@
 #newitem
 #basechance 10
 #id ironshield
-#gameid 208
+#dominionsId 208
 #sprite /graphics/monkey/offhand/vanara/ironshield.png
 #eliteversion "ironshield_gilt"
 #armor
@@ -56,7 +56,7 @@
 #newitem
 #basechance 10
 #id ironbuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/monkey/offhand/vanara/ironbuckler.png
 #eliteversion "ironbuckler_gilt"
 #armor
@@ -68,7 +68,7 @@
 #newitem
 #basechance 10
 #id ironshield_gilt
-#gameid 208
+#dominionsId 208
 #sprite /graphics/monkey/offhand/vanara/giltshield.png
 #armor
 #theme "enlightened"
@@ -79,7 +79,7 @@
 #newitem
 #basechance 10
 #id ironbuckler_gilt
-#gameid 1
+#dominionsId 1
 #sprite /graphics/monkey/offhand/vanara/giltbuckler.png
 #armor
 #theme "enlightened"
@@ -90,7 +90,7 @@
 
 #newitem
 #id box_shield
-#gameid 208
+#dominionsId 208
 #basechance 4
 #sprite /graphics/offhand/standard/coe-metalshield.png
 #theme "oriental"
@@ -103,7 +103,7 @@
 
 #newitem
 #id tower4
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/offhand/standard/tower2.png
 #recolormask self
@@ -119,7 +119,7 @@
 -- Imperial shields
 #newitem
 #id tower1
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/offhand/standard/tower1.png
 #recolormask /graphics/offhand/standard/tower1_recolormask.png
@@ -132,7 +132,7 @@
 
 #newitem
 #id tower2
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/offhand/standard/tower1.png
 #recolormask /graphics/offhand/standard/tower1_recolormask2.png
@@ -145,7 +145,7 @@
 
 #newitem
 #id tower3
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/offhand/standard/tower1.png
 #recolormask /graphics/offhand/standard/tower1_recolormask3.png

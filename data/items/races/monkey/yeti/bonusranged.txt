@@ -7,7 +7,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0
 #chanceinc racetheme primitive 1
 #theme "primitive"

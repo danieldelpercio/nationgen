@@ -142,7 +142,7 @@
 
 #newitem
 #id "crown_ind_silver"
-#gameid 148
+#dominionsId 148
 #sprite /graphics/cynocephalian/helmet/crown_ind_silver.png
 #basechance 0
 #chanceinc "personalmagic holy 2 5"
@@ -154,7 +154,7 @@
 
 #newitem
 #id "crown_ind_gold"
-#gameid 148
+#dominionsId 148
 #sprite /graphics/cynocephalian/helmet/crown_ind_gold.png
 #basechance 0
 #chanceinc "personalmagic holy 3 5"

@@ -2,7 +2,7 @@
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #needstype rarm onehand_missile
 #hand
 #type archer
@@ -10,7 +10,7 @@
 
 #newitem
 #id claw
-#gameid 29
+#dominionsId 29
 #needstype rarm claw_missile
 #claw
 #type archer
@@ -19,7 +19,7 @@
 #newitem
 #id claw_stun
 #basechance 0.25
-#gameid 250
+#dominionsId 250
 #command "#gcost +1"
 #needstype rarm claw_missile
 #claw
@@ -29,7 +29,7 @@
 #newitem
 #id claw_poison
 #basechance 0.25
-#gameid 248
+#dominionsId 248
 #command "#gcost +1"
 #needstype rarm claw_missile
 #claw
@@ -38,7 +38,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #type "tentacle"
 #tentacle
 #needstype rarm tentacle_missile
@@ -47,7 +47,7 @@
 
 #newitem
 #id tentacle_sleep
-#gameid 387
+#dominionsId 387
 #tentacle
 #command "#gcost +1"
 #needstype rarm tentacle_missile
@@ -56,7 +56,7 @@
 
 #newitem
 #id tentacle_strangle
-#gameid 116
+#dominionsId 116
 #tentacle
 #needstype rarm tentacle_missile
 #type archer
@@ -67,7 +67,7 @@
 
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "primitive"
 #theme "iron"
 #needstype rarm onehand_missile
@@ -76,7 +76,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme "primitive"
 #theme "iron"
 #needstype rarm onehand_missile
@@ -85,7 +85,7 @@
 
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "primitive"
 #theme "iron"
 #needstype rarm onehand_missile
@@ -94,7 +94,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #theme "iron"
 #needstype rarm onehand_missile
 #type archer
@@ -102,7 +102,7 @@
 
 #newitem
 #id kryss
-#gameid 256
+#dominionsId 256
 #theme "iron"
 #needstype rarm onehand_missile
 #type archer
@@ -110,7 +110,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #theme "iron"
 #needstype rarm onehand_missile
 #type archer
@@ -126,7 +126,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "wood"
 #needstype rarm onehand_missile
@@ -135,7 +135,7 @@
 
 #newitem
 #id spikedclub
-#gameid 265
+#dominionsId 265
 #theme "primitive"
 #theme "wood"
 #needstype rarm onehand_missile
@@ -144,7 +144,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "primitive"
 #needstype rarm onehand_missile
 #type archer

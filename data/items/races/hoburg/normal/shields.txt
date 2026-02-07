@@ -6,7 +6,7 @@
 
 #newitem
 #id kite1
-#gameid 3
+#dominionsId 3
 #sprite /graphics/hoburg/shields/kite.png
 #recolormask /graphics/hoburg/shields/kite_recolormask.png
 #armor
@@ -19,7 +19,7 @@
 
 #newitem
 #id shield1
-#gameid 2
+#dominionsId 2
 #basechance 0.5
 #sprite /graphics/hoburg/shields/woodenshield.png
 #armor
@@ -35,7 +35,7 @@
 
 #newitem
 #id shield2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/hoburg/shields/metalshield.png
 #armor
 #theme "iron"
@@ -48,7 +48,7 @@
 
 #newitem
 #id shield3
-#gameid 208
+#dominionsId 208
 #sprite /graphics/hoburg/shields/metalshield.png
 #recolormask /graphics/hoburg/shields/coloredshield_recolormask.png
 #armor
@@ -61,7 +61,7 @@
 
 #newitem
 #id shield4
-#gameid 208
+#dominionsId 208
 #sprite /graphics/hoburg/shields/coe-shield2.png
 #recolormask /graphics/hoburg/shields/coe-shield2_recolormask.png
 #theme "iron"
@@ -74,7 +74,7 @@
 
 #newitem
 #id tower1
-#gameid 4
+#dominionsId 4
 #sprite /graphics/hoburg/shields/tower.png
 #recolormask /graphics/hoburg/shields/tower-recolormask.png
 #theme "advanced"
@@ -89,7 +89,7 @@
 
 #newitem
 #id tower2
-#gameid 4
+#dominionsId 4
 #sprite /graphics/hoburg/shields/coe-kite.png
 #armor
 #theme "advanced"
@@ -103,7 +103,7 @@
 
 #newitem
 #id tower_imperial1
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/hoburg/shields/tower_imperial.png
 #recolormask /graphics/hoburg/shields/tower_imperial_recolormask1.png
@@ -113,7 +113,7 @@
 
 #newitem
 #id tower_imperial2
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/hoburg/shields/tower_imperial.png
 #recolormask /graphics/hoburg/shields/tower_imperial_recolormask2.png
@@ -123,7 +123,7 @@
 
 #newitem
 #id tower_abysian1
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/hoburg/shields/tower_abysian.png
 #recolormask /graphics/hoburg/shields/tower_abysian_recolormask1.png
@@ -135,7 +135,7 @@
 
 #newitem
 #id tower_abysian2
-#gameid 4
+#dominionsId 4
 #basechance 4
 #sprite /graphics/hoburg/shields/tower_abysian.png
 #recolormask /graphics/hoburg/shields/tower_abysian_recolormask2.png
@@ -149,7 +149,7 @@
 
 #newitem
 #id hideshield_occidental
-#gameid 105
+#dominionsId 105
 #basechance 3
 #sprite /graphics/hoburg/shields/hideshield1.png
 #armor
@@ -160,7 +160,7 @@
 
 #newitem
 #id hideshield_austral
-#gameid 105
+#dominionsId 105
 #basechance 3
 #sprite /graphics/hoburg/shields/hideshield2.png
 #armor
@@ -174,7 +174,7 @@
 
 #newitem
 #id bronze_hoplon
-#gameid 209
+#dominionsId 209
 #basechance 3
 #sprite /graphics/hoburg/shields/bronze_hoplon.png
 #theme "bronze"
@@ -185,7 +185,7 @@
 
 #newitem
 #id iron_hoplon
-#gameid 208
+#dominionsId 208
 #basechance 2
 #sprite /graphics/hoburg/shields/iron_hoplon.png
 #theme "iron"

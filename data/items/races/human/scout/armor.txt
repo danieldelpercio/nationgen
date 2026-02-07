@@ -13,7 +13,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #basechance 2
 #armor
 #theme "leather"
@@ -27,7 +27,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #basechance 0.5
 #armor
 #theme "leather"
@@ -41,7 +41,7 @@
 
 #newitem
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #basechance 0.25
 #armor
 #theme "leather"
@@ -55,7 +55,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #armor
 #basechance 2
 #theme "leather"
@@ -67,7 +67,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #basechance 0.5
 #armor
 #theme "leather"
@@ -79,7 +79,7 @@
 
 #newitem
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #basechance 0.25
 #armor
 #theme "leather"
@@ -91,7 +91,7 @@
 
 #newitem
 #id "linen cuirass"
-#gameid 183
+#dominionsId 183
 #basechance 2
 #armor
 #theme "cloth"
@@ -101,7 +101,7 @@
 
 #newitem
 #id "sharkskin cuirass"
-#gameid 188
+#dominionsId 188
 #armor
 #basechance 2
 #theme "leather"
@@ -111,7 +111,7 @@
 
 #newitem
 #id "sharkskin hauberk"
-#gameid 151
+#dominionsId 151
 #basechance 0.5
 #armor
 #theme "leather"
@@ -145,7 +145,7 @@
 --- Visible armor
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/scouts/armor/scale_iron.png
 #armor
 #theme "iron"
@@ -159,7 +159,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/scouts/armor/scale_bronze.png
 #armor
 #theme "bronze"
@@ -170,7 +170,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/scouts/armor/chain_iron.png
 #armor
 #theme "iron"
@@ -207,7 +207,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #basechance 0.25
 #sprite /graphics/scouts/armor/plate_iron.png
 #armor
@@ -222,7 +222,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #basechance 0.25
 #sprite /graphics/scouts/armor/plate_bronze.png
 #armor
@@ -256,7 +256,7 @@
 
 #newitem
 #id "ice cuirass"
-#gameid 26
+#dominionsId 26
 #basechance 0.01
 #chanceinc magic water *5
 #chanceinc command #iceforging *10
@@ -277,7 +277,7 @@
 
 #newitem
 #id "bone cuirass"
-#gameid 149
+#dominionsId 149
 #basechance 0.05
 #chanceinc magic death *10
 #sprite /graphics/scouts/armor/armor_bone.png
@@ -295,7 +295,7 @@
 
 #newitem
 #id "shell cuirass"
-#gameid 140
+#dominionsId 140
 #basechance 0.1
 #sprite /graphics/scouts/armor/armor_shell.png
 #armor
@@ -306,7 +306,7 @@
 
 #newitem
 #id "coral cuirass"
-#gameid 22
+#dominionsId 22
 #basechance 0.1
 #chanceinc magic water nature *10
 #themeinc thisitemslottheme weapon coral *2

@@ -2,7 +2,7 @@
 
 #newitem
 #id "leather_cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/ichtyid/armor/leather_cuirass.png
 #armor
 #theme "primitive"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "leather_hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/ichtyid/armor/leather_hauberk.png
 #armor
 #theme "primitive"
@@ -23,7 +23,7 @@
 
 #newitem
 #id "sharkskin_cuirass"
-#gameid 188
+#dominionsId 188
 #sprite /graphics/ichtyid/armor/sharkskin_cuirass.png
 #armor
 #theme "primitive"
@@ -34,7 +34,7 @@
 
 #newitem
 #id "sharkskin_armor"
-#gameid 151
+#dominionsId 151
 #sprite /graphics/ichtyid/armor/sharkskin_armor.png
 #armor
 #theme "primitive"
@@ -61,7 +61,7 @@
 
 #newitem
 #id "shell_hauberk"
-#gameid 114
+#dominionsId 114
 #sprite /graphics/ichtyid/armor/shell_hauberk.png
 #armor
 #theme "primitive"
@@ -71,7 +71,7 @@
 
 #newitem
 #id "shell_armor"
-#gameid 140
+#dominionsId 140
 #sprite /graphics/ichtyid/armor/shell_armor.png
 #armor
 #theme "primitive"
@@ -83,7 +83,7 @@
 
 #newitem
 #id "bone_cuirass"
-#gameid 149
+#dominionsId 149
 #sprite /graphics/ichtyid/armor/bone_cuirass.png
 #armor
 #theme "primitive"

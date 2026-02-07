@@ -8,7 +8,7 @@
 
 #newitem
 #id offhandaxe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/highmen/weapons/offhand_axe_bronze.png
 #offsetx 2
 #offsety -12
@@ -19,7 +19,7 @@
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/muuch/offhands/mace.png
 #offsetx 6
 #offsety -16
@@ -40,7 +40,7 @@
 
 #newitem
 #id offhandclubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/muuch/offhands/clubsword_1h.png
 #offsetx 6
 #offsety -16
@@ -50,7 +50,7 @@
 #newitem
 #id offhandobsidian_blade
 #basechance 0.25
-#gameid 625
+#dominionsId 625
 #sprite /graphics/muuch/offhands/obsidian_blade.png
 #offsetx 6
 #offsety -16

@@ -7,7 +7,7 @@
 #newitem
 #basechance 1
 #id greathideshield
-#gameid 112
+#dominionsId 112
 #sprite /graphics/highmen/shields/greathideshield.png
 #recolormask /graphics/highmen/shields/greathideshield_recolormask.png
 #offsetx 8
@@ -21,7 +21,7 @@
 #newitem
 #basechance 1
 #id buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield1.png
 #offsetx 9
 #offsety -12
@@ -31,7 +31,7 @@
 #newitem
 #basechance 1
 #id metal_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield2.png
 #offsetx 9
 #offsety -12
@@ -42,7 +42,7 @@
 #newitem
 #basechance 1
 #id buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/amazon/shields/targe_burnished.png
 #offsetx 9
 #offsety -12
@@ -53,7 +53,7 @@
 #newitem
 #basechance 1
 #id buckler_painted
-#gameid 1
+#dominionsId 1
 #sprite /graphics/amazon/shields/targe_painted.png
 #recolormask /graphics/amazon/shields/targe_painted_recolormask.png
 #offsetx 9
@@ -64,7 +64,7 @@
 #newitem
 #basechance 1
 #id shield7
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield7.png
 #recolormask /graphics/offhand/standard/shield7_recolormask.png
 #offsetx 9
@@ -79,7 +79,7 @@
 #newitem
 #id hoplon
 #basechance 1
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon_burnished.png
 #offsetx 9
 #offsety -12
@@ -90,7 +90,7 @@
 #newitem
 #id hoplon_painted
 #basechance 1
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon_bronze.png
 #recolormask /graphics/amazon/shields/hoplon_painted_recolormask.png
 #offsetx 9
@@ -101,7 +101,7 @@
 #newitem
 #basechance 1
 #id hoplon_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/amazon/shields/hoplon2_bronze.png
 #offsetx 8
 #offsety -12
@@ -112,7 +112,7 @@
 #newitem
 #basechance 1
 #id shield5
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield5.png
 #offsetx 9
 #offsety -12
@@ -122,7 +122,7 @@
 #newitem
 #basechance 1
 #id shield6
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #offsetx 9
@@ -133,7 +133,7 @@
 #newitem
 #basechance 1
 #id shield8
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/coe-metalshield.png
 #offsetx 9
 #offsety -14
@@ -146,7 +146,7 @@
 
 #newitem
 #id tower1
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/tower1.png
 #recolormask /graphics/offhand/standard/tower1_recolormask.png
 #offsetx 10
@@ -157,7 +157,7 @@
 
 #newitem
 #id tower2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/tower2.png
 #recolormask self
 #offsetx 10
@@ -168,7 +168,7 @@
 
 #newitem
 #id tower3
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/tower3.png
 #recolormask /graphics/offhand/standard/tower3_recolormask.png
 #offsetx 10
@@ -183,7 +183,7 @@
 #newitem
 #id big_tower1a
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower1.png
 #theme "advanced"
 #theme "iron"
@@ -195,7 +195,7 @@
 #newitem
 #id big_tower1b
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower1.png
 #recolormask /graphics/highmen/shields/tower1_recolormask.png
 #theme "advanced"
@@ -208,7 +208,7 @@
 #newitem
 #id big_tower2a
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower2.png
 #recolormask /graphics/highmen/shields/tower2_recolormask1.png
 #theme "advanced"
@@ -221,7 +221,7 @@
 #newitem
 #id big_tower2b
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower2.png
 #recolormask /graphics/highmen/shields/tower2_recolormask2.png
 #theme "advanced"
@@ -234,7 +234,7 @@
 #newitem
 #id big_tower3a
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower3.png
 #recolormask self
 #theme "advanced"
@@ -247,7 +247,7 @@
 #newitem
 #id big_tower3b
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower3.png
 #recolormask /graphics/highmen/shields/tower3_recolormask1.png
 #theme "advanced"
@@ -264,7 +264,7 @@
 
 #newitem
 #id iron_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler2.png
 #theme "iron"
 #armor
@@ -274,7 +274,7 @@
 
 #newitem
 #id wood_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler1.png
 #theme "wood"
 #armor
@@ -284,7 +284,7 @@
 
 #newitem
 #id painted_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/avvim/offhand/buckler1.png
 #recolormask /graphics/avvim/offhand/buckler1_recolormask.png
 #armor
@@ -297,7 +297,7 @@
 
 #newitem
 #id shield_tan
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #theme "wood"
 #armor
@@ -307,7 +307,7 @@
 
 #newitem
 #id shield_light
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #recolormask /graphics/avvim/offhand/shield1_recolormask.png
 #armor
@@ -317,7 +317,7 @@
 
 #newitem
 #id shield_dark_iron
-#gameid 208
+#dominionsId 208
 #sprite /graphics/avvim/offhand/shield2.png
 #theme "iron"
 #armor
@@ -327,7 +327,7 @@
 
 #newitem
 #id shield_dark_iron_painted
-#gameid 208
+#dominionsId 208
 #sprite /graphics/avvim/offhand/shield2.png
 #recolormask /graphics/avvim/offhand/shield2_recolormask.png
 #theme "iron"
@@ -338,7 +338,7 @@
 
 #newitem
 #id shield_dark_gold
-#gameid 209
+#dominionsId 209
 #sprite /graphics/avvim/offhand/shield3.png
 #theme "bronze"
 #armor
@@ -348,7 +348,7 @@
 
 #newitem
 #id shield_dark_gold_painted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/avvim/offhand/shield3.png
 #recolormask /graphics/avvim/offhand/shield3_recolormask.png
 #theme "bronze"

@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx -1
 #offsety -10
@@ -10,7 +10,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #offsetx -1
 #offsety -10
@@ -20,7 +20,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #tag "name infantry 'Axe Thrower'"
 #basechance 2
@@ -29,7 +29,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #offsetx -3
 #offsety 0
@@ -42,7 +42,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.25
 #theme "primitive"
 #tag "maxprot 14"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx -1
 #offsety -10
@@ -64,7 +64,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "name infantry 'Poisoner'"
 #tag "maxprot 12"
 #tag "tierunique"
@@ -74,7 +74,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/highmen/weapons/offhand_net.png
 #tag "maxprot 12"
 #tag "tierunique"

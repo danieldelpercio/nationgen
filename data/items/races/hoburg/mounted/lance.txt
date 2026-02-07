@@ -1,6 +1,6 @@
 #newitem
 #id lance
-#gameid 4
+#dominionsId 4
 #sprite /graphics/hoburg/weapon/longspear.png
 #tag "name lancer"
 #renderprio 7

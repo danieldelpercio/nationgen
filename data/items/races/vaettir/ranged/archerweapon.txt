@@ -1,20 +1,20 @@
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "primitive"
 #theme "bear"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "primitive"
 #theme "boar"
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #theme "iron"
 #theme "wolf"
 #theme "tiger"
@@ -22,7 +22,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #theme "deer"
 #theme "hawk"
 #theme "spider"
@@ -32,14 +32,14 @@
 #newitem
 #id poisondagger
 #basechance 0
-#gameid 126
+#dominionsId 126
 #theme "spider"
 #enditem
 
 #newitem
 #id hammer
 #basechance 0
-#gameid 13
+#dominionsId 13
 #theme "iron"
 #theme "bear"
 #theme "boar"

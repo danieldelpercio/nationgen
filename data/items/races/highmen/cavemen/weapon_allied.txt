@@ -2,7 +2,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/highmen/weapons/club.png
 #offsetx -2
 #offsety 3
@@ -17,7 +17,7 @@
 
 #newitem
 #id spiked_club
-#gameid 593
+#dominionsId 593
 #sprite /graphics/highmen/weapons/spikedclub.png
 #offsetx -2
 #offsety 3
@@ -32,7 +32,7 @@
 
 #newitem
 #id great_club
-#gameid 165
+#dominionsId 165
 #sprite /graphics/highmen/weapons/greatclub.png
 #offsetx 0
 #offsety 3
@@ -48,7 +48,7 @@
 
 #newitem
 #id stone_spear
-#gameid 373
+#dominionsId 373
 #sprite /graphics/highmen/weapons/spear.png
 #offsetx -2
 #offsety 2
@@ -63,7 +63,7 @@
 
 #newitem
 #id stone_hatchet
-#gameid 253
+#dominionsId 253
 #sprite /graphics/highmen/weapons/axe.png
 #offsetx -3
 #offsety 3
@@ -80,7 +80,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/highmen/weapons/axe_bronze.png
 #offsetx -3
 #offsety 3
@@ -94,7 +94,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/highmen/weapons/battleaxe_bronze.png
 #offsetx -2
 #offsety 2
@@ -111,7 +111,7 @@
 
 #newitem
 #id hammer_bronze
-#gameid 13
+#dominionsId 13
 #sprite /graphics/highmen/weapons/hammer_bronze.png
 #offsetx -3
 #offsety 3
@@ -125,7 +125,7 @@
 
 #newitem
 #id mace_bronze
-#gameid 12
+#dominionsId 12
 #sprite /graphics/highmen/weapons/mace_bronze.png
 #offsetx -3
 #offsety 3
@@ -139,7 +139,7 @@
 
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #sprite /graphics/highmen/weapons/axe.png
 #offsetx -3
 #offsety 3
@@ -153,7 +153,7 @@
 
 #newitem
 #id greataxe_iron
-#gameid 18
+#dominionsId 18
 #sprite /graphics/highmen/weapons/battleaxe.png
 #offsetx -2
 #offsety 2
@@ -170,7 +170,7 @@
 
 #newitem
 #id hammer_iron
-#gameid 13
+#dominionsId 13
 #sprite /graphics/highmen/weapons/hammer.png
 #offsetx -3
 #offsety 3
@@ -184,7 +184,7 @@
 
 #newitem
 #id mace_iron
-#gameid 12
+#dominionsId 12
 #sprite /graphics/highmen/weapons/mace.png
 #offsetx -3
 #offsety 3
@@ -198,7 +198,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/highmen/weapons/maul.png
 #offsetx -2
 #offsety 2
@@ -214,7 +214,7 @@
 
 #newitem
 #id bronze_spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/highmen/weapons/spear_bronze.png
 #offsetx -2
 #offsety 2
@@ -230,7 +230,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/highmen/weapons/spear.png
 #offsetx -2
 #offsety 2
@@ -246,7 +246,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/highmen/weapons/quarterstaff.png
 #offsetx -2
 #offsety 2

@@ -1,7 +1,7 @@
 
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "primitive"
 #theme "enlightened"
 #theme "imperial"
@@ -11,7 +11,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #theme "enlightened"
 #theme "imperial"
 #eliteversion falchion
@@ -20,7 +20,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "oriental"
 #theme "enlightened"
@@ -32,7 +32,7 @@
 
 #newitem
 #id spikedclub
-#gameid 265
+#dominionsId 265
 #theme "primitive"
 #theme "oriental"
 #theme "enlightened"
@@ -44,7 +44,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "enlightened"
 #theme "imperial"
 #theme "austral"
@@ -55,7 +55,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme "primitive"
 #theme "iron"
 #theme "enlightened"
@@ -66,7 +66,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #theme "enlightened"
 #theme "oriental"
 #theme "imperial"
@@ -77,7 +77,7 @@
 
 #newitem
 #id ninjato
-#gameid 381
+#dominionsId 381
 #theme "oriental"
 #theme "iron"
 #theme "elite"
@@ -85,7 +85,7 @@
 
 #newitem
 #id wakizashi
-#gameid 377
+#dominionsId 377
 #theme "oriental"
 #theme "iron"
 #theme "elite"

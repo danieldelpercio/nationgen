@@ -2,26 +2,26 @@
 
 #newitem
 #id glaive
-#gameid 673
+#dominionsId 673
 #sprite /graphics/agarthan/big/weapons/glaive_bronze.png
 #enditem
 
 #newitem
 #id obsidianglaive
-#gameid 426
+#dominionsId 426
 #sprite /graphics/agarthan/big/weapons/obsidianglaive.png
 #enditem
 
 #newitem
 #id spear
-#gameid 644
+#dominionsId 644
 #sprite /graphics/agarthan/big/weapons/spear_bronze.png
 #theme formationfighter
 #enditem
 
 #newitem
 #id waraxe
-#gameid 698
+#dominionsId 698
 #sprite /graphics/agarthan/big/weapons/waraxe.png
 #enditem
 

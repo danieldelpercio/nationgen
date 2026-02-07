@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/weapon/bronze/hatchet.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -26,7 +26,7 @@
 
 #newitem
 #id longspear
-#gameid 644
+#dominionsId 644
 #sprite /graphics/weapon/bronze/longspear.png
 #tag "name infantry longspearman"
 #lightlance
@@ -34,13 +34,13 @@
 
 #newitem
 #id shortsword
-#gameid 645
+#dominionsId 645
 #sprite /graphics/weapon/bronze/shortsword.png
 #enditem
 
 #newitem
 #id spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/bronze/spear.png
 #tag "name infantry spearman"
 #lightlance
@@ -57,7 +57,7 @@
 
 #newitem
 #id goldenspear
-#gameid 473
+#dominionsId 473
 #sprite /graphics/weapon/sacred/goldenspear.png
 #theme "elite"
 #lightlance
@@ -65,7 +65,7 @@
 
 #newitem
 #id goldensword
-#gameid 474
+#dominionsId 474
 #sprite /graphics/weapon/sacred/goldenshortsword.png
 #theme "elite"
 #enditem

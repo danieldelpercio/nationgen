@@ -2,14 +2,14 @@
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #theme "primitive"
 #enditem
 
 -- 1h weapons
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/ogre/weapon/club_oh.png
 #theme "primitive"
 #theme "wood"
@@ -17,7 +17,7 @@
 
 #newitem
 #id spiked_club
-#gameid 593
+#dominionsId 593
 #sprite /graphics/ogre/weapon/spikedclub_oh.png
 #theme "primitive"
 #theme "wood"
@@ -25,7 +25,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/ogre/weapon/hatchet_oh.png
 #theme "primitive"
 #theme "iron"
@@ -33,7 +33,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/ogre/weapon/morningstar_oh.png
 #theme "iron"
 #theme "advanced"
@@ -41,7 +41,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/ogre/weapon/hammer_oh.png
 #theme "iron"
 #theme "advanced"
@@ -49,14 +49,14 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/ogre/weapon/mace_oh.png
 #theme "primitive"
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/highmen/weapons/offhand_shortsword.png
 #offsetx 4
 #offsety 2
@@ -65,7 +65,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/highmen/weapons/offhand_broadsword.png
 #offsetx 4
 #offsety 2
@@ -74,7 +74,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/weapons/offhand_falchion.png
 #offsetx 4
 #offsety 2

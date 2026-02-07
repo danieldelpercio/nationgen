@@ -9,7 +9,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/ichtyid/weapon/club_oh.png
 #theme wood
 #theme primitive
@@ -18,14 +18,14 @@
 
 #newitem
 #id wakizasi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/ichtyid/weapon/wakizasi_oh.png
 #theme iron
 #enditem
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/ichtyid/weapon/falchion_oh.png
 #theme iron
 #enditem

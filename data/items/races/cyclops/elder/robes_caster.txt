@@ -10,7 +10,7 @@
 
 #newitem
 #id apron
-#gameid 5
+#dominionsId 5
 #sprite /graphics/cyclops/elder/armor/robes/apron_forgelord.png
 #armor
 #tier 1
@@ -66,7 +66,7 @@
 #id himation_white
 #sprite /graphics/cyclops/elder/armor/robes/himation_white.png
 #eliteversion himation_light
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #tier 2
@@ -79,7 +79,7 @@
 #id himation_grey
 #sprite /graphics/cyclops/elder/armor/robes/himation_grey.png
 #eliteversion himation_medium
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #tier 2
@@ -92,7 +92,7 @@
 #id himation_black
 #sprite /graphics/cyclops/elder/armor/robes/himation_black.png
 #eliteversion himation_dark
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #tier 2
@@ -149,7 +149,7 @@
 #recolormask self
 #eliteversion himation_medium
 #eliteversion himation_dark
-#gameid 158
+#dominionsId 158
 #armor
 #notfortier 1
 #tier 2
@@ -164,7 +164,7 @@
 #recolormask self
 #eliteversion himation_light
 #eliteversion himation_dark
-#gameid 158
+#dominionsId 158
 #armor
 #notfortier 1
 #tier 2
@@ -195,7 +195,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_white.png
 #eliteversion toga_light
 #eliteversion toga_white_trim
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #notfortier 2
@@ -209,7 +209,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_grey.png
 #eliteversion toga_medium
 #eliteversion toga_grey_trim
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #notfortier 2
@@ -223,7 +223,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_black.png
 #eliteversion toga_dark
 #eliteversion toga_black_trim
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #notfortier 2
@@ -237,7 +237,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_white.png
 #recolormask /graphics/cyclops/elder/armor/robes/toga_telkhine_trim_recolormask.png
 #eliteversion toga_light_trim
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #tier 2
@@ -251,7 +251,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_grey.png
 #recolormask /graphics/cyclops/elder/armor/robes/toga_telkhine_trim_recolormask.png
 #eliteversion toga_medium_trim
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #tier 2
@@ -265,7 +265,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_black.png
 #recolormask /graphics/cyclops/elder/armor/robes/toga_telkhine_trim_recolormask.png
 #eliteversion toga_dark_trim
-#gameid 158
+#dominionsId 158
 #armor
 #tier 1
 #tier 2
@@ -279,7 +279,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_white.png
 #recolormask self
 #eliteversion toga_light_trim
-#gameid 158
+#dominionsId 158
 #armor
 #notfortier 1
 #tier 2
@@ -293,7 +293,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_grey.png
 #recolormask self
 #eliteversion toga_medium_trim
-#gameid 158
+#dominionsId 158
 #armor
 #notfortier 1
 #tier 2
@@ -307,7 +307,7 @@
 #sprite /graphics/cyclops/elder/armor/robes/toga_telkhine_black.png
 #recolormask self
 #eliteversion toga_dark_trim
-#gameid 158
+#dominionsId 158
 #armor
 #notfortier 1
 #tier 2
@@ -323,7 +323,7 @@
 #eliteversion toga_light_trim
 #eliteversion toga_medium
 #eliteversion toga_dark
-#gameid 158
+#dominionsId 158
 #armor
 #notfortier 1
 #tier 2
@@ -339,7 +339,7 @@
 #eliteversion toga_light
 #eliteversion toga_medium_trim
 #eliteversion toga_dark
-#gameid 158
+#dominionsId 158
 #armor
 #notfortier 1
 #tier 2

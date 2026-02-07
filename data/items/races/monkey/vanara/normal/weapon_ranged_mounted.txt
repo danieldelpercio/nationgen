@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Javelineer'"
 #define "#mobilearcher 1"
@@ -8,7 +8,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #tag "name infantry 'Javelineer'"
 #define "#mobilearcher 1"
@@ -16,7 +16,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #theme "iron"
 #define "#mobilearcher 1"
@@ -34,7 +34,7 @@
 #newitem
 #basechance 6
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #renderprio 7
 #renderslot "weapon"
@@ -61,7 +61,7 @@
 #newitem
 #basechance 6
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.5
 #theme "primitive"
 #define "#mobilearcher 1"
@@ -71,7 +71,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Harponeer'"
 #tag "maxprot 12"
@@ -82,7 +82,7 @@
 
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/bowman/shortbow.png
 #needs quiver quiver
 offsetx 5
@@ -93,7 +93,7 @@ offsety 4
 
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/weapon/bowman/longbow.png
 #needs quiver quiver
 offsetx 5
@@ -105,7 +105,7 @@ offsety 4
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/weapon/bowman/compositebow.png
 #needs quiver quiver
 offsetx 5

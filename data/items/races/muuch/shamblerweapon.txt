@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/ichtyid/weapon/bronze_axe.png
 #offsetx -2
 #offsety 1
@@ -12,7 +12,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/muuch/weapons/mace.png
 #tag "name infantry maceman"
 #tag "name commander chieftan"
@@ -20,7 +20,7 @@
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/muuch/weapons/clubsword_1h.png
 #tag "name infantry swordsman"
 #tag "name commander swordsmaster"
@@ -30,7 +30,7 @@
 #newitem
 #id obsidian_blade
 #basechance 0.5
-#gameid 625
+#dominionsId 625
 #sprite /graphics/muuch/weapons/obsidian_blade.png
 #tag "name infantry swordsman"
 #tag "name commander bladesmaster"
@@ -40,7 +40,7 @@
 #newitem
 #id obsidian_blade_poisoned
 #basechance 0.25
-#gameid 623
+#dominionsId 623
 #sprite /graphics/muuch/weapons/obsidian_blade.png
 #tag "name infantry swordsman"
 #tag "name commander bladesmaster"
@@ -50,7 +50,7 @@
 
 #newitem
 #id great_clubsword
-#gameid 288
+#dominionsId 288
 #sprite /graphics/muuch/weapons/clubsword_2h_shambler.png
 #tag "name infantry swordsman"
 #tag "name commander swordsmaster"
@@ -59,7 +59,7 @@
 
 #newitem
 #id great_club
-#gameid 165
+#dominionsId 165
 #sprite /graphics/muuch/weapons/greatclub.png
 #offsetx -7
 #offsety -2
@@ -69,7 +69,7 @@
 
 #newitem
 #id greataxe
-#gameid 698
+#dominionsId 698
 #sprite /graphics/ichtyid/weapon/bronze_greataxe.png
 #offsetx -2
 #offsety 1
@@ -81,7 +81,7 @@
 
 #newitem
 #id spear
-#gameid 644
+#dominionsId 644
 #sprite /graphics/ichtyid/weapon/bronze_longspear.png
 #offsety 2
 #tag "name infantry spearman"
@@ -90,7 +90,7 @@
 
 #newitem
 #id trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/ichtyid/weapon/bronze_trident.png
 #offsety 3
 #enditem
@@ -108,7 +108,7 @@
 
 #newitem
 #id glaive
-#gameid 673
+#dominionsId 673
 #sprite /graphics/muuch/weapons/glaive.png
 #theme "advanced"
 #theme "bronze"
@@ -118,7 +118,7 @@
 #id obsidian_glaive
 #basechance 0.05
 #chanceinc "personalcommand #sacred *10"
-#gameid 426
+#dominionsId 426
 #sprite /graphics/muuch/weapons/glaive_obsidian.png
 #theme "advanced"
 #theme "obsidian"

@@ -16,7 +16,7 @@
 
 #newitem
 #id "leather cap"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/firbolg/helmet/leathercap.png
 #armor
 #theme "leather"
@@ -25,7 +25,7 @@
 
 #newitem
 #id "bronzecap"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/firbolg/helmet/bronzecap.png
 #eliteversion bronzecap_elite
 #theme "bronze"
@@ -35,7 +35,7 @@
 
 #newitem
 #id "bronzecap_elite"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/firbolg/helmet/bronzecap_elite.png
 #theme "elite"
 #theme "bronze"
@@ -45,7 +45,7 @@
 
 #newitem
 #id "ironcap"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/firbolg/helmet/ironcap.png
 #eliteversion ironcap_elite
 #theme "iron"
@@ -55,7 +55,7 @@
 
 #newitem
 #id "ironcap_elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/firbolg/helmet/ironcap_elite.png
 #theme "elite"
 #theme "iron"

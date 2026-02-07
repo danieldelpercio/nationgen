@@ -1,6 +1,6 @@
 #newitem
 #id mindblast
-#gameid 311
+#dominionsId 311
 #command "#gcost +30"
 #command "#rpcost +30000"
 #mind
@@ -12,7 +12,7 @@
 
 #newitem
 #id weakness
-#gameid 294
+#dominionsId 294
 #command "#gcost +20"
 #command "#rpcost +20000"
 #mind
@@ -23,7 +23,7 @@
 
 #newitem
 #id mesmerize
-#gameid 403
+#dominionsId 403
 #command "#gcost +10"
 #command "#rpcost +10000"
 #mind
@@ -34,7 +34,7 @@
 
 #newitem
 #id hypnotize
-#gameid 595
+#dominionsId 595
 #command "#gcost -5"
 #command "#rpcost -5000"
 #mind

@@ -1,6 +1,6 @@
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #basechance 0.25
 #sprite /graphics/asmegir/armor/furs.png
 #eliteversion "magic furs"
@@ -13,7 +13,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/asmegir/armor/leather_hauberk.png
 #armor
 #theme leather
@@ -24,7 +24,7 @@
 
 #newitem
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/asmegir/armor/leather_full.png
 #armor
 #theme leather
@@ -35,7 +35,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/asmegir/armor/ring_hauberk.png
 #armor
 #theme leather
@@ -46,7 +46,7 @@
 
 #newitem
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/asmegir/armor/ring_full.png
 #armor
 #theme leather
@@ -57,7 +57,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/asmegir/armor/chain_iron_hauberk.png
 #eliteversion "scale hauberk"
 #eliteversion "gold hauberk"
@@ -70,7 +70,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/asmegir/armor/chain_iron_hauberk.png
 #eliteversion "chain hauberk"
 #eliteversion "gold hauberk"

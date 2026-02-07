@@ -69,7 +69,7 @@
 
 #newitem
 #id mageantler1
-#gameid 24
+#dominionsId 24
 #sprite /graphics/atlantian/head/mageprim1.png
 #armor
 #tag "primitive"
@@ -78,7 +78,7 @@
 
 #newitem
 #id mageantler1
-#gameid 24
+#dominionsId 24
 #sprite /graphics/atlantian/head/mageprim2.png
 #armor
 #tag "primitive"

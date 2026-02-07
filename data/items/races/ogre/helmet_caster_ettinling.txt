@@ -16,7 +16,7 @@
 #newitem
 #basechance 4
 #id hood
-#gameid 121
+#dominionsId 121
 #sprite /graphics/ogre/helmet/scouthood_ettinling.png
 #recolormask self
 #armor
@@ -32,7 +32,7 @@
 #newitem
 #basechance 1
 #id ogres_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/foulspawn/medium/helmet/leathercap.png
 #armor
 #maxprot 12
@@ -47,7 +47,7 @@
 #newitem
 #basechance 1
 #id ogres_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/foulspawn/medium/helmet/ironcap.png
 #command "#rcost +2"
 #armor
@@ -61,7 +61,7 @@
 
 #newitem
 #id ogres_jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/foulspawn/medium/helmet/jingasa.png
 #recolormask /graphics/foulspawn/medium/helmet/jingasa_recolormask.png
 #command "#rcost +2"
@@ -80,7 +80,7 @@
 
 #newitem
 #id ogres_kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/foulspawn/medium/helmet/kabuto.png
 #command "#rcost +4"
 #armor

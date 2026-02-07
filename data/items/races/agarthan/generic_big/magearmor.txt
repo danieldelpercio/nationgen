@@ -1,13 +1,13 @@
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/agarthan/big/armor/bronzearmor_light.png
 #armor
 #enditem
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/agarthan/big/armor/bronzearmor.png
 #armor
 #enditem
@@ -15,7 +15,7 @@
 
 #newitem
 #id "bronze hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/agarthan/big/armor/bronzearmor.png
 #needs legs bronzepants
 #armor
@@ -23,7 +23,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/agarthan/big/armor/bronzearmor_full.png
 #needs legs bronzepants
 #armor

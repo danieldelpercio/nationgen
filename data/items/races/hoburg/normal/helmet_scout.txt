@@ -18,7 +18,7 @@
 
 #newitem
 #id hood
-#gameid 121
+#dominionsId 121
 #sprite /graphics/hoburg/helmet/caster/hood_necromant.png
 #recolormask self
 #armor
@@ -31,7 +31,7 @@
 
 #newitem
 #id headdress
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/feathercap_red.png
 #recolormask /graphics/hoburg/helmet/feathercap_red_recolormask.png
 #armor
@@ -42,7 +42,7 @@
 
 #newitem
 #id fancyhat
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/fancyhat1.png
 #recolormask /graphics/hoburg/helmet/fancyhat1_recolormask.png
 #armor

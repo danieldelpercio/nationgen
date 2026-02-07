@@ -2,7 +2,7 @@
 
 #newitem
 #id "javelin"
-#gameid 409
+#dominionsId 409
 #sprite /graphics/cynocephalian/weapon/javelin.png
 --#name infantry skirmisher
 #basechance 0.2
@@ -10,7 +10,7 @@
 
 #newitem
 #id "javelins"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/cynocephalian/weapon/javelins.png
 --#name infantry skirmisher
 #basechance 1.8

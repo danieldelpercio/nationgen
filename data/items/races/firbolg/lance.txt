@@ -12,7 +12,7 @@
 
 #newitem
 #id lance_iron
-#gameid 4
+#dominionsId 4
 #sprite /graphics/firbolg/weapon/longspear_iron.png
 #offsetx -6
 #offsety -4

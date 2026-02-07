@@ -1,6 +1,6 @@
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "primitive"
 #theme "iron"
 #eliteversion axe
@@ -8,21 +8,21 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #eliteversion shortsword
 #theme "iron"
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #eliteversion broadsword
 #theme "iron"
 #enditem
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "wood"
 #eliteversion spikedclub
@@ -31,7 +31,7 @@
 
 #newitem
 #id spikedclub
-#gameid 265
+#dominionsId 265
 #theme "primitive"
 #theme "wood"
 #eliteversion mace
@@ -40,7 +40,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "primitive"
 #eliteversion hammer
 #enditem
@@ -49,7 +49,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #theme "primitive"
 #theme "iron"
 #theme "elite"
@@ -57,14 +57,14 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #theme "elite"
 #theme "iron"
 #enditem
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #theme "elite"
 #theme "iron"
 #enditem

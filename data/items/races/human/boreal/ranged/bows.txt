@@ -1,20 +1,20 @@
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/boreal/ranged/weapon/shortbow.png
 #needs quiver quiver
 #enditem
 
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/boreal/ranged/weapon/longbow.png
 #needs quiver arrows
 #enditem
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/boreal/ranged/weapon/compositebow.png
 #needs quiver quiver
 #basechance 0.5

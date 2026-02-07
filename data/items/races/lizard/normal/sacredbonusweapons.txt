@@ -18,21 +18,21 @@
 
 #newitem
 #id "hypnosis"
-#gameid 595
+#dominionsId 595
 #basechance 0.1
 #theme "sacred"
 #enditem
 
 #newitem
 #id "poison spit"
-#gameid 167
+#dominionsId 167
 #basechance 0.1
 #theme "sacred"
 #enditem
 
 #newitem
 #id "poisonous bite"
-#gameid 495
+#dominionsId 495
 #basechance 0.1
 #theme "sacred"
 #enditem

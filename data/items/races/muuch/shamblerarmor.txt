@@ -15,7 +15,7 @@
 #id "leather cuirass"
 #basechance 0.5
 #notepic
-#gameid 5
+#dominionsId 5
 #sprite /graphics/muuch/armor/medium/leather_cuirass.png
 #armor
 #theme "primitive"
@@ -24,7 +24,7 @@
 #newitem
 #id "leather cuirass dyed"
 #basechance 1.5
-#gameid 5
+#dominionsId 5
 #sprite /graphics/muuch/armor/medium/leather_cuirass.png
 #recolormask /graphics/muuch/armor/medium/leather_cuirass_recolormask.png
 #armor
@@ -35,7 +35,7 @@
 #id "leather hauberk"
 #basechance 0.5
 #notepic
-#gameid 10
+#dominionsId 10
 #sprite /graphics/muuch/armor/medium/leather_hauberk.png
 #armor
 #theme "primitive"
@@ -44,7 +44,7 @@
 #newitem
 #id "leather hauberk dyed"
 #basechance 1.5
-#gameid 10
+#dominionsId 10
 #sprite /graphics/muuch/armor/medium/leather_hauberk.png
 #recolormask /graphics/muuch/armor/medium/leather_hauberk_recolormask.png
 #armor
@@ -56,7 +56,7 @@
 #newitem
 #id "bronze scale cuirass"
 #basechance 2
-#gameid 142
+#dominionsId 142
 #sprite /graphics/muuch/armor/medium/bronzescale_cuirass.png
 #armor
 #theme "bronze"
@@ -65,7 +65,7 @@
 #newitem
 #id "bronze scale hauberk"
 #basechance 2
-#gameid 136
+#dominionsId 136
 #sprite /graphics/muuch/armor/medium/bronzescale_hauberk.png
 #armor
 #theme "bronze"
@@ -74,7 +74,7 @@
 #newitem
 #basechance 2
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/muuch/armor/medium/bronze_cuirass.png
 #armor
 #theme "bronze"
@@ -84,7 +84,7 @@
 #newitem
 #basechance 2
 #id "bronze hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/muuch/armor/medium/bronze_hauberk.png
 #armor
 #theme "bronze"
@@ -97,7 +97,7 @@
 #newitem
 #basechance 1
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/armor/medium/scale_cuirass.png
 #armor
 #theme "iron"
@@ -107,7 +107,7 @@
 #newitem
 #basechance 1
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/muuch/armor/medium/scale_hauberk.png
 #armor
 #theme "iron"
@@ -117,7 +117,7 @@
 #newitem 
 #basechance 1
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/muuch/armor/medium/plate_cuirass.png
 #armor
 #theme "iron"
@@ -127,7 +127,7 @@
 #newitem
 #basechance 1
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/muuch/armor/medium/plate_hauberk.png
 #armor
 #theme "iron"
@@ -140,7 +140,7 @@
 #newitem
 #basechance 1
 #id "obsidian cuirass"
-#gameid 206
+#dominionsId 206
 #sprite /graphics/muuch/armor/medium/obsidian_cuirass.png
 #armor
 #tag "tierunique"

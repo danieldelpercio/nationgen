@@ -1,7 +1,7 @@
 
 #newitem
 #id fullhelmet2
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/standard/fullhelmet2.png
 #armor
 #tag "eliteversion elitefullhelmet2"
@@ -11,7 +11,7 @@
 
 #newitem
 #id savaran_fullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/standard/fullhelmet3.png
 #armor
 #tag "eliteversion savaran_fullhelmet_elite"
@@ -21,7 +21,7 @@
 
 #newitem
 #id savaran_fullhelmet_elite
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/standard/fullhelmet3.png
 #recolormask /graphics/helmet/standard/fullhelmet3_elite_recolormask.png
 #armor
@@ -32,7 +32,7 @@
 
 #newitem
 #id mercenary_fullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/standard/fullhelmet4.png
 #armor
 #tag "eliteversion mercenary_fullhelmet_elite"
@@ -42,7 +42,7 @@
 
 #newitem
 #id mercenary_fullhelmet_elite
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/standard/fullhelmet4.png
 #recolormask /graphics/helmet/standard/fullhelmet4_elite_recolormask.png
 #armor
@@ -53,7 +53,7 @@
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet.png
 #armor
 #theme "iron"
@@ -61,7 +61,7 @@
 
 #newitem
 #id ulmish_halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet6.png
 #tag "eliteversion ulmish_halfhelmet_elite"
 #armor
@@ -70,7 +70,7 @@
 
 #newitem
 #id ulmish_halfhelmet_elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet6.png
 #recolormask /graphics/helmet/standard/halfhelmet6_elite_recolormask.png
 #theme "elite"
@@ -80,7 +80,7 @@
 
 #newitem
 #id cavalry_halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet7.png
 #armor
 #theme "iron"
@@ -88,7 +88,7 @@
 
 #newitem
 #id cavalry_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet7.png
 #armor
 #theme "iron"
@@ -96,7 +96,7 @@
 
 #newitem
 #id bascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/bascinet.png
 #tag "eliteversion elitebascinet"
 #theme "iron"
@@ -105,7 +105,7 @@
 
 #newitem
 #id elitebascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/bascinet-elite.png
 #recolormask /graphics/helmet/standard/bascinet-elite_recolormask.png
 #armor
@@ -115,7 +115,7 @@
 
 #newitem -- Iron cap
 #id halfhelmet-ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet.png
 #armor
 #theme "iron"
@@ -123,7 +123,7 @@
 
 #newitem
 #id kettlehelmet-half
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet3.png
 #theme "advanced"
 #tag "eliteversion kettlehelmet-half-elite"
@@ -133,7 +133,7 @@
 
 #newitem
 #id kettlehelmet-cap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet3.png
 #theme "advanced"
 #tag "eliteversion kettlehelmet-cap-elite"
@@ -143,7 +143,7 @@
 
 #newitem
 #id kettlehelmet-half-elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/special/elitehalfhelmet2.png
 #recolormask /graphics/helmet/special/elitehalfhelmet2_recolormask.png
 #armor
@@ -153,7 +153,7 @@
 
 #newitem
 #id kettlehelmet-cap-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/elitehalfhelmet2.png
 #recolormask /graphics/helmet/special/elitehalfhelmet2_recolormask.png
 #armor
@@ -163,7 +163,7 @@
 
 #newitem
 #id elitefullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/special/elitefullhelmet1.png
 #recolormask /graphics/helmet/special/elitefullhelmet1_recolormask.png
 #armor
@@ -173,7 +173,7 @@
 
 #newitem
 #id fancyhat
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat.png
 #recolormask /graphics/helmet/special/fancyhat_recolormask.png
 #armor
@@ -183,7 +183,7 @@
 
 #newitem
 #id fancyhat2
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat2.png
 #recolormask /graphics/helmet/special/fancyhat2_recolormask.png
 #armor
@@ -193,7 +193,7 @@
 
 #newitem
 #id fancyhat3a
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask1.png
 #armor
@@ -203,7 +203,7 @@
 
 #newitem
 #id fancyhat3b
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask2.png
 #armor
@@ -213,7 +213,7 @@
 
 #newitem -- Iron cap
 #id bearskin-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/bearskin.png
 #armor
 #theme "primitive"
@@ -225,7 +225,7 @@
 
 #newitem -- Iron cap
 #id wolfskin-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/wolfskin.png
 #armor
 #theme "primitive"

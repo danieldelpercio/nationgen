@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Javelineer'"
 #basechance 2
@@ -8,7 +8,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #tag "name infantry 'Javelineer'"
 #basechance 2
@@ -16,7 +16,7 @@
 
 #newitem
 #id "bonus crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/weapon/standard/bonuscrossbow.png
 #basechance 0.05
 #theme "advanced"
@@ -25,7 +25,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #tag "name infantry 'Axe Thrower'"
 #basechance 1
@@ -33,7 +33,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.1
 #tag "name infantry 'Ranger'"
@@ -41,7 +41,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #renderprio 7
 #renderslot "weapon"
@@ -53,7 +53,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.25
 #theme "primitive"
 #tag "maxprot 14"
@@ -62,7 +62,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Harponeer'"
 #tag "maxprot 14"
@@ -71,7 +71,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "name infantry 'Poisoner'"
 #tag "maxprot 12"
 #tag "tierunique"
@@ -80,7 +80,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/weapon/standard/net.png
 #tag "maxprot 12"
 #tag "tierunique"

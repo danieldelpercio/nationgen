@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #basechance 0.5
 #theme "occidental"
@@ -13,7 +13,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #basechance 0.5
 #sprite /graphics/weapon/standard/javelin2.png
 #theme "occidental"
@@ -26,7 +26,7 @@
 
 #newitem
 #id "bonus crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/weapon/standard/bonuscrossbow.png
 #basechance 0.5
 #theme "advanced"
@@ -39,7 +39,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #theme "iron"
 #theme "boreal"
@@ -60,7 +60,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #theme "wood"
@@ -75,7 +75,7 @@
 
 #newitem
 #id "poison shortbow"
-#gameid 594
+#dominionsId 594
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #theme "wood"
@@ -89,7 +89,7 @@
 
 #newitem
 #id "bonus sling"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #theme "leather"
@@ -101,7 +101,7 @@
 
 #newitem
 #id "poison sling"
-#gameid 167
+#dominionsId 167
 #basechance 0.5
 #theme "leather"
 #theme "poison"
@@ -112,7 +112,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #renderprio 7
 #renderslot "weapon"
@@ -125,7 +125,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.25
 #tag "notepic"
 #theme "primitive"
@@ -136,7 +136,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #theme "occidental"
 #theme "boreal"
@@ -145,7 +145,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "tierunique"
 #basechance 0.5
 #theme "poison"
@@ -157,7 +157,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/weapon/standard/net.png
 #tag "noslot offhand"
 #tag "notepic"
@@ -172,7 +172,7 @@
 
 #newitem
 #id "poison dart"
-#gameid 620
+#dominionsId 620
 #basechance 0.5
 #theme "primitive"
 #theme "poison"
@@ -184,7 +184,7 @@
 
 #newitem
 #id "shuriken"
-#gameid 382
+#dominionsId 382
 #basechance 0.5
 #theme "poison"
 #theme "oriental"
@@ -193,7 +193,7 @@
 
 #newitem
 #id "discus"
-#gameid 723
+#dominionsId 723
 #theme "bronze"
 #theme "central"
 #theme "imperial"

@@ -25,7 +25,7 @@
 
 #newitem
 #id lizardcrown1
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/lizardcrown.png
 #offsetx -3
 #offsety -6
@@ -35,7 +35,7 @@
 
 #newitem
 #id lizardcrown2
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/lizardcrown.png
 #recolormask /graphics/helmet/caster/lizardcrown_recolormask.png
 #offsetx -3
@@ -62,7 +62,7 @@
 
 #newitem
 #id crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/helmet/caster/crown.png
 #offsetx -4
 #offsety -5
@@ -73,7 +73,7 @@
 
 #newitem
 #id feathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/feathercap.png
 #recolormask /graphics/helmet/caster/feathercap_recolormask.png
 #offsetx -4

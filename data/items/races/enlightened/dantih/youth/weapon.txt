@@ -1,6 +1,6 @@
 #newitem
 #id kryss
-#gameid 256
+#dominionsId 256
 #sprite /graphics/enlightened/dantih/weapon/kryss.png
 #offsetx -29
 #offsety -53
@@ -9,7 +9,7 @@
 
 #newitem
 #id dagger_bronze
-#gameid 674
+#dominionsId 674
 #sprite /graphics/enlightened/dantih/weapon/kryss_bronze.png
 #offsetx -29
 #offsety -53
@@ -18,7 +18,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/enlightened/dantih/weapon/club.png
 #offsetx -28
 #offsety -54
@@ -28,7 +28,7 @@
 
 #newitem
 #id club_spiked
-#gameid 265
+#dominionsId 265
 #sprite /graphics/enlightened/dantih/weapon/club_spiked.png
 #offsetx -28
 #offsety -54
@@ -38,7 +38,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/enlightened/dantih/weapon/mace.png
 #offsetx -29
 #offsety -53
@@ -46,7 +46,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/enlightened/dantih/weapon/falchion.png
 #theme iron
 #offsetx -29
@@ -55,7 +55,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/enlightened/dantih/weapon/falchion_bronze.png
 #theme bronze
 #offsetx -29
@@ -64,7 +64,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/enlightened/dantih/weapon/axe.png
 #offsetx -29
 #offsety -53
@@ -73,7 +73,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/enlightened/dantih/weapon/axe_bronze.png
 #offsetx -29
 #offsety -53

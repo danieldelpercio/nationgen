@@ -1,6 +1,6 @@
 #newitem
 #id goldenbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/sacred/goldenbroadsword.png
 #tag "name infantry swordsman"
 #theme "sacred"
@@ -8,14 +8,14 @@
 
 #newitem
 #id goldenshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/sacred/goldenshortsword.png
 #theme "sacred"
 #enditem
 
 #newitem
 #id goldenspear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/sacred/goldenspear.png
 #tag "name infantry spearman"
 #theme "sacred"
@@ -24,7 +24,7 @@
 
 #newitem
 #id elitefalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/weapon/sacred/elitefalchion.png
 #tag "name infantry falchioneer"
 #theme "sacred"
@@ -33,7 +33,7 @@
 
 #newitem
 #id banebroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/sacred/banebroadsword.png
 #theme "sacred"
 #basechance 0
@@ -41,7 +41,7 @@
 
 #newitem
 #id awesomeflail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/weapon/sacred/awesomeflail.png
 #theme "sacred"
 #basechance 0
@@ -49,7 +49,7 @@
 
 #newitem
 #id fieryshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/sacred/fieryshortsword.png
 #theme "sacred"
 #basechance 0
@@ -57,7 +57,7 @@
 
 #newitem
 #id fieryspear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/weapon/sacred/fieryspear.png
 #theme "sacred"
 #basechance 0

@@ -10,7 +10,7 @@
 
 #newitem
 #id cap_leather
-#gameid 120
+#dominionsId 120
 #sprite /graphics/jotun/warrior/helmet/cap_leather.png
 #armor
 #theme leather
@@ -22,7 +22,7 @@
 
 #newitem
 #id cap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/jotun/warrior/helmet/cap_reinforced.png
 #armor
 #theme leather
@@ -34,7 +34,7 @@
 
 #newitem
 #id cap_iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/jotun/warrior/helmet/cap_iron.png
 #eliteversion cap_iron_elite
 #eliteversion halfhelm_iron
@@ -46,7 +46,7 @@
 
 #newitem
 #id halfhelm_iron
-#gameid 118
+#dominionsId 118
 #sprite /graphics/jotun/warrior/helmet/halfhelm.png
 #eliteversion halfhelm_iron
 #eliteversion halfhelm_gilt
@@ -59,7 +59,7 @@
 
 #newitem
 #id cap_iron_elite
-#gameid 20
+#dominionsId 20
 #chanceinc "itemtheme gold *10"
 #sprite /graphics/jotun/warrior/helmet/cap_iron_elite.png
 #eliteversion cap_iron_elite
@@ -73,7 +73,7 @@
 
 #newitem
 #id halfhelm_iron_elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/jotun/warrior/helmet/halfhelm_elite.png
 #eliteversion halfhelm_iron_elite
 #eliteversion halfhelm_gilt
@@ -86,7 +86,7 @@
 
 #newitem
 #id halfhelm_gold
-#gameid 118
+#dominionsId 118
 #basechance 0.1
 #sprite /graphics/jotun/warrior/helmet/halfhelm_gilt.png
 #eliteversion halfhelm_gilt
@@ -100,7 +100,7 @@
 
 #newitem
 #id cap_ice
-#gameid 29
+#dominionsId 29
 #basechance 0.1
 #sprite /graphics/jotun/warrior/helmet/cap_ice.png
 #eliteversion halfhelm_ice

@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/abysian/demonbred/1h_axe.png
 #theme "primitive"
 #theme "iron"
@@ -10,14 +10,14 @@
 
 #newitem
 #id flail
-#gameid 15
+#dominionsId 15
 #sprite /graphics/abysian/demonbred/1h_flail.png
 #theme "iron"
 #enditem
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/abysian/demonbred/2h_axe.png
 #theme "primitive"
 #theme "iron"
@@ -26,7 +26,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/abysian/demonbred/1h_sword.png
 #basechance 0.5
 #theme "iron"

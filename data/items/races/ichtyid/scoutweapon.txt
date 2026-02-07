@@ -2,7 +2,7 @@
 
 #newitem
 #id spear
-#gameid 373
+#dominionsId 373
 #sprite /graphics/weapon/standard/spear.png
 #offsetx -5
 #theme "wood"
@@ -11,7 +11,7 @@
 
 #newitem
 #id coralspear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/ichtyid/weapon/coral_spear.png
 #offsetx -5
 #theme "coral"
@@ -20,7 +20,7 @@
 
 #newitem
 #id bronzespear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/weapon/bronze/spear.png
 #offsetx -5
 #theme "bronze"
@@ -28,14 +28,14 @@
 
 #newitem
 #id trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/ichtyid/weapon/bronze_trident.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/standard/quarterstaff.png
 #offsetx -2
 #basechance 0.5
@@ -59,7 +59,7 @@
 
 #newitem
 #id bone_trident
-#gameid 670
+#dominionsId 670
 #sprite /graphics/ichtyid/weapon/bone_trident.png
 #tag "prefix trident"
 #basechance 0.75
@@ -83,7 +83,7 @@
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/ichtyid/weapon/clubsword.png
 #theme "inland"
 #chanceinc "racetag NOT occidental *0.01"
@@ -91,7 +91,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/ichtyid/weapon/bronze_shortsword.png
 #theme "advanced"
 #theme "bronze"
@@ -107,14 +107,14 @@
 
 #newitem
 #id dagger
-#gameid 674
+#dominionsId 674
 #sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id dagger_stone
-#gameid 671
+#dominionsId 671
 #sprite /graphics/ichtyid/weapon/stone_dagger.png
 #theme "stone"
 #theme "primitive"
@@ -123,7 +123,7 @@
 
 #newitem
 #id dagger_coral
-#gameid 32
+#dominionsId 32
 #sprite /graphics/atlantian/weapon/coralknifeleft.png
 #offsetx 0
 #offsety -1
@@ -133,7 +133,7 @@
 
 #newitem
 #id club_coral
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ichtyid/weapon/coral_club.png
 #theme "coral"
 #theme "marine"

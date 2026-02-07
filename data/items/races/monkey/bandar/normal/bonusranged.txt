@@ -1,20 +1,20 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Javelineer'"
 #enditem
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #tag "name infantry 'Javelineer'"
 #enditem
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #theme "iron"
 #enditem
@@ -30,7 +30,7 @@
 #newitem
 #basechance 6
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #renderprio 7
 #renderslot "weapon"
@@ -56,7 +56,7 @@
 #newitem
 #basechance 6
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.5
 #theme "primitive"
 #tag "maxprot 8"
@@ -65,7 +65,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "name infantry 'Harponeer'"
 #tag "maxprot 12"

@@ -3,7 +3,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/sobek/armor/standard/sobek_cuirass.png
 #armor
 #basechance 0.75
@@ -12,7 +12,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/sobek/armor/standard/sobek_hauberk.png
 #tag "eliteversion elite-chain-hauberk"
 #basechance 0.5
@@ -23,7 +23,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/sobek/armor/standard/sobek_full.png
 #tag "eliteversion elite-full-chain"
 #armor
@@ -36,7 +36,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/armor/standard/sobek_cuirass.png
 #armor
 #enditem
@@ -44,7 +44,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/sobek/armor/standard/sobek_hauberk.png
 #tag "eliteversion elite-scale-hauberk"
 #armor
@@ -55,7 +55,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/sobek/armor/standard/sobek_full.png
 #tag "eliteversion elite-full-scale"
 #armor
@@ -67,7 +67,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/sobek/armor/standard/sobek_platecuirass.png
 #recolormask /graphics/sobek/armor/standard/sobek_platecuirass_recolormask.png
 #tag "eliteversion 'plate cuirass'"
@@ -81,7 +81,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/sobek/armor/standard/sobek_platehauberk.png
 #recolormask /graphics/sobek/armor/standard/sobek_platehauberk_recolormask.png
 #tag "eliteversion 'plate hauberk'"
@@ -95,7 +95,7 @@
 
 #newitem -- full plate
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/sobek/armor/standard/sobek_fullplate.png
 #recolormask /graphics/sobek/armor/standard/sobek_fullplate_recolormask.png
 #tag "eliteversion 'full plate'"
@@ -109,7 +109,7 @@
 
 #newitem
 #id "elite-chain-hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/sobek/armor/standard/sobek_hauberk_elite.png
 #theme "elite"
 #armor
@@ -120,7 +120,7 @@
 
 #newitem -- full chain
 #id "elite-full-chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/sobek/armor/standard/sobek_full_elite.png
 #theme "elite"
 #armor
@@ -132,7 +132,7 @@
 
 #newitem
 #id "elite-scale-hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/sobek/armor/standard/sobek_hauberk_elite.png
 #theme "elite"
 #armor
@@ -143,7 +143,7 @@
 
 #newitem -- full scale
 #id "elite-full-scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/sobek/armor/standard/sobek_full_elite.png
 #theme "elite"
 #armor
@@ -153,7 +153,7 @@
 
 #newitem
 #id "elite-plate-cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/sobek/armor/standard/sobek_platecuirass_elite.png
 #recolormask /graphics/sobek/armor/standard/sobek_platecuirass_recolormask.png
 #armor
@@ -165,7 +165,7 @@
 
 #newitem
 #id "elite-plate-hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/sobek/armor/standard/sobek_platehauberk_elite.png
 #recolormask /graphics/sobek/armor/standard/sobek_platehauberk_recolormask.png
 #basechance 0
@@ -177,7 +177,7 @@
 
 #newitem -- full plate
 #id "elite-full-plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/sobek/armor/standard/sobek_fullplate_elite.png
 #recolormask /graphics/sobek/armor/standard/sobek_fullplate_recolormask.png
 #armor

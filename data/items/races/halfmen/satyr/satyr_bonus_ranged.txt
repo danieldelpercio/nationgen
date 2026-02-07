@@ -1,6 +1,6 @@
 #newitem
 #id "javelin"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/halfmen/satyr/weapon/javelin.png
 #basechance 2
 #theme "occidental"

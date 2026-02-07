@@ -1,20 +1,20 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #eliteversion shortsword
 #enditem
 
 #newitem
 #id kryss
-#gameid 256
+#dominionsId 256
 #eliteversion kopesh
 #theme "iron"
 #enditem
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #theme "wood"
 #eliteversion mace
@@ -24,21 +24,21 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #theme "iron"
 #theme "elite"
 #enditem
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #theme "bronze"
 #theme "elite"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "primitive"
 #theme "elite"
 #enditem

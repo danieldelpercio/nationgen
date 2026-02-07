@@ -1,6 +1,6 @@
 #newitem
 #id rock
-#gameid 553
+#dominionsId 553
 #basechance 0
 #chanceinc racetheme primitive 10
 #theme "primitive"
@@ -8,7 +8,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #basechance 1
 #chanceinc racetheme primitive *10
 #chanceinc racetheme advanced *0
@@ -18,7 +18,7 @@
 
 #newitem
 #id skull_club
-#gameid 579
+#dominionsId 579
 #basechance 1
 #chanceinc racetheme primitive *5
 #chanceinc racetheme advanced *0
@@ -29,7 +29,7 @@
 #newitem
 #id great_club
 #basechance 5
-#gameid 165
+#dominionsId 165
 #sprite /graphics/monkey/giant/greatclub.png
 #theme "primitive"
 #enditem
@@ -37,7 +37,7 @@
 #newitem
 #id stone_spear
 #basechance 5
-#gameid 373
+#dominionsId 373
 #sprite /graphics/monkey/giant/stonespear.png
 #theme "primitive"
 #troopweapon
@@ -48,7 +48,7 @@
 #basechance 1
 #chanceinc racetheme primitive *0
 #chanceinc racetheme advanced *10
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/giant/icemace.png
 #theme "ice"
 #enditem
@@ -58,7 +58,7 @@
 #basechance 1
 #chanceinc racetheme primitive *0
 #chanceinc racetheme advanced *10
-#gameid 612
+#dominionsId 612
 #sprite /graphics/monkey/giant/iceblade.png
 #theme "ice"
 #enditem
@@ -68,7 +68,7 @@
 #basechance 1
 #chanceinc racetheme primitive *0
 #chanceinc racetheme advanced *10
-#gameid 611
+#dominionsId 611
 #sprite /graphics/monkey/giant/icespear.png
 #theme "ice"
 #enditem
@@ -78,7 +78,7 @@
 #basechance 1
 #chanceinc racetheme primitive *0
 #chanceinc racetheme advanced *10
-#gameid 454
+#dominionsId 454
 #sprite /graphics/monkey/giant/iceglaive.png
 #theme "ice"
 #enditem

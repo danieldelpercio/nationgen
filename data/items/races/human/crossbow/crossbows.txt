@@ -1,6 +1,6 @@
 #newitem
 #id "crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/weapon/crossbow/crossbow.png
 #tag "name Crossbowman"
 #theme "advanced"
@@ -17,7 +17,7 @@
 
 #newitem
 #id "arbalest"
-#gameid 26
+#dominionsId 26
 #sprite /graphics/weapon/crossbow/steelcrossbow.png
 #tag "name Crossbowman"
 #theme "advanced"

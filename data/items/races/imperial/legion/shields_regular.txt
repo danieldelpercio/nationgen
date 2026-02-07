@@ -3,7 +3,7 @@
 -- Hide shields
 #newitem
 #id shield_hide1
-#gameid 112
+#dominionsId 112
 #sprite /graphics/imperial/legion/offhand/shield_greathide.png
 #recolormask /graphics/imperial/legion/offhand/shield_greathide_recolormask1.png
 #armor
@@ -14,7 +14,7 @@
 
 #newitem
 #id shield_hide2
-#gameid 112
+#dominionsId 112
 #sprite /graphics/imperial/legion/offhand/shield_greathide.png
 #recolormask /graphics/imperial/legion/offhand/shield_greathide_recolormask2.png
 #armor
@@ -25,7 +25,7 @@
 
 #newitem
 #id shield_hide3
-#gameid 112
+#dominionsId 112
 #sprite /graphics/imperial/legion/offhand/shield_greathide.png
 #recolormask /graphics/imperial/legion/offhand/shield_greathide_recolormask3.png
 #armor
@@ -38,7 +38,7 @@
 -- Tower shields
 #newitem
 #id shield_tower1
-#gameid 4
+#dominionsId 4
 #sprite /graphics/imperial/legion/offhand/shield_tower.png
 #recolormask /graphics/imperial/legion/offhand/shield_tower_recolormask1.png
 #armor
@@ -48,7 +48,7 @@
 
 #newitem
 #id shield_tower2
-#gameid 4
+#dominionsId 4
 #sprite /graphics/imperial/legion/offhand/shield_tower.png
 #recolormask /graphics/imperial/legion/offhand/shield_tower_recolormask2.png
 #armor
@@ -58,7 +58,7 @@
 
 #newitem
 #id shield_tower3
-#gameid 4
+#dominionsId 4
 #sprite /graphics/imperial/legion/offhand/shield_tower.png
 #recolormask /graphics/imperial/legion/offhand/shield_tower_recolormask3.png
 #armor

@@ -1,6 +1,6 @@
 #newitem
 #id "cultistrobe"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/agarthan/magearmor/body/cultistrobe.png
 #recolormask /graphics/agarthan/magearmor/body/cultistrobe_recolormask.png
 #armor
@@ -9,7 +9,7 @@
 
 #newitem
 #id "simplecultistrobe"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/agarthan/magearmor/body/cultistrobe_plain.png
 #recolormask self
 #armor
@@ -33,7 +33,7 @@
 
 #newitem
 #id "tunic"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/agarthan/magearmor/body/olmspawntunic.png
 #recolormask /graphics/agarthan/magearmor/body/olmspawntunic_recolormask.png
 #armor
@@ -42,7 +42,7 @@
 
 #newitem
 #id "plaintunic"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/agarthan/magearmor/body/olmspawntunic_plain.png
 #recolormask self
 #eliteversion tunic

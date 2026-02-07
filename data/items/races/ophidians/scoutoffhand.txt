@@ -11,7 +11,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/ophidians/weapon/mace_oh.png
 #theme occidental
 #theme oriental
@@ -23,7 +23,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/ophidians/weapon/shortsword_oh.png
 #theme austral
 #theme central
@@ -33,7 +33,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/ophidians/weapon/shortsword_bronze_oh.png
 #theme occidental
 #theme austral
@@ -45,7 +45,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/ophidians/weapon/falchion_oh.png
 #theme austral
 #theme central
@@ -56,7 +56,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/ophidians/weapon/kopesh_oh.png
 #theme austral
 #theme central
@@ -67,7 +67,7 @@
 
 #newitem
 #id wakizashi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/ophidians/weapon/wakizashi_oh.png
 #theme oriental
 #theme terrestrial
@@ -76,7 +76,7 @@
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/ophidians/weapon/clubsword_oh.png
 #theme occidental
 #theme terrestrial
@@ -85,7 +85,7 @@
 -- Coral weapons
 #newitem
 #id coralmace
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ophidians/weapon/coralmace_oh.png
 #theme occidental
 #theme oriental
@@ -112,7 +112,7 @@
 -- Ice weapons
 #newitem
 #id icemace
-#gameid 44
+#dominionsId 44
 #sprite /graphics/ophidians/weapon/icemace_oh.png
 #theme occidental
 #theme oriental
@@ -126,7 +126,7 @@
 
 #newitem
 #id icewakizashi
-#gameid 35
+#dominionsId 35
 #sprite /graphics/ophidians/weapon/icewakizashi_oh.png
 #theme oriental
 #theme terrestrial
@@ -136,7 +136,7 @@
 
 #newitem
 #id icefalchion
-#gameid 37
+#dominionsId 37
 #sprite /graphics/ophidians/weapon/icefalchion_oh.png
 #theme oriental
 #theme austral

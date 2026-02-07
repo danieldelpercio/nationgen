@@ -2,7 +2,7 @@
 
 #newitem
 #id "bear furs"
-#gameid 44
+#dominionsId 44
 #define "#hp +4"
 #sprite /graphics/highmen/armor/furs_bear.png
 #needs shirt noshirt
@@ -16,7 +16,7 @@
 
 #newitem
 #id "lion furs"
-#gameid 44
+#dominionsId 44
 #define "#att +2"
 #sprite /graphics/highmen/armor/furs_lion.png
 #needs shirt noshirt
@@ -30,7 +30,7 @@
 
 #newitem
 #id "wolf furs"
-#gameid 44
+#dominionsId 44
 #define "#enc -1"
 #sprite /graphics/highmen/armor/furs_wolf.png
 #needs shirt noshirt
@@ -44,7 +44,7 @@
 
 #newitem
 #id "boar furs"
-#gameid 44
+#dominionsId 44
 #define "#str +2"
 #sprite /graphics/highmen/armor/furs_boar.png
 #needs shirt noshirt
@@ -58,7 +58,7 @@
 
 #newitem
 #id "firedrake pelt"
-#gameid 44
+#dominionsId 44
 #command "#fireres +10"
 #sprite /graphics/highmen/armor/furs_firedrake.png
 #needs shirt noshirt
@@ -72,7 +72,7 @@
 
 #newitem
 #id "icedrake pelt"
-#gameid 44
+#dominionsId 44
 #command "#coldres +10"
 #sprite /graphics/highmen/armor/furs_icedrake.png
 #needs shirt noshirt
@@ -86,7 +86,7 @@
 
 #newitem
 #id "swampdrake pelt"
-#gameid 44
+#dominionsId 44
 #command "#poisonres +10"
 #sprite /graphics/highmen/armor/furs_swampdrake.png
 #needs shirt noshirt
@@ -100,7 +100,7 @@
 
 #newitem
 #id "cavedrake pelt"
-#gameid 44
+#dominionsId 44
 #command "#shockres +10"
 #sprite /graphics/highmen/armor/furs_cavedrake.png
 #needs shirt noshirt
@@ -118,7 +118,7 @@
 
 #newitem
 #id "reinforced bear furs"
-#gameid 7
+#dominionsId 7
 #define "#hp +4"
 #sprite /graphics/highmen/armor/furs_bear.png
 #needs shirt scalecuirass
@@ -131,7 +131,7 @@
 
 #newitem
 #id "reinforced lion furs"
-#gameid 7
+#dominionsId 7
 #define "#att +2"
 #sprite /graphics/highmen/armor/furs_lion.png
 #needs shirt scalecuirass
@@ -144,7 +144,7 @@
 
 #newitem
 #id "reinforced wolf furs"
-#gameid 7
+#dominionsId 7
 #define "#enc -1"
 #sprite /graphics/highmen/armor/furs_wolf.png
 #needs shirt scalecuirass
@@ -157,7 +157,7 @@
 
 #newitem
 #id "reinforced boar furs"
-#gameid 7
+#dominionsId 7
 #define "#str +2"
 #sprite /graphics/highmen/armor/furs_boar.png
 #needs shirt scalecuirass
@@ -170,7 +170,7 @@
 
 #newitem
 #id "reinforced firedrake pelt"
-#gameid 7
+#dominionsId 7
 #command "#fireres +10"
 #sprite /graphics/highmen/armor/furs_firedrake.png
 #needs shirt scalecuirass
@@ -183,7 +183,7 @@
 
 #newitem
 #id "reinforced icedrake pelt"
-#gameid 7
+#dominionsId 7
 #command "#coldres +10"
 #sprite /graphics/highmen/armor/furs_icedrake.png
 #needs shirt scalecuirass
@@ -196,7 +196,7 @@
 
 #newitem
 #id "reinforced swampdrake pelt"
-#gameid 7
+#dominionsId 7
 #command "#poisonres +10"
 #sprite /graphics/highmen/armor/furs_swampdrake.png
 #needs shirt scalecuirass
@@ -209,7 +209,7 @@
 
 #newitem
 #id "reinforced cavedrake pelt"
-#gameid 7
+#dominionsId 7
 #command "#shockres +10"
 #sprite /graphics/highmen/armor/furs_cavedrake.png
 #needs shirt scalecuirass
@@ -226,7 +226,7 @@
 
 #newitem
 #id "plated bear furs"
-#gameid 9
+#dominionsId 9
 #define "#hp +4"
 #sprite /graphics/highmen/armor/furs_bear.png
 #needs shirt platecuirass
@@ -240,7 +240,7 @@
 
 #newitem
 #id "plated lion furs"
-#gameid 9
+#dominionsId 9
 #define "#att +2"
 #sprite /graphics/highmen/armor/furs_lion.png
 #needs shirt platecuirass
@@ -254,7 +254,7 @@
 
 #newitem
 #id "plated wolf furs"
-#gameid 9
+#dominionsId 9
 #define "#enc -1"
 #sprite /graphics/highmen/armor/furs_wolf.png
 #needs shirt platecuirass
@@ -268,7 +268,7 @@
 
 #newitem
 #id "plated boar furs"
-#gameid 9
+#dominionsId 9
 #define "#str +2"
 #sprite /graphics/highmen/armor/furs_boar.png
 #needs shirt platecuirass
@@ -282,7 +282,7 @@
 
 #newitem
 #id "plated firedrake pelt"
-#gameid 9
+#dominionsId 9
 #command "#fireres +10"
 #sprite /graphics/highmen/armor/furs_firedrake.png
 #needs shirt platecuirass
@@ -296,7 +296,7 @@
 
 #newitem
 #id "plated icedrake pelt"
-#gameid 9
+#dominionsId 9
 #command "#coldres +10"
 #sprite /graphics/highmen/armor/furs_icedrake.png
 #needs shirt platecuirass
@@ -310,7 +310,7 @@
 
 #newitem
 #id "plated swampdrake pelt"
-#gameid 9
+#dominionsId 9
 #command "#poisonres +10"
 #sprite /graphics/highmen/armor/furs_swampdrake.png
 #needs shirt platecuirass
@@ -324,7 +324,7 @@
 
 #newitem
 #id "plated cavedrake pelt"
-#gameid 9
+#dominionsId 9
 #command "#shockres +10"
 #sprite /graphics/highmen/armor/furs_cavedrake.png
 #needs shirt platecuirass

@@ -41,7 +41,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/bakemono/small/armor/furs_1h.png
 #tier 1
 #tier 2
@@ -51,7 +51,7 @@
 
 #newitem
 #id "robe_priest_medium"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bakemono/small/armor/caster/robe_demonpriest.png
 #recolormask /graphics/bakemono/small/armor/caster/robe_demonpriest_recolormask1.png
 #eliteversion robe_priest_light
@@ -65,7 +65,7 @@
 
 #newitem
 #id "robe_priest_light"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bakemono/small/armor/caster/robe_demonpriest.png
 #recolormask /graphics/bakemono/small/armor/caster/robe_demonpriest_recolormask2.png
 #eliteversion robe_priest_medium
@@ -79,7 +79,7 @@
 
 #newitem
 #id "robe_priest_dark"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/bakemono/small/armor/caster/robe_demonpriest.png
 #recolormask /graphics/bakemono/small/armor/caster/robe_demonpriest_recolormask3.png
 #eliteversion robe_priest_light

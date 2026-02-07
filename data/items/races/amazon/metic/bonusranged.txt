@@ -1,20 +1,20 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #basechance 2
 #enditem
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #basechance 2
 #enditem
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #theme "iron"
 #basechance 2
@@ -32,14 +32,14 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #basechance 0.5
 #enditem
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.25
 #theme "primitive"
 #tag "maxprot 14"
@@ -48,7 +48,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #tag "maxprot 14"
 #tag "tierunique"
@@ -58,7 +58,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "maxprot 12"
 #tag "tierunique"
 #basechance 0.5
@@ -67,7 +67,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/weapon/standard/net.png
 #tag "maxprot 12"
 #tag "tierunique"
@@ -79,11 +79,11 @@
 
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #basechance 0.5
 #enditem
 
 #newitem
 #id "discus"
-#gameid 723
+#dominionsId 723
 #enditem

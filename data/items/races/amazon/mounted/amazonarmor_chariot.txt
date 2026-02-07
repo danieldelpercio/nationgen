@@ -6,7 +6,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/amazon/armor/standard/chainhauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #basechance 0.5
@@ -16,7 +16,7 @@
 
 #newitem
 #id "chain hauberk sleeveless"
-#gameid 13
+#dominionsId 13
 #basechance 0.5
 #sprite /graphics/amazon/armor/standard/chainhauberk2.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
@@ -26,7 +26,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/amazon/armor/standard/chainhauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -41,7 +41,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/amazon/armor/standard/scalehauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -51,7 +51,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/amazon/armor/standard/scalehauberk.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -62,7 +62,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/amazon/armor/standard/scalehauberk_bronze.png
 #recolormask /graphics/amazon/armor/standard/mailhauberk_recolormask.png
 #armor
@@ -87,7 +87,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/amazon/armor/standard/platecuirass.png
 #armor
 #theme "advanced"
@@ -96,7 +96,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/amazon/armor/standard/platehauberk.png
 #armor
 #theme "advanced"
@@ -105,7 +105,7 @@
 
 #newitem -- full plate
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/amazon/armor/standard/fullplate.png
 #armor
 #theme "advanced"
@@ -116,7 +116,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/amazon/armor/standard/platehauberk_bronze.png
 #armor
 #basechance 0.25
@@ -137,7 +137,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/amazon/armor/standard/ringhauberk.png
 #armor
 #needs legs leatherpants
@@ -147,7 +147,7 @@
 
 #newitem -- full ring
 #id "bronze full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/amazon/armor/standard/ringhauberk_bronze.png
 #armor
 #needs legs leatherpants

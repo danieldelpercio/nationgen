@@ -17,7 +17,7 @@
 
 #newitem
 #id "robes_fancy"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_ornate"
 #eliteversion "robes_arco"
@@ -32,7 +32,7 @@
 
 #newitem
 #id "robes_ornate"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_ornate"
 #eliteversion "robes_arco"
@@ -63,7 +63,7 @@
 
 #newitem
 #id "robes_arco"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_arco"
 #eliteversion "robes_rhaga"
@@ -90,7 +90,7 @@
 
 #newitem
 #id "robes_rhaga"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_rhaga"
 #eliteversion "tabard_berytos"
@@ -116,7 +116,7 @@
 
 #newitem
 #id "tabard_fancy"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "tabard_ornate"
 #eliteversion "tabard_berytos"
@@ -129,7 +129,7 @@
 
 #newitem
 #id "tabard_ornate"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "tabard_ornate"
 #eliteversion "tabard_berytos"
@@ -158,7 +158,7 @@
 
 #newitem
 #id "tabard_berytos"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "tabard_berytos"
 #eliteversion "tabard_gath"
@@ -170,7 +170,7 @@
 
 #newitem
 #id "tabard_gath"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "tabard_gath"
 #notfortier 1

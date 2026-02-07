@@ -3,7 +3,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #type "tentacle"
 #tentacle
 #needstype rarm tentacle
@@ -11,7 +11,7 @@
 
 #newitem
 #id tentacle_sleep
-#gameid 387
+#dominionsId 387
 #tentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -20,7 +20,7 @@
 
 #newitem
 #id tentacle_strangle
-#gameid 116
+#dominionsId 116
 #tentacle
 #itemslot hand +1
 #needstype rarm tentacle
@@ -28,7 +28,7 @@
 
 #newitem
 #id tentacle_sleep
-#gameid 387
+#dominionsId 387
 #smalltentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -37,7 +37,7 @@
 
 #newitem
 #id tentacle_strangle
-#gameid 116
+#dominionsId 116
 #smalltentacle
 #itemslot hand +1
 #needstype rarm smalltentacle
@@ -45,7 +45,7 @@
 
 #newitem
 #id tentacle_tiny
-#gameid 672
+#dominionsId 672
 #smalltentacle
 #needstype rarm smalltentacle
 #needstype extraweapon tentacle_tiny
@@ -53,7 +53,7 @@
 
 #newitem
 #id tentacle_disease
-#gameid 142
+#dominionsId 142
 #smalltentacle
 #command "#gcost +2"
 #needstype rarm smalltentacle
@@ -61,7 +61,7 @@
 
 #newitem
 #id tentacle_lifedrain
-#gameid 63
+#dominionsId 63
 #smalltentacle
 #command "#gcost +2"
 #itemslot hand +1
@@ -70,7 +70,7 @@
 
 #newitem
 #id tentacle_paralyze
-#gameid 282
+#dominionsId 282
 #smalltentacle
 #command "#gcost +1"
 #itemslot hand +1
@@ -79,7 +79,7 @@
 
 #newitem
 #id tentacle_poison
-#gameid 355
+#dominionsId 355
 #smalltentacle
 #command "#gcost +1"
 #needstype rarm smalltentacle
@@ -87,7 +87,7 @@
 
 #newitem
 #id pincer
-#gameid 273
+#dominionsId 273
 #pincer
 #needstype rarm pincer
 #enditem
@@ -98,7 +98,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/advancedhuman/weapons/broadsword.png
 #offsetx -4
 #offsety 3
@@ -109,7 +109,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/advancedhuman/weapons/falchion.png
 #offsetx -4
 #offsety 3
@@ -120,7 +120,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/vaettir/weapon/hatchet.png
 #offsetx -4
 #offsety -1
@@ -133,7 +133,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/advancedhuman/weapons/morningstar.png
 #offsetx -6
 #offsety 2
@@ -147,7 +147,7 @@
 
 #newitem
 #id greatclub
-#gameid 165
+#dominionsId 165
 #basechance 0.5
 #sprite /graphics/foulspawn/small/weapon/greatclub.png
 #twohand
@@ -159,7 +159,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #basechance 0.5
 #sprite /graphics/foulspawn/small/weapon/maul.png
 #twohand
@@ -170,7 +170,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #basechance 0.5
 #sprite /graphics/foulspawn/small/weapon/greataxe.png
 #chanceinc unittag irregular 8
@@ -183,7 +183,7 @@
 
 #newitem
 #id greatsword
-#gameid 11
+#dominionsId 11
 #basechance 0.5
 #sprite /graphics/foulspawn/small/weapon/greatsword.png
 #twohand
@@ -194,7 +194,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #basechance 0.5
 #sprite /graphics/advancedhuman/weapons/flail_1.png
 #offsetx -4
@@ -207,7 +207,7 @@
 
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #basechance 2
 #sprite /graphics/advancedhuman/weapons/spear.png
 #offsetx -5
@@ -220,7 +220,7 @@
 
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #basechance 0.5
 #sprite /graphics/advancedhuman/weapons/spear.png
 #offsetx -4
@@ -234,7 +234,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/advancedhuman/weapons/trident.png
 #offsetx -5
 #theme "iron"
@@ -246,7 +246,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #basechance 0.5
 #sprite /graphics/advancedhuman/weapons/trident.png
 #offsetx -4

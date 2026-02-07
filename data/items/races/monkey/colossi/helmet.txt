@@ -47,7 +47,7 @@
 
 #newitem
 #id headdress_white
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall4.png
 #armor
 #tag "eliteversion headdress_white"
@@ -56,7 +56,7 @@
 
 #newitem
 #id headdress_offwhite
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall3.png
 #armor
 #tag "eliteversion headdress_white"
@@ -65,7 +65,7 @@
 
 #newitem
 #id headdress_grey
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall2.png
 #armor
 #tag "eliteversion headdress_black"
@@ -74,7 +74,7 @@
 
 #newitem
 #id headdress_black
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall1.png
 #armor
 #tag "eliteversion headdress_black"
@@ -83,7 +83,7 @@
 
 #newitem
 #id headdress_light
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall4.png
 #recolormask self
 #armor
@@ -92,7 +92,7 @@
 
 #newitem
 #id headdress_dim
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall3.png
 #recolormask self
 #armor
@@ -101,7 +101,7 @@
 
 #newitem
 #id headdress_dull
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall2.png
 #recolormask self
 #armor
@@ -110,7 +110,7 @@
 
 #newitem
 #id headdress_dark
-#gameid 120
+#dominionsId 120
 #sprite /graphics/monkey/giant/headdress_tall1.png
 #recolormask self
 #armor
@@ -123,7 +123,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #basechance 2
 #sprite /graphics/monkey/giant/cap_iron.png
 #armor
@@ -134,7 +134,7 @@
 
 #newitem
 #id giltcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/giant/cap_gold.png
 #tag "eliteversion headdress_gold"
 #armor
@@ -143,7 +143,7 @@
 
 #newitem
 #id headdress_silver
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/giant/headdress_silver.png
 #recolormask /graphics/monkey/giant/headdress_recolormask.png
 #armor
@@ -153,7 +153,7 @@
 
 #newitem
 #id headdress_gold
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/giant/headdress_gold.png
 #recolormask /graphics/monkey/giant/headdress_recolormask.png
 #armor

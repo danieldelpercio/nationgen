@@ -22,7 +22,7 @@
 
 #newitem
 #id "plain furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/highmen/armor/hoburg/furs.png
 #needs shirt noshirt
 #armor
@@ -34,7 +34,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/highmen/armor/hoburg/leather_cuirass.png
 #armor
 #theme "leather"
@@ -42,7 +42,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/armor/hoburg/leather_hauberk.png
 #armor
 #theme "leather"
@@ -50,7 +50,7 @@
 
 #newitem
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/highmen/armor/hoburg/leather_full.png
 #armor
 #theme "leather"
@@ -61,7 +61,7 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/highmen/armor/hoburg/ring_cuirass.png
 #theme "leather"
 #armor
@@ -69,7 +69,7 @@
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/highmen/armor/hoburg/ring_hauberk.png
 #armor
 #theme "leather"
@@ -77,7 +77,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/highmen/armor/hoburg/ring_full.png
 #armor
 #theme "leather"
@@ -88,7 +88,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/highmen/armor/hoburg/scale_cuirass.png
 #armor
 #theme "iron"
@@ -96,7 +96,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/highmen/armor/hoburg/scale_hauberk.png
 #armor
 #theme "iron"
@@ -104,7 +104,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/highmen/armor/hoburg/scale_full.png
 #armor
 #theme "advanced"
@@ -115,7 +115,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/highmen/armor/hoburg/chain_cuirass.png
 #armor
 #theme "iron"
@@ -123,7 +123,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/highmen/armor/hoburg/chain_hauberk.png
 #armor
 #theme "iron"
@@ -131,7 +131,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/highmen/armor/hoburg/chain_full.png
 #armor
 #theme "advanced"
@@ -143,7 +143,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/highmen/armor/hoburg/plate_cuirass.png
 #armor
 #theme "advanced"
@@ -152,7 +152,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/highmen/armor/hoburg/plate_hauberk.png
 #armor
 #theme "advanced"
@@ -161,7 +161,7 @@
 
 #newitem -- full plate
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/highmen/armor/hoburg/plate_full.png
 #armor
 #theme "advanced"

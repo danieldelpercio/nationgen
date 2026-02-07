@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx 1
 #offsety -2
@@ -9,7 +9,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #offsetx 1
 #offsety -3
@@ -26,7 +26,7 @@
 
 #newitem
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "iron"
 #basechance 1.5
 #chanceinc unittag irregular 4
@@ -34,7 +34,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #offsetx 2
 #offsety -2
@@ -43,7 +43,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/weapon/standard/net.png
 #offsetx -1
 #offsety -1
@@ -57,7 +57,7 @@
 
 #newitem
 #id "discus"
-#gameid 723
+#dominionsId 723
 #basechance 0.25
 #theme "bronze"
 #enditem

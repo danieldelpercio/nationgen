@@ -14,7 +14,7 @@
 #id "leather cuirass"
 #basechance 1
 #notepic
-#gameid 5
+#dominionsId 5
 #sprite /graphics/muuch/armor/small/leather_cuirass.png
 #armor
 #theme "primitive"
@@ -23,7 +23,7 @@
 #newitem
 #id "leather cuirass dyed"
 #basechance 2
-#gameid 5
+#dominionsId 5
 #sprite /graphics/muuch/armor/small/leather_cuirass.png
 #recolormask /graphics/muuch/armor/small/leather_cuirass_recolormask.png
 #armor
@@ -34,7 +34,7 @@
 #id "leather hauberk"
 #basechance 1
 #notepic
-#gameid 10
+#dominionsId 10
 #sprite /graphics/muuch/armor/small/leather_hauberk.png
 #armor
 #theme "primitive"
@@ -43,7 +43,7 @@
 #newitem
 #id "leather hauberk dyed"
 #basechance 2
-#gameid 10
+#dominionsId 10
 #sprite /graphics/muuch/armor/small/leather_hauberk.png
 #recolormask /graphics/muuch/armor/small/leather_hauberk_recolormask.png
 #armor

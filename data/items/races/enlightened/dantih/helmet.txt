@@ -48,7 +48,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/enlightened/dantih/helmet/cap_bronze.png
 #eliteversion bronzecap_gilt
 #eliteversion halfhelmet_bronze
@@ -59,7 +59,7 @@
 
 #newitem
 #id bronzecap_gilt
-#gameid 135
+#dominionsId 135
 #sprite /graphics/enlightened/dantih/helmet/cap_gilt.png
 #eliteversion halfhelmet_bronze_gilt
 #eliteversion cone_gold
@@ -70,7 +70,7 @@
 
 #newitem
 #id cone_bronze
-#gameid 135
+#dominionsId 135
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_copper.png
 #eliteversion cone_gold
 #armor
@@ -80,7 +80,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/enlightened/dantih/helmet/cap_iron.png
 #eliteversion ironcap_gilt
 #eliteversion halfhelmet_iron
@@ -91,7 +91,7 @@
 
 #newitem
 #id ironcap_gilt
-#gameid 20
+#dominionsId 20
 #sprite /graphics/enlightened/dantih/helmet/cap_gilt.png
 #eliteversion halfhelmet_iron_gilt
 #eliteversion cone_gold
@@ -103,7 +103,7 @@
 
 #newitem
 #id cone_iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_iron.png
 #eliteversion cone_gold
 #armor
@@ -113,7 +113,7 @@
 
 #newitem
 #id halfhelmet_iron
-#gameid 118
+#dominionsId 118
 #sprite /graphics/enlightened/dantih/helmet/halfhelm_iron.png
 #eliteversion halfhelmet_iron_gilt
 #armor
@@ -131,7 +131,7 @@
 
 #newitem
 #id halfhelmet_iron_gilt
-#gameid 118
+#dominionsId 118
 #sprite /graphics/enlightened/dantih/helmet/halfhelm_gilt.png
 #eliteversion cone_gold
 #armor
@@ -151,7 +151,7 @@
 
 #newitem
 #id cap_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_gold_small.png
 #eliteversion cone_gold
 #armor
@@ -160,7 +160,7 @@
 
 #newitem
 #id cone_gold
-#gameid 148
+#dominionsId 148
 #sprite /graphics/enlightened/dantih/helmet/caster/crown_gold.png
 #eliteversion cone_gold
 #armor

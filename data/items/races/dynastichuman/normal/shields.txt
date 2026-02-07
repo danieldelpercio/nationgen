@@ -4,7 +4,7 @@
 
 #newitem
 #id bronze_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #armor
 #theme "bronze"
@@ -12,7 +12,7 @@
 
 #newitem
 #id iron_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/buckler.png
 #armor
 #theme "iron"
@@ -20,7 +20,7 @@
 
 #newitem
 #id wood_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/woodbuckler.png
 #armor
 #theme "wood"
@@ -29,7 +29,7 @@
 
 #newitem
 #id painted_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/woodbuckler.png
 #recolormask /graphics/offhand/standard/woodbuckler_recolormask.png
 #armor
@@ -42,7 +42,7 @@
 
 #newitem
 #id shield3
-#gameid 207
+#dominionsId 207
 #basechance 2
 #sprite /graphics/offhand/standard/shield3.png
 #armor
@@ -52,7 +52,7 @@
 
 #newitem
 #id shield4
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield4.png
 #armor
 #theme "iron"
@@ -61,7 +61,7 @@
 
 #newitem
 #id shield4yellow
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/shield4-yellow.png
 #armor
 #theme "bronze"
@@ -70,7 +70,7 @@
 
 #newitem
 #id shield8
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield8.png
 #armor
 #theme "iron"
@@ -78,7 +78,7 @@
 
 #newitem
 #id shield10_iron
-#gameid 208
+#dominionsId 208
 #basechance 4
 #sprite /graphics/offhand/standard/shield10.png
 #eliteversion shield10_iron_painted
@@ -88,7 +88,7 @@
 
 #newitem
 #id shield10_iron_painted
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield10.png
 #recolormask /graphics/offhand/standard/shield10_painted_recolormask.png
 #armor
@@ -98,7 +98,7 @@
 
 #newitem
 #id shield10_bronze
-#gameid 209
+#dominionsId 209
 #basechance 4
 #sprite /graphics/offhand/standard/shield10_bronze.png
 #eliteversion shield10_bronze_painted
@@ -108,7 +108,7 @@
 
 #newitem
 #id shield10_bronze_painted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/shield10_bronze.png
 #recolormask /graphics/offhand/standard/shield10_painted_recolormask.png
 #armor
@@ -118,7 +118,7 @@
 
 #newitem
 #id shield10_wicker
-#gameid 207
+#dominionsId 207
 #basechance 4
 #sprite /graphics/offhand/standard/shield10_unpainted.png
 #eliteversion shield10_wicker_painted
@@ -129,7 +129,7 @@
 
 #newitem
 #id shield10_wicker_painted
-#gameid 207
+#dominionsId 207
 #sprite /graphics/offhand/standard/shield10.png
 #recolormask /graphics/offhand/standard/shield10_painted_recolormask2.png
 #armor

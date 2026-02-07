@@ -2,7 +2,7 @@
 
 #new
 #id "furs"
-#gameid 44
+#dominionsId 44
 #theme "naked"
 #theme "primitive"
 #no_armor

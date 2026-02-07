@@ -2,7 +2,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/fomorian/helmet/bronzecap.png
 #theme "advanced"
 #theme "bronze"
@@ -11,7 +11,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/fomorian/helmet/ironcap.png
 #theme "advanced"
 #theme "iron"
@@ -20,7 +20,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/fomorian/helmet/leathercap.png
 #armor
 #enditem

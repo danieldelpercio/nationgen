@@ -1,6 +1,6 @@
 #newitem
 #id iceshield
-#gameid 28
+#dominionsId 28
 #basechance 0.1
 #sprite /graphics/vaettir/offhand/rimvaettir/iceshield1.png
 #theme "ice"

@@ -31,7 +31,7 @@
 -- Iron helms
 #newitem
 #id "ironcap"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ophidians/head/ironcap.png
 #eliteversion ironcap-elite
 #armor
@@ -43,7 +43,7 @@
 
 #newitem
 #id "ironcap-elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ophidians/head/ironcap2.png
 #recolormask /graphics/ophidians/head/ironcap2_recolormask.png
 #armor
@@ -56,7 +56,7 @@
 
 #newitem
 #id "halfhelm"
-#gameid 118
+#dominionsId 118
 #sprite /graphics/ophidians/head/halfhelm1.png
 #eliteversion halfhelm-elite
 #armor
@@ -68,7 +68,7 @@
 
 #newitem
 #id "halfhelm-elite"
-#gameid 118
+#dominionsId 118
 #sprite /graphics/ophidians/head/halfhelm2.png
 #recolormask /graphics/ophidians/head/ironcap2_recolormask.png
 #armor
@@ -81,7 +81,7 @@
 
 #newitem
 #id "fullhelm"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/ophidians/head/fullhelm1.png
 #eliteversion fullhelm-elite
 #armor
@@ -94,7 +94,7 @@
 
 #newitem
 #id "fullhelm-elite"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/ophidians/head/fullhelm2.png
 #recolormask /graphics/ophidians/head/ironcap2_recolormask.png
 #armor
@@ -110,7 +110,7 @@
 -- Bronze helms
 #newitem
 #id "bronzecap"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ophidians/head/bronzecap1.png
 #eliteversion bronzecap-elite
 #armor
@@ -123,7 +123,7 @@
 
 #newitem
 #id "bronzecap-elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ophidians/head/bronzecap2.png
 #recolormask /graphics/ophidians/head/ironcap2_recolormask.png
 #armor
@@ -162,7 +162,7 @@
 
 #newitem
 #id "bronze fullhelm"
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ophidians/head/hoplitehelm1.png
 #eliteversion "bronze fullhelm-elite"
 #armor
@@ -176,7 +176,7 @@
 
 #newitem
 #id "bronze fullhelm-elite"
-#gameid 123
+#dominionsId 123
 #sprite /graphics/ophidians/head/hoplitehelm2.png
 #recolormask /graphics/ophidians/head/ironcap2_recolormask.png
 #armor
@@ -191,7 +191,7 @@
 -- Occidental/austral feathered helms
 #newitem
 #id "leathercap_feathered"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ophidians/head/magefeathert1-1.png
 #recolormask self
 #eliteversion leathercap_feathered-elite
@@ -204,7 +204,7 @@
 
 #newitem
 #id "leathercap_feathered-elite"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ophidians/head/magefeather2.png
 #recolormask /graphics/ophidians/head/magefeather2_recolormask.png
 #armor
@@ -217,7 +217,7 @@
 
 #newitem
 #id "reinforcedcap_feathered"
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ophidians/head/magefeathert1-1.png
 #recolormask self
 #eliteversion reinforcedcap_feathered-elite
@@ -230,7 +230,7 @@
 
 #newitem
 #id "reinforcedcap_feathered-elite"
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ophidians/head/magefeather2.png
 #recolormask /graphics/ophidians/head/magefeather2_recolormask.png
 #armor
@@ -243,7 +243,7 @@
 
 #newitem
 #id "bronzecap_feathered"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ophidians/head/magefeathert1-1.png
 #recolormask self
 #eliteversion bronzecap_feathered-elite
@@ -257,7 +257,7 @@
 
 #newitem
 #id "bronzecap_feathered-elite"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/ophidians/head/magefeather2.png
 #recolormask /graphics/ophidians/head/magefeather2_recolormask.png
 #armor
@@ -271,7 +271,7 @@
 
 #newitem
 #id "ironcap_feathered"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ophidians/head/magefeathert1-1.png
 #recolormask self
 #eliteversion ironcap_feathered-elite
@@ -285,7 +285,7 @@
 
 #newitem
 #id "ironcap_feathered-elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ophidians/head/magefeather2.png
 #recolormask /graphics/ophidians/head/magefeather2_recolormask.png
 #armor
@@ -301,7 +301,7 @@
 -- Oriental helms
 #newitem
 #id "leathercap_oriental"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ophidians/head/leathercap_oriental.png
 #eliteversion leathercap_oriental-elite
 #armor
@@ -313,7 +313,7 @@
 
 #newitem
 #id "leathercap_oriental-elite"
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ophidians/head/leathercap_oriental_elite.png
 #recolormask /graphics/ophidians/head/cap_oriental_elite_recolormask.png
 #armor
@@ -325,7 +325,7 @@
 
 #newitem
 #id "ironcap_oriental"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ophidians/head/ironcap_oriental.png
 #eliteversion ironcap_oriental-elite
 #armor
@@ -336,7 +336,7 @@
 
 #newitem
 #id "ironcap_oriental-elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ophidians/head/ironcap_oriental_elite.png
 #recolormask /graphics/ophidians/head/cap_oriental_elite_recolormask.png
 #armor
@@ -348,7 +348,7 @@
 
 #newitem
 #id "jingasa1"
-#gameid 131
+#dominionsId 131
 #sprite /graphics/ophidians/head/jingasa.png
 #recolormask /graphics/ophidians/head/jingasa_recolormask.png
 #armor
@@ -360,7 +360,7 @@
 
 #newitem
 #id "jingasa1"
-#gameid 131
+#dominionsId 131
 #sprite /graphics/ophidians/head/jingasa.png
 #recolormask /graphics/ophidians/head/jingasa_recolormask2.png
 #armor
@@ -372,7 +372,7 @@
 
 #newitem
 #id "kabuto"
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ophidians/head/kabuto.png
 #eliteversion kabuto-elite
 #armor
@@ -383,7 +383,7 @@
 
 #newitem
 #id "kabuto-elite"
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ophidians/head/kabuto_elite.png
 #armor
 #theme "iron"
@@ -396,7 +396,7 @@
 -- Ice helms
 #newitem
 #id "icecap"
-#gameid 29
+#dominionsId 29
 #basechance 0.01
 #sprite /graphics/ophidians/head/icecap.png
 #armor
@@ -414,7 +414,7 @@
 
 #newitem
 #id "ice halfhelm"
-#gameid 124
+#dominionsId 124
 #basechance 0.01
 #sprite /graphics/ophidians/head/icehelmet.png
 #armor
@@ -450,7 +450,7 @@
 
 #newitem
 #id "icecap_oriental"
-#gameid 29
+#dominionsId 29
 #basechance 0.01
 #sprite /graphics/ophidians/head/icecap_oriental.png
 #armor
@@ -466,7 +466,7 @@
 
 #newitem
 #id "ice halfhelm_oriental"
-#gameid 124
+#dominionsId 124
 #basechance 0.01
 #sprite /graphics/ophidians/head/icehelm_oriental.png
 #eliteversion "elite ice halfhelm_oriental"
@@ -501,7 +501,7 @@
 -- Marine caps
 #newitem
 #id "shellcap"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ophidians/head/shellcap.png
 #armor
 #theme "terrestrial"
@@ -514,7 +514,7 @@
 
 #newitem
 #id "coralcap"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/ophidians/head/coralcap.png
 #armor
 #theme "coral"
@@ -528,7 +528,7 @@
 
 #newitem
 #id "sharkskincap"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/ophidians/head/sharkskincap.png
 #armor
 #theme "leather"

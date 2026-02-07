@@ -113,6 +113,7 @@ public class Pose extends Filter {
         Set<String> spriteRenderSlots = new HashSet<>();
         for (Item i : set) {
           if (i.hasDominionsId()) {
+            
             CustomItem citem = nationGen
               .GetCustomItemsHandler()
               .getCustomItem(i.name)

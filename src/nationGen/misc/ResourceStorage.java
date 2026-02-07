@@ -38,31 +38,39 @@ public class ResourceStorage<E extends Entity>
     return set;
   }
 
-  public void load(NationGen gen, String file) {
+  public void load(NationGen nationGen, String file) {
     List<String> lines = FileUtil.readLines(file);
 
     for (int lineNbr = 0; lineNbr < lines.size(); lineNbr++) {
       String strLine = lines.get(lineNbr);
-
       List<String> args = Generic.parseArgs(strLine);
-      if (args.size() == 0) {
+
+      if (args.isEmpty()) {
         continue;
       }
 
-      if (args.get(0).equals("#load")) {
-        if (args.size() < 3) {
-          throw new IllegalArgumentException("Line " + lineNbr + " in file '" + file + "': #load command expects a list name and a file path to read!");
-        }
+      String commandString = args.get(0);
 
-        // TODO: refactor this with some blacklist
-        if (args.get(1).equals("clear")) {
-          throw new IllegalStateException(
-            "File '" + file + "': Resource sets can't be named 'clear'!"
-          );
-        }
-
-        this.put(args.get(1), Entity.readFile(gen, args.get(2), type));
+      // Ignore anything that's not #load in base resource files
+      if (!commandString.equals("#load")) {
+        continue;
       }
+
+      if (args.size() < 3) {
+        throw new IllegalArgumentException("Line " + lineNbr + " in file '" + file + "': #load command expects a list name and a file path to read!");
+      }
+
+      String resourceListName = args.get(1);
+      String resourceFilePath = args.get(2);
+
+      // TODO: refactor this with some blacklist
+      if (resourceListName.equals("clear")) {
+        throw new IllegalStateException(
+          "File '" + file + "': Resource sets can't be named 'clear'!"
+        );
+      }
+
+      this.put(args.get(1), Entity.readFile(nationGen, resourceFilePath, type));
     }
   }
 }

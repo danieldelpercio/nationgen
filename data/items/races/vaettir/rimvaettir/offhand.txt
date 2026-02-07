@@ -7,7 +7,7 @@
 
 #newitem
 #id offhandhatchet
-#gameid 253
+#dominionsId 253
 #sprite /graphics/vaettir/offhand/hatchet.png
 #theme "primitive"
 #theme "bear"
@@ -15,14 +15,14 @@
 
 #newitem
 #id offhandhammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/vaettir/offhand/hammer.png
 #theme "iron"
 #enditem
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/vaettir/offhand/mace.png
 #theme "primitive"
 #theme "boar"
@@ -30,7 +30,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/vaettir/offhand/shortsword.png
 #theme "iron"
 #theme "wolf"
@@ -38,7 +38,7 @@
 
 #newitem
 #id offhanddagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/vaettir/offhand/dagger.png
 #theme "wolf"
 #enditem
@@ -46,7 +46,7 @@
 #newitem
 #id offhandpoisondagger
 #basechance 0
-#gameid 126
+#dominionsId 126
 #sprite /graphics/vaettir/offhand/dagger.png
 #theme "spider"
 #enditem

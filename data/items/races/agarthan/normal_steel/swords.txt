@@ -1,7 +1,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/agarthan/weapons/shortsword.png
 #basechance 0.5
 #tag "name infantry swordsman"
@@ -17,7 +17,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/agarthan/weapons/broadsword.png
 #basechance 0.125
 #tag "name infantry swordsman"

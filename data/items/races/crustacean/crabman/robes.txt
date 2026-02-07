@@ -2,7 +2,7 @@
 
 #newitem
 #id "plain robe"
-#gameid 159
+#dominionsId 159
 #sprite /graphics/crustacean/crabman/armor/robes/magerobe2.png
 #armor
 #tier 1
@@ -12,7 +12,7 @@
 
 #newitem
 #id "fancy robe"
-#gameid 159
+#dominionsId 159
 #sprite /graphics/crustacean/crabman/armor/robes/magerobe1.png
 #armor
 #notfortier 1
@@ -22,7 +22,7 @@
 
 #newitem
 #id "monk robe light"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/crustacean/crabman/armor/robes/monkrobe_light.png
 #recolormask self
 #needs armor-overlay none
@@ -34,7 +34,7 @@
 
 #newitem
 #id "monk robe medium"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/crustacean/crabman/armor/robes/monkrobe_medium.png
 #recolormask self
 #needs armor-overlay none
@@ -46,7 +46,7 @@
 
 #newitem
 #id "monk robe dark"
-#gameid 158
+#dominionsId 158
 #sprite /graphics/crustacean/crabman/armor/robes/monkrobe_dark.png
 #recolormask self
 #needs armor-overlay none

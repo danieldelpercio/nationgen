@@ -4,7 +4,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 36
+#dominionsId 36
 #sprite /graphics/caelian/weapon/icelance2.png
 #theme "ice"
 #type ice
@@ -17,7 +17,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 611
+#dominionsId 611
 #sprite /graphics/caelian/weapon/icespear.png
 #theme "ice"
 #type ice
@@ -30,7 +30,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 37
+#dominionsId 37
 #sprite /graphics/caelian/weapon/iceblade.png
 #theme "ice"
 #type ice
@@ -42,7 +42,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/caelian/weapon/icemace.png
 #theme "ice"
 #type ice
@@ -55,7 +55,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 454
+#dominionsId 454
 #sprite /graphics/caelian/weapon/iceglaive.png
 #theme "ice"
 #type ice

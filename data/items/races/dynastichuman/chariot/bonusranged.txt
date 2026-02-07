@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx 1
 #offsety -2
@@ -10,7 +10,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #offsetx 1
 #offsety -3
@@ -19,7 +19,7 @@
 
 #newitem
 #id "short bow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #offsetx 2
 #offsety -2
@@ -28,7 +28,7 @@
 
 #newitem
 #id "composite bow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #offsetx 2
 #offsety -2
@@ -37,6 +37,6 @@
 
 #newitem
 #id "sling"
-#gameid 22
+#dominionsId 22
 #maxprot 9
 #enditem

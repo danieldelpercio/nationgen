@@ -1,6 +1,6 @@
 #newitem
 #id coralclub-s
-#gameid 45
+#dominionsId 45
 #sprite /graphics/atlantian/weapon/coralclub.png
 #basechance 0.4
 #tag "name infantry shambler"
@@ -9,7 +9,7 @@
 
 #newitem
 #id spear-s
-#gameid 31
+#dominionsId 31
 #sprite /graphics/atlantian/weapon/spear.png
 #basechance 0.5
 #tag "name infantry spearman"
@@ -17,7 +17,7 @@
 
 #newitem
 #id basaltspear-s
-#gameid 464
+#dominionsId 464
 #sprite /graphics/atlantian/weapon/basaltspear.png
 #basechance 0.2
 #tag "name infantry spearman"
@@ -26,7 +26,7 @@
 
 #newitem
 #id trident-s
-#gameid 3
+#dominionsId 3
 #sprite /graphics/atlantian/weapon/shamblertrident.png
 #basechance 0.5
 #tag "prefix infantry trident"
@@ -34,7 +34,7 @@
 
 #newitem
 #id coralglaive-s
-#gameid 46
+#dominionsId 46
 #sprite /graphics/atlantian/weapon/shamblercoralglaive.png
 #basechance 0.5
 #tag "name infantry glaiver"

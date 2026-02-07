@@ -1,6 +1,6 @@
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #basechance 1
 #sprite /graphics/monkey/giant/club.png
 #theme "primitive"
@@ -9,7 +9,7 @@
 
 #newitem
 #id skull_club
-#gameid 579
+#dominionsId 579
 #basechance 0.5
 #sprite /graphics/monkey/giant/skullclub.png
 #theme "primitive"
@@ -19,7 +19,7 @@
 #newitem
 #id great_club
 #basechance 1
-#gameid 165
+#dominionsId 165
 #sprite /graphics/monkey/giant/greatclub.png
 #theme "primitive"
 #theme "wood"
@@ -31,7 +31,7 @@
 #newitem
 #id stone_spear
 #basechance 2
-#gameid 373
+#dominionsId 373
 #sprite /graphics/monkey/giant/stonespear.png
 #theme "primitive"
 #theme "wood"
@@ -42,7 +42,7 @@
 #newitem
 #id spear
 #basechance 2
-#gameid 1
+#dominionsId 1
 #sprite /graphics/monkey/giant/longspear.png
 #recolormask /graphics/monkey/giant/longspear_recolormask.png
 #theme "iron"
@@ -54,7 +54,7 @@
 #newitem
 #id longspear
 #basechance 2
-#gameid 28
+#dominionsId 28
 #sprite /graphics/monkey/giant/longspear.png
 #recolormask /graphics/monkey/giant/longspear_recolormask.png
 #theme "iron"
@@ -67,7 +67,7 @@
 #newitem
 #id mace
 #basechance 2
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/giant/mace.png
 #theme "iron"
 #enditem
@@ -75,7 +75,7 @@
 #newitem
 #id cudgel
 #basechance 1
-#gameid 363
+#dominionsId 363
 #sprite /graphics/monkey/giant/cudgel.png
 #theme "iron"
 #troopweapon
@@ -86,7 +86,7 @@
 #newitem
 #id flail
 #basechance 1
-#gameid 16
+#dominionsId 16
 #sprite /graphics/monkey/giant/flail.png
 #theme "iron"
 #theme "advanced"
@@ -98,7 +98,7 @@
 #newitem
 #id hatchet
 #basechance 1
-#gameid 253
+#dominionsId 253
 #sprite /graphics/monkey/giant/axe.png
 #theme "primitive"
 #theme "iron"
@@ -107,7 +107,7 @@
 #newitem
 #id axe
 #basechance 1
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/giant/axe.png
 #theme "advanced"
 #theme "iron"
@@ -116,7 +116,7 @@
 #newitem
 #id battleaxe
 #basechance 1
-#gameid 18
+#dominionsId 18
 #sprite /graphics/monkey/giant/battleaxe.png
 #theme "primitive"
 #theme "iron"
@@ -128,7 +128,7 @@
 #newitem
 #id greataxe
 #basechance 1
-#gameid 18
+#dominionsId 18
 #sprite /graphics/monkey/giant/battleaxe.png
 #theme "advanced"
 #theme "iron"
@@ -140,7 +140,7 @@
 #newitem
 #id shortsword
 #basechance 1
-#gameid 6
+#dominionsId 6
 #sprite /graphics/monkey/giant/shortsword.png
 #theme "iron"
 #enditem
@@ -148,7 +148,7 @@
 #newitem
 #id broadsword
 #basechance 1
-#gameid 8
+#dominionsId 8
 #sprite /graphics/monkey/giant/broadsword.png
 #theme "advanced"
 #theme "iron"
@@ -157,7 +157,7 @@
 #newitem
 #id shortfalchion
 #basechance 1
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/giant/shortfalchion.png
 #theme "iron"
 #enditem

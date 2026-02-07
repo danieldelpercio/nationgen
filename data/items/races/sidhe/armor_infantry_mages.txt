@@ -1,7 +1,7 @@
 -- cuirass, hauberk, scale cuirass, scale hauberk
 #newitem
 #id "leather hauberk 1"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/sidhe/armor/leatherhauberk.png
 #armor
 #tag "tier 1"
@@ -11,7 +11,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/sidhe/armor/scalecuirass.png
 #armor
 #tag "tier 1"
@@ -22,7 +22,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/sidhe/armor/scalehauberk.png
 #needs legs bronzegreaves
 #armor
@@ -34,7 +34,7 @@
 
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/sidhe/armor/bronzecuirass.png
 #armor
 #tag "tier 1"

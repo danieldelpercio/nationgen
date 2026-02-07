@@ -2,7 +2,7 @@
 
 #newitem
 #id bronzebuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/merrow/offhand/buckler_bronze.png
 #armor
 #theme bronze
@@ -11,7 +11,7 @@
 
 #newitem
 #id bronzeshield
-#gameid 1
+#dominionsId 1
 #sprite /graphics/merrow/offhand/shield_bronze.png
 #armor
 #theme bronze
@@ -19,7 +19,7 @@
 
 #newitem
 #id shellshield
-#gameid 1
+#dominionsId 1
 #sprite /graphics/merrow/offhand/shield_shell.png
 #armor
 #theme shell

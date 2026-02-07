@@ -1356,7 +1356,7 @@ public class MageGenerator extends TroopGenerator {
           if (unit.requiresUndeadLeadership() && isPriest) {
             LeadershipQuality nextQuality = quality.getNext();
             LeadershipAbility improvedLeadership = LeadershipAbility.fromTypeAndQuality(leadershipType, nextQuality);
-            Command undeadLeadershipCommand = new Command(improvedLeadership.getModCommand());
+            Command undeadLeadershipCommand = new Command(improvedLeadership.toModCommand());
             unit.commands.add(undeadLeadershipCommand);
           }
           break;
@@ -1364,7 +1364,7 @@ public class MageGenerator extends TroopGenerator {
         case MAGIC_BEING:
           if (unit.isMagicBeing() && unit.hasLeadership(leadershipType) == false) {
             LeadershipAbility magicBeingLeadership = LeadershipAbility.fromTypeAndQuality(leadershipType, basicLevel.quality);
-            Command magicBeingLeadershipCommand = new Command(magicBeingLeadership.getModCommand());
+            Command magicBeingLeadershipCommand = new Command(magicBeingLeadership.toModCommand());
             unit.commands.add(magicBeingLeadershipCommand);
           }
           break;

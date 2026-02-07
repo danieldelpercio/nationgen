@@ -9,13 +9,13 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #tag "tier 1"
 #enditem
 
 #newitem
 #id "shuriken"
-#gameid 382
+#dominionsId 382
 #basechance 0.5
 #tag "tier 1"
 #tag "tier 2"
@@ -23,7 +23,7 @@
 
 #newitem
 #id "sutra"
-#gameid 459
+#dominionsId 459
 #basechance 0.5
 #tag "tier 1"
 #tag "tier 2"
@@ -32,7 +32,7 @@
 
 #newitem
 #id "darts"
-#gameid 500
+#dominionsId 500
 #basechance 0.5
 #tag "tier 1"
 #tag "tier 2"
@@ -40,7 +40,7 @@
 
 #newitem
 #id "sleep touch"
-#gameid 387
+#dominionsId 387
 #basechance 0.1
 #tag "tier 2"
 #tag "tier 3"
@@ -49,7 +49,7 @@
 
 #newitem
 #id "koppo"
-#gameid 420
+#dominionsId 420
 #basechance 0.1
 #tag "tier 1"
 #tag "tier 2"
@@ -58,7 +58,7 @@
 
 #newitem
 #id "slap"
-#gameid 543
+#dominionsId 543
 #basechance 0.1
 #tag "tier 2"
 #tag "tier 3"
@@ -66,7 +66,7 @@
 
 #newitem
 #id "hypnotize"
-#gameid 595
+#dominionsId 595
 #basechance 0.1
 #tag "tier 2"
 #tag "tier 3"
@@ -75,7 +75,7 @@
 
 #newitem
 #id "mezmerize"
-#gameid 403
+#dominionsId 403
 #basechance 0.1
 #tag "tier 2"
 #tag "tier 3"
@@ -84,7 +84,7 @@
 
 #newitem
 #id "spirit strike"
-#gameid 564
+#dominionsId 564
 #basechance 0.1
 #tag "tier 1"
 #tag "tier 2"
@@ -94,7 +94,7 @@
 
 #newitem
 #id "shatter"
-#gameid 574
+#dominionsId 574
 #basechance 0.1
 #tag "tier 2"
 #tag "tier 3"

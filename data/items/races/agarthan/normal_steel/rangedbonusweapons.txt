@@ -2,7 +2,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #enditem
 
 #newitem

@@ -1,7 +1,7 @@
 
 #newitem
 #id ashigaruarmor
-#gameid 128
+#dominionsId 128
 #sprite /graphics/bodyarmor/standard/ashigaruarmor.png
 #recolormask /graphics/bodyarmor/standard/ashigaruarmor_recolormask.png
 #armor
@@ -12,7 +12,7 @@
 
 #newitem
 #id samuraiarmor
-#gameid 129
+#dominionsId 129
 #sprite /graphics/bodyarmor/standard/samuraiarmor2.png
 #recolormask /graphics/bodyarmor/standard/samuraiarmor2_recolormask.png
 #armor

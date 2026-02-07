@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/zotz/weapon/axe.png
 #tag "name infantry axeman"
 #offsetx 7
@@ -12,7 +12,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/zotz/weapon/mace.png
 #tag "name infantry maceman"
 #offsetx 7
@@ -24,7 +24,7 @@
 #newitem
 #id dagger
 #basechance 0.25
-#gameid 671
+#dominionsId 671
 #sprite /graphics/zotz/weapon/dagger.png
 #offsetx 7
 #offsety 2
@@ -34,7 +34,7 @@
 
 #newitem
 #id clubsword
-#gameid 451
+#dominionsId 451
 #sprite /graphics/zotz/weapon/clubsword.png
 #offsetx 7
 #offsety 2
@@ -43,13 +43,13 @@
 
 #newitem
 #id hatchet
-#gameid 646
+#dominionsId 646
 #sprite /graphics/zotz/offhand/hatchet.png
 #enditem
 
 #newitem
 #id net
-#gameid 263
+#dominionsId 263
 #sprite /graphics/zotz/offhand/net.png
 #tag "name infantry slaver"
 #tag "maxprot 12"

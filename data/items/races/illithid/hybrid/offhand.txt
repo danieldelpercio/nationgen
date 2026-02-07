@@ -9,7 +9,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #tentacle
 #needstype larm tentacle
 #type melee
@@ -17,7 +17,7 @@
 
 #newitem
 #id tentacle_strangle
-#gameid 116
+#dominionsId 116
 #tentacle
 #needstype larm tentacle
 #type melee
@@ -25,7 +25,7 @@
 
 #newitem
 #id pincer
-#gameid 273
+#dominionsId 273
 #pincer
 #needstype larm pincer
 #type melee
@@ -36,7 +36,7 @@
 
 #newitem
 #id oh_coraldagger
-#gameid 32
+#dominionsId 32
 #sprite /graphics/atlantian/weapon/coralknifeleft.png
 #offsetx -6
 #offsety -2
@@ -47,7 +47,7 @@
 
 #newitem
 #id oh_dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/advancedhuman/weapons/oh_dagger.png
 #offsetx 2
 #offsety 6
@@ -59,7 +59,7 @@
 
 #newitem
 #id oh_bronzedagger
-#gameid 674
+#dominionsId 674
 #sprite /graphics/ichtyid/weapon/bronze_dagger.png
 #offsetx 18
 #offsety 13
@@ -70,7 +70,7 @@
 
 #newitem
 #id oh_coralclub
-#gameid 45
+#dominionsId 45
 #sprite /graphics/ichtyid/weapon/coral_club_oh.png
 #offsetx 11
 #offsety 6
@@ -82,7 +82,7 @@
 
 #newitem
 #id oh_shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/advancedhuman/weapons/oh_shortsword.png
 #offsetx 2
 #offsety 6
@@ -105,7 +105,7 @@
 
 #newitem
 #id offhandshortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/ichtyid/weapon/bronze_shortsword_oh.png
 #offsetx 12
 #offsety 6
@@ -116,7 +116,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/vaettir/offhand/hatchet.png
 #offsetx 2
 #offsety 1
@@ -129,7 +129,7 @@
 
 #newitem
 #id offhandhatchet
-#gameid 646
+#dominionsId 646
 #sprite /graphics/ichtyid/weapon/bronze_axe_oh.png
 #offsetx 12
 #offsety 6
@@ -140,7 +140,7 @@
 
 #newitem
 #id oh_mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/advancedhuman/weapons/oh_mace.png
 #offsetx 2
 #offsety 6

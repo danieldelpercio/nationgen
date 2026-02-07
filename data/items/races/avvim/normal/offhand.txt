@@ -2,51 +2,51 @@
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/offhand/axe.png
 #theme "primitive"
 #enditem
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/offhand/mace.png
 #theme "primitive"
 #enditem
 
 #newitem
 #id offhandmorningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/avvim/offhand/morningstar.png
 #enditem
 
 #newitem
 #id offhanddagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/avvim/offhand/dagger.png
 #enditem
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/avvim/offhand/shortsword.png
 #enditem
 
 #newitem
 #id offhandkopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/avvim/offhand/kopesh.png
 #enditem
 
 #newitem
 #id offhandbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/offhand/broadsword.png
 #enditem
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/offhand/falchion.png
 #enditem
 

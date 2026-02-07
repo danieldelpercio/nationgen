@@ -3,28 +3,28 @@
 
 #newitem
 #id leathercuirass1
-#gameid 5
+#dominionsId 5
 #sprite /graphics/bodyarmor/crossbow/leathercuirass.png
 #armor
 #enditem
 
 #newitem
 #id leatherhauberk1
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/crossbow/leatherhauberk.png
 #armor
 #enditem
 
 #newitem
 #id leatherhauberk2
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/crossbow/leatherhauberk2.png
 #armor
 #enditem
 
 #newitem -- full leather
 #id fullleather
-#gameid 15
+#dominionsId 15
 #sprite /graphics/bodyarmor/crossbow/leatherhauberk.png
 #armor
 #enditem
@@ -34,14 +34,14 @@
 
 #newitem
 #id 5
-#gameid 8
+#dominionsId 8
 #sprite /graphics/bodyarmor/crossbow/mailcuirass.png
 #armor
 #enditem
 
 #newitem
 #id 6
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/crossbow/mailhauberk1.png
 #armor
 #basechance 0.25
@@ -49,7 +49,7 @@
 
 #newitem
 #id 7
-#gameid 13
+#dominionsId 13
 #sprite /graphics/bodyarmor/crossbow/mailhauberk2.png
 #armor
 #basechance 0.25
@@ -57,7 +57,7 @@
 
 #newitem -- full chain
 #id 8
-#gameid 18
+#dominionsId 18
 #sprite /graphics/bodyarmor/crossbow/mailhauberk1.png
 #armor
 #needs legs legarmor
@@ -69,14 +69,14 @@
 
 #newitem
 #id 9
-#gameid 7
+#dominionsId 7
 #sprite /graphics/bodyarmor/crossbow/mailcuirass.png
 #armor
 #enditem
 
 #newitem
 #id 10
-#gameid 12
+#dominionsId 12
 #sprite /graphics/bodyarmor/crossbow/mailhauberk1.png
 #armor
 #basechance 0.25
@@ -84,7 +84,7 @@
 
 #newitem
 #id 11
-#gameid 12
+#dominionsId 12
 #sprite /graphics/bodyarmor/crossbow/mailhauberk2.png
 #armor
 #basechance 0.25
@@ -92,7 +92,7 @@
 
 #newitem -- full scale
 #id 12
-#gameid 17
+#dominionsId 17
 #sprite /graphics/bodyarmor/crossbow/mailhauberk1.png
 #armor
 #needs legs legarmor
@@ -104,7 +104,7 @@
 
 #newitem
 #id 13
-#gameid 9
+#dominionsId 9
 #sprite /graphics/bodyarmor/crossbow/platecuirass.png
 #armor
 #basechance 0.5
@@ -112,7 +112,7 @@
 
 #newitem
 #id 14
-#gameid 14
+#dominionsId 14
 #sprite /graphics/bodyarmor/crossbow/platehauberk.png
 #armor
 #basechance 0.25
@@ -120,7 +120,7 @@
 
 #newitem -- full plate
 #id 15
-#gameid 19
+#dominionsId 19
 #sprite /graphics/bodyarmor/crossbow/platehauberk.png
 #armor
 #needs legs legarmor
@@ -132,28 +132,28 @@
 
 #newitem
 #id 16
-#gameid 6
+#dominionsId 6
 #sprite /graphics/bodyarmor/crossbow/ringcuirass.png
 #armor
 #enditem
 
 #newitem
 #id 17
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/crossbow/ringhauberk.png
 #armor
 #enditem
 
 #newitem
 #id 18
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/crossbow/ringhauberk2.png
 #armor
 #enditem
 
 #newitem -- full ring
 #id 19
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/crossbow/ringhauberk.png
 #armor
 #enditem
@@ -162,7 +162,7 @@
 
 #newitem
 #id 20
-#gameid 129
+#dominionsId 129
 #sprite /graphics/bodyarmor/crossbow/samuraiarmor2.png
 #recolormask /graphics/bodyarmor/crossbow/samuraiarmor2_recolormask.png
 #armor
@@ -170,7 +170,7 @@
 
 #newitem -- Ashigaru armor
 #id 21
-#gameid 128
+#dominionsId 128
 #sprite /graphics/bodyarmor/crossbow/samuraiarmor2.png
 #recolormask /graphics/bodyarmor/crossbow/samuraiarmor2_recolormask.png
 #armor

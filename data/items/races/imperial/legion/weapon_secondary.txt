@@ -2,28 +2,28 @@
 
 #newitem
 #id stonedagger
-#gameid 671
+#dominionsId 671
 #theme "stone"
 #theme "primitive"
 #enditem
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #theme "wood"
 #theme "primitive"
 #enditem
 
 #newitem
 #id spikedclub
-#gameid 265
+#dominionsId 265
 #theme "wood"
 #theme "primitive"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #theme "stone"
 #theme "primitive"
 #enditem
@@ -33,23 +33,23 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #theme "iron"
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #theme "iron"
 #enditem
 
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #theme "iron"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #enditem

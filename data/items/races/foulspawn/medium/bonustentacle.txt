@@ -2,7 +2,7 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #type "tentacle"
 #degenerate
 #command "#gcost +3"
@@ -10,14 +10,14 @@
 
 #newitem
 #id tentacle
-#gameid 85
+#dominionsId 85
 #type "tentacle"
 #command "#gcost +3"
 #enditem
 
 #newitem
 #id strangle
-#gameid 116
+#dominionsId 116
 #type "tentacle"
 #command "#gcost +3"
 #itemslot hand +1
@@ -25,7 +25,7 @@
 
 #newitem
 #id tentacle_sleep
-#gameid 387
+#dominionsId 387
 #type "tentacle"
 #command "#gcost +5"
 #itemslot hand +1
@@ -33,14 +33,14 @@
 
 #newitem
 #id tentacle_disease
-#gameid 142
+#dominionsId 142
 #type "tentacle"
 #command "#gcost +5"
 #enditem
 
 #newitem
 #id tentacle_weakness
-#gameid 550
+#dominionsId 550
 #type "tentacle"
 #command "#gcost +5"
 #enditem

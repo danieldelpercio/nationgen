@@ -1,7 +1,7 @@
 -- None
 #newitem
 #id "glamour"
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #armor
 #command "#glamour"
@@ -9,7 +9,7 @@
 
 #newitem
 #id "invulnerability"
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #armor
 #command "#invulnerable 12"
@@ -18,7 +18,7 @@
 
 #newitem
 #id "strong invulnerability"
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #armor
 #command "#invulnerable 18"
@@ -27,7 +27,7 @@
 
 #newitem
 #id "awe"
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #armor
 #command "#awe +1"
@@ -36,7 +36,7 @@
 
 #newitem
 #id "ethereal body"
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #armor
 #command "#ethereal"
@@ -47,7 +47,7 @@
 -- Shell armor
 #newitem
 #id "shell armor"
-#gameid 140
+#dominionsId 140
 #sprite /graphics/illithid/illithid/armor/cuirass_shell.png
 #armor
 #theme "primitive"
@@ -60,7 +60,7 @@
 -- Coral armor
 #newitem
 #id "coral cuirass"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/illithid/illithid/armor/cuirass_coral.png
 #armor
 #define "#poisonarmor 5"
@@ -73,7 +73,7 @@
 --- Bronze Plate
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/illithid/illithid/armor/cuirass_bronze.png
 #armor
 #theme "bronze"
@@ -85,7 +85,7 @@
 --- Meteorite Plate
 #newitem
 #id "meteorite cuirass"
-#gameid 210
+#dominionsId 210
 #sprite /graphics/illithid/illithid/armor/cuirass_iron.png
 #armor
 #command "#mr +1"

@@ -1,6 +1,6 @@
 #newitem
 #id goldenbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/sacred/goldenbroadsword.png
 #tag "name infantry swordsman"
 #theme "sacred"
@@ -10,7 +10,7 @@
 
 #newitem
 #id goldenshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/sacred/goldenshortsword.png
 #theme "sacred"
 #offsetx 17
@@ -19,7 +19,7 @@
 
 #newitem
 #id goldenspear
-#gameid 357
+#dominionsId 357
 #sprite /graphics/vanir/weapon/goldenspear_flying.png
 #tag "name infantry spearman"
 #theme "sacred"
@@ -27,7 +27,7 @@
 
 #newitem
 #id banebroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/sacred/banebroadsword.png
 #theme "sacred"
 #basechance 0

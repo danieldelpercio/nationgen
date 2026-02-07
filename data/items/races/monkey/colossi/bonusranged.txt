@@ -7,7 +7,7 @@
 
 #newitem
 #id "javelin"
-#gameid 21
+#dominionsId 21
 #basechance 3
 #chanceinc racetheme primitive *0
 #chanceinc racetheme winged *0
@@ -16,7 +16,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0
 #chanceinc racetheme primitive 1
 #theme "primitive"

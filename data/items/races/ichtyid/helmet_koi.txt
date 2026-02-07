@@ -1,6 +1,6 @@
 #newitem
 #id "leathercap"
-#gameid 120
+#dominionsId 120
 #basechance 4
 #sprite /graphics/ichtyid/helmet/leather_cap.png
 #armor
@@ -10,7 +10,7 @@
 
 #newitem
 #id "shellcap"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet.png
 #tag "eliteversion sharkskincap_fin"
 #tag "eliteversion sharkskincap_spiny"
@@ -22,7 +22,7 @@
 
 #newitem
 #id "shellcap_fin"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet_crested.png
 #recolormask /graphics/ichtyid/helmet/fin_crest_recolormask.png
 #armor
@@ -33,7 +33,7 @@
 
 #newitem
 #id "shellcap_spiny"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet_spiny.png
 #recolormask /graphics/ichtyid/helmet/spiny_crest_recolormask.png
 #armor
@@ -44,7 +44,7 @@
 
 #newitem
 #id "shellcap_boney"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/ichtyid/helmet/shell_helmet_boney.png
 #recolormask /graphics/ichtyid/helmet/boney_crest_recolormask.png
 #armor
@@ -55,7 +55,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ichtyid/helmet/iron_cap.png
 #tag "eliteversion ironcap_fin"
 #tag "eliteversion ironcap_spiny"
@@ -67,7 +67,7 @@
 
 #newitem
 #id ironcap_fin
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ichtyid/helmet/iron_cap_crested.png
 #recolormask /graphics/ichtyid/helmet/fin_crest_recolormask.png
 #armor
@@ -79,7 +79,7 @@
 
 #newitem
 #id ironcap_spiny
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ichtyid/helmet/iron_cap_spiny.png
 #recolormask /graphics/ichtyid/helmet/spiny_crest_recolormask.png
 #armor
@@ -91,7 +91,7 @@
 
 #newitem
 #id kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ichtyid/helmet/kabuto.png
 #tag "eliteversion kabuto_fin"
 #tag "eliteversion kabuto_elite"
@@ -102,7 +102,7 @@
 
 #newitem
 #id kabuto_fin
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ichtyid/helmet/kabuto_fin.png
 #recolormask /graphics/ichtyid/helmet/kabuto_fin_recolormask.png
 #tag "eliteversion kabuto_fin"
@@ -114,7 +114,7 @@
 
 #newitem
 #id kabuto_elite
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ichtyid/helmet/kabuto_elite.png
 #tag "eliteversion kabuto_elite"
 #armor

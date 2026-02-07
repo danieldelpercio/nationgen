@@ -1,7 +1,7 @@
 
 #newitem
 #id axe
-#gameid 675
+#dominionsId 675
 #sprite /graphics/fomorian/giant/weapon/hatchet.png
 #recolormask /graphics/fomorian/giant/weapon/axe_recolormask.png
 #eliteversion eliteaxe
@@ -10,7 +10,7 @@
 
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #sprite /graphics/fomorian/giant/weapon/axe.png
 #recolormask /graphics/fomorian/giant/weapon/axe_recolormask.png
 #eliteversion eliteaxe
@@ -29,14 +29,14 @@
 
 #newitem
 #id greataxe
-#gameid 698
+#dominionsId 698
 #sprite /graphics/fomorian/giant/weapon/battleaxe_bronze.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id greataxe_iron
-#gameid 18
+#dominionsId 18
 #sprite /graphics/fomorian/giant/weapon/battleaxe.png
 #theme "iron"
 #enditem
@@ -51,7 +51,7 @@
 
 #newitem
 #id broadsword_iron
-#gameid 8
+#dominionsId 8
 #sprite /graphics/fomorian/giant/weapon/sword.png
 #eliteversion elitebroadsword
 #theme "iron"
@@ -60,34 +60,34 @@
 #newitem
 #id elitebroadsword
 #basechance 0.25
-#gameid 474
+#dominionsId 474
 #sprite /graphics/fomorian/giant/weapon/elitesword.png
 #enditem
 
 #newitem
 #id spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/fomorian/giant/weapon/spear_bronze.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id spear_iron
-#gameid 1
+#dominionsId 1
 #sprite /graphics/fomorian/giant/weapon/spear.png
 #theme "iron"
 #enditem
 
 #newitem
 #id trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/fomorian/giant/weapon/trident_bronze.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id trident_iron
-#gameid 3
+#dominionsId 3
 #sprite /graphics/fomorian/giant/weapon/trident.png
 #theme "iron"
 #enditem

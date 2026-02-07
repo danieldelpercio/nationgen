@@ -15,7 +15,7 @@
 
 #newitem
 #id "robes_fancy"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_ornate"
 #eliteversion "robes_arco"
@@ -28,7 +28,7 @@
 
 #newitem
 #id "robes_ornate"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_ornate"
 #eliteversion "robes_arco"
@@ -56,7 +56,7 @@
 
 #newitem
 #id "robes_arco"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_arco"
 #eliteversion "robes_rhaga"
@@ -80,7 +80,7 @@
 
 #newitem
 #id "robes_rhaga"
-#gameid 158
+#dominionsId 158
 #armor
 #eliteversion "robes_rhaga"
 #notfortier 1

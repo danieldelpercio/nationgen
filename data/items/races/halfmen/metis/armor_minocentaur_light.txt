@@ -10,7 +10,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/halfmen/metis/armor/furs.png
 #armor
 #theme "primitive"

@@ -1,6 +1,6 @@
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/vanir/armor/leathercuirass_serf.png
 #armor
 #basechance 2
@@ -8,7 +8,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/vanir/armor/leatherhauberk_serf.png
 #armor
 #basechance 2
@@ -16,21 +16,21 @@
 
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/vanir/armor/ringcuirass_serf.png
 #armor
 #enditem
 
 #newitem
 #id "ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/vanir/armor/ringhauberk_serf.png
 #armor
 #enditem
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/vanir/armor/scalecuirass_serf.png
 #armor
 #theme advanced
@@ -39,7 +39,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/vanir/armor/scalehauberk_serf.png
 #armor
 #theme advanced

@@ -1,6 +1,6 @@
 #newitem
 #id "sharkskinarmor-s"
-#gameid 151
+#dominionsId 151
 #sprite /graphics/atlantian/armor/sharkskinarmor-s.png
 #armor
 #theme "primitive"
@@ -9,7 +9,7 @@
 
 #newitem
 #id "coralhauberk-s"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/atlantian/armor/coralhauberk-s.png
 #armor
 #basechance 0.75
@@ -19,7 +19,7 @@
 
 #newitem
 #id "coralhauberk-s-elite"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/atlantian/armor/coralhauberk-s-elite.png
 #armor
 #theme "elite" 
@@ -28,7 +28,7 @@
 
 #newitem
 #id "basaltarmor-s"
-#gameid 153
+#dominionsId 153
 #sprite /graphics/atlantian/armor/basaltarmor.png
 #armor
 #theme "advanced"
@@ -38,7 +38,7 @@
 
 #newitem
 #id "meteoritearmor-s"
-#gameid 53
+#dominionsId 53
 #sprite /graphics/atlantian/armor/meteoritearmor-s.png
 #armor
 #theme "advanced"

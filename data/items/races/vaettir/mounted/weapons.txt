@@ -1,6 +1,6 @@
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/vaettir/weapon/lance.png
 #renderprio 7
 #renderslot "offhandw"
@@ -14,7 +14,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/vaettir/weapon/spear.png
 #renderprio 7
 #renderslot "offhandw"
@@ -27,7 +27,7 @@
 
 #newitem
 #id hatchet
-#gameid 253
+#dominionsId 253
 #sprite /graphics/vaettir/weapon/hatchet.png
 #theme "primitive"
 #theme "bear"
@@ -43,7 +43,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/vaettir/weapon/morningstar.png
 #theme "advanced"
 #theme "iron"
@@ -52,14 +52,14 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/vaettir/weapon/shortsword.png
 #theme "iron"
 #enditem
 
 #newitem
 #id axe
-#gameid 66
+#dominionsId 66
 #sprite /graphics/vaettir/weapon/greataxe.png
 #tag "eliteversion greataxe"
 #needs offhand no_offhand

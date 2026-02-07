@@ -9,7 +9,7 @@
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #needstype larm onehand
 #hand
 #degenerate
@@ -18,7 +18,7 @@
 
 #newitem
 #id claw
-#gameid 29
+#dominionsId 29
 #needstype larm claw
 #claw
 #degenerate
@@ -27,7 +27,7 @@
 
 #newitem
 #id claw_stun
-#gameid 250
+#dominionsId 250
 #command "#gcost +1"
 #needstype larm claw
 #claw
@@ -36,7 +36,7 @@
 
 #newitem
 #id claw_poison
-#gameid 248
+#dominionsId 248
 #command "#gcost +1"
 #needstype larm claw
 #claw
@@ -46,7 +46,7 @@
 #newitem
 #id tentacle
 #basechance 1.5
-#gameid 85
+#dominionsId 85
 #type "tentacle"
 #tentacle
 #degenerate
@@ -56,7 +56,7 @@
 #newitem
 #id tentacle_sleep
 #basechance 1.5
-#gameid 387
+#dominionsId 387
 #tentacle
 #degenerate
 #command "#gcost +1"
@@ -66,7 +66,7 @@
 #newitem
 #id tentacle_strangle
 #basechance 1.5
-#gameid 116
+#dominionsId 116
 #tentacle
 #degenerate
 #needstype larm tentacle
@@ -75,7 +75,7 @@
 #newitem
 #id tentacle_disease
 #basechance 1.5
-#gameid 142
+#dominionsId 142
 #tentacle
 #degenerate
 #command "#gcost +2"
@@ -85,7 +85,7 @@
 #newitem
 #id tentacle_paralyze
 #basechance 1.5
-#gameid 282
+#dominionsId 282
 #tentacle
 #degenerate
 #command "#gcost +1"
@@ -95,7 +95,7 @@
 #newitem
 #id tentacle_poison
 #basechance 1.5
-#gameid 355
+#dominionsId 355
 #tentacle
 #degenerate
 #command "#gcost +1"
@@ -105,7 +105,7 @@
 #newitem
 #id pincer
 #basechance 3
-#gameid 273
+#dominionsId 273
 #pincer
 #degenerate
 #needstype larm pincer
@@ -114,7 +114,7 @@
 #newitem
 #id mantis
 #basechance 1
-#gameid 742
+#dominionsId 742
 #mantis
 #degenerate
 #needstype larm mantis
@@ -123,7 +123,7 @@
 -- 1h weapons
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/ogre/weapon/club_oh.png
 #theme "primitive"
 #onehand
@@ -134,7 +134,7 @@
 
 #newitem
 #id spiked_club
-#gameid 593
+#dominionsId 593
 #sprite /graphics/ogre/weapon/spikedclub_oh.png
 #theme "primitive"
 #onehand
@@ -145,7 +145,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/ogre/weapon/hatchet_oh.png
 #theme "primitive"
 #onehand
@@ -155,7 +155,7 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/ogre/weapon/morningstar_oh.png
 #onehand
 #theme "iron"
@@ -165,7 +165,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/ogre/weapon/hammer_oh.png
 #onehand
 #theme "iron"
@@ -175,7 +175,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/ogre/weapon/mace_oh.png
 #theme "primitive"
 #onehand
@@ -185,7 +185,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/highmen/weapons/offhand_shortsword.png
 #offsetx 4
 #offsety 2
@@ -195,7 +195,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/highmen/weapons/offhand_broadsword.png
 #offsetx 4
 #offsety 2
@@ -205,7 +205,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/weapons/offhand_falchion.png
 #offsetx 4
 #offsety 2

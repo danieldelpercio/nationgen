@@ -1,6 +1,6 @@
 #newitem
 #id "javelin"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/fomorian/weapon/javelin_bronze.png
 #offsetx -37
 #offsety -56
@@ -11,7 +11,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #basechance 0.5
 #theme "iron"
 #enditem
@@ -27,7 +27,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/fomorian/weapon/javelin_bronze.png
 #offsetx -37
 #offsety -56
@@ -40,7 +40,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "name infantry 'Poisoner'"
 #tag "maxprot 10"
 #tag "tierunique"
@@ -50,7 +50,7 @@
 
 #newitem 
 #id "discus"
-#gameid 723
+#dominionsId 723
 #basechance 0.25
 #theme "bronze"
 #enditem

@@ -2,37 +2,37 @@
 
 #newitem
 #id offhand_axe
-#gameid 17
+#dominionsId 17
 #theme "primitive"
 #enditem
 
 #newitem
 #id offhand_hammer
-#gameid 13
+#dominionsId 13
 #enditem
 
 #newitem
 #id offhand_morningstar
-#gameid 16
+#dominionsId 16
 #enditem
 
 #newitem
 #id offhand_mace
-#gameid 16
+#dominionsId 16
 #theme "primitive"
 #enditem
 
 #newitem
 #id offhand_shortsword
-#gameid 6
+#dominionsId 6
 #enditem
 
 #newitem
 #id offhand_broadsword
-#gameid 8
+#dominionsId 8
 #enditem
 
 #newitem
 #id offhand_falchion
-#gameid 10
+#dominionsId 10
 #enditem

@@ -2,7 +2,7 @@
 
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/avvim/offhand/axe.png
 #offsetx 10
 #offsety -6
@@ -11,7 +11,7 @@
 
 #newitem
 #id offhandmace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/avvim/offhand/mace.png
 #offsetx 10
 #offsety -6
@@ -20,7 +20,7 @@
 
 #newitem
 #id offhandmorningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/avvim/offhand/morningstar.png
 #offsetx 10
 #offsety -6
@@ -30,7 +30,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/avvim/offhand/shortsword.png
 #offsetx 10
 #offsety -6
@@ -40,7 +40,7 @@
 
 #newitem
 #id offhandbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/avvim/offhand/broadsword.png
 #offsetx 10
 #offsety -6
@@ -50,7 +50,7 @@
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/avvim/offhand/falchion.png
 #offsetx 10
 #offsety -6
@@ -60,7 +60,7 @@
 
 #newitem
 #id offhandaxe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/highmen/weapons/offhand_axe_bronze.png
 #offsetx 4
 #offsety -10
@@ -80,7 +80,7 @@
 
 #newitem
 #id offhandsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/highmen/weapons/offhand_shortsword_bronze.png
 #offsetx 5
 #offsety -10

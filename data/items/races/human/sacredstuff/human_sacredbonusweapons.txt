@@ -17,14 +17,14 @@
 
 #newitem
 #id "hypnosis"
-#gameid 595
+#dominionsId 595
 #basechance 0.01
 #theme "sacred"
 #enditem
 
 #newitem
 #id "thrown sutra"
-#gameid 459
+#dominionsId 459
 #basechance 0.01
 #theme "sacred"
 #enditem

@@ -8,7 +8,7 @@
 -- 1h weapons
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/ogre/weapon/club_oh.png
 #theme "primitive"
 #theme "wood"
@@ -16,7 +16,7 @@
 
 #newitem
 #id spiked_club
-#gameid 593
+#dominionsId 593
 #sprite /graphics/ogre/weapon/spikedclub_oh.png
 #theme "primitive"
 #theme "wood"
@@ -24,20 +24,20 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/ogre/weapon/hammer_oh.png
 #theme "iron"
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/ogre/weapon/mace_oh.png
 #enditem
 
 #newitem
 #id wakizashi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/monkey/weapon/bandar/wakizashi.png
 #offsetx 18
 #offsety -1
@@ -46,7 +46,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/highmen/weapons/offhand_falchion.png
 #offsetx 4
 #offsety 2

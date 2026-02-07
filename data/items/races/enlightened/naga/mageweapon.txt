@@ -1,6 +1,6 @@
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/weapon/standard/hammer.png
 #offsetx 3
 #offsety -7
@@ -11,7 +11,7 @@
 
 #newitem
 #id mace_gold
-#gameid 12
+#dominionsId 12
 #sprite /graphics/enlightened/naga/weapon/mace_gold.png
 #tag "tier 2"
 #tag "tier 1"
@@ -20,7 +20,7 @@
 
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #sprite /graphics/enlightened/naga/weapon/axe_gold.png
 #tag "tier 2"
 #tag "tier 1"
@@ -30,7 +30,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/enlightened/naga/weapon/axe_gold.png
 #tag "tier 2"
 #tag "tier 1"
@@ -40,7 +40,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/enlightened/naga/weapon/falchion_gold.png
 #tag "tier 2"
 #tag "tier 1"
@@ -50,7 +50,7 @@
 
 #newitem
 #id kopesh
-#gameid 513
+#dominionsId 513
 #sprite /graphics/enlightened/naga/weapon/falchion_gold.png
 #tag "tier 2"
 #tag "tier 1"
@@ -60,7 +60,7 @@
 
 #newitem
 #id trident_iron
-#gameid 3
+#dominionsId 3
 #sprite /graphics/enlightened/naga/weapon/trident_gold.png
 #tag "tier 2"
 #tag "tier 1"
@@ -71,7 +71,7 @@
 
 #newitem
 #id trident_bronze
-#gameid 641
+#dominionsId 641
 #sprite /graphics/enlightened/naga/weapon/trident_gold.png
 #tag "tier 2"
 #tag "tier 1"
@@ -82,7 +82,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/standard/quarterstaff.png
 #offsetx 3
 #offsety -1
@@ -96,7 +96,7 @@
 
 #newitem
 #id serpentstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/serpentstaff.png
 #offsetx 4
 #offsety -12
@@ -117,7 +117,7 @@
 
 #newitem
 #id orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/orbstaff.png
 #recolormask /graphics/weapon/mage/orbstaff_recolormask.png
 #offsetx 3
@@ -128,7 +128,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #offsetx 4
 #offsety -5
@@ -140,7 +140,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #offsetx 4
@@ -152,7 +152,7 @@
 
 #newitem
 #id dagger
-#gameid 256
+#dominionsId 256
 #sprite /graphics/weapon/mage/dagger.png
 #offsetx 3
 #offsety -5
@@ -162,7 +162,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/skullstaff.png
 #offsetx 3
 #offsety -4
@@ -175,7 +175,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/metalstaff.png
 #offsetx 2
 #offsety -12
@@ -187,7 +187,7 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/metalstaff_bauble.png
 #offsetx 2
 #offsety -12
@@ -197,7 +197,7 @@
 
 #newitem
 #id knobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/knobblystaff.png
 #offsetx 2
 #offsety -12
@@ -207,7 +207,7 @@
 
 #newitem
 #id vinebonestaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/staff_vinebone.png
 #offsetx 3
 #offsety -5
@@ -220,7 +220,7 @@
 
 #newitem
 #id twig1
-#gameid 498
+#dominionsId 498
 #sprite /graphics/weapon/mage/twig1.png
 #offsetx 3
 #offsety -5
@@ -234,7 +234,7 @@
 
 #newitem
 #id branch
-#gameid 240
+#dominionsId 240
 #sprite /graphics/weapon/mage/branch.png
 #offsetx -1
 #offsety -15
@@ -247,7 +247,7 @@
 
 #newitem
 #id branchstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/weapon/mage/staff_branch.png
 #offsetx 3
 #offsety -5

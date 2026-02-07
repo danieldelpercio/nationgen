@@ -12,7 +12,7 @@
 
 #newitem
 #id leather_halter1
-#gameid 5
+#dominionsId 5
 #sprite /graphics/amazon/armor/robes/amazon_halter_pants.png
 #recolormask /graphics/amazon/armor/robes/amazon_halter_pants_recolormask1.png
 #tag "eliteversion leather_halter2"
@@ -23,7 +23,7 @@
 
 #newitem
 #id leather_halter2
-#gameid 5
+#dominionsId 5
 #sprite /graphics/amazon/armor/robes/amazon_halter_pants.png
 #recolormask /graphics/amazon/armor/robes/amazon_halter_pants_recolormask2.png
 #tag "eliteversion leather_halter2"
@@ -128,7 +128,7 @@
 
 #newitem
 #id fitted_robe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/avalon_daughter.png
 #recolormask /graphics/amazon/armor/robes/avalon_daughter_recolormask1.png
 #tag "eliteversion fitted_robe_colored"
@@ -142,7 +142,7 @@
 
 #newitem
 #id fitted_robe_colored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/avalon_daughter.png
 #recolormask /graphics/amazon/armor/robes/avalon_daughter_recolormask2.png
 #tag "eliteversion fitted_robe_belted"
@@ -155,7 +155,7 @@
 
 #newitem
 #id fitted_robe_belted
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/avalon_mother.png
 #recolormask /graphics/amazon/armor/robes/avalon_mother_recolormask.png
 #tag "eliteversion fitted_robe_crone_light"
@@ -168,7 +168,7 @@
 
 #newitem
 #id fitted_robe_crone_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/avalon_crone.png
 #recolormask self
 #armor
@@ -179,7 +179,7 @@
 
 #newitem
 #id fitted_robe_crone_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/avalon_crone.png
 #recolormask /graphics/amazon/armor/robes/avalon_crone_recolormask.png
 #armor
@@ -190,7 +190,7 @@
 
 #newitem
 #id fitted_robe_crone_brown
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/avalon_crone.png
 #armor
 #tag "tier 1"
@@ -198,7 +198,7 @@
 
 #newitem
 #id short_robe_plain
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/cultist_robe1.png
 #recolormask /graphics/amazon/armor/robes/cultist_robe1_recolormask.png
 #tag "eliteversion short_robe_fancy"
@@ -210,7 +210,7 @@
 
 #newitem
 #id short_robe_fancy
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/cultist_robe2.png
 #recolormask /graphics/amazon/armor/robes/cultist_robe2_recolormask.png
 #tag "eliteversion short_robe_ornate"
@@ -222,7 +222,7 @@
 
 #newitem
 #id short_robe_ornate
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/cultist_robe3.png
 #recolormask /graphics/amazon/armor/robes/cultist_robe3_recolormask.png
 #armor
@@ -232,7 +232,7 @@
 
 #newitem
 #id heavy_robe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ermor_robe1.png
 #recolormask /graphics/amazon/armor/robes/ermor_robe1_recolormask.png
 #armor
@@ -243,7 +243,7 @@
 
 #newitem
 #id draped_robe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ermor_robe2.png
 #tag "eliteversion draped_robe_halfcolored"
 #tag "eliteversion draped_robe_colored"
@@ -254,7 +254,7 @@
 
 #newitem
 #id draped_robe_halfcolored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ermor_robe2.png
 #recolormask /graphics/amazon/armor/robes/ermor_robe2_recolormask1.png
 #tag "eliteversion draped_robe_colored"
@@ -266,7 +266,7 @@
 
 #newitem
 #id draped_robe_colored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ermor_robe2.png
 #recolormask /graphics/amazon/armor/robes/ermor_robe2_recolormask2.png
 #armor
@@ -277,7 +277,7 @@
 
 #newitem
 #id draped_robe_twotone
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ermor_robe2.png
 #recolormask /graphics/amazon/armor/robes/ermor_robe2_recolormask3.png
 #armor
@@ -288,7 +288,7 @@
 
 #newitem
 #id tabard_colored_robe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ermor_robe3.png
 #recolormask /graphics/amazon/armor/robes/ermor_robe3_recolormask1.png
 #tag "eliteversion tabard_white_robe"
@@ -300,7 +300,7 @@
 
 #newitem
 #id tabard_white_robe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ermor_robe3.png
 #recolormask /graphics/amazon/armor/robes/ermor_robe3_recolormask2.png
 #armor
@@ -311,7 +311,7 @@
 
 #newitem
 #id belted_robe_colored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/gath_robe1.png
 #recolormask /graphics/amazon/armor/robes/gath_robe_recolormask1.png
 #tag "eliteversion belted_robe_dark"
@@ -324,7 +324,7 @@
 
 #newitem
 #id belted_robe_dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/gath_robe2.png
 #recolormask /graphics/amazon/armor/robes/gath_robe_recolormask2.png
 #armor
@@ -335,7 +335,7 @@
 
 #newitem
 #id belted_robe_light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/gath_robe3.png
 #recolormask /graphics/amazon/armor/robes/gath_robe_recolormask3.png
 #armor
@@ -346,7 +346,7 @@
 
 #newitem
 #id sleeveless_robe_grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/nun_robe.png
 #armor
 #tag "eliteversion belted_robe_dark"
@@ -355,7 +355,7 @@
 
 #newitem
 #id sleeveless_robe_colored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/nun_robe.png
 #recolormask /graphics/amazon/armor/robes/nun_robe_recolormask.png
 #armor
@@ -366,7 +366,7 @@
 
 #newitem
 #id sleeveless_robe_fitted
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/priestess_gown.png
 #recolormask self
 #armor
@@ -377,7 +377,7 @@
 
 #newitem
 #id sleeveless_robe_highdark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/uba_robe.png
 #recolormask self
 #armor
@@ -388,7 +388,7 @@
 
 #newitem
 #id sleeveless_robe_highlight
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/uba_robe.png
 #recolormask /graphics/amazon/armor/robes/uba_robe_recolormask.png
 #armor
@@ -399,7 +399,7 @@
 
 #newitem
 #id flowing_robe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/oreiad_gown.png
 #armor
 #tag "tier 3"
@@ -407,7 +407,7 @@
 
 #newitem
 #id flowing_robe_colored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/oreiad_gown.png
 #recolormask /graphics/amazon/armor/robes/oreiad_gown_recolormask.png
 #armor
@@ -416,7 +416,7 @@
 
 #newitem
 #id layered_robe_colored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/robe_layered.png
 #recolormask /graphics/amazon/armor/robes/robe_layered_recolormask1.png
 #tag "eliteversion layered_robe_white"
@@ -428,7 +428,7 @@
 
 #newitem
 #id layered_robe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/robe_layered.png
 #recolormask /graphics/amazon/armor/robes/robe_layered_recolormask2.png
 #armor
@@ -439,7 +439,7 @@
 
 #newitem
 #id long_robe
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/spenta_gown.png
 #recolormask /graphics/amazon/armor/robes/spenta_gown_recolormask.png
 #armor
@@ -448,7 +448,7 @@
 
 #newitem
 #id ornate_robe_white
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ur_gown.png
 #recolormask /graphics/amazon/armor/robes/ur_gown_recolormask1.png
 #tag "eliteversion ornate_robe_colored"
@@ -459,7 +459,7 @@
 
 #newitem
 #id ornate_robe_colored
-#gameid 158
+#dominionsId 158
 #sprite /graphics/amazon/armor/robes/ur_gown.png
 #recolormask /graphics/amazon/armor/robes/ur_gown_recolormask2.png
 #armor

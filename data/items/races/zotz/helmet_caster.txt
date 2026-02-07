@@ -37,7 +37,7 @@
 
 #new
 #id simple_crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/zotz/helmet/simple_crown.png
 #tier 1
 #tier 2
@@ -46,7 +46,7 @@
 
 #new
 #id crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/zotz/helmet/crown.png
 #tier 3
 #eliteversion jeweled_crown
@@ -64,7 +64,7 @@
 
 #new
 #id jeweled_crown
-#gameid 148
+#dominionsId 148
 #sprite /graphics/zotz/helmet/jeweled_crown.png
 #recolormask /graphics/zotz/helmet/jeweled_crown_recolormask.png
 #tier 3

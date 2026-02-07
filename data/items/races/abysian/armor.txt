@@ -13,7 +13,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/abysian/armor/chain_cuirass.png
 #armor
 #theme "iron"
@@ -21,7 +21,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/abysian/armor/chain_hauberk.png
 #armor
 #theme "iron"
@@ -29,7 +29,7 @@
 
 #newitem -- full chain
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/abysian/armor/chain_hauberk.png
 #armor
 #needs legs 6
@@ -43,7 +43,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/abysian/armor/scale_cuirass.png
 #armor
 #theme "iron"
@@ -51,7 +51,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/abysian/armor/scale_hauberk.png
 #armor
 #theme "iron"
@@ -59,7 +59,7 @@
 
 #newitem -- full scale
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/abysian/armor/scale_hauberk.png
 #armor
 #theme "iron"
@@ -72,7 +72,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/abysian/armor/plate_cuirass.png
 #armor
 #theme "iron"
@@ -81,7 +81,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/abysian/armor/plate_hauberk.png
 #armor
 #theme "iron"
@@ -91,7 +91,7 @@
 
 #newitem -- full plate
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/abysian/armor/plate_hauberk.png
 #armor
 #needs legs 7

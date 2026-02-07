@@ -2,7 +2,7 @@
 
 #newitem
 #id leatherhood
-#gameid 121
+#dominionsId 121
 #basechance 0
 #nogen
 #armor
@@ -14,7 +14,7 @@
 
 #newitem
 #id reinforcedleathercap
-#gameid 119
+#dominionsId 119
 #basechance 0
 #nogen
 #armor
@@ -26,7 +26,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #basechance 0
 #nogen
 #armor

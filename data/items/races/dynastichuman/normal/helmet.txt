@@ -56,7 +56,7 @@
 #newitem
 #id nemes_ornate
 #basechance 1
-#gameid 148
+#dominionsId 148
 #sprite /graphics/dynastichuman/helmet/nemes_ornate.png
 #recolormask /graphics/dynastichuman/helmet/nemes_ornate_recolormask.png
 #eliteversion nemes_ornate
@@ -70,7 +70,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/dynastichuman/helmet/bronzecap.png
 #eliteversion bronzecap_gilt
 #eliteversion bronzecap_fancy
@@ -81,7 +81,7 @@
 
 #newitem
 #id bronzecap_fancy
-#gameid 135
+#dominionsId 135
 #sprite /graphics/dynastichuman/helmet/bronzecap_feather.png
 #eliteversion bronzecap_gilt_fancy
 #armor
@@ -92,7 +92,7 @@
 
 #newitem
 #id bronzecap_gilt
-#gameid 135
+#dominionsId 135
 #sprite /graphics/dynastichuman/helmet/goldcap.png
 #eliteversion bronzecap_gilt_fancy
 #armor
@@ -103,7 +103,7 @@
 
 #newitem
 #id bronzecap_gilt_fancy
-#gameid 135
+#dominionsId 135
 #sprite /graphics/dynastichuman/helmet/goldcap_feather.png
 #armor
 #theme "bronze"
@@ -113,7 +113,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/dynastichuman/helmet/ironcap.png
 #eliteversion ironcap_gilt
 #eliteversion ironcap_fancy
@@ -124,7 +124,7 @@
 
 #newitem
 #id ironcap_fancy
-#gameid 20
+#dominionsId 20
 #sprite /graphics/dynastichuman/helmet/ironcap_feather.png
 #eliteversion ironcap_gilt_fancy
 #armor
@@ -135,7 +135,7 @@
 
 #newitem
 #id ironcap_gilt
-#gameid 20
+#dominionsId 20
 #sprite /graphics/dynastichuman/helmet/goldcap.png
 #eliteversion ironcap_gilt_fancy
 #armor
@@ -146,7 +146,7 @@
 
 #newitem
 #id ironcap_gilt_fancy
-#gameid 20
+#dominionsId 20
 #sprite /graphics/dynastichuman/helmet/goldcap_feather.png
 #armor
 #theme "iron"

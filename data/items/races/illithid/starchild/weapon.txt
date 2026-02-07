@@ -1,6 +1,6 @@
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/illithid/starchild/weapon/spear.png
 #theme "iron"
 #theme "terrestrial"
@@ -8,7 +8,7 @@
 
 #newitem
 #id trident
-#gameid 3
+#dominionsId 3
 #sprite /graphics/illithid/starchild/weapon/trident.png
 #theme "iron"
 #theme "terrestrial"
@@ -16,7 +16,7 @@
 
 #newitem
 #id glaive
-#gameid 308
+#dominionsId 308
 #sprite /graphics/illithid/starchild/weapon/glaive.png
 #theme "iron"
 #theme "terrestrial"
@@ -24,7 +24,7 @@
 
 #newitem
 #id prod
-#gameid 49
+#dominionsId 49
 #sprite /graphics/illithid/starchild/weapon/ironprod.png
 #theme "iron"
 #theme "terrestrial"
@@ -35,7 +35,7 @@
 
 #newitem
 #id bronze_spear
-#gameid 643
+#dominionsId 643
 #sprite /graphics/illithid/starchild/weapon/spear_bronze.png
 #theme "bronze"
 #theme "amphibious"
@@ -43,7 +43,7 @@
 
 #newitem
 #id bronze_trident
-#gameid 641
+#dominionsId 641
 #sprite /graphics/illithid/starchild/weapon/trident_bronze.png
 #theme "bronze"
 #theme "amphibious"
@@ -51,7 +51,7 @@
 
 #newitem
 #id bronze_glaive
-#gameid 673
+#dominionsId 673
 #sprite /graphics/illithid/starchild/weapon/glaive_bronze.png
 #theme "bronze"
 #theme "amphibious"
@@ -59,7 +59,7 @@
 
 #newitem
 #id coral_spear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/illithid/starchild/weapon/spear_coral.png
 #theme "coral"
 #theme "amphibious"
@@ -67,7 +67,7 @@
 
 #newitem
 #id coral_glaive
-#gameid 46
+#dominionsId 46
 #sprite /graphics/illithid/starchild/weapon/glaive_coral.png
 #theme "coral"
 #theme "amphibious"
@@ -75,7 +75,7 @@
 
 #newitem
 #id meteorite_trident
-#gameid 642
+#dominionsId 642
 #sprite /graphics/illithid/starchild/weapon/trident.png
 #theme "iron"
 #theme "amphibious"
@@ -91,7 +91,7 @@
 
 #newitem
 #id bone_spear
-#gameid 373
+#dominionsId 373
 #sprite /graphics/illithid/starchild/weapon/spear_bone.png
 #theme "bone"
 #theme "primitive"
@@ -99,7 +99,7 @@
 
 #newitem
 #id bone_trident
-#gameid 670
+#dominionsId 670
 #sprite /graphics/illithid/starchild/weapon/trident_bone.png
 #theme "bone"
 #theme "primitive"
@@ -107,7 +107,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/illithid/starchild/weapon/quarterstaff.png
 #theme "wood"
 #theme "terrestrial"

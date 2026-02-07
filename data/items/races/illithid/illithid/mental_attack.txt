@@ -1,6 +1,6 @@
 #newitem
 #id mindblast
-#gameid 86
+#dominionsId 86
 #mind
 #thought
 #soul

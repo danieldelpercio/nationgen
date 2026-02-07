@@ -1,6 +1,6 @@
 #newitem
 #id "crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/halfmen/satyr/weapon/crossbow.png
 #theme "advanced"
 #needs quiver quiver

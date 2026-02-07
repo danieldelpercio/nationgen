@@ -2,7 +2,7 @@
 
 #newitem
 #id "lorica hamata"
-#gameid 116
+#dominionsId 116
 #basechance 0.5
 #sprite /graphics/dynastichuman/armor/lorica_hamata.png
 #tag "eliteversion 'plate hauberk'"
@@ -13,7 +13,7 @@
 
 #newitem
 #id "lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/dynastichuman/armor/lorica_squamata.png
 #tag "eliteversion 'plate hauberk'"
 #tag "eliteversion 'elite lorica segmentata'"
@@ -23,7 +23,7 @@
 
 #newitem
 #id "lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/dynastichuman/armor/lorica_segmentata.png
 #tag "eliteversion 'plate hauberk'"
 #tag "eliteversion 'elite lorica segmentata'"
@@ -33,7 +33,7 @@
 
 #newitem
 #id "elite lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/dynastichuman/armor/lorica_segmentata_elite.png
 #tag "eliteversion 'elite plate hauberk'"
 #theme "elite"
@@ -43,7 +43,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/dynastichuman/armor/plate_hauberk_imperial.png
 #tag "eliteversion 'elite plate hauberk'"
 #theme "elite"
@@ -53,7 +53,7 @@
 
 #newitem
 #id "elite plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/dynastichuman/armor/plate_hauberk_imperial_elite.png
 #theme "elite"
 #armor
@@ -62,7 +62,7 @@
 
 #newitem
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/dynastichuman/armor/plate_full_imperial.png
 #tag "eliteversion 'elite full plate'"
 #theme "elite"
@@ -72,7 +72,7 @@
 
 #newitem
 #id "elite full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/dynastichuman/armor/plate_full_imperial_elite.png
 #theme "elite"
 #armor

@@ -10,7 +10,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/leathercap.png
 #tag "eliteversion leathercap-elite"
 #armor
@@ -20,7 +20,7 @@
 
 #newitem
 #id leatherhat
-#gameid 120
+#dominionsId 120
 #sprite /graphics/hoburg/helmet/coe-leatherhat.png
 #tag "eliteversion leatherhat-elite"
 #armor
@@ -30,7 +30,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/hoburg/helmet/ironcap.png
 #theme "advanced"
 #tag "eliteversion ironcap-elite"
@@ -41,7 +41,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/hoburg/helmet/ironcap2.png
 #theme "advanced"
 #tag "eliteversion ironcap-elite"
@@ -53,7 +53,7 @@
 #newitem
 #id jingasa
 #basechance 4
-#gameid 131
+#dominionsId 131
 #sprite /graphics/hoburg/helmet/jingasa.png
 #recolormask /graphics/hoburg/helmet/jingasa_recolormask.png
 #armor
@@ -64,7 +64,7 @@
 #newitem
 #id kabuto
 #basechance 2
-#gameid 132
+#dominionsId 132
 #sprite /graphics/hoburg/helmet/kabuto.png
 #tag "eliteversion kabuto"
 #tag "eliteversion kabuto_elite"
@@ -76,7 +76,7 @@
 #newitem
 #id kabuto_elite
 #basechance 2
-#gameid 132
+#dominionsId 132
 #sprite /graphics/hoburg/helmet/kabuto_elite.png
 #tag "eliteversion kabuto_elite"
 #theme "elite"

@@ -2,7 +2,7 @@
 
 #newitem
 #id leatherhood
-#gameid 121
+#dominionsId 121
 #basechance 0
 #nogen
 #armor
@@ -13,7 +13,7 @@
 
 #newitem -- Iron cap
 #id halfhelmet-ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet.png
 #offsetx -1
 #offsety -10
@@ -22,7 +22,7 @@
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet.png
 #offsetx -1
 #offsety -10
@@ -31,7 +31,7 @@
 
 #newitem
 #id halfhelmet2
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet2.png
 #offsetx -1
 #offsety -10
@@ -40,7 +40,7 @@
 
 #newitem -- Iron cap
 #id halfhelmet2-ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet2.png
 #offsetx -1
 #offsety -10
@@ -49,7 +49,7 @@
 
 #newitem
 #id bascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/bascinet.png
 #offsetx -1
 #offsety -10
@@ -60,7 +60,7 @@
 
 #newitem
 #id halfhelmet-sprite4
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet4.png
 #offsetx -1
 #offsety -11
@@ -71,7 +71,7 @@
 
 #newitem
 #id halfhelmet-sprite4-elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/special/elitehalfhelmet1.png
 #recolormask /graphics/helmet/special/elitehalfhelmet1_recolormask.png
 #offsetx -1
@@ -82,7 +82,7 @@
 
 #newitem
 #id ironcap-sprite4
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet4.png
 #offsetx -1
 #offsety -11
@@ -93,7 +93,7 @@
 
 #newitem
 #id ironcap-sprite4-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/special/elitehalfhelmet1.png
 #recolormask /graphics/helmet/special/elitehalfhelmet1_recolormask.png
 #offsetx -1
@@ -105,7 +105,7 @@
 
 #newitem
 #id kettlehelmet-half
-#gameid 118
+#dominionsId 118
 #sprite /graphics/helmet/standard/halfhelmet3.png
 #offsetx -1
 #offsety -11
@@ -115,7 +115,7 @@
 
 #newitem
 #id kettlehelmet-cap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/helmet/standard/halfhelmet3.png
 #offsetx -1
 #offsety -11
@@ -125,7 +125,7 @@
 
 #newitem
 #id fullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/standard/fullhelmet2.png
 #offsetx -1
 #offsety -10
@@ -136,7 +136,7 @@
 
 #newitem
 #id elitefullhelmet
-#gameid 21
+#dominionsId 21
 #sprite /graphics/helmet/special/elitefullhelmet1.png
 #recolormask /graphics/helmet/special/elitefullhelmet1_recolormask.png
 #offsetx -1
@@ -149,7 +149,7 @@
 
 #newitem
 #id highman_ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/highmen/helmet/cap_iron.png
 #armor
 #tag "eliteversion highman_ironcap_crested"
@@ -157,7 +157,7 @@
 
 #newitem
 #id highman_ironcap_crested
-#gameid 20
+#dominionsId 20
 #sprite /graphics/highmen/helmet/cap_iron_crested.png
 #recolormask /graphics/highmen/helmet/crest_recolormask.png
 #armor
@@ -165,7 +165,7 @@
 
 #newitem
 #id highman_bascinet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/bascinet.png
 #tag "eliteversion highman_bascinet_crested"
 #armor
@@ -173,7 +173,7 @@
 
 #newitem
 #id highman_bascinet_crested
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/bascinet_crested.png
 #recolormask /graphics/highmen/helmet/bascinet_crested_recolormask.png
 #armor
@@ -182,7 +182,7 @@
 
 #newitem
 #id highman_halfhelm_iron
-#gameid 118
+#dominionsId 118
 #sprite /graphics/highmen/helmet/halfhelm_iron2.png
 #offsety -1
 #armor
@@ -190,7 +190,7 @@
 
 #newitem
 #id highman_fullhelm_iron
-#gameid 21
+#dominionsId 21
 #sprite /graphics/highmen/helmet/fullhelm_iron2.png
 #armor
 #enditem

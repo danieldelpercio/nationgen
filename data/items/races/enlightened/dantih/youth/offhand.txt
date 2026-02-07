@@ -1,6 +1,6 @@
 #newitem
 #id kryss
-#gameid 256
+#dominionsId 256
 #sprite /graphics/enlightened/dantih/weapon/oh_kryss.png
 #offsetx -36
 #offsety -58
@@ -9,7 +9,7 @@
 
 #newitem
 #id dagger_bronze
-#gameid 674
+#dominionsId 674
 #sprite /graphics/enlightened/dantih/weapon/oh_kryss_bronze.png
 #offsetx -36
 #offsety -58
@@ -18,7 +18,7 @@
 
 #newitem
 #id kryss2
-#gameid 256
+#dominionsId 256
 #sprite /graphics/enlightened/dantih/weapon/oh_kryss2.png
 #offsetx -38
 #offsety -60
@@ -28,7 +28,7 @@
 
 #newitem
 #id dagger_bronze2
-#gameid 674
+#dominionsId 674
 #sprite /graphics/enlightened/dantih/weapon/oh_kryss2_bronze.png
 #offsetx -38
 #offsety -60
@@ -38,7 +38,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/enlightened/dantih/weapon/oh_club.png
 #offsetx -38
 #offsety -60
@@ -48,7 +48,7 @@
 
 #newitem
 #id club_spiked
-#gameid 265
+#dominionsId 265
 #sprite /graphics/enlightened/dantih/weapon/oh_club_spiked.png
 #offsetx -38
 #offsety -60
@@ -58,7 +58,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/enlightened/dantih/weapon/oh_mace.png
 #offsetx -36
 #offsety -58

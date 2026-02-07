@@ -1,6 +1,6 @@
 #newitem
 #id simple_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #offsetx 1
 #tag "eliteversion glowing_orbstaff"
@@ -12,7 +12,7 @@
 
 #newitem
 #id glowing_orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_orb_plain.png
 #recolormask /graphics/avvim/weapon/caster/staff_orb_plain_recolormask.png
 #offsetx 1
@@ -24,7 +24,7 @@
 
 #newitem
 #id crook
-#gameid 7
+#dominionsId 7
 #sprite /graphics/avvim/weapon/caster/staff_crook.png
 #offsetx 2
 #offsety 1

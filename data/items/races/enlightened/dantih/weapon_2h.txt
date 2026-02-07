@@ -1,6 +1,6 @@
 #newitem
 #id battleaxe_iron
-#gameid 18
+#dominionsId 18
 #sprite /graphics/enlightened/dantih/weapon/battleaxe.png
 #eliteversion battleaxe_iron_gilt
 #theme iron
@@ -9,7 +9,7 @@
 
 #newitem
 #id battleaxe_iron_gilt
-#gameid 18
+#dominionsId 18
 #sprite /graphics/enlightened/dantih/weapon/battleaxe_gilt.png
 #theme elite
 #theme iron
@@ -18,7 +18,7 @@
 
 #newitem
 #id battleaxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/enlightened/dantih/weapon/battleaxe_bronze.png
 #eliteversion battleaxe_bronze_gilt
 #theme bronze
@@ -27,7 +27,7 @@
 
 #newitem
 #id battleaxe_bronze_gilt
-#gameid 698
+#dominionsId 698
 #sprite /graphics/enlightened/dantih/weapon/battleaxe_gilt.png
 #theme elite
 #theme bronze
@@ -36,7 +36,7 @@
 
 #newitem
 #id cudgel_iron
-#gameid 363
+#dominionsId 363
 #sprite /graphics/enlightened/dantih/weapon/cudgel_iron.png
 #eliteversion cudgel_gilt
 #theme iron
@@ -46,7 +46,7 @@
 
 #newitem
 #id cudgel_gilt
-#gameid 363
+#dominionsId 363
 #sprite /graphics/enlightened/dantih/weapon/cudgel_gilt.png
 #theme elite
 #theme iron
@@ -56,14 +56,14 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/enlightened/dantih/weapon/caster/maul.png
 #theme primitive
 #enditem
 
 #newitem
 #id greatclub
-#gameid 165
+#dominionsId 165
 #sprite /graphics/enlightened/dantih/weapon/greatclub.png
 #theme wood
 #theme primitive
@@ -82,7 +82,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/enlightened/dantih/weapon/caster/staff_wood_light.png
 #theme wood
 #theme primitive

@@ -1,6 +1,6 @@
 #newitem
 #id blade_left
-#gameid 625
+#dominionsId 625
 #sprite /graphics/muuch/offhands/obsidian_blade.png
 #offsetx 1 
 #offsety -9
@@ -10,13 +10,13 @@
 
 #newitem
 #id blade_right
-#gameid 625
+#dominionsId 625
 #sprite /graphics/muuch/weapons/obsidian_blade.png
 #enditem
 
 #newitem
 #id hatchet_left
-#gameid 646
+#dominionsId 646
 #sprite /graphics/muuch/offhands/hatchet.png
 #offsetx 1 
 #offsety -9
@@ -27,28 +27,28 @@
 
 #newitem
 #id hatchet_right
-#gameid 646
+#dominionsId 646
 #sprite /graphics/muuch/weapons/hatchet.png
 #tier 2
 #enditem
 
 #newitem
 #id obsidian_glaive
-#gameid 426
+#dominionsId 426
 #sprite /graphics/muuch/weapons/glaive_obsidian.png
 #tag "tier 3"
 #enditem
 
 #newitem
 #id staff_gold
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/weapons/caster/staff_gold.png
 #tag "tier 2"
 #enditem
 
 #newitem
 #id staff_gold_ornate
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/weapons/caster/staff_gold_ornate.png
 #recolormask /graphics/muuch/weapons/caster/staff_gold_ornate_recolormask.png
 #tag "#eliteversion staff_gold_glowing"
@@ -58,7 +58,7 @@
 
 #newitem
 #id staff_gold_glowing
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/weapons/caster/staff_gold_ornate.png
 #recolormask /graphics/muuch/weapons/caster/staff_gold_glowing_recolormask.png
 #tag "tier 3"
@@ -66,7 +66,7 @@
 
 #newitem
 #id staff_pearl
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/weapons/caster/staff_pearl_ornate.png
 #tag "#eliteversion staff_pearl_glowing"
 #tag "tier 2"
@@ -75,7 +75,7 @@
 
 #newitem
 #id staff_pearl_glowing
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/weapons/caster/staff_pearl_ornate.png
 #recolormask /graphics/muuch/weapons/caster/staff_pearl_glowing_recolormask.png
 #tag "tier 3"
@@ -83,7 +83,7 @@
 
 #newitem
 #id staff_obsidian
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/weapons/caster/staff_obsidian_ornate.png
 #tag "#eliteversion staff_obsidian_glowing"
 #tag "tier 2"
@@ -92,7 +92,7 @@
 
 #newitem
 #id staff_obsidian_glowing
-#gameid 7
+#dominionsId 7
 #sprite /graphics/muuch/weapons/caster/staff_obsidian_ornate.png
 #recolormask /graphics/muuch/weapons/caster/staff_obsidian_ornate_recolormask.png
 #tag "tier 3"

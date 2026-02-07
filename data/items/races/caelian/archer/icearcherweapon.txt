@@ -4,7 +4,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 37
+#dominionsId 37
 #theme "ice"
 #type ice
 #enditem
@@ -15,7 +15,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 44
+#dominionsId 44
 #theme "ice"
 #type ice
 #enditem
@@ -26,7 +26,7 @@
 #chanceinc itemtheme not armor ice *0.05
 #chanceinc itemtheme armor ice  *20
 #chanceinc "personalcommand below #coldres 5 *0"
-#gameid 35
+#dominionsId 35
 #theme "ice"
 #type ice
 #enditem

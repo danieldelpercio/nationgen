@@ -22,7 +22,7 @@
 
 #newitem
 #id fay_lance
-#gameid 818
+#dominionsId 818
 #sprite /graphics/sidhe/weapon/goldenlance.png
 #renderprio 7
 #renderslot "weapon"

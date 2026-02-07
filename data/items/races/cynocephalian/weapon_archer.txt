@@ -10,42 +10,42 @@
 
 #newitem
 #id "hatchet"
-#gameid 253
+#dominionsId 253
 #theme "iron"
 #enditem
 
 #newitem
 #id "hatchet_bronze"
-#gameid 646
+#dominionsId 646
 #theme "bronze"
 #enditem
 
 #newitem
 #id "club"
-#gameid 252
+#dominionsId 252
 #theme "primitive"
 #enditem
 
 #newitem
 #id "mace"
-#gameid 12
+#dominionsId 12
 #theme "monkey"
 #enditem
 
 #newitem
 #id "dagger"
-#gameid 9
+#dominionsId 9
 #enditem
 
 #newitem
 #id "sword_short"
-#gameid 6
+#dominionsId 6
 #theme "iron"
 #enditem
 
 #newitem
 #id "sword_broad"
-#gameid 8
+#dominionsId 8
 #theme "iron"
 #theme "advanced"
 #enditem

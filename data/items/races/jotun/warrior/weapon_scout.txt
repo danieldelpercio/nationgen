@@ -1,7 +1,7 @@
 
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #basechance 4
 #sprite /graphics/jotun/warrior/weapon/axe_iron.png
 #theme "iron"
@@ -9,7 +9,7 @@
 
 #newitem
 #id axe_battle
-#gameid 18
+#dominionsId 18
 #sprite /graphics/jotun/warrior/weapon/axe_battle.png
 #theme "iron"
 #troopweapon
@@ -17,14 +17,14 @@
 
 #newitem
 #id sword_iron
-#gameid 8
+#dominionsId 8
 #sprite /graphics/jotun/warrior/weapon/sword_iron.png
 #theme "iron"
 #enditem
 
 #newitem
 #id spear_iron
-#gameid 1
+#dominionsId 1
 #sprite /graphics/jotun/warrior/weapon/spear_iron.png
 #theme "iron"
 #theme "formationfighter"
@@ -32,7 +32,7 @@
 
 #newitem
 #id spear_heavy
-#gameid 2hspear
+#dominionsId 2hspear
 #sprite /graphics/jotun/warrior/weapon/spear_heavy.png
 #theme "formationfighter"
 #theme "iron"
@@ -41,7 +41,7 @@
 
 #newitem
 #id glaive_iron
-#gameid 308
+#dominionsId 308
 #basechance 0.5
 #sprite /graphics/jotun/warrior/weapon/glaive_iron.png
 #theme "iron"
@@ -51,7 +51,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #basechance 0.25
 #sprite /graphics/jotun/warrior/weapon/staff_quarter.png
 #theme "primitive"

@@ -14,7 +14,7 @@
 #basechance 5
 #chanceinc racetheme primitive *0.2
 #chanceinc racetheme advanced *0.2
-#gameid 44
+#dominionsId 44
 #sprite /graphics/monkey/giant/furs.png
 #theme "leather"
 #armor
@@ -38,7 +38,7 @@
 #basechance 1
 #chanceinc racetheme primitive *0.1
 #chanceinc racetheme advanced *10
-#gameid 158
+#dominionsId 158
 #sprite /graphics/monkey/giant/toga.png
 #recolormask /graphics/monkey/giant/toga_recolormask.png
 #armor

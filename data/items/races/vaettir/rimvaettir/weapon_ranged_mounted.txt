@@ -1,6 +1,6 @@
 #newitem
 #id "javelin 1"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx 1
 #offsety 7
@@ -14,7 +14,7 @@
 
 #newitem
 #id "javelin 2"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin2.png
 #offsetx 1
 #offsety 7
@@ -28,7 +28,7 @@
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #theme "primitive"
 #tag "name infantry 'Axe Thrower'"
 #theme "iron"
@@ -38,7 +38,7 @@
 
 #newitem
 #id "bonus shortbow"
-#gameid 23
+#dominionsId 23
 #sprite /graphics/weapon/standard/bonusshortbow.png
 #offsetx -1
 #offsety 8
@@ -51,7 +51,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #tag "name infantry 'Chakram Thrower'"
 #tag "tierunique"
 #theme "iron"
@@ -61,7 +61,7 @@
 
 #newitem
 #id "sticksandstones"
-#gameid 360
+#dominionsId 360
 #basechance 0.5
 #theme "primitive"
 #tag "maxprot 8"
@@ -73,7 +73,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/weapon/standard/javelin1.png
 #offsetx 0
 #offsety 8
@@ -88,7 +88,7 @@
 
 #newitem
 #id "blowpipe"
-#gameid 34
+#dominionsId 34
 #tag "name infantry 'Poisoner'"
 #tag "maxprot 10"
 #tag "tierunique"
@@ -100,7 +100,7 @@
 #newitem
 #id "poison darts"
 #basechance 0
-#gameid 620
+#dominionsId 620
 #theme "spider"
 #define "#mobilearcher 1"
 #enditem

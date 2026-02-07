@@ -1,6 +1,6 @@
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #theme iron
 #basechance 3
 #enditem
@@ -14,7 +14,7 @@
 
 #newitem
 #id "throwingaxe_iron"
-#gameid 260
+#dominionsId 260
 #theme iron
 #enditem
 
@@ -26,6 +26,6 @@
 
 #newitem
 #id "rocks"
-#gameid 605
+#dominionsId 605
 #theme primitive
 #enditem

@@ -10,7 +10,7 @@
 
 #newitem
 #id leatherhood
-#gameid 121
+#dominionsId 121
 #basechance 0.05
 #armor
 #sprite /graphics/hoburg/helmet/ninjacowl.png
@@ -20,7 +20,7 @@
 
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #basechance 0.05
 #armor
 #sprite /graphics/hoburg/helmet/ninjacowl.png
@@ -30,7 +30,7 @@
 
 #newitem
 #id reinforcedcap
-#gameid 119
+#dominionsId 119
 #basechance 0.025
 #armor
 #sprite /graphics/hoburg/helmet/ninjacowl.png
@@ -40,7 +40,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #basechance 0.025
 #armor
 #sprite /graphics/hoburg/helmet/ninjacowl.png

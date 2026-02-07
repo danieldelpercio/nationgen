@@ -13,7 +13,7 @@
 
 #newitem
 #id club
-#gameid 252
+#dominionsId 252
 #sprite /graphics/hoburg/weapon/club_oh.png
 #theme "primitive"
 #theme "wood"
@@ -27,7 +27,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/hoburg/weapon/mace_oh.png
 #theme "primitive"
 #theme "austral"
@@ -41,7 +41,7 @@
 
 #newitem
 #id dagger
-#gameid 9
+#dominionsId 9
 #sprite /graphics/hoburg/weapon/dagger_oh.png
 #theme "iron"
 #theme "austral"
@@ -53,7 +53,7 @@
 
 #newitem
 #id dagger_obsidian
-#gameid 671
+#dominionsId 671
 #sprite /graphics/hoburg/weapon/dagger_oh.png
 #theme "primitive"
 #theme "austral"
@@ -63,7 +63,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/hoburg/weapon/wakizasi_oh.png
 #theme "advanced"
 #theme "iron"
@@ -76,7 +76,7 @@
 
 #newitem
 #id net
-#gameid 263
+#dominionsId 263
 #basechance 0.5
 #sprite /graphics/hoburg/weapon/net_oh.png
 #tag "notepic"

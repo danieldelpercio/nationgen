@@ -1,7 +1,7 @@
 
 #newitem
 #id staff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/hoburg/weapon/stick.png
 #theme "primitive"
 #theme "wood"
@@ -10,7 +10,7 @@
 
 #newitem
 #id poisonspear
-#gameid 519
+#dominionsId 519
 #sprite /graphics/hoburg/weapon/spear.png
 #offsety 1
 #theme "wood"
@@ -19,7 +19,7 @@
 
 #newitem
 #id hatchet
-#gameid 646
+#dominionsId 646
 #sprite /graphics/zotz/weapon/hatchet.png
 #offsetx 12
 #offsety 32
@@ -28,7 +28,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/zotz/weapon/mace.png
 #offsetx 12
 #offsety 32
@@ -37,7 +37,7 @@
 
 #newitem
 #id poisondagger
-#gameid 126
+#dominionsId 126
 #sprite /graphics/zotz/weapon/dagger.png
 #offsetx 12
 #offsety 32

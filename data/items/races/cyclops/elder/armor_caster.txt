@@ -1,7 +1,7 @@
 --- Scale
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/cyclops/elder/armor/scale_cuirass_bronze.png
 #armor
 #theme bronze
@@ -13,7 +13,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/cyclops/elder/armor/scale_hauberk_bronze.png
 #armor
 #theme bronze
@@ -25,7 +25,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/elder/armor/scale_cuirass_iron.png
 #armor
 #theme iron
@@ -37,7 +37,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/cyclops/elder/armor/scale_hauberk_iron.png
 #armor
 #theme iron
@@ -49,7 +49,7 @@
 
 #newitem
 #id "gold scale cuirass"
-#gameid 49
+#dominionsId 49
 #sprite /graphics/cyclops/elder/armor/scale_cuirass_gold.png
 #armor
 #theme elite
@@ -63,7 +63,7 @@
 
 #newitem
 #id "gold scale hauberk"
-#gameid 196
+#dominionsId 196
 #sprite /graphics/cyclops/elder/armor/scale_hauberk_gold.png
 #armor
 #theme elite
@@ -77,7 +77,7 @@
 
 #newitem
 #id "silver scale cuirass"
-#gameid 49
+#dominionsId 49
 #sprite /graphics/cyclops/elder/armor/scale_cuirass_silver.png
 #armor
 #theme elite
@@ -106,7 +106,7 @@
 -- Plate
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/cyclops/elder/armor/plate_cuirass_bronze.png
 #armor
 #theme bronze
@@ -118,7 +118,7 @@
 
 #newitem
 #id "bronze hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/cyclops/elder/armor/plate_hauberk_bronze.png
 #armor
 #theme bronze
@@ -130,7 +130,7 @@
 
 #newitem
 #id "iron cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/cyclops/elder/armor/plate_cuirass_iron.png
 #armor
 #theme iron
@@ -142,7 +142,7 @@
 
 #newitem
 #id "iron hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/cyclops/elder/armor/plate_hauberk_iron.png
 #armor
 #theme iron
@@ -154,7 +154,7 @@
 
 #newitem
 #id "silver cuirass"
-#gameid 245
+#dominionsId 245
 #sprite /graphics/cyclops/elder/armor/plate_cuirass_silver.png
 #armor
 #theme iron
@@ -168,7 +168,7 @@
 
 #newitem
 #id "silver hauberk"
-#gameid 246
+#dominionsId 246
 #sprite /graphics/cyclops/elder/armor/plate_hauberk_silver.png
 #armor
 #theme iron
@@ -182,7 +182,7 @@
 
 #newitem
 #id "gold cuirass"
-#gameid 236
+#dominionsId 236
 #sprite /graphics/cyclops/elder/armor/plate_cuirass_gold.png
 #armor
 #theme bronze
@@ -196,7 +196,7 @@
 
 #newitem
 #id "gold hauberk"
-#gameid 237
+#dominionsId 237
 #sprite /graphics/cyclops/elder/armor/plate_hauberk_gold.png
 #armor
 #theme bronze

@@ -1,6 +1,6 @@
 #newitem
 #id offhandaxe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/offhand/bandar/offhandaxe.png
 #theme "primitive"
 #theme "enlightened"
@@ -11,7 +11,7 @@
 
 #newitem
 #id offhandaxe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/monkey/offhand/bandar/offhandhatchet_bronze.png
 #theme "primitive"
 #theme "enlightened"
@@ -21,7 +21,7 @@
 
 #newitem
 #id offhandshortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/monkey/offhand/bandar/offhandshortsword.png
 #theme "iron"
 #theme "imperial"
@@ -30,7 +30,7 @@
 
 #newitem
 #id offhandshortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/monkey/offhand/bandar/offhandshortsword_bronze.png
 #theme "bronze"
 #theme "imperial"
@@ -38,7 +38,7 @@
 
 #newitem
 #id offhandbroadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/monkey/offhand/bandar/offhandbroadsword.png
 #theme "advanced"
 #theme "iron"
@@ -47,7 +47,7 @@
 
 #newitem
 #id offhandfalchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/offhand/bandar/offhandfalchion.png
 #theme "iron"
 #theme "enlightened"
@@ -57,7 +57,7 @@
 
 #newitem
 #id offhandninjato
-#gameid 381
+#dominionsId 381
 #sprite /graphics/monkey/offhand/bandar/offhandninjato.png
 #theme "oriental"
 #theme "iron"
@@ -65,7 +65,7 @@
 
 #newitem
 #id offhandwakizashi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/monkey/offhand/bandar/offhandwakizashi.png
 #theme "oriental"
 #theme "iron"

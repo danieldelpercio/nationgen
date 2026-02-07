@@ -4,7 +4,7 @@
 
 #newitem
 #id "leather cuirass 1"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/bodyarmor/standard/leathercuirass.png
 #armor
 #theme "leather"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "leather cuirass 2"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/bodyarmor/standard/leathercuirass2.png
 #armor
 #theme "leather"
@@ -20,7 +20,7 @@
 
 #newitem
 #id "leather hauberk 1"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/standard/leatherhauberk.png
 #armor
 #theme "leather"
@@ -28,7 +28,7 @@
 
 #newitem
 #id "leather hauberk 2"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/bodyarmor/standard/leatherhauberk2.png
 #armor
 #theme "leather"
@@ -36,7 +36,7 @@
 
 #newitem -- full leather
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/bodyarmor/standard/leatherhauberk.png
 #needs legs leathergreaves
 #armor
@@ -47,7 +47,7 @@
 --- Ring
 #newitem
 #id "ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/bodyarmor/standard/ringcuirass.png
 #armor
 #basechance 2
@@ -57,7 +57,7 @@
 
 #newitem
 #id "ring hauberk short"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/standard/ringhauberk.png
 #armor
 #theme "leather"
@@ -66,7 +66,7 @@
 
 #newitem
 #id "ring hauberk long"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/standard/ringhauberk2.png
 #armor
 #theme "leather"
@@ -75,7 +75,7 @@
 
 #newitem -- full ring
 #id "full ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/standard/ringhauberk.png
 #armor
 #needs legs irongreaves
@@ -85,7 +85,7 @@
 
 #newitem
 #id 16
-#gameid 6
+#dominionsId 6
 #sprite /graphics/bodyarmor/bronze/ringcuirass.png
 #armor
 #basechance 2
@@ -95,7 +95,7 @@
 
 #newitem
 #id 17
-#gameid 11
+#dominionsId 11
 #sprite /graphics/bodyarmor/bronze/ringhauberk.png
 #armor
 #basechance 2
@@ -106,7 +106,7 @@
 
 #newitem -- full ring
 #id 19
-#gameid 16
+#dominionsId 16
 #sprite /graphics/bodyarmor/bronze/fullring.png
 #armor
 #needs legs bronzegreaves
@@ -118,7 +118,7 @@
 --- Scale
 #newitem
 #id 9
-#gameid 7
+#dominionsId 7
 #sprite /graphics/bodyarmor/standard/mailcuirass.png
 #armor
 #theme "iron"
@@ -127,7 +127,7 @@
 
 #newitem
 #id 9
-#gameid 100
+#dominionsId 100
 #sprite /graphics/bodyarmor/bronze/scalecuirass.png
 #armor
 #theme "bronze"
@@ -138,7 +138,7 @@
 --- Chain Mail
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/bodyarmor/standard/mailcuirass.png
 #needs legs irongreaves
 #armor

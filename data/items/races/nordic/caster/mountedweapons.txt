@@ -1,6 +1,6 @@
 #newitem
 #id lightlance
-#gameid 357
+#dominionsId 357
 #sprite /graphics/weapon/standard/lightlance.png
 #tag "name lancer"
 #tag "tier 3"
@@ -9,7 +9,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "primitive"
 #tag "tier 2"
@@ -17,7 +17,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/weapon/standard/broadsword.png
 #tag "tier 2"
 #tag "tier 3"
@@ -26,7 +26,7 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/weapon/standard/hammer.png
 #tag "tier 2"
 #enditem
@@ -34,7 +34,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #tag "tier 2"
 #eliteversion broadsword
@@ -52,7 +52,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #tag "tier 2"
 #tag "tier 3"
@@ -61,7 +61,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #theme "superior"

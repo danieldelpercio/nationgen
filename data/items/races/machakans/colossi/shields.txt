@@ -5,7 +5,7 @@
 #newitem
 #basechance 6
 #id hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/machakans/shields/hideshield.png
 #offsetx 1
 #offsety -4
@@ -16,7 +16,7 @@
 #newitem
 #basechance 6
 #id colored_hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/machakans/shields/greathideshield.png
 #recolormask /graphics/machakans/shields/greathideshield_recolormask.png
 #offsetx 1
@@ -27,7 +27,7 @@
 #newitem
 #basechance 6
 #id greathideshield
-#gameid 112
+#dominionsId 112
 #sprite /graphics/highmen/shields/greathideshield.png
 #recolormask /graphics/highmen/shields/greathideshield_recolormask.png
 #armor
@@ -39,7 +39,7 @@
 #newitem
 #basechance 1
 #id buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield1.png
 #offsetx 2
 #offsety -1
@@ -49,7 +49,7 @@
 #newitem
 #basechance 1
 #id metal_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/shield2.png
 #offsetx 2
 #offsety -1
@@ -61,7 +61,7 @@
 #newitem
 #id shield4
 #basechance 1
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield4.png
 #offsetx 1
 #offsety -5
@@ -71,7 +71,7 @@
 #newitem
 #basechance 1
 #id shield4yellow
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield4-yellow.png
 #offsetx 1
 #offsety -5
@@ -81,7 +81,7 @@
 #newitem
 #basechance 2
 #id shield5
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield5.png
 #offsetx 2
 #offsety -4
@@ -91,7 +91,7 @@
 #newitem
 #basechance 2
 #id shield6
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #offsetx 2
@@ -102,7 +102,7 @@
 #newitem
 #basechance 2
 #id shield7
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield7.png
 #recolormask /graphics/offhand/standard/shield7_recolormask.png
 #offsetx 1
@@ -113,7 +113,7 @@
 #newitem
 #basechance 2
 #id shield8
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/coe-metalshield.png
 #offsetx 1
 #offsety -5
@@ -124,7 +124,7 @@
 
 #newitem
 #id kite2
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite2.png
 #armor
 #theme "advanced"
@@ -136,7 +136,7 @@
 
 #newitem
 #id kite3
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite3.png
 #recolormask /graphics/offhand/standard/kite3_recolormask.png
 #offsetx 2
@@ -147,7 +147,7 @@
 
 #newitem
 #id kite4
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite4.png
 #recolormask self
 #offsetx 2
@@ -158,7 +158,7 @@
 
 #newitem
 #id kite5
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite5.png
 #recolormask /graphics/offhand/standard/kite5_recolormask.png
 #offsetx 2
@@ -172,7 +172,7 @@
 
 #newitem
 #id tower1
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/tower1.png
 #recolormask /graphics/offhand/standard/tower1_recolormask.png
 #offsetx 2
@@ -183,7 +183,7 @@
 
 #newitem
 #id tower2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/tower2.png
 #recolormask self
 #offsetx 2
@@ -194,7 +194,7 @@
 
 #newitem
 #id tower3
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/tower3.png
 #recolormask /graphics/offhand/standard/tower3_recolormask.png
 #offsetx 2
@@ -208,7 +208,7 @@
 #newitem
 #id big_tower1a
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower1.png
 #theme "advanced"
 #armor
@@ -217,7 +217,7 @@
 #newitem
 #id big_tower1b
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower1.png
 #recolormask /graphics/highmen/shields/tower1_recolormask.png
 #theme "advanced"
@@ -227,7 +227,7 @@
 #newitem
 #id big_tower2a
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower2.png
 #recolormask /graphics/highmen/shields/tower2_recolormask1.png
 #theme "advanced"
@@ -237,7 +237,7 @@
 #newitem
 #id big_tower2b
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower2.png
 #recolormask /graphics/highmen/shields/tower2_recolormask2.png
 #theme "advanced"
@@ -247,7 +247,7 @@
 #newitem
 #id big_tower3a
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower3.png
 #recolormask self
 #theme "advanced"
@@ -257,7 +257,7 @@
 #newitem
 #id big_tower3b
 #basechance 0.25
-#gameid 4
+#dominionsId 4
 #sprite /graphics/highmen/shields/tower3.png
 #recolormask /graphics/highmen/shields/tower3_recolormask1.png
 #theme "advanced"

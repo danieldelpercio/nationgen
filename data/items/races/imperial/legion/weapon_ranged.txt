@@ -20,7 +20,7 @@
 
 #newitem
 #id axes
-#gameid 260
+#dominionsId 260
 #sprite /graphics/imperial/legion/weapon/axes.png
 #theme "iron"
 #theme "primitive"
@@ -29,7 +29,7 @@
 
 #newitem
 #id sling
-#gameid 22
+#dominionsId 22
 #sprite /graphics/imperial/legion/weapon/sling.png
 #theme "leather"
 #theme "primitive"
@@ -48,7 +48,7 @@
 
 #newitem
 #id axes
-#gameid 260
+#dominionsId 260
 #sprite /graphics/imperial/legion/weapon/axes.png
 #theme "iron"
 #needs quiver axes
@@ -56,14 +56,14 @@
 
 #newitem
 #id sling
-#gameid 22
+#dominionsId 22
 #sprite /graphics/imperial/legion/weapon/sling.png
 #theme "leather"
 #enditem
 
 #newitem
 #id shortbow
-#gameid 23
+#dominionsId 23
 #sprite /graphics/imperial/legion/weapon/shortbow.png
 #theme "wood"
 #needs quiver quiver
@@ -71,7 +71,7 @@
 
 #newitem
 #id compositebow
-#gameid 264
+#dominionsId 264
 #sprite /graphics/imperial/legion/weapon/compositebow.png
 #theme "wood"
 #needs quiver quiver
@@ -79,7 +79,7 @@
 
 #newitem
 #id longbow
-#gameid 24
+#dominionsId 24
 #sprite /graphics/imperial/legion/weapon/longbow.png
 #theme "advanced"
 #theme "wood"
@@ -100,7 +100,7 @@
 
 #newitem
 #id "crossbow"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/weapon/crossbow/crossbow.png
 #theme "advanced"
 #theme "iron"

@@ -1,6 +1,6 @@
 #newitem
 #id leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/standard/leathercap.png
 #offsetx 2
 #offsety 1
@@ -9,7 +9,7 @@
 
 #newitem
 #id reinforcedcap1
-#gameid 119
+#dominionsId 119
 #sprite /graphics/helmet/standard/reinforcedcap1.png
 #offsetx 2
 #offsety 0
@@ -18,7 +18,7 @@
 
 #newitem
 #id reinforcedcap2
-#gameid 119
+#dominionsId 119
 #sprite /graphics/helmet/standard/reinforcedcap2.png
 #offsetx 2
 #offsety 0
@@ -27,7 +27,7 @@
 
 #newitem
 #id fancyhat
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat.png
 #recolormask /graphics/helmet/special/fancyhat_recolormask.png
 #offsetx 2
@@ -37,7 +37,7 @@
 
 #newitem
 #id fancyhat2
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat2.png
 #recolormask /graphics/helmet/special/fancyhat2_recolormask.png
 #offsetx 2
@@ -47,7 +47,7 @@
 
 #newitem
 #id fancyhat3a
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask1.png
 #offsetx 2
@@ -57,7 +57,7 @@
 
 #newitem
 #id fancyhat3b
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/special/fancyhat3.png
 #recolormask /graphics/helmet/special/fancyhat3_recolormask2.png
 #offsetx 2
@@ -67,7 +67,7 @@
 
 #newitem
 #id hood4
-#gameid 120
+#dominionsId 120
 #sprite /graphics/helmet/caster/hood4.png
 #recolormask self
 #offsetx 2
@@ -77,7 +77,7 @@
 
 #newitem
 #id cowl
-#gameid 121
+#dominionsId 121
 #sprite /graphics/advancedhuman/helmets/cowl.png
 #recolormask self
 #offsetx -1

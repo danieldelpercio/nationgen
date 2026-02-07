@@ -1,7 +1,7 @@
 
 #newitem
 #id "compositebow"
-#gameid 264
+#dominionsId 264
 #sprite /graphics/machakans/weapon/pygmybow_long.png
 #tag "name Archer"
 #basechance 0.125
@@ -9,6 +9,6 @@
 
 #newitem
 #id "poisonbow"
-#gameid 594
+#dominionsId 594
 #sprite /graphics/machakans/weapon/pygmybow_long.png
 #enditem

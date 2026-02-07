@@ -12,7 +12,7 @@
 
 #newitem
 #id "long bow"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/highmen/weapons/longbow.png
 #needs quiver longbow_quiver
 #needs hands hands_bow
@@ -22,7 +22,7 @@
 
 #newitem
 #id "great bow"
-#gameid 266
+#dominionsId 266
 #sprite /graphics/highmen/weapons/greatbow.png
 #needs quiver greatbow_quiver
 #needs hands hands_bow

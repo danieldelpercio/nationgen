@@ -19,7 +19,7 @@
 
 #newitem
 #id "bronzecap"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/firbolg/helmet/bronzecap.png
 #eliteversion bronzecap_elite
 #theme "bronze"
@@ -31,7 +31,7 @@
 
 #newitem
 #id "bronzecap_elite"
-#gameid 135
+#dominionsId 135
 #sprite /graphics/firbolg/helmet/bronzecap_elite.png
 #theme "bronze"
 #theme "advanced"
@@ -42,7 +42,7 @@
 
 #newitem
 #id "ironcap"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/firbolg/helmet/ironcap.png
 #eliteversion ironcap_elite
 #theme "iron"
@@ -54,7 +54,7 @@
 
 #newitem
 #id "ironcap_elite"
-#gameid 20
+#dominionsId 20
 #sprite /graphics/firbolg/helmet/ironcap_elite.png
 #theme "iron"
 #theme "advanced"
@@ -65,7 +65,7 @@
 
 #newitem
 #id "goldcap"
-#gameid 122
+#dominionsId 122
 #basechance 0.1
 #sprite /graphics/firbolg/helmet/goldcap.png
 #eliteversion goldhelm
@@ -76,7 +76,7 @@
 
 #newitem
 #id "goldhelm"
-#gameid 213
+#dominionsId 213
 #basechance 0.2
 #sprite /graphics/firbolg/helmet/goldcap_elite.png
 #theme "fae"

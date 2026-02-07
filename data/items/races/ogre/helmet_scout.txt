@@ -1,7 +1,7 @@
 #newitem
 #basechance 9
 #id hood
-#gameid 121
+#dominionsId 121
 #sprite /graphics/ogre/helmet/scouthood.png
 #recolormask self
 #armor
@@ -23,7 +23,7 @@
 #newitem
 #basechance 1
 #id ogre_leathercap
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ogre/helmet/leathercap.png
 #armor
 #tag "eliteversion ogre_leathercap_crested"
@@ -36,7 +36,7 @@
 #newitem
 #basechance 1
 #id ogre_leathercap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ogre/helmet/reinforcedcap.png
 #armor
 #tag "eliteversion ogre_leathercap_crested"
@@ -47,7 +47,7 @@
 #newitem
 #basechance 1
 #id ogre_leathercap_bronzereinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ogre/helmet/reinforcedcap_bronze.png
 #armor
 #tag "eliteversion ogre_leathercap_crested"

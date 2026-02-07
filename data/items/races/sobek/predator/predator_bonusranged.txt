@@ -1,6 +1,6 @@
 #newitem
 #id "javelin"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/sobek/weapon/predator_javalinquiver.png
 #renderprio 7
 #renderslot "offhandw"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "net"
-#gameid 263
+#dominionsId 263
 #sprite /graphics/sobek/weapon/predator_net.png
 #tag "maxprot 10"
 #tag "tierunique"
@@ -24,7 +24,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #tag "name infantry 'Chakram Thrower'"
 #tag "tierunique"
 #basechance 0.25

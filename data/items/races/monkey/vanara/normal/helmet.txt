@@ -14,7 +14,7 @@
 
 #newitem
 #id halfhelmet
-#gameid 118
+#dominionsId 118
 #sprite /graphics/monkey/helmet/vanara/halfhelmet.png
 #tag "eliteversion halfhelmet-elite"
 #armor
@@ -24,7 +24,7 @@
 
 #newitem
 #id halfhelmet-elite
-#gameid 118
+#dominionsId 118
 #sprite /graphics/monkey/helmet/vanara/halfhelmet_gilt.png
 #armor
 #theme "enlightened"
@@ -34,7 +34,7 @@
 
 #newitem
 #id ironcap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/vanara/ironcap.png
 #tag "eliteversion ironcap-elite"
 #armor
@@ -44,7 +44,7 @@
 
 #newitem
 #id ironcap-elite
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/vanara/giltcap.png
 #armor
 #theme "enlightened"
@@ -54,7 +54,7 @@
 
 #newitem
 #id bronzecap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/monkey/helmet/vanara/bronzecap.png
 #tag "eliteversion bronzecap-elite"
 #armor
@@ -64,7 +64,7 @@
 
 #newitem
 #id bronzecap-elite
-#gameid 135
+#dominionsId 135
 #sprite /graphics/monkey/helmet/vanara/giltcap.png
 #armor
 #theme "enlightened"
@@ -77,7 +77,7 @@
 --- Imperial helms
 #newitem
 #id leathercap_imperial
-#gameid 119
+#dominionsId 119
 #sprite /graphics/monkey/helmet/vanara/reinforcedhelm.png
 #tag "eliteversion crestedcap_imperial"
 #armor
@@ -88,7 +88,7 @@
 
 #newitem
 #id crestedcap_imperial
-#gameid 162
+#dominionsId 162
 #sprite /graphics/monkey/helmet/vanara/reinforcedhelm.png
 #recolormask /graphics/monkey/helmet/vanara/reinforcedhelm_recolormask.png
 #armor
@@ -100,7 +100,7 @@
 
 #newitem
 #id ironcap_imperial
-#gameid 20
+#dominionsId 20
 #sprite /graphics/monkey/helmet/vanara/ironcap.png
 #armor
 #theme "imperial"
@@ -110,7 +110,7 @@
 
 #newitem
 #id legionaryhelmet
-#gameid 126
+#dominionsId 126
 #sprite /graphics/monkey/helmet/vanara/legionaryhelm.png
 #eliteversion legionaryhelmet_elite
 #armor
@@ -121,7 +121,7 @@
 
 #newitem
 #id legionaryhelmet_elite
-#gameid 126
+#dominionsId 126
 #sprite /graphics/monkey/helmet/vanara/legionaryhelm.png
 #recolormask /graphics/monkey/helmet/vanara/legionaryhelm_recolormask.png
 #armor
@@ -133,7 +133,7 @@
 
 #newitem
 #id fullhelmet_imperial
-#gameid 21
+#dominionsId 21
 #basechance 0.25
 #sprite /graphics/monkey/helmet/vanara/fullhelm_imperial.png
 #eliteversion fullhelmet_imperial_elite
@@ -146,7 +146,7 @@
 
 #newitem
 #id fullhelmet_imperial_elite
-#gameid 21
+#dominionsId 21
 #basechance 0.25
 #sprite /graphics/monkey/helmet/vanara/fullhelm_imperial.png
 #recolormask /graphics/monkey/helmet/vanara/fullhelm_imperial_recolormask.png
@@ -174,7 +174,7 @@
 --- Oriental helms
 #newitem
 #id kabuto
-#gameid 132
+#dominionsId 132
 #sprite /graphics/monkey/helmet/vanara/kabuto.png
 #tag "eliteversion kabuto"
 #tag "eliteversion kabuto_elite"
@@ -186,7 +186,7 @@
 #newitem
 #id kabuto_elite
 #basechance 0.01
-#gameid 132
+#dominionsId 132
 #sprite /graphics/monkey/helmet/vanara/kabuto_elite1.png
 #tag "eliteversion kabuto_elite"
 #tag "eliteversion kabuto_elitest"
@@ -199,7 +199,7 @@
 #newitem
 #id kabuto_elitest
 #basechance 0.01
-#gameid 132
+#dominionsId 132
 #sprite /graphics/monkey/helmet/vanara/kabuto_elite2.png
 #theme "oriental"
 #theme "elite"
@@ -209,7 +209,7 @@
 
 #newitem
 #id jingasa
-#gameid 131
+#dominionsId 131
 #sprite /graphics/helmet/standard/jingasa2.png
 #recolormask /graphics/helmet/standard/jingasa2_recolormask.png
 #theme "oriental"
@@ -222,7 +222,7 @@
 
 #newitem
 #id leathercap_oriental
-#gameid 120
+#dominionsId 120
 #sprite /graphics/tengu/helmet/reinforcedcap.png
 #tag "eliteversion ironcap_oriental"
 #theme "oriental"
@@ -233,7 +233,7 @@
 
 #newitem
 #id reinforcedcap_oriental
-#gameid 119
+#dominionsId 119
 #sprite /graphics/tengu/helmet/reinforcedcap.png
 #tag "eliteversion halfhelm_oriental"
 #theme "oriental"
@@ -244,7 +244,7 @@
 
 #newitem
 #id halfhelmet_oriental
-#gameid 118
+#dominionsId 118
 #sprite /graphics/tengu/helmet/tienchihelmet.png
 #tag "eliteversion halfhelm_oriental_elite"
 #theme "oriental"
@@ -255,7 +255,7 @@
 
 #newitem
 #id ironcap_oriental
-#gameid 20
+#dominionsId 20
 #sprite /graphics/tengu/helmet/tienchihelmet.png
 #tag "eliteversion ironcap_oriental_elite"
 #theme "oriental"
@@ -267,7 +267,7 @@
 #newitem
 #id halfhelmet_oriental_elite
 #basechance 0.01
-#gameid 118
+#dominionsId 118
 #sprite /graphics/tengu/helmet/tienchihelmet_elite.png
 #recolormask /graphics/tengu/helmet/tienchihelmet_elite_recolormask.png
 #theme "oriental"
@@ -280,7 +280,7 @@
 #newitem
 #id ironcap_oriental_elite
 #basechance 0.01
-#gameid 20
+#dominionsId 20
 #sprite /graphics/tengu/helmet/tienchihelmet_fancy.png
 #recolormask /graphics/tengu/helmet/tienchihelmet_fancy_recolormask.png
 #tag "eliteversion halfhelm_elite"

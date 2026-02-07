@@ -23,13 +23,13 @@
 
 #newitem
 #id pitcher
-#gameid 496
+#dominionsId 496
 #sprite /graphics/offhand/mage/pitcher.png
 #enditem
 
 #newitem
 #id sutra
-#gameid 459
+#dominionsId 459
 #enditem
 
 
@@ -40,14 +40,14 @@
 #basechance 0
 #chanceinc "magic nature 0.375"
 #chanceinc "magic blood 0.125"
-#gameid 543
+#dominionsId 543
 #enditem
 
 #newitem
 #id fire_bonds
 #basechance 0
 #chanceinc "personalmagic fire 2 0.25"
-#gameid 302
+#dominionsId 302
 #notfortier 1
 #notfortier 2
 #enditem
@@ -56,7 +56,7 @@
 #id astral_fetters
 #basechance 0
 #chanceinc "personalmagic astral 2 0.25"
-#gameid 416
+#dominionsId 416
 #notfortier 1
 #notfortier 2
 #enditem
@@ -65,7 +65,7 @@
 #id false_fetters
 #basechance 0
 #chanceinc "personalmagic air 2 0.25"
-#gameid 219
+#dominionsId 219
 #notfortier 1
 #notfortier 2
 #enditem
@@ -75,14 +75,14 @@
 #basechance 0
 #chanceinc "personalmagic holy 0.25"
 #chanceinc "personalmagic death -0.25"
-#gameid 460
+#dominionsId 460
 #enditem
 
 #newitem
 #id halt_dead
 #basechance 0
 #chanceinc "personalmagic death 0.25"
-#gameid 460
+#dominionsId 460
 #enditem
 
 #newitem
@@ -90,21 +90,21 @@
 #basechance 0
 #chanceinc "personalmagic holy 0.25"
 #chanceinc "personalmagic blood -0.25"
-#gameid 468
+#dominionsId 468
 #enditem
 
 #newitem
 #id halt_demon
 #basechance 0
 #chanceinc "personalmagic blood 0.25"
-#gameid 468
+#dominionsId 468
 #enditem
 
 #newitem
 #id halt_sacred
 #basechance 0
 #chanceinc "personalmagic holy 0.25"
-#gameid 480
+#dominionsId 480
 #notfortier 1
 #enditem
 
@@ -112,7 +112,7 @@
 #id bane_of_heresy
 #basechance 0
 #chanceinc "personalmagic holy 0.25"
-#gameid 509
+#dominionsId 509
 #notfortier 1
 #notfortier 2
 #enditem

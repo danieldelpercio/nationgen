@@ -1,20 +1,20 @@
 #newitem
 #id "javelin_bronze"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/cyclops/weapon/javelin_bronze.png
 #theme "bronze"
 #enditem
 
 #newitem
 #id "javelin_iron"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/cyclops/weapon/javelin_iron.png
 #theme "iron"
 #enditem
 
 #newitem -- Throwing axe
 #id "throwing axe"
-#gameid 260
+#dominionsId 260
 #basechance 0.5
 #theme "iron"
 #enditem
@@ -28,7 +28,7 @@
 
 #newitem
 #id "harpoon"
-#gameid 452
+#dominionsId 452
 #sprite /graphics/cyclops/weapon/javelin_bronze.png
 #tag "maxprot 12"
 #tag "tierunique"
@@ -37,7 +37,7 @@
 
 #newitem
 #id "rocks"
-#gameid 605
+#dominionsId 605
 #theme "primitive"
 #theme "stone"
 #enditem

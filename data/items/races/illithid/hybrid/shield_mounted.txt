@@ -16,7 +16,7 @@
 
 #new
 #id "turtle shell shield"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/atlantian/shield/turtleshellshield.png
 #offsetx 3
 #offsety 4
@@ -29,7 +29,7 @@
 
 #new
 #id "turtle shell shield3"
-#gameid 25
+#dominionsId 25
 #sprite /graphics/ichtyid/shield/shell_shield3.png
 #offsetx 9
 #offsety 4
@@ -42,7 +42,7 @@
 
 #newitem
 #id bronze_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #offsetx 3
 #offsety 4
@@ -55,7 +55,7 @@
 
 #newitem
 #id bronze_hoplon
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/hoplon3.png
 #offsetx 1
 #offsety 3
@@ -68,7 +68,7 @@
 
 #newitem
 #id bronze_colored_shield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/shield7.png
 #recolormask /graphics/offhand/standard/shield7_recolormask.png
 #offsetx 2
@@ -82,7 +82,7 @@
 
 #newitem
 #id bronze_box_shield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/offhand/standard/shield10_bronze.png
 #offsetx 2
 #offsety 2
@@ -98,7 +98,7 @@
 
 #newitem
 #id wood_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/woodbuckler.png
 #offsetx 2
 #offsety 3
@@ -111,7 +111,7 @@
 
 #newitem
 #id painted_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/woodbuckler.png
 #recolormask /graphics/offhand/standard/woodbuckler_recolormask.png
 #offsetx 2
@@ -124,7 +124,7 @@
 
 #newitem
 #id iron_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/buckler.png
 #offsetx 2
 #offsety 3
@@ -141,7 +141,7 @@
 
 #newitem
 #id kite1
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite1.png
 #recolormask /graphics/offhand/standard/kite1_recolormask.png
 #offsetx 2
@@ -156,7 +156,7 @@
 
 #newitem
 #id kite2
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite2.png
 #recolormask /graphics/offhand/standard/kite2_recolormask.png
 #offsetx 2
@@ -171,7 +171,7 @@
 
 #newitem
 #id kite3
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite3.png
 #recolormask /graphics/offhand/standard/kite3_recolormask.png
 #offsetx 2
@@ -186,7 +186,7 @@
 
 #newitem
 #id kite4
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite4.png
 #recolormask self
 #offsetx 2
@@ -201,7 +201,7 @@
 
 #newitem
 #id kite5
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite5.png
 #recolormask /graphics/offhand/standard/kite5_recolormask.png
 #offsetx 2
@@ -216,7 +216,7 @@
 
 #newitem
 #id kite6
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite6.png
 #offsetx 2
 #offsety 3
@@ -230,7 +230,7 @@
 
 #newitem
 #id kite6_colored
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite6.png
 #offsetx 2
 #offsety 3
@@ -245,7 +245,7 @@
 
 #newitem
 #id kite7
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite7.png
 #recolormask self
 #offsetx 2
@@ -262,7 +262,7 @@
 
 #newitem
 #id shield1
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield1.png
 #offsetx 3
 #offsety 4
@@ -275,7 +275,7 @@
 
 #newitem
 #id shield2
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield2.png
 #offsetx 3
 #offsety 4
@@ -288,7 +288,7 @@
 
 #newitem
 #id shield3
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield3.png
 #offsetx 3
 #offsety 4
@@ -301,7 +301,7 @@
 
 #newitem
 #id shield4
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield4.png
 #offsetx 2
 #offsety 3
@@ -314,7 +314,7 @@
 
 #newitem
 #id shield6
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #offsetx 3
@@ -328,7 +328,7 @@
 
 #newitem
 #id shield8
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield8.png
 #offsetx 2
 #offsety 3
@@ -341,7 +341,7 @@
 
 #newitem
 #id shield9
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield9.png
 #offsetx 2
 #offsety 3
@@ -354,7 +354,7 @@
 
 #newitem
 #id shield10
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield10.png
 #offsetx 2
 #offsety 3
@@ -367,7 +367,7 @@
 
 #newitem
 #id shield10_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield10_painted.png
 #recolormask /graphics/offhand/standard/shield10_painted_recolormask.png
 #offsetx 2
@@ -381,7 +381,7 @@
 
 #newitem
 #id shield11
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/coe-metalshield.png
 #offsetx 2
 #offsety 3
@@ -399,7 +399,7 @@
 
 #newitem
 #id wood_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/woodbuckler.png
 #offsetx 5
 #offsety 7
@@ -412,7 +412,7 @@
 
 #newitem
 #id painted_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/woodbuckler.png
 #recolormask /graphics/offhand/standard/woodbuckler_recolormask.png
 #offsetx 5
@@ -425,7 +425,7 @@
 
 #newitem
 #id iron_buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/buckler.png
 #offsetx 5
 #offsety 7
@@ -442,7 +442,7 @@
 
 #newitem
 #id shield3
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield3.png
 #offsetx 5
 #offsety 7
@@ -454,7 +454,7 @@
 
 #newitem
 #id shield4
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield4.png
 #offsetx 5
 #offsety 7
@@ -467,7 +467,7 @@
 
 #newitem
 #id shield6
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #offsetx 5
@@ -480,7 +480,7 @@
 
 #newitem
 #id shield8
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield8.png
 #offsetx 5
 #offsety 7
@@ -493,7 +493,7 @@
 
 #newitem
 #id shield9
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield9.png
 #offsetx 5
 #offsety 7
@@ -505,7 +505,7 @@
 
 #newitem
 #id shield10
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield10.png
 #offsetx 5
 #offsety 7
@@ -518,7 +518,7 @@
 
 #newitem
 #id shield10_painted
-#gameid 2
+#dominionsId 2
 #sprite /graphics/offhand/standard/shield10_painted.png
 #recolormask /graphics/offhand/standard/shield10_painted_recolormask.png
 #offsetx 5

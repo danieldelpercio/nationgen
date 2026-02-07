@@ -1,7 +1,7 @@
 
 #newitem
 #id golden_spear
-#gameid 473
+#dominionsId 473
 #sprite /graphics/gigante/weapon/spear_bronze.png
 #theme "magic"
 #basechance 0
@@ -12,7 +12,7 @@
 
 #newitem
 #id golden_sword
-#gameid 474
+#dominionsId 474
 #sprite /graphics/gigante/weapon/magic/goldensword.png
 #theme "magic"
 #basechance 0
@@ -21,7 +21,7 @@
 
 #newitem
 #id cyclope_spear
-#gameid 733
+#dominionsId 733
 #sprite /graphics/gigante/weapon/spear_iron.png
 #theme "magic"
 #basechance 0
@@ -32,7 +32,7 @@
 
 #newitem
 #id cyclope_sword
-#gameid 733
+#dominionsId 733
 #sprite /graphics/gigante/weapon/sword_iron.png
 #theme "magic"
 #basechance 0
@@ -41,7 +41,7 @@
 
 #newitem
 #id dawn_sword
-#gameid 520
+#dominionsId 520
 #sprite /graphics/gigante/weapon/magic/dawnblade.png
 #theme "magic"
 #basechance 0
@@ -49,7 +49,7 @@
 
 #newitem
 #id orichalcum_sword
-#gameid 718
+#dominionsId 718
 #sprite /graphics/gigante/weapon/magic/orichalcumblade.png
 #theme "magic"
 #basechance 0
@@ -57,7 +57,7 @@
 
 #newitem
 #id ice_sword
-#gameid 612
+#dominionsId 612
 #sprite /graphics/gigante/weapon/magic/iceblade.png
 #theme "magic"
 #theme "water"
@@ -66,7 +66,7 @@
 
 #newitem
 #id obsidian_sword
-#gameid 625
+#dominionsId 625
 #sprite /graphics/gigante/weapon/magic/obsidianblade.png
 #theme "magic"
 #theme "earth"
@@ -75,7 +75,7 @@
 
 #newitem
 #id obsidian_sword_poisoned
-#gameid 623
+#dominionsId 623
 #sprite /graphics/gigante/weapon/magic/obsidianblade.png
 #theme "magic"
 #theme "elite"
@@ -86,7 +86,7 @@
 
 #newitem
 #id bane_sword
-#gameid 42
+#dominionsId 42
 #sprite /graphics/gigante/weapon/magic/baneblade.png
 #theme "magic"
 #theme "elite"
@@ -96,7 +96,7 @@
 
 #newitem
 #id heretic_spear
-#gameid 722
+#dominionsId 722
 #sprite /graphics/gigante/weapon/spear_bronze.png
 #theme "magic"
 #theme "elite"
@@ -108,7 +108,7 @@
 
 #newitem
 #id coral_spear
-#gameid 31
+#dominionsId 31
 #sprite /graphics/gigante/weapon/magic/coralspear.png
 #theme "magic"
 #theme water
@@ -119,7 +119,7 @@
 
 #newitem
 #id coral_longspear
-#gameid 580
+#dominionsId 580
 #sprite /graphics/gigante/weapon/magic/corallongspear.png
 #theme "magic"
 #theme water
@@ -130,7 +130,7 @@
 
 #newitem
 #id scourge
-#gameid 760
+#dominionsId 760
 #sprite /graphics/gigante/weapon/magic/scourgeofpower.png
 #theme "magic"
 #theme "elite"
@@ -145,7 +145,7 @@
 
 #newitem
 #id coral_glaive
-#gameid 46
+#dominionsId 46
 #sprite /graphics/gigante/weapon/magic/coralglaive.png
 #theme "magic"
 #theme water
@@ -156,7 +156,7 @@
 
 #newitem
 #id obsidian_glaive
-#gameid 426
+#dominionsId 426
 #sprite /graphics/gigante/weapon/magic/obsidianglaive.png
 #theme "magic"
 #theme earth
@@ -167,7 +167,7 @@
 
 #newitem
 #id bone_glaive
-#gameid 455
+#dominionsId 455
 #sprite /graphics/gigante/weapon/magic/boneglaive.png
 #theme "magic"
 #theme death
@@ -178,7 +178,7 @@
 
 #newitem
 #id bident
-#gameid 581
+#dominionsId 581
 #sprite /graphics/gigante/weapon/magic/bident.png
 #theme "magic"
 #basechance 0
@@ -189,7 +189,7 @@
 
 #newitem
 #id meteorite_trident
-#gameid 642
+#dominionsId 642
 #sprite /graphics/gigante/weapon/trident_iron.png
 #theme "magic"
 #basechance 0
@@ -200,7 +200,7 @@
 
 #newitem
 #id baculus
-#gameid 745
+#dominionsId 745
 #sprite /graphics/gigante/weapon/magic/baculus.png
 #theme "magic"
 #theme "elite"
@@ -211,7 +211,7 @@
 
 #newitem
 #id blackhalberd
-#gameid 508
+#dominionsId 508
 #sprite /graphics/gigante/weapon/magic/blackhalberd.png
 #theme "magic"
 #theme "elite"
@@ -223,7 +223,7 @@
 
 #newitem
 #id snakestaff
-#gameid 318
+#dominionsId 318
 #sprite /graphics/gigante/weapon/magic/snakestaff.png
 #theme "magic"
 #theme "nature"
@@ -235,7 +235,7 @@
 
 #newitem
 #id holyscourge
-#gameid 402
+#dominionsId 402
 #sprite /graphics/gigante/weapon/magic/holyscourge.png
 #theme "magic"
 #theme "nature"

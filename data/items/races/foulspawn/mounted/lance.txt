@@ -1,6 +1,6 @@
 #newitem
 #id lance
-#gameid 4
+#dominionsId 4
 #sprite /graphics/advancedhuman/weapons/longspear.png
 #offsetx -5
 #renderprio 7
@@ -13,7 +13,7 @@
 
 #newitem
 #id lance
-#gameid 4
+#dominionsId 4
 #sprite /graphics/advancedhuman/weapons/longspear.png
 #offsetx -4
 #offsety -1

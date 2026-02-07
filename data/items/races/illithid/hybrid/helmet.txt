@@ -9,7 +9,7 @@
 
 #newitem
 #id "leather_cap"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/illithid/starchild/helmet/leather_cap.png
 #offsetx -2
 #offsety 5
@@ -21,7 +21,7 @@
 
 #newitem
 #id "sharkskin_cap"
-#gameid 152
+#dominionsId 152
 #sprite /graphics/illithid/starchild/helmet/sharkskin_cap.png
 #offsetx -2
 #offsety 5
@@ -33,7 +33,7 @@
 
 #newitem
 #id "shell_cap"
-#gameid 224
+#dominionsId 224
 #sprite /graphics/illithid/starchild/helmet/shell_cap.png
 #offsetx -2
 #offsety 5
@@ -45,7 +45,7 @@
 
 #newitem
 #id "coral_cap"
-#gameid 24
+#dominionsId 24
 #sprite /graphics/illithid/starchild/helmet/coral_cap.png
 #offsetx -2
 #offsety 5
@@ -58,7 +58,7 @@
 
 #newitem
 #id bronze_cap
-#gameid 135
+#dominionsId 135
 #sprite /graphics/illithid/starchild/helmet/bronze_cap.png
 #offsetx -2
 #offsety 5
@@ -70,7 +70,7 @@
 
 #newitem
 #id iron_cap
-#gameid 20
+#dominionsId 20
 #sprite /graphics/illithid/starchild/helmet/iron_cap.png
 #offsetx -2
 #offsety 5

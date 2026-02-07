@@ -1,6 +1,6 @@
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/firbolg/armor/leather_cuirass.png
 #armor
 #theme "leather"
@@ -10,7 +10,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/firbolg/armor/leather_hauberk.png
 #armor
 #theme "leather"
@@ -20,7 +20,7 @@
 
 #newitem
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/firbolg/armor/leather_full_mounted.png
 #armor
 #theme "leather"
@@ -29,7 +29,7 @@
 
 #newitem
 #id "bronze ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/firbolg/armor/ring_cuirass_bronze.png
 #armor
 #theme "leather"
@@ -39,7 +39,7 @@
 
 #newitem
 #id "bronze ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/firbolg/armor/ring_hauberk_bronze.png
 #armor
 #theme "leather"
@@ -48,7 +48,7 @@
 
 #newitem
 #id "full bronze ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/firbolg/armor/ring_full_mounted_bronze.png
 #armor
 #theme "leather"
@@ -57,7 +57,7 @@
 
 #newitem
 #id "iron ring cuirass"
-#gameid 6
+#dominionsId 6
 #sprite /graphics/firbolg/armor/ring_cuirass_iron.png
 #armor
 #theme "leather"
@@ -67,7 +67,7 @@
 
 #newitem
 #id "iron ring hauberk"
-#gameid 11
+#dominionsId 11
 #sprite /graphics/firbolg/armor/ring_hauberk_iron.png
 #armor
 #theme "leather"
@@ -76,7 +76,7 @@
 
 #newitem
 #id "full iron ring"
-#gameid 16
+#dominionsId 16
 #sprite /graphics/firbolg/armor/ring_full_mounted_iron.png
 #armor
 #theme "leather"
@@ -85,7 +85,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/firbolg/armor/bronzescale_cuirass1.png
 #armor
@@ -94,7 +94,7 @@
 
 #newitem
 #id "bronze scale cuirass long"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/firbolg/armor/bronzescale_cuirass2.png
 #armor
@@ -104,7 +104,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #basechance 0.5
 #sprite /graphics/firbolg/armor/bronzescale_hauberk1.png
 #armor
@@ -113,7 +113,7 @@
 
 #newitem
 #id "bronze scale hauberk long"
-#gameid 136
+#dominionsId 136
 #basechance 0.5
 #sprite /graphics/firbolg/armor/bronzescale_hauberk2.png
 #armor
@@ -123,7 +123,7 @@
 
 #newitem
 #id "iron scale cuirass"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/firbolg/armor/ironscale_cuirass1.png
 #armor
@@ -132,7 +132,7 @@
 
 #newitem
 #id "iron scale cuirass long"
-#gameid 142
+#dominionsId 142
 #basechance 0.5
 #sprite /graphics/firbolg/armor/ironscale_cuirass2.png
 #armor
@@ -142,7 +142,7 @@
 
 #newitem
 #id "iron scale hauberk"
-#gameid 136
+#dominionsId 136
 #basechance 0.5
 #sprite /graphics/firbolg/armor/ironscale_hauberk1.png
 #armor
@@ -151,7 +151,7 @@
 
 #newitem
 #id "iron scale hauberk long"
-#gameid 136
+#dominionsId 136
 #basechance 0.5
 #sprite /graphics/firbolg/armor/ironscale_hauberk2.png
 #armor
@@ -161,7 +161,7 @@
 
 #newitem
 #id "bronze cuirass"
-#gameid 100
+#dominionsId 100
 #basechance 0.25
 #sprite /graphics/firbolg/armor/bronze_cuirass1.png
 #armor
@@ -171,7 +171,7 @@
 
 #newitem
 #id "bronze cuirass long"
-#gameid 100
+#dominionsId 100
 #basechance 0.25
 #sprite /graphics/firbolg/armor/bronze_cuirass2.png
 #armor
@@ -182,7 +182,7 @@
 
 #newitem
 #id "bronze hauberk"
-#gameid 101
+#dominionsId 101
 #basechance 0.25
 #sprite /graphics/firbolg/armor/bronze_hauberk1.png
 #armor
@@ -192,7 +192,7 @@
 
 #newitem
 #id "bronze hauberk long"
-#gameid 101
+#dominionsId 101
 #basechance 0.25
 #sprite /graphics/firbolg/armor/bronze_hauberk2.png
 #armor
@@ -203,7 +203,7 @@
 
 #newitem
 #id "iron cuirass"
-#gameid 9
+#dominionsId 9
 #basechance 0.25
 #sprite /graphics/firbolg/armor/iron_cuirass1.png
 #armor
@@ -213,7 +213,7 @@
 
 #newitem
 #id "iron cuirass long"
-#gameid 9
+#dominionsId 9
 #basechance 0.25
 #sprite /graphics/firbolg/armor/iron_cuirass2.png
 #armor
@@ -224,7 +224,7 @@
 
 #newitem
 #id "iron hauberk"
-#gameid 14
+#dominionsId 14
 #basechance 0.25
 #sprite /graphics/firbolg/armor/iron_hauberk1.png
 #armor
@@ -234,7 +234,7 @@
 
 #newitem
 #id "iron hauberk long"
-#gameid 14
+#dominionsId 14
 #basechance 0.25
 #sprite /graphics/firbolg/armor/iron_hauberk2.png
 #armor

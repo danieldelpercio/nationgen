@@ -1,6 +1,6 @@
 #newitem
 #id magerobe1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/atlantian/robe/magerobe1.png
 #recolormask /graphics/atlantian/robe/magerobe1_recolormask.png
 #tag "noslot helmet"
@@ -9,28 +9,28 @@
 
 #newitem
 #id magerobe2
-#gameid 158
+#dominionsId 158
 #sprite /graphics/atlantian/robe/magerobe2.png
 #armor
 #enditem
 
 #newitem
 #id magerobe3
-#gameid 158
+#dominionsId 158
 #sprite /graphics/atlantian/robe/magerobe3.png
 #armor
 #enditem
 
 #newitem
 #id magerobe4
-#gameid 158
+#dominionsId 158
 #sprite /graphics/atlantian/robe/magerobe4.png
 #armor
 #enditem
 
 #newitem
 #id magerobe5
-#gameid 158
+#dominionsId 158
 #sprite /graphics/atlantian/robe/magerobe5.png
 #recolormask /graphics/atlantian/robe/magerobe5_recolormask.png
 #armor

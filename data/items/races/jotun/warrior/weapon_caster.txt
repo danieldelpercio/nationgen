@@ -1,6 +1,6 @@
 #newitem
 #id axe_iron
-#gameid 17
+#dominionsId 17
 #basechance 4
 #sprite /graphics/jotun/warrior/weapon/axe_iron.png
 #theme "iron"
@@ -11,7 +11,7 @@
 
 #newitem
 #id axe_battle
-#gameid 18
+#dominionsId 18
 #sprite /graphics/jotun/warrior/weapon/axe_battle.png
 #theme "iron"
 #troopweapon
@@ -22,7 +22,7 @@
 
 #newitem
 #id sword_iron
-#gameid 8
+#dominionsId 8
 #sprite /graphics/jotun/warrior/weapon/sword_iron.png
 #theme "iron"
 #tier 1
@@ -32,7 +32,7 @@
 
 #newitem
 #id spear_iron
-#gameid 1
+#dominionsId 1
 #sprite /graphics/jotun/warrior/weapon/spear_iron.png
 #theme "iron"
 #theme "formationfighter"
@@ -43,7 +43,7 @@
 
 #newitem
 #id longspear_iron
-#gameid 28
+#dominionsId 28
 #sprite /graphics/jotun/warrior/weapon/longspear_iron.png
 #theme "formationfighter"
 #theme "iron"
@@ -54,7 +54,7 @@
 
 #newitem
 #id spear_heavy
-#gameid 2hspear
+#dominionsId 2hspear
 #sprite /graphics/jotun/warrior/weapon/spear_heavy.png
 #theme "formationfighter"
 #theme "iron"
@@ -66,7 +66,7 @@
 
 #newitem
 #id longspear_heavy
-#gameid 2hlongspear
+#dominionsId 2hlongspear
 #sprite /graphics/jotun/warrior/weapon/longspear_heavy.png
 #theme "formationfighter"
 #theme "iron"
@@ -78,7 +78,7 @@
 
 #newitem
 #id glaive_iron
-#gameid 308
+#dominionsId 308
 #basechance 0.5
 #sprite /graphics/jotun/warrior/weapon/glaive_iron.png
 #theme "iron"
@@ -105,7 +105,7 @@
 
 #newitem
 #id sword_gold
-#gameid 474
+#dominionsId 474
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
 #sprite /graphics/jotun/warrior/weapon/sword_gold.png
@@ -117,7 +117,7 @@
 
 #newitem
 #id spear_gold
-#gameid 473
+#dominionsId 473
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
 #sprite /graphics/jotun/warrior/weapon/spear_gold.png
@@ -130,7 +130,7 @@
 
 #newitem
 #id sword_ice
-#gameid 37
+#dominionsId 37
 #basechance 0.2
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
@@ -143,7 +143,7 @@
 
 #newitem
 #id spear_ice
-#gameid 611
+#dominionsId 611
 #basechance 0.2
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
@@ -156,7 +156,7 @@
 
 #newitem
 #id glaive_ice
-#gameid 454
+#dominionsId 454
 #basechance 0.2
 #chanceinc "moduleid sacgen *2"
 #chanceinc "moduleid herogen *4"
@@ -171,7 +171,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #basechance 0.25
 #sprite /graphics/jotun/warrior/weapon/staff_quarter.png
 #tier 1
@@ -181,7 +181,7 @@
 
 #newitem
 #id staff_gygja
-#gameid 7
+#dominionsId 7
 #sprite /graphics/jotun/warrior/weapon/staff_gygja.png
 #eliteversion staff_skratti
 #eliteversion staff_gygja
@@ -192,7 +192,7 @@
 
 #newitem
 #id staff_plain
-#gameid 7
+#dominionsId 7
 #sprite /graphics/jotun/warrior/weapon/staff_wood.png
 #eliteversion staff_orb
 #eliteversion staff_knob
@@ -205,7 +205,7 @@
 
 #newitem
 #id staff_knob
-#gameid 7
+#dominionsId 7
 #sprite /graphics/jotun/warrior/weapon/staff_knob.png
 #notfortier 1
 #tier 2
@@ -214,7 +214,7 @@
 
 #newitem
 #id staff_orb
-#gameid 7
+#dominionsId 7
 #sprite /graphics/jotun/warrior/weapon/staff_orb.png
 #recolormask /graphics/jotun/warrior/weapon/staff_orb_recolormask.png
 #notfortier 1
@@ -224,7 +224,7 @@
 
 #newitem
 #id staff_skratti
-#gameid 7
+#dominionsId 7
 #sprite /graphics/jotun/warrior/weapon/staff_skratti.png
 #notfortier 1
 #tier 2
@@ -233,7 +233,7 @@
 
 #newitem
 #id staff_ice
-#gameid 124
+#dominionsId 124
 #basechance 0.2
 #sprite /graphics/jotun/warrior/weapon/staff_orb.png
 #recolormask /graphics/jotun/warrior/weapon/staff_orb_recolormask.png

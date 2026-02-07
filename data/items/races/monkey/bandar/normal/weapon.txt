@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/monkey/weapon/bandar/axe.png
 #theme "primitive"
 #theme "enlightened"
@@ -11,7 +11,7 @@
 
 #newitem
 #id axe_bronze
-#gameid 675
+#dominionsId 675
 #sprite /graphics/monkey/weapon/bandar/hatchet_bronze.png
 #theme "primitive"
 #theme "enlightened"
@@ -21,7 +21,7 @@
 
 #newitem
 #id greataxe
-#gameid 18
+#dominionsId 18
 #sprite /graphics/monkey/weapon/bandar/battleaxe.png
 #theme "enlightened"
 #theme "imperial"
@@ -32,7 +32,7 @@
 
 #newitem
 #id greataxe_bronze
-#gameid 698
+#dominionsId 698
 #sprite /graphics/monkey/weapon/bandar/battleaxe_bronze.png
 #theme "enlightened"
 #theme "imperial"
@@ -42,7 +42,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/monkey/weapon/bandar/mace.png
 #theme "primitive"
 #theme "enlightened"
@@ -52,7 +52,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/monkey/weapon/bandar/spear.png
 #theme "enlightened"
 #theme "imperial"
@@ -63,7 +63,7 @@
 
 #newitem
 #id spear_bronze
-#gameid 643
+#dominionsId 643
 #sprite /graphics/monkey/weapon/bandar/spear_bronze.png
 #theme "enlightened"
 #theme "imperial"
@@ -73,7 +73,7 @@
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/monkey/weapon/bandar/longspear.png
 #theme "imperial"
 #theme "oriental"
@@ -83,7 +83,7 @@
 
 #newitem
 #id longspear_bronze
-#gameid 644
+#dominionsId 644
 #sprite /graphics/monkey/weapon/bandar/longspear_bronze.png
 #theme "imperial"
 #theme "bronze"
@@ -92,7 +92,7 @@
 
 #newitem
 #id machaka_spear
-#gameid 315
+#dominionsId 315
 #basechance 9
 #sprite /graphics/monkey/weapon/bandar/longspear.png
 #recolormask /graphics/monkey/weapon/bandar/machakaspear_recolormask.png
@@ -102,7 +102,7 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/monkey/weapon/bandar/shortsword.png
 #theme "iron"
 #theme "imperial"
@@ -111,7 +111,7 @@
 
 #newitem
 #id shortsword_bronze
-#gameid 645
+#dominionsId 645
 #sprite /graphics/monkey/weapon/bandar/shortsword_bronze.png
 #theme "bronze"
 #theme "imperial"
@@ -119,7 +119,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/monkey/weapon/bandar/broadsword.png
 #theme "advanced"
 #theme "iron"
@@ -128,7 +128,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/monkey/weapon/bandar/falchion.png
 #theme "iron"
 #theme "enlightened"
@@ -138,7 +138,7 @@
 
 #newitem
 #id greatclub
-#gameid 165
+#dominionsId 165
 #sprite /graphics/monkey/weapon/bandar/cudgel.png
 #theme "primitive"
 #theme "wood"
@@ -149,7 +149,7 @@
 
 #newitem
 #id cudgel
-#gameid 363
+#dominionsId 363
 #sprite /graphics/monkey/weapon/bandar/cudgel.png
 #theme "iron"
 #theme "enlightened"
@@ -160,7 +160,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/monkey/weapon/bandar/maul.png
 #theme "imperial"
 #theme "enlightened"
@@ -169,7 +169,7 @@
 
 #newitem
 #id flail
-#gameid 16
+#dominionsId 16
 #sprite /graphics/monkey/weapon/bandar/flail.png
 #theme "imperial"
 #theme "austral"
@@ -179,7 +179,7 @@
 
 #newitem
 #id flail_bronze
-#gameid 16
+#dominionsId 16
 #sprite /graphics/monkey/weapon/bandar/flail_bronze.png
 #theme "imperial"
 #theme "bronze"
@@ -188,7 +188,7 @@
 
 #newitem
 #id yari
-#gameid 376
+#dominionsId 376
 #sprite /graphics/monkey/weapon/bandar/spear.png
 #troopweapon
 #theme formationfighter
@@ -198,7 +198,7 @@
 
 #newitem
 #id naginata
-#gameid 380
+#dominionsId 380
 #sprite /graphics/monkey/weapon/bandar/naginata.png
 #troopweapon
 #theme "iron"
@@ -207,7 +207,7 @@
 
 #newitem
 #id wakizashi
-#gameid 377
+#dominionsId 377
 #sprite /graphics/monkey/weapon/bandar/wakizashi.png
 #theme "oriental"
 #theme "iron"
@@ -215,7 +215,7 @@
 
 #newitem
 #id katana
-#gameid 378
+#dominionsId 378
 #sprite /graphics/monkey/weapon/bandar/katana.png
 #theme "oriental"
 #theme "iron"
@@ -224,7 +224,7 @@
 
 #newitem
 #id nodachi
-#gameid 379
+#dominionsId 379
 #sprite /graphics/monkey/weapon/bandar/nodachi.png
 #theme "oriental"
 #theme "iron"

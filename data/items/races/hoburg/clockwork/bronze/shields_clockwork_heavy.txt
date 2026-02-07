@@ -2,7 +2,7 @@
 
 #newitem
 #id hideshield
-#gameid 105
+#dominionsId 105
 #sprite /graphics/muuch/offhands/hideshield.png
 #tag "eliteversion hideshield_tinted"
 #offsetx 8
@@ -15,7 +15,7 @@
 
 #newitem
 #id greathideshield
-#gameid 112
+#dominionsId 112
 #sprite /graphics/muuch/offhands/greathideshield.png
 #tag "eliteversion greathideshield_tinted"
 #offsetx 8
@@ -28,7 +28,7 @@
 
 #newitem
 #id metalshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzeshield.png
 #tag "eliteversion metalshield_tinted"
 #offsetx 8
@@ -42,7 +42,7 @@
 
 #newitem
 #id bigmetalshield
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzetower.png
 #tag "eliteversion bigmetalshield_tinted"
 #offsetx 8
@@ -56,7 +56,7 @@
 
 #newitem
 #id hideshield_tinted
-#gameid 105
+#dominionsId 105
 #sprite /graphics/muuch/offhands/hideshield.png
 #recolormask /graphics/muuch/offhands/shield_recolormask.png
 #offsetx 8
@@ -70,7 +70,7 @@
 
 #newitem
 #id greathideshield_tinted
-#gameid 112
+#dominionsId 112
 #sprite /graphics/muuch/offhands/greathideshield.png
 #recolormask /graphics/muuch/offhands/bigshield_recolormask.png
 #offsetx 8
@@ -84,7 +84,7 @@
 
 #newitem
 #id metalshield_tinted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzeshield.png
 #recolormask /graphics/muuch/offhands/shield_recolormask.png
 #offsetx 8
@@ -99,7 +99,7 @@
 
 #newitem
 #id bigmetalshield_tinted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/muuch/offhands/bronzetower.png
 #recolormask /graphics/muuch/offhands/bigshield_recolormask.png
 #offsetx 8
@@ -116,7 +116,7 @@
 
 #newitem
 #id shield_tan
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #offsetx 9
 #offsety -7
@@ -127,7 +127,7 @@
 
 #newitem
 #id shield_light
-#gameid 2
+#dominionsId 2
 #sprite /graphics/avvim/offhand/shield1.png
 #recolormask /graphics/avvim/offhand/shield1_recolormask.png
 #offsetx 9
@@ -139,7 +139,7 @@
 
 #newitem
 #id shield_dark_iron
-#gameid 209
+#dominionsId 209
 #sprite /graphics/avvim/offhand/shield2.png
 #offsetx 9
 #offsety -5
@@ -149,7 +149,7 @@
 
 #newitem
 #id shield_dark_iron_painted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/avvim/offhand/shield2.png
 #recolormask /graphics/avvim/offhand/shield2_recolormask.png
 #offsetx 9
@@ -160,7 +160,7 @@
 
 #newitem
 #id shield_dark_gold
-#gameid 209
+#dominionsId 209
 #sprite /graphics/avvim/offhand/shield3.png
 #offsetx 9
 #offsety -5
@@ -170,7 +170,7 @@
 
 #newitem
 #id shield_dark_gold_painted
-#gameid 209
+#dominionsId 209
 #sprite /graphics/avvim/offhand/shield3.png
 #recolormask /graphics/avvim/offhand/shield3_recolormask.png
 #offsetx 9
@@ -184,7 +184,7 @@
 
 #newitem
 #id kite4
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite4.png
 #recolormask self
 #offsetx 7
@@ -196,7 +196,7 @@
 
 #newitem
 #id kite5
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite5.png
 #recolormask /graphics/offhand/standard/kite5_recolormask.png
 #offsetx 7

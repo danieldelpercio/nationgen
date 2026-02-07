@@ -13,7 +13,7 @@
 
 #newitem
 #id "sharkskin cuirass"
-#gameid 188
+#dominionsId 188
 #sprite /graphics/foulspawn/small/armor/sharkskin_cuirass.png
 #armor
 #theme "leather"
@@ -23,7 +23,7 @@
 
 #newitem
 #id "sharkskin armor"
-#gameid 151
+#dominionsId 151
 #sprite /graphics/foulspawn/small/armor/sharkskin_full.png
 #armor
 #theme "leather"
@@ -36,7 +36,7 @@
 
 #newitem
 #id "shell_armor"
-#gameid 140
+#dominionsId 140
 #sprite /graphics/foulspawn/small/armor/shell_cuirass.png
 #armor
 #theme "primitive"
@@ -49,7 +49,7 @@
 
 #newitem
 #id "coral_cuirass"
-#gameid 22
+#dominionsId 22
 #sprite /graphics/foulspawn/small/armor/coral_cuirass.png
 #armor
 #define "#poisonarmor 5"
@@ -62,7 +62,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/foulspawn/small/armor/leather_cuirass.png
 #armor
 #theme "leather"
@@ -72,7 +72,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/foulspawn/small/armor/leather_hauberk.png
 #armor
 #theme "leather"
@@ -82,7 +82,7 @@
 
 #newitem
 #id "full leather"
-#gameid 15
+#dominionsId 15
 #sprite /graphics/foulspawn/small/armor/leather_full.png
 #armor
 #theme "leather"
@@ -95,7 +95,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/foulspawn/small/armor/bronzescale_cuirass.png
 #armor
 #theme "bronze"
@@ -105,7 +105,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/foulspawn/small/armor/bronzescale_hauberk.png
 #armor
 #theme "bronze"
@@ -128,7 +128,7 @@
 
 #newitem
 #id "scale cuirass"
-#gameid 7
+#dominionsId 7
 #sprite /graphics/foulspawn/small/armor/mail_cuirass.png
 #armor
 #theme "iron"
@@ -138,7 +138,7 @@
 
 #newitem
 #id "scale hauberk"
-#gameid 12
+#dominionsId 12
 #sprite /graphics/foulspawn/small/armor/mail_hauberk.png
 #armor
 #theme "iron"
@@ -147,7 +147,7 @@
 
 #newitem
 #id "full scale"
-#gameid 17
+#dominionsId 17
 #sprite /graphics/foulspawn/small/armor/mail_full.png
 #armor
 #basechance 0.5
@@ -161,7 +161,7 @@
 
 #newitem
 #id "chain cuirass"
-#gameid 8
+#dominionsId 8
 #sprite /graphics/foulspawn/small/armor/mail_cuirass.png
 #armor
 #theme "iron"
@@ -171,7 +171,7 @@
 
 #newitem
 #id "chain hauberk"
-#gameid 13
+#dominionsId 13
 #sprite /graphics/foulspawn/small/armor/mail_hauberk.png
 #armor
 #theme "iron"
@@ -180,7 +180,7 @@
 
 #newitem
 #id "full chain"
-#gameid 18
+#dominionsId 18
 #sprite /graphics/foulspawn/small/armor/mail_full.png
 #armor
 #basechance 0.25
@@ -194,7 +194,7 @@
 
 #newitem
 #id "bronze plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/foulspawn/small/armor/bronzeplate_cuirass.png
 #armor
 #theme "bronze"
@@ -203,7 +203,7 @@
 
 #newitem
 #id "bronze plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/foulspawn/small/armor/bronzeplate_hauberk.png
 #armor
 #theme "bronze"
@@ -227,7 +227,7 @@
 
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/foulspawn/small/armor/plate_cuirass.png
 #armor
 #theme "iron"
@@ -236,7 +236,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #sprite /graphics/foulspawn/small/armor/plate_hauberk.png
 #armor
 #theme "iron"
@@ -245,7 +245,7 @@
 
 #newitem
 #id "full plate"
-#gameid 19
+#dominionsId 19
 #sprite /graphics/foulspawn/small/armor/plate_full.png
 #armor
 #basechance 0.25

@@ -1,7 +1,7 @@
 -- Tier 1 robes: no trim
 #newitem
 #id black-T1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_black.png
 #armor
 #tier 1
@@ -11,7 +11,7 @@
 
 #newitem
 #id grey-T1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_grey.png
 #armor
 #tier 1
@@ -21,7 +21,7 @@
 
 #newitem
 #id white-T1
-#gameid 158
+#dominionsId 158
 #basechance 5
 #sprite /graphics/gigante/armor/robes/himation_white.png
 #armor
@@ -32,7 +32,7 @@
 
 #newitem
 #id dark-T1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_black.png
 #recolormask self
 #armor
@@ -43,7 +43,7 @@
 
 #newitem
 #id medium-T1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_grey.png
 #recolormask self
 #armor
@@ -54,7 +54,7 @@
 
 #newitem
 #id light-T1
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_white.png
 #recolormask self
 #armor
@@ -68,7 +68,7 @@
 
 #newitem
 #id black
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_black.png
 #armor
 #notfortier 1
@@ -79,7 +79,7 @@
 
 #newitem
 #id grey
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_grey.png
 #armor
 #notfortier 1
@@ -89,7 +89,7 @@
 
 #newitem
 #id white
-#gameid 158
+#dominionsId 158
 #basechance 0.5
 #sprite /graphics/gigante/armor/robes/himation_white.png
 #armor
@@ -101,7 +101,7 @@
 
 #newitem
 #id dark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_black.png
 #recolormask self
 #armor
@@ -113,7 +113,7 @@
 
 #newitem
 #id medium
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_grey.png
 #recolormask self
 #armor
@@ -124,7 +124,7 @@
 
 #newitem
 #id light
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_white.png
 #recolormask self
 #armor
@@ -137,7 +137,7 @@
 -- Tier 3 variant twotone robes
 #newitem
 #id lightdark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_light_dark.png
 #recolormask self
 #armor
@@ -149,7 +149,7 @@
 
 #newitem
 #id mediumlight
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_medium_light.png
 #recolormask self
 #armor
@@ -161,7 +161,7 @@
 
 #newitem
 #id mediumdark
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_medium_dark.png
 #recolormask self
 #armor
@@ -173,7 +173,7 @@
 
 #newitem
 #id darklight
-#gameid 158
+#dominionsId 158
 #sprite /graphics/gigante/armor/robes/himation_dark_light.png
 #recolormask self
 #armor

@@ -1,14 +1,14 @@
 
 #newitem
 #id boulder
-#gameid 27
+#dominionsId 27
 #basechance 6
 #command "#siegebonus +5"
 #enditem
 
 #newitem
 #id boulders
-#gameid 424
+#dominionsId 424
 #sprite /graphics/jotun/hurler/weapon/boulders.png
 #needs overlay strap
 #command "#ap -2"
@@ -30,7 +30,7 @@
 
 #newitem
 #id rocks_x2
-#gameid 605
+#dominionsId 605
 #command "#weapon 605"
 #basechance 2
 #enditem

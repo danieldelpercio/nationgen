@@ -2,19 +2,19 @@
 
 #newitem
 #id fist
-#gameid 92
+#dominionsId 92
 #enditem
 
 #newitem
 #id grab
-#gameid 609
+#dominionsId 609
 #basechance 0
 #chanceinc "personalmagic blood 3 2"
 #enditem
 
 #newitem
 #id flaming_fist
-#gameid 320
+#dominionsId 320
 #basechance 0
 #chanceinc "personalmagic fire 3 2"
 #sprite /graphics/avvim/nephilim/weapon/flames.png
@@ -24,7 +24,7 @@
 
 #newitem
 #id thrown_flames
-#gameid 383
+#dominionsId 383
 #basechance 0
 #chanceinc "personalmagic fire 3 2"
 #sprite /graphics/avvim/nephilim/weapon/flames.png
@@ -34,7 +34,7 @@
 
 #newitem
 #id frost_fist
-#gameid 69
+#dominionsId 69
 #basechance 0
 #chanceinc "personalmagic water 3 2"
 #sprite /graphics/avvim/nephilim/weapon/frost.png
@@ -44,7 +44,7 @@
 
 #newitem
 #id thrown_frost
-#gameid 131
+#dominionsId 131
 #basechance 0
 #chanceinc "personalmagic water 3 2"
 #sprite /graphics/avvim/nephilim/weapon/frost.png
@@ -54,7 +54,7 @@
 
 #newitem
 #id lifedrain
-#gameid 63
+#dominionsId 63
 #basechance 0
 #chanceinc "personalmagic death 3 2"
 #sprite /graphics/avvim/nephilim/weapon/banefire.png
@@ -64,7 +64,7 @@
 
 #newitem
 #id lightning_fist
-#gameid 231
+#dominionsId 231
 #basechance 0
 #chanceinc "personalmagic air 3 2"
 #sprite /graphics/avvim/nephilim/weapon/fist_lightning.png
@@ -72,7 +72,7 @@
 
 #newitem
 #id lightning
-#gameid 584
+#dominionsId 584
 #basechance 0
 #chanceinc "personalmagic air 3 2"
 #sprite /graphics/avvim/nephilim/weapon/fist_lightning.png
@@ -83,7 +83,7 @@
 
 #newitem
 #id firebrand
-#gameid 80
+#dominionsId 80
 #basechance 0
 #chanceinc "personalmagic fire 3 2"
 #sprite /graphics/avvim/nephilim/weapon/sword_fire.png
@@ -93,7 +93,7 @@
 
 #newitem
 #id fire_whip
-#gameid 277
+#dominionsId 277
 #basechance 0
 #chanceinc "personalmagic fire 3 2"
 #chanceinc "personalmagic blood 3 2"
@@ -104,7 +104,7 @@
 
 #newitem
 #id fire_staff
-#gameid 650
+#dominionsId 650
 #basechance 0
 #chanceinc "personalmagic fire 3 2"
 #sprite /graphics/avvim/nephilim/weapon/staff_fire.png
@@ -114,7 +114,7 @@
 
 #newitem
 #id frostbrand
-#gameid 82
+#dominionsId 82
 #basechance 0
 #chanceinc "personalmagic water 3 2"
 #sprite /graphics/avvim/nephilim/weapon/sword_frost.png
@@ -124,7 +124,7 @@
 
 #newitem
 #id baneblade
-#gameid 42
+#dominionsId 42
 #basechance 0
 #chanceinc "personalmagic death 3 2"
 #sprite /graphics/avvim/nephilim/weapon/sword_banefire.png
@@ -134,7 +134,7 @@
 
 #newitem
 #id banefire_staff
-#gameid 392
+#dominionsId 392
 #basechance 0
 #chanceinc "personalmagic blood 3 2"
 #sprite /graphics/avvim/nephilim/weapon/staff_banefire.png
@@ -144,7 +144,7 @@
 
 #newitem
 #id storm_staff
-#gameid 105
+#dominionsId 105
 #basechance 0
 #chanceinc "personalmagic air 3 2"
 #sprite /graphics/avvim/nephilim/weapon/staff_lightning.png
@@ -154,7 +154,7 @@
 
 #newitem
 #id club
-#gameid 165
+#dominionsId 165
 #sprite /graphics/avvim/nephilim/weapon/club.png
 #needs hands_overlay 1h
 #theme primitive
@@ -163,7 +163,7 @@
 
 #newitem
 #id spiritclub
-#gameid 563
+#dominionsId 563
 #sprite /graphics/avvim/nephilim/weapon/club.png
 #needs hands_overlay 1h
 #theme primitive
@@ -172,7 +172,7 @@
 
 #newitem
 #id gold_sickle
-#gameid 523
+#dominionsId 523
 #basechance 0
 #chanceinc "personalmagic nature 3 2"
 #sprite /graphics/avvim/nephilim/weapon/sickle_gold.png
@@ -181,7 +181,7 @@
 
 #newitem
 #id silver_sickle
-#gameid 299
+#dominionsId 299
 #basechance 0
 #chanceinc "personalmagic nature 3 2"
 #sprite /graphics/avvim/nephilim/weapon/sickle_gold.png
@@ -205,7 +205,7 @@
 
 #newitem
 #id staff_crescent
-#gameid 290
+#dominionsId 290
 #basechance 0
 #chanceinc "personalmagic astral 3 2"
 #sprite /graphics/avvim/nephilim/weapon/staff_crescent.png
@@ -214,7 +214,7 @@
 
 #newitem
 #id staff_orb
-#gameid 238
+#dominionsId 238
 #sprite /graphics/avvim/nephilim/weapon/staff_orb.png
 #recolormask /graphics/avvim/nephilim/weapon/staff_orb_recolormask.png
 #needs hands_overlay 1h
@@ -222,7 +222,7 @@
 
 #newitem
 #id sword_dawn
-#gameid 520
+#dominionsId 520
 #basechance 0
 #chanceinc "personalmagic blood 3 2"
 #sprite /graphics/avvim/nephilim/weapon/sword.png

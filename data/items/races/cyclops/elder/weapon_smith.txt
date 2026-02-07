@@ -12,7 +12,7 @@
 
 #newitem
 #id hammer_iron
-#gameid 13
+#dominionsId 13
 #sprite /graphics/cyclops/elder/weapon/hammer_iron.png
 #eliteversion hammer_gold
 #eliteversion maul
@@ -24,7 +24,7 @@
 
 #newitem
 #id maul
-#gameid 14
+#dominionsId 14
 #sprite /graphics/cyclops/elder/weapon/caster/maul_smith.png
 #notfortier 1
 #tier 2
@@ -33,7 +33,7 @@
 
 #newitem
 #id hammer_gold
-#gameid 648
+#dominionsId 648
 #sprite /graphics/cyclops/elder/weapon/hammer_gold.png
 #notfortier 1
 #tier 2

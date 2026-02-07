@@ -1,7 +1,7 @@
 -- Bucklers
 #newitem
 #id buckler_bronze
-#gameid 1
+#dominionsId 1
 #sprite /graphics/enlightened/naga/offhand/buckler_bronze.png
 #eliteversion buckler_elite
 #armor
@@ -10,7 +10,7 @@
 
 #newitem
 #id buckler_iron
-#gameid 1
+#dominionsId 1
 #sprite /graphics/enlightened/naga/offhand/buckler_iron.png
 #eliteversion buckler_elite
 #armor
@@ -19,7 +19,7 @@
 
 #newitem
 #id buckler_elite
-#gameid 1
+#dominionsId 1
 #sprite /graphics/enlightened/naga/offhand/buckler_gilt.png
 #armor
 #theme "elite"
@@ -29,7 +29,7 @@
 -- Standard shields
 #newitem
 #id shield_bronze
-#gameid 209
+#dominionsId 209
 #sprite /graphics/enlightened/naga/offhand/shield_bronze.png
 #eliteversion shield_bronze_elite
 #armor
@@ -38,7 +38,7 @@
 
 #newitem
 #id shield_bronze_elite
-#gameid 209
+#dominionsId 209
 #sprite /graphics/enlightened/naga/offhand/shield_gilt.png
 #armor
 #theme "elite"
@@ -47,7 +47,7 @@
 
 #newitem
 #id shield_iron
-#gameid 208
+#dominionsId 208
 #sprite /graphics/enlightened/naga/offhand/shield_iron.png
 #eliteversion shield_iron_elite
 #armor
@@ -56,7 +56,7 @@
 
 #newitem
 #id shield_iron_elite
-#gameid 208
+#dominionsId 208
 #sprite /graphics/enlightened/naga/offhand/shield_gilt.png
 #armor
 #theme "elite"

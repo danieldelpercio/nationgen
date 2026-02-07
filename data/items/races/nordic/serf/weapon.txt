@@ -1,7 +1,7 @@
 
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/offhand/standard/axe.png
 #theme "primitive"
 #offsetx -11
@@ -9,14 +9,14 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/offhand/standard/broadsword.png
 #offsetx -11
 #enditem
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/offhand/standard/mace.png
 #theme "primitive"
 #offsetx -11
@@ -24,14 +24,14 @@
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/offhand/standard/shortsword.png
 #offsetx -11
 #enditem
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #basechance 4
 #sprite /graphics/weapon/standard/spear.png
 #offsetx -4
@@ -40,7 +40,7 @@
 
 #newitem
 #id spetum
-#gameid 639
+#dominionsId 639
 #sprite /graphics/weapon/standard/spetum.png
 #theme "iron"
 #theme "primitive"

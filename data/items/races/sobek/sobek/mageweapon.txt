@@ -1,6 +1,6 @@
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #sprite /graphics/sobek/weapon/broadsword.png
 #tag "tier 3"
 #tag "tier 2"
@@ -8,7 +8,7 @@
 
 #newitem
 #id falchion
-#gameid 10
+#dominionsId 10
 #sprite /graphics/sobek/weapon/falchion.png
 #tag "tier 3"
 #tag "tier 2"
@@ -16,7 +16,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/sobek/weapon/mace.png
 #theme "primitive"
 #tag "tier 2"
@@ -24,7 +24,7 @@
 
 #newitem
 #id quarterstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/quarterstaff.png
 #tag "tier 2"
 #tag "eliteversion orbstaff"
@@ -35,7 +35,7 @@
 
 #newitem
 #id serpentstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/serpentstaff.png
 #theme "lizard"
 #tag "tier 3"
@@ -52,7 +52,7 @@
 
 #newitem
 #id orbstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/orbstaff.png
 #recolormask /graphics/sobek/weapon/orbstaff_recolormask.png
 #tag "tier 3"
@@ -60,7 +60,7 @@
 
 #newitem
 #id sceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre.png
 #offsetx -1
 #offsety 1
@@ -71,7 +71,7 @@
 
 #newitem
 #id orbsceptre
-#gameid 446
+#dominionsId 446
 #sprite /graphics/weapon/mage/sceptre_orb.png
 #recolormask /graphics/weapon/mage/sceptre_orb_recolormask.png
 #offsetx -1
@@ -83,7 +83,7 @@
 
 #newitem
 #id skullstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/skullstaff.png
 #theme "primitive"
 #theme "death"
@@ -93,7 +93,7 @@
 
 #newitem
 #id metalstaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/metalstaff.png
 #tag "tier 2"
 #tag "eliteversion metalstaff_bauble"
@@ -103,7 +103,7 @@
 
 #newitem
 #id metalstaff_bauble
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/metalstaff_bauble.png
 #tag "tier 3"
 #enditem
@@ -111,7 +111,7 @@
 
 #newitem
 #id knobblystaff
-#gameid 7
+#dominionsId 7
 #sprite /graphics/sobek/weapon/knobblystaff.png
 #tag "tier 3"
 #enditem

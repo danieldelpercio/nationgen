@@ -11,7 +11,7 @@
 
 #newitem
 #id leathercap_bakemono
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ogre/helmet/leathercap_oriental.png
 #armor
 #tag "eliteversion reinforcedcap_bakemono"
@@ -22,7 +22,7 @@
 
 #newitem
 #id leathercap_elite_bakemono
-#gameid 120
+#dominionsId 120
 #sprite /graphics/ogre/helmet/leathercap_oriental.png
 #recolormask /graphics/ogre/helmet/cap_oriental_recolormask.png
 #tag "eliteversion leathercap_elite_bakemono"
@@ -35,7 +35,7 @@
 
 #newitem
 #id reinforcedcap_bakemono
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ogre/helmet/reinforcedcap_oriental.png
 #armor
 #tag "eliteversion ironcap_bakemono"
@@ -46,7 +46,7 @@
 
 #newitem
 #id reinforcedcap_elite_bakemono
-#gameid 119
+#dominionsId 119
 #sprite /graphics/ogre/helmet/reinforcedcap_oriental.png
 #recolormask /graphics/ogre/helmet/cap_oriental_recolormask.png
 #tag "eliteversion reinforcedcap_elite_bakemono"
@@ -59,7 +59,7 @@
 
 #newitem
 #id ironcap_bakemono
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ogre/helmet/ironcap_oriental.png
 #armor
 #tag "eliteversion ironcap_elite_bakemono"
@@ -69,7 +69,7 @@
 
 #newitem
 #id ironcap_elite_bakemono
-#gameid 20
+#dominionsId 20
 #sprite /graphics/ogre/helmet/ironcap_oriental.png
 #recolormask /graphics/ogre/helmet/cap_oriental_recolormask.png
 #tag "eliteversion ironcap_elite_bakemono"
@@ -81,7 +81,7 @@
 
 #newitem
 #id jingasa_bakemono
-#gameid 131
+#dominionsId 131
 #sprite /graphics/ogre/helmet/jingasa.png
 #recolormask /graphics/ogre/helmet/jingasa_recolormask.png
 #tag "eliteversion jingasa_bakemono"
@@ -93,7 +93,7 @@
 
 #newitem
 #id kabuto_bakemono
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto.png
 #tag "eliteversion kabuto_bakemono"
 #tag "eliteversion kabuto_bakemono_elite"
@@ -105,7 +105,7 @@
 
 #newitem
 #id kabuto_bakemono_elite
-#gameid 132
+#dominionsId 132
 #sprite /graphics/ogre/helmet/kabuto_elite.png
 #tag "eliteversion kabuto_bakemono_elite"
 #armor

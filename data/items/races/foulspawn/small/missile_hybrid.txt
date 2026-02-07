@@ -3,7 +3,7 @@
 
 #newitem
 #id spit_poison_fixed
-#gameid 141
+#dominionsId 141
 #command "#gcost +1"
 #needstype head poison
 #needs helmet none
@@ -12,7 +12,7 @@
 
 #newitem
 #id spit_poison_magic
-#gameid 224
+#dominionsId 224
 #command "#gcost +2"
 #needstype head poison
 #needs helmet none
@@ -21,7 +21,7 @@
 
 #newitem
 #id spit_corrosive
-#gameid 599
+#dominionsId 599
 #command "#gcost +2"
 #needstype head poison
 #needs helmet none
@@ -30,7 +30,7 @@
 
 #newitem
 #id web
-#gameid 262
+#dominionsId 262
 #command "#gcost +5"
 #needstype head poison
 #needs helmet none
@@ -39,7 +39,7 @@
 
 #newitem
 #id mindblast
-#gameid 311
+#dominionsId 311
 #basechance 0.125
 #command "#gcost +35"
 #command "#mr +2"
@@ -50,7 +50,7 @@
 
 #newitem
 #id mesmerize
-#gameid 403
+#dominionsId 403
 #basechance 0.25
 #command "#gcost +10"
 #command "#mr +2"
@@ -64,7 +64,7 @@
 
 #newitem
 #id "javelin"
-#gameid 21
+#dominionsId 21
 #sprite /graphics/weapon/standard/javelin1.png
 #renderprio 7
 #renderslot "quiver"
@@ -74,7 +74,7 @@
 
 #newitem
 #id "chakram"
-#gameid 362
+#dominionsId 362
 #sprite /graphics/weapon/standard/chakram.png
 #renderprio 7
 #renderslot "bonusweapon"
@@ -85,7 +85,7 @@
 
 #newitem
 #id "throwing_axe"
-#gameid 260
+#dominionsId 260
 #sprite /graphics/vaettir/weapon/hatchet.png
 #renderprio 7
 #renderslot "bonusweapon"
@@ -97,14 +97,14 @@
 
 #newitem
 #id "poison_darts"
-#gameid 500
+#dominionsId 500
 #command "#gcost +1"
 #notepic
 #enditem
 
 #newitem
 #id "sticks_and_stones"
-#gameid 360
+#dominionsId 360
 #theme "primitive"
 #notepic
 #enditem

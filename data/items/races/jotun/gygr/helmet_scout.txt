@@ -1,6 +1,6 @@
 #newitem
 #id cap_leather
-#gameid 120
+#dominionsId 120
 #sprite /graphics/jotun/gygr/helmet/cap_leather.png
 #armor
 #theme leather
@@ -12,7 +12,7 @@
 
 #newitem
 #id cap_reinforced
-#gameid 119
+#dominionsId 119
 #sprite /graphics/jotun/gygr/helmet/cap_reinforced.png
 #armor
 #theme leather
@@ -24,7 +24,7 @@
 
 #newitem
 #id cap_iron
-#gameid 20
+#dominionsId 20
 #sprite /graphics/jotun/gygr/helmet/cap_iron.png
 #armor
 #theme iron

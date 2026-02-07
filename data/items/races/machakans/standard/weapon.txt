@@ -1,6 +1,6 @@
 #newitem
 #id axe
-#gameid 17
+#dominionsId 17
 #sprite /graphics/weapon/standard/axe.png
 #theme "primitive"
 #tag "name infantry axeman"
@@ -11,7 +11,7 @@
 
 #newitem
 #id broadsword
-#gameid 8
+#dominionsId 8
 #basehance 0.05
 #sprite /graphics/weapon/standard/broadsword.png
 #tag "name infantry swordsman"
@@ -21,14 +21,14 @@
 
 #newitem
 #id hammer
-#gameid 13
+#dominionsId 13
 #sprite /graphics/weapon/standard/hammer.png
 #basechance 0.25
 #enditem
 
 #newitem
 #id longspear
-#gameid 28
+#dominionsId 28
 #sprite /graphics/weapon/standard/longspear.png
 #tag "name infantry spearman"
 #tag "name commander captain"
@@ -39,7 +39,7 @@
 
 #newitem
 #id mace
-#gameid 12
+#dominionsId 12
 #sprite /graphics/weapon/standard/mace.png
 #theme "primitive"
 #tag "name infantry maceman"
@@ -48,14 +48,14 @@
 
 #newitem
 #id morningstar
-#gameid 15
+#dominionsId 15
 #sprite /graphics/weapon/standard/morningstar.png
 #basehance 0.1
 #enditem
 
 #newitem
 #id shortsword
-#gameid 6
+#dominionsId 6
 #sprite /graphics/weapon/standard/shortsword.png
 #tag "name commander captain"
 #basehance 0.2
@@ -63,7 +63,7 @@
 
 #newitem
 #id spear
-#gameid 1
+#dominionsId 1
 #basechance 3
 #sprite /graphics/weapon/standard/spear.png
 #tag "name infantry spearman"
@@ -73,7 +73,7 @@
 
 #newitem
 #id elitespear
-#gameid 1
+#dominionsId 1
 #sprite /graphics/machakans/weapon/spear_elite.png
 #recolormask /graphics/machakans/weapon/spear_elite_recolormask.png
 #tag "name infantry spearman"
@@ -82,7 +82,7 @@
 
 #newitem
 #id short_trident
-#gameid 679
+#dominionsId 679
 #sprite /graphics/weapon/standard/trident.png
 #tag "prefix trident"
 #basechance 0.0125
@@ -91,7 +91,7 @@
 
 #newitem
 #id machakanspear
-#gameid 315
+#dominionsId 315
 #sprite /graphics/machakans/weapon/machakanspear.png
 #tag "name infantry spearman"
 #tag "name commander captain"
@@ -104,7 +104,7 @@
 #newitem
 #basechance 6
 #id elitemachakanspear
-#gameid 315
+#dominionsId 315
 #sprite /graphics/machakans/weapon/machakanspear_elite.png
 #recolormask /graphics/machakans/weapon/machakanspear_elite_recolormask.png
 #tag "name infantry spearman"

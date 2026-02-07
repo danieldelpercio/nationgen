@@ -1,7 +1,7 @@
 -- cuirass, hauberk, scale cuirass, scale hauberk
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/sidhe/bean/armor/leatherhauberk.png
 #armor
 #theme "leather"
@@ -12,7 +12,7 @@
 
 #newitem
 #id "bronze scale cuirass"
-#gameid 142
+#dominionsId 142
 #sprite /graphics/sidhe/bean/armor/scalecuirass.png
 #eliteversion "golden plate cuirass"
 #armor
@@ -24,7 +24,7 @@
 
 #newitem
 #id "bronze scale hauberk"
-#gameid 136
+#dominionsId 136
 #sprite /graphics/sidhe/bean/armor/scalehauberk.png
 #eliteversion "golden plate hauberk"
 #eliteversion "golden scale hauberk"
@@ -37,7 +37,7 @@
 
 #newitem
 #id "golden plate cuirass"
-#gameid 100
+#dominionsId 100
 #sprite /graphics/sidhe/bean/armor/special/goldencuirass.png
 #armor
 #theme "bronze"
@@ -48,7 +48,7 @@
 
 #newitem
 #id "golden plate hauberk"
-#gameid 101
+#dominionsId 101
 #sprite /graphics/sidhe/bean/armor/special/goldenhauberk.png
 #armor
 #theme "bronze"
@@ -60,7 +60,7 @@
 
 #newitem
 #id "golden scale hauberk"
-#gameid 49
+#dominionsId 49
 #sprite /graphics/sidhe/bean/armor/special/lightscale.png
 #armor
 #notfortier 1
@@ -70,7 +70,7 @@
 
 #newitem
 #id "golden scalemail"
-#gameid 196
+#dominionsId 196
 #sprite /graphics/sidhe/bean/armor/special/goldenscale.png
 #armor
 #notfortier 1

@@ -22,7 +22,7 @@
 
 #newitem
 #id "furs"
-#gameid 44
+#dominionsId 44
 #sprite /graphics/imperial/legion/armor/furs.png
 #armor
 #theme primitive
@@ -31,7 +31,7 @@
 
 #newitem
 #id "linen cuirass"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/imperial/legion/armor/linen_cuirass.png
 #armor
 #theme cloth
@@ -42,7 +42,7 @@
 
 #newitem
 #id "linen cuirass gilt"
-#gameid 183
+#dominionsId 183
 #sprite /graphics/imperial/legion/armor/linen_cuirass_gilt.png
 #armor
 #theme cloth
@@ -53,7 +53,7 @@
 
 #newitem
 #id "leather cuirass"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/imperial/legion/armor/leather_cuirass.png
 #armor
 #theme leather
@@ -64,7 +64,7 @@
 
 #newitem
 #id "leather cuirass gilt"
-#gameid 5
+#dominionsId 5
 #sprite /graphics/imperial/legion/armor/leather_cuirass_gilt.png
 #armor
 #theme leather
@@ -76,7 +76,7 @@
 
 #newitem
 #id "leather hauberk"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/imperial/legion/armor/leather_hauberk.png
 #armor
 #theme leather
@@ -88,7 +88,7 @@
 
 #newitem
 #id "leather hauberk gilt"
-#gameid 10
+#dominionsId 10
 #sprite /graphics/imperial/legion/armor/leather_hauberk_gilt.png
 #armor
 #theme leather
@@ -101,7 +101,7 @@
 --- Lorica
 #newitem
 #id "lorica hamata"
-#gameid 116
+#dominionsId 116
 #sprite /graphics/imperial/legion/armor/lorica_hamata.png
 #armor
 #theme iron
@@ -113,7 +113,7 @@
 
 #newitem
 #id "lorica squamata"
-#gameid 117
+#dominionsId 117
 #sprite /graphics/imperial/legion/armor/lorica_squamata.png
 #armor
 #theme iron
@@ -124,7 +124,7 @@
 
 #newitem
 #id "lorica segmentata"
-#gameid 99
+#dominionsId 99
 #sprite /graphics/imperial/legion/armor/lorica_segmentata.png
 #armor
 #theme iron
@@ -138,7 +138,7 @@
 --- Plate
 #newitem
 #id "plate cuirass"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/imperial/legion/armor/plate_cuirass.png
 #armor
 #theme iron
@@ -151,7 +151,7 @@
 
 #newitem
 #id "plate cuirass gilt"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/imperial/legion/armor/plate_cuirass_gilt.png
 #armor
 #theme iron
@@ -163,7 +163,7 @@
 
 #newitem
 #id "plate cuirass gold"
-#gameid 9
+#dominionsId 9
 #sprite /graphics/imperial/legion/armor/plate_cuirass_gold.png
 #armor
 #theme iron
@@ -176,7 +176,7 @@
 
 #newitem
 #id "plate hauberk"
-#gameid 14
+#dominionsId 14
 #basechance 0.5
 #sprite /graphics/imperial/legion/armor/plate_hauberk.png
 #armor
@@ -189,7 +189,7 @@
 
 #newitem
 #id "plate hauberk gilt"
-#gameid 14
+#dominionsId 14
 #basechance 0.5
 #sprite /graphics/imperial/legion/armor/plate_hauberk_gilt.png
 #armor
@@ -202,7 +202,7 @@
 
 #newitem
 #id "plate hauberk gold"
-#gameid 14
+#dominionsId 14
 #basechance 0.5
 #sprite /graphics/imperial/legion/armor/plate_hauberk_gold.png
 #armor

@@ -4,7 +4,7 @@
 
 #newitem
 #id bronzebuckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/bronzebuckler.png
 #armor
 #theme "bronze"
@@ -14,7 +14,7 @@
 
 #newitem
 #id buckler
-#gameid 1
+#dominionsId 1
 #sprite /graphics/offhand/standard/buckler.png
 #armor
 #basechance 2
@@ -25,7 +25,7 @@
 
 #newitem
 #id kite1
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite1.png
 #armor
 #theme "advanced"
@@ -36,7 +36,7 @@
 
 #newitem
 #id kite2
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite2.png
 #armor
 #theme "advanced"
@@ -47,7 +47,7 @@
 
 #newitem
 #id kite3
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite3.png
 #armor
 #recolormask /graphics/offhand/standard/kite3_recolormask.png
@@ -58,7 +58,7 @@
 
 #newitem
 #id kite4
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite4.png
 #recolormask self
 #armor
@@ -69,7 +69,7 @@
 
 #newitem
 #id kite5
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite5.png
 #recolormask /graphics/offhand/standard/kite5_recolormask.png
 #armor
@@ -80,7 +80,7 @@
 
 #newitem
 #id kite6
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite6.png
 #armor
 #theme "advanced"
@@ -90,7 +90,7 @@
 
 #newitem
 #id kite6_colored
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite6.png
 #recolormask self
 #armor
@@ -101,7 +101,7 @@
 
 #newitem
 #id kite7
-#gameid 3
+#dominionsId 3
 #sprite /graphics/offhand/standard/kite7.png
 #recolormask self
 #armor
@@ -113,7 +113,7 @@
 -- Normal shields
 #newitem
 #id shield2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield2.png
 #armor
 #basechance 0.5
@@ -122,7 +122,7 @@
 
 #newitem
 #id shield4
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield4.png
 #armor
 #needstype basesprite hands
@@ -130,7 +130,7 @@
 
 #newitem
 #id shield4yellow
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield4-yellow.png
 #armor
 #needstype basesprite hands
@@ -138,7 +138,7 @@
 
 #newitem
 #id shield6
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield6.png
 #recolormask /graphics/offhand/standard/shield6_recolormask.png
 #armor
@@ -147,7 +147,7 @@
 
 #newitem
 #id shield8
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield8.png
 #armor
 #needstype basesprite hands
@@ -155,7 +155,7 @@
 
 #newitem
 #id shield10
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/shield10.png
 #armor
 #needstype basesprite hands
@@ -163,7 +163,7 @@
 
 #newitem
 #id shield11
-#gameid 208
+#dominionsId 208
 #sprite /graphics/offhand/standard/coe-metalshield.png
 #armor
 #needstype basesprite hands
@@ -171,7 +171,7 @@
 
 #newitem
 #id abysian_shield1
-#gameid 208
+#dominionsId 208
 #sprite /graphics/abysian/demonbred/offhand_shield.png
 #offsetx -31
 #offsety -64
@@ -182,7 +182,7 @@
 
 #newitem
 #id abysian_shield2
-#gameid 208
+#dominionsId 208
 #sprite /graphics/abysian/demonbred/offhand_shield.png
 #recolormask /graphics/abysian/demonbred/offhand_shield_recolormask.png
 #offsetx -31

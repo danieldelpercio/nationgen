@@ -3,6 +3,6 @@
 
 #newitem
 #id tentacle_tiny
-#gameid 672
+#dominionsId 672
 #smalltentacle
 #enditem
