@@ -116,7 +116,7 @@ public class DescriptionReplacer {
   public void calibrateWeapons(List<Unit> units) {
     List<String> slots = List.of("weapon", "offhand");
     List<Item> weapons = this.getEquipments(units, slots).stream().filter(Item::isWeapon).toList();
-    List<Phrase> weaponDescriptions = this.describeEquipmentList(weapons, "weapon_name");
+    List<Phrase> weaponDescriptions = this.describeEquipmentList(weapons, "name");
     List<String> weaponSingulars = weaponDescriptions.stream().map(p -> p.singular).toList();
     List<String> weaponPlurals = weaponDescriptions.stream().map(p -> p.plural).toList();
 
@@ -161,7 +161,7 @@ public class DescriptionReplacer {
       int prot = 0;
       String armorName = n.nationGen.armordb.GetValue(
         armor.id,
-        "armorname",
+        "name",
         "NOT IN ARMORDB: " + armor.name + " in armor slot"
       );
 

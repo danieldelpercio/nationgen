@@ -738,7 +738,7 @@ public class RosterGenerator {
 
       templates.removeAll(newlist);
       finallist.add(sortByGcost(newlist));
-      //System.out.println("Removing all units with " + nationGen.armordb.GetValue(lowestID, "armorname") + ", #" + newlist.size() + ". " + templates.size() + " remain.");
+      //System.out.println("Removing all units with " + nationGen.armordb.GetValue(lowestID, "name") + ", #" + newlist.size() + ". " + templates.size() + " remain.");
     }
 
     return finallist;
@@ -774,7 +774,7 @@ public class RosterGenerator {
 
       templates.removeAll(newlist);
       troops.add(newlist);
-      //System.out.println("Removing all units with " + nationGen.armordb.GetValue(lowestID, "armorname") + ", #" + newlist.size() + ". " + templates.size() + " remain.");
+      //System.out.println("Removing all units with " + nationGen.armordb.GetValue(lowestID, "name") + ", #" + newlist.size() + ". " + templates.size() + " remain.");
     }
 
     return troops;

@@ -1,4 +1,4 @@
-id;armorname;type;def;enc;res;ferrous;flammable;mmpenalty;prot
+id;name;type;def;enc;res;ferrous;flammable;mmpenalty;prot
 1;Buckler;4;2;0;1;0;0;0;14
 2;Shield;4;3;1;2;0;1;0;16
 3;Kite Shield;4;4;2;4;1;0;0;19
@@ -182,7 +182,7 @@ id;armorname;type;def;enc;res;ferrous;flammable;mmpenalty;prot
 181;Golden Hoplon;4;7;1;0;0;0;0;23
 182;Immaculate Shield;4;8;1;0;0;0;0;30
 183;Linen Cuirass;5;0;0;1;0;0;0;8
-184;Kithaironic Lion Pelt;5;-1;1;10;0;0;0;6
+184;Kithaironic Lion Pelt;5;-1;1;15;0;0;0;6
 185;Brightmail Haubergeon;5;0;0;0;0;0;0;13
 186;Shademail Haubergeon;5;0;0;0;0;0;0;13
 187;Wooden Mask;6;-1;0;0;0;1;0;10
@@ -286,8 +286,12 @@ id;armorname;type;def;enc;res;ferrous;flammable;mmpenalty;prot
 285;Gossamer Shield;4;4;0;6;0;0;0;15
 286;Bone Mask;6;-1;0;0;0;0;0;9
 287;Cat Barding;5;-1;1;10;1;0;0;12
-288;Charred Shield;4;4;1;0;0;0;0;22
+288;Charred Shield;4;4;1;7;0;0;0;22
 289;Lizard Barding;5;-1;2;12;0;0;0;13
 290;King's Barding;5;0;1;15;0;0;0;21
 291;Icicle Dress;5;0;0;1;0;0;0;5
 292;Storm Armor;5;-2;3;0;0;0;0;22
+293;Lion Pelt;5;-1;1;1;0;0;0;6
+294;Lion Cloak;5;-1;1;1;0;0;0;6
+295;Invisible Clothes;5;0;0;0;0;0;0;0
+296;Gossamer Gown;5;0;0;1;0;1;0;3

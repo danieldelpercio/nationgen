@@ -1,6 +1,6 @@
 package nationGen;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.time.Duration;
@@ -37,10 +37,10 @@ public class NationGen {
 
   private NationGenAssets assets;
 
-  public Dom3DB weapondb;
-  public Dom3DB armordb;
-  public Dom3DB units;
-  public Dom3DB sites;
+  public NationGenDB weapondb;
+  public NationGenDB armordb;
+  public NationGenDB units;
+  public NationGenDB sites;
 
   public long seed = 0;
   public String modname = "";
@@ -81,7 +81,7 @@ public class NationGen {
     this.start = Instant.now();
 
     System.out.print("Loading Larzm42's Dom6 Mod Inspector database... ");
-    loadDom3DB();
+    loadNationGenDB();
     System.out.println("done!");
     System.out.print("Loading definitions... ");
     customItemsHandler = new CustomItemsHandler(this, weapondb, armordb);
@@ -367,13 +367,13 @@ public class NationGen {
   }
 
   /**
-   * Loads data from Dom3DB
+   * Loads data from NationGenDB
    */
-  private void loadDom3DB() {
-    units = new Dom3DB("/db/units.csv");
-    armordb = new Dom3DB("/db/armor.csv");
-    weapondb = new Dom3DB("/db/weapon.csv");
-    sites = new Dom3DB("/db/sites.csv");
+  private void loadNationGenDB() {
+    units = new NationGenDB("/db/nationgen/units.csv");
+    armordb = new NationGenDB("/db/nationgen/armors.csv");
+    weapondb = new NationGenDB("/db/nationgen/weapons.csv");
+    sites = new NationGenDB("/db/nationgen/sites.csv");
   }
 
   public int getNextUnitId() {

@@ -1,6 +1,6 @@
 package nationGen.naming;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 import java.util.ArrayList;
 import java.util.List;
@@ -20,10 +20,10 @@ import nationGen.units.Unit;
 
 public class NationAdvancedSummarizer {
 
-  private Dom3DB weapondb;
-  private Dom3DB armordb;
+  private NationGenDB weapondb;
+  private NationGenDB armordb;
 
-  public NationAdvancedSummarizer(Dom3DB armor, Dom3DB weapon) {
+  public NationAdvancedSummarizer(NationGenDB armor, NationGenDB weapon) {
     this.armordb = armor;
     this.weapondb = weapon;
   }
@@ -266,7 +266,7 @@ public class NationAdvancedSummarizer {
       .items()
       .filter(Item::isWeapon)
       .filter(Item::hasDominionsId)
-      .map(i -> weapondb.GetValue(i.id, "weapon_name"))
+      .map(i -> weapondb.GetValue(i.id, "name"))
       .collect(Collectors.toList());
   }
 
@@ -275,7 +275,7 @@ public class NationAdvancedSummarizer {
       .items()
       .filter(Item::isArmor)
       .filter(Item::hasDominionsId)
-      .map(i -> armordb.GetValue(i.id, "armorname"))
+      .map(i -> armordb.GetValue(i.id, "name"))
       .collect(Collectors.toList());
   }
 

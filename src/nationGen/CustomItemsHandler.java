@@ -1,6 +1,6 @@
 package nationGen;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 
 import java.util.ArrayList;
@@ -14,7 +14,7 @@ import nationGen.misc.ResourceStorage;
 /**
  *
  * This class exists to clean up the custom items from NationGen.java.
- * Long term, the Dom3DB stuff should probably get culled. Perhaps with its own separate class. We'll see.
+ * Long term, the NationGenDB stuff should probably get culled. Perhaps with its own separate class. We'll see.
  * However, with them as they are now, these changes let this class be not dependent on Nationgen.
  * @author FlashFire
  *
@@ -25,13 +25,13 @@ public class CustomItemsHandler {
   private List<CustomItem> customItems; // Superset of chosenCustomItems. Has all generated custom items + some which are cached.
   private List<CustomItem> chosenCustomItems; // List of items used by natgen in current runthrough.
   private IdHandler idHandler; // Local ref of id handler to generate new IDs when fresh custom item needs a new ID.
-  private Dom3DB weapondb; // Local ref of weapondb to remove nationgen dependency.
-  private Dom3DB armordb; // Local ref of armordb to remove nationgen dependency.
+  private NationGenDB weapondb; // Local ref of weapondb to remove nationgen dependency.
+  private NationGenDB armordb; // Local ref of armordb to remove nationgen dependency.
 
   public CustomItemsHandler(
     NationGen nationGen,
-    Dom3DB weapondb,
-    Dom3DB armordb
+    NationGenDB weapondb,
+    NationGenDB armordb
   ) {
     chosenCustomItems = new ArrayList<>();
     customItemStorage.load(nationGen, "./data/items/custom/index.txt");

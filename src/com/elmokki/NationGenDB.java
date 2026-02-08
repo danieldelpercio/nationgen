@@ -3,11 +3,55 @@ package com.elmokki;
 import java.util.*;
 import nationGen.misc.FileUtil;
 
-public class Dom3DB {
+public class NationGenDB {
 
   public HashMap<String, List<String>> entryMap = new HashMap<>();
   private List<String> definition;
   private List<String> booleanargs;
+  
+  public NationGenDB(String filename) {
+    // System.out.print("Reading NationGenDB from " + filename + "... ");
+
+    List<String> lines = FileUtil.readLines(filename);
+
+    String rawdef = lines.remove(0);
+    definition = new ArrayList<>(List.of(rawdef.split(";")));
+    boolean convert = false;
+    if (definition.size() < 2) {
+      convert = true;
+      rawdef = rawdef.replaceAll("\t", ";");
+      definition = new ArrayList<>(List.of(rawdef.split(";")));
+    }
+
+    // Let's read the unit data then.
+
+    for (String line : lines) {
+      if (!line.isEmpty()) {
+        if (convert) line = line.replaceAll("\t", ";");
+
+        // Set units[id] to line of that unit.
+        List<String> row = new ArrayList<>(List.of(line.split(";")));
+        this.entryMap.put(row.get(0), row);
+      }
+    }
+
+    // System.out.println(derp + " definitions loaded!");
+
+    // Find out boolean args
+    booleanargs = new ArrayList<>();
+    for (String str : definition) {
+      boolean isBool = true;
+      for (String id : entryMap.keySet()) {
+        String value = this.GetValue(id, str);
+        if (!value.equals("") && !value.equals("0") && !value.equals("1")) {
+          isBool = false;
+          break;
+        }
+      }
+
+      if (isBool) booleanargs.add(str);
+    }
+  }
 
   public List<String> getDefinition() {
     return definition;
@@ -63,50 +107,6 @@ public class Dom3DB {
     }
 
     entryMap.put(id, row);
-  }
-
-  public Dom3DB(String filename) {
-    // System.out.print("Reading Dom3DB from " + filename + "... ");
-
-    List<String> lines = FileUtil.readLines(filename);
-
-    String rawdef = lines.remove(0);
-    definition = new ArrayList<>(List.of(rawdef.split(";")));
-    boolean convert = false;
-    if (definition.size() < 2) {
-      convert = true;
-      rawdef = rawdef.replaceAll("\t", ";");
-      definition = new ArrayList<>(List.of(rawdef.split(";")));
-    }
-
-    // Let's read the unit data then.
-
-    for (String line : lines) {
-      if (!line.isEmpty()) {
-        if (convert) line = line.replaceAll("\t", ";");
-
-        // Set units[id] to line of that unit.
-        List<String> row = new ArrayList<>(List.of(line.split(";")));
-        this.entryMap.put(row.get(0), row);
-      }
-    }
-
-    // System.out.println(derp + " definitions loaded!");
-
-    // Find out boolean args
-    booleanargs = new ArrayList<>();
-    for (String str : definition) {
-      boolean isBool = true;
-      for (String id : entryMap.keySet()) {
-        String value = this.GetValue(id, str);
-        if (!value.equals("") && !value.equals("0") && !value.equals("1")) {
-          isBool = false;
-          break;
-        }
-      }
-
-      if (isBool) booleanargs.add(str);
-    }
   }
 
   /**

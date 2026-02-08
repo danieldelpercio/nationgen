@@ -4,7 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
+import com.elmokki.Generic;
 
 import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
@@ -46,7 +47,7 @@ public class Item extends Drawable {
   }
 
   public String getValueFromDb(String dbColumn) {
-    Dom3DB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
+    NationGenDB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
     String itemIdInDb = this.id;
     String value = db.GetValue(itemIdInDb, dbColumn);
 
@@ -63,12 +64,38 @@ public class Item extends Drawable {
     return value;
   }
 
+  public Integer getIntegerFromDb(String dbColumn, Integer defauInteger) {
+    String value = this.getValueFromDb(dbColumn);
+
+    if (!Generic.isNumeric(value)) {
+      return 0;
+    }
+
+    return Integer.valueOf(value);
+  }
+
   public String getBardingId() {
     return this.bardingId;
   }
 
   public Boolean anyTypesMatchString(String typeStr) {
     return this.itemTypes.stream().anyMatch(t -> t.getId() == typeStr);
+  }
+
+  public void addType(ItemType type) {
+    if (this.hasType(type) == true) {
+      return;
+    }
+
+    this.itemTypes.add(type);
+  }
+
+  public void addType(List<ItemType> types) {
+    types.forEach(t -> this.addType(t));
+  }
+
+  public Boolean hasType(ItemType type) {
+    return this.itemTypes.contains(type);
   }
 
   public Boolean isOfType(ItemType type) {

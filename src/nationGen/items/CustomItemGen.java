@@ -1,6 +1,6 @@
 package nationGen.items;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 
 import java.util.ArrayList;
@@ -65,7 +65,13 @@ public class CustomItemGen {
 
       // Roll chance to make the item magic
       if (shouldBeMagic(originalItem, customItem) == true) {
-        customItem.setCustomCommand("#magic");
+        if (originalItem.isArmor()) {
+          customItem.setCustomCommand(ItemProperty.IS_MAGIC_ARMOR.toModCommand());
+        }
+
+        else {
+          customItem.setCustomCommand(ItemProperty.IS_MAGIC_WEAPON.toModCommand());
+        }
       }
     }
 
@@ -113,13 +119,13 @@ public class CustomItemGen {
       powerUpBudget--;
 
       if (chosenPowerUp.isBoolean() == true) {
-        customItem.setCustomCommand(chosenPowerUp.getProperty().getModCommand());
+        customItem.setCustomCommand(chosenPowerUp.getProperty().toModCommand());
         powerUps.eliminate(chosenPowerUp);
       }
 
       else {
         ItemProperty property = chosenPowerUp.getProperty();
-        String modCommand = property.getModCommand();
+        String modCommand = property.toModCommand();
         int powerUpIncrease = chosenPowerUp.getIncrease();
         int originalValue = customItem.getCustomIntValue(modCommand).orElseThrow();
         customItem.setCustomCommand(modCommand, originalValue + powerUpIncrease);
@@ -136,7 +142,7 @@ public class CustomItemGen {
       .setIncrease(1)
       .setChance(0.25);
       
-    ItemPropertyPowerUp magicPowerUp = new ItemPropertyPowerUp(ItemProperty.IS_MAGIC, true)
+    ItemPropertyPowerUp magicPowerUp = new ItemPropertyPowerUp(ItemProperty.IS_MAGIC_WEAPON, true)
       .setCost(1)
       .setChance(0.25);
 
@@ -199,7 +205,7 @@ public class CustomItemGen {
     customItem.applyEnchantment(enchantment);
 
     // Use the enchantment to create an adjective for the item name
-    String name = n.nationGen.weapondb.GetValue(originalItem.id, "weapon_name");
+    String name = n.nationGen.weapondb.GetValue(originalItem.id, "name");
     name = this.addEnchantmentAdjectives(name, enchantment);
     customItem.setCustomCommand("#name", name);
 
@@ -346,7 +352,7 @@ public class CustomItemGen {
   }
 
   private void nameCustomItem(Item originalItem, CustomItem customItem, Boolean isMagic) {
-    String name = n.nationGen.weapondb.GetValue(originalItem.id, "weapon_name");
+    String name = n.nationGen.weapondb.GetValue(originalItem.id, "name");
 
     // If not a magic item and doesn't already have a custom display name, give it a generic one
     if (!isMagic && (customItem.magicItem == null || !customItem.hasCustomName())) {
@@ -391,8 +397,8 @@ public class CustomItemGen {
 
   public Optional<CustomItem> copyPropertiesFromWeapon(Item item) {
     CustomItem customItem = CustomItem.fromItem(item, n.nationGen);
-    Dom3DB weaponDb = n.nationGen.weapondb;
-    String weaponName = weaponDb.GetValue(item.id, "weapon_name");
+    NationGenDB weaponDb = n.nationGen.weapondb;
+    String weaponName = weaponDb.GetValue(item.id, "name");
     
     if (weaponName.isBlank()) {
       return Optional.empty();
@@ -403,8 +409,8 @@ public class CustomItemGen {
     }
 
     for (ItemProperty property : ItemProperty.values()) {
-      String dbColumn = property.getDBColumn();
-      String modCommand = property.getModCommand();
+      String dbColumn = property.toDBColumn();
+      String modCommand = property.toModCommand();
       String originalValue = weaponDb.GetValue(item.id, dbColumn, "");
       Boolean isBooleanProperty = property.isBoolean();
       
@@ -426,7 +432,7 @@ public class CustomItemGen {
 
       // Special mod properties that need more than one value are in the below else ifs
       else if (property == ItemProperty.FLYSPRITE) {
-        String speed = weaponDb.GetValue(item.id, ItemProperty.ANIM_LENGTH.getDBColumn(), "1");
+        String speed = weaponDb.GetValue(item.id, ItemProperty.ANIM_LENGTH.toDBColumn(), "1");
         customItem.setCustomCommand(modCommand, originalValue, speed);
       }
 

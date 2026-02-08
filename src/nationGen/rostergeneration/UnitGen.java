@@ -606,17 +606,17 @@ public class UnitGen {
         // 50% chance to not give a twohander if possible and not mage
         if (
           included
-              .filterDom3DB("2h", "Yes", false, nationGen.weapondb)
+              .filterNationGenDB("2h", "Yes", false, nationGen.weapondb)
               .possibleItems() ==
             0 &&
           included
-            .filterDom3DB("2h", "Yes", true, nationGen.weapondb)
+            .filterNationGenDB("2h", "Yes", true, nationGen.weapondb)
             .possibleItems() !=
           0 &&
           random.nextDouble() > 0.5 &&
           !mage
         ) {
-          ItemSet test = all.filterDom3DB(
+          ItemSet test = all.filterNationGenDB(
             "2h",
             "Yes",
             false,
@@ -631,33 +631,33 @@ public class UnitGen {
           : nationGen.armordb.GetInteger(armor.id, "prot");
 
         if (prot < 10 && random.nextDouble() > 0.5 && !mage) {
-          ItemSet test = all.filterDom3DBInteger(
+          ItemSet test = all.filterNationGenDBInteger(
             "res",
             3,
             true,
             nationGen.weapondb
           );
-          test = test.filterDom3DBInteger("dmg", 6, true, nationGen.weapondb);
+          test = test.filterNationGenDBInteger("dmg", 6, true, nationGen.weapondb);
 
           if (test.possibleItems() == 0) test = u.pose
             .getItems("weapon")
-            .filterDom3DBInteger("res", 3, true, nationGen.weapondb)
-            .filterDom3DBInteger("dmg", 6, true, nationGen.weapondb);
+            .filterNationGenDBInteger("res", 3, true, nationGen.weapondb)
+            .filterNationGenDBInteger("dmg", 6, true, nationGen.weapondb);
 
           if (test.possibleItems() > 0) all = test;
         } else if (prot > 12 && random.nextDouble() > 0.5 && !mage) {
-          ItemSet test = all.filterDom3DBInteger(
+          ItemSet test = all.filterNationGenDBInteger(
             "res",
             1,
             false,
             nationGen.weapondb
           );
-          test = test.filterDom3DBInteger("dmg", 4, false, nationGen.weapondb);
+          test = test.filterNationGenDBInteger("dmg", 4, false, nationGen.weapondb);
 
           if (test.possibleItems() == 0) test = u.pose
             .getItems("weapon")
-            .filterDom3DBInteger("res", 1, false, nationGen.weapondb)
-            .filterDom3DBInteger("dmg", 4, false, nationGen.weapondb);
+            .filterNationGenDBInteger("res", 1, false, nationGen.weapondb)
+            .filterNationGenDBInteger("dmg", 4, false, nationGen.weapondb);
 
           if (test.possibleItems() > 0) all = test;
         }
@@ -717,12 +717,12 @@ public class UnitGen {
 
             ItemSet onehand = included
               .filterSlot("weapon")
-              .filterDom3DB("2h", "Yes", false, nationGen.weapondb);
+              .filterNationGenDB("2h", "Yes", false, nationGen.weapondb);
 
             if (chandler.handleChanceIncs(u, onehand).isEmpty()) {
               onehand = u.pose
                 .getItems("weapon")
-                .filterDom3DB("2h", "Yes", false, nationGen.weapondb);
+                .filterNationGenDB("2h", "Yes", false, nationGen.weapondb);
             }
 
             ItemSet llances = new ItemSet();
@@ -754,11 +754,11 @@ public class UnitGen {
           } else if (choice == 3) {
             ItemSet onehand = included
               .filterSlot("weapon")
-              .filterDom3DB("2h", "Yes", true, nationGen.weapondb);
+              .filterNationGenDB("2h", "Yes", true, nationGen.weapondb);
             if (chandler.handleChanceIncs(u, onehand).isEmpty()) onehand =
               u.pose
                 .getItems("weapon")
-                .filterDom3DB("2h", "Yes", true, nationGen.weapondb);
+                .filterNationGenDB("2h", "Yes", true, nationGen.weapondb);
 
             if (onehand.possibleItems() > 0) {
               weapon = chandler.getRandom(onehand, u);
