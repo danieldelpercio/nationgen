@@ -2018,7 +2018,7 @@ public class Unit {
         "#weapon " +
         itemData.getId() +
         " --- " +
-        itemData.getDisplayName("weapon_name") +
+        itemData.getDisplayName("name") +
         ((itemData.hasName()) ? " / " + itemData.getName() : "")
       );
     });
@@ -2048,7 +2048,7 @@ public class Unit {
         "#armor " +
         itemData.getId() +
         " --- " +
-        itemData.getDisplayName("armorname") +
+        itemData.getDisplayName("name") +
         ((itemData.hasName()) ? " / " + itemData.getName() : "")
       );
     });

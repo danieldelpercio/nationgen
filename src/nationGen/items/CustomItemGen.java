@@ -205,7 +205,7 @@ public class CustomItemGen {
     customItem.applyEnchantment(enchantment);
 
     // Use the enchantment to create an adjective for the item name
-    String name = n.nationGen.weapondb.GetValue(originalItem.id, "weapon_name");
+    String name = n.nationGen.weapondb.GetValue(originalItem.id, "name");
     name = this.addEnchantmentAdjectives(name, enchantment);
     customItem.setCustomCommand("#name", name);
 
@@ -352,7 +352,7 @@ public class CustomItemGen {
   }
 
   private void nameCustomItem(Item originalItem, CustomItem customItem, Boolean isMagic) {
-    String name = n.nationGen.weapondb.GetValue(originalItem.id, "weapon_name");
+    String name = n.nationGen.weapondb.GetValue(originalItem.id, "name");
 
     // If not a magic item and doesn't already have a custom display name, give it a generic one
     if (!isMagic && (customItem.magicItem == null || !customItem.hasCustomName())) {
@@ -398,7 +398,7 @@ public class CustomItemGen {
   public Optional<CustomItem> copyPropertiesFromWeapon(Item item) {
     CustomItem customItem = CustomItem.fromItem(item, n.nationGen);
     NationGenDB weaponDb = n.nationGen.weapondb;
-    String weaponName = weaponDb.GetValue(item.id, "weapon_name");
+    String weaponName = weaponDb.GetValue(item.id, "name");
     
     if (weaponName.isBlank()) {
       return Optional.empty();
