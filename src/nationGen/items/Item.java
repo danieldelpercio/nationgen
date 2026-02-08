@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 
 import nationGen.CustomItemsHandler;
@@ -47,7 +47,7 @@ public class Item extends Drawable {
   }
 
   public String getValueFromDb(String dbColumn) {
-    Dom3DB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
+    NationGenDB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
     String itemIdInDb = this.id;
     String value = db.GetValue(itemIdInDb, dbColumn);
 

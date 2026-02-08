@@ -1,6 +1,6 @@
 package nationGen.items;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 
 import java.util.ArrayList;
@@ -397,7 +397,7 @@ public class CustomItemGen {
 
   public Optional<CustomItem> copyPropertiesFromWeapon(Item item) {
     CustomItem customItem = CustomItem.fromItem(item, n.nationGen);
-    Dom3DB weaponDb = n.nationGen.weapondb;
+    NationGenDB weaponDb = n.nationGen.weapondb;
     String weaponName = weaponDb.GetValue(item.id, "weapon_name");
     
     if (weaponName.isBlank()) {

@@ -1,6 +1,6 @@
 package nationGen.units;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -1041,8 +1041,8 @@ public class Unit {
     int ressize = -1;
     int extrares = 0;
 
-    Dom3DB weapondb = nationGen.weapondb;
-    Dom3DB armordb = nationGen.armordb;
+    NationGenDB weapondb = nationGen.weapondb;
+    NationGenDB armordb = nationGen.armordb;
 
     for (Command c : commands) {
       if (c.command.equals("#rcost")) {
@@ -1605,7 +1605,7 @@ public class Unit {
       }
     }
 
-    Dom3DB armordb = nationGen.armordb;
+    NationGenDB armordb = nationGen.armordb;
 
     for (String slot : slotmap.getSlots()) {
       if (getSlot(slot) != null && getSlot(slot).isArmor()) {
@@ -1645,7 +1645,7 @@ public class Unit {
       }
     }
 
-    Dom3DB armordb = nationGen.armordb;
+    NationGenDB armordb = nationGen.armordb;
 
     for (String slot : slotmap.getSlots()) {
       if (
@@ -1673,8 +1673,8 @@ public class Unit {
       if (c.command.equals("#mounted")) eqdef += 3;
     }
 
-    Dom3DB armordb = nationGen.armordb;
-    Dom3DB weapondb = nationGen.weapondb;
+    NationGenDB armordb = nationGen.armordb;
+    NationGenDB weapondb = nationGen.weapondb;
 
     for (String slot : slotmap.getSlots()) {
       if (getSlot(slot) != null && getSlot(slot).hasDominionsId()) {
@@ -1694,7 +1694,7 @@ public class Unit {
 
   public int getParry() {
     int parry = 0;
-    Dom3DB armordb = nationGen.armordb;
+    NationGenDB armordb = nationGen.armordb;
 
     for (String slot : slotmap.getSlots()) {
       if (getSlot(slot) != null && getSlot(slot).hasDominionsId()) {
@@ -1713,7 +1713,7 @@ public class Unit {
 
   public int getShieldProt() {
     int shieldProt = 0;
-    Dom3DB armordb = nationGen.armordb;
+    NationGenDB armordb = nationGen.armordb;
 
     for (String slot : slotmap.getSlots()) {
       if (getSlot(slot) != null && getSlot(slot).hasDominionsId()) {

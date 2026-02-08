@@ -55,7 +55,7 @@ public class ScoutGenerator extends TroopGenerator {
     Unit template = unitGen.generateUnit(race, p);
 
     chandler.getRandom(
-      p.getItems("weapon").filterDom3DB("2h", "0", true, nationGen.weapondb),
+      p.getItems("weapon").filterNationGenDB("2h", "0", true, nationGen.weapondb),
       template
     );
     // Select a mainhand weapon
@@ -63,14 +63,14 @@ public class ScoutGenerator extends TroopGenerator {
     if (
       tier != 3
     ) weapon = chandler.getRandom( //  Scout/spy gets whatever non-2h
-      p.getItems("weapon").filterDom3DB("2h", "0", true, nationGen.weapondb),
+      p.getItems("weapon").filterNationGenDB("2h", "0", true, nationGen.weapondb),
       template
     );
     else { // Assassin gets max length 3 weapons
       weapon = chandler.getRandom(
         p
           .getItems("weapon")
-          .filterDom3DBInteger("lgt", 3, true, nationGen.weapondb),
+          .filterNationGenDBInteger("lgt", 3, true, nationGen.weapondb),
         template
       );
     }

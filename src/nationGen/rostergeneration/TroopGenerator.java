@@ -428,7 +428,7 @@ public class TroopGenerator {
         tempweps.addAll(
           t.pose
             .getItems("weapon")
-            .filterDom3DB("2h", "0", true, nationGen.weapondb)
+            .filterNationGenDB("2h", "0", true, nationGen.weapondb)
         );
         tempweps.removeAll(oldweps);
         for (Item i : t.pose.getItems("weapon")) {
@@ -443,7 +443,7 @@ public class TroopGenerator {
         tempweps.addAll(
           t.pose
             .getItems("weapon")
-            .filterDom3DB("2h", "1", true, nationGen.weapondb)
+            .filterNationGenDB("2h", "1", true, nationGen.weapondb)
         );
         tempweps.removeAll(oldweps);
         for (Item i : t.pose.getItems("weapon")) {
@@ -824,13 +824,13 @@ public class TroopGenerator {
     // Infantry has a high chance of onehanders if available
     if (slot.equals("weapon") && role.equals("infantry")) {
       if (!this.has1H(used) && random.nextDouble() < 0.5) {
-        if (has1H(all)) all = all.filterDom3DB(
+        if (has1H(all)) all = all.filterNationGenDB(
           "2h",
           "0",
           true,
           nationGen.weapondb
         );
-        if (has1H(old)) old = old.filterDom3DB(
+        if (has1H(old)) old = old.filterNationGenDB(
           "2h",
           "0",
           true,
@@ -892,16 +892,16 @@ public class TroopGenerator {
   public boolean has1H(ItemSet used) {
     used = used
       .filterSlot("weapon")
-      .filterDom3DB("rng", "0", true, nationGen.weapondb)
-      .filterDom3DB("2h", "0", true, nationGen.weapondb);
+      .filterNationGenDB("rng", "0", true, nationGen.weapondb)
+      .filterNationGenDB("2h", "0", true, nationGen.weapondb);
     return (used.size() > 0);
   }
 
   public boolean has2H(ItemSet used) {
     used = used
       .filterSlot("weapon")
-      .filterDom3DB("rng", "0", true, nationGen.weapondb)
-      .filterDom3DB("2h", "1", true, nationGen.weapondb);
+      .filterNationGenDB("rng", "0", true, nationGen.weapondb)
+      .filterNationGenDB("2h", "1", true, nationGen.weapondb);
     return (used.size() > 0);
   }
 }

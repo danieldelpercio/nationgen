@@ -1,6 +1,6 @@
 package nationGen.misc;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import java.util.*;
 import java.util.stream.Collectors;
 import nationGen.entities.Pose;
@@ -44,7 +44,7 @@ public class ItemSet extends ArrayList<Item> {
     return false;
   }
 
-  public ItemSet filterProt(Dom3DB armordb, int min, int max) {
+  public ItemSet filterProt(NationGenDB armordb, int min, int max) {
     return filterProt(armordb, min, max, false);
   }
 
@@ -70,7 +70,7 @@ public class ItemSet extends ArrayList<Item> {
   }
 
   public ItemSet filterProt(
-    Dom3DB armordb,
+    NationGenDB armordb,
     int min,
     int max,
     boolean includeDef
@@ -89,7 +89,7 @@ public class ItemSet extends ArrayList<Item> {
     return newlist;
   }
 
-  public ItemSet filterDef(Dom3DB armordb, int min, int max) {
+  public ItemSet filterDef(NationGenDB armordb, int min, int max) {
     ItemSet newlist = new ItemSet();
     for (Item i : this) if (
       armordb.GetInteger(i.id, "def") <= max &&
@@ -146,11 +146,11 @@ public class ItemSet extends ArrayList<Item> {
     return false;
   }
 
-  public ItemSet filterDom3DB(
+  public ItemSet filterNationGenDB(
     String value,
     String wanted,
     boolean keepwanted,
-    Dom3DB db
+    NationGenDB db
   ) {
     ItemSet newlist = new ItemSet();
     for (Item i : this) if (
@@ -160,11 +160,11 @@ public class ItemSet extends ArrayList<Item> {
     return newlist;
   }
 
-  public ItemSet filterDom3DBInteger(
+  public ItemSet filterNationGenDBInteger(
     String value,
     int wanted,
     boolean below,
-    Dom3DB db
+    NationGenDB db
   ) {
     ItemSet newlist = new ItemSet();
     for (Item i : this) if (

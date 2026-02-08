@@ -3,7 +3,7 @@ package com.elmokki;
 import java.util.*;
 import nationGen.misc.FileUtil;
 
-public class Dom3DB {
+public class NationGenDB {
 
   public HashMap<String, List<String>> entryMap = new HashMap<>();
   private List<String> definition;
@@ -65,8 +65,8 @@ public class Dom3DB {
     entryMap.put(id, row);
   }
 
-  public Dom3DB(String filename) {
-    // System.out.print("Reading Dom3DB from " + filename + "... ");
+  public NationGenDB(String filename) {
+    // System.out.print("Reading NationGenDB from " + filename + "... ");
 
     List<String> lines = FileUtil.readLines(filename);
 

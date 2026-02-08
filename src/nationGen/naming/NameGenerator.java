@@ -1,6 +1,6 @@
 package nationGen.naming;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 import java.util.ArrayList;
 import java.util.List;
@@ -93,7 +93,7 @@ public class NameGenerator {
     }
   }
 
-  public void fillSiteBlackList(Dom3DB sites) {
+  public void fillSiteBlackList(NationGenDB sites) {
     siteblacklist = sites.getColumn("name");
   }
 

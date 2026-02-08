@@ -1,6 +1,6 @@
 package nationGen.diagnostics;
 
-import com.elmokki.Dom3DB;
+import com.elmokki.NationGenDB;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -30,7 +30,7 @@ public class DataIntegrityTest {
     NationGen ng = new NationGen();
     NationGenAssets assets = ng.getAssets();
 
-    Dom3DB spells = new Dom3DB("/db/spells.csv");
+    NationGenDB spells = new NationGenDB("/db/nationgen/spells.csv");
 
     Set<String> names = new HashSet<>(spells.getColumn("name"));
     names.addAll(
