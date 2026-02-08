@@ -71,6 +71,22 @@ public class Item extends Drawable {
     return this.itemTypes.stream().anyMatch(t -> t.getId() == typeStr);
   }
 
+  public void addType(ItemType type) {
+    if (this.hasType(type) == true) {
+      return;
+    }
+
+    this.itemTypes.add(type);
+  }
+
+  public void addType(List<ItemType> types) {
+    types.forEach(t -> this.addType(t));
+  }
+
+  public Boolean hasType(ItemType type) {
+    return this.itemTypes.contains(type);
+  }
+
   public Boolean isOfType(ItemType type) {
     Boolean hasType = this.itemTypes.contains(type);
 

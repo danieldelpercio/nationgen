@@ -306,7 +306,7 @@ public class CustomItem extends Item {
     customItem.renderslot = item.renderslot;
     customItem.renderprio = item.renderprio;
     customItem.olditem = item;
-
+    customItem.addType(item.getItemTypes());
     return customItem;
   }
 }
