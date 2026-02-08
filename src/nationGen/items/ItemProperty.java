@@ -84,11 +84,11 @@ public enum ItemProperty {
     this.isBooleanProperty = isBoolean;
   }
 
-  public String getModCommand() {
+  public String toModCommand() {
     return this.modCommand;
   }
 
-  public String getDBColumn() {
+  public String toDBColumn() {
     return this.dbColumn;
   }
 

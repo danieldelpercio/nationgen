@@ -113,13 +113,13 @@ public class CustomItemGen {
       powerUpBudget--;
 
       if (chosenPowerUp.isBoolean() == true) {
-        customItem.setCustomCommand(chosenPowerUp.getProperty().getModCommand());
+        customItem.setCustomCommand(chosenPowerUp.getProperty().toModCommand());
         powerUps.eliminate(chosenPowerUp);
       }
 
       else {
         ItemProperty property = chosenPowerUp.getProperty();
-        String modCommand = property.getModCommand();
+        String modCommand = property.toModCommand();
         int powerUpIncrease = chosenPowerUp.getIncrease();
         int originalValue = customItem.getCustomIntValue(modCommand).orElseThrow();
         customItem.setCustomCommand(modCommand, originalValue + powerUpIncrease);
@@ -403,8 +403,8 @@ public class CustomItemGen {
     }
 
     for (ItemProperty property : ItemProperty.values()) {
-      String dbColumn = property.getDBColumn();
-      String modCommand = property.getModCommand();
+      String dbColumn = property.toDBColumn();
+      String modCommand = property.toModCommand();
       String originalValue = weaponDb.GetValue(item.id, dbColumn, "");
       Boolean isBooleanProperty = property.isBoolean();
       
@@ -426,7 +426,7 @@ public class CustomItemGen {
 
       // Special mod properties that need more than one value are in the below else ifs
       else if (property == ItemProperty.FLYSPRITE) {
-        String speed = weaponDb.GetValue(item.id, ItemProperty.ANIM_LENGTH.getDBColumn(), "1");
+        String speed = weaponDb.GetValue(item.id, ItemProperty.ANIM_LENGTH.toDBColumn(), "1");
         customItem.setCustomCommand(modCommand, originalValue, speed);
       }
 

@@ -11,7 +11,7 @@ public enum LeadershipType {
     this.type = type;
   }
 
-  public String getModCommandType() {
+  public String toModCommandType() {
     return this.type;
   }
 }

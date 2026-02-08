@@ -38,8 +38,8 @@ public enum LeadershipAbility {
     this.type = leadershipType;
   }
 
-  public String getModCommand() {
-    return "#" + this.quality.getQualityString() + this.type.getModCommandType() + "leader";
+  public String toModCommand() {
+    return "#" + this.quality.getQualityString() + this.type.toModCommandType() + "leader";
   }
 
   public static Optional<LeadershipAbility> fromModCommand(Command command) {
@@ -52,7 +52,7 @@ public enum LeadershipAbility {
 
   public static Optional<LeadershipAbility> fromModCommand(String modCommand) {
     return Stream.of(LeadershipAbility.values())
-      .filter(l -> modCommand == l.getModCommand())
+      .filter(l -> modCommand == l.toModCommand())
       .findFirst();
   }
 
