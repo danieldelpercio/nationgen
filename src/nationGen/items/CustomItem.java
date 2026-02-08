@@ -216,26 +216,29 @@ public class CustomItem extends Item {
     map.put(ItemProperty.RESOURCE_COST.toDBColumn(), "0");
 
     for (Command command : this.customItemCommands) {
+      ItemProperty property = ItemProperty.fromCommand(command);
+
+      if (property == null) {
+          continue;
+      }
+      
+      if (property.isBoolean()) {
+          map.put(property.toDBColumn(), "1");
+      }
+
+      else {
         String firstValue = command.args.get(0).get();
-        ItemProperty property = ItemProperty.fromCommand(command);
 
-        if (property == null) {
-            continue;
-        }
-
-        else if (property == ItemProperty.FLYSPRITE) {
+        if (property == ItemProperty.FLYSPRITE) {
             String secondValue = command.args.get(1).get();
             map.put(property.toDBColumn(), firstValue);
             map.put(ItemProperty.ANIM_LENGTH.toDBColumn(), secondValue);
         }
 
-        else if (property.isBoolean()) {
-            map.put(property.toDBColumn(), "1");
-        }
-
         else {
             map.put(property.toDBColumn(), firstValue);
         }
+      }
     }
     
     return map;
