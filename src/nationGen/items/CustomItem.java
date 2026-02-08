@@ -1,8 +1,10 @@
 package nationGen.items;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -20,8 +22,39 @@ public class CustomItem extends Item {
 
   public CustomItem(NationGen nationGen) {
     super(nationGen);
-    this.customItemCommands.add(new Command("#rcost", new Arg(0)));
-    this.customItemCommands.add(new Command("#def", new Arg(0)));
+    this.customItemCommands.add(new Command(
+      ItemProperty.RESOURCE_COST.toModCommand(),
+      new Arg(0)
+    ));
+
+    this.customItemCommands.add(new Command(
+      ItemProperty.DEFENCE.toModCommand(),
+      new Arg(0)
+    ));
+  }
+
+  public CustomItem(NationGen nationGen, LinkedHashMap<String, String> dbMap) {
+      super(nationGen);
+      Iterator<Map.Entry<String, String>> it = dbMap.entrySet().iterator();
+
+      while(it.hasNext()) {
+          Map.Entry<String, String> entry = it.next();
+          ItemProperty property = ItemProperty.fromDbColumn(entry.getKey());
+          Command command = Command.args(property.toModCommand(), entry.getValue());
+
+          // The #flyspr mod command expects a second argument; the animation length
+          if (property == ItemProperty.FLYSPRITE) {
+              String animLength = dbMap.get(ItemProperty.ANIM_LENGTH.toDBColumn());
+
+              if (animLength == null) {
+                  throw new IllegalArgumentException("Expected DominionsItem hash map to contain an animation length for the flysprite!");
+              }
+
+              command.args.add(1, new Arg(animLength));
+          }
+
+          this.customItemCommands.add(command);
+      }
   }
 
   public CustomItem(CustomItem customItem) {
@@ -100,7 +133,7 @@ public class CustomItem extends Item {
     List<Command> enchantmentCommands = enchantment.getCommands();
 
     if (hasSecondaryEffect == true) {
-      this.setCustomCommand("#secondaryeffect", enchantment.effect);
+      this.setCustomCommand(ItemProperty.SEC_EFF.toModCommand(), enchantment.effect);
     }
 
     // Copy commands from the enchantment over to the item
@@ -133,11 +166,11 @@ public class CustomItem extends Item {
   }
 
   public Boolean isMagic() {
-    return this.hasCustomCommand("#magic");
+    return this.hasCustomCommand(ItemProperty.IS_MAGIC_WEAPON.toModCommand());
   }
 
   public Boolean hasCustomName() {
-    return this.getCustomValue("#name").isPresent();
+    return this.getCustomValue(ItemProperty.NAME.toModCommand()).isPresent();
   }
 
   public Boolean hasDamageBitmask() {
@@ -172,94 +205,39 @@ public class CustomItem extends Item {
 
   public LinkedHashMap<String, String> getHashMap() {
     LinkedHashMap<String, String> map = new LinkedHashMap<>();
-    map.put("id#", id + "");
-    map.put("#att", "1");
-    map.put("shots", "0");
-    map.put("rng", "0");
-    map.put("att", "0");
-    map.put("def", "0");
-    map.put("lgt", "0");
-    map.put("dmg", "0");
-    map.put("2h", "0");
 
-    for (Command command : customItemCommands) {
-      String str = command.command;
+    map.put(ItemProperty.ATTACK.toDBColumn(), "0");
+    map.put(ItemProperty.AMMO.toDBColumn(), "0");
+    map.put(ItemProperty.RANGE.toDBColumn(), "0");
+    map.put(ItemProperty.DEFENCE.toDBColumn(), "0");
+    map.put(ItemProperty.LENGTH.toDBColumn(), "0");
+    map.put(ItemProperty.DAMAGE.toDBColumn(), "0");
+    map.put(ItemProperty.IS_2H.toDBColumn(), "0");
+    map.put(ItemProperty.RESOURCE_COST.toDBColumn(), "0");
 
-      switch (str) {
-        case "#blunt":
-          map.put("dt_blunt", "1");
-          break;
-        case "#pierce":
-          map.put("dt_pierce", "1");
-          break;
-        case "#slash":
-          map.put("dt_slash", "1");
-          break;
-        case "#ironarmor":
-          map.put("ferrous", "1");
-          break;
-        case "#secondaryeffectalways":
-          map.put("aeff#", command.args.get(0).get());
-          break;
-        case "#secondaryeffect":
-          map.put("eff#", command.args.get(0).get());
-          break;
-        case "#twohanded":
-          map.put("2h", "1");
-          break;
-        case "#charge":
-          map.put("charge", "1");
-          break;
-        case "#bonus":
-          map.put("bonus", "1");
-          break;
-        case "#dt_cap":
-          map.put("dt_cap", "1");
-          break;
-        case "#magic":
-          map.put("magic", "1");
-          break;
-        case "#ammo":
-          map.put("shots", command.args.get(0).get());
-          break;
-        case "#armorpiercing":
-          map.put("ap", "1");
-          break;
-        case "#armornegating":
-          map.put("an", "1");
-          break;
-        case "#range":
-          map.put("rng", command.args.get(0).get());
-          break;
-        case "#len":
-          map.put("lgt", command.args.get(0).get());
-          break;
-        case "#nratt":
-          map.put("#att", command.args.get(0).get());
-          break;
-        case "#rcost":
-          map.put("res", command.args.get(0).get());
-          break;
-        case "#name":
-          if (this.isArmor()) {
-            map.put("armorname", command.args.get(0).get());
-          } else {
-            map.put("weapon_name", command.args.get(0).get());
-          }
-          break;
-        case "#flyspr":
-          map.put("flyspr", command.args.get(0).get());
-          map.put("animlength", command.args.get(1).get());
-          break;
-        default:
-          map.put(
-            command.command.substring(1),
-            command.args.isEmpty() ? "1" : command.args.get(0).get()
-          );
-          break;
-      }
+    for (Command command : this.customItemCommands) {
+        String firstValue = command.args.get(0).get();
+        ItemProperty property = ItemProperty.fromCommand(command);
+
+        if (property == null) {
+            continue;
+        }
+
+        else if (property == ItemProperty.FLYSPRITE) {
+            String secondValue = command.args.get(1).get();
+            map.put(property.toDBColumn(), firstValue);
+            map.put(ItemProperty.ANIM_LENGTH.toDBColumn(), secondValue);
+        }
+
+        else if (property.isBoolean()) {
+            map.put(property.toDBColumn(), "1");
+        }
+
+        else {
+            map.put(property.toDBColumn(), firstValue);
+        }
     }
-
+    
     return map;
   }
 
@@ -289,9 +267,9 @@ public class CustomItem extends Item {
 
     // Minimal valid weapon customItemCommands. Might get overwritten below if already exist
     if (item.isArmor() == false) {
-      customItem.setCustomCommand("#att", 0);
-      customItem.setCustomCommand("#len", 0);
-      customItem.setCustomCommand("#dmg", 0);
+      customItem.setCustomCommand(ItemProperty.ATTACK.toModCommand(), 0);
+      customItem.setCustomCommand(ItemProperty.LENGTH.toModCommand(), 0);
+      customItem.setCustomCommand(ItemProperty.DAMAGE.toModCommand(), 0);
     }
 
     customItem.sprite = item.sprite;

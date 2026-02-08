@@ -65,7 +65,13 @@ public class CustomItemGen {
 
       // Roll chance to make the item magic
       if (shouldBeMagic(originalItem, customItem) == true) {
-        customItem.setCustomCommand("#magic");
+        if (originalItem.isArmor()) {
+          customItem.setCustomCommand(ItemProperty.IS_MAGIC_ARMOR.toModCommand());
+        }
+
+        else {
+          customItem.setCustomCommand(ItemProperty.IS_MAGIC_WEAPON.toModCommand());
+        }
       }
     }
 
@@ -136,7 +142,7 @@ public class CustomItemGen {
       .setIncrease(1)
       .setChance(0.25);
       
-    ItemPropertyPowerUp magicPowerUp = new ItemPropertyPowerUp(ItemProperty.IS_MAGIC, true)
+    ItemPropertyPowerUp magicPowerUp = new ItemPropertyPowerUp(ItemProperty.IS_MAGIC_WEAPON, true)
       .setCost(1)
       .setChance(0.25);
 
