@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 import com.elmokki.Dom3DB;
+import com.elmokki.Generic;
 
 import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
@@ -61,6 +62,16 @@ public class Item extends Drawable {
     }
 
     return value;
+  }
+
+  public Integer getIntegerFromDb(String dbColumn, Integer defauInteger) {
+    String value = this.getValueFromDb(dbColumn);
+
+    if (!Generic.isNumeric(value)) {
+      return 0;
+    }
+
+    return Integer.valueOf(value);
   }
 
   public String getBardingId() {
