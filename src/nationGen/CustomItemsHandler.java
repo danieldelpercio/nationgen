@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import nationGen.items.CustomItem;
+import nationGen.items.DominionsId;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
 import nationGen.misc.ResourceStorage;
@@ -27,6 +28,12 @@ public class CustomItemsHandler {
   private IdHandler idHandler; // Local ref of id handler to generate new IDs when fresh custom item needs a new ID.
   private NationGenDB weapondb; // Local ref of weapondb to remove nationgen dependency.
   private NationGenDB armordb; // Local ref of armordb to remove nationgen dependency.
+  
+  public final static Integer MIN_CUSTOM_ARMOR_ID = 300;
+  public final static Integer MAX_CUSTOM_ARMOR_ID = 999;
+  
+  public final static Integer MIN_CUSTOM_WEAPON_ID = 1000;
+  public final static Integer MAX_CUSTOM_WEAPON_ID = 3999;
 
   public CustomItemsHandler(
     NationGen nationGen,
@@ -73,14 +80,15 @@ public class CustomItemsHandler {
    *  The idea is that we first see if the name is already chosen, and return its chosen ID if so.
    *  Else, if the item exists in the superset [customItems], we generate its ID & add it to chosen items.
    */
-  public String getCustomItemId(String name) {
+  public Integer getCustomItemId(String name) {
     for (CustomItem ci : chosenCustomItems) {
       if (ci.name.equals(name)) {
-        return ci.id;
+        return ci.dominionsId.getDominionsId();
       }
     }
 
     CustomItem customItem = null;
+
     for (CustomItem ci : customItems) {
       if (ci.name.equals(name) && !chosenCustomItems.contains(ci)) {
         customItem = new CustomItem(ci);
@@ -96,11 +104,15 @@ public class CustomItemsHandler {
 
     if (idHandler != null) {
       if (customItem.isArmor()) {
-        customItem.id = idHandler.nextArmorId() + "";
-      } else {
-        customItem.id = idHandler.nextWeaponId() + "";
+        customItem.dominionsId.setDominionsId(idHandler.nextArmorId());
       }
-    } else {
+      
+      else {
+        customItem.dominionsId.setDominionsId(idHandler.nextWeaponId());
+      }
+    }
+    
+    else {
       throw new IllegalArgumentException("CustomItemsHandler error: idHandler was not initialized!");
     }
 
@@ -111,22 +123,21 @@ public class CustomItemsHandler {
       .ifPresent(c -> resolveCustomEffectId(c));
 
     chosenCustomItems.add(customItem);
-    //this.customitems.remove(customItem);
 
     if (!customItem.isArmor()) {
-      armordb.addToMap(customItem.id, customItem.getHashMap());
+      armordb.addToMap(customItem.dominionsId.getItemName(), customItem.getHashMap());
     } else {
-      weapondb.addToMap(customItem.id, customItem.getHashMap());
+      weapondb.addToMap(customItem.dominionsId.getItemName(), customItem.getHashMap());
     }
 
-    return customItem.id;
+    return customItem.dominionsId.getDominionsId();
   }
 
   private void resolveCustomEffectId(Command effect) {
     Arg customEffectId = effect.args.get(0);
 
     if (!customEffectId.isNumeric()) {
-      String id = getCustomItemId(customEffectId.get());
+      Integer id = getCustomItemId(customEffectId.get());
       effect.args.set(0, new Arg(id));
     }
   }
@@ -162,5 +173,20 @@ public class CustomItemsHandler {
 
   static public Boolean isIdResolved(String itemId) {
     return Generic.isNumeric(itemId);
+  }
+
+  static public Boolean isCustomId(Integer id) {
+    return CustomItemsHandler.isCustomArmorId(id) &&
+      CustomItemsHandler.isCustomWeaponId(id);
+  }
+
+  static public Boolean isCustomArmorId(Integer id) {
+    return id >= CustomItemsHandler.MIN_CUSTOM_ARMOR_ID &&
+      id <= CustomItemsHandler.MAX_CUSTOM_ARMOR_ID;
+  }
+
+  static public Boolean isCustomWeaponId(Integer id) {
+    return id >= CustomItemsHandler.MIN_CUSTOM_WEAPON_ID &&
+      id <= CustomItemsHandler.MAX_CUSTOM_WEAPON_ID;
   }
 }

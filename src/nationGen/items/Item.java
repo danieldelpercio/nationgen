@@ -7,7 +7,6 @@ import java.util.stream.Collectors;
 import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 
-import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
 import nationGen.chances.ThemeInc;
 import nationGen.entities.Drawable;
@@ -16,17 +15,14 @@ import nationGen.misc.Command;
 
 public class Item extends Drawable {
 
-  public String id = "-1";
-  public Filter filter = null;
-  private List<ItemType> itemTypes = new ArrayList<>();
-  private String bardingId;
-
-  public List<ItemDependency> dependencies = new ArrayList<>();
-  //public LinkedHashMap<String, String> dependencies = new LinkedHashMap<>();
-  //public LinkedHashMap<String, String> typedependencies = new LinkedHashMap<>();
-
   public String slot = "";
   public String set = "";
+  public Filter filter = null;
+  public DominionsId dominionsId = new DominionsId();
+  public List<ItemDependency> dependencies = new ArrayList<>();
+
+  private List<ItemType> itemTypes = new ArrayList<>();
+  private String bardingId;
 
   public Item(NationGen nationGen) {
     super(nationGen);
@@ -34,7 +30,7 @@ public class Item extends Drawable {
 
   public Item(Item item) {
     super(item);
-    this.id = item.id;
+    this.dominionsId = item.dominionsId;
     this.filter = (item.filter != null) ? new Filter(item.filter) : null;
     this.itemTypes = new ArrayList<>(item.itemTypes);
     this.dependencies = new ArrayList<>(item.dependencies)
@@ -48,16 +44,11 @@ public class Item extends Drawable {
 
   public String getValueFromDb(String dbColumn) {
     NationGenDB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
-    String itemIdInDb = this.id;
+    String itemIdInDb = String.valueOf(this.dominionsId.getDominionsId());
     String value = db.GetValue(itemIdInDb, dbColumn);
 
     if (value.isBlank()) {
       itemIdInDb = this.name;
-      value = db.GetValue(itemIdInDb, dbColumn);
-    }
-
-    if (value.isBlank()) {
-      itemIdInDb = this.tags.getString("OLDID").orElse("");
       value = db.GetValue(itemIdInDb, dbColumn);
     }
 
@@ -159,48 +150,48 @@ public class Item extends Drawable {
     return this.itemTypes;
   }
 
-  /**
-   * A "Dominions id" is an id above 0 which can or must be written into
-   * an #armor or #weapon command. A "basesprite" item does not have a
-   * Dominions id, but an equipped Greatsword does. "Item" is a misleading
-   * name in NationGen, since it can refer both to the equipped Dominions
-   * items as well as to cosmetic sprite parts, such as "hands" or "shadow".
-   * @return
-   */
-  public Boolean hasDominionsId() {
-    return this.id.equals("-1") == false;
+  public Boolean isDominionsEquipment() {
+    return this.dominionsId != null && !this.dominionsId.isBlank();
+  }
+
+  public Boolean isDominionsIdAssigned() {
+    return this.isDominionsEquipment() && this.dominionsId.isResolved();
+  }
+
+  public Boolean hasSameDominionsEquipmentName(Item other) {
+    return this.dominionsId.getEquipmentName().equals(other.dominionsId.getEquipmentName());
+  }
+
+  public Boolean hasSameDominionsId(Item other) {
+    return this.dominionsId.getDominionsId().equals(other.dominionsId.getDominionsId());
   }
 
   /**
-   * A custom id is a NationGen-specific id, such as "obsidian_barding",
-   * which must be resolved into a numeric id when writing the final mod
-   * .dm file where the custom item is defined.
-   * @return
-   */
-  public boolean isCustomIdResolved() {
-    return CustomItemsHandler.isIdResolved(this.id);
-  }
-
-  /**
-   * Returns a copy of this item with its custom id resolved. For example, we have the custom item
-   * with id atl_conchshield, once it's resolved to a Dominions parsable id it'll be a number, such
-   * as 5008. We assign that number here and return the copy. Note that we need to return a copy of
+   * Returns a copy of this item with its Dominions id resolved, or the same item if already resolved.
+   * For example, if this item was defined with #gameid atl_conchshield, that will be resolved to a
+   * Dominions id that is useable in-game, such as 3008. Note that we need to return a copy of
    * the item with the original customId because we don't want to modify the original, as that is
    * (probably) an asset instance that gets equipped with the same reference every time.
    * 
-   * @param item - an item with a custom id, such as "atl_conchshield"
-   * @return a copy of the item with a resolved id, or the same item of the id was already resolved
+   * @param item - an item which contains a Domiions equipment
+   * @return a copy of the item with a numeric Dominions id, or the same item of the id was already resolved
    */
   static public Item resolveId(Item item) {
-    if (item.isCustomIdResolved() == false) {
+    if (!item.isDominionsEquipment()) {
+      throw new IllegalArgumentException("Item does not contain a Dominions equipment with a Dominions id");
+    }
+
+    if (!item.isDominionsIdAssigned()) {
       Item copy = new Item(item);
-      copy.tags.add("OLDID", item.id);
-      copy.id = item.nationGen.GetCustomItemsHandler().getCustomItemId(item.id);
+      item.dominionsId.setDominionsId(
+        item.nationGen.GetCustomItemsHandler().getCustomItemId(item.dominionsId.getItemName())
+      );
+
       return copy;
     }
 
     // If the id is already numeric, like 5008, it should have
-    // already been resolved, so we just a copy of the item
+    // already been resolved, so we just return the same item
     else {
       return item;
     }
@@ -211,7 +202,15 @@ public class Item extends Drawable {
     try {
       switch (command.command) {
         case "#gameid":
-          this.id = command.args.get(0).get();
+          String gameId = command.args.get(0).get();
+
+          if (Generic.isNumeric(gameId)) {
+            this.dominionsId.setDominionsId(Integer.valueOf(gameId));
+          }
+
+          else {
+            this.dominionsId.setName(gameId);
+          }
           break;
         case "#armor":
           this.itemTypes.add(ItemType.ARMOR);

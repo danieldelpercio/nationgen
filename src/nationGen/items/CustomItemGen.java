@@ -89,7 +89,7 @@ public class CustomItemGen {
     // Add to custom item lists
     n.customitems.add(customItem);
     n.nationGen.GetCustomItemsHandler().AddCustomItem(customItem);
-    n.nationGen.weapondb.addToMap(customItem.id, customItem.getHashMap());
+    n.nationGen.weapondb.addToMap(customItem.dominionsId.getCustomItemName(), customItem.getHashMap());
   }
 
   private Boolean shouldBeMagic(
@@ -205,9 +205,9 @@ public class CustomItemGen {
     customItem.applyEnchantment(enchantment);
 
     // Use the enchantment to create an adjective for the item name
-    String name = n.nationGen.weapondb.GetValue(originalItem.id, "name");
+    String name = originalItem.getValueFromDb(ItemProperty.NAME.toDBColumn());
     name = this.addEnchantmentAdjectives(name, enchantment);
-    customItem.setCustomCommand("#name", name);
+    customItem.setCustomCommand(ItemProperty.NAME.toModCommand(), name);
 
     // Increase item gold cost if enchantment has extra cost for its type
     for (Args args : enchantment.tags.getAllArgs("gcost")) {
