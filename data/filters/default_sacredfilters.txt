@@ -737,8 +737,8 @@
 #new
 #id "darkpower2"
 #basechance 0.0
-#chanceinc "command #darkvision 0.05"
-#chanceinc "magic death 1"
+#chanceinc "command #darkvision 4"
+#chanceinc "magic death +1"
 #mutuallyexclusive "#blind"
 #command "#darkpower +2"
 #command "#darkvision 100"
@@ -751,8 +751,8 @@
 #new
 #id "darkpower4"
 #basechance 0.0
-#chanceinc "command #darkvision 4"
-#chanceinc "magic death 0.5"
+#chanceinc "command #darkvision 0.05"
+#chanceinc "magic death +0.5"
 #mutuallyexclusive "#blind"
 #command "#darkpower +4"
 #command "#darkvision 100"
