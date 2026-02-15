@@ -740,6 +740,7 @@
 #chanceinc "command #darkvision 4"
 #chanceinc "magic death +1"
 #mutuallyexclusive "#blind"
+#mutuallyexclusive "#darkpower"
 #command "#darkpower +2"
 #command "#darkvision 100"
 #command "#gcost +3"
@@ -754,6 +755,7 @@
 #chanceinc "command #darkvision 0.05"
 #chanceinc "magic death +0.5"
 #mutuallyexclusive "#blind"
+#mutuallyexclusive "#darkpower"
 #command "#darkpower +4"
 #command "#darkvision 100"
 #command "#gcost +8"
@@ -767,6 +769,7 @@
 #basechance 0.0
 #chanceinc "personalcommand #blind 5"
 #chanceinc "magic death *2"
+#mutuallyexclusive "#darkpower"
 #command "#darkpower +2"
 #command "#gcost +3"
 #tag "path death"
@@ -779,6 +782,7 @@
 #basechance 0.0
 #chanceinc "personalcommand #blind 3"
 #chanceinc "magic death *2"
+#mutuallyexclusive "#darkpower"
 #command "#darkpower +4"
 #command "#gcost +8"
 #tag "path death"
