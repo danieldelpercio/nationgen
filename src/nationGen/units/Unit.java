@@ -23,6 +23,7 @@ import nationGen.items.Item;
 import nationGen.items.ItemData;
 import nationGen.items.ItemDependency;
 import nationGen.items.ItemProperty;
+import nationGen.items.ItemType;
 import nationGen.magic.MageGenerator;
 import nationGen.magic.MagicPath;
 import nationGen.magic.MagicPathInts;
@@ -1902,7 +1903,7 @@ public class Unit {
       .filter(c -> c.command.equals("#weapon") && c.args.getInt(0) > 0)
       .forEach(c -> {
         String id = c.args.getString(0);
-        ItemData weaponData = new ItemData(id, "", this.nationGen);
+        ItemData weaponData = new ItemData(id, "", this.nationGen, ItemType.WEAPON);
         weapons.add(weaponData);
       });
 
@@ -1927,7 +1928,7 @@ public class Unit {
       .filter(c -> c.command.equals("#armor") && c.args.getInt(0) > 0)
       .forEach(c -> {
         String id = c.args.getString(0);
-        ItemData armorData = new ItemData(id, "", this.nationGen);
+        ItemData armorData = new ItemData(id, "", this.nationGen, ItemType.ARMOR);
         armors.add(armorData);
       });
 
@@ -2015,7 +2016,7 @@ public class Unit {
         "#weapon " +
         itemData.getId() +
         " --- " +
-        itemData.getDisplayName("name") +
+        itemData.getDisplayName() +
         ((itemData.hasName()) ? " / " + itemData.getName() : "")
       );
     });
@@ -2045,7 +2046,7 @@ public class Unit {
         "#armor " +
         itemData.getId() +
         " --- " +
-        itemData.getDisplayName("name") +
+        itemData.getDisplayName() +
         ((itemData.hasName()) ? " / " + itemData.getName() : "")
       );
     });
