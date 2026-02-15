@@ -9,6 +9,7 @@ import java.util.stream.Collectors;
 import nationGen.Settings.SettingsType;
 import nationGen.entities.Filter;
 import nationGen.items.Item;
+import nationGen.items.ItemProperty;
 import nationGen.misc.Command;
 import nationGen.nation.Nation;
 import nationGen.units.MountUnit;
@@ -159,13 +160,8 @@ public class DescriptionReplacer {
 
     for (Item armor : armors) {
       int prot = 0;
-      String armorName = n.nationGen.armordb.GetValue(
-        armor.id,
-        "name",
-        "NOT IN ARMORDB: " + armor.name + " in armor slot"
-      );
-
-      prot = n.nationGen.armordb.GetInteger(armor.id, "prot", 0);
+      String armorName = armor.getValueFromDb(ItemProperty.NAME.toDBColumn(), "NOT IN ARMORDB: " + armor.name + " in armor slot");
+      prot = armor.getIntegerFromDb(ItemProperty.PROTECTION.toDBColumn(), 0);
 
       if (armorNames.contains(armorName) == false) {
         armorNames.add(armorName);
@@ -250,7 +246,7 @@ public class DescriptionReplacer {
     equipments = equipments.stream()
       .filter(i -> i != null)
       // Mount items all have a gameid = -1, but they are still equipped with #mountmnr
-      .filter(i -> i.hasDominionsId() || i.isMountItem())
+      .filter(i -> i.isDominionsEquipment() || i.isMountItem())
       .collect(Collectors.toList());
 
     return equipments;

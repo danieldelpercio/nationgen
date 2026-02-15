@@ -125,9 +125,9 @@ public class CustomItemsHandler {
     chosenCustomItems.add(customItem);
 
     if (!customItem.isArmor()) {
-      armordb.addToMap(customItem.dominionsId.getItemName(), customItem.getHashMap());
+      armordb.addToMap(customItem.dominionsId.getCustomItemName(), customItem.getHashMap());
     } else {
-      weapondb.addToMap(customItem.dominionsId.getItemName(), customItem.getHashMap());
+      weapondb.addToMap(customItem.dominionsId.getCustomItemName(), customItem.getHashMap());
     }
 
     return customItem.dominionsId.getDominionsId();

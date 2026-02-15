@@ -10,6 +10,7 @@ import nationGen.NationGenAssets;
 import nationGen.chances.EntityChances;
 import nationGen.entities.Filter;
 import nationGen.items.Item;
+import nationGen.items.ItemProperty;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
 import nationGen.misc.ItemSet;
@@ -877,9 +878,11 @@ public class CommanderGenerator extends TroopGenerator {
       try {
         ItemSet helmets = new ItemSet();
 
-        for (Item it : getSuitableCommanderItems(u, slot).filterSlot(slot)) if (
-          it.id.equals(item.id)
-        ) helmets.add(it);
+        for (Item it : getSuitableCommanderItems(u, slot).filterSlot(slot)) {
+          if (it.hasSameCustomItemName(item)) {
+            helmets.add(it);
+          }
+        }
 
         helmet = chandler.getRandom(helmets, u);
       } catch (Exception e) {
@@ -890,7 +893,7 @@ public class CommanderGenerator extends TroopGenerator {
     // Try to get an elite armor of some suitable sort
     if (u.getSlot(slot).isArmor() && helmet == null && !slot.equals("offhand")) {
       int helmetprot = item.isArmor()
-        ? nationGen.armordb.GetInteger(item.id, "prot")
+        ? item.getIntegerFromDb(ItemProperty.PROTECTION.toDBColumn(), 0)
         : 0;
 
       helmet = chandler.getRandom(

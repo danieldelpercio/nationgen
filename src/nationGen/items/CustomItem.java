@@ -248,11 +248,11 @@ public class CustomItem extends Item {
     List<String> lines = new ArrayList<>();
 
     if (this.isArmor()) {
-      lines.add("#newarmor " + id);
+      lines.add("#newarmor " + this.dominionsId.getDominionsId());
     }
 
     else {
-      lines.add("#newweapon " + id);
+      lines.add("#newweapon " + this.dominionsId.getDominionsId());
     }
 
     for (Command command : this.customItemCommands) {

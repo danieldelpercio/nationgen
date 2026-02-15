@@ -11,6 +11,7 @@ import nationGen.entities.Filter;
 import nationGen.entities.Pose;
 import nationGen.entities.Race;
 import nationGen.items.Item;
+import nationGen.items.ItemProperty;
 import nationGen.misc.Command;
 import nationGen.misc.ItemSet;
 import nationGen.nation.Nation;
@@ -135,10 +136,7 @@ public class ScoutGenerator extends TroopGenerator {
 
     template.setSlot("armor", armor);
 
-    int prot = nationGen.armordb.GetInteger(
-      template.getSlot("armor").id,
-      "prot"
-    );
+    int prot = template.getSlot("armor").getIntegerFromDb(ItemProperty.PROTECTION.toDBColumn(), 0);
 
     if (template.pose.getItems("helmet") != null) {
       ItemSet helms = template.pose.getItems("helmet");
@@ -185,15 +183,15 @@ public class ScoutGenerator extends TroopGenerator {
       p.getItems("offhand") != null &&
       r.nextDouble() < dwchance &&
       p.getItems("offhand").filterArmor(false).size() > 0 &&
-      nationGen.weapondb.GetInteger(template.getSlot("weapon").id, "lgt") < 3 &&
-      nationGen.weapondb.GetInteger(template.getSlot("weapon").id, "2h") == 0
+      template.getSlot("weapon").getIntegerFromDb(ItemProperty.LENGTH.toDBColumn(), null) < 3 &&
+      template.getSlot("weapon").getBooleanFromDb(ItemProperty.IS_2H.toDBColumn()) == false
     ) {
       if (
         r.nextDouble() > 0.25 &&
         p
           .getItems("offhand")
           .filterArmor(false)
-          .getItemWithID(weapon.id, "offhand") !=
+          .getItemWithID(weapon.dominionsId.getCustomItemName(), "offhand") !=
         null
       ) {
         template.setSlot(
@@ -202,7 +200,7 @@ public class ScoutGenerator extends TroopGenerator {
             p
               .getItems("offhand")
               .filterArmor(false)
-              .getItemsWithID(weapon.id, "offhand"),
+              .getItemsWithID(weapon.dominionsId.getCustomItemName(), "offhand"),
             template
           )
         );

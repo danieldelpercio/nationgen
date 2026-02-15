@@ -21,10 +21,10 @@ public class ItemData {
 
   public ItemData(Item item) {
     if (item instanceof CustomItem) {
-      this.oldId = item.tags.getString("OLDID").get();
+      this.oldId = item.dominionsId.getCustomItemName();
     }
 
-    this.id = item.id;
+    this.id = item.getDominionsEquipmentId();
     this.name = item.name;
     this.nationGen = item.nationGen;
   }

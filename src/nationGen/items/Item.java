@@ -55,6 +55,26 @@ public class Item extends Drawable {
     return value;
   }
 
+  public String getValueFromDb(String dbColumn, String defaultValue) {
+    String value = this.getValueFromDb(dbColumn);
+
+    if (value == null || value.isBlank()) {
+      return defaultValue;
+    }
+
+    return value;
+  }
+
+  public Boolean getBooleanFromDb(String dbColumn) {
+    String value = this.getValueFromDb(dbColumn);
+
+    if (value.equals("1")) {
+      return true;
+    }
+
+    return false;
+  }
+
   public Integer getIntegerFromDb(String dbColumn, Integer defauInteger) {
     String value = this.getValueFromDb(dbColumn);
 
@@ -111,7 +131,7 @@ public class Item extends Drawable {
     return this.isArmor() && this.isOfType(ItemType.BARDING);
   }
   
-  public Boolean isBodyArmorBarding() {
+  public Boolean isBodyArmor() {
     return this.isArmor() && this.isOfType(ItemType.BODY_ARMOR);
   }
   
@@ -154,16 +174,64 @@ public class Item extends Drawable {
     return this.dominionsId != null && !this.dominionsId.isBlank();
   }
 
+  /**
+   * Gets the dominions equipment id that this item contains, if it does.
+   * The returning id will be an actual Dominions id number, if it is
+   * already resolved, or the CustomItem.name, if it is not yet resolved.
+   * @return String Integer or CustomItem.name
+   */
+  public String getDominionsEquipmentId() {
+    if (!this.isDominionsEquipment()) {
+      return null;
+    }
+
+    if (this.dominionsId.isResolved()) {
+      return String.valueOf(this.dominionsId.getDominionsId());
+    }
+
+    else {
+      return this.dominionsId.getCustomItemName();
+    }
+  }
+
+  public Boolean isSameDominionsEquipment(Integer dominionsId) {
+    return this.isDominionsEquipment() && this.hasSameDominionsId(dominionsId);
+  }
+
+  public Boolean isSameDominionsEquipment(Item otherItem) {
+    return this.isDominionsEquipment() &&
+      (
+        this.hasSameCustomItemName(otherItem) ||
+        this.hasSameDominionsId(otherItem)
+      );
+  }
+
   public Boolean isDominionsIdAssigned() {
     return this.isDominionsEquipment() && this.dominionsId.isResolved();
   }
 
-  public Boolean hasSameDominionsEquipmentName(Item other) {
-    return this.dominionsId.getEquipmentName().equals(other.dominionsId.getEquipmentName());
+  public Boolean hasSameCustomItemName(Item other) {
+    return this.hasSameCustomItemName(other.dominionsId.getCustomItemName());
+  }
+
+  public Boolean hasSameCustomItemName(String otherName) {
+    return this.dominionsId.getCustomItemName().equals(otherName);
   }
 
   public Boolean hasSameDominionsId(Item other) {
-    return this.dominionsId.getDominionsId().equals(other.dominionsId.getDominionsId());
+    return this.hasSameDominionsId(other.dominionsId.getDominionsId());
+  }
+
+  public Boolean hasSameDominionsId(String otherId) {
+    if (!Generic.isNumeric(otherId)) {
+      return false;
+    }
+
+    return this.hasSameDominionsId(Integer.valueOf(otherId));
+  }
+
+  public Boolean hasSameDominionsId(Integer otherId) {
+    return this.dominionsId.getDominionsId().equals(otherId);
   }
 
   /**
@@ -183,10 +251,11 @@ public class Item extends Drawable {
 
     if (!item.isDominionsIdAssigned()) {
       Item copy = new Item(item);
-      item.dominionsId.setDominionsId(
-        item.nationGen.GetCustomItemsHandler().getCustomItemId(item.dominionsId.getItemName())
-      );
+      Integer resolvedDominionsId = item.nationGen
+        .GetCustomItemsHandler()
+        .getCustomItemId(item.dominionsId.getCustomItemName());
 
+      item.dominionsId.setDominionsId(resolvedDominionsId);
       return copy;
     }
 
@@ -209,7 +278,7 @@ public class Item extends Drawable {
           }
 
           else {
-            this.dominionsId.setName(gameId);
+            this.dominionsId.setCustomItemName(gameId);
           }
           break;
         case "#armor":

@@ -4,6 +4,8 @@ import com.elmokki.Generic;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import nationGen.items.ItemProperty;
 import nationGen.magic.MagicPath;
 import nationGen.magic.MagicPathInts;
 import nationGen.misc.Arg;
@@ -150,14 +152,12 @@ public class Summary {
           sacredunit.pose.roles.contains("ranged") ||
           sacredunit.pose.roles.contains("sacred ranged")
         ) {
-          if (
-            n.nationGen.weapondb.GetInteger(
-              sacredunit.getSlot("weapon").id,
-              "rng"
-            ) >
-            12
-          ) sacred.append("ranger");
-          else sacred.append("skirmisher");
+          if (sacredunit.getSlot("weapon").getIntegerFromDb(ItemProperty.RANGE.toDBColumn(), 0) > 12) {
+            sacred.append("ranger");
+          }
+          else {
+            sacred.append("skirmisher");
+          }
         }
         sacreds.add(sacred.toString());
       });
