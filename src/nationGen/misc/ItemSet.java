@@ -6,6 +6,7 @@ import java.util.stream.Collectors;
 import nationGen.entities.Pose;
 import nationGen.entities.Race;
 import nationGen.items.Item;
+import nationGen.items.ItemProperty;
 import nationGen.units.Unit;
 
 public class ItemSet extends ArrayList<Item> {
@@ -69,32 +70,33 @@ public class ItemSet extends ArrayList<Item> {
     return newlist;
   }
 
-  public ItemSet filterProt(
-    NationGenDB armordb,
-    int min,
-    int max,
-    boolean includeDef
-  ) {
+  public ItemSet filterProt(NationGenDB armordb, int min, int max, boolean includeDef) {
     ItemSet newlist = new ItemSet();
+  
     for (Item i : this) {
-      int prot = armordb.GetInteger(i.id, "prot");
-      if (
-        includeDef
-          ? (prot + armordb.GetInteger(i.id, "def") <= max && prot >= min)
-          : (prot <= max && prot >= min)
+      int prot = i.getIntegerFromDb(ItemProperty.PROTECTION.toDBColumn(), 0);
+
+      if (includeDef ?
+          (prot + i.getIntegerFromDb(ItemProperty.DEFENCE.toDBColumn(), 0) <= max && prot >= min) :
+          (prot <= max && prot >= min)
       ) {
         newlist.add(i);
       }
     }
+
     return newlist;
   }
 
   public ItemSet filterDef(NationGenDB armordb, int min, int max) {
     ItemSet newlist = new ItemSet();
-    for (Item i : this) if (
-      armordb.GetInteger(i.id, "def") <= max &&
-      armordb.GetInteger(i.id, "def") >= min
-    ) newlist.add(i);
+
+    for (Item i : this) {
+      Integer def = i.getIntegerFromDb(ItemProperty.DEFENCE.toDBColumn(), 0);
+
+      if (def <= max && def >= min) {
+        newlist.add(i);
+      }
+    }
 
     return newlist;
   }
@@ -111,21 +113,35 @@ public class ItemSet extends ArrayList<Item> {
     return newlist;
   }
 
-  public Item getItemWithID(String string, String slot) {
-    ItemSet possibles = this; //this.filterTheme("elite", false).filterTheme("sacred", false);
+  public Item getItemWithID(String id, String slot) {
+    ItemSet possibles = this;
+    //this.filterTheme("elite", false).filterTheme("sacred", false);
+
     for (Item item : possibles) {
-      if (item.id.equals(string) && item.slot.equals(slot)) return item;
+      Boolean idMatches = item.hasSameDominionsId(id) || item.hasSameCustomItemName(id);
+
+      if (idMatches && item.slot.equals(slot)) {
+        return item;
+      }
     }
+
     return null;
   }
 
-  public ItemSet getItemsWithID(String string, String slot) {
-    ItemSet newset = new ItemSet();
-    ItemSet possibles = this; //this.filterTheme("elite", false).filterTheme("sacred", false);
+public ItemSet getItemsWithID(String id, String slot) {
+    ItemSet matchingItems = new ItemSet();
+    ItemSet possibles = this;
+    //this.filterTheme("elite", false).filterTheme("sacred", false);
+
     for (Item item : possibles) {
-      if (item.id.equals(string) && item.slot.equals(slot)) newset.add(item);
+      Item matchingItem = this.getItemWithID(id, slot);
+
+      if (matchingItem != null) {
+        matchingItems.add(item);
+      }
     }
-    return newset;
+
+    return matchingItems;
   }
 
   public Item getItemWithName(String name, String slot) {
@@ -135,65 +151,100 @@ public class ItemSet extends ArrayList<Item> {
     return null;
   }
 
-  public boolean alreadyHas(Item i) {
-    if (i == null) return true;
-
-    for (Item item : this) {
-      if (item.hasDominionsId()) {
-        if (item.id.equals(i.id) && i.isArmor() == item.isArmor()) return true;
-      } else if (item.id.equals(i.id) && item.name.equals(i.name)) return true;
+  public boolean alreadyHas(Item item) {
+    if (item == null) {
+      return true;
     }
+
+    for (Item i : this) {
+      // Dominions equipments must have same CustomItem id and type of equipment
+      if (i.isDominionsEquipment() && i.hasSameCustomItemName(item) && i.isArmor() == item.isArmor()) {
+        return true;
+      }
+
+      // Non Dominions equipments just match their Entity.name
+      else if (i.hasSameCustomItemName(item) && i.name.equals(item.name)) {
+        return true;
+      }
+    }
+
     return false;
   }
 
   public ItemSet filterNationGenDB(
-    String value,
-    String wanted,
-    boolean keepwanted,
+    String filterProperty,
+    String filterValue,
+    boolean exclude,
     NationGenDB db
   ) {
     ItemSet newlist = new ItemSet();
-    for (Item i : this) if (
-      db.GetValue(i.id, value, "0").equals(wanted) == keepwanted
-    ) newlist.add(i);
+
+    for (Item i : this) {
+      String itemValue = i.getValueFromDb(filterProperty, "0");
+      Boolean isEqualValue = itemValue.equals(filterValue);
+      Boolean shouldKeepItem = isEqualValue == true && exclude == false;
+
+      if (shouldKeepItem) {
+        newlist.add(i);
+      }
+    }
 
     return newlist;
   }
 
   public ItemSet filterNationGenDBInteger(
-    String value,
-    int wanted,
-    boolean below,
+    String filterProperty,
+    int filterValue,
+    boolean hasToBeLower,
     NationGenDB db
   ) {
     ItemSet newlist = new ItemSet();
-    for (Item i : this) if (
-      below && db.GetInteger(i.id, value) < wanted
-    ) newlist.add(i);
-    else if (!below && db.GetInteger(i.id, value) > wanted) newlist.add(i);
+
+    for (Item i : this) {
+      Integer itemValue = i.getIntegerFromDb(filterProperty, 0);
+
+      if (hasToBeLower && itemValue < filterValue) {
+        newlist.add(i);
+      }
+        
+      else if (!hasToBeLower && itemValue > filterValue) {
+        newlist.add(i);
+      }
+    }
 
     return newlist;
   }
 
   public ItemSet filterForRole(String role, Race race) {
-    ItemSet newlist = new ItemSet();
-    for (Item i : this) {
-      for (Pose p : race.poses) {
-        if (!p.roles.contains(role)) continue;
+    ItemSet filtered = new ItemSet();
 
-        if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-          if (i2.id.equals(i.id) && i.hasDominionsId() == false) newlist.add(i2);
-          else if (i2.id.equals(i.id) && i.name.equals(i2.name)) newlist.add(
-            i2
-          );
-          else if (
-            i2.id.equals(i.id) && i.sprite.equals(i2.sprite)
-          ) newlist.add(i2);
+    for (Item item : this) {
+      for (Pose pose : race.poses) {
+        if (!pose.roles.contains(role)) {
+          continue;
+        }
+
+        if (pose.getItems(item.slot) == null) {
+          continue;
+        }
+
+        for (Item poseItem : pose.getItems(item.slot)) {
+          if (!poseItem.isDominionsEquipment() && !item.isDominionsEquipment()) {
+            filtered.add(poseItem);
+          }
+
+          else if (poseItem.hasSameCustomItemName(item) && poseItem.name.equals(item.name)) {
+            filtered.add(poseItem);
+          }
+
+          else if (poseItem.hasSameCustomItemName(item) && poseItem.sprite.equals(item.sprite)) {
+            filtered.add(poseItem);
+          }
         }
       }
     }
 
-    return newlist;
+    return filtered;
   }
 
   public ItemSet filterForPosesWith(String role, Race race, Item olditem) {
@@ -221,37 +272,47 @@ public class ItemSet extends ArrayList<Item> {
     return ch.handleChanceIncs(u, this).getRandom(random);
   }
 
-  public ItemSet filterForPose(Pose p) {
-    ItemSet newlist = new ItemSet();
-    for (Item i : this) {
-      if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-        if (
-          i.id.equals(i2.id) &&
-          i.hasDominionsId() &&
-          (i.name.equals(i2.name) ||
-            i.sprite.equals(i2.name) ||
-            i2.tags.contains("replacement", i.name))
-        ) newlist.add(i2);
-        else if (
-          i.id.equals(i2.id) &&
-          (i.name.equals(i2.name) || i.sprite.equals(i2.name))
-        ) newlist.add(i2);
-      }
-    }
+  public ItemSet filterForPose(Pose pose) {
+    ItemSet filtered = new ItemSet();
 
-    if (newlist.possibleItems() == 0) {
-      for (Item i : this) {
-        if (p.getItems(i.slot) != null) for (Item i2 : p.getItems(i.slot)) {
-          if (i.id.equals(i2.id) && i.hasDominionsId()) newlist.add(i2);
-          else if (
-            i.id.equals(i2.id) &&
-            (i.name.equals(i2.name) || i.sprite.equals(i2.sprite))
-          ) newlist.add(i2);
+    // First pass - stricter filter
+    for (Item item : this) {
+      if (pose.getItems(item.slot) == null) {
+        continue;
+      }
+        
+      for (Item poseItem : pose.getItems(item.slot)) {
+        if (item.hasSameCustomItemName(poseItem) && item.name.equals(poseItem.name)) {
+          filtered.add(poseItem);
         }
       }
     }
 
-    return newlist;
+    // If no results, make a less strict 2nd pass
+    if (filtered.possibleItems() == 0) {
+      for (Item item : this) {
+        if (pose.getItems(item.slot) == null) {
+          continue; 
+        }
+
+        for (Item poseItem : pose.getItems(item.slot)) {
+          // Only check if both items share a Dominions equipment, even if they are not the same Item
+          if (item.isDominionsEquipment() && item.hasSameCustomItemName(poseItem)) {
+            filtered.add(poseItem);
+          }
+          
+          // For others with the same CustomItem name (even if it's "no custom item"),
+          // add them if they share a name or a sprite
+          else if (item.hasSameCustomItemName(poseItem)) {
+            if (item.name.equals(poseItem.name) || item.sprite.equals(poseItem.sprite)) {
+              filtered.add(poseItem);
+            }
+          }
+        }
+      }
+    }
+
+    return filtered;
   }
 
   public ItemSet getCopy() {
@@ -302,7 +363,11 @@ public class ItemSet extends ArrayList<Item> {
 
   public ItemSet filterAbstracts() {
     ItemSet newlist = new ItemSet();
-    for (Item i : this) if (i.hasDominionsId()) newlist.add(i);
+    for (Item i : this) {
+      if (i.isDominionsEquipment()) {
+        newlist.add(i);
+      }
+    }
 
     return newlist;
   }
@@ -315,29 +380,29 @@ public class ItemSet extends ArrayList<Item> {
   }
 
   public ItemSet filterImpossibleAdditions(List<Item> list) {
-    ItemSet newlist = new ItemSet();
-    newlist.addAll(this);
+    ItemSet filtered = new ItemSet();
+    filtered.addAll(this);
 
-    for (Item i : list) {
-      newlist.remove(i);
+    for (Item item : list) {
+      filtered.remove(item);
 
       // Remove stuff with the same ids or names or customid tag
-      List<Item> derps = new ArrayList<>();
+      List<Item> sameItems = new ArrayList<>();
 
-      for (Item i2 : newlist) {
+      for (Item otherItem : filtered) {
         if (
-          i2.isArmor() == i.isArmor() &&
-          i2.id.equals(i.id) &&
-          i.slot.equals(i2.slot) &&
-          i.hasDominionsId()
-        ) derps.add(i2);
-        else if (i2.name.equals(i.name) && i.slot.equals(i2.slot)) derps.add(
-          i2
-        );
+          otherItem.isArmor() == item.isArmor() &&
+          otherItem.isDominionsEquipment() &&
+          otherItem.hasSameCustomItemName(item) &&
+          otherItem.slot.equals(item.slot)
+        ) {
+          sameItems.add(otherItem);
+        }
       }
 
-      for (Item i2 : derps) newlist.remove(i2);
+      filtered.removeAll(sameItems);
     }
-    return newlist;
+
+    return filtered;
   }
 }

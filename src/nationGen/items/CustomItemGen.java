@@ -1,6 +1,5 @@
 package nationGen.items;
 
-import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
 
 import java.util.ArrayList;
@@ -89,7 +88,7 @@ public class CustomItemGen {
     // Add to custom item lists
     n.customitems.add(customItem);
     n.nationGen.GetCustomItemsHandler().AddCustomItem(customItem);
-    n.nationGen.weapondb.addToMap(customItem.id, customItem.getHashMap());
+    n.nationGen.weapondb.addToMap(customItem.dominionsId.getCustomItemName(), customItem.getHashMap());
   }
 
   private Boolean shouldBeMagic(
@@ -205,9 +204,9 @@ public class CustomItemGen {
     customItem.applyEnchantment(enchantment);
 
     // Use the enchantment to create an adjective for the item name
-    String name = n.nationGen.weapondb.GetValue(originalItem.id, "name");
+    String name = originalItem.getValueFromDb(ItemProperty.NAME.toDBColumn());
     name = this.addEnchantmentAdjectives(name, enchantment);
-    customItem.setCustomCommand("#name", name);
+    customItem.setCustomCommand(ItemProperty.NAME.toModCommand(), name);
 
     // Increase item gold cost if enchantment has extra cost for its type
     for (Args args : enchantment.tags.getAllArgs("gcost")) {
@@ -335,7 +334,7 @@ public class CustomItemGen {
       String natgenCustomId = args.get(1).get();
 
       // If there is one and it's the same as the original item id (same type of weapon)
-      if (args.size() > 1 && dominionsWeaponId.equals(originalItem.id)) {
+      if (originalItem.hasSameDominionsId(dominionsWeaponId)) {
         // Then try to find a special look within the pose item options
         Item specialLooksItem = unit.pose
           .getItems(originalItem.slot)
@@ -352,21 +351,21 @@ public class CustomItemGen {
   }
 
   private void nameCustomItem(Item originalItem, CustomItem customItem, Boolean isMagic) {
-    String name = n.nationGen.weapondb.GetValue(originalItem.id, "name");
+    String name = originalItem.getValueFromDb(ItemProperty.NAME.toDBColumn());
 
     // If not a magic item and doesn't already have a custom display name, give it a generic one
     if (!isMagic && (customItem.magicItem == null || !customItem.hasCustomName())) {
-      customItem.setCustomCommand("#name", "Exceptional " + name);
+      customItem.setCustomCommand(ItemProperty.NAME.toModCommand(), "Exceptional " + name);
     }
 
     // If it is a magic item and doesn't already have a custom display name, give it a generic one
     else if (isMagic && (customItem.magicItem == null || !customItem.hasCustomName())) {
-      customItem.setCustomCommand("#name", "Enchanted " + name);
+      customItem.setCustomCommand(ItemProperty.NAME.toModCommand(), "Enchanted " + name);
     }
 
     // Construct an underlying name id for later use (not a display name)
     String dname = "nation_" + n.nationid + "_customitem_" + (n.customitems.size() + 1);
-    customItem.id = dname;
+    customItem.dominionsId.setCustomItemName(dname);
     customItem.name = dname;
   }
 
@@ -375,7 +374,7 @@ public class CustomItemGen {
       return Optional.empty();
     }
 
-    if (!Generic.isNumeric(item.id)) {
+    if (!item.dominionsId.isResolved()) {
       return Optional.empty();
     }
 
@@ -397,21 +396,20 @@ public class CustomItemGen {
 
   public Optional<CustomItem> copyPropertiesFromWeapon(Item item) {
     CustomItem customItem = CustomItem.fromItem(item, n.nationGen);
-    NationGenDB weaponDb = n.nationGen.weapondb;
-    String weaponName = weaponDb.GetValue(item.id, "name");
+    String weaponName = item.getValueFromDb(ItemProperty.NAME.toDBColumn());
     
     if (weaponName.isBlank()) {
       return Optional.empty();
     }
 
     else {
-      customItem.setCustomCommand("#name", weaponName);
+      customItem.setCustomCommand(ItemProperty.NAME.toModCommand(), weaponName);
     }
 
     for (ItemProperty property : ItemProperty.values()) {
       String dbColumn = property.toDBColumn();
       String modCommand = property.toModCommand();
-      String originalValue = weaponDb.GetValue(item.id, dbColumn, "");
+      String originalValue = item.getValueFromDb(dbColumn);
       Boolean isBooleanProperty = property.isBoolean();
       
       if (originalValue.isBlank()) {
@@ -432,7 +430,7 @@ public class CustomItemGen {
 
       // Special mod properties that need more than one value are in the below else ifs
       else if (property == ItemProperty.FLYSPRITE) {
-        String speed = weaponDb.GetValue(item.id, ItemProperty.ANIM_LENGTH.toDBColumn(), "1");
+        String speed = item.getValueFromDb(ItemProperty.ANIM_LENGTH.toDBColumn(), "1");
         customItem.setCustomCommand(modCommand, originalValue, speed);
       }
 

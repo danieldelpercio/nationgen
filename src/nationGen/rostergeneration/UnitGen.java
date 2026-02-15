@@ -13,6 +13,7 @@ import nationGen.entities.Filter;
 import nationGen.entities.Pose;
 import nationGen.entities.Race;
 import nationGen.items.Item;
+import nationGen.items.ItemProperty;
 import nationGen.misc.Args;
 import nationGen.misc.ChanceIncHandler;
 import nationGen.misc.Command;
@@ -399,7 +400,7 @@ public class UnitGen {
     Command targettag
   ) {
     // Find chest armor protection to apply mounts' minprot and maxprot filters
-    int prot = nationGen.armordb.GetInteger(u.getSlot("armor").id, "prot");
+    int prot = u.getSlot("armor").getIntegerFromDb(ItemProperty.PROTECTION.toDBColumn(), 0);
     ItemSet finalMountPool = new ItemSet();
     Command racialMountPreference = null;
     Item selectedMount = null;
@@ -522,20 +523,20 @@ public class UnitGen {
 
     // Same name and slot
     for (Item i : to.getItems(slot)) {
-      if (i != null) if (i.name.equals(ui.name) && i.id.equals(ui.id)) return i;
+      if (i != null) if (i.name.equals(ui.name) && i.isSameDominionsEquipment(ui)) return i;
     }
 
     // Same image and id
     for (Item i : to.getItems(slot)) {
       if (i != null) if (
-        i.sprite.equals(ui.sprite) && i.id.equals(ui.id)
+        i.sprite.equals(ui.sprite) && i.hasSameDominionsId(ui)
       ) return i;
     }
 
     // Same id and armor type
     for (Item i : to.getItems(slot)) {
       if (i != null) if (
-        i.id.equals(ui.id) &&
+        i.hasSameDominionsId(ui) &&
         i.isArmor() == ui.isArmor() &&
         ((i.tags.containsName("elite") == ui.tags.containsName("elite")) ||
           i.tags.containsName("sacred") == ui.tags.containsName("sacred"))
@@ -544,7 +545,7 @@ public class UnitGen {
 
     // Same id and armor type
     for (Item i : to.getItems(slot)) {
-      if (i != null) if (i.id.equals(ui.id) && i.isArmor() == ui.isArmor()) return i;
+      if (i != null) if (i.hasSameDominionsId(ui) && i.isArmor() == ui.isArmor()) return i;
     }
 
     return null;
@@ -628,7 +629,7 @@ public class UnitGen {
         Item armor = u.getSlot("armor");
         int prot = armor == null
           ? 0
-          : nationGen.armordb.GetInteger(armor.id, "prot");
+          : armor.getIntegerFromDb(ItemProperty.PROTECTION.toDBColumn(), 0);
 
         if (prot < 10 && random.nextDouble() > 0.5 && !mage) {
           ItemSet test = all.filterNationGenDBInteger(
@@ -696,7 +697,7 @@ public class UnitGen {
 
           boolean availableLance = false;
           for (Item i : u.pose.getItems("lanceslot")) if (
-            i.id.equals("4") || i.tags.containsName("lance")
+            i.hasSameDominionsId("4") || i.tags.containsName("lance")
           ) availableLance = true;
 
           if (10 + random.nextInt(20) > ap && availableLance) canGetLance =
@@ -712,7 +713,7 @@ public class UnitGen {
             if (
               u.pose.getItems("lanceslot") != null
             ) for (Item i : u.pose.getItems("lanceslot")) if (
-              i.id.equals("4") || i.tags.containsName("lance")
+              i.hasSameDominionsId("4") || i.tags.containsName("lance")
             ) lances.add(i);
 
             ItemSet onehand = included
@@ -727,7 +728,7 @@ public class UnitGen {
 
             ItemSet llances = new ItemSet();
             for (Item i : u.pose.getItems("weapon")) if (
-              i.id.equals("357") || i.tags.containsName("lightlance")
+              i.hasSameDominionsId("357") || i.tags.containsName("lightlance")
             ) llances.add(i);
 
             onehand.removeAll(llances);
@@ -744,7 +745,7 @@ public class UnitGen {
           } else if (choice == 2) {
             ItemSet lances = new ItemSet();
             for (Item i : u.pose.getItems("weapon")) if (
-              i.id.equals("357") || i.tags.containsName("lightlance")
+              i.hasSameDominionsId("357") || i.tags.containsName("lightlance")
             ) lances.add(i);
 
             if (lances.possibleItems() > 0) {

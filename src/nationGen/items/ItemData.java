@@ -12,21 +12,24 @@ public class ItemData {
   private String oldId = "";
   private String name = "";
   private NationGen nationGen;
+  private ItemType type;
 
-  public ItemData(String id, String name, NationGen nationGen) {
+  public ItemData(String id, String name, NationGen nationGen, ItemType itemType) {
     this.id = id;
     this.name = name;
     this.nationGen = nationGen;
+    this.type = itemType;
   }
 
   public ItemData(Item item) {
     if (item instanceof CustomItem) {
-      this.oldId = item.tags.getString("OLDID").get();
+      this.oldId = item.dominionsId.getCustomItemName();
     }
 
-    this.id = item.id;
+    this.id = item.getDominionsEquipmentId();
     this.name = item.name;
     this.nationGen = item.nationGen;
+    this.type = (item.isWeapon()) ? ItemType.WEAPON : ItemType.ARMOR;
   }
 
   public String getId() {
@@ -41,12 +44,17 @@ public class ItemData {
     return this.name;
   }
 
-  public String getDisplayName(String dbColumn) {
-    String dominionsName = nationGen.weapondb.GetValue(
-      id,
-      dbColumn,
-      ""
-    );
+  public String getDisplayName() {
+    String dominionsName;
+
+    if (type == ItemType.WEAPON) {
+      dominionsName = nationGen.weapondb.GetValue(id, ItemProperty.NAME.toDBColumn(), "");
+    }
+
+    else {
+      dominionsName = nationGen.armordb.GetValue(id, ItemProperty.NAME.toDBColumn(), "");
+    }
+    
 
     if (dominionsName.isBlank()) {
       return this.name;

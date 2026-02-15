@@ -13,6 +13,7 @@ import nationGen.NationGenAssets;
 import nationGen.chances.EntityChances;
 import nationGen.entities.*;
 import nationGen.items.Item;
+import nationGen.items.ItemProperty;
 import nationGen.misc.*;
 import nationGen.nation.Nation;
 import nationGen.rostergeneration.CommanderGenerator;
@@ -547,7 +548,6 @@ public class MageGenerator extends TroopGenerator {
 
     for (int i = 0; i < mages.size(); i++) {
       for (Unit u : mages.get(i)) {
-        double leadership = randomizeLeadership(u, 0, getMageTier(u));
         ensureSpecialLeadership(u, false);
       }
 
@@ -2102,21 +2102,22 @@ public class MageGenerator extends TroopGenerator {
   }
 
   private void polishUnit(Unit unit) {
-    if (unit.getSlot("weapon") != null) {
+    Item weapon = unit.getSlot("weapon");
+    Item offhand = unit.getSlot("offhand");
+
+    if (weapon != null) {
       boolean troop =
         Generic.getAllUnitTags(unit).containsName("troopweapon") ||
-        unit.getSlot("weapon").tags.containsName("troopweapon");
+        weapon.tags.containsName("troopweapon");
 
       if (troop) {
-        if (
-          nationGen.weapondb.GetInteger(unit.getSlot("weapon").id, "lgt") >= 3
-        ) {
-          if (
-            unit.getSlot("offhand") != null && !unit.getSlot("offhand").isArmor()
-          ) unit.setSlot("offhand", null);
-        } else if (
-          nationGen.weapondb.GetInteger(unit.getSlot("weapon").id, "2h") == 1
-        ) {
+        if (weapon.getIntegerFromDb(ItemProperty.LENGTH.toDBColumn(), 0) >= 3) {
+          if (offhand != null && !offhand.isArmor()) {
+            unit.setSlot("offhand", null);
+          }
+        }
+        
+        else if (weapon.getBooleanFromDb(ItemProperty.IS_2H.toDBColumn())) {
           unit.setSlot("offhand", null);
         }
       }

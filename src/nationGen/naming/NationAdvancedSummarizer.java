@@ -10,6 +10,7 @@ import nationGen.entities.Filter;
 import nationGen.entities.Race;
 import nationGen.entities.Theme;
 import nationGen.items.Item;
+import nationGen.items.ItemProperty;
 import nationGen.magic.MagicPath;
 import nationGen.magic.MagicPathInts;
 import nationGen.misc.Command;
@@ -262,21 +263,25 @@ public class NationAdvancedSummarizer {
   }
 
   private List<String> getWeaponNames(Unit u) {
-    return u.slotmap
+    List<String> weaponNames = u.slotmap
       .items()
       .filter(Item::isWeapon)
-      .filter(Item::hasDominionsId)
-      .map(i -> weapondb.GetValue(i.id, "name"))
+      .filter(Item::isDominionsEquipment)
+      .map(i -> i.getValueFromDb(ItemProperty.NAME.toDBColumn()))
       .collect(Collectors.toList());
+
+    return weaponNames;
   }
 
   private List<String> getArmorNames(Unit u) {
-    return u.slotmap
+    List<String> armorNames = u.slotmap
       .items()
       .filter(Item::isArmor)
-      .filter(Item::hasDominionsId)
-      .map(i -> armordb.GetValue(i.id, "name"))
+      .filter(Item::isDominionsEquipment)
+      .map(i -> i.getValueFromDb(ItemProperty.NAME.toDBColumn()))
       .collect(Collectors.toList());
+
+    return armorNames;
   }
 
   private Optional<String> getMountName(Unit u) {

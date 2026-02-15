@@ -50,19 +50,33 @@ public class SlotMap {
     return stack == null ? null : stack.peek();
   }
 
+  Stream<Item> getDominionsEquipment() {
+    return this.items().filter(Item::isDominionsEquipment);
+  }
+
   Stream<Item> getEquippedArmors() {
     return this.items()
-      .filter(i -> i.isArmor() && i.hasDominionsId());
+      .filter(Item::isArmor)
+      .filter(Item::isDominionsEquipment);
+  }
+
+  Stream<Item> getEquippedShields() {
+    return this.items()
+      .filter(Item::isShield)
+      .filter(Item::isDominionsEquipment);
   }
 
   Stream<Item> getEquippedWeapons() {
     return this.items()
-      .filter(i -> i.isWeapon() && i.hasDominionsId());
+      .filter(Item::isWeapon)
+      .filter(Item::isDominionsEquipment);
   }
 
   Stream<Item> getResolvedWeapons() {
     return this.items()
-      .filter(i -> i.isWeapon() == true && i.isCustomIdResolved());
+      .filter(Item::isWeapon)
+      .filter(Item::isDominionsEquipment)
+      .filter(i -> i.dominionsId.isResolved());
   }
 
   void push(String slot, Item item) {
