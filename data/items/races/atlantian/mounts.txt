@@ -518,7 +518,7 @@
 #newitem
 #id "dire_wolf_turtle_shell_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf2.png
+#sprite /graphics/mounts/standard/direwolf2_armored_turtle_shell.png
 #offsetx -4
 #offsety -16
 #armor
@@ -537,7 +537,7 @@
 #newitem
 #id "dire_wolf_coral_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf2.png
+#sprite /graphics/mounts/standard/direwolf2_armored_coral.png
 #offsetx -4
 #offsety -16
 #armor

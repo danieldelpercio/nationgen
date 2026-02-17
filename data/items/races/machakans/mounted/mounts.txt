@@ -1109,7 +1109,7 @@
 #newitem
 #id "bear_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/bear_small_armored_mail.png
+#sprite /graphics/mounts/standard/bear_small_armored_light_scale.png
 #armor
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #mountmnr "bear_mount"

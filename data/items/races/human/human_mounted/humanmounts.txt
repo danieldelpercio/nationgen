@@ -2215,7 +2215,7 @@
 #newitem
 #id "bear_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/bear_small_armored_mail.png
+#sprite /graphics/mounts/standard/bear_small_armored_light_scale.png
 #armor
 #description "If the rider dies, the bear will carry on fighting until the end of the battle."
 #mountmnr "bear_mount"
@@ -2858,7 +2858,7 @@
 #newitem
 #id "dire_wolf_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_light_bronze.png
 #armor
 #needs overlay direwolf1_overlay
 #offsety 2
@@ -2877,7 +2877,7 @@
 #newitem
 #id "dire_wolf_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_light_scale.png
 #armor
 #needs overlay direwolf1_overlay
 #offsety 2
@@ -2896,7 +2896,7 @@
 #newitem
 #id "dire_wolf_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_mail_bronze.png
 #armor
 #needs overlay direwolf1_overlay
 #offsety 2
@@ -2914,7 +2914,7 @@
 #newitem
 #id "dire_wolf_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_mail.png
 #armor
 #needs overlay direwolf1_overlay
 #offsety 2
@@ -2932,7 +2932,7 @@
 #newitem
 #id "dire_wolf_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_cataphract.png
 #armor
 #needs overlay direwolf1_overlay
 #offsety 2
@@ -2951,7 +2951,7 @@
 #newitem
 #id "dire_wolf_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_bronze.png
 #armor
 #needs overlay direwolf1_overlay
 #offsety 2
@@ -2970,7 +2970,7 @@
 #newitem
 #id "dire_wolf_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_plate.png
 #armor
 #needs overlay direwolf1_overlay
 #offsety 2

@@ -603,7 +603,7 @@
 #newitem
 #id "dog_leather_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/dog.png
+#sprite /graphics/mounts/standard/dog_armored_leather.png
 #offsety -7
 #offsetx -1
 #armor
@@ -622,7 +622,7 @@
 #newitem
 #id "dog_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/dog.png
+#sprite /graphics/mounts/standard/dog_armored_light_scale.png
 #offsety -7
 #offsetx -1
 #armor
@@ -640,7 +640,7 @@
 #newitem
 #id "dog_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/dog.png
+#sprite /graphics/mounts/standard/dog_armored_mail.png
 #offsety -7
 #offsetx -1
 #armor
@@ -656,7 +656,7 @@
 #newitem
 #id "dog_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/dog.png
+#sprite /graphics/mounts/standard/dog_armored_plate.png
 #offsety -7
 #offsetx -1
 #armor

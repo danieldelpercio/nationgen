@@ -605,8 +605,7 @@
 #newitem
 #id "cu_sidhe_bronze_mail_barding"
 #gameid -1
--- PLACEHOLDER SPRITE
-#sprite /graphics/sidhe/mounts/cu_sidhe_armored_mail.png
+#sprite /graphics/sidhe/mounts/cu_sidhe_armored_mail_bronze.png
 #armor
 #offsetx -5
 #offsety 2

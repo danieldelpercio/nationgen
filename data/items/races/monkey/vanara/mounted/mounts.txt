@@ -353,7 +353,7 @@
 
 
 #newitem
-#id "dire_wolf"
+#id "dire_wolf_imperial"
 #gameid -1
 #sprite /graphics/mounts/standard/direwolf1.png
 #armor
@@ -370,9 +370,9 @@
 #enditem
 
 #newitem
-#id "dire_wolf_light_bronze_barding"
+#id "dire_wolf_imperial_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_light_bronze.png
 #armor
 #offsety 0
 #offsetx -9
@@ -390,9 +390,9 @@
 #enditem
 
 #newitem
-#id "dire_wolf_light_scale_barding"
+#id "dire_wolf_imperial_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_light_scale.png
 #armor
 #offsety 0
 #offsetx -9
@@ -410,9 +410,9 @@
 #enditem
 
 #newitem
-#id "dire_wolf_bronze_mail_barding"
+#id "dire_wolf_imperial_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_mail_bronze.png
 #armor
 #offsety 0
 #offsetx -9
@@ -429,9 +429,9 @@
 #enditem
 
 #newitem
-#id "dire_wolf_iron_mail_barding"
+#id "dire_wolf_imperial_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_mail.png
 #armor
 #offsety 0
 #offsetx -9
@@ -448,9 +448,9 @@
 #enditem
 
 #newitem
-#id "dire_wolf_cataphract_barding"
+#id "dire_wolf_imperial_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_cataphract.png
 #armor
 #offsety 0
 #offsetx -9
@@ -467,9 +467,9 @@
 #enditem
 
 #newitem
-#id "dire_wolf_bronze_barding"
+#id "dire_wolf_imperial_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_bronze.png
 #armor
 #offsety 0
 #offsetx -9
@@ -487,9 +487,9 @@
 #enditem
 
 #newitem
-#id "dire_wolf_plate_barding"
+#id "dire_wolf_imperial_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_plate.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2009,7 +2009,7 @@
 #newitem
 #id "black_tiger_silver_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/black_tiger_armored_plate.png
+#sprite /graphics/mounts/standard/black_tiger_armored_silver.png
 #armor
 #offsetx -4
 #offsety 4
@@ -2229,7 +2229,7 @@
 #newitem
 #id "dire_wolf_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_light_bronze.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2250,7 +2250,7 @@
 #newitem
 #id "dire_wolf_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_light_scale.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2271,7 +2271,7 @@
 #newitem
 #id "dire_wolf_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_mail_bronze.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2291,7 +2291,7 @@
 #newitem
 #id "dire_wolf_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_mail.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2311,7 +2311,7 @@
 #newitem
 #id "dire_wolf_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_cataphract.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2331,7 +2331,7 @@
 #newitem
 #id "dire_wolf_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_bronze.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2352,7 +2352,7 @@
 #newitem
 #id "dire_wolf_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_plate.png
 #armor
 #offsety 0
 #offsetx -9
@@ -2372,7 +2372,7 @@
 
 
 #newitem
-#id "lion"
+#id "lion_imperial"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2390,7 +2390,7 @@
 #enditem
 
 #newitem
-#id "lion_light_bronze_barding"
+#id "lion_imperial_light_bronze_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2411,7 +2411,7 @@
 #enditem
 
 #newitem
-#id "lion_light_scale_barding"
+#id "lion_imperial_light_scale_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2432,7 +2432,7 @@
 #enditem
 
 #newitem
-#id "lion_bronze_mail_barding"
+#id "lion_imperial_bronze_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2453,7 +2453,7 @@
 #enditem
 
 #newitem
-#id "lion_iron_mail_barding"
+#id "lion_imperial_iron_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2474,7 +2474,7 @@
 #enditem
 
 #newitem
-#id "lion_cataphract_barding"
+#id "lion_imperial_cataphract_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2496,7 +2496,7 @@
 #enditem
 
 #newitem
-#id "lion_bronze_barding"
+#id "lion_imperial_bronze_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2519,7 +2519,7 @@
 #enditem
 
 #newitem
-#id "lion_plate_barding"
+#id "lion_imperial_plate_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/lion_asian.png
 #armor
@@ -2769,7 +2769,7 @@
 #newitem
 #id "bear_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/bear_small_armored_mail.png
+#sprite /graphics/mounts/standard/bear_small_armored_light_scale.png
 #armor
 #offsety 4
 #offsetx -5

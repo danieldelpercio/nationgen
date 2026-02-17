@@ -422,7 +422,7 @@
 #newitem
 #id "dire_wolf_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_light_scale.png
 #armor
 #needs overlay direwolf1_overlay
 #mountmnr "dire_wolf_mount_1"
@@ -442,7 +442,7 @@
 #newitem
 #id "dire_wolf_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_mail.png
 #armor
 #needs overlay direwolf1_overlay
 #mountmnr "dire_wolf_mount_1"
@@ -462,7 +462,7 @@
 #newitem
 #id "dire_wolf_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_cataphract.png
 #armor
 #needs overlay direwolf1_overlay
 #mountmnr "dire_wolf_mount_1"
@@ -482,7 +482,7 @@
 #newitem
 #id "dire_wolf_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/direwolf1.png
+#sprite /graphics/mounts/standard/direwolf1_armored_plate.png
 #armor
 #needs overlay direwolf1_overlay
 #mountmnr "dire_wolf_mount_1"

@@ -687,7 +687,7 @@
 #newitem
 #id "black_tiger_silver_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/black_tiger_armored_plate.png
+#sprite /graphics/mounts/standard/black_tiger_armored_silver.png
 #armor
 #offsetx -4
 #offsety 4
