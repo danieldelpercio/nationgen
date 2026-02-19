@@ -48,7 +48,7 @@ public class Item extends Drawable {
     String value = db.GetValue(itemIdInDb, dbColumn);
 
     if (value.isBlank()) {
-      itemIdInDb = this.name;
+      itemIdInDb = this.dominionsId.getCustomItemName();
       value = db.GetValue(itemIdInDb, dbColumn);
     }
 
