@@ -280,10 +280,8 @@ public class DescriptionReplacer {
       Boolean nameExistsInDb = itemName.isBlank() == false;
 
       if (nameExistsInDb == false) {
-        descriptions.add(new Phrase(
-          "NOT IN DB: " + item.name + " in " + item.slot + " slot",
-          "NOT IN DB: " + item.name + " in " + item.slot + " slot"
-        ));
+        String notInDb = "NOT IN DB: " + item.name + " in " + item.slot + " slot";
+        descriptions.add(new Phrase(notInDb, notInDb));
       }
 
       else if (!addedNames.contains(itemName)) {

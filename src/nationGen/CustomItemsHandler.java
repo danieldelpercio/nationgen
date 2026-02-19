@@ -103,12 +103,16 @@ public class CustomItemsHandler {
     }
 
     if (idHandler != null) {
+      Integer nextId;
+
       if (customItem.isArmor()) {
-        customItem.dominionsId.setDominionsId(idHandler.nextArmorId());
+        nextId = idHandler.nextArmorId();
+        customItem.dominionsId.setDominionsId(nextId);
       }
       
       else {
-        customItem.dominionsId.setDominionsId(idHandler.nextWeaponId());
+        nextId = idHandler.nextWeaponId();
+        customItem.dominionsId.setDominionsId(nextId);
       }
     }
     

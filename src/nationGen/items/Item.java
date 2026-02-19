@@ -372,4 +372,28 @@ public class Item extends Drawable {
       );
     }
   }
+
+  @Override
+  protected void finish() {
+    if (this.isDominionsEquipment() == false) {
+      return;
+    }
+
+    if (this.isArmor()) {
+      return;
+    }
+
+    // If not an explicit armor type, this must be a weapon
+    this.addType(ItemType.WEAPON);
+
+    // Check DB for vanilla item range to determine if it's ranged
+    if (this.getIntegerFromDb(ItemProperty.RANGE.toDBColumn(), 0) > 0) {
+      this.addType(ItemType.RANGED);
+    }
+
+    // If not ranged, this must be melee
+    else {
+      this.addType(ItemType.MELEE);
+    }
+  }
 }

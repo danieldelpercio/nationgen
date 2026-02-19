@@ -206,6 +206,22 @@ public class CustomItem extends Item {
   @Override
   protected void finish() {
     this.dominionsId.setCustomItemName(this.name);
+
+    if (this.isArmor()) {
+      return;
+    }
+
+    // If not an explicit armor type, this must be a weapon
+    this.addType(ItemType.WEAPON);
+
+    // Check CustomItem mod command definition for range command
+    if (!this.hasType(ItemType.RANGED) && this.hasCustomCommand(ItemProperty.RANGE.toModCommand())) {
+      this.addType(ItemType.RANGED);
+    }
+
+    else if (!this.hasType(ItemType.MELEE)) {
+      this.addType(ItemType.MELEE);
+    }
   }
 
   public LinkedHashMap<String, String> getHashMap() {
