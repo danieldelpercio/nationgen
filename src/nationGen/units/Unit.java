@@ -1325,22 +1325,22 @@ public class Unit {
   }
 
   public void polish() {
-    if (this.polished) return;
+    if (this.polished) {
+      return;
+    }
 
-    final Unit u = this;
-    Boolean copystats = this.hasCopyStats();
-    Item weapon = this.getSlot("weapon");
-    Item offhand = this.getSlot("offhand");
-    Item bonusweapon = this.getSlot("bonusweapon");
+    final Unit unit = this;
+    Item weapon = unit.getSlot("weapon");
+    Item offhand = unit.getSlot("offhand");
 
-    handleLowEncCommandPolish(u.pose.tags);
-    handleLowEncCommandPolish(u.race.tags);
+    handleLowEncCommandPolish(unit.pose.tags);
+    handleLowEncCommandPolish(unit.race.tags);
 
     for (Filter f : appliedFilters) {
       handleLowEncCommandPolish(f.tags);
     }
 
-    if (u.name.toString(this).equals("\"\"")) {
+    if (unit.name.toString(this).equals("\"\"")) {
       System.out.println("UNIT NAMING ERROR! PLEASE REPORT THE SEED!");
     }
 
@@ -1356,50 +1356,33 @@ public class Unit {
       .forEach(slot -> setSlot(slot, null));
 
     // +2hp to mounted
-    if (this.isMounted()) {
+    if (this.isMounted() != null) {
       this.commands.add(Command.args("#hp", "+2"));
       this.tags.addArgs("itemslot", "feet", -1);
     }
 
     // Ambidextrous. Should be after custom equipment handling and before command cleanup
-    if (offhand != null && !offhand.isArmor()) {
-      int len = 0;
+    if (this.isDualWielding()) {
+      int totalLength = Integer.parseInt(offhand.getValueFromDb(ItemProperty.LENGTH.toDBColumn(), "0"));
 
       if (weapon != null) {
-        len += weapon.getIntegerFromDb(ItemProperty.LENGTH.toDBColumn(), 0);
+        totalLength += Integer.parseInt(weapon.getValueFromDb(ItemProperty.LENGTH.toDBColumn(), "0"));
       }
 
-      len += offhand.getIntegerFromDb(ItemProperty.LENGTH.toDBColumn(), 0);
-      this.commands.add(Command.args("#ambidextrous", "+" + Math.max(1, len)));
+      this.commands.add(Command.args("#ambidextrous", "+" + Math.max(1, totalLength)));
     }
 
     // Fist for things without proper weapons
-    if (
-      !pose.tags.containsName("no_free_fist") &&
-      !copystats &&
-      getClass() != ShapeChangeUnit.class
-    ) if (
-      weapon == null ||
-      weapon.isDominionsEquipment() == false ||
-      weapon.getIntegerFromDb(ItemProperty.RANGE.toDBColumn(), 0) != 0
-    ) {
-      if (
-        bonusweapon == null ||
-        bonusweapon.isDominionsEquipment() == false ||
-        bonusweapon.getIntegerFromDb(ItemProperty.RANGE.toDBColumn(), 0) != 0
-      ) {
-        this.commands.add(
-            new Command(
-              "#weapon",
-              Args.of(new Arg(92)),
-              "Fist given to units that could otherwise only kick."
-            )
-        );
-      }
+    if (this.lacksMeleeWeapon()) {
+      int fistWeaponDominionsId = 92;
+      Arg fistArg = new Arg(fistWeaponDominionsId);
+      String commandDescription = "Fist given to units that could otherwise only kick.";
+      Command fistWeaponCommand = new Command("#weapon", Args.of(fistArg), commandDescription);
+      this.commands.add(fistWeaponCommand);
     }
-
+                                                        
     // Clean up commands
-    List<Command> commands = u.getCommands();
+    List<Command> commands = unit.getCommands();
 
     for (Command c : commands) {
       if (
@@ -1444,7 +1427,7 @@ public class Unit {
 
     // Add all gathered and polished commands to unit's own commands field
     // This is why polish() should ALWAYS be done at the end of generation
-    u.commands = commands;
+    unit.commands = commands;
 
     // Check for morale over 50
     for (Command c : commands) {
@@ -1464,10 +1447,39 @@ public class Unit {
     }
 
     if (this.isMage()) {
-      MageGenerator.ensureSpecialLeadership(u, false);
+      MageGenerator.ensureSpecialLeadership(unit, false);
     }
 
     polished = true;
+  }
+
+  public Boolean lacksMeleeWeapon() {
+    Item weapon = this.getSlot("weapon");
+    Item bonusWeapon = this.getSlot("bonusweapon");
+    Boolean cannotHaveFreeFist = pose.tags.containsName("no_free_fist");
+    Boolean isShapeChangeClass = getClass() == ShapeChangeUnit.class;
+
+    if (cannotHaveFreeFist) {
+      return false;
+    }
+
+    if (isShapeChangeClass) {
+      return false;
+    }
+
+    if (this.hasCopyStats()) {
+      return false;
+    }
+
+    if (weapon != null && weapon.isDominionsEquipment() && weapon.isMeleeWeapon()) {
+      return false;
+    }
+
+    if (bonusWeapon != null && bonusWeapon.isDominionsEquipment() && bonusWeapon.isMeleeWeapon()) {
+      return false;
+    }
+
+    return true;
   }
 
   protected void handleCommand(List<Command> commands, Command c) {
