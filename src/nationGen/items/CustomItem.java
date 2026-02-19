@@ -203,6 +203,11 @@ public class CustomItem extends Item {
     }
   }
 
+  @Override
+  protected void finish() {
+    this.dominionsId.setCustomItemName(this.name);
+  }
+
   public LinkedHashMap<String, String> getHashMap() {
     LinkedHashMap<String, String> map = new LinkedHashMap<>();
 
