@@ -104,7 +104,7 @@
 #newitem
 #id "elk_turtle_shell_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk_armored_turle_shell.png
+#sprite /graphics/mounts/standard/elk_armored_turtle_shell.png
 #needs overlay elk_overlay
 #armor
 #offsetx 0
