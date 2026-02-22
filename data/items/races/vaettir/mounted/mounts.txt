@@ -275,7 +275,6 @@
 #id "elk_light_scale_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/elk_armored_light_scale.png
-#needs overlay elk_overlay
 #armor
 #offsety -20
 #offsetx 0
@@ -298,7 +297,6 @@
 #id "elk_iron_mail_barding"
 #gameid -1
 #sprite /graphics/mounts/standard/elk_armored_mail.png
-#needs overlay elk_overlay
 #armor
 #offsety -20
 #offsetx 0
