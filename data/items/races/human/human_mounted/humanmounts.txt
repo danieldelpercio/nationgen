@@ -1521,7 +1521,7 @@
 #newitem
 #id "elk_light_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk.png
+#sprite /graphics/mounts/standard/elk_armored_light_bronze.png
 #needs overlay elk_overlay
 #armor
 #offsetx -2
@@ -1540,7 +1540,7 @@
 #newitem
 #id "elk_light_scale_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk.png
+#sprite /graphics/mounts/standard/elk_armored_light_scale.png
 #needs overlay elk_overlay
 #armor
 #offsetx -2
@@ -1559,7 +1559,7 @@
 #newitem
 #id "elk_bronze_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk.png
+#sprite /graphics/mounts/standard/elk_armored_mail_bronze.png
 #needs overlay elk_overlay
 #armor
 #offsetx -2
@@ -1577,7 +1577,7 @@
 #newitem
 #id "elk_iron_mail_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk.png
+#sprite /graphics/mounts/standard/elk_armored_mail.png
 #needs overlay elk_overlay
 #armor
 #offsetx -2
@@ -1595,7 +1595,7 @@
 #newitem
 #id "elk_cataphract_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk.png
+#sprite /graphics/mounts/standard/elk_armored_cataphract.png
 #needs overlay elk_overlay
 #armor
 #offsetx -2
@@ -1614,7 +1614,7 @@
 #newitem
 #id "elk_bronze_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk.png
+#sprite /graphics/mounts/standard/elk_armored_bronze.png
 #needs overlay elk_overlay
 #armor
 #offsetx -2
@@ -1633,7 +1633,7 @@
 #newitem
 #id "elk_plate_barding"
 #gameid -1
-#sprite /graphics/mounts/standard/elk.png
+#sprite /graphics/mounts/standard/elk_armored_plate.png
 #needs overlay elk_overlay
 #armor
 #offsetx -2
