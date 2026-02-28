@@ -25,6 +25,7 @@ import nationGen.naming.NamingHandler;
 import nationGen.naming.NationAdvancedSummarizer;
 import nationGen.nation.Nation;
 import nationGen.restrictions.NationRestriction;
+import nationGen.rostergeneration.montagtemplates.MontagPools;
 import nationGen.units.MountUnit;
 import nationGen.units.ShapeChangeUnit;
 import nationGen.units.ShapeShift;
@@ -55,6 +56,7 @@ public class NationGen {
   public List<ShapeChangeUnit> forms = new ArrayList<>();
   private List<Spell> spellsToWrite = new ArrayList<>();
   private List<Spell> freeSpells = new ArrayList<>();
+  public MontagPools montagPools = new MontagPools(this);
 
   private ReentrantLock pauseLock;
   private boolean shouldAbort = false;
@@ -378,6 +380,10 @@ public class NationGen {
 
   public int getNextUnitId() {
     return idHandler.nextUnitId();
+  }
+
+  public int nextMontagId() {
+    return idHandler.nextMontagId();
   }
 
   /**

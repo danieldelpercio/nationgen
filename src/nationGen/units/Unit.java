@@ -37,6 +37,7 @@ import nationGen.misc.Tags;
 import nationGen.misc.Utils;
 import nationGen.naming.Name;
 import nationGen.nation.Nation;
+import nationGen.rostergeneration.montagtemplates.MontagCommand;
 
 public class Unit {
 
@@ -1448,6 +1449,16 @@ public class Unit {
     }
 
     polished = true;
+  }
+
+  public void polishMontagCommandType(Command command) {
+    /*if (MontagCommand.MONTAG.isSameAs(command)) {
+      this.nationGen.montagPools.handleMontagCommand(this, command);
+    }
+
+    else {*/
+      this.nationGen.montagPools.handleMontagCommandType(command);
+    //}
   }
 
   public Boolean lacksMeleeWeapon() {

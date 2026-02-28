@@ -144,4 +144,8 @@ public class Command {
   public String toString() {
     return this.command + (this.args.isEmpty() ? "" : " ") + this.args;
   }
+
+  public boolean isOfType(CommandType type) {
+    return this.command.equals(type.toModCommand());
+  }
 }

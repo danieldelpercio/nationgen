@@ -2780,3 +2780,10 @@
 #set "skill"
 #prev "start"
 #end
+
+#new
+#name "elemental-summoner desc"
+#description "are so attuned to the elements they can shape them into animated creatures"
+#set "skill"
+#prev "start"
+#end
