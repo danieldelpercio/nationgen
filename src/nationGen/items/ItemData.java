@@ -4,8 +4,8 @@ import java.util.Optional;
 
 import com.elmokki.Generic;
 
-import nationGen.CustomItemsHandler;
 import nationGen.NationGen;
+import nationGen.ids.CustomItemsHandler;
 
 public class ItemData {
   private String id = "-1";
@@ -23,7 +23,7 @@ public class ItemData {
 
   public ItemData(Item item) {
     if (item instanceof CustomItem) {
-      this.oldId = item.dominionsId.getCustomItemName();
+      this.oldId = item.dominionsId.getNationGenId();
     }
 
     this.id = item.getDominionsEquipmentId();

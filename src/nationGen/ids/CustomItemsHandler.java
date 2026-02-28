@@ -1,4 +1,4 @@
-package nationGen;
+package nationGen.ids;
 
 import com.elmokki.NationGenDB;
 import com.elmokki.Generic;
@@ -6,8 +6,9 @@ import com.elmokki.Generic;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+
+import nationGen.NationGen;
 import nationGen.items.CustomItem;
-import nationGen.items.DominionsId;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
 import nationGen.misc.ResourceStorage;
@@ -28,12 +29,6 @@ public class CustomItemsHandler {
   private IdHandler idHandler; // Local ref of id handler to generate new IDs when fresh custom item needs a new ID.
   private NationGenDB weapondb; // Local ref of weapondb to remove nationgen dependency.
   private NationGenDB armordb; // Local ref of armordb to remove nationgen dependency.
-  
-  public final static Integer MIN_CUSTOM_ARMOR_ID = 300;
-  public final static Integer MAX_CUSTOM_ARMOR_ID = 999;
-  
-  public final static Integer MIN_CUSTOM_WEAPON_ID = 1000;
-  public final static Integer MAX_CUSTOM_WEAPON_ID = 3999;
 
   public CustomItemsHandler(
     NationGen nationGen,
@@ -83,7 +78,7 @@ public class CustomItemsHandler {
   public Integer getCustomItemId(String name) {
     for (CustomItem ci : chosenCustomItems) {
       if (ci.name.equals(name)) {
-        return ci.dominionsId.getDominionsId();
+        return ci.dominionsId.getIngameId();
       }
     }
 
@@ -107,12 +102,12 @@ public class CustomItemsHandler {
 
       if (customItem.isArmor()) {
         nextId = idHandler.nextArmorId();
-        customItem.dominionsId.setDominionsId(nextId);
+        customItem.dominionsId.setIngameId(nextId);
       }
       
       else {
         nextId = idHandler.nextWeaponId();
-        customItem.dominionsId.setDominionsId(nextId);
+        customItem.dominionsId.setIngameId(nextId);
       }
     }
     
@@ -129,12 +124,12 @@ public class CustomItemsHandler {
     chosenCustomItems.add(customItem);
 
     if (!customItem.isArmor()) {
-      armordb.addToMap(customItem.dominionsId.getCustomItemName(), customItem.getHashMap());
+      armordb.addToMap(customItem.dominionsId.getNationGenId(), customItem.getHashMap());
     } else {
-      weapondb.addToMap(customItem.dominionsId.getCustomItemName(), customItem.getHashMap());
+      weapondb.addToMap(customItem.dominionsId.getNationGenId(), customItem.getHashMap());
     }
 
-    return customItem.dominionsId.getDominionsId();
+    return customItem.dominionsId.getIngameId();
   }
 
   private void resolveCustomEffectId(Command effect) {
@@ -177,20 +172,5 @@ public class CustomItemsHandler {
 
   static public Boolean isIdResolved(String itemId) {
     return Generic.isNumeric(itemId);
-  }
-
-  static public Boolean isCustomId(Integer id) {
-    return CustomItemsHandler.isCustomArmorId(id) &&
-      CustomItemsHandler.isCustomWeaponId(id);
-  }
-
-  static public Boolean isCustomArmorId(Integer id) {
-    return id >= CustomItemsHandler.MIN_CUSTOM_ARMOR_ID &&
-      id <= CustomItemsHandler.MAX_CUSTOM_ARMOR_ID;
-  }
-
-  static public Boolean isCustomWeaponId(Integer id) {
-    return id >= CustomItemsHandler.MIN_CUSTOM_WEAPON_ID &&
-      id <= CustomItemsHandler.MAX_CUSTOM_WEAPON_ID;
   }
 }

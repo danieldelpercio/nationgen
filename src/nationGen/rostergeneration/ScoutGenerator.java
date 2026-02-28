@@ -191,7 +191,7 @@ public class ScoutGenerator extends TroopGenerator {
         p
           .getItems("offhand")
           .filterArmor(false)
-          .getItemWithID(weapon.dominionsId.getCustomItemName(), "offhand") !=
+          .getItemWithID(weapon.dominionsId.getNationGenId(), "offhand") !=
         null
       ) {
         template.setSlot(
@@ -200,7 +200,7 @@ public class ScoutGenerator extends TroopGenerator {
             p
               .getItems("offhand")
               .filterArmor(false)
-              .getItemsWithID(weapon.dominionsId.getCustomItemName(), "offhand"),
+              .getItemsWithID(weapon.dominionsId.getNationGenId(), "offhand"),
             template
           )
         );

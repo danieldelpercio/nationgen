@@ -115,12 +115,12 @@ public class Pose extends Filter {
           if (i.isDominionsEquipment() && !i.dominionsId.isResolved()) {
             CustomItem citem = nationGen
               .GetCustomItemsHandler()
-              .getCustomItem(i.dominionsId.getCustomItemName())
+              .getCustomItem(i.dominionsId.getNationGenId())
               .orElseThrow(() ->
                 new IllegalArgumentException(
                   String.format(
                     "Custom item named '%s' not found. Verify #gameid for item named '%s' in %s",
-                    i.dominionsId.getCustomItemName(),
+                    i.dominionsId.getNationGenId(),
                     i.name,
                     file
                   )
@@ -128,9 +128,9 @@ public class Pose extends Filter {
               );
 
             if (citem.isArmor()) {
-              nationGen.armordb.addToMap(i.dominionsId.getCustomItemName(), citem.getHashMap());
+              nationGen.armordb.addToMap(i.dominionsId.getNationGenId(), citem.getHashMap());
             } else {
-              nationGen.weapondb.addToMap(i.dominionsId.getCustomItemName(), citem.getHashMap());
+              nationGen.weapondb.addToMap(i.dominionsId.getNationGenId(), citem.getHashMap());
             }
           }
           if (i.sprite.isBlank() == false) {

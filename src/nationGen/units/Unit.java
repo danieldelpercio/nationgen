@@ -517,6 +517,10 @@ public class Unit {
     return this.mountUnit != null;
   }
 
+  public Boolean isImmobile() {
+    return pose.tags.containsName("immobile");
+  }
+
   public Boolean isDualWielding() {
     Item weapon = this.getSlot("weapon");
     Item offhand = this.getSlot("offhand");
@@ -1385,33 +1389,26 @@ public class Unit {
     List<Command> commands = unit.getCommands();
 
     for (Command c : commands) {
-      if (
-        c.args.size() > 0 &&
-        c.args.get(0) != null &&
-        !c.args.get(0).get().equals("")
-      ) {
-        // Mapmove is at least 1
-        if (
-          c.command.equals("#mapmove") &&
-          c.args.get(0).getInt() < 1 &&
-          !pose.tags.containsName("immobile")
-        ) c.args.set(0, new Arg(1));
+      if (!c.hasArgs()) {
+        continue;
+      }
 
-        // Weapons
-        if (c.command.equals("#weapon")) {
-          Arg realarg = c.args.get(0);
+      // Mapmove must at least be 1 if not immobile
+      if (c.command.equals("#mapmove") && !this.isImmobile()) {
+        int mapMove = c.args.get(0).getInt();
 
-          if (!realarg.isNumeric()) {
-            c.args.set(
-              0,
-              new Arg(
-                nationGen
-                  .GetCustomItemsHandler()
-                  .getCustomItemId(realarg.get()) +
-                ""
-              )
-            );
-          }
+        if (mapMove < 1) {
+          c.args.set(0, new Arg(1));
+        }
+      }
+
+      // Assign ingame ids to nationgen weapon references
+      if (c.command.equals("#weapon")) {
+        Arg weaponId = c.args.get(0);
+
+        if (!weaponId.isNumeric()) {
+          int ingameId = nationGen.GetCustomItemsHandler().getCustomItemId(weaponId.get());
+          c.args.set(0, new Arg(ingameId));
         }
       }
     }

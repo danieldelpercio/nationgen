@@ -11,6 +11,7 @@ import nationGen.NationGen;
 import nationGen.chances.ThemeInc;
 import nationGen.entities.Drawable;
 import nationGen.entities.Filter;
+import nationGen.ids.DominionsId;
 import nationGen.misc.Command;
 
 public class Item extends Drawable {
@@ -44,11 +45,11 @@ public class Item extends Drawable {
 
   public String getValueFromDb(String dbColumn) {
     NationGenDB db = this.isArmor() ? this.nationGen.armordb : this.nationGen.weapondb;
-    String itemIdInDb = String.valueOf(this.dominionsId.getDominionsId());
+    String itemIdInDb = String.valueOf(this.dominionsId.getIngameId());
     String value = db.GetValue(itemIdInDb, dbColumn);
 
     if (value.isBlank()) {
-      itemIdInDb = this.dominionsId.getCustomItemName();
+      itemIdInDb = this.dominionsId.getNationGenId();
       value = db.GetValue(itemIdInDb, dbColumn);
     }
 
@@ -186,11 +187,11 @@ public class Item extends Drawable {
     }
 
     if (this.dominionsId.isResolved()) {
-      return String.valueOf(this.dominionsId.getDominionsId());
+      return String.valueOf(this.dominionsId.getIngameId());
     }
 
     else {
-      return this.dominionsId.getCustomItemName();
+      return this.dominionsId.getNationGenId();
     }
   }
 
@@ -211,15 +212,15 @@ public class Item extends Drawable {
   }
 
   public Boolean hasSameCustomItemName(Item other) {
-    return this.hasSameCustomItemName(other.dominionsId.getCustomItemName());
+    return this.hasSameCustomItemName(other.dominionsId.getNationGenId());
   }
 
   public Boolean hasSameCustomItemName(String otherName) {
-    return this.dominionsId.getCustomItemName().equals(otherName);
+    return this.dominionsId.getNationGenId().equals(otherName);
   }
 
   public Boolean hasSameDominionsId(Item other) {
-    return this.hasSameDominionsId(other.dominionsId.getDominionsId());
+    return this.hasSameDominionsId(other.dominionsId.getIngameId());
   }
 
   public Boolean hasSameDominionsId(String otherId) {
@@ -231,7 +232,7 @@ public class Item extends Drawable {
   }
 
   public Boolean hasSameDominionsId(Integer otherId) {
-    return this.dominionsId.getDominionsId().equals(otherId);
+    return this.dominionsId.getIngameId() == otherId;
   }
 
   /**
@@ -253,9 +254,9 @@ public class Item extends Drawable {
       Item copy = new Item(item);
       Integer resolvedDominionsId = item.nationGen
         .GetCustomItemsHandler()
-        .getCustomItemId(item.dominionsId.getCustomItemName());
+        .getCustomItemId(item.dominionsId.getNationGenId());
 
-      item.dominionsId.setDominionsId(resolvedDominionsId);
+      item.dominionsId.setIngameId(resolvedDominionsId);
       return copy;
     }
 
@@ -274,11 +275,11 @@ public class Item extends Drawable {
           String gameId = command.args.get(0).get();
 
           if (Generic.isNumeric(gameId)) {
-            this.dominionsId.setDominionsId(Integer.valueOf(gameId));
+            this.dominionsId.setIngameId(Integer.valueOf(gameId));
           }
 
           else {
-            this.dominionsId.setCustomItemName(gameId);
+            this.dominionsId.setNationGenId(gameId);
           }
           break;
         case "#armor":

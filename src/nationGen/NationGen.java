@@ -15,6 +15,8 @@ import java.util.concurrent.locks.ReentrantLock;
 import nationGen.Settings.SettingsType;
 import nationGen.entities.Filter;
 import nationGen.entities.Race;
+import nationGen.ids.CustomItemsHandler;
+import nationGen.ids.IdHandler;
 import nationGen.magic.MagicPath;
 import nationGen.magic.Spell;
 import nationGen.misc.*;
@@ -126,8 +128,6 @@ public class NationGen {
 
     // Start
     idHandler = new IdHandler();
-    idHandler.loadFile("/forbidden_ids.txt");
-
     customItemsHandler.UpdateIDHandler(idHandler);
 
     if (!manyseeds) {

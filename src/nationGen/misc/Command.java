@@ -115,7 +115,7 @@ public class Command {
   }
 
   public Boolean hasArgs() {
-    return this.args.isEmpty() == false;
+    return !this.args.isEmpty() && !this.args.getString(0).isBlank();
   }
 
   public Boolean isBoolean() {

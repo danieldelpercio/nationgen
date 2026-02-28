@@ -205,7 +205,7 @@ public class CustomItem extends Item {
 
   @Override
   protected void finish() {
-    this.dominionsId.setCustomItemName(this.name);
+    this.dominionsId.setNationGenId(this.name);
 
     if (this.isArmor()) {
       return;
@@ -269,11 +269,11 @@ public class CustomItem extends Item {
     List<String> lines = new ArrayList<>();
 
     if (this.isArmor()) {
-      lines.add("#newarmor " + this.dominionsId.getDominionsId());
+      lines.add("#newarmor " + this.dominionsId.getIngameId());
     }
 
     else {
-      lines.add("#newweapon " + this.dominionsId.getDominionsId());
+      lines.add("#newweapon " + this.dominionsId.getIngameId());
     }
 
     for (Command command : this.customItemCommands) {

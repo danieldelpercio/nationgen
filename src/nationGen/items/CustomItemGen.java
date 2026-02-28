@@ -88,7 +88,7 @@ public class CustomItemGen {
     // Add to custom item lists
     n.customitems.add(customItem);
     n.nationGen.GetCustomItemsHandler().AddCustomItem(customItem);
-    n.nationGen.weapondb.addToMap(customItem.dominionsId.getCustomItemName(), customItem.getHashMap());
+    n.nationGen.weapondb.addToMap(customItem.dominionsId.getNationGenId(), customItem.getHashMap());
   }
 
   private Boolean shouldBeMagic(
@@ -365,7 +365,7 @@ public class CustomItemGen {
 
     // Construct an underlying name id for later use (not a display name)
     String dname = "nation_" + n.nationid + "_customitem_" + (n.customitems.size() + 1);
-    customItem.dominionsId.setCustomItemName(dname);
+    customItem.dominionsId.setNationGenId(dname);
     customItem.name = dname;
   }
 
