@@ -1313,7 +1313,7 @@ public class Nation {
     List<String> uniques = new ArrayList<>();
 
     Command old = null;
-    for (Command cmd : commands) {
+    for (Command cmd : targetCommands) {
       if (cmd.command.equals(commandToHandle.command)) old = cmd;
     }
 
