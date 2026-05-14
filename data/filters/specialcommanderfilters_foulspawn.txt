@@ -18,11 +18,11 @@
 -- Extra tip: Special commanders get #poorleader or #noleader if nothing is specified
 
 #new
-#id "corpse-grafter-4"
-#command "#reanimator 4"
+#id "corpse-grafter-8"
+#command "#reanimator 8"
 #command "#holy"
-#command "#okleader"
-#command "#poorundeadleader"
+#command "#poorleader"
+#command "#goodundeadleader"
 #command "#gcost +30"
 #command "#rpcost 1"
 #caponlychance 0
@@ -38,11 +38,11 @@
 #end
 
 #new
-#id "corpse-grafter-5"
-#command "#reanimator 5"
+#id "corpse-grafter-9"
+#command "#reanimator 9"
 #command "#holy"
-#command "#okleader"
-#command "#poorundeadleader"
+#command "#poorleader"
+#command "#goodundeadleader"
 #command "#gcost +40"
 #command "#rpcost 1"
 #caponlychance 0
@@ -58,11 +58,11 @@
 #end
 
 #new
-#id "corpse-grafter-6"
-#command "#reanimator 6"
+#id "corpse-grafter-10"
+#command "#reanimator 10"
 #command "#holy"
-#command "#okleader"
-#command "#poorundeadleader"
+#command "#poorleader"
+#command "#goodundeadleader"
 #command "#gcost +50"
 #command "#rpcost 1"
 #caponlychance 0
