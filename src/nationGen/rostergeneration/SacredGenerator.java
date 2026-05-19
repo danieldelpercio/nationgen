@@ -1070,9 +1070,12 @@ public class SacredGenerator extends TroopGenerator {
 
     if (
       u.pose.roles.contains("ranged") ||
-      (u.pose.roles.contains("sacred ranged") &&
+      (
+        u.pose.roles.contains("sacred ranged") &&
         u.pose.getItems("bonusweapon") != null &&
-        u.pose.getItems("bonusweapon").size() > 0)
+        u.pose.getItems("bonusweapon").size() > 0 &&
+        u.getSlot("bonusweapon") != null
+      )
     ) {
       Item weapon = chandler.getRandom(
         fetchItems(u, "bonusweapon", sacred, epicchance),
