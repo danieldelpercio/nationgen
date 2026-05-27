@@ -393,7 +393,8 @@
 #command "#spellsinger"
 #mutuallyexclusive #spellsinger
 #chanceinc "personalmagic astral 0.3"
-#chanceinc "personalmagic death 0.6"
+#chanceinc "personalmagic death 0.5"
+#chanceinc "personalmagic nature 0.5"
 #chanceinc "personalmagic glamour 0.6"
 #chanceinc "unittag not mage *0"
 -- If others are spellsingers in the nation, drastically increase chances
