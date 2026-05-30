@@ -1,0 +1,13 @@
+
+#new
+#id "Foul Spawn"
+#basechance 0
+#chanceinc primaryrace foulspawn 2
+#command "#copystats 530"
+#command "#copyspr 530"
+#command "#gcost 100"
+#command "#rpcost 50"
+#command "#rcost 1"
+#caponlychance 0.8
+#specifiedgcost
+#end

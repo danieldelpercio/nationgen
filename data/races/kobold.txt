@@ -1,0 +1,72 @@
+---- SPECIAL MECHANICS ----
+-- Kobold nations will start with a special egg incubation site, the Hatchery.
+-- Building up their forts to maximum level will also create a Hatchery through
+-- event modding.
+-- Rituals (and perhaps random events?) will allow spawning special, immovable
+-- Dragon Egg units in provinces that contain a Hatchery.
+-- These Dragon Eggs will naturally accrue XP over time. They have an #xpshape
+-- that will eventually trigger, making them hatch into Dragon fledglings.
+-- Fledglings are Units that can be led around. They will also have an #xpshape
+-- and eventually become bigger and bigger Dragons.
+-- Adult Dragons are Commanders, but they are #homesick. They can only stay away
+-- from their home fort for so long before dying.
+-- If there are a male and a female Adult Dragon in a fort, they can also lay
+-- Eggs every Spring. Single Dragons, however (when there is only one in a fort)
+-- will gain extra XP through regular events, and accumulate wealth (extra upkeep?)
+-- until a certain amount is reached, at which point a Dragon Hoard site will be
+-- created. As the Dragon's Greed and Jealousy knows no bounds, any Egg in the
+-- same province as a Dragon Hoard will be killed (future competitors).
+-- Obtaining a Dragon Hoard fundamentally changes the nature of the Dragon. They will
+-- become Hoard Dragons, reaching new levels of power (gaining magic paths?) that
+-- lesser Dragon only interested in mating cannot hope to achieve.
+
+#newrace
+#id "Kobold"
+#basechance 0.1
+
+#racethemes kobold_themes
+#freetheme demographic
+#freetheme tribal
+
+#longsyllables /data/names/nations/lizard/longsyllables.txt
+#shortsyllables /data/names/nations/lizard/shortsyllables.txt
+#suffixes /data/names/nations/lizard/suffixes.txt
+
+#sacredmountedchance 1
+#sacredrangerchance 0.5
+
+#unitcommand "#gcost 25"
+#unitcommand "#rpcost 24996"
+#unitcommand "#rcost 1"
+#unitcommand "#size 2"
+#unitcommand "#hp 6"
+#unitcommand "#prot 4"
+#unitcommand "#mr 12"
+#unitcommand "#mor 9"
+#unitcommand "#enc 2"
+#unitcommand "#str 10"
+#unitcommand "#att 11"
+#unitcommand "#def 12"
+#unitcommand "#prec 9"
+#unitcommand "#mapmove 10"
+#unitcommand "#ap 6"
+#unitcommand "#nametype 113"
+#unitcommand "#maxage 250"
+#unitcommand "#weapon 29" -- Non-intrinsic Claw
+#unitcommand "#neednoteat"
+#unitcommand "#darkvision 100"
+#unitcommand "#twiceborn 3448"
+
+#gods europe_gods
+#additionalgods gods_without_realm
+
+#monsterchance 0.5
+
+#extrapdmulti 4
+
+#specialcommanderchance 0.1
+#specialcommanderfilters specialcommanderfilters_kobold
+
+#size2
+
+#endrace

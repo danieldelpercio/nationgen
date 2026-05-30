@@ -1,0 +1,9 @@
+#newitem
+#id "naked"
+#gameid -1
+#armor
+#basechance 1
+#theme "primitive"
+#tag "prefix tribal"
+#tag "name infantry casteless"
+#enditem

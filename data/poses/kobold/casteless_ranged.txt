@@ -1,0 +1,157 @@
+---- BLACK
+
+#newpose
+#id "black casteless infantry"
+#role "infantry"
+#theme "black"
+#command "#acidres 25"
+#command "#stealthy 25"
+#command "#prec +1"
+
+#renderorder "shadow cloakb basesprite mount shirt legs quiver bonusweapon armor cloakf weapon offhandw hands hair helmet offhanda overlay"
+
+#load basesprite /data/items/races/kobold/black/bases.txt
+#load shadow /data/items/races/kobold/black/shadows.txt
+
+#load hands /data/items/races/kobold/black/hands.txt
+
+#load cloakf /data/items/races/kobold/black/cloakf.txt
+#load cloakb /data/items/races/kobold/black/cloakb.txt
+
+#load armor /data/items/races/kobold/black/armors.txt
+#load helmet /data/items/races/kobold/black/helmets.txt
+#load legs /data/items/races/kobold/black/legs.txt
+
+#load weapon /data/items/races/kobold/black/weapons_ranged.txt
+#load quiver /data/items/races/kobold/black/quivers.txt
+#load bonusweapon /data/items/races/kobold/black/bonusweapons.txt
+
+#generateitem 1 bonusweapon
+#endpose
+
+
+---- BLUE
+
+#newpose
+#id "blue casteless infantry"
+#role "infantry"
+#theme "blue"
+#command "#coldres 25"
+#command "#snow"
+#command "#prec +1"
+
+#renderorder "shadow cloakb basesprite mount shirt legs quiver bonusweapon armor cloakf weapon offhandw hands hair helmet offhanda overlay"
+
+#load basesprite /data/items/races/kobold/blue/bases.txt
+#load shadow /data/items/races/kobold/blue/shadows.txt
+
+#load hands /data/items/races/kobold/blue/hands.txt
+
+#load cloakf /data/items/races/kobold/blue/cloakf.txt
+#load cloakb /data/items/races/kobold/blue/cloakb.txt
+
+#load armor /data/items/races/kobold/blue/armors.txt
+#load helmet /data/items/races/kobold/blue/helmets.txt
+#load legs /data/items/races/kobold/blue/legs.txt
+
+#load weapon /data/items/races/kobold/blue/weapons_ranged.txt
+#load quiver /data/items/races/kobold/blue/quivers.txt
+#load bonusweapon /data/items/races/kobold/blue/bonusweapons.txt
+
+#generateitem 1 bonusweapon
+#endpose
+
+
+---- GREEN
+
+#newpose
+#id "green casteless infantry"
+#role "infantry"
+#theme "green"
+#command "#poisonres 25"
+#command "#forestsurvival"
+#command "#prec +1"
+
+#renderorder "shadow cloakb basesprite mount shirt legs quiver bonusweapon armor cloakf weapon offhandw hands hair helmet offhanda overlay"
+
+#load basesprite /data/items/races/kobold/green/bases.txt
+#load shadow /data/items/races/kobold/green/shadows.txt
+
+#load hands /data/items/races/kobold/green/hands.txt
+
+#load cloakf /data/items/races/kobold/green/cloakf.txt
+#load cloakb /data/items/races/kobold/green/cloakb.txt
+
+#load armor /data/items/races/kobold/green/armors.txt
+#load helmet /data/items/races/kobold/green/helmets.txt
+#load legs /data/items/races/kobold/green/legs.txt
+
+#load weapon /data/items/races/kobold/green/weapons_ranged.txt
+#load quiver /data/items/races/kobold/green/quivers.txt
+#load bonusweapon /data/items/races/kobold/green/bonusweapons.txt
+
+#generateitem 1 bonusweapon
+#endpose
+
+
+---- RED
+
+#newpose
+#id "red casteless infantry"
+#role "infantry"
+#theme "red"
+#command "#fireres 25"
+#command "#wastesurvival"
+#command "#prec +1"
+
+#renderorder "shadow cloakb basesprite mount shirt legs quiver bonusweapon armor cloakf weapon offhandw hands hair helmet offhanda overlay"
+
+#load basesprite /data/items/races/kobold/red/bases.txt
+#load shadow /data/items/races/kobold/red/shadows.txt
+
+#load hands /data/items/races/kobold/red/hands.txt
+
+#load cloakf /data/items/races/kobold/red/cloakf.txt
+#load cloakb /data/items/races/kobold/red/cloakb.txt
+
+#load armor /data/items/races/kobold/red/armors.txt
+#load helmet /data/items/races/kobold/red/helmets.txt
+#load legs /data/items/races/kobold/red/legs.txt
+
+#load weapon /data/items/races/kobold/red/weapons_ranged.txt
+#load quiver /data/items/races/kobold/red/quivers.txt
+#load bonusweapon /data/items/races/kobold/red/bonusweapons.txt
+
+#generateitem 1 bonusweapon
+#endpose
+
+
+---- WHITE
+
+#newpose
+#id "white casteless infantry"
+#role "infantry"
+#theme "white"
+#command "#shockres 25"
+#command "#prec +1"
+
+#renderorder "shadow cloakb basesprite mount shirt legs quiver bonusweapon armor cloakf weapon offhandw hands hair helmet offhanda overlay"
+
+#load basesprite /data/items/races/kobold/white/bases.txt
+#load shadow /data/items/races/kobold/white/shadows.txt
+
+#load hands /data/items/races/kobold/white/hands.txt
+
+#load cloakf /data/items/races/kobold/white/cloakf.txt
+#load cloakb /data/items/races/kobold/white/cloakb.txt
+
+#load armor /data/items/races/kobold/white/armors.txt
+#load helmet /data/items/races/kobold/white/helmets.txt
+#load legs /data/items/races/kobold/white/legs.txt
+
+#load weapon /data/items/races/kobold/white/weapons_ranged.txt
+#load quiver /data/items/races/kobold/white/quivers.txt
+#load bonusweapon /data/items/races/kobold/white/bonusweapons.txt
+
+#generateitem 1 bonusweapon
+#endpose
