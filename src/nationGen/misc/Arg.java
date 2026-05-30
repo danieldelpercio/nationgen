@@ -151,6 +151,10 @@ public class Arg {
     return this.parenthesis == null ? null : this.parenthesis.copy(); // defensive copy to prevent this object's copy being modified
   }
 
+  public int applyModTo(int value) {
+    return (int)this.applyModTo((double)value);
+  }
+
   public double applyModTo(double value) {
     if (getOperator().isPresent()) {
       switch (getOperator().get()) {
