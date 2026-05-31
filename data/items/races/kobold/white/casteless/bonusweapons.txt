@@ -1,0 +1,13 @@
+#newitem
+#id short_sword
+#gameid 6
+#basechance 1
+#sprite /graphics/kobold/white/casteless/bonusweapons/short_sword.png
+#enditem
+
+#newitem
+#id hatchet
+#gameid 253
+#basechance 1
+#sprite /graphics/kobold/white/casteless/bonusweapons/hatchet.png
+#enditem
