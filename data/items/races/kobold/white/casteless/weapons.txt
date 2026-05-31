@@ -1,0 +1,7 @@
+#newitem
+#id spear
+#gameid 1
+#basechance 1
+#sprite /graphics/kobold/white/casteless/weapons/spear.png
+#needs hands 2h_grip
+#enditem

@@ -1,0 +1,11 @@
+#newitem
+#id "2h_grip"
+#gameid -1
+#sprite /graphics/kobold/white/casteless/hands/2h_grip.png
+#enditem
+
+#newitem
+#id "ranged_grip"
+#gameid -1
+#sprite /graphics/kobold/white/casteless/hands/ranged_grip.png
+#enditem

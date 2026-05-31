@@ -1,0 +1,5 @@
+#newitem
+#id "legs"
+#gameid -1
+#sprite /graphics/kobold/white/casteless/legs.png
+#enditem

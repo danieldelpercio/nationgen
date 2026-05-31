@@ -1,0 +1,5 @@
+#newitem
+#id "quiver"
+#gameid -1
+#sprite /graphics/kobold/white/casteless/quiver.png
+#enditem

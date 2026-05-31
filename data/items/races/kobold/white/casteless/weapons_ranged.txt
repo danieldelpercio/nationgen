@@ -1,0 +1,15 @@
+#newitem
+#id short_bow
+#gameid 23
+#basechance 1
+#sprite /graphics/kobold/white/casteless/weapons/bow.png
+#needs hands ranged_grip
+#enditem
+
+#newitem
+#id sling
+#gameid 22
+#basechance 1
+#sprite /graphics/kobold/white/casteless/weapons/sling.png
+#needs hands ranged_grip
+#enditem
