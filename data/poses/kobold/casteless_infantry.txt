@@ -5,7 +5,7 @@
 #role "infantry"
 #theme "black"
 #command "#acidres 25"
-#command "#stealthy 25"
+#command "#stealthy 40"
 
 #renderorder "shadow cloakb basesprite quiver mount shirt legs bonusweapon armor offhandw cloakf weapon hands hair helmet offhanda overlay"
 
