@@ -825,32 +825,37 @@ public class Unit {
   }
 
   public int getNumberOfHandsRequiredForWeapons() {
-    int usedHands = Stream.of(this.slotmap.getEquippedWeapons(), this.slotmap.getEquippedShields())
+    Stream<Item> equippedWeapons = this.slotmap.getEquippedWeapons();
+    Stream<Item> equippedShields = this.slotmap.getEquippedShields();
+    List<Command> handledCommands = this.getAllHandledCommands();
+
+    int handsForEquipment = Stream.of(equippedWeapons, equippedShields)
       .flatMap(s -> s)
       .mapToInt(i -> {
-      boolean isIntrinsic = i.getBooleanFromDb(ItemProperty.INTRINSIC.toDBColumn());
-      boolean isTwoHanded = i.getBooleanFromDb(ItemProperty.IS_2H.toDBColumn());
-      int handsNeeded = isIntrinsic ? 0 : !isTwoHanded ? 1 : 2;
-      return handsNeeded;
-    }).sum();
+        boolean isIntrinsic = i.getBooleanFromDb(ItemProperty.INTRINSIC.toDBColumn());
+        boolean isRanged = i.getIntegerFromDb(ItemProperty.RANGE.toDBColumn(), 0) != 0;
+        boolean isTwoHanded = i.getBooleanFromDb(ItemProperty.IS_2H.toDBColumn());
+        int handsNeeded = isIntrinsic || isRanged ? 0 : !isTwoHanded ? 1 : 2;
+        return handsNeeded;
+      })
+      .sum();
 
-    // Get weapons that were added directly through templates, like
+    // Get hands needed for weapons that were added directly through templates, like
     // natural weapons from bases (such as nagas)
-    usedHands += this.getAllHandledCommands()
-      .stream()
+    int handsForBaseWeapons = handledCommands.stream()
       .filter(c -> c.command.equals("#weapon"))
       .filter(c -> !Generic.isNumeric(c.args.getString(0)) || c.args.getInt(0) > 0)
       .mapToInt(c -> {
         String id = c.args.getString(0);
         boolean isIntrinsic = this.nationGen.weapondb.GetInteger(id, ItemProperty.INTRINSIC.toDBColumn(), 0) == 1;
+        boolean isRanged = this.nationGen.weapondb.GetInteger(id, ItemProperty.RANGE.toDBColumn(), 0) != 0;
         boolean isTwoHanded = this.nationGen.weapondb.GetInteger(id, ItemProperty.IS_2H.toDBColumn(), 0) == 1;
-        int handsNeeded = isIntrinsic ? 0 : !isTwoHanded ? 1 : 2;
+        int handsNeeded = isIntrinsic || isRanged ? 0 : !isTwoHanded ? 1 : 2;
         return handsNeeded;
       }).sum();
 
-    // Get shields that were added directly through templates
-    usedHands += this.getAllHandledCommands()
-      .stream()
+    // Get hands needed for shields that were added directly through templates
+    int handsForBaseShields = handledCommands.stream()
       .filter(c -> c.command.equals("#armor"))
       .filter(c -> !Generic.isNumeric(c.args.getString(0)) || c.args.getInt(0) > 0)
       .mapToInt(c -> {
@@ -861,7 +866,8 @@ public class Unit {
         return handsNeeded;
       }).sum();
 
-    return usedHands;
+    int totalUsedHands = handsForEquipment + handsForBaseWeapons + handsForBaseShields;
+    return totalUsedHands;
   }
 
   public int getNumberOfFreeHands() {
