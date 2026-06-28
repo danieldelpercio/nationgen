@@ -19,6 +19,7 @@ public class CustomItem extends Item {
   private List<Command> customItemCommands = new ArrayList<>();
   public Item olditem = null;
   public MagicItem magicItem = null;
+  private static final List<String> COPY_COMMANDS = List.of("#copyarmor", "#copyitem", "#copyweapon");
 
   public CustomItem(NationGen nationGen) {
     super(nationGen);
@@ -66,6 +67,10 @@ public class CustomItem extends Item {
 
     this.olditem = (customItem.olditem != null) ? new Item(customItem.olditem) : null;
     this.magicItem = (customItem.magicItem != null) ? new MagicItem(customItem.magicItem) : null;
+  }
+
+  public List<Command> getCustomCommands() {
+    return new ArrayList<>(this.customItemCommands);
   }
 
   public Optional<Command> getCustomCommand(String commandName) {
@@ -224,6 +229,31 @@ public class CustomItem extends Item {
     }
   }
 
+  public Boolean hasCopyStats() {
+    for (Command c : this.getCustomCommands()) {
+      if (CustomItem.COPY_COMMANDS.contains(c.command)) {
+        return true;
+      }
+    }
+
+    return false;
+  }
+
+  protected int getCopyStatsId() {
+    Optional<Command> copyCommand = this.getCustomCommands()
+      .stream()
+      .filter(c -> {
+        return CustomItem.COPY_COMMANDS.contains(c.command);
+      })
+      .findFirst();
+
+    if (copyCommand.isPresent()) {
+      return copyCommand.get().args.getInt(0);
+    }
+
+    return 0;
+  }
+
   public LinkedHashMap<String, String> getHashMap() {
     LinkedHashMap<String, String> map = new LinkedHashMap<>();
 
@@ -236,14 +266,23 @@ public class CustomItem extends Item {
     map.put(ItemProperty.IS_2H.toDBColumn(), "0");
     map.put(ItemProperty.RESOURCE_COST.toDBColumn(), "0");
 
-    for (Command command : this.customItemCommands) {
+    for (Command command : this.getCustomCommands()) {
       ItemProperty property = ItemProperty.fromCommand(command);
 
-      if (property == null) {
-          continue;
+      // Copy commands from #copyarmor/#copyitem/#copyweapon through the DB so that any
+      // code that relies on in-game item properties can make use of it. For example,
+      // clockwork pose's shock lances copying most stats from vanilla spears (id 1)
+      if (CustomItem.COPY_COMMANDS.contains(command.command)) {
+        int copyId = this.getCopyStatsId();
+        LinkedHashMap<String, String> copyItemProps = this.getItemDb().getItemMap(copyId);
+        map.putAll(copyItemProps);
+      }
+
+      else if (property == null) {
+        continue;
       }
       
-      if (property.isBoolean()) {
+      else if (property.isBoolean()) {
           map.put(property.toDBColumn(), "1");
       }
 
