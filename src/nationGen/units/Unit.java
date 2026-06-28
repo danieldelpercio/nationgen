@@ -5,6 +5,7 @@ import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Optional;
@@ -18,6 +19,7 @@ import nationGen.entities.MagicFilter;
 import nationGen.entities.Pose;
 import nationGen.entities.Race;
 import nationGen.entities.Theme;
+import nationGen.items.DominionsItemSlot;
 import nationGen.items.Item;
 import nationGen.items.ItemData;
 import nationGen.items.ItemDependency;
@@ -272,6 +274,14 @@ public class Unit {
 
     isGetCommandsRunning = false;
     return tempCommands;
+  }
+
+  public Command getHandledCommand(String command) {
+    return this.getAllHandledCommands()
+      .stream()
+      .filter(c -> c.command.equals(command))
+      .findFirst()
+      .orElse(null);
   }
 
   public List<Command> getMountCommands() {
@@ -576,22 +586,19 @@ public class Unit {
   }
 
   public int getItemSlots() {
-    int itemslots = this.getFirstCommandValue("#itemslots", -1);
-
-    if (itemslots > -1) {
-      return itemslots;
+    Command itemslotsCommand = this.getHandledCommand("#itemslots");
+    HashMap<DominionsItemSlot, Integer> itemslots;
+    int encodedSlots;
+    
+    if (itemslotsCommand != null) {
+      itemslots = DominionsItemSlots.decode(itemslotsCommand.args.getInt(0));
     }
 
-    // Default slot amounts
-    int head = 1;
-    int body = 1;
-    int feet = 1;
-    int hand = 2;
-    int misc = 2;
-    int bow = 1;
+    else {
+      itemslots = DominionsItemSlots.defaultSlots();
   
-    Tags itemTags = new Tags();
-    Tags unitTags = Generic.getAllUnitTags(this);
+      Tags itemTags = new Tags();
+      Tags unitTags = Generic.getAllUnitTags(this);
     Item basesprite = this.slotmap.get("basesprite");
 
     if (basesprite != null) {
@@ -602,77 +609,29 @@ public class Unit {
       .filter(i -> i != basesprite)
       .forEach(i -> itemTags.addAll(i.tags));
 
-    // #baseitemslot tags will override the base amount of slots
-    for (Args args : unitTags.getAllArgs("baseitemslot")) {
-      String slot = args.get(0).get();
-      Arg modifier = args.get(1);
+      // #baseitemslot tags will override the base amount of slots
+      for (Args args : unitTags.getAllArgs("baseitemslot")) {
+        String slotName = args.get(0).get();
+        DominionsItemSlot slot = DominionsItemSlot.fromString(slotName);
+        Arg modifier = args.get(1);
+        int newAmount = Generic.handleModifier(modifier, itemslots.get(slot));
+        itemslots.put(slot, newAmount);
+      }
 
-      switch (slot) {
-        case "head":
-          head = Generic.handleModifier(modifier, head);
-          break;
-        case "misc":
-          misc = Generic.handleModifier(modifier, misc);
-          break;
-        case "body":
-          body = Generic.handleModifier(modifier, body);
-          break;
-        case "hand":
-          hand = Generic.handleModifier(modifier, hand);
-          break;
-        case "feet":
-          feet = Generic.handleModifier(modifier, feet);
-          break;
-        case "bow":
-          bow = Generic.handleModifier(modifier, bow);
-          break;
+      // Seearch for #itemslot tags that modifies each specific slot
+      for (Args args : itemTags.getAllArgs("itemslot")) {
+        String slotName = args.get(0).get();
+        DominionsItemSlot slot = DominionsItemSlot.fromString(slotName);
+        Arg modifier = args.get(1);
+        int newAmount = Generic.handleModifier(modifier, itemslots.get(slot));
+        itemslots.put(slot, newAmount);
       }
     }
 
-    // Seearch for #itemslot tags that modifies each specific slot
-    for (Args args : itemTags.getAllArgs("itemslot")) {
-      String slot = args.get(0).get();
-      Arg modifier = args.get(1);
-
-      switch (slot) {
-        case "head":
-          head = Generic.handleModifier(modifier, head);
-          break;
-        case "misc":
-          misc = Generic.handleModifier(modifier, misc);
-          break;
-        case "body":
-          body = Generic.handleModifier(modifier, body);
-          break;
-        case "hand":
-          hand = Generic.handleModifier(modifier, hand);
-          break;
-        case "feet":
-          feet = Generic.handleModifier(modifier, feet);
-          break;
-        case "bow":
-          bow = Generic.handleModifier(modifier, bow);
-          break;
-      }
-    }
-
-    // Cap the slots to the possible min and max amounts
-    head = Math.min(head, 2);
-    misc = Math.min(misc, 5);
-    body = Math.min(body, 1);
-    hand = Math.min(hand, 6);
-    feet = Math.min(feet, 1);
-    bow = Math.min(bow, 1);
-
-    head = Math.max(head, 0);
-    misc = Math.max(misc, 0);
-    body = Math.max(body, 0);
-    hand = Math.max(hand, 0);
-    feet = Math.max(feet, 0);
-    bow = Math.max(bow, 0);
-
-    itemslots = DominionsItemSlots.encode(hand, bow, head, body, feet, misc);
-    return itemslots;
+    DominionsItemSlots.enforceMin(itemslots);
+    DominionsItemSlots.enforceMax(itemslots);
+    encodedSlots = DominionsItemSlots.encode(itemslots);
+    return encodedSlots;
   }
 
   public List<Unit> getMontagShapes() {
