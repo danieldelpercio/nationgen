@@ -400,6 +400,7 @@
 #new
 #id "deathrec10"
 #basechance 0.025
+#mutuallyexclusive "#chaosrec"
 #command "#deathrec %cost10"
 #chanceinc magic death 0.075
 #filterdesc "deathrec desc"
@@ -408,6 +409,7 @@
 #new
 #id "chaosrec10"
 #basechance 0.05
+#mutuallyexclusive "#deathrec"
 #command "#chaosrec %cost10"
 #filterdesc "chaosrec desc"
 #end
