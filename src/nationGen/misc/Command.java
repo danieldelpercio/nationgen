@@ -47,6 +47,149 @@ public class Command {
   }
 
   /**
+   * Combine the arg values of this command with that of another one of the same type.
+   * "This" command command will be used as the base (for example, if neither commands
+   * have arg values with specific operators such as ADD or SUBTRACT, the default behaviour
+   * will be that "this" command's values will be SET, returning a new command with the same
+   * values as "this" one).
+   * @param other - another same-type command
+   * @return Commmand - a combined, new Command instance
+   */
+  public Command combine(Command other) {
+    Command combinedCommand = new Command(this);
+
+    if (!this.sameTypeAs(other)) {
+      throw new IllegalArgumentException(
+        "Cannot combine commands of different types ('" +
+        this.command +
+        "' and '" +
+        other.command +
+        "'"
+      );
+    }
+
+    for (int i = 0; i < this.args.size(); i++) {
+      Arg arg = combinedCommand.args.get(i);
+      Arg otherArg = other.args.get(i);
+
+      // By default, if no specific operator is given, set the value of this command
+      Operator operator = arg.getOperator().orElse(Operator.SET);
+      Arg combinedValue = new Arg(otherArg.get());
+
+      if (operator == Operator.ADD) {
+        combinedValue = this.addArg(arg, otherArg);
+      }
+
+      else if (operator == Operator.SUBTRACT) {
+        combinedValue = this.subtractArg(arg, otherArg);
+      }
+      
+      else if (operator == Operator.MULTIPLY) {
+        combinedValue = this.multiplyArg(arg, otherArg);
+      }
+
+      combinedCommand.args.set(i, combinedValue);
+    }
+
+    return combinedCommand;
+  }
+
+  public Arg addArg(Arg ownArg, Arg otherArg) {
+    try {
+      int value;
+
+      if (otherArg.get().startsWith("%")) {
+        value = ownArg.getInt();
+      }
+
+      else {
+        value = ownArg.getInt() + (otherArg.getInt());
+      }
+
+      return new Arg(value);
+    }
+    
+    catch (NumberFormatException error) {
+      throw new IllegalArgumentException(
+        "Command ADD: " +
+        ownArg +
+        " + " +
+        otherArg +
+        " on '" +
+        this.command +
+        "' error",
+        error
+      );
+    }
+  }
+
+  public Arg subtractArg(Arg subtractingArg, Arg otherArg) {
+    try {
+      int value;
+      
+      if (otherArg.get().startsWith("%")) {
+        value = subtractingArg.getInt();
+      }
+
+      else {
+        value = otherArg.getInt() - subtractingArg.getInt();
+      }
+
+      return new Arg(value);
+    }
+    
+    catch (NumberFormatException error) {
+      throw new IllegalArgumentException(
+        "Command SUBTRACT: " +
+        subtractingArg +
+        " + " +
+        otherArg +
+        " on '" +
+        this.command +
+        "' error",
+        error
+      );
+    }
+  }
+
+  public Arg multiplyArg(Arg ownArg, Arg otherArg) {
+    try {
+      int value;
+      
+      if (otherArg.get().startsWith("%")) {
+        value = 0;
+      }
+
+      else {
+        value = ((int) Math.round((ownArg.getDouble() * otherArg.getInt())));
+      }
+
+      // If the multiplier is not explicitly *0, don't let the new value be less than 1
+      // Example is #rpcost *0.8 from the sickly filter that can set commanders to 0 RPs
+      if (ownArg.getDouble() > 0 && ownArg.getDouble() < 1 && value == 0) {
+        return new Arg(1);
+      }
+
+      else {
+        return new Arg(value);
+      }
+    }
+    
+    catch (Exception e) {
+      throw new IllegalArgumentException(
+        "Command MULTIPLY: " +
+        ownArg +
+        " * " +
+        otherArg +
+        " on '" +
+        this.command +
+        "' error",
+        e
+      );
+    }
+  }
+
+  /**
    * Writes a String for how Dominions expects a mod command line to look like, with strings in quotes and comments
    * following dashes.
    * @return A string suitable to be written to a Dominions mod file.
@@ -77,6 +220,20 @@ public class Command {
     return !this.args.isEmpty() && !this.args.getString(0).isBlank();
   }
 
+  public Boolean hasCombinatoryArgs() {
+    return this.hasArgs() &&
+      this.args.stream()
+      .map(a -> a.getOperator().orElse(Operator.SET))
+      .filter(op ->
+        op.equals(Operator.ADD) ||
+        op.equals(Operator.SUBTRACT) ||
+        op.equals(Operator.MULTIPLY) ||
+        op.equals(Operator.DIVIDE)
+      )
+      .findFirst()
+      .isPresent();
+  }
+
   public Boolean isBoolean() {
     return this.args.isEmpty();
   }
@@ -102,5 +259,9 @@ public class Command {
 
   public String toString() {
     return this.command + (this.args.isEmpty() ? "" : " ") + this.args;
+  }
+
+  public static Optional<Command> lastInStream(Stream<Command> commandStream) {
+    return commandStream.reduce((first, second) -> second);
   }
 }

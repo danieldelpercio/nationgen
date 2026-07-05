@@ -35,7 +35,6 @@ import nationGen.misc.Command;
 import nationGen.misc.CommandFactory;
 import nationGen.misc.CommandType;
 import nationGen.misc.FileUtil;
-import nationGen.misc.Operator;
 import nationGen.misc.Tags;
 import nationGen.misc.Utils;
 import nationGen.naming.Name;
@@ -718,6 +717,10 @@ public class Unit {
 
   public Boolean isPriest() {
     return this.tags.containsName("priest");
+  }
+
+  public Boolean isCommander() {
+    return this.nation != null && this.nation.selectCommanders().anyMatch(com -> com.equals(this));
   }
 
   public Boolean isMounted() {
@@ -1745,105 +1748,58 @@ public class Unit {
     return true;
   }
 
-  protected void handleCommand(List<Command> commands, Command c) {
-    // List of commands that may appear more than once per unit
-    List<String> uniques = List.of(
-      "#weapon",
-      "#custommagic",
-      "#magicskill",
-      "#magicboost"
-    );
+  /**
+   * Add or combine a command within a given list of commands. Note that if multiple commands of the same
+   * type already exist , this function will combine the command passed in with the last occurrence of
+   * the same command type within the list, using Operator logic (SET, ADD, SUBTRACT, etc). The goal of
+   * this function is to fill a new list of commands one by one, inserting or combining a new command
+   * each time. If done this way, theoretically, there should never be more than one other command of
+   * the same type (besides non-unique commands that can exist in parallel, such as #weapon or #armor).
+   * @param existingCommands - the list of commands in which to insert or combine a new command
+   * @param command - the command to insert
+   */
+  protected void handleCommand(List<Command> existingCommands, Command command) {
+    int copystats = this.getCopyStats();
+    Optional<CommandType> type = command.getType();
+    Command lastExistingCommand = existingCommands.stream()
+      .filter(c -> c.contains(command))
+      .reduce((first, second) -> second)
+      .orElse(null);
 
-    int copystats = -1;
-
-    Command old = null;
-    for (Command cmd : commands) {
-      if (cmd.command.equals(c.command)) old = cmd;
-
-      if (cmd.command.equals("#copystats")) copystats = cmd.args
-        .get(0)
-        .getInt();
-    }
-
-    // If the unit has #copystats it doesn't have defined stats. Thus we need to fetch value from database
-    if (
-      c.args.size() > 0 &&
-      (c.args.get(0).get().startsWith("+")) &&
-      copystats != -1 &&
-      old == null
-    ) {
-      String value =
-        this.nationGen.units.GetValue(copystats + "", c.command.substring(1));
-      if (value.equals("")) value = "0";
-
-      old = Command.args(c.command, value);
-      commands.add(old);
-    }
-
-    if (old != null && !uniques.contains(c.command)) {
-      /*
-			if(this.tags.contains("sacred") && c.command.equals("#gcost"))
-				System.out.println(c.command + "  " + c.args);
-			*/
-      for (int i = 0; i < c.args.size(); i++) {
-        Arg arg = c.args.get(i);
-        Arg oldarg = old.args.get(i);
-        if (arg.getOperator().isPresent()) {
-          Operator operator = arg.getOperator().get();
-          if (operator == Operator.ADD || operator == Operator.SUBTRACT) {
-            try {
-              int value = oldarg.get().startsWith("%")
-                ? arg.getInt()
-                : (oldarg.getInt() + arg.getInt());
-
-              old.args.set(i, new Arg(value));
-            } catch (NumberFormatException e) {
-              throw new IllegalArgumentException(
-                "FATAL ERROR 1: Argument parsing " +
-                oldarg +
-                " + " +
-                arg +
-                " on " +
-                c +
-                " caused crash.",
-                e
-              );
-            }
-          } else if (operator == Operator.MULTIPLY) {
-            try {
-              int value = oldarg.get().startsWith("%")
-                ? 0
-                : ((int) (oldarg.getInt() * arg.getDouble()));
-
-              old.args.set(i, new Arg(value));
-            } catch (Exception e) {
-              throw new IllegalArgumentException(
-                "FATAL ERROR 2: Argument parsing " +
-                oldarg +
-                " * " +
-                arg +
-                " on " +
-                c.command +
-                " caused crash.",
-                e
-              );
-            }
-          }
-        } else {
-          if (!uniques.contains(c.command)) {
-            old.args.set(i, arg);
-          } else {
-            commands.add(c.copy());
-          }
-        }
+    // If the command handled is combinatory (i.e. has an operator like + or - that will combine its value
+    // with another command of the same type) and the unit uses copystats, we need to find the value of the
+    // same command within the database stats of the unit
+    if (copystats != -1 && lastExistingCommand == null && command.hasCombinatoryArgs()) {
+      String value = this.nationGen.units.GetValue(copystats + "", command.command.substring(1));
+      
+      if (value.isBlank()) {
+        value = "0";
       }
-    } else {
+
+      lastExistingCommand = CommandFactory.create(command.command, value);
+      existingCommands.add(lastExistingCommand);
+    }
+
+    // If the command being handled does not exist within the given set of commands,
+    // or if the command being handled is one of a type that can exist multiple times
+    // on a unit (such as multiple independent #weapon commands), then add the handled
+    // command as an entirely new command in the passed list
+    if (lastExistingCommand == null || (type.isPresent() && type.get().canMultipleExist)) {
       Args args = new Args();
-      for (Arg arg : c.args) {
+
+      for (Arg arg : command.args) {
         args.add(arg.applyModToNothing());
       }
 
-      commands.add(new Command(c.command, args, c.comment));
+      existingCommands.add(CommandFactory.create(command.command, args, command.comment));
+    }
+
+    // If a command of the same type already exists, then combine them (add, subtract, set...) depending
+    // on the argument operators (+X, -X, =X, X...) by updating the value of the existing one
+    else if (!command.equals(lastExistingCommand)) {
+      Command combined = command.combine(lastExistingCommand);
+      lastExistingCommand.args.clear();
+      lastExistingCommand.args.addAll(combined.args);
     }
   }
 
@@ -2182,14 +2138,57 @@ public class Unit {
    * Calculates recruitment point cost as gcost from race+pose+basesprite
    */
   protected Optional<String> writeRecpointsLine() {
-    boolean hasRecPoints = this.getFirstCommandValue("#rpcost", -1) >= 0;
+    int recPointsCost = this.getRecPointsCost();
 
-    if (hasRecPoints || this.hasCopyStats()) {
+    if (recPointsCost == -1) {
       return Optional.empty();
     }
 
+    return Optional.of("#rpcost " + recPointsCost);
+  }
+
+  private int getRecPointsCost() {
+    int rpcost = this.getFirstCommandValue("#rpcost", -1);
+    boolean hasRpcostCommand = rpcost >= 0;
+
+    if (hasRpcostCommand) {
+      return rpcost;
+    }
+
+    else if (this.hasCopyStats()) {
+      return -1;
+    }
+
     int gcost = this.getGoldCost(true);
-    return Optional.of("#rpcost " + this.getAutocalcRps(gcost));
+    return this.getAutocalcRps(gcost);
+  }
+
+  private int scaleRecPoints(double multiplier, int recPoints) {
+    int scaledRecPoints;
+
+    /**
+     * Values at 1000 or above are special values. They trigger Dominions' AutoCalc.
+     * AutoCalc recpoints values work roughly in steps of 499. When going over or under these steps, they
+     * wrap around. For example, if 8000 autocalcs a unit's RPs to 13, then 8499 autocalcs to 512, but
+     * 8500 autocals to 2 (the minimum RP value). To apply a multiplier to these autocalc values, we can
+     * take the thousands (i.e. for 8000, that is 8) and apply the multiplier to that, then add/subtract
+     * that resulting value from the total autocalc. It's not perfect, but it should approximate well enough.
+     * Can't do it more accurately without working out the exact Dominions' AutoCalc formula.
+     */
+    if (recPoints >= 1000) {
+      double inverse = multiplier - 1;
+      int modifier = (int) Math.round(recPoints * 0.001 * inverse);
+      scaledRecPoints = recPoints + modifier;
+    }
+
+    /**
+     * Values that are not AutoCalc will simply be multiplied as usual. For example, 30 RPs * 0.75 multiplier.
+     */
+    else {
+      scaledRecPoints = (int) Math.floor(recPoints * multiplier);
+    }
+
+    return scaledRecPoints;
   }
 
   private int getAutocalcRps(int gcost) {
@@ -2253,6 +2252,11 @@ public class Unit {
     writeRecpointsLine().ifPresent(lines::add);
 
     for (Command c : this.commands) {
+      // Exceptionally handled above
+      if (c.command.equals("#rpcost")) {
+        continue;
+      }
+
       if (c.args.size() > 0) {
         if (c.command.equals("#mountmnr")) {
           if (this.mountUnit.isIdResolved() == false) {
