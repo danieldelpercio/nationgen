@@ -603,15 +603,15 @@ public class Unit {
   
       Tags itemTags = new Tags();
       Tags unitTags = Generic.getAllUnitTags(this);
-    Item basesprite = this.slotmap.get("basesprite");
+      Item basesprite = this.slotmap.get("basesprite");
 
-    if (basesprite != null) {
-      itemTags.addAll(basesprite.tags);
-    }
+      if (basesprite != null) {
+        itemTags.addAll(basesprite.tags);
+      }
 
-    this.slotmap.items()
-      .filter(i -> i != basesprite)
-      .forEach(i -> itemTags.addAll(i.tags));
+      this.slotmap.items()
+        .filter(i -> i != basesprite)
+        .forEach(i -> itemTags.addAll(i.tags));
 
       // #baseitemslot tags will override the base amount of slots
       for (Args args : unitTags.getAllArgs("baseitemslot")) {
@@ -1480,7 +1480,7 @@ public class Unit {
     });
 
     this.appliedFilters.forEach(f -> {
-      tags.addAll(f.tags);
+      allTags.addAll(f.tags);
     });
 
     return allTags;
