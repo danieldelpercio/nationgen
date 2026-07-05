@@ -126,7 +126,7 @@ public class Nation {
   }
 
   public boolean removeCommand(String command) {
-    return this.commands.remove(Command.parse(command));
+    return this.commands.remove(CommandFactory.parse(command));
   }
 
   public long getSeed() {
@@ -550,7 +550,7 @@ public class Nation {
         c.command.substring(1)
       );
       if (!value.equals("")) {
-        old = new Command(c.command, new Arg(value));
+        old = CommandFactory.create(c.command, new Arg(value));
         commands.add(old);
       }
     }
@@ -831,7 +831,7 @@ public class Nation {
           .max(Integer::compareTo)
           .ifPresent(highest ->
             u.addCommands(
-              new Command("#gcost", new Arg("+" + (highest * priest)))
+              CommandFactory.create("#gcost", new Arg("+" + (highest * priest)))
             )
           );
       }
@@ -1340,13 +1340,13 @@ public class Nation {
           if (!uniques.contains(commandToHandle.command)) {
             old.args.set(i, arg);
           } else {
-            targetCommands.add(commandToHandle.copy());
+            targetCommands.add(CommandFactory.copy(commandToHandle));
             return;
           }
         }
       }
     } else { // there is no existing copy
-      Command toAdd = commandToHandle.copy();
+      Command toAdd = CommandFactory.copy(commandToHandle);
       if (toAdd.args.size() > 0) {
         // If the command starts with +, remove +.
         toAdd.args.set(0, toAdd.args.get(0).applyModToNothing());

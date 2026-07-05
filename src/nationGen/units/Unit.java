@@ -32,6 +32,8 @@ import nationGen.misc.Arg;
 import nationGen.misc.Args;
 import nationGen.misc.ChanceIncHandler;
 import nationGen.misc.Command;
+import nationGen.misc.CommandFactory;
+import nationGen.misc.CommandType;
 import nationGen.misc.FileUtil;
 import nationGen.misc.Operator;
 import nationGen.misc.Tags;
@@ -86,7 +88,7 @@ public class Unit {
     this.tags = new Tags(unit.tags);
     this.commands = new ArrayList<>(unit.commands)
       .stream()
-      .map(c -> new Command(c))
+      .map(c -> CommandFactory.copy(c))
       .collect(Collectors.toList());
 
     this.appliedFilters = new ArrayList<>(unit.appliedFilters)
@@ -184,7 +186,7 @@ public class Unit {
             resstring = "+" + resstring;
           }
 
-          if (result != 0) tc = Command.args(c.command, resstring);
+          if (result != 0) tc = CommandFactory.create(c.command, resstring);
         }
 
         // Shape change units handle #spr1/#spr2 separately
@@ -223,10 +225,10 @@ public class Unit {
         cost -= currentcost;
 
         if (cost > 0) adjustmentcommands.add(
-          Command.args("#rcost", "+" + cost)
+          CommandFactory.create("#rcost", "+" + cost)
         );
         else if (cost < 0) adjustmentcommands.add(
-          Command.args("#rcost", "" + cost)
+          CommandFactory.create("#rcost", "" + cost)
         );
       });
 
@@ -309,7 +311,7 @@ public class Unit {
   }
 
   public boolean removeCommand(String command) {
-    return this.commands.remove(Command.parse(command));
+    return this.commands.remove(CommandFactory.parse(command));
   }
 
   /**
@@ -338,7 +340,7 @@ public class Unit {
   }
 
   public Boolean hasCommand(String cmd) {
-    Command parsed = Command.parse(cmd);
+    Command parsed = CommandFactory.parse(cmd);
     return this.hasCommand(parsed);
   }
 
@@ -350,14 +352,17 @@ public class Unit {
       .isPresent();
   }
 
-  public Optional<Command> getCommand(String commandString) {
-    Command parsedCommand = Command.parse(commandString);
+  private Stream<Command> getCommandFilter(String commandString) {
+    Command parsedCommand = CommandFactory.parse(commandString);
     List<Command> allCommands = this.gatherCommands();
 
     return allCommands
       .stream()
-      .filter(c -> parsedCommand.contains(c))
-      .findFirst();
+      .filter(c -> parsedCommand.contains(c));
+  }
+
+  public Optional<Command> getCommand(String commandString) {
+    return this.getCommandFilter(commandString).findFirst();
   }
 
   public int getFirstCommandValue(String command, int defaultv) {
@@ -408,7 +413,7 @@ public class Unit {
   }
 
   public Optional<Command> getOwnCommand(String commandString) {
-    Command parsedCommand = Command.parse(commandString);
+    Command parsedCommand = CommandFactory.parse(commandString);
     return this.commands
       .stream()
       .filter(c -> c.equals(parsedCommand))
@@ -645,7 +650,7 @@ public class Unit {
     Command parsedFirstshape = firstshapeCommand.get();
     Integer negativeMontagNumber = parsedFirstshape.args.getInt(0);
     String montag = Math.abs(negativeMontagNumber) + "";
-    Command montagCmd = Command.args("#montag", montag);
+    Command montagCmd = CommandFactory.create("#montag", montag);
 
     this.nation.listTroops().forEach(t -> {
       if (t.hasCommand(montagCmd)) {
@@ -1151,7 +1156,7 @@ public class Unit {
       int resolvedCommandCost = (int) Math.round((double) unitGoldCost * multiplier);
 
       // Re-add the command with the final, resolved value instead of the %cost
-      Command d = Command.args(c.command, resolvedCommandCost + "");
+      Command d = CommandFactory.create(c.command, resolvedCommandCost + "");
       unit.handleCommand(commands, d);
     }
   }
@@ -1224,7 +1229,7 @@ public class Unit {
       }
 
       mean = totalStatScores / unitCount;
-      means.add(Command.parse(stat + " " + mean));
+      means.add(CommandFactory.parse(stat + " " + mean));
     }
 
     return means;
@@ -1587,7 +1592,7 @@ public class Unit {
 
     // +2hp to mounted
     if (this.isMounted() != null) {
-      this.commands.add(Command.args("#hp", "+2"));
+      this.commands.add(CommandFactory.create("#hp", "+2"));
       this.tags.addArgs("itemslot", "feet", -1);
     }
 
@@ -1600,7 +1605,7 @@ public class Unit {
       }
 
       if (totalLength > 0) {
-        this.commands.add(Command.args("#ambidextrous", "+" + Math.max(1, totalLength)));
+        this.commands.add(CommandFactory.create("#ambidextrous", "+" + Math.max(1, totalLength)));
       }
     }
 
@@ -1609,7 +1614,7 @@ public class Unit {
       int fistWeaponDominionsId = 92;
       Arg fistArg = new Arg(fistWeaponDominionsId);
       String commandDescription = "Fist given to units that could otherwise only kick.";
-      Command fistWeaponCommand = new Command("#weapon", Args.of(fistArg), commandDescription);
+      Command fistWeaponCommand = CommandFactory.create("#weapon", Args.of(fistArg), commandDescription);
       this.commands.add(fistWeaponCommand);
     }
                                                         
@@ -1648,14 +1653,14 @@ public class Unit {
       gcost = Utils.roundInGroupsOf(gcost, 5);
     }
 
-    Command gcostCommand = Command.args("#gcost", Integer.toString(gcost));
+    Command gcostCommand = CommandFactory.create("#gcost", Integer.toString(gcost));
     handleCommand(polishedCommands, gcostCommand);
 
     // Resources are autocalculated ingame. We only need to assign them manually to montag templates
     // that don't have any equipment in the recruitment screen until they appear into the game
     if (this.isMontagRecruitableTemplate()) {
       int rcost = this.getResCost(true, true);
-      Command rcostCommand = Command.args("#rcost", Integer.toString(rcost));
+      Command rcostCommand = CommandFactory.create("#rcost", Integer.toString(rcost));
       handleCommand(polishedCommands, rcostCommand);
 
       String montagId = this.getFirstshapeIdForMontag();
@@ -1675,7 +1680,7 @@ public class Unit {
         holyCost = Math.max(holyCost, 2);
       }
 
-      Command holyCostCommand = Command.args("#holycost", Integer.toString(holyCost));
+      Command holyCostCommand = CommandFactory.create("#holycost", Integer.toString(holyCost));
       handleCommand(polishedCommands, holyCostCommand);
     }
 

@@ -13,6 +13,7 @@ import nationGen.entities.MagicItem;
 import nationGen.misc.Arg;
 import nationGen.misc.Args;
 import nationGen.misc.Command;
+import nationGen.misc.CommandFactory;
 
 public class CustomItem extends Item {
 
@@ -23,12 +24,12 @@ public class CustomItem extends Item {
 
   public CustomItem(NationGen nationGen) {
     super(nationGen);
-    this.customItemCommands.add(new Command(
+    this.customItemCommands.add(CommandFactory.create(
       ItemProperty.RESOURCE_COST.toModCommand(),
       new Arg(0)
     ));
 
-    this.customItemCommands.add(new Command(
+    this.customItemCommands.add(CommandFactory.create(
       ItemProperty.DEFENCE.toModCommand(),
       new Arg(0)
     ));
@@ -41,7 +42,7 @@ public class CustomItem extends Item {
       while(it.hasNext()) {
           Map.Entry<String, String> entry = it.next();
           ItemProperty property = ItemProperty.fromDbColumn(entry.getKey());
-          Command command = Command.args(property.toModCommand(), entry.getValue());
+          Command command = CommandFactory.create(property.toModCommand(), entry.getValue());
 
           // The #flyspr mod command expects a second argument; the animation length
           if (property == ItemProperty.FLYSPRITE) {
@@ -100,7 +101,7 @@ public class CustomItem extends Item {
 
   public void setCustomCommand(String commandName) {
     if (getCustomValue(commandName).isEmpty()) {
-      this.customItemCommands.add(new Command(commandName));
+      this.customItemCommands.add(CommandFactory.create(commandName));
     }
   }
 
@@ -109,7 +110,7 @@ public class CustomItem extends Item {
     if (args.isPresent()) {
       args.get().set(0, new Arg(value));
     } else {
-      this.customItemCommands.add(Command.args(commandName, value));
+      this.customItemCommands.add(CommandFactory.create(commandName, value));
     }
   }
 
@@ -118,7 +119,7 @@ public class CustomItem extends Item {
     if (args.isPresent()) {
       args.get().set(0, new Arg(value));
     } else {
-      this.customItemCommands.add(new Command(commandName, new Arg(value)));
+      this.customItemCommands.add(CommandFactory.create(commandName, new Arg(value)));
     }
   }
 
@@ -128,7 +129,7 @@ public class CustomItem extends Item {
       args.get().set(0, new Arg(value1));
       args.get().set(1, new Arg(value2));
     } else {
-      this.customItemCommands.add(Command.args(commandName, value1, value2));
+      this.customItemCommands.add(CommandFactory.create(commandName, value1, value2));
     }
   }
 

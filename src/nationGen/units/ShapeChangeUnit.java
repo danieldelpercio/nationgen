@@ -13,6 +13,7 @@ import nationGen.entities.Pose;
 import nationGen.entities.Race;
 import nationGen.misc.Arg;
 import nationGen.misc.Command;
+import nationGen.misc.CommandFactory;
 import nationGen.misc.FileUtil;
 import nationGen.naming.Name;
 import nationGen.naming.NamePart;
@@ -99,8 +100,8 @@ public class ShapeChangeUnit extends Unit {
       }
 
       if (!maxagefound) {
-        sf.addCommands(new Command("#maxage", new Arg(50)));
-        otherForm.addCommands(new Command("#maxage", new Arg(50)));
+        sf.addCommands(CommandFactory.create("#maxage", new Arg(50)));
+        otherForm.addCommands(CommandFactory.create("#maxage", new Arg(50)));
       }
 
       // Inherit from race/pose

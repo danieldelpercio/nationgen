@@ -9,6 +9,7 @@ import nationGen.NationGen;
 import nationGen.chances.ChanceInc;
 import nationGen.chances.ThemeInc;
 import nationGen.misc.Command;
+import nationGen.misc.CommandFactory;
 
 public class Filter extends Entity {
 
@@ -93,7 +94,7 @@ public class Filter extends Entity {
   }
 
   public boolean removeCommand(String command) {
-    return this.commands.remove(Command.parse(command));
+    return this.commands.remove(CommandFactory.parse(command));
   }
 
   public double getPower() {

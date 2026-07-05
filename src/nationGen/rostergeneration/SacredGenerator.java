@@ -16,6 +16,7 @@ import nationGen.items.ItemProperty;
 import nationGen.misc.Arg;
 import nationGen.misc.ChanceIncHandler;
 import nationGen.misc.Command;
+import nationGen.misc.CommandFactory;
 import nationGen.misc.ItemSet;
 import nationGen.misc.Utils;
 import nationGen.nation.Nation;
@@ -196,7 +197,7 @@ public class SacredGenerator extends TroopGenerator {
       mrBonus -= (baseMr - diminishingReturnsMrThreshold) / 2;
     }
 
-    unit.addCommands(Command.args("#mr", "+" + mrBonus));
+    unit.addCommands(CommandFactory.create("#mr", "+" + mrBonus));
 
     // Determine morale
     int baseMorale = unit.getTotalCommandValue("#mor", 10);
@@ -228,7 +229,7 @@ public class SacredGenerator extends TroopGenerator {
     }
 
     // Add morale bonus
-    unit.addCommands(Command.args("#mor", "+" + moraleBonus));
+    unit.addCommands(CommandFactory.create("#mor", "+" + moraleBonus));
   }
 
   // Roll a chance to see if this unit will get a magic weapon added to it
@@ -694,7 +695,7 @@ public class SacredGenerator extends TroopGenerator {
       total *= multi;
     }
 
-    u.addCommands(Command.args("#gcost", "*" + total));
+    u.addCommands(CommandFactory.create("#gcost", "*" + total));
   }
 
   /**
@@ -1002,8 +1003,8 @@ public class SacredGenerator extends TroopGenerator {
       int holyCost = this.calculateHolyCost(u, sacred);
 
       u.tags.addName("sacred");
-      tf.addCommands(new Command("#holy"));
-      tf.addCommands(new Command("#holycost", new Arg(holyCost)));
+      tf.addCommands(CommandFactory.create("#holy"));
+      tf.addCommands(CommandFactory.create("#holycost", new Arg(holyCost)));
     }
 
     u.appliedFilters.add(tf);
@@ -1124,7 +1125,7 @@ public class SacredGenerator extends TroopGenerator {
       u.pose.types.contains("elite ranged") ||
       u.pose.types.contains("sacred ranged")
     ) if (u.getGoldCost(true) < 15 && u.getResCost(true, true) < 15) {
-      u.addCommands(Command.args("#gcost", "+10"));
+      u.addCommands(CommandFactory.create("#gcost", "+10"));
     }
 
     int cgcost = u.getGoldCost(true);
@@ -1147,7 +1148,7 @@ public class SacredGenerator extends TroopGenerator {
       discount += (u.getGoldCost(false) - discount) / 5;
     }
 
-    u.addCommands(Command.args("#gcost", "-" + discount));
+    u.addCommands(CommandFactory.create("#gcost", "-" + discount));
   }
 
   private ItemSet fetchItems(

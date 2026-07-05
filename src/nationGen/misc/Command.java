@@ -3,20 +3,13 @@ package nationGen.misc;
 import com.elmokki.Generic;
 import java.util.*;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Command {
 
   public final String command;
   public final Args args;
   public final String comment;
-
-  public Command(String cmd, Arg... args) {
-    this(cmd, Args.of(args), null);
-  }
-
-  public Command(String cmd, Args args) {
-    this(cmd, args, null);
-  }
 
   public Command(String cmd, Args args, String comment) {
     if (Generic.containsSpace(cmd)) {
@@ -34,53 +27,18 @@ public class Command {
     this.comment = commandToCopy.comment;
   }
 
-  /**
-   * Static "constructor" method which turns String arguments into Args for convenience.
-   * @param command The command name
-   * @param args The args as strings
-   * @return The new Command
-   */
-  public static Command args(String command, String... args) {
-    return new Command(
-      command,
-      Arrays.stream(args)
-        .map(Arg::new)
-        .collect(Collectors.toCollection(Args::new))
-    );
+  public Optional<CommandType> getType() {
+    CommandType type = CommandType.fromRaw(this.command);
+
+    if (type == null) {
+      return Optional.empty();
+    }
+
+    return Optional.of(type);
   }
 
-  /**
-   * Returns a copy of this command.  Since Args is a mutable list, we have to take care in sharing commands that may
-   * have their args modified.
-   * @return A copy of this command.
-   */
-  public Command copy() {
-    return new Command(this.command, this.args.copy(), comment);
-  }
-
-  public static Command parse(String line) {
-    ArgParser allArgs = Args.parse(line);
-    if (allArgs.isEmpty()) {
-      throw new IllegalArgumentException("Command line is empty!");
-    }
-    String commandName = allArgs.nextString();
-    Args args = new Args();
-    String comment = null;
-    while (!allArgs.isEmpty()) {
-      Arg arg = allArgs.next("argument");
-      if (arg.get().startsWith("--")) {
-        comment = arg.get().replaceAll("^-*", "") +
-        allArgs
-          .remaining()
-          .stream()
-          .map(Arg::get)
-          .collect(Collectors.joining(" "));
-        break;
-      } else {
-        args.add(arg);
-      }
-    }
-    return new Command(commandName, args, comment);
+  public boolean sameTypeAs(Command other) {
+    return this.getType().equals(other.getType());
   }
 
   public static String parseValueToAddString(int value) {
