@@ -354,20 +354,30 @@ public class SacredGenerator extends TroopGenerator {
 
     // Check if main weapon should get customized
     if (getsCustomWeapon(unit, mainWeapon, 1, false) == true) {
-      // Customize main weapon and get the cost of it
-      int powerCost = customizeWeapon(unit, "weapon", power, weaponEnchantments);
+      // Attempt to customize main weapon
+      Optional<CustomItem> customWeapon = customizeWeapon(unit, mainWeapon, power, weaponEnchantments);
 
-      // Spend the power cost. Only relevant for whether bonus or offhand is also customized
-      power -= powerCost;
+      if (customWeapon.isPresent()) {
+        MagicItem enchantment = customWeapon.get().magicItem;
+        int powerCost = (enchantment != null) ? (int)enchantment.power : 1;
+
+        power -= powerCost;
+        unit.setSlot("weapon", mainWeapon);
+      }
     }
 
     // Check if bonus weapon should get customized
-    if (getsCustomWeapon(unit, bonusWeapon, 0.25, power > 1) == true) {
-      // Customize bonus weapon and get the cost of it
-      int powerCost = customizeWeapon(unit, "bonusweapon", power, weaponEnchantments);
+    else if (getsCustomWeapon(unit, bonusWeapon, 0.25, power > 1) == true) {
+      // Attempt to customize bonus weapon
+      Optional<CustomItem> customWeapon = customizeWeapon(unit, bonusWeapon, power, weaponEnchantments);
 
-      // Spend the power cost. Only relevant for whether offhand is also customized
-      power -= powerCost;
+      if (customWeapon.isPresent()) {
+        MagicItem enchantment = customWeapon.get().magicItem;
+        int powerCost = (enchantment != null) ? (int)enchantment.power : 1;
+
+        power -= powerCost;
+        unit.setSlot("bonusweapon", bonusWeapon);
+      }
     }
 
     // Only offhand weapons get enhanced for now
@@ -377,8 +387,16 @@ public class SacredGenerator extends TroopGenerator {
 
     // Check if offhand weapon should get customized
     if (getsCustomWeapon(unit, offhandWeapon, 0.25, power > 1) == true) {
-      // Customize offhand weapon
-      customizeWeapon(unit, "offhand", power, weaponEnchantments);
+      // Attempt to customize offhand weapon
+      Optional<CustomItem> customWeapon = customizeWeapon(unit, offhandWeapon, power, weaponEnchantments);
+
+      if (customWeapon.isPresent()) {
+        MagicItem enchantment = customWeapon.get().magicItem;
+        int powerCost = (enchantment != null) ? (int)enchantment.power : 1;
+
+        power -= powerCost;
+        unit.setSlot("offhand", offhandWeapon);
+      }
     }
   }
 
@@ -397,12 +415,11 @@ public class SacredGenerator extends TroopGenerator {
     );
   }
 
-  private int customizeWeapon(Unit unit, String slot, int power, List<MagicItem> weaponEnchantments) {
+  private Optional<CustomItem> customizeWeapon(Unit unit, Item weapon, int power, List<MagicItem> weaponEnchantments) {
     double powerUpChances = 1 - random.nextDouble();
-    Item weapon = unit.getSlot(slot);
 
     if (weapon == null) {
-      return 0;
+      return Optional.empty();
     }
 
     Optional<CustomItem> possibleWeapon =
@@ -415,14 +432,7 @@ public class SacredGenerator extends TroopGenerator {
         weaponEnchantments
       );
 
-    if (possibleWeapon.isPresent() == false) {
-      return 0;
-    }
-
-    CustomItem customWeapon = possibleWeapon.get();
-    double powerCost = (customWeapon.magicItem != null) ? customWeapon.magicItem.power : 1;
-    unit.setSlot(slot, customWeapon);
-    return (int)powerCost;
+    return possibleWeapon;
   }
 
   private void addInitialFilters(Unit u) {
