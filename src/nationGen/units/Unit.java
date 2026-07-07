@@ -35,6 +35,7 @@ import nationGen.misc.Command;
 import nationGen.misc.CommandFactory;
 import nationGen.misc.CommandType;
 import nationGen.misc.FileUtil;
+import nationGen.misc.Operator;
 import nationGen.misc.Tags;
 import nationGen.misc.Utils;
 import nationGen.naming.Name;
@@ -107,7 +108,7 @@ public class Unit {
 
     if (this.isMontag()) {
       rootId = this.getCommand("#firstshape")
-        .map(c -> c.args.get(0).getInt())
+        .map(c -> c.args.getFirst().getInt())
         .orElse(-1);
     }
 
@@ -174,7 +175,7 @@ public class Unit {
         Command tc = c;
         final int tier = tags.getInt("schoolmage").orElse(2);
 
-        if (c.args.size() > 0 && c.args.get(0).get().contains("%value%")) {
+        if (c.args.size() > 0 && c.args.getFirst().get().contains("%value%")) {
           int multi = f.tags.getInt("valuemulti").orElse(10);
           int base = f.tags.getInt("basevalue").orElse(-5);
 
@@ -263,8 +264,8 @@ public class Unit {
 
     for (Command c : allCommands) if (
       c.args.size() > 0 &&
-      c.args.get(0).get().startsWith("*") &&
-      c.args.get(0).isNumeric()
+      c.args.getFirst().get().startsWith("*") &&
+      c.args.getFirst().isNumeric()
     ) multiCommands.add(c);
     else handleCommand(tempCommands, c);
 
@@ -382,7 +383,7 @@ public class Unit {
     
     for (Command c : commands) {
       if (c.command.equals(command) && c.args.size() > 0) {
-        total = Generic.handleModifier(c.args.get(0), total);
+        total = Generic.handleModifier(c.args.getFirst(), total);
       }
     }
 
@@ -395,7 +396,7 @@ public class Unit {
     
     for (Command c : commands) {
       if (c.command.equals(command) && c.args.size() > 0) value = c.args
-        .get(0)
+        .getFirst()
         .get();
     }
 
@@ -615,7 +616,7 @@ public class Unit {
 
       // #baseitemslot tags will override the base amount of slots
       for (Args args : unitTags.getAllArgs("baseitemslot")) {
-        String slotName = args.get(0).get();
+        String slotName = args.getFirst().get();
         DominionsItemSlot slot = DominionsItemSlot.fromString(slotName);
         Arg modifier = args.get(1);
         int newAmount = Generic.handleModifier(modifier, itemslots.get(slot));
@@ -624,7 +625,7 @@ public class Unit {
 
       // Seearch for #itemslot tags that modifies each specific slot
       for (Args args : itemTags.getAllArgs("itemslot")) {
-        String slotName = args.get(0).get();
+        String slotName = args.getFirst().get();
         DominionsItemSlot slot = DominionsItemSlot.fromString(slotName);
         Arg modifier = args.get(1);
         int newAmount = Generic.handleModifier(modifier, itemslots.get(slot));
@@ -1039,7 +1040,7 @@ public class Unit {
     List<Args> pricePerCommandArgs = unitTags.getAllArgs("price_per_command");
 
     for (Args args : pricePerCommandArgs) {
-      String commandToPrice = args.get(0).get();
+      String commandToPrice = args.getFirst().get();
       int commandValue = unit.getTotalCommandValue(commandToPrice, 0);
       double costPerCommandPoint = args.get(1).getDouble();
       int commandValueThreshold = 0;
@@ -1074,7 +1075,7 @@ public class Unit {
     List<Args> pricePerAppliedFilterArgs = unitTags.getAllArgs("price_per_applied_filter");
 
     for (Args args : pricePerAppliedFilterArgs) {
-      int filterPower = args.get(0).getInt();
+      int filterPower = args.getFirst().getInt();
       int numberOfAppliedFilters = (int) appliedFiltersStream.filter(f -> f.power >= filterPower).count();
       double costPerFilter = args.get(1).getDouble();
       int filterPowerThreshold = 0;
@@ -1142,8 +1143,8 @@ public class Unit {
     List<Command> percentCostCommands = commands.stream()
       .filter(c -> {
         return c.args.size() > 0 &&
-          c.args.get(0).get().startsWith("%cost") &&
-          Generic.isNumeric(c.args.get(0).get().substring(5));
+          c.args.getFirst().get().startsWith("%cost") &&
+          Generic.isNumeric(c.args.getFirst().get().substring(5));
       })
       .collect(Collectors.toList());
 
@@ -1152,7 +1153,7 @@ public class Unit {
     }
 
     for (Command c : percentCostCommands) {
-      double percentage = Double.parseDouble(c.args.get(0).get().substring(5));
+      double percentage = Double.parseDouble(c.args.getFirst().get().substring(5));
       double multiplier = percentage / 100;
 
       // Calculate the %cost based on the unit's gold cost
@@ -1280,7 +1281,7 @@ public class Unit {
     for (Command c : commands) {
       if (c.command.equals("#gcost")) {
         shouldUseCopyStatsFinalCost = false;
-        totalCost += c.args.get(0).getInt();
+        totalCost += c.args.getFirst().getInt();
       }
 
       if (c.command.equals("#holy")) {
@@ -1427,7 +1428,7 @@ public class Unit {
     for (Command c : commands) {
       if (c.command.equals("#rcost")) {
         shouldUseCopyStatsFinalCost = false;
-        rcost += c.args.get(0).getInt();
+        rcost += c.args.getFirst().getInt();
       }
     }
 
@@ -1631,7 +1632,7 @@ public class Unit {
 
       // Mapmove must at least be 1 if not immobile
       if (c.command.equals("#mapmove") && !this.isImmobile()) {
-        int mapMove = c.args.get(0).getInt();
+        int mapMove = c.args.getFirst().getInt();
 
         if (mapMove < 1) {
           c.args.set(0, new Arg(1));
@@ -1640,7 +1641,7 @@ public class Unit {
 
       // Assign ingame ids to nationgen weapon references
       if (c.command.equals("#weapon")) {
-        Arg weaponId = c.args.get(0);
+        Arg weaponId = c.args.getFirst();
 
         if (!weaponId.isNumeric()) {
           int ingameId = nationGen.GetCustomItemsHandler().getCustomItemId(weaponId.get());
@@ -1703,7 +1704,7 @@ public class Unit {
 
       // morale 50 if over 50
       if (c.command.equals("#mor")) {
-        int mor = c.args.get(0).getInt();
+        int mor = c.args.getFirst().getInt();
         if (mor > 50) {
           c.args.set(0, new Arg(50));
         } else if (mor <= 0) {
@@ -1781,17 +1782,15 @@ public class Unit {
     }
 
     // If the command being handled does not exist within the given set of commands,
-    // or if the command being handled is one of a type that can exist multiple times
-    // on a unit (such as multiple independent #weapon commands), then add the handled
-    // command as an entirely new command in the passed list
-    if (lastExistingCommand == null || (type.isPresent() && type.get().canMultipleExist)) {
-      Args args = new Args();
-
-      for (Arg arg : command.args) {
-        args.add(arg.applyModToNothing());
-      }
-
-      existingCommands.add(CommandFactory.create(command.command, args, command.comment));
+    // then treat it as combining with nothing (some command types will behave differently)
+    if (lastExistingCommand == null) {
+      existingCommands.add(command.combine());
+    }
+      
+    // If the command being handled is one of a type that can exist multiple times
+    // on a unit (such as multiple independent #weapon commands), just add it as is
+    else if (type.isPresent() && type.get().canMultipleExist) {
+      existingCommands.add(CommandFactory.copy(command));
     }
 
     // If a command of the same type already exists, then combine them (add, subtract, set...) depending
@@ -1834,11 +1833,11 @@ public class Unit {
     Unit u = this;
     int hp = 0;
     for (Command c : u.race.unitcommands) if (c.command.equals("#hp")) hp +=
-    c.args.get(0).getInt();
+    c.args.getFirst().getInt();
 
     for (Command c : u.getSlot("basesprite").getCommands()) if (
       c.command.equals("#hp")
-    ) hp += c.args.get(0).getInt();
+    ) hp += c.args.getFirst().getInt();
 
     if (hp > 0) return hp;
     else return 10;
@@ -1895,7 +1894,7 @@ public class Unit {
 
     for (Command c : this.getAllHandledCommands()) {
       if (c.command.equals("#prot")) {
-        natural += c.args.get(0).getInt();
+        natural += c.args.getFirst().getInt();
       }
     }
 
@@ -1943,7 +1942,7 @@ public class Unit {
 
     for (Command c : this.getAllHandledCommands()) {
       if (c.command.equals("#enc")) {
-        naturalEnc += c.args.get(0).getInt();
+        naturalEnc += c.args.getFirst().getInt();
       }
     }
 
@@ -1975,7 +1974,7 @@ public class Unit {
 
     for (Command c : this.getAllHandledCommands()) {
       if (c.command.equals("#def")) {
-        naturalDef += c.args.get(0).getInt();
+        naturalDef += c.args.getFirst().getInt();
       }
 
       if (c.command.equals("#mounted")) {
@@ -2148,10 +2147,26 @@ public class Unit {
   }
 
   private int getRecPointsCost() {
-    int rpcost = this.getFirstCommandValue("#rpcost", -1);
-    boolean hasRpcostCommand = rpcost >= 0;
+    Optional<Command> explicitRpCost = this.getCommand(CommandType.RPCOST.toString());
 
-    if (hasRpcostCommand) {
+    if (explicitRpCost.isPresent()) {
+      Command command = explicitRpCost.get();
+      Arg rpcostArg = command.args.getFirst();
+      Operator operator = rpcostArg.getOperator().orElse(Operator.SET);
+      int gcost;
+      int rpcost;
+
+      // If a set amount of RPs exist, such as #rpcost 10000, return that
+      if (operator == Operator.SET) {
+        rpcost = rpcostArg.getInt();
+      }
+
+      else {
+        // If the existing #rpcost command is a modifier, autocalc RPs and apply the modifier to them
+        gcost = this.getGoldCost(true);
+        rpcost = command.combine(this.getAutocalcRps(gcost)).args.getFirst().getInt();
+      }
+
       return rpcost;
     }
 
@@ -2161,34 +2176,6 @@ public class Unit {
 
     int gcost = this.getGoldCost(true);
     return this.getAutocalcRps(gcost);
-  }
-
-  private int scaleRecPoints(double multiplier, int recPoints) {
-    int scaledRecPoints;
-
-    /**
-     * Values at 1000 or above are special values. They trigger Dominions' AutoCalc.
-     * AutoCalc recpoints values work roughly in steps of 499. When going over or under these steps, they
-     * wrap around. For example, if 8000 autocalcs a unit's RPs to 13, then 8499 autocalcs to 512, but
-     * 8500 autocals to 2 (the minimum RP value). To apply a multiplier to these autocalc values, we can
-     * take the thousands (i.e. for 8000, that is 8) and apply the multiplier to that, then add/subtract
-     * that resulting value from the total autocalc. It's not perfect, but it should approximate well enough.
-     * Can't do it more accurately without working out the exact Dominions' AutoCalc formula.
-     */
-    if (recPoints >= 1000) {
-      double inverse = multiplier - 1;
-      int modifier = (int) Math.round(recPoints * 0.001 * inverse);
-      scaledRecPoints = recPoints + modifier;
-    }
-
-    /**
-     * Values that are not AutoCalc will simply be multiplied as usual. For example, 30 RPs * 0.75 multiplier.
-     */
-    else {
-      scaledRecPoints = (int) Math.floor(recPoints * multiplier);
-    }
-
-    return scaledRecPoints;
   }
 
   private int getAutocalcRps(int gcost) {

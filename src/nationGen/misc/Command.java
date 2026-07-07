@@ -71,27 +71,71 @@ public class Command {
     for (int i = 0; i < this.args.size(); i++) {
       Arg arg = combinedCommand.args.get(i);
       Arg otherArg = other.args.get(i);
-
-      // By default, if no specific operator is given, set the value of this command
-      Operator operator = arg.getOperator().orElse(Operator.SET);
-      Arg combinedValue = new Arg(otherArg.get());
-
-      if (operator == Operator.ADD) {
-        combinedValue = this.addArg(arg, otherArg);
-      }
-
-      else if (operator == Operator.SUBTRACT) {
-        combinedValue = this.subtractArg(arg, otherArg);
-      }
-      
-      else if (operator == Operator.MULTIPLY) {
-        combinedValue = this.multiplyArg(arg, otherArg);
-      }
-
+      Arg combinedValue = this.combineArgs(arg, otherArg);
       combinedCommand.args.set(i, combinedValue);
     }
 
     return combinedCommand;
+  }
+
+  /**
+   * Combine this command with raw numerical values. Note that
+   * unless this command's arguments have operators such as ADD
+   * or SUBTRACT, this will essentially set the commands args to
+   * the provided int values.
+   * @param rawValues - raw int values, in the order of the command's args
+   * @return - the new, combined command
+   */
+  public Command combine(int... rawValues) {
+    Command combinedCommand = new Command(this);
+
+    if (this.args.isEmpty()) {
+      return CommandFactory.copy(this);
+    }
+
+    for (int i = 0; i < rawValues.length; i++) {
+      Arg arg = this.args.get(i);
+      Arg otherArg = new Arg(rawValues[i]);
+      Arg combinedValue = this.combineArgs(arg, otherArg);
+      combinedCommand.args.set(i, combinedValue);
+    }
+
+    return combinedCommand;
+  }
+
+  /**
+   * Define what happens when a command needs to be combined with no other
+   * commands (i.e. in a list that has no other command of the same type).
+   * @return Commmand - a combined, new Command instance
+   */
+  public Command combine() {
+    Args args = new Args();
+
+    for (Arg arg : this.args) {
+      args.add(arg.applyModToNothing());
+    }
+
+    return CommandFactory.create(this.command, args, this.comment);
+  }
+
+  public Arg combineArgs(Arg modifierArg, Arg baseArg) {
+    // By default, if no specific operator is given, set the value of this command
+    Operator operator = modifierArg.getOperator().orElse(Operator.SET);
+    Arg combinedValue = new Arg(modifierArg.get());
+
+    if (operator == Operator.ADD) {
+      combinedValue = this.addArg(modifierArg, baseArg);
+    }
+
+    else if (operator == Operator.SUBTRACT) {
+      combinedValue = this.subtractArg(modifierArg, baseArg);
+    }
+    
+    else if (operator == Operator.MULTIPLY) {
+      combinedValue = this.multiplyArg(modifierArg, baseArg);
+    }
+
+    return combinedValue;
   }
 
   public Arg addArg(Arg ownArg, Arg otherArg) {

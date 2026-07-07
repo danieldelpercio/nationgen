@@ -15,6 +15,10 @@ public enum CommandType {
         this.canMultipleExist = canMultipleExist;
     }
 
+    public String toString() {
+        return this.raw;
+    }
+
     public static CommandType fromRaw(String raw) {
         for (CommandType type : values()) {
             if (type.raw.equals(raw)) {
