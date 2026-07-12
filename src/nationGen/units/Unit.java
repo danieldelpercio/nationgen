@@ -1476,6 +1476,10 @@ public class Unit {
     allTags.addAll(this.pose.tags);
     allTags.addAll(this.race.tags);
 
+    this.race.themefilters.forEach(f -> {
+      allTags.addAll(f.tags);
+    });
+
     this.slotmap.items().forEach(i -> {
       allTags.addAll(i.tags);
     });
