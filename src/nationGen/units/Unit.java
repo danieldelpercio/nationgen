@@ -736,6 +736,10 @@ public class Unit {
     return this.nation != null && this.nation.selectCommanders().anyMatch(com -> com.equals(this));
   }
 
+  public Boolean isSacred() {
+    return this.hasCommand("holy");
+  }
+
   public Boolean isMounted() {
     return this.mountUnit != null;
   }
@@ -1691,7 +1695,7 @@ public class Unit {
     }
 
     // Handle mounts that should make the unit have more than #holycost 1
-    if (unit.isMounted()) {
+    if (unit.isMounted() && unit.isSacred()) {
       int unitHolyCost = unit.getFirstCommandValue("#holycost", 0);
       int mountHolyCost = unit.mountUnit.getFirstCommandValue("#holycost", 0);
       int holyCost = Math.max(unitHolyCost, mountHolyCost);
