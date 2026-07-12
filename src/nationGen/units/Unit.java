@@ -151,6 +151,15 @@ public class Unit {
     isGetCommandsRunning = true;
 
     List<Command> allCommands = new ArrayList<>();
+    List<Command> raceCommands = new ArrayList<>();
+    List<Command> poseCommands = new ArrayList<>();
+    List<Command> itemCommands = new ArrayList<>();
+    List<Command> filterCommands = new ArrayList<>();
+    List<Command> tagRelatedCommands = new ArrayList<>();
+
+    Tags unitTags = this.getAllTags();
+    List<Arg> adjustmentValues = unitTags.getAllValues("adjustmentcommand");
+    Optional<Arg> fixedResCostValue = unitTags.getValue("fixedrescost");
 
     if (this.polished) {
       isGetCommandsRunning = false;
@@ -162,14 +171,17 @@ public class Unit {
       this.getClass() != ShapeChangeUnit.class &&
       this.getClass() != MountUnit.class
     ) {
-      allCommands.addAll(race.unitcommands);
-      allCommands.addAll(pose.getCommands());
+      // Race and Pose commands
+      raceCommands.addAll(race.unitcommands);
+      poseCommands.addAll(pose.getCommands());
     }
 
     // Item commands
-    slotmap.items().forEach(item -> allCommands.addAll(item.getCommands()));
+    slotmap.items().forEach(item -> 
+      itemCommands.addAll(item.getCommands())
+    );
 
-    // Filters
+    // Filter commands
     for (Filter f : this.appliedFilters) {
       for (Command c : f.getCommands()) {
         Command tc = c;
@@ -178,62 +190,55 @@ public class Unit {
         if (c.args.size() > 0 && c.args.getFirst().get().contains("%value%")) {
           int multi = f.tags.getInt("valuemulti").orElse(10);
           int base = f.tags.getInt("basevalue").orElse(-5);
-
           int result = base + multi * tier;
-
           String resstring = "" + result;
+
           if (result > 0) {
             resstring = "+" + resstring;
           }
 
-          if (result != 0) tc = CommandFactory.create(c.command, resstring);
+          if (result != 0) {
+            tc = CommandFactory.create(c.command, resstring);
+          }
         }
 
         // Shape change units handle #spr1/#spr2 separately
         if (this.getClass() == ShapeChangeUnit.class) {
-          if (
-            !tc.command.equals("#spr1") && !tc.command.equals("#spr2")
-          ) allCommands.add(tc);
+          if (!tc.command.equals("#spr1") && !tc.command.equals("#spr2")) {
+            filterCommands.add(tc);
+          }
         }
         
         else {
-          allCommands.add(tc);
+          filterCommands.add(tc);
         }
       }
     }
 
-    // Adjustment stuff
+    // Add all commands together so far; they are needed for the following calculations
+    allCommands.addAll(raceCommands);
+    allCommands.addAll(poseCommands);
+    allCommands.addAll(itemCommands);
+    allCommands.addAll(filterCommands);
     allCommands.addAll(this.commands);
 
-    // Adjustment commands
-    List<Command> adjustmentcommands = new ArrayList<>();
-    for (Arg str : Generic.getAllUnitTags(this).getAllValues(
-      "adjustmentcommand"
-    )) {
-      adjustmentcommands.add(str.getCommand());
+    // Handle "#adjustmentcommand" tags
+    for (Arg adjustmentArg : adjustmentValues) {
+      tagRelatedCommands.add(adjustmentArg.getCommand());
     }
 
-    // Special case: #fixedrescost
-    Generic.getAllUnitTags(this)
-      .getValue("fixedrescost")
-      .ifPresent(arg -> {
-        // If we have many, we use the first one. The order is Race, pose, filter, theme.
-        // Assumedly these exist mostly in one of these anyway
-        int cost = arg.getInt();
-        int currentcost = getResCost(true, true, allCommands);
-
-        cost -= currentcost;
-
-        if (cost > 0) adjustmentcommands.add(
-          CommandFactory.create("#rcost", "+" + cost)
-        );
-        else if (cost < 0) adjustmentcommands.add(
-          CommandFactory.create("#rcost", "" + cost)
-        );
-      });
+    // Handle possible "#fixedrescost" tag
+    fixedResCostValue.ifPresent(arg -> {
+      int fixedCost = arg.getInt();
+      int currentCost = getResCost(true, true, allCommands);
+      int costDiff = fixedCost - currentCost;
+      Arg costArg = Arg.asModifier(costDiff);
+      Command rcostCommand = CommandFactory.create("#rcost " + costArg.get());
+      tagRelatedCommands.add(rcostCommand);
+    });
 
     // Add adjustments
-    allCommands.addAll(adjustmentcommands);
+    allCommands.addAll(tagRelatedCommands);
 
     // Move copy and clear commands to the top of the list, with #copystats first:
     List<Command> addToTop = new ArrayList<>();
@@ -256,18 +261,25 @@ public class Unit {
     });
     // reverse so the first thing in the list is the last to be added to the top
     Collections.reverse(addToTop);
-    addToTop.forEach(command -> allCommands.add(0, command));
+    addToTop.forEach(command -> allCommands.addFirst(command));
 
     // Now handle them!
     List<Command> multiCommands = new ArrayList<>();
     List<Command> tempCommands = new ArrayList<>();
 
-    for (Command c : allCommands) if (
-      c.args.size() > 0 &&
-      c.args.getFirst().get().startsWith("*") &&
-      c.args.getFirst().isNumeric()
-    ) multiCommands.add(c);
-    else handleCommand(tempCommands, c);
+    for (Command c : allCommands) {
+      if (
+        c.args.size() > 0 &&
+        c.args.getFirst().get().startsWith("*") &&
+        c.args.getFirst().isNumeric()
+      ) {
+        multiCommands.add(c);
+      }
+
+      else {
+        handleCommand(tempCommands, c);
+      }
+    }
 
     //Percentual cost increases
     for (Command c : multiCommands) {
