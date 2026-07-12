@@ -1,6 +1,7 @@
 package nationGen.misc;
 
 import java.util.Arrays;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import nationGen.misc.commands.RpCostCommand;
@@ -25,7 +26,15 @@ public abstract class CommandFactory {
     }
 
     public static Command copy(Command commandToClone) {
-        return CommandFactory.create(commandToClone.command, commandToClone.args, commandToClone.command);
+        Optional<CommandType> type = commandToClone.getType();
+        
+        if (type.isPresent() && type.get() == CommandType.RPCOST) {
+            return new RpCostCommand(commandToClone);
+        }
+        
+        else {
+            return new Command(commandToClone);
+        }
     }
 
     public static Command create(String raw, Args args, String comment) {
