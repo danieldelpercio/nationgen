@@ -1782,15 +1782,11 @@ public class Unit {
     }
 
     // If the command being handled does not exist within the given set of commands,
-    // then treat it as combining with nothing (some command types will behave differently)
-    if (lastExistingCommand == null) {
-      existingCommands.add(command.combine());
-    }
-      
-    // If the command being handled is one of a type that can exist multiple times
-    // on a unit (such as multiple independent #weapon commands), just add it as is
-    else if (type.isPresent() && type.get().canMultipleExist) {
-      existingCommands.add(CommandFactory.copy(command));
+    // or if the command being handled is one of a type that can exist multiple times
+    // on a unit (such as multiple independent #weapon commands), then add the handled
+    // command as an entirely new command in the passed list
+    if (lastExistingCommand == null || (type.isPresent() && type.get().canMultipleExist)) {
+      existingCommands.add(command.applyArgOperatorsToNothing());
     }
 
     // If a command of the same type already exists, then combine them (add, subtract, set...) depending

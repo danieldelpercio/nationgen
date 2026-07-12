@@ -151,7 +151,7 @@ public class Arg {
     return this.parenthesis == null ? null : this.parenthesis.copy(); // defensive copy to prevent this object's copy being modified
   }
 
-  public double applyModTo(double value) {
+  public double applyOperatorTo(double value) {
     if (getOperator().isPresent()) {
       switch (getOperator().get()) {
         case ADD:
@@ -173,7 +173,7 @@ public class Arg {
     }
   }
 
-  public Arg applyModToNothing() {
+  public Arg applyOperatorToNothing() {
     Optional<Operator> operator = getOperator();
     if (operator.isPresent()) {
       if (operator.get() == Operator.ADD) {

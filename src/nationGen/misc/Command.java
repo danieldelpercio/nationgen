@@ -56,7 +56,7 @@ public class Command {
    * @return Commmand - a combined, new Command instance
    */
   public Command combine(Command other) {
-    Command combinedCommand = new Command(this);
+    Command combinedCommand = CommandFactory.copy(this);
 
     if (!this.sameTypeAs(other)) {
       throw new IllegalArgumentException(
@@ -87,7 +87,7 @@ public class Command {
    * @return - the new, combined command
    */
   public Command combine(int... rawValues) {
-    Command combinedCommand = new Command(this);
+    Command combinedCommand = CommandFactory.copy(this);
 
     if (this.args.isEmpty()) {
       return CommandFactory.copy(this);
@@ -103,32 +103,13 @@ public class Command {
     return combinedCommand;
   }
 
-  /**
-   * Define what happens when a command needs to be combined with no other
-   * commands (i.e. in a list that has no other command of the same type).
-   * @return Commmand - a combined, new Command instance
-   */
-  public Command combine() {
-    Args args = new Args();
-
-    for (Arg arg : this.args) {
-      args.add(arg.applyModToNothing());
-    }
-
-    return CommandFactory.create(this.command, args, this.comment);
-  }
-
   public Arg combineArgs(Arg modifierArg, Arg baseArg) {
     // By default, if no specific operator is given, set the value of this command
     Operator operator = modifierArg.getOperator().orElse(Operator.SET);
     Arg combinedValue = new Arg(modifierArg.get());
 
-    if (operator == Operator.ADD) {
+    if (operator == Operator.ADD || operator == Operator.SUBTRACT) {
       combinedValue = this.addArg(modifierArg, baseArg);
-    }
-
-    else if (operator == Operator.SUBTRACT) {
-      combinedValue = this.subtractArg(modifierArg, baseArg);
     }
     
     else if (operator == Operator.MULTIPLY) {
@@ -136,6 +117,24 @@ public class Command {
     }
 
     return combinedValue;
+  }
+
+  /**
+   * When an #rpcost command needs to be combined alone, we should leave the operator values intact
+   * instead of trying to resolve them. The Unit code to autocalc the unit's RP will kick in, and
+   * then it can take into account the modifier left dangling here.
+   * @return Commmand - a combined, new Command instance
+   */
+  public Command applyArgOperatorsToNothing() {
+    // return CommandFactory.copy(this);
+
+    Args args = new Args();
+
+    for (Arg arg : this.args) {
+      args.add(arg.applyOperatorToNothing());
+    }
+
+    return CommandFactory.create(this.command, args, this.comment);
   }
 
   public Arg addArg(Arg ownArg, Arg otherArg) {
@@ -155,37 +154,8 @@ public class Command {
     
     catch (NumberFormatException error) {
       throw new IllegalArgumentException(
-        "Command ADD: " +
+        "Error combining: " +
         ownArg +
-        " + " +
-        otherArg +
-        " on '" +
-        this.command +
-        "' error",
-        error
-      );
-    }
-  }
-
-  public Arg subtractArg(Arg subtractingArg, Arg otherArg) {
-    try {
-      int value;
-      
-      if (otherArg.get().startsWith("%")) {
-        value = subtractingArg.getInt();
-      }
-
-      else {
-        value = otherArg.getInt() - subtractingArg.getInt();
-      }
-
-      return new Arg(value);
-    }
-    
-    catch (NumberFormatException error) {
-      throw new IllegalArgumentException(
-        "Command SUBTRACT: " +
-        subtractingArg +
         " + " +
         otherArg +
         " on '" +
@@ -221,7 +191,7 @@ public class Command {
     
     catch (Exception e) {
       throw new IllegalArgumentException(
-        "Command MULTIPLY: " +
+        "Error combining: " +
         ownArg +
         " * " +
         otherArg +

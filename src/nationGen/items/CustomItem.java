@@ -63,7 +63,7 @@ public class CustomItem extends Item {
     super(customItem);
     this.customItemCommands = new ArrayList<>(customItem.customItemCommands)
       .stream()
-      .map(c -> new Command(c))
+      .map(c -> CommandFactory.copy(c))
       .collect(Collectors.toList());
 
     this.olditem = (customItem.olditem != null) ? new Item(customItem.olditem) : null;
@@ -156,7 +156,7 @@ public class CustomItem extends Item {
         Optional<Integer> oldvalue = this.getCustomIntValue(key);
 
         // Resolve the modifier from the magic effect
-        int modifiedValue = (int) value.applyModTo(oldvalue.orElseThrow());
+        int modifiedValue = (int) value.applyOperatorTo(oldvalue.orElseThrow());
 
         // Apply new value
         this.setCustomCommand(key, modifiedValue);

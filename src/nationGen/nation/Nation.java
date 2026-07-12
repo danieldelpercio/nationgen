@@ -567,7 +567,7 @@ public class Nation {
 
         if (operator.isPresent()) {
           try {
-            old.args.set(i, new Arg(arg.applyModTo(oldarg.getInt())));
+            old.args.set(i, new Arg(arg.applyOperatorTo(oldarg.getInt())));
           } catch (NumberFormatException e) {
             throw new IllegalStateException(
               "FATAL ERROR: Argument parsing " +
@@ -587,9 +587,9 @@ public class Nation {
     } else {
       Args newArgs = new Args();
       for (Arg arg : c.args) {
-        newArgs.add(arg.applyModToNothing());
+        newArgs.add(arg.applyOperatorToNothing());
       }
-      commands.add(new Command(c.command, newArgs, c.comment));
+      commands.add(CommandFactory.create(c.command, newArgs, c.comment));
     }
   }
 
@@ -1349,7 +1349,7 @@ public class Nation {
       Command toAdd = CommandFactory.copy(commandToHandle);
       if (toAdd.args.size() > 0) {
         // If the command starts with +, remove +.
-        toAdd.args.set(0, toAdd.args.get(0).applyModToNothing());
+        toAdd.args.set(0, toAdd.args.get(0).applyOperatorToNothing());
       }
       targetCommands.add(toAdd);
     }

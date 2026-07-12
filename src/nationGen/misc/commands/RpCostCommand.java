@@ -27,7 +27,7 @@ public class RpCostCommand extends Command {
    */
   @Override
   public Command combine(Command other) {
-    Command combinedCommand = new Command(this);
+    Command combinedCommand = CommandFactory.copy(this);
 
     if (!this.sameTypeAs(other)) {
       throw new IllegalArgumentException(
@@ -59,7 +59,7 @@ public class RpCostCommand extends Command {
    */
   @Override
   public Command combine(int... rawValues) {
-    Command combinedCommand = new Command(this);
+    Command combinedCommand = CommandFactory.copy(this);
 
     if (this.args.isEmpty()) {
       return CommandFactory.copy(this);
@@ -75,29 +75,14 @@ public class RpCostCommand extends Command {
     return combinedCommand;
   }
 
-  /**
-   * When an #rpcost command needs to be combined alone, we should leave the operator values intact
-   * instead of trying to resolve them. The Unit code to autocalc the unit's RP will kick in, and
-   * then it can take into account the modifier left dangling here.
-   * @return Commmand - a combined, new Command instance
-   */
-  @Override
-  public Command combine() {
-    return CommandFactory.copy(this);
-  }
-
   @Override
   public Arg combineArgs(Arg modifierArg, Arg baseArg) {
     // By default, if no specific operator is given, set the value of this command
     Operator operator = modifierArg.getOperator().orElse(Operator.SET);
     Arg combinedValue = new Arg(modifierArg.get());
 
-    if (operator == Operator.ADD) {
+    if (operator == Operator.ADD || operator == Operator.SUBTRACT) {
       combinedValue = this.addArg(modifierArg, baseArg);
-    }
-
-    else if (operator == Operator.SUBTRACT) {
-      combinedValue = this.subtractArg(modifierArg, baseArg);
     }
     
     else if (operator == Operator.MULTIPLY) {
@@ -105,6 +90,15 @@ public class RpCostCommand extends Command {
     }
 
     return combinedValue;
+  }
+
+  /**
+   * Define what happens when a command needs to be combined with no other
+   * commands (i.e. in a list that has no other command of the same type).
+   * @return Commmand - a combined, new Command instance
+   */
+  public Command applyArgOperatorsToNothing() {
+    return CommandFactory.copy(this);
   }
 
   /**
@@ -136,16 +130,16 @@ public class RpCostCommand extends Command {
         recPoints = baseArg.getInt();
 
         if (recPoints >= 1000) {
-            double inverse = multiplier - 1;
-            int modifier = (int) Math.round(recPoints * 0.001 * inverse);
-            value = recPoints + modifier;
+          double inverse = multiplier - 1;
+          int modifier = (int) Math.round(10 * inverse);
+          value = recPoints + modifier;
         }
 
         /**
          * Values that are not AutoCalc will simply be multiplied as usual. For example, 30 RPs * 0.75 multiplier.
          */
         else {
-            value = (int) Math.round(recPoints * multiplier);
+          value = (int) Math.round(recPoints * multiplier);
         }
       }
 
