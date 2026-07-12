@@ -3,7 +3,6 @@
 #gameid -1
 #sprite /graphics/foulspawn/small/larm/goblinoid.png
 #command "#gcost +1"
-#command "#rpcost +1000"
 #command "#hp +1"
 #command "#str +1"
 -- #command "#prec +0"
@@ -32,7 +31,6 @@
 #gameid -1
 #sprite /graphics/foulspawn/small/larm/tentacle_green.png
 #command "#gcost +1"
-#command "#rpcost +1000"
 #command "#hp +1"
 #command "#str +2"
 #command "#prec -1"
@@ -57,7 +55,6 @@
 #gameid -1
 #sprite /graphics/foulspawn/small/larm/pincer.png
 #command "#gcost +1"
-#command "#rpcost +1000"
 #command "#prot +1"
 #command "#str +1"
 #command "#hp +1"
