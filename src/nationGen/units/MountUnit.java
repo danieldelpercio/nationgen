@@ -128,11 +128,11 @@ public class MountUnit extends Unit {
 
         this.bardingGoldMultiplier = this.getBardingGoldModifier(bardingProtection);
         this.bardingResCost = this.getBardingResCost(mountItem);
-        this.mount.addCommands(Command.args("#armor", bardingId));
+        this.mount.addCommands(CommandFactory.create("#armor", bardingId));
 
         // Coral barding; add #poisonarmor as it can't be added as an armor property
         if (bardingId.equals("190")) {
-          this.mount.addCommands(Command.parse("#poisonarmor 5"));
+          this.mount.addCommands(CommandFactory.create("#poisonarmor", "5"));
         }
       }
 

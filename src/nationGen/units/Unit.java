@@ -233,7 +233,7 @@ public class Unit {
       int currentCost = getResCost(true, true, allCommands);
       int costDiff = fixedCost - currentCost;
       Arg costArg = Arg.asModifier(costDiff);
-      Command rcostCommand = CommandFactory.create("#rcost " + costArg.get());
+      Command rcostCommand = CommandFactory.create("#rcost", costArg.get());
       tagRelatedCommands.add(rcostCommand);
     });
 
