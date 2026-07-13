@@ -2380,10 +2380,11 @@ public class Unit {
 
     for (String slotName : slotMap.getSlots()) {
       String slotDescription = "-- " + slotName + ": ";
-      List<Item> itemsInSlot = slotMap.getItemsInSlotStack(slotName);
+      List<Item> itemsInSlot = slotMap.getItemTrailInSlotStack(slotName);
 
       for (Item item : itemsInSlot) {
-        slotDescription += item.getName() + " <- ";
+        String itemName = (item == null) ? "null" : item.getName();
+        slotDescription += itemName + " <- ";
       }
 
       if (itemsInSlot.size() > 0) {
