@@ -603,20 +603,28 @@ public class Unit {
   }
 
   public int getItemSlots() {
-    Command itemslotsCommand = this.getHandledCommand("#itemslots");
+    Command existingItemslots = this.getHandledCommand("#itemslots");
+    HashMap<DominionsItemSlot, Integer> existingItemslotsMap;
     HashMap<DominionsItemSlot, Integer> itemslots;
     int encodedSlots;
     
-    if (itemslotsCommand != null) {
-      itemslots = DominionsItemSlots.decode(itemslotsCommand.args.getInt(0));
+    if (existingItemslots != null && !existingItemslots.hasCombinatoryArgs()) {
+      itemslots = DominionsItemSlots.decode(existingItemslots.args.getInt(0));
     }
 
     else {
-      itemslots = DominionsItemSlots.defaultSlots();
-  
       Tags itemTags = new Tags();
       Tags unitTags = Generic.getAllUnitTags(this);
       Item basesprite = this.slotmap.get("basesprite");
+      int existingItemslotsValue = (existingItemslots == null ? 0 : existingItemslots.args.getInt(0));
+
+      existingItemslotsMap = DominionsItemSlots.decode(existingItemslotsValue);
+      itemslots = DominionsItemSlots.add(
+        List.of(
+          existingItemslotsMap,
+          DominionsItemSlots.defaultSlots()
+        )
+      );
 
       if (basesprite != null) {
         itemTags.addAll(basesprite.tags);

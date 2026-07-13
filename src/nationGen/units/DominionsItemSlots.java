@@ -209,6 +209,25 @@ public abstract class DominionsItemSlots {
         });
     }
 
+    /**
+     * Merges the values of multiple HashMap<DominionsItemSlot, Integer> by adding them together. 
+     * @param slotMaps - the maps to merge by addition
+     * @return - the resulting map
+     */
+    public static HashMap<DominionsItemSlot, Integer> add(List<HashMap<DominionsItemSlot, Integer>> slotMaps) {
+        HashMap<DominionsItemSlot, Integer> combined = new HashMap<>();
+
+        for (HashMap<DominionsItemSlot, Integer> map : slotMaps) {
+            map.forEach((slot, value) -> {
+                combined.merge(slot, value, (oldValue, newValue) -> {
+                    return oldValue + newValue;
+                });
+            });
+        }
+
+        return combined;
+    }
+
     private static int getBitmaskForAmountOfSlots(int slotBitmask, int amountOfSlots) {
         int bitmask = slotBitmask * ((int)Math.pow(2, amountOfSlots) - 1);
         return bitmask;
