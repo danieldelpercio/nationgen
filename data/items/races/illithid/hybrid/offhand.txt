@@ -21,7 +21,7 @@
 #id tentacle_strangle
 #gameid 116
 #tentacle
-#needstype larm tentacle
+#needstype larm tentacle_hand
 #type melee
 #type any
 #enditem

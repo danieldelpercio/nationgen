@@ -14,7 +14,7 @@
 #id tentacle_strangle
 #gameid 116
 #tentacle
-#needstype rarm tentacle
+#needstype rarm tentacle_hand
 #needstype offhand any
 #enditem
 
