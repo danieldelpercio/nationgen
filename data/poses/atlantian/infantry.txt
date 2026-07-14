@@ -34,6 +34,7 @@
 
 #command "#amphibian"
 #maxunits 1
+#maxvarieties 1
 
 #endpose
 
@@ -124,6 +125,7 @@
 #command "#amphibian"
 #good_leader
 #maxunits 1
+#maxvarieties 1
 
 #endpose
 
