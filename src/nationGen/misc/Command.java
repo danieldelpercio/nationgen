@@ -37,6 +37,10 @@ public class Command {
     return Optional.of(type);
   }
 
+  public boolean isOfType(CommandType type) {
+    return this.getType().equals(Optional.of(type));
+  }
+
   public boolean sameTypeAs(Command other) {
     return this.getType().equals(other.getType());
   }

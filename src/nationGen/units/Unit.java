@@ -259,7 +259,8 @@ public class Unit {
         }
       }
     });
-    // reverse so the first thing in the list is the last to be added to the top
+    
+    // Reverse so the first thing in the list is the last to be added to the top
     Collections.reverse(addToTop);
     addToTop.forEach(command -> allCommands.addFirst(command));
 
@@ -281,7 +282,33 @@ public class Unit {
       }
     }
 
-    //Percentual cost increases
+    // Handle resource cost autocalc - every unit's baseline resource cost is
+    // their gold cost x 1000. Any previously handled #rpcost commands will be
+    // used to modify this autocalc value.
+    tempCommands.stream()
+      .filter(c -> c.command.equals("#gcost"))
+      .findFirst()
+      .ifPresent(gcostCommand -> {
+        Optional<Command> rpcostCommand = tempCommands.stream()
+          .filter(c -> c.isOfType(CommandType.RPCOST))
+          .findFirst();
+
+        Command autocalcRpCost = CommandFactory.create(
+          CommandType.RPCOST.toString(),
+          String.valueOf(this.getAutocalcRps(gcostCommand))
+        );
+
+        if (rpcostCommand.isPresent()) {
+          Command combined = rpcostCommand.get().combine(autocalcRpCost);
+          handleCommand(tempCommands, combined);
+        }
+
+        else {
+          handleCommand(tempCommands, autocalcRpCost);
+        }
+      });
+
+    // Percentual cost increases
     for (Command c : multiCommands) {
       handleCommand(tempCommands, c);
     }
@@ -2205,6 +2232,10 @@ public class Unit {
   private int getAutocalcRps(int gcost) {
     // Per modding manual, the RP autocalc value should be the unit's gold value * 1000
     return gcost * 1000;
+  }
+
+  private int getAutocalcRps(Command gcost) {
+    return this.getAutocalcRps(gcost.args.getInt(0));
   }
 
   protected List<ItemData> getEquippedWeapons() {

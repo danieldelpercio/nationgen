@@ -118,6 +118,7 @@ public class RpCostCommand extends Command {
   public Arg multiplyArg(Arg multiplierArg, Arg baseArg) {
     try {
       int value;
+      Arg result;
       double multiplier;
       int recPoints;
       
@@ -143,7 +144,15 @@ public class RpCostCommand extends Command {
         }
       }
 
-      return new Arg(value);
+      if (baseArg.getOperator().isPresent()) {
+        result = Arg.asModifier(value);
+      }
+
+      else {
+        result = new Arg(value);
+      }
+
+      return result;
     }
     
     catch (Exception e) {
