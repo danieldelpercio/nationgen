@@ -287,6 +287,11 @@ public class Unit {
     // used to modify this autocalc value.
     tempCommands.stream()
       .filter(c -> c.command.equals("#gcost"))
+      // Don't use pure modifier gcosts for rpcost autocalc (i.e. -40 gcost)
+      // TODO: These would come from things like ShapeChangeUnit or MountUnit
+      // instances that only end up with modifier gcosts to the main Unit.
+      // They should probably override this method.
+      .filter(c -> !c.hasCombinatoryArgs())
       .findFirst()
       .ifPresent(gcostCommand -> {
         Optional<Command> rpcostCommand = tempCommands.stream()

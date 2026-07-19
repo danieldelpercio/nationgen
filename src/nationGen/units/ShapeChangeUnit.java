@@ -116,7 +116,6 @@ public class ShapeChangeUnit extends Unit {
       for (Command c : clist) {
         if (assets.isRacePoseCommandInheritableByShape(c)) {
           sf.addCommands(c);
-          //handleCommand(commands, c);
         }
       }
 
@@ -136,7 +135,6 @@ public class ShapeChangeUnit extends Unit {
             !thisForm.tags.containsName("mount")
           ) {
             sf.addCommands(c);
-            //handleCommand(commands, c);
           }
 
           if (
@@ -144,7 +142,6 @@ public class ShapeChangeUnit extends Unit {
             thisForm.tags.containsName("mount")
           ) {
             sf.addCommands(c);
-            //handleCommand(commands, c);
           }
         }
       }
@@ -233,11 +230,11 @@ public class ShapeChangeUnit extends Unit {
 
     lines.add("#newmonster " + id);
 
-    List<Command> commands = getAllHandledCommands();
+    List<Command> handledCommands = getAllHandledCommands();
     boolean hasItemSlots = false;
 
     // Own non-gcost commands first due to #copystats
-    for (Command c : commands) {
+    for (Command c : handledCommands) {
       if (c.command.equals("#gcost")) {
         continue;
       }
