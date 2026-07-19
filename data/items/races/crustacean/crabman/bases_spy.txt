@@ -13,7 +13,7 @@
 #define "#att 10"
 #define "#def 8"
 #define "#prec 7"
-#define "#enc 3"
+#define "#enc 4"
 #define "#mapmove 16"
 #define "#ap 10"
 #define "#maxage 50"
