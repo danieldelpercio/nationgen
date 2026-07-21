@@ -2480,7 +2480,9 @@ public class MageGenerator extends TroopGenerator {
 
     List<String> possibleslots = this.getPossibleVarySlots(u);
 
-    if (possibleslots.size() == 0) return;
+    if (possibleslots.size() == 0) {
+      return;
+    }
 
     String slot = possibleslots.get(this.random.nextInt(possibleslots.size()));
 
