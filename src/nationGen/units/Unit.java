@@ -611,7 +611,9 @@ public class Unit {
     HashMap<DominionsItemSlot, Integer> itemslots;
     List<Command> existingItemslots = this.gatherCommands().stream()
       .filter(c -> c.isOfType(CommandType.ITEMSLOTS))
-      .toList();
+      // Copy the commands to avoid mutating original ones
+      .map(c -> new Command(c))
+      .collect(Collectors.toList());
 
     if (this.polished == true && existingItemslots.size() > 1) {
       return existingItemslots.getFirst().args.getInt(0);
@@ -630,13 +632,16 @@ public class Unit {
       Tags itemTags = new Tags();
       Tags unitTags = Generic.getAllUnitTags(this);
       Item basesprite = this.slotmap.get("basesprite");
+      List<Args> baseitemslotTags = unitTags.getAllArgs("baseitemslot");
       int existingItemslotsValue = (existingItemslots.isEmpty() ? 0 : existingItemslots.getFirst().args.getInt(0));
-
+      
+      // #baseitemslot tags will override the base amount of slots
+      HashMap<DominionsItemSlot, Integer> baseItemslots = DominionsItemSlots.defaultSlots(baseitemslotTags);
       existingItemslotsMap = DominionsItemSlots.decode(existingItemslotsValue);
       itemslots = DominionsItemSlots.add(
         List.of(
           existingItemslotsMap,
-          DominionsItemSlots.defaultSlots()
+          baseItemslots
         )
       );
 
@@ -647,15 +652,6 @@ public class Unit {
       this.slotmap.items()
         .filter(i -> i != basesprite)
         .forEach(i -> itemTags.addAll(i.tags));
-
-      // #baseitemslot tags will override the base amount of slots
-      for (Args args : unitTags.getAllArgs("baseitemslot")) {
-        String slotName = args.getFirst().get();
-        DominionsItemSlot slot = DominionsItemSlot.fromString(slotName);
-        Arg modifier = args.get(1);
-        int newAmount = Generic.handleModifier(modifier, itemslots.get(slot));
-        itemslots.put(slot, newAmount);
-      }
 
       // Seearch for #itemslot tags that modifies each specific slot
       for (Args args : itemTags.getAllArgs("itemslot")) {
