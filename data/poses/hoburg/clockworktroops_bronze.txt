@@ -1,7 +1,7 @@
 
 ---- Light clockwork troop (elite)
 #newpose
-#id "clockwork cuirass (elite)"
+#id "clockwork bronze cuirass (elite)"
 #role "elite infantry"
 #role "sacred infantry"
 #basechance 0.1
@@ -35,7 +35,7 @@
 
 ---- Light clockwork troop
 #newpose
-#id "clockwork cuirass (normal)"
+#id "clockwork bronze cuirass (normal)"
 #role "infantry"
 #basechance 0.025
 
@@ -72,7 +72,7 @@
 
 ---- Clockwork troop (elite)
 #newpose
-#id "clockwork armor (elite)"
+#id "clockwork bronze armor (elite)"
 #role "elite infantry"
 #role "sacred infantry"
 #basechance 0.1
@@ -120,7 +120,7 @@
 
 ---- Clockwork troop
 #newpose
-#id "clockwork armor (normal)"
+#id "clockwork bronze armor (normal)"
 #role "infantry"
 #basechance 0.025
 
@@ -171,7 +171,7 @@
 
 ---- Heavy clockwork troop (elite)
 #newpose
-#id "clockwork ogre (elite)"
+#id "clockwork bronze ogre (elite)"
 #role "elite infantry"
 #role "sacred infantry"
 #basechance 0.05
