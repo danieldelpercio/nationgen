@@ -11,7 +11,6 @@ import com.elmokki.Generic;
 import nationGen.items.DominionsItemSlot;
 import nationGen.misc.Arg;
 import nationGen.misc.Args;
-import nationGen.misc.Operator;
 
 /** 
  * Utility abstract class to encode/decode Dominions' #itemslots bitmask. Can encode a HashMap of

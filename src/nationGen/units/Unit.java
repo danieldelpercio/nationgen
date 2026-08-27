@@ -553,50 +553,22 @@ public class Unit {
     this.id = this.nationGen.getNextUnitId();
   }
 
-  // Decides on bodytype tags based on the itemslots of the unit (see #itemslots in modding manual for the bitmask table of values)
   protected Optional<String> writeBodytypeLine() {
-    String[] coms = {
-      "#lizard",
-      "#quadruped",
-      "#bird",
-      "#snake",
-      "#djinn",
-      "#miscshape",
-      "#humanoid",
-      "#mountedhumanoid",
-      "#troglodyte",
-      "#naga",
-      "#copystats",
-    };
-    for (String str : coms) if (this.hasCommand(str)) {
+    for (DominionsBodyType bodyType : DominionsBodyType.values()) {
+      if (this.hasCommand(bodyType.toModCommand())) {
+        return Optional.empty();
+      }
+    }
+
+    if (this.hasCommand(CommandType.COPYSTATS.toString())) {
       return Optional.empty();
     }
 
     int slots = this.getItemSlots();
-
-    // has feet and an arm
-    if (
-      Generic.containsBitmask(slots, 131072) &&
-      Generic.containsBitmask(slots, 2)
-    ) {
-      // has head
-      if (Generic.containsBitmask(slots, 8192)) return Optional.of("#humanoid");
-      else return Optional.of("#troglodyte");
-    }
-    // no feet, but arm
-    else if (Generic.containsBitmask(slots, 2)) {
-      Boolean mounted = this.getSlot("mount") != null;
-      if (mounted) return Optional.of("#mountedhumanoid");
-      else return Optional.of("#naga");
-    }
-    // feet, no arm
-    else if (Generic.containsBitmask(slots, 131072)) {
-      return Optional.of("#quadruped");
-    }
-    // no feet nor arm
-    else {
-      return Optional.of("#miscshape");
-    }
+    boolean isMounted = this.isMounted();
+    DominionsBodyType bodytype = DominionsBodyType.fromItemslots(slots, isMounted);
+    String bodytypeCommand = bodytype.toModCommand();
+    return Optional.of(bodytypeCommand);
   }
 
   public int getHandSlots() {
