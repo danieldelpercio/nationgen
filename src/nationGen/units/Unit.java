@@ -1306,6 +1306,9 @@ public class Unit {
       totalCost *= slowRecMultiplier;
     }
 
+    // Unit gcost
+    totalCost = Math.max(totalCost, 1);
+
     if (includeMountCost == true) {
       totalCost += this.getMountGoldCost();
     }
