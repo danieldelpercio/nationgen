@@ -29,7 +29,8 @@
 #theme "austral"
 #theme "boreal"
 #theme "central"
-#itemslot hand +1
+#itemslot hand +2
+#needs offhand nooffhand
 #enditem
 
 #newitem
