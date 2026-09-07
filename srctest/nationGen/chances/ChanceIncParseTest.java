@@ -3,7 +3,7 @@ package nationGen.chances;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class ChanceIncTest {
+public class ChanceIncParseTest {
 
   @Test(expected = IllegalArgumentException.class)
   public void testParseJoiners_missingBothArguments_throwException() {

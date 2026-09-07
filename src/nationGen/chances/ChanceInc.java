@@ -29,7 +29,8 @@ public class ChanceInc extends ConditionalModifier<ChanceIncData> {
   }
 
   public static ChanceInc parse(String line) {
-    ChanceInc chanceInc = from(Args.lex(line));
+    Args parsedArgs = Args.lex(line);
+    ChanceInc chanceInc = from(parsedArgs);
     chanceInc.source = line;
     return chanceInc;
   }

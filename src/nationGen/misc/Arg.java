@@ -171,6 +171,9 @@ public class Arg {
         case MULTIPLY:
           return value * getDouble();
         case DIVIDE:
+          if (getDouble() == 0.0) {
+            throw new ArithmeticException("Cannot divide by zero");
+          }
           return value / getDouble();
         case SET:
           return getDouble();

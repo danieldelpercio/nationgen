@@ -32,8 +32,8 @@ public class ChanceDistribution<E> {
 
   public void modifyChance(E f, Arg mod) {
     this.chances.compute(f, (entity, chance) ->
-        mod.applyOperatorTo(chance == null ? baseChance(f) : chance)
-      );
+      mod.applyOperatorTo(chance == null ? baseChance(f) : chance)
+    );
   }
 
   protected double baseChance(E element) {
