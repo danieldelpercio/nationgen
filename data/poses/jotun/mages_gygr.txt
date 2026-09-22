@@ -1,7 +1,7 @@
 ---------- Mages and Priests 1
 
 #newpose
-#id "female T1"
+#id "jotun female T1"
 #role "mage"
 #role "priest"
 
@@ -36,7 +36,7 @@
 
 
 #newpose
-#id "female T2"
+#id "jotun female T2"
 #role "mage"
 #role "priest"
 
@@ -71,7 +71,7 @@
 
 
 #newpose
-#id "female T3"
+#id "jotun female T3"
 #role "mage"
 #role "priest"
 

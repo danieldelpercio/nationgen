@@ -1,6 +1,6 @@
 -- Normal
 #newpose
-#id "infantry"
+#id "merrow infantry"
 #role "infantry"
 #role "scout"
 

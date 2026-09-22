@@ -2,6 +2,7 @@
 ---------- Mages and Priests
 
 #newpose
+#id "caveman mages and priests"
 #role "mage"
 #role "priest"
 

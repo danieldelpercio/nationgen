@@ -101,7 +101,7 @@
 -- Starchild-type hybrid scouts
 
 #newpose
-#id "scout"
+#id "starchild scout"
 #role "scout"
 
 #command "#gcost 20"

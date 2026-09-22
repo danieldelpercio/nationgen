@@ -31,7 +31,7 @@
 -------- Dual-Wielding savage minotaurs
 
 #newpose
-#id "DW"
+#id "minotaur dual-wielding"
 #role "infantry"
 #role "scout"
 

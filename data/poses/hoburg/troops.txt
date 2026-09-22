@@ -326,7 +326,7 @@
 
 -------- Normal Scout
 #newpose
-#id "scout"
+#id "hoburg scout"
 #role "scout"
 #theme "boreal"
 #theme "austral"
@@ -364,7 +364,7 @@
 -------- Scout (Oriental)
 
 #newpose
-#id "oriental scout"
+#id "hoburg oriental scout"
 #role "scout"
 #theme "oriental"
 

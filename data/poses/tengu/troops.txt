@@ -2,7 +2,7 @@
 -------- Normal
 
 #newpose
-#id "regular"
+#id "tengu regular"
 #role "sacred infantry"
 #role "elite infantry"
 #role "scout"
@@ -30,7 +30,7 @@
 -------- 2h
 
 #newpose
-#id "twohanded"
+#id "tengu twohanded"
 #role "sacred infantry"
 #role "elite infantry"
 #role "scout"

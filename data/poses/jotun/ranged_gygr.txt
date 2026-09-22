@@ -1,6 +1,6 @@
 
 #newpose
-#id "female skirmishers"
+#id "jotun female skirmishers"
 #role "ranged"
 
 #chanceinc "racetheme patriarchal *0"
@@ -37,7 +37,7 @@
 
 
 #newpose
-#id "elite female skirmishers"
+#id "jotun elite female skirmishers"
 #role "elite ranged"
 #role "sacred ranged"
 

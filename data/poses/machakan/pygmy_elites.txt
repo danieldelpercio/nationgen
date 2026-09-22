@@ -83,7 +83,7 @@
 #newpose
 #basechance 1
 #role "scout"
-#id "pygmy scout"
+#id "pygmy elite scout"
 #subrace pygmy
 #subraceprefix pygmy
 

@@ -2,7 +2,7 @@
 -------- Normal
 
 #newpose
-#id "standard male infantry"
+#id "jotun standard male infantry"
 #role "infantry"
 
 #chanceinc "racetheme patriarchal *100"
@@ -33,7 +33,7 @@
 -------- Elite
 
 #newpose
-#id "elite male infantry"
+#id "jotun elite male infantry"
 #role "elite infantry"
 #role "sacred infantry"
 
@@ -66,6 +66,7 @@
 
 #newpose
 #role "male scout"
+#id "jotun male scouts"
 
 #chanceinc "racetheme patriarchal *100"
 -- #chanceinc "racetheme traditional 0"

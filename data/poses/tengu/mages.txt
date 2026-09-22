@@ -2,6 +2,7 @@
 ---------- Mages and Priests
 
 #newpose
+#id "tengu mages and priests"
 #role "mage"
 #role "priest"
 #chanceinc moduleid herogen *5

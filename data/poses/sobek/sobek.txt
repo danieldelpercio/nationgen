@@ -1,6 +1,7 @@
 -- Low-probability "normal" sobek for sobek-only nations
 
 #newpose
+#id "sobek scout"
 #basechance 0.005
 #role "infantry"
 #role "scout"

@@ -3,7 +3,7 @@
 
 #newpose
 #role "infantry"
-#id "light infantry"
+#id "zotz light infantry"
 #renderorder "shadow wings cloakb mount bag basesprite shirt legs armor strap cloakf bonusweapon weapon offhandw hands hair helmet offhanda overlay"
 
 #load basesprite /data/items/races/zotz/bases.txt
@@ -32,7 +32,7 @@
 
 #newpose
 #role "infantry"
-#id "heavy infantry"
+#id "zotz heavy infantry"
 #basechance 0.25
 #renderorder "shadow wings cloakb mount bag basesprite shirt legs armor strap cloakf bonusweapon weapon offhandw hands hair helmet offhanda overlay"
 
@@ -65,7 +65,7 @@
 
 #newpose 
 #role "infantry"
-#id "light 2h infantry"
+#id "zotz light 2h infantry"
 #renderorder "shadow wings cloakb mount bag basesprite shirt legs armor strap cloakf bonusweapon weapon offhandw hands hair helmet offhanda overlay"
 
 #load basesprite /data/items/races/zotz/bases_2h.txt
@@ -92,7 +92,7 @@
 
 #newpose
 #role "infantry"
-#id "heavy 2h infantry"
+#id "zotz heavy 2h infantry"
 #basechance 0.25
 #renderorder "shadow wings cloakb mount bag basesprite shirt legs armor strap cloakf bonusweapon weapon offhandw hands hair helmet offhanda overlay"
 
@@ -121,6 +121,7 @@
 
 #newpose
 #role "scout"
+#id "zotz scouts"
 #renderorder "shadow wings cloakb mount bag basesprite shirt legs armor strap cloakf bonusweapon weapon offhandw hands hair helmet offhanda overlay"
 
 #load basesprite /data/items/races/zotz/bases.txt

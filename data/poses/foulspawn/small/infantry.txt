@@ -393,7 +393,7 @@
 -------- Scout
 
 #newpose
-#id "scout"
+#id "foulspawn scout"
 #role "scout"
 
 #renderorder "shadow bonusweapon cloakb basesprite rarm weapon rleg lleg larm head overlay shirt pants armor rhand offhandw lhand cloakf helmet offhanda"

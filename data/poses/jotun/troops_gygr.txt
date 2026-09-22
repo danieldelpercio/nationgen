@@ -2,7 +2,7 @@
 -------- Normal
 
 #newpose
-#id "standard female infantry"
+#id "jotun standard female infantry"
 #role "infantry"
 
 #chanceinc "racetheme patriarchal *0"
@@ -37,7 +37,7 @@
 -------- Elite
 
 #newpose
-#id "elite female infantry"
+#id "jotun elite female infantry"
 #role "elite infantry"
 #role "sacred infantry"
 
@@ -75,6 +75,7 @@
 
 #newpose
 #role "female scout"
+#id "jotun female scouts"
 
 #chanceinc "racetheme patriarchal *0"
 #chanceinc "racetheme traditional *0.1"
