@@ -1,0 +1,10 @@
+#new shapechange
+#id "merrow_female_aquatic"
+#command "#copystats merrow_female"
+#command "#magicboost 2 1"
+#command "#magicboost 3 -1"
+#command "#aquatic"
+-- Merrow females must wear their cohuleen druith (magic hood)
+-- to preserve their power to dive beneath the waves
+#itemslot head -1
+#end

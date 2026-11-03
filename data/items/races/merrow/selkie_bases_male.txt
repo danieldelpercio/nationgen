@@ -1,0 +1,21 @@
+#newitem
+#id selkie_male_infantry
+#gameid -1
+#sprite /graphics/merrow/basesprite.png
+#define "#gcost 13"
+#define "#hp 16"
+#define "#size 3"
+#define "#mr 12"
+#define "#mor 11"
+#define "#str 14"
+#define "#att 9"
+#define "#def 9"
+#define "#prec 8"
+#define "#ap 12"
+#define "#mapmove 16"
+#define "#enc 3"
+#define "#maxage 50"
+#define "#darkvision 50"
+#define "#amphibian"
+#define "#nametype 142"
+#enditem

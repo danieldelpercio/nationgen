@@ -181,9 +181,17 @@
 #load firbolgmages ./data/poses/firbolg/mages.txt
 
 ---- Merrow
-#load merrowtroops ./data/poses/merrow/troops.txt
-#load merrowmages ./data/poses/merrow/mages.txt
-#load merrowcavalry_land ./data/poses/merrow/cavalry_land.txt
+#load merrow_cavalry_land ./data/poses/merrow/merrow_cavalry_land.txt
+#load merrow_mages ./data/poses/merrow/merrow_mages.txt
+#load merrow_troops ./data/poses/merrow/merrow_troops.txt
+
+#load ceasg_cavalry_land ./data/poses/merrow/ceasg_cavalry_land.txt
+#load ceasg_mages ./data/poses/merrow/ceasg_mages.txt
+#load ceasg_troops ./data/poses/merrow/ceasg_troops.txt
+
+#load selkie_cavalry_land ./data/poses/merrow/selkie_cavalry_land.txt
+#load selkie_mages ./data/poses/merrow/selkie_mages.txt
+#load selkie_troops ./data/poses/merrow/selkie_troops.txt
 
 ---- Assorted ichtyids
 #load ichtyidtroops ./data/poses/ichtyid/troops.txt

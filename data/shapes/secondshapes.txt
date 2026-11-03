@@ -2,3 +2,4 @@
 --- Anything with default in it's name is loaded if nothing else is defined.
 
 #load default_secondshapes ./data/shapes/default_secondshapes.txt
+#load merrow_shapechanges ./data/shapes/merrow_shapechanges.txt

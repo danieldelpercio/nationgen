@@ -60,6 +60,43 @@
 #endtheme
 
 
+-- Demographic themes
+#newtheme
+#type demographic
+#id cohuleen_druith
+#basechance 1
+#racedefinition "#pose merrow_troops"
+#racedefinition "#pose merrow_mages"
+#racedefinition "#pose merrow_cavalry_land"
+#racedefinition "#nationcommand #coastnation"
+#racedefinition "#nationcommand '#likespop 97'"
+#endtheme
+
+-- Demographic themes
+#newtheme
+#type demographic
+#id ceasg
+#basechance 1
+#racedefinition "#pose ceasg_troops"
+#racedefinition "#pose ceasg_mages"
+#racedefinition "#pose ceasg_cavalry_land"
+#racedefinition "#nationcommand #coastnation"
+#racedefinition "#nationcommand '#likespop 97'"
+#endtheme
+
+-- Demographic themes
+#newtheme
+#type demographic
+#id selkies
+#basechance 1
+#racedefinition "#pose selkie_troops"
+#racedefinition "#pose selkie_mages"
+#racedefinition "#pose selkie_cavalry_land"
+#racedefinition "#nationcommand #coastnation"
+#racedefinition "#nationcommand '#likespop 97'"
+#endtheme
+
+
 -- Habitat (terrestrial, marine)
 #newtheme
 #type habitat

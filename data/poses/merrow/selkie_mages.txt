@@ -1,16 +1,15 @@
-
 --- Mage-priest
 #newpose
+#id selkie_caster_male
 #role "mage"
 #role "priest"
-#id "merrow caster"
 #renderorder "shadow basesprite shirt armor belt weapon hands helmet"
 
 #tier 1
 #tier 2
 #tier 3
 
-#load basesprite /data/items/races/merrow/bases.txt
+#load basesprite /data/items/races/merrow/selkie_bases_male.txt
 #load shadow /data/items/races/merrow/shadow.txt
 #load hands /data/items/races/merrow/hands.txt
 
@@ -25,8 +24,3 @@
 #dontvaryhat
 
 #endpose
-
-
-
-
-

@@ -1,12 +1,12 @@
 -- Normal
 #newpose
-#id "merrow infantry"
+#id ceasg_infantry_male
 #role "infantry"
 #role "scout"
 
 #renderorder "shadow bonusweapon basesprite shirt armor weapon offhandw hands helmet offhanda"
 
-#load basesprite /data/items/races/merrow/bases.txt
+#load basesprite /data/items/races/merrow/ceasg_bases_male.txt
 #load hands /data/items/races/merrow/hands.txt
 #load shadow /data/items/races/merrow/shadow.txt
 
